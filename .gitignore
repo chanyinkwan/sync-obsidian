@@ -1,0 +1,11 @@
+# Obsidian — volatile UI/session state (causes sync conflicts across devices)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Obsidian trash
+.trash/
+
+# OS files
+.DS_Store
+Thumbs.db
