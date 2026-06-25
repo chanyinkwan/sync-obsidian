@@ -7,7 +7,7 @@ tags:
 ---
 - [[Sample Mgmt — Pura 90 樣機跨境調撥 Action Items]]
 ref [[24-6-2026 Meeting - Pura 90 樣機跨境調撥 (Sample Mgmt)]]
-- 📋 晨會: [[24-6-2026 Meeting - Wednesday Download]] — Dennis 跟進 / Pura 90 樣機 / Aurora Store 材料 / H3 投標
+- 📋 Wednesday Download: [[24-6-2026 Meeting - Wednesday Download]] — Dennis 跟進 / Pura 90 樣機 / Aurora Store 材料 / H3 投標
 - [ ] [[Cyber Security Exam + Revision]]
 - [x] [[Fill FWA Roadmap Section 1.3]] Version 2 
 - [ ] [[Tasks/Account Gap and Opportunity Analysis]] : Review from the beginning how this task is handed off and what is the expectations from others, what questions are not asked 

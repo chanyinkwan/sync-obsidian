@@ -1,9 +1,9 @@
 ---
-status: doing
+status: hold
 priority: high
 scheduled: 2026-06-24
 dateCreated: 2026-06-24T16:23:46.214+01:00
-dateModified: 2026-06-24T16:28:34.059+01:00
+dateModified: 2026-06-25T10:48:09.344+01:00
 tags:
   - task
 due: 2026-07-01
@@ -24,4 +24,5 @@ last update:
 24/6/20226 - [[Ziyi Zhang 84434577]] applied 海外通用版 from [[huangyasi 84110636]] 
 - [x] 24/6/2026 - [[Kessog]] applied sample from internal system ref no# 
 - [x] 24/6/2026 - Kessog submitted request in manpower bringing sample from China to Italy
-- [ ] Keep an eye on the application until schedule confirmed
+- [x] Keep an eye on the application until schedule confirmed
+- [ ] wait for yasi reply on whether they have stock or not
