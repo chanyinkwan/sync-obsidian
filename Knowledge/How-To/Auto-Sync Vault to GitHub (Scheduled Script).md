@@ -61,6 +61,12 @@ Get-ScheduledTaskInfo -TaskName 'ObsidianVaultSync' |
 ```powershell
 & "C:\Users\k84450674\Desktop\Career Journey\scripts\sync-vault.ps1"
 ```
+> ⚠️ 如果見到 `running scripts is disabled on this system`（execution policy `Restricted`）：呢個只係**手動**跑先會撞到，**唔影響** 5pm 自動 task（task 自己用咗 `-ExecutionPolicy Bypass`）。一次過整好：
+> ```powershell
+> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force
+> ```
+> （`RemoteSigned` = 准跑自己本機嘅 script，但 block 網上未簽名嘅。set 完開**新** PowerShell window 再跑。）
+> 唔想改 policy 嘅話，可以逐次用：`powershell -ExecutionPolicy Bypass -File "scripts\sync-vault.ps1"`
 
 **改時間**（例如改去 6:00 PM）：
 開 `scripts/register-sync-task.ps1`，改 `-At '5:00PM'` 嗰行，然後**re-run** 個 installer：
