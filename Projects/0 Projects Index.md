@@ -30,4 +30,6 @@ SORT status ASC
 ---
 ### Plain-text list (fallback)
 - [[FWA Business Development]]
+- [[Sample Management Ops]]
+- [[Career Hub Management]]
 - [[Mistakes Log]]

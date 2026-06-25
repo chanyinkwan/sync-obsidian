@@ -86,7 +86,7 @@ Auto Job Lookup --> CV Generator --+      LinkedIn Scraper
 - **Knowledge 原子筆記** — 複利層(目前最弱、本回合主攻)。把內訓內容拆成「一則一個可複用論點」,互相連結,長成知識網。
 
 任務與專案管理(新):
-- 控制台:TaskNotes views(指令面板:Task List / Kanban / Calendar / Agenda) · [[Projects Index]]
+- 控制台:TaskNotes views(指令面板:Task List / Kanban / Calendar / Agenda) · [[0 Projects Index]]
 - 進行中專案:[[FWA Business Development]] · [[Sample Management Ops]]
 - 模板:[[Task Template]] · [[Project Template]] · [[Meeting Note Template]]
 
