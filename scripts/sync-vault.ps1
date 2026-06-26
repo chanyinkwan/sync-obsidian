@@ -1,11 +1,8 @@
 # sync-vault.ps1 — auto-commit and push the Obsidian vault.
 # Run by Windows Task Scheduler on weekdays at 17:00 (see register-sync-task.ps1).
 
-$ErrorActionPreference = 'Stop'
-
 # Vault is the parent of this script's folder.
 $VaultPath = Split-Path -Parent $PSScriptRoot
-Set-Location $VaultPath
 
 # Log to scripts/sync-vault.log so scheduled runs leave a trail.
 $LogFile = Join-Path $PSScriptRoot 'sync-vault.log'
@@ -16,8 +13,15 @@ function Log($msg) {
 }
 
 try {
-    # Stage everything.
-    & git add -A
+    Set-Location -Path $VaultPath -ErrorAction Stop
+
+    # NOTE: git prints harmless notices (e.g. "LF will be replaced by CRLF") to
+    # stderr. We capture each command's output and judge success by exit code
+    # ONLY ($LASTEXITCODE) — never by the presence of stderr text. That keeps a
+    # cosmetic warning from being mistaken for a real failure.
+
+    $out = & git add -A 2>&1
+    if ($LASTEXITCODE -ne 0) { throw "git add failed: $out" }
 
     # Nothing staged? Then there's nothing to push.
     & git diff --cached --quiet
@@ -27,11 +31,11 @@ try {
     }
 
     $stamp = Get-Date -Format 'yyyy-MM-dd HH:mm'
-    & git commit -m "Auto-sync $stamp" | Out-Null
-    if ($LASTEXITCODE -ne 0) { throw "git commit failed (exit $LASTEXITCODE)" }
+    $out = & git commit -m "Auto-sync $stamp" 2>&1
+    if ($LASTEXITCODE -ne 0) { throw "git commit failed: $out" }
 
-    & git push origin main
-    if ($LASTEXITCODE -ne 0) { throw "git push failed (exit $LASTEXITCODE)" }
+    $out = & git push origin main 2>&1
+    if ($LASTEXITCODE -ne 0) { throw "git push failed: $out" }
 
     Log "Pushed: Auto-sync $stamp"
 }

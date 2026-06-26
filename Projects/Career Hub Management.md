@@ -13,6 +13,10 @@ tags:
 ## Goal / my scope
 - 管理整個 Career Journey vault 嘅 infrastructure 同 automation：sync、backup、scripts、workflow 維護。
 - 確保 knowledge base 穩定運作，減少 manual operational friction（對齊 20% strategic blank space 嘅原則）。
+- **治理雙軌平衡**：唔好讓防守端（Huawei）吃光時間，保住進攻端（Track A）有重量。
+
+## 🎯 North-Star Goal
+- **[[Dual-Track Development Goal]]** — 雙軌平衡 ｜ 90 日 milestone：Ship CV Generator M2 引擎（Due 2026-09-23）｜ 每週 R/Y/G 記分板。
 
 ## Source meetings
 - 

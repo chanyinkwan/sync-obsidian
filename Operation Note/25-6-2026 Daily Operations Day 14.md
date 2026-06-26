@@ -14,7 +14,7 @@ ref [[24-6-2026 Meeting - Pura 90 樣機跨境調撥 (Sample Mgmt)]]
 - [ ] [[Compare KPIs among the 5 major accounts]]
 ---
 ### What actually happened today
-- Work from Home
+
 ### How would you translate what you have done today into industry terminology?
 Scoping 範疇 / Pricing 定價 / Deal Governance 交易治理?
 

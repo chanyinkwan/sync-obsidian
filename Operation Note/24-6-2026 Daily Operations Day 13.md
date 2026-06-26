@@ -7,14 +7,16 @@ tags:
 ---
 - [[Sample Mgmt — Pura 90 樣機跨境調撥 Action Items]]
 ref [[24-6-2026 Meeting - Pura 90 樣機跨境調撥 (Sample Mgmt)]]
-- 📋 晨會: [[24-6-2026 Meeting - Wednesday Download]] — Dennis 跟進 / Pura 90 樣機 / Aurora Store 材料 / H3 投標
+- 晨會: [[24-6-2026 Meeting - Wednesday Download]] — Dennis 跟進 / Pura 90 樣機 / Aurora Store 材料 / H3 投標
 - [ ] [[Cyber Security Exam + Revision]]
 - [x] [[Fill FWA Roadmap Section 1.3]] Version 2 
 - [ ] [[Tasks/Account Gap and Opportunity Analysis]] : Review from the beginning how this task is handed off and what is the expectations from others, what questions are not asked 
 - [ ] [[Compare KPIs among the 5 major accounts]]
 ---
 ### What actually happened today
-- Work from Home
+9:00 - 9:18 Wednesday Download meeting
+9:18 - 10:30 Pura 90 Meeting Action items
+
 ### How would you translate what you have done today into industry terminology?
 Scoping 範疇 / Pricing 定價 / Deal Governance 交易治理?
 
