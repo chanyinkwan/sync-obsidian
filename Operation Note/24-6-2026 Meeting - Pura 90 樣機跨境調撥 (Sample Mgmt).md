@@ -20,7 +20,7 @@ tags:
 |---|---|---|
 | [[Ziyi Zhang 84434577]] | 大T(義大利)AM / 我的 mentor | 發起、打通各路資源、交接 |
 | Kessog(我) | 大T 商務 | 接手後續對接與填單 |
-| [[Charco]] | Vodafone 帳戶樣機管理 | 已成功機關挪貨,提供路徑 |
+| [[Charco Chan]] | Vodafone 帳戶樣機管理 | 已成功機關挪貨,提供路徑 |
 | [[huangyasi 84110636]] | 總部機關(HQ)樣機挪貨 | 掌庫存與審批(關鍵) |
 | [[Luxi Zhou 84442451]] | 歐洲地區部 樣機 | 歐版測試樣機(本批無庫存) |
 | [[Zhang Ziyi 84271109]] | Orange 帳戶樣機管理 | 可跨帳戶借大貨(備援) |
@@ -58,7 +58,7 @@ tags:
 ## 6. Stakeholder Intel（樣機資源人脈圖）
 | Person | 掌管的樣機資源 | 怎麼用 | Link |
 |---|---|---|---|
-| [[Charco]] | Vodafone 帳戶樣機;已成功機關挪貨 | 問挪貨群與流程 | [[Charco]] |
+| [[Charco Chan]] | Vodafone 帳戶樣機;已成功機關挪貨 | 問挪貨群與流程 | [[Charco Chan]] |
 | [[huangyasi 84110636]] | 總部機關庫存/審批 | 最終可挪到貨的窗口 | [[huangyasi 84110636]] |
 | [[Luxi Zhou 84442451]] | 歐洲地區部歐版測試樣機 | 本批無庫存→轉機關 | [[Luxi Zhou 84442451]] |
 | [[Zhang Ziyi 84271109]] | Orange 帳戶大貨 | 跨帳戶借調(注意:**非** mentor [[Ziyi Zhang 84434577]]) | [[Zhang Ziyi 84271109]] |
@@ -69,7 +69,7 @@ tags:
 - **Worth raising with manager?** [x] yes  →  carry to [[Weekly SCQA Reflection Template]]
 
 ## 8. Operations Training Log
-- **學到的流程（樣機調撥升級路徑）:** 帳戶樣機管理([[Charco]] / [[Zhang Ziyi 84271109]]) → 歐洲地區部([[Luxi Zhou 84442451]]) → 總部機關([[huangyasi 84110636]]) → 跨帳戶借調(Orange) → 人肉帶貨「委託發貨」公單。歐版不行就退海外通用版(需人肉帶)。
+- **學到的流程（樣機調撥升級路徑）:** 帳戶樣機管理([[Charco Chan]] / [[Zhang Ziyi 84271109]]) → 歐洲地區部([[Luxi Zhou 84442451]]) → 總部機關([[huangyasi 84110636]]) → 跨帳戶借調(Orange) → 人肉帶貨「委託發貨」公單。歐版不行就退海外通用版(需人肉帶)。
 - **下次會不同做的:** 提早報 Forecast,就不必每次極限操作;對外電話前先把「要問的庫存/時效/能否人肉帶」列好。
 
 ## 9. Links
