@@ -38,3 +38,9 @@ Scoping 範疇 / Pricing 定價 / Deal Governance 交易治理?
 
 ### What is your win today and what will you do better next time?
 - Celebrate win! being able to reflect and understand my behaviour, that's the first step of understanding yourself and diagnosis what is my current behaviour, that will be the start of improving your mindset and profession and behaviour
+- Celebrate another win! First networking event after landing this job!
+	- What happened in the event?
+		- There are a lot of awesome demos shown that night!
+		- Networking section I kicked off the conversation with another chinese girl, but grew up in London, she works in the AI industry and being a Doctor at the same time
+		- Meeting up with people that are so great feels both exciting and frustrating at the same time since somehow the relationship in networking event are so short and you can barely learn from those people you met
+		- But still! happy to be eye widening and keep myself updated!

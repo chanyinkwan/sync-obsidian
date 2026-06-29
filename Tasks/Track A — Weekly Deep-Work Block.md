@@ -12,10 +12,10 @@ tags:
 # Track A — Weekly Deep-Work Block
 
 ## Deliverable (what "done" looks like)
-- 坐低做咗一個 Track A block（進攻端），有可見進度推到 [[Dual-Track Development Goal]] 嘅 M2 milestone。
+- 坐低做咗一個 Track A block（進攻端），有可見進度推到 [[Career Hub Goal]] 嘅 M2 milestone。
 
 ## Materials
-- [[Dual-Track Development Goal]]
+- [[Career Hub Goal]]
 - [[CV-Generator-MVP-Schema]]
 
 ## Sub-steps

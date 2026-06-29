@@ -24,7 +24,7 @@ tags:
 
 **Telefonica — by Qixuan / Kaili / Emilio**
 - **Amazon 營運**:PSI / SO / SI 目標、SMR、Prime Day(PD)大促與廣告、ASIN / Andon Cord 風險、Vendor Central、DSP 自營試點。
-- H162 在 TEF Spain 做 live testing;與 GCTIO / GDU 談未來手機 portfolio;Vendor Management CRM 交接;Watch D2 專案;9/2 上市活動;穿戴/音訊。
+- H162 在 TEF Spain 做 live testing;與 GCTIO / GDU 談未來手機 portfolio; Vendor Management CRM 交接;Watch D2 專案;9/2 上市活動;穿戴/音訊。
 
 **Orange / 法電 + 1組綜合 — by [[Zhang Ziyi 84271109]] / 嚴佳(Jerry)/ Olivier / 張銉**
 - Orange **RFQ** 重點(Olivier 轉述):WiFi 7/8 roadmap(2028)、記憶體不漲價(配合 prpl)、CPE 能耗、可換電池 MiFi(2027/2 起 EU 法規)、持續跟法國談。

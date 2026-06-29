@@ -524,7 +524,7 @@
     "defaultReminderMinutes": null
   },
   "enableDebugLogging": false,
-  "lastSeenVersion": "4.11.0",
+  "lastSeenVersion": "4.11.1",
   "googleCalendarSyncQueue": [
     {
       "taskPath": "Operation Note/Create task for Cyber Security Exam + Revision.md",
@@ -561,6 +561,36 @@
       "requestedAt": 1782457604415,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/Solve Career Hub Pain Points.md",
+      "requestedAt": 1782727671984,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/write skills for meeting summary Skill - Transcript to Meeting Summary.md",
+      "requestedAt": 1782728780889,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/Research over Trip.com.md",
+      "requestedAt": 1782740426817,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/Write a requirements over auto Job application platform.md",
+      "requestedAt": 1782746412784,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Write requirements over Feature 1 Auto Gen CV.md",
+      "requestedAt": 1782746467908,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {
@@ -568,8 +598,8 @@
     "timeRemaining": 300,
     "nextSessionType": "short-break"
   },
-  "lastPomodoroDate": "2026-06-21",
-  "lastSelectedTaskPath": "Tasks/Account Gap and Opportunity Analysis.md",
+  "lastPomodoroDate": "2026-06-28",
+  "lastSelectedTaskPath": "Tasks/Cyber Security Exam + Revision.md",
   "pomodoroHistory": [
     {
       "id": "1781772563658",
@@ -891,6 +921,21 @@
         {
           "startTime": "2026-06-22T16:37:22.947+01:00",
           "endTime": "2026-06-22T17:02:22.947+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1782727858445",
+      "startTime": "2026-06-29T11:10:58.445+01:00",
+      "endTime": "2026-06-29T11:35:58.445+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "taskPath": "Tasks/Cyber Security Exam + Revision.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-06-29T11:10:58.445+01:00",
+          "endTime": "2026-06-29T11:35:58.445+01:00"
         }
       ]
     }

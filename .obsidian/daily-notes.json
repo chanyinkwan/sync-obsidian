@@ -1,0 +1,6 @@
+{
+  "folder": "Operation Note",
+  "format": "D-M-YYYY [Daily Operations]",
+  "template": "Template/Daily Operations Template",
+  "autorun": false
+}

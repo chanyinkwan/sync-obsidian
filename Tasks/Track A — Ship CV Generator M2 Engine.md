@@ -15,7 +15,7 @@ tags:
 - Due：**2026-09-23**
 
 ## Materials
-- [[Dual-Track Development Goal]]
+- [[Career Hub Goal]]
 - [[CV-Generator-MVP-Schema]]
 
 ## Sub-steps
