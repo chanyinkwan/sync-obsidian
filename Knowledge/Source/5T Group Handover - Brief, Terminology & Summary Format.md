@@ -64,6 +64,7 @@ tags:
 **活動 / 展會(共用名,務必認得)**
 - **小巴展** ⚠ = 疑為「小型/上海 MWC」或某巴塞隆納相關展(和記、德電都在籌備;同期出現「MWC Shanghai」)——**這是 Orange/各帳戶共用的活動名,請向 Ziyi 確認確切指哪個展**。
 - **MWC**(Shanghai)= Mobile World Congress。**HDC** = Huawei Developer Conference(影響樣機提單)。**HQ visit / 高訪**;**Portfolio meeting**;**MBB Forum**;**Ecosystem / Smartphone / Technical Workshop**。7/14 吉隆坡發布會。
+- **Range review meeting** = 產品線/組合檢視會(和記,與客戶 Cameron & Dennis;8/11–17 一次)。**FWA technology day** = FWA 技術日(需備樣機)。**Robot City** ⚠(TEF innovation/event 相關團隊,待確認)。**DV** ⚠(TEF 某聚焦項目,待確認)。
 
 **Amazon / 電商**
 - **PSI** = Purchase-Sell-Inventory;**SO / SI** = Sell-Out / Sell-In;**ASIN** = Amazon 商品編號;**Andon Cord** = Amazon 品質拉繩(下架機制);**Vendor Central** = Amazon 供應商後台;**PD** = Prime Day;**DSP** = Demand-Side Platform(廣告);**PDP** = Product Detail Page;**iPrice** ⚠ = 內部定價工具。
@@ -72,7 +73,7 @@ tags:
 - **Ziyi Zhang 84434577** = 和記(交給你);**Qixuan Wang wx1252689**(云琪?⚠)= TEF/Amazon;**Kaili Li wx1252688(凱莉)** = TEF/Orange/VDF 樣機與活動;**Zhang Ziyi 84271109** = Orange,**也負責貼 1組綜合待辦**(≠ mentor 同名)。
 - 和記團隊:**丁程/程哥**(account lead)、**Selina(Huang Yi 84411269)**、**Michele Cappabianca**(手機/FWA 技術)。
 - 其他:**嚴佳/Jerry Hsueh**(法電/DT 談判)、**陳新/Xin Chen**(DT 技術)、**Olivier CADENE**(Orange 技術/RFQ)、**張銉**(路由器/機關 XG 材料)、**俞碧斐/碧斐**(競爭分析/IOT 例會)、**李楊(Li Yang)**(行政/績效)、**張明豪/明豪**(TEF/客戶)、**林穎署(Yingshu Lin)**(合規)、**曾力(Zeng Li)/黎叔** ⚠(資深主管,常轉述高層講話);上層:**Colin / Tony / 華哥 / 陳軍 / 余總 / 何總**。
-- 客戶側人名:Leonor Ostos(TME)、Jose Angel Rivas(TEF Vendor Mgmt)、Andreas/Jaime(GCTIO/GDU)、Bastian(TEF)、**Dominique**(內部專案——疑為 FWA BD 作者 Dominique Rousseau)、Agos/Dennis/Mark(和記客戶)、Aurora store。
+- 客戶側人名:Leonor Ostos(TME)、Jose Angel Rivas(TEF Vendor Mgmt)、Andreas/Jaime(GCTIO/GDU)、Bastian(TEF)、**Dominique**(內部專案——疑為 FWA BD 作者 Dominique Rousseau)、Agos/Dennis/Mark、**Cameron(Cameron Hole)**(和記客戶;與 Dennis 的 range review 會 8/11–17)、Aurora store。
 
 ## 3. 晨會紀要格式(供日後「錄音→我整理」用)
 
