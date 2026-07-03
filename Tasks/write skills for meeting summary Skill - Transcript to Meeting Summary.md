@@ -8,7 +8,7 @@ tags:
   - task
 contexts:
   - work
-tasknotes_manual_order:
+tasknotes_manual_order: tnwhldsowhlc
 completedDate: 2026-06-29
 ---
 

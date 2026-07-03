@@ -6,3 +6,4 @@
 [2026-06-29 08:47:45] No changes to commit.
 [2026-06-29 17:00:30] ERROR: git push failed: fatal: unable to access 'https://github.com/chanyinkwan/sync-obsidian/': Failed to connect to github.com port 443 after 21047 ms: Could not connect to server
 [2026-07-02 09:51:15] Pushed: Auto-sync 2026-07-02 09:51
+[2026-07-03 08:43:04] ERROR: git push failed: fatal: unable to access 'https://github.com/chanyinkwan/sync-obsidian/': Failed to connect to github.com:443 after 21120 ms: Could not connect to server

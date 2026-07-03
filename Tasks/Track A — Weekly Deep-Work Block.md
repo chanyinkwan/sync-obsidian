@@ -1,15 +1,17 @@
 ---
-title: "Track A — Weekly Deep-Work Block"
+title: Track A — Weekly Deep-Work Block
 status: todo
 priority: high
 scheduled: 2026-06-27
 recurrence: FREQ=WEEKLY;BYDAY=WE,SA
 timeEstimate: 135
-projects: ["[[Career Hub Management]]"]
+projects:
+  - "[[Career Hub Management]]"
 tags:
   - task
 contexts:
   - hub
+tasknotes_manual_order: tntmzzzzzzzu
 ---
 # Track A — Weekly Deep-Work Block
 

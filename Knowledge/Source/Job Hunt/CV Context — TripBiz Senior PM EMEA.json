@@ -1,0 +1,59 @@
+{
+  "profile_summary": "Product-minded commercial specialist with 7 years shipping internal products and B2B growth across Apple, Bank of China and Huawei, now owning portfolio and commercial strategy for a pan-European telecom operator group. A bilingual English/Mandarin bridge between APAC headquarters and EMEA enterprise customers across presales, RFP response, pricing and go-to-market. Hands-on AI builder who ships LLM and RAG products end to end. MSc Business Analytics (Merit, University of Exeter).",
+  "experience": [
+    {
+      "company": "Huawei Technologies",
+      "location": "London, United Kingdom",
+      "role": "Portfolio Solutions & Commercial Sales Specialist",
+      "dates": "May 2026 – Present",
+      "bullets": [
+        "Own portfolio solutions and commercial strategy for a pan-European telecom operator group spanning 5 country markets, translating China HQ product roadmaps into regional strategy in English and Mandarin.",
+        "Co-authoring the regional fixed wireless broadband business development roadmap with the European product lead, aligning HQ product lines with operator demand across 5 markets.",
+        "Led the Amazon Prime Day campaign for key mobile broadband models end to end, from channel readiness through post-campaign performance analysis.",
+        "Support group-level bid responses and pricing analysis, coordinating a cross-functional squad of account managers, channel GTM operations and technical architects."
+      ]
+    },
+    {
+      "company": "Bank of China",
+      "location": "Hong Kong",
+      "role": "Product Analyst — BOC Pay & e-Banking Platform",
+      "dates": "Sep 2023 – Oct 2024",
+      "bullets": [
+        "Delivered 100% of HKMA regulatory mandates inside a strict 14-day window by translating regulation into a technical implementation plan and orchestrating internal teams and third-party vendors to ship Geo-IP fraud detection with Impossible Travel logic.",
+        "De-risked the BOC Pay launch across 4 global regions and saved 15 man-days of project budget by designing a follow-the-sun, 24-hour synchronised UAT plan and leading a 3-person analyst team through delivery.",
+        "Recovered 1,000+ hours per year of cross-functional capacity across 50+ teams by deploying a centralised Grafana observability framework that retired 50+ manual weekly reporting touchpoints.",
+        "Drove adoption of the observability framework by presenting live demos to 30+ system leads and department heads, resolving 80% of technical queries in the first session.",
+        "Cut 15 man-days of vendor-evaluation churn by converting fragmented infrastructure needs into a MoSCoW-prioritised vendor roadmap validated through a Red Hat proof of concept."
+      ]
+    },
+    {
+      "company": "Apple",
+      "location": "Hong Kong",
+      "role": "Operations Strategy Analyst",
+      "dates": "Jul 2021 – Aug 2023",
+      "bullets": [
+        "Protected 100% operational uptime and sustained a 92 NPS through the EasyPay POS migration by leading 10+ Floor Champions with floor-level execution playbooks.",
+        "Influenced the Shanghai development team to shift from centralised demo training to store-specific delivery by presenting evidence that operations varied across locations.",
+        "Eliminated ~1,500 manual hours per year across 6 flagship stores by shipping a self-sustaining reporting architecture that gave regional directors real-time labour insights.",
+        "Drove adoption across all 6 flagship stores by walking every store leader through the tool via live demo, then handing over operational ownership with a fallback plan.",
+        "Recovered 400+ leadership hours per year by diagnosing an 8-hour weekly productivity drain and shipping a zero-to-one digital ticketing system adopted store-wide."
+      ]
+    },
+    {
+      "company": "Apple",
+      "location": "Hong Kong",
+      "role": "Business Development, Corporate Solutions",
+      "dates": "Aug 2019 – Jul 2021",
+      "bullets": [
+        "Generated £350,000 in new B2B revenue by independently running the full sales cycle from market analysis through close, lifting regional market penetration by 30%.",
+        "Closed a £50K deal with a Hong Kong media company over 3 months, building trust from a first store visit through technical support and a custom pricing portal, then upselling device management solutions.",
+        "Shifted the B2B team from reactive tracking to proactive account retention by building diagnostic models across a 50+ account portfolio, isolating 12+ root causes of missed revenue.",
+        "Removed peak-time scheduling conflicts for a 200+ person workforce and recovered 5 hours of weekly floor-planning effort by building a capacity planning tool mapping staffing against customer traffic."
+      ]
+    }
+  ],
+  "activity_line": "",
+  "language_line": "Languages: Cantonese (native), Mandarin (native), English (fluent)",
+  "skills_line": "Skills: Product discovery & GTM, presales & RFP response, UAT & launch management, MoSCoW prioritisation, SQL, Python, Grafana, LLM/RAG pipelines (OpenAI API, n8n), JIRA/Confluence, Figma",
+  "interests_line": "Interests: Building AI career tooling in public (github.com/chanyinkwan), travel technology, systems design"
+}

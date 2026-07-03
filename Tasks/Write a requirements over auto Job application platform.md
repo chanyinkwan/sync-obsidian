@@ -10,6 +10,7 @@ projects:
   - "[[Look for another job]]"
 contexts:
   - hub
+tasknotes_manual_order: tnwtmzzzzzzt
 ---
 
 Features:

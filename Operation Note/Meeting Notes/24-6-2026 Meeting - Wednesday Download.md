@@ -87,7 +87,7 @@ tags:
 ## 6. Stakeholder Intel
 | Person | Position / Concern | Political note | Link |
 |---|---|---|---|
-| **Dennis** | 新接觸的重要客戶。原 **Vodafone** 重大決策者,現已退休,**兼職顧問**,負責 Huawei **其餘 5T 電信帳戶（Vodafone 以外）** | 與他相關的主要是 **FWA BD 專案**;對 Aurora Store 不熟 → 對他的材料要**精簡成 1–2 頁英文**;手機回歐決策的關鍵影響者 | [[Dominic]] |
+| **Dennis** | 新接觸的重要客戶。原 **Vodafone** 重大決策者,現已退休,**兼職顧問**,負責 Huawei **其餘 5T 電信帳戶（Vodafone 以外）** | 與他相關的主要是 **FWA BD 專案**;對 Aurora Store 不熟 → 對他的材料要**精簡成 1–2 頁英文**;手機回歐決策的關鍵影響者 | [[Dominique]] |
 
 > Update [[Stakeholder @Sample Management]] or relevant stakeholder note if anything changed.
 

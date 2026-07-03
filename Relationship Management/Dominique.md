@@ -15,10 +15,10 @@ last_contact: 2026-06-24    # 程哥於 24-6 晨會首次提及（我尚未直�
 tags:
   - contact
 ---
-# Dominic
+# Dominique
 
 ## At a glance
-- **Role:** 新接觸的重要客戶 / 顧問。原 **Vodafone** 重大決策者,退休後以**兼職顧問**身分,負責 Huawei **其餘 5T 電信帳戶（Vodafone 以外）**。
+- **Role:** 新接觸的重要顧問。原 **Vodafone** 重大決策者,退休後以**兼職顧問**身分,負責 Huawei **其餘 5T 電信帳戶（Vodafone 以外）**。
 - **What they care about / their stake:** 手機**明年回歸歐洲**的決策;想先了解我們在**香港市場**的表現。與他相關的主要是 **[[FWA Business Development|FWA BD]] 專案**。對 **Aurora Store** 不熟。
 - **How to work with them:** 給他的材料要**精簡成 1–2 頁英文**（他不深入技術細節）;目前主要由 **[[Ding Cheng 00611102]]（程哥）** 對接;手機回歐決策的關鍵影響者,值得長期經營。
 

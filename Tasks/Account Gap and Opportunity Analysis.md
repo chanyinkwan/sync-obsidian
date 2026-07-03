@@ -1,9 +1,9 @@
 ---
-status: doing
+status: hold
 priority: high
 scheduled: 2026-06-22
 dateCreated: 2026-06-22T09:42:38.146+01:00
-dateModified: 2026-06-22T17:02:23.199+01:00
+dateModified: 2026-07-03T08:53:32.386+01:00
 tags:
   - task
 contexts:

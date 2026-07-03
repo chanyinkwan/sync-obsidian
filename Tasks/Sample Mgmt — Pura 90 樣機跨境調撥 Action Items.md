@@ -1,17 +1,18 @@
 ---
-status: hold
+status: done
 priority: high
 scheduled: 2026-06-24
 dateCreated: 2026-06-24T16:23:46.214+01:00
-dateModified: 2026-06-25T10:48:09.344+01:00
+dateModified: 2026-07-03T08:53:25.603+01:00
 tags:
   - task
 due: 2026-07-01
 projects:
   - "[[Sample Management Ops]]"
-tasknotes_manual_order: tniririririr
+tasknotes_manual_order: tnsowhldsowg
 contexts:
   - work
+completedDate: 2026-07-03
 ---
 
 - [x] **今天確認有貨**(Pura 90 樣機)— 客戶赴港前(~10 號)試用 ⏳緊急

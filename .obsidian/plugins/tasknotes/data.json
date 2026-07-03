@@ -603,14 +603,19 @@
       "requestedAt": 1782989022500,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/Exploring What I want to do.md",
+      "requestedAt": 1783092228511,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {
     "isRunning": false,
-    "timeRemaining": 300,
-    "nextSessionType": "short-break"
+    "timeRemaining": 1500
   },
-  "lastPomodoroDate": "2026-07-01",
+  "lastPomodoroDate": "2026-07-02",
   "pomodoroHistory": [
     {
       "id": "1781772563658",

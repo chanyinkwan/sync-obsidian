@@ -1,14 +1,16 @@
 ---
-title: "Track A — Ship CV Generator M2 Engine"
+title: Track A — Ship CV Generator M2 Engine
 status: todo
 priority: high
 due: 2026-09-23
 scheduled: 2026-06-27
-projects: ["[[Career Hub Management]]"]
+projects:
+  - "[[Career Hub Management]]"
 tags:
   - task
 contexts:
   - hub
+tasknotes_manual_order: tnqgmzzzzzzv
 ---
 # Track A — Ship CV Generator M2 Engine
 
