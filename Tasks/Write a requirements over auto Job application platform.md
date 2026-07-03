@@ -8,6 +8,8 @@ tags:
   - task
 projects:
   - "[[Look for another job]]"
+contexts:
+  - hub
 ---
 
 Features:

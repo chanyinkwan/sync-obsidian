@@ -20,6 +20,8 @@ updated: 2026-06-16
 | 系統摩擦點 | 知識筆記如何起頭與管理(本回合處理) |
 | 下一個 co-work block | 待定:M2 prompt chain / 防守端落地 |
 
+> 🩺 元件級系統診斷與流向圖(2026-07-02):[[Tasks/Vault System Diagnosis]]
+
 ---
 
 ## 決策時間軸 A — 進攻端(Offensive Lever)

@@ -8,6 +8,8 @@ timeEstimate: 135
 projects: ["[[Career Hub Management]]"]
 tags:
   - task
+contexts:
+  - hub
 ---
 # Track A — Weekly Deep-Work Block
 

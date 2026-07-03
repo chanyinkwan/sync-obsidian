@@ -11,6 +11,8 @@ projects:
 assigned_by: "[[Ziyi Zhang 84434577]]"
 completedDate: 2026-06-26
 tasknotes_manual_order: tnpppppppppp
+contexts:
+  - work
 ---
 
 initiated task from welink

@@ -5,8 +5,9 @@ scheduled: 2026-06-29
 dateCreated: 2026-06-29T11:07:51.906+01:00
 dateModified: 2026-06-29T11:25:07.286+01:00
 tags:
-  - hub
   - task
+contexts:
+  - hub
 projects:
   - "[[Career Hub Management]]"
 timeEntries:

@@ -7,6 +7,8 @@ scheduled: 2026-06-27
 projects: ["[[Career Hub Management]]"]
 tags:
   - task
+contexts:
+  - hub
 ---
 # Track A — Ship CV Generator M2 Engine
 

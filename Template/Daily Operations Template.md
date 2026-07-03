@@ -27,3 +27,6 @@ Scoping 範疇 / Pricing 定價 / Deal Governance 交易治理?
 
 ### What is your win today and what will you do better next time?
 
+
+### What is your take away from today's work (What to sync?)
+

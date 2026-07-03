@@ -6,6 +6,8 @@ dateCreated: 2026-06-22T09:42:38.146+01:00
 dateModified: 2026-06-22T17:02:23.199+01:00
 tags:
   - task
+contexts:
+  - work
 timeEntries:
   - startTime: 2026-06-22T08:59:35.987Z
     description: Work session

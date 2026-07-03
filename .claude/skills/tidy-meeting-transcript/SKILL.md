@@ -1,8 +1,9 @@
 ---
 name: tidy-meeting-transcript
 description: >-
-  Turn a raw WeLink/meeting transcript dump into a clean, readable note, then
-  fold new terms into the 5T glossary and append a Download Meeting Summary.
+  Turn a raw WeLink/meeting transcript dump into a clean, readable note (keeping
+  the spoken language — no translation), fold new terms into the 5T glossary, and
+  append a Download Meeting Summary (Mon/Wed/Fri Download/Team Sync meetings only).
   Use when the user points at a transcript in "Operation Note/Meeting Transcript/"
   (a "Monday Download", "Morning Meeting", "Team Sync", or any raw "录音→整理"
   recording) and asks to tidy / clean it up / make it make sense. The raw file is
@@ -13,7 +14,7 @@ description: >-
 # Tidy Meeting Transcript
 
 Run the full pipeline below in order. It reproduces the exact process we settled on:
-**(1) clean → (2) clarify → (3) update the glossary → (4) append the Download Meeting Summary.**
+**(1) clean → (2) clarify → (3) update the glossary → (4) append the Download Meeting Summary (Download/Team Sync meetings only).**
 
 ## Canonical references (read these first — they are the source of truth)
 
@@ -30,7 +31,7 @@ Always re-read the 5T note at run time — it evolves. Do not hard-code its cont
 
 1. **Back up the raw first.** Copy the original to the session scratchpad before touching it (the raw is recoverable for this session only). The raw files are huge, so to overwrite: `Remove-Item` the original, then `Write` the clean version fresh (a plain overwrite trips the "read whole file first" guard on a multi-MB file).
 2. **Strip the bloat.** Drop every line containing `data:image` / embedded SVG (WeLink avatar blobs — ~99% of bytes). Filter into a clean working copy in scratchpad, e.g. `Get-Content $src | Where-Object { $_ -notmatch 'data:image' }`, then read that.
-3. **Reconstruct the speech.** It's mostly English with Mandarin fragments, mangled by ASR. Rewrite each turn into clear English that makes sense given the team's work (FWA/CPE, Amazon e-commerce, device models, workshops). Keep the timestamps (`00:44` etc. — these are recording-elapsed time, not clock time). Preserve meaningful Mandarin as a short *(italic parenthetical)*; mark genuinely unintelligible bits `*[unclear]*`.
+3. **Reconstruct the speech — in the language actually spoken.** Fix the ASR mangling into fluent text that makes sense given the team's work (FWA/CPE, Amazon e-commerce, device models, workshops), but **do NOT translate**: Mandarin turns stay Mandarin (简体, as the ASR emits), English turns stay English, and mixed turns keep their code-switching (English terms like ATP/EPD/PO/4CC stay English inside Mandarin sentences). The English layer belongs in the header/context/action-items sections, not the transcript turns. Keep the timestamps (`00:44` etc. — these are recording-elapsed time, not clock time); mark genuinely unintelligible bits `*[unclear]*` / `*[不清]*`.
 4. **Attribute speakers to canonical `[[wikilinks]]`.** Map ASR/device labels to the real person using `CLAUDE.md` + the glossary's people list. Known mappings: `QixuanWang`→`[[Qiuxuan]]` (Qixuan), `KailiLi`→`[[Kaili Li wx1252688 (凱莉)]]`, `EmiliodelaIglesia`→`[[Emilio de la Iglesia]]`. **A room/device label (e.g. `…WeLink-Board`) can carry several people sharing one mic** — split their updates at natural handoffs ("okay, for my side…") and confirm in Step 2.
 5. **Fix metadata.** The date inside the body is often wrong; derive the real meeting date from the filename. Set/repair frontmatter: `type: meeting-transcript`, `date`, `account_or_project`, `attendees` (add anyone who spoke but was missing; add an `absent:` line for named no-shows). Add `monday-download` (or the relevant) tag.
 6. **Lay out the note** in this structure:
@@ -38,7 +39,7 @@ Always re-read the 5T note at run time — it evolves. Do not hard-code its cont
    - `> Context:` one-line framing (e.g. what anchors the week).
    - `## This week — action items by person` — bulleted digest grouped by `[[person]]`.
    - `## Cleaned transcript` — turn-by-turn (`**[[Speaker]]** · timestamp` then the line).
-   - Leave room for `## Download Meeting Summary` (added in Step 4).
+   - Leave room for `## Download Meeting Summary` (added in Step 4 — Download/Team Sync meetings only).
 
 ## Step 2 — Clarify (ask only what you genuinely can't resolve)
 
@@ -57,7 +58,9 @@ For each term/person/product/event that was newly clarified (or confirmed) in St
 - **Don't duplicate** an entry that already exists — instead tighten/confirm it (e.g. remove a `⚠` once verified, or add the resolved spelling).
 - Keep edits surgical; never rewrite unrelated parts of that note.
 
-## Step 4 — Append the Download Meeting Summary
+## Step 4 — Append the Download Meeting Summary (Download / Team Sync meetings ONLY)
+
+**Only the recurring Download / Team Sync meetings (every Monday, Wednesday and Friday — named "…Download" or "…Team Sync") get this summary. Any other meeting type (roadmap reviews, workshops, 1:1s, task-assignment calls, etc.) skips Step 4 entirely — end after Step 3.**
 
 Under the cleaned transcript, add `## Download Meeting Summary` using **Section 3's English format**:
 

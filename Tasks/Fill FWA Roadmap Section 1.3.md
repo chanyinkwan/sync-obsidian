@@ -10,6 +10,8 @@ assigned_by: "[[Ziyi Zhang 84434577]]"
 source: "[[17-6-2026 Meeting - Task Assigned (FWA Roadmap)]]"
 tags:
   - task
+contexts:
+  - work
 dateModified: 2026-06-22T14:02:30.661+01:00
 timeEntries:
   - startTime: 2026-06-18T08:49:27.986Z

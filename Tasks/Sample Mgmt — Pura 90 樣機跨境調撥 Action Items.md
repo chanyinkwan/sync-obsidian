@@ -10,6 +10,8 @@ due: 2026-07-01
 projects:
   - "[[Sample Management Ops]]"
 tasknotes_manual_order: tniririririr
+contexts:
+  - work
 ---
 
 - [x] **今天確認有貨**(Pura 90 樣機)— 客戶赴港前(~10 號)試用 ⏳緊急

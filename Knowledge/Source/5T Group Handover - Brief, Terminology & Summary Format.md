@@ -48,6 +48,7 @@ tags:
 
 **產品代碼**
 - **H1xx**(H155 / H162 / H164 / H165 / H173 / H362 / H386)= CPE / FWA / MBB 裝置(H162/164/165=FWA CPE;H173=當前主推/答標機型)。
+- **H175** = 新 FWA CPE(主推 3+3 配置、512+512 記憶體;比 H162 低 5–6 美金,2×2 版再低 1–2;4CC 載波聚合為基線;2027/5 上市)。⚠ **H176** = 可能取消(連帶取消雙頻 8×8;3×3 產品線無 5.5G 8×8)。**V5** = 新路由 pro 版(零毛成本 75→90 美金,+15)。⚠ **相框** = 疑為「相框」造型 CPE(不進投標,先擱置)。⚠ **雙低/双低** = V5 待推的 ~3 美金選配(全稱待向碧斐確認)。
 - 路由器:**X2 Pro / X3 Pro / V3 / VN1 / X2**。**Super MiFi**(可攜式);**MiFi**。
 - **ODU / IDU** = Outdoor / Indoor Unit(FWA 室外/室內機)。**CPE** = 客戶端設備。**MBB** = Mobile Broadband。**FWA** = 固定無線接入。
 - **WiFi 6 / 7(2x2)/ 8** = CPE 標準世代。**prpl / PRPL** = 開放寬頻軟體框架。
@@ -60,6 +61,7 @@ tags:
 - **QRR / pre-QRR** ⚠ = (季度)某 Review(VDF);**SRS / pre-SRS** ⚠(Orange);**SMR** ⚠(2C router,疑為 Stock/Sales Mgmt Review);**MoM** = Minutes of Meeting。
 - **DCB** ⚠ = 生態相關會議/議題(待確認全稱)。**JOD** ⚠(法電);**KSP** = Key Selling Points。**OKA 考核** ⚠ = 某績效考核。**RTC** ⚠ = 樣機歸還中心。
 - **高訪 / 高層交流** = 客戶高層來訪。**defense meeting** = 對客戶答辯會。
+- **ATP** = Available-to-Promise(碧斐按帳戶分配的產能額度;統籌按 ATP 排產,超出部分靠 PO/備貨驅動)。⚠ **EPD** = 排產系統的承諾交付日(有 PO/備貨才放行;「刷 EPD」= 請統籌刷新)。**零毛** = 零毛利價(zero-margin cost)。**4CC / 5CC** = 載波聚合(carrier aggregation)CC 數。**裁剪** = 降規格/降成本變體(trim)。**物權轉化** = title transfer(EU 電池法規清關相關)。
 
 **活動 / 展會(共用名,務必認得)**
 - **小巴展** ⚠ = 疑為「小型/上海 MWC」或某巴塞隆納相關展(和記、德電都在籌備;同期出現「MWC Shanghai」)——**這是 Orange/各帳戶共用的活動名,請向 Ziyi 確認確切指哪個展**。
@@ -72,7 +74,8 @@ tags:
 **人(群裡常出現,for 交接)**
 - **Ziyi Zhang 84434577** = 和記(交給你);**Qixuan Wang wx1252689**(云琪?⚠)= TEF/Amazon;**Kaili Li wx1252688(凱莉)** = TEF/Orange/VDF 樣機與活動;**Zhang Ziyi 84271109** = Orange,**也負責貼 1組綜合待辦**(≠ mentor 同名)。
 - 和記團隊:**丁程/程哥**(account lead)、**Selina(Huang Yi 84411269)**、**Michele Cappabianca**(手機/FWA 技術)。
-- 其他:**嚴佳/Jerry Hsueh**(法電/DT 談判)、**陳新/Xin Chen**(DT 技術)、**Olivier CADENE**(Orange 技術/RFQ)、**張銉**(路由器/機關 XG 材料)、**俞碧斐/碧斐**(競爭分析/IOT 例會)、**李楊(Li Yang)**(行政/績效)、**張明豪/明豪**(TEF/客戶)、**林穎署(Yingshu Lin)**(合規)、**曾力(Zeng Li)/黎叔** ⚠(資深主管,常轉述高層講話);上層:**Colin / Tony / 華哥 / 陳軍 / 余總 / 何總**。
+- 其他:**嚴佳/Jerry Hsueh**(法電/DT 談判)、**陳新/Xin Chen**(DT 技術)、**Olivier CADENE**(Orange 技術/RFQ)、**張銉**(路由器/機關 XG 材料)、**俞碧斐/碧斐** = [[yubeifei y00663235]](競爭分析/IOT 例會;歐洲 FWA/CPE 路標協調人——ATP 產能分配、對客成本/價格唯一口徑、主持 7/2 產品路標會)、**李楊(Li Yang)**(行政/績效)、**張明豪/明豪**(TEF/客戶)、**林穎署(Yingshu Lin)**(合規)、**曾力(Zeng Li)/黎叔** ⚠(資深主管,常轉述高層講話);上層:**Colin / Tony / 華哥 / 陳軍 / 余總 / 何總**。
+- 產品路標會(7/2 新增):⚠ **石小波/小波/宋博** = [[shixiaobo s00544127]](機關產品線,H175 / H168 裁剪負責,ASR 拼法多變待確認)、⚠ **小郭** (機關產品線,達標策略窗口)、**Donghao** = [[Donghao d00622509]](帳戶側,排產/ATP 對接)。
 - 客戶側人名:Leonor Ostos(TME)、Jose Angel Rivas(TEF Vendor Mgmt)、Andreas/Jaime(GCTIO/GDU)、Bastian(TEF)、**Dominique**(內部專案——疑為 FWA BD 作者 Dominique Rousseau)、Agos/Dennis/Mark、**Cameron(Cameron Hole)**(和記客戶;與 Dennis 的 range review 會 8/11–17)、Aurora store。
 
 ## 3. 晨會紀要格式(供日後「錄音→我整理」用)

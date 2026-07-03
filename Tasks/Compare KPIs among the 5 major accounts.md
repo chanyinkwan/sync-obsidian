@@ -10,6 +10,8 @@ projects:
   - "[[FWA Business Development]]"
 timeEstimate: 50
 assigned_by: "[[Ziyi Zhang 84434577]]"
+contexts:
+  - work
 ---
 
 how this task is initiated

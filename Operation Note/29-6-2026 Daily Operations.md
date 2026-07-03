@@ -16,7 +16,7 @@ tags:
 - [x] Print Sign off doc for Selina
 
 ## Outside Work
-- [[Operation Note/Research over Trip.com]]
+- [[Research over Trip.com]]
 - [ ] Look up for current notes structure and add a tree diagram in Home.md
 - [[Write a requirements over auto Job application platform]]
 - [ ] Think about how to manage saved posts on social media

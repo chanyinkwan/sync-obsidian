@@ -7,6 +7,8 @@ dateModified: 2026-06-29T14:39:51.878+01:00
 tags:
   - exam
   - task
+contexts:
+  - work
 due: 2026-07-03
 assigned_by: "[[Kaidiliya Ainiwaer 84425233 (Kaiya)]]"
 source: "[[Cyber Security Course Materials]]"
