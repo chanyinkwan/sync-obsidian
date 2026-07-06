@@ -64,15 +64,15 @@ tags:
 
 ### 主線 7 步 × Skill 對照
 
-| 步驟 Stage | 觸發時機 Activates when | Skill |
-|---|---|---|
-| **① 腦力激盪 Brainstorm** | 任何「創造性工作」之前(做功能、加行為) | `brainstorming` — Socratic 提問,把粗點子打磨成規格,分段給你 validate,存成 design doc |
-| **② 開隔離工作區** | design 簽核後 | `using-git-worktrees` — 開新 branch 的隔離 workspace,跑 setup,確認 test baseline 乾淨 |
-| **③ 寫計畫 Plan** | 有了簽核的 design | `writing-plans` — 拆成 2–5 分鐘的小任務,每個都有確切檔案路徑、完整 code、驗證步驟 |
-| **④ 執行 Execute** | 有了 plan | `subagent-driven-development`(同一 session 派 subagent)或 `executing-plans`(分批 + 人工檢查點) |
-| **⑤ TDD 實作** | 寫 code 當下 | `test-driven-development` — 強制 RED→GREEN→REFACTOR;先寫失敗測試→看它失敗→寫最小 code→看它過→commit。**測試前寫的 code 會被刪掉。** |
-| **⑥ 程式審查 Review** | 任務之間、合併前 | `requesting-code-review`(送審前 checklist)、`receiving-code-review`(收到回饋:要技術性驗證,不要表演式同意) |
-| **⑦ 收尾 Finish** | 全部任務完成、測試全綠 | `finishing-a-development-branch` — 驗測試,給出 merge / PR / 保留 / 丟棄 的選項,清掉 worktree |
+| 步驟 Stage              | 觸發時機 Activates when  | Skill                                                                                                  |
+| --------------------- | -------------------- | ------------------------------------------------------------------------------------------------------ |
+| **① 腦力激盪 Brainstorm** | 任何「創造性工作」之前(做功能、加行為) | `brainstorming` — Socratic 提問,把粗點子打磨成規格,分段給你 validate,存成 design doc                                    |
+| **② 開隔離工作區**          | design 簽核後           | `using-git-worktrees` — 開新 branch 的隔離 workspace,跑 setup,確認 test baseline 乾淨                            |
+| **③ 寫計畫 Plan**        | 有了簽核的 design         | `writing-plans` — 拆成 2–5 分鐘的小任務,每個都有確切檔案路徑、完整 code、驗證步驟                                                |
+| **④ 執行 Execute**      | 有了 plan              | `subagent-driven-development`(同一 session 派 subagent)或 `executing-plans`(分批 + 人工檢查點)                    |
+| **⑤ TDD 實作**          | 寫 code 當下            | `test-driven-development` — 強制 RED→GREEN→REFACTOR;先寫失敗測試→看它失敗→寫最小 code→看它過→commit。**測試前寫的 code 會被刪掉。** |
+| **⑥ 程式審查 Review**     | 任務之間、合併前             | `requesting-code-review`(送審前 checklist)、`receiving-code-review`(收到回饋:要技術性驗證,不要表演式同意)                   |
+| **⑦ 收尾 Finish**       | 全部任務完成、測試全綠          | `finishing-a-development-branch` — 驗測試,給出 merge / PR / 保留 / 丟棄 的選項,清掉 worktree                         |
 
 ### 隨時可觸發的支援 Skills
 

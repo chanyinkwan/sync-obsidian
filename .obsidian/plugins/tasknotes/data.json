@@ -609,13 +609,55 @@
       "requestedAt": 1783092228511,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/2026 Q4 Sample Stock Take.md",
+      "requestedAt": 1783327022608,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/TSMP Stock Take and Deadline Management System.md",
+      "requestedAt": 1783332253614,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/Write a skill to (List un- task).md",
+      "requestedAt": 1783332833082,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/-Write a skill to (List un- task).md",
+      "requestedAt": 1783332839113,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/SCQA Prep (Huawei Development).md",
+      "requestedAt": 1783351940471,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {
-    "isRunning": false,
-    "timeRemaining": 1500
+    "isRunning": true,
+    "timeRemaining": 1500,
+    "currentSession": {
+      "id": "1783353241550",
+      "startTime": "2026-07-06T16:54:01.550+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "completed": false,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-06T16:54:01.550+01:00"
+        }
+      ]
+    }
   },
-  "lastPomodoroDate": "2026-07-02",
+  "lastPomodoroDate": "2026-07-05",
   "pomodoroHistory": [
     {
       "id": "1781772563658",
@@ -999,7 +1041,91 @@
           "endTime": "2026-07-02T14:41:31.830+01:00"
         }
       ]
+    },
+    {
+      "id": "1783326672290",
+      "startTime": "2026-07-06T09:31:12.290+01:00",
+      "endTime": "2026-07-06T09:56:12.290+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-06T09:31:12.290+01:00",
+          "endTime": "2026-07-06T09:56:12.290+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1783329424187",
+      "startTime": "2026-07-06T10:17:04.187+01:00",
+      "endTime": "2026-07-06T10:42:04.187+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-06T10:17:04.187+01:00",
+          "endTime": "2026-07-06T10:42:04.187+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1783330935485",
+      "startTime": "2026-07-06T10:42:15.485+01:00",
+      "endTime": "2026-07-06T10:47:15.485+01:00",
+      "plannedDuration": 5,
+      "type": "short-break",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-06T10:42:15.485+01:00",
+          "endTime": "2026-07-06T10:47:15.485+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1783332281376",
+      "startTime": "2026-07-06T11:04:41.376+01:00",
+      "endTime": "2026-07-06T11:29:41.376+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-06T11:04:41.376+01:00",
+          "endTime": "2026-07-06T11:29:41.376+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1783343535759",
+      "startTime": "2026-07-06T14:12:15.759+01:00",
+      "endTime": "2026-07-06T14:37:15.759+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "taskPath": "Operation Note/2026 Q4 Sample Stock Take.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-06T14:12:15.759+01:00",
+          "endTime": "2026-07-06T14:37:15.759+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1783351547138",
+      "startTime": "2026-07-06T16:25:47.138+01:00",
+      "endTime": "2026-07-06T16:50:47.138+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-06T16:25:47.138+01:00",
+          "endTime": "2026-07-06T16:50:47.138+01:00"
+        }
+      ]
     }
-  ],
-  "lastSelectedTaskPath": "Tasks/Vault System Diagnosis.md"
+  ]
 }

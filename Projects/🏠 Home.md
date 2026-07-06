@@ -6,7 +6,7 @@ tags:
   - dashboard
   - home
 ---
-# 🏠 Home — 指揮儀表板
+2# 🏠 Home — 指揮儀表板
 
 ## ⚡ Quick Access
 - 📋 任務主控台(已釘選):[[kanban-default.base]]

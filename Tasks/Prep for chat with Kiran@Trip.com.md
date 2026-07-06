@@ -3,7 +3,7 @@ status: done
 priority: high
 scheduled: 2026-06-29
 dateCreated: 2026-06-29T11:30:59.601+01:00
-dateModified: 2026-07-03T14:25:10.501+01:00
+dateModified: 2026-07-06T10:17:55.333+01:00
 tags:
   - task
 projects:
@@ -60,8 +60,8 @@ completedDate: 2026-07-03
 -> not well prepared on what i do on a day to day basis !
 -> the questions prepared is not from me, so its hard to make it smooth when asking
 -> I think how I transit from her sharing to my sharing is a bit too strong and not smooth
--> my sharing is not structured
+-> my sharing is not structured (communication)
 
-Questions asked what do you do on a day to day basis in your experience
+**Questions asked what do you do on a day to day basis in your experience**
 
 -> she said she will come back for me on Monday

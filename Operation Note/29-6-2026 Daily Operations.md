@@ -18,9 +18,9 @@ tags:
 ## Outside Work
 - [[Research over Trip.com]]
 - [ ] Look up for current notes structure and add a tree diagram in Home.md
-- [[Write a requirements over auto Job application platform]]
+- [ ] [[Write a requirements over auto Job application platform]]
 - [ ] Think about how to manage saved posts on social media
-- [ ] Review demo night's take away 50/100
+- [x] Review demo night's take away 50/100
 - [[write skills for meeting summary Skill - Transcript to Meeting Summary]]
 - [[Solve Career Hub Pain Points]]
 
