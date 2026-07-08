@@ -19,7 +19,10 @@ tags:
 - Canvas template: [[Weekly SCQA Reflection Template]]. Source material: Daily Log Q2 (常數) + Q4 (痛點).
 
 ## SCQA prep notes (log)
-- [[8-7-2026 SCQA Prep (Huawei Development)]] — **first cycle** (Wed 2026-07-08)
+- [[8-7-2026 SCQA Prep]] — **first cycle** (Wed 2026-07-08)
+
+## Reference / knowledge
+- [[H3G Operating Model — Three Cycles]] — Operation · Sample · Sales cycle maps (Mermaid)
 
 ## Tasks in this project (auto)
 ```dataview

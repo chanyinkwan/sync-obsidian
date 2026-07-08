@@ -642,20 +642,9 @@
     }
   ],
   "pomodoroState": {
-    "isRunning": true,
-    "timeRemaining": 1500,
-    "currentSession": {
-      "id": "1783353241550",
-      "startTime": "2026-07-06T16:54:01.550+01:00",
-      "plannedDuration": 25,
-      "type": "work",
-      "completed": false,
-      "activePeriods": [
-        {
-          "startTime": "2026-07-06T16:54:01.550+01:00"
-        }
-      ]
-    }
+    "isRunning": false,
+    "timeRemaining": 300,
+    "nextSessionType": "short-break"
   },
   "lastPomodoroDate": "2026-07-05",
   "pomodoroHistory": [
@@ -1126,6 +1115,36 @@
           "endTime": "2026-07-06T16:50:47.138+01:00"
         }
       ]
+    },
+    {
+      "id": "1783353241550",
+      "startTime": "2026-07-06T16:54:01.550+01:00",
+      "endTime": "2026-07-06T17:19:01.550+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-06T16:54:01.550+01:00",
+          "endTime": "2026-07-06T17:19:01.550+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1783355169896",
+      "startTime": "2026-07-06T17:26:09.896+01:00",
+      "endTime": "2026-07-06T17:51:09.896+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "taskPath": "Operation Note/8-7-2026 SCQA Prep.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-06T17:26:09.896+01:00",
+          "endTime": "2026-07-06T17:51:09.896+01:00"
+        }
+      ]
     }
-  ]
+  ],
+  "lastSelectedTaskPath": "Operation Note/8-7-2026 SCQA Prep.md"
 }
