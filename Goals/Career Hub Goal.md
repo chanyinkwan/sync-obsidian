@@ -60,11 +60,11 @@ tags:
 ---
 
 ## 4. 記分板 R/Y/G（每週，寫入 Weekly SCQA）
-| 燈 | 定義 |
-|---|---|
-| 🟢 Green | 今週**有 ship 到嘢**喺 Track A（M2 有可見進度 / 一個模組完成）。 |
-| 🟡 Yellow | 有掂過 Track A（坐低做咗 block）但未 ship。 |
-| 🔴 Red | 今週 Track A **完全 0**。← 警號：barbell 塌緊。 |
+| 燈         | 定義                                           |
+| --------- | -------------------------------------------- |
+| 🟢 Green  | 今週**有 ship 到嘢**喺 Track A（M2 有可見進度 / 一個模組完成）。 |
+| 🟡 Yellow | 有掂過 Track A（坐低做咗 block）但未 ship。              |
+| 🔴 Red    | 今週 Track A **完全 0**。← 警號：barbell 塌緊。         |
 
 **TaskNotes 整合：**
 - Track A 兩個 block + M2 milestone 都係 task 並 link 去 [[Career Hub Management]] → 喺 TaskNotes 嘅 Kanban / Agenda 一眼睇到本週進攻端有冇郁。

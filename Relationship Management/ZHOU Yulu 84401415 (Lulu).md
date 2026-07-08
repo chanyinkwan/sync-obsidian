@@ -1,0 +1,2 @@
+-> responsible for KOL communication
+-> under team of [[xusun 00565422 (Grace)]] marketing team

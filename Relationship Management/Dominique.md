@@ -1,7 +1,7 @@
 ---
 type: contact
-category: customer          # internal | customer | hq | partner
-name: Dennis
+category: customer
+name: Dominique
 employee_id:
 aka:
 org: ex-Vodafone (retired) · 現為 Huawei 5T 電信帳戶兼職顧問（Vodafone 以外）
@@ -9,9 +9,9 @@ role: 顧問 / 原 Vodafone 重大決策者
 location:
 languages: English
 email:
-relationship: 1     # 1-5 (closeness / trust) — 新接觸
+relationship: 1
 status: active
-last_contact: 2026-06-24    # 程哥於 24-6 晨會首次提及（我尚未直接接觸）
+last_contact: 2026-06-24
 tags:
   - contact
 ---

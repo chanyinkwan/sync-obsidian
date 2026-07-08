@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"c3000000000000t1","type":"text","x":-700,"y":0,"width":560,"height":340,"text":"# O3 · 樣機管理流程圖\n\n**流程**:需求發起 → 內部申請 → 審批/公單 → 庫存確認 → 物流/調撥 → 使用/歸還(左→右)\n\n**每環節要素**:動作 + 對接人\n紅色卡 = 待識別缺口(核心:機關樣機管理員)\n\n骨架來自 Pura 90 跨境調撥實案,\n與子怡對話時逐環節驗證 & 補人。"},
+		{"id":"c3000000000000f1","type":"file","file":"Tasks/SCQA O3 - Sample Management Map.md","x":-700,"y":380,"width":560,"height":150},
+		{"id":"c3000000000000f2","type":"file","file":"Operation Note/Meeting Notes/24-6-2026 Meeting - Pura 90 樣機跨境調撥 (Sample Mgmt).md","x":-700,"y":570,"width":560,"height":150},
+		{"id":"c30000000000s100","type":"group","x":0,"y":0,"width":560,"height":680,"color":"3","label":"S1 · 需求發起"},
+		{"id":"c30000000000s101","type":"text","x":40,"y":60,"width":480,"height":110,"text":"客戶試用需求\n(案例:Pura 90,客戶赴港前 ~10 號試用)"},
+		{"id":"c30000000000s102","type":"text","x":40,"y":210,"width":480,"height":90,"text":"治本:按時上報 Forecast(大T 義大利)"},
+		{"id":"c30000000000s103","type":"text","x":40,"y":340,"width":480,"height":70,"text":"對接:AM / 我(Kessog)"},
+		{"id":"c30000000000s200","type":"group","x":680,"y":0,"width":560,"height":680,"color":"3","label":"S2 · 內部申請"},
+		{"id":"c30000000000s201","type":"text","x":720,"y":60,"width":480,"height":90,"text":"內部系統樣機申請(取得 ref no#)"},
+		{"id":"c30000000000s202","type":"file","file":"Relationship Management/Ziyi Zhang 84434577.md","x":720,"y":190,"width":480,"height":180},
+		{"id":"c30000000000s203","type":"text","x":720,"y":400,"width":480,"height":80,"text":"案例:Ziyi 向 yasi 申請海外通用版"},
+		{"id":"c30000000000s300","type":"group","x":1360,"y":0,"width":560,"height":680,"color":"5","label":"S3 · 審批 / 公單"},
+		{"id":"c30000000000s301","type":"text","x":1400,"y":60,"width":480,"height":90,"text":"「委託發貨」公單 — 主管欄填:程哥"},
+		{"id":"c30000000000s302","type":"file","file":"Relationship Management/Ding Cheng 00611102 (程哥).md","x":1400,"y":190,"width":480,"height":180},
+		{"id":"c30000000000s400","type":"group","x":2040,"y":0,"width":560,"height":680,"color":"5","label":"S4 · 庫存確認"},
+		{"id":"c30000000000s401","type":"text","x":2080,"y":60,"width":480,"height":100,"text":"版本優先序:① 歐洲版\n② 海外通用版(無庫存才用)"},
+		{"id":"c30000000000s402","type":"text","x":2080,"y":200,"width":480,"height":100,"text":"檢查頻段/硬體差異\n(國內版 vs 歐版 → 樣機可用性)"},
+		{"id":"c30000000000s403","type":"file","file":"Relationship Management/huangyasi 84110636.md","x":2080,"y":340,"width":480,"height":180},
+		{"id":"c30000000000s500","type":"group","x":2720,"y":0,"width":560,"height":680,"color":"4","label":"S5 · 物流 / 調撥"},
+		{"id":"c30000000000s501","type":"text","x":2760,"y":60,"width":480,"height":90,"text":"PO 直寄 ✗(海外通用版不可直寄)"},
+		{"id":"c30000000000s502","type":"text","x":2760,"y":190,"width":480,"height":90,"text":"人肉帶貨(需 manpower 申請)"},
+		{"id":"c30000000000s503","type":"text","x":2760,"y":320,"width":480,"height":100,"color":"1","text":"備援:跨帳戶向 Orange 借大貨\n(事後還一台)"},
+		{"id":"c30000000000s504","type":"file","file":"Relationship Management/Zhang Ziyi 84271109.md","x":2760,"y":460,"width":480,"height":180},
+		{"id":"c30000000000s600","type":"group","x":3400,"y":0,"width":560,"height":680,"color":"2","label":"S6 · 使用 / 歸還"},
+		{"id":"c30000000000s601","type":"text","x":3440,"y":60,"width":480,"height":90,"text":"客戶試用 / 展示"},
+		{"id":"c30000000000s602","type":"text","x":3440,"y":190,"width":480,"height":90,"text":"歸還 / 還機(借貨需還一台)"},
+		{"id":"c30000000000s603","type":"text","x":3440,"y":320,"width":480,"height":110,"color":"1","text":"★ 機關樣機管理員:待識別\nO3 核心缺口 — 問子怡"},
+		{"id":"c30000000000pk00","type":"group","x":0,"y":820,"width":1240,"height":360,"color":"1","label":"🅿 Parking Lot · 新環節/新對接人待歸位"},
+		{"id":"c30000000000pk01","type":"text","x":40,"y":880,"width":560,"height":80,"text":"對話中冒出的新環節、例外路徑、新對接人先丟這裡,\n散會後再插入流程。"}
+	],
+	"edges":[
+		{"id":"c3e0000000000001","fromNode":"c30000000000s100","fromSide":"right","toNode":"c30000000000s200","toSide":"left"},
+		{"id":"c3e0000000000002","fromNode":"c30000000000s200","fromSide":"right","toNode":"c30000000000s300","toSide":"left"},
+		{"id":"c3e0000000000003","fromNode":"c30000000000s300","fromSide":"right","toNode":"c30000000000s400","toSide":"left"},
+		{"id":"c3e0000000000004","fromNode":"c30000000000s400","fromSide":"right","toNode":"c30000000000s500","toSide":"left"},
+		{"id":"c3e0000000000005","fromNode":"c30000000000s500","fromSide":"right","toNode":"c30000000000s600","toSide":"left"},
+		{"id":"c3e0000000000006","fromNode":"c30000000000s401","fromSide":"bottom","toNode":"c30000000000s503","toSide":"top","color":"1","label":"無庫存 → 備援"}
+	]
+}

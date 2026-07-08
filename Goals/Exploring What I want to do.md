@@ -20,7 +20,7 @@ type: career-strategy
 > **Record of the 2026-07-03 career-strategy session.**
 > **Outcome: goal LOCKED IN — Solutions Engineer / Presales at an AI SaaS or cloud-infrastructure company.**
 > Scores: Presales/Solutions **9/10** (Leverage 4, Energy 5) · Post-sales 6/10 (4, 2) · AI PM 5/10 (2, 3).
-> Follow-up & execution plan: [[SA-SE Lock-In — Gap Audit & 30-Day Sprint]]
+> Follow-up & execution plan: [[SA Lock-In — Gap Audit & 30-Day Sprint]]
 
 ---
 
@@ -313,4 +313,4 @@ _關於兩個可能會引發爭議的分數的註解：_
 - **14-day action:** (1) Career Hub → one-page customer-style solution brief + 5-min demo video; (2) LinkedIn headline redeployed in solutions language; (3) one real presales artifact at Huawei finished to presentable quality ([[Fill FWA Roadmap Section 1.3]] or [[Account Gap and Opportunity Analysis]]), presented via the SCQA slot. Then 10 SE applications in 30 days with the case study attached.
 - **Vault freeze ordered:** the meta-system is done; the next system built is one a hiring manager watches being demoed.
 
-**→ Execution continues in [[SA-SE Lock-In — Gap Audit & 30-Day Sprint]]** (Part 2: fake vs. real gap audit, 30-day sprint plan, application tripwire at day 14).
+**→ Execution continues in [[SA Lock-In — Gap Audit & 30-Day Sprint]]** (Part 2: fake vs. real gap audit, 30-day sprint plan, application tripwire at day 14).

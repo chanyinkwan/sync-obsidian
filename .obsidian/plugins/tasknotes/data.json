@@ -639,6 +639,18 @@
       "requestedAt": 1783351940471,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/SCQA Transcript.md",
+      "requestedAt": 1783502050379,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/SCQA Meeting.md",
+      "requestedAt": 1783502099202,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {
@@ -646,7 +658,7 @@
     "timeRemaining": 300,
     "nextSessionType": "short-break"
   },
-  "lastPomodoroDate": "2026-07-05",
+  "lastPomodoroDate": "2026-07-07",
   "pomodoroHistory": [
     {
       "id": "1781772563658",
@@ -1144,7 +1156,112 @@
           "endTime": "2026-07-06T17:51:09.896+01:00"
         }
       ]
+    },
+    {
+      "id": "1783502278595",
+      "startTime": "2026-07-08T10:17:58.595+01:00",
+      "endTime": "2026-07-08T10:42:58.595+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "taskPath": "Operation Note/8-7-2026 SCQA Meeting.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-08T10:17:58.595+01:00",
+          "endTime": "2026-07-08T10:42:58.595+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1783503997595",
+      "startTime": "2026-07-08T10:46:37.595+01:00",
+      "endTime": "2026-07-08T11:11:37.595+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "taskPath": "Tasks/8-7-2026 SCQA Meeting.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-08T10:46:37.595+01:00",
+          "endTime": "2026-07-08T11:11:37.595+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1783507421109",
+      "startTime": "2026-07-08T11:43:41.109+01:00",
+      "endTime": "2026-07-08T11:43:44.003+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "taskPath": "Operation Note/8-7-2026 SCQA Meeting.md",
+      "completed": false,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-08T11:43:41.109+01:00",
+          "endTime": "2026-07-08T11:43:44.003+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1783507431480",
+      "startTime": "2026-07-08T11:43:51.480+01:00",
+      "endTime": "2026-07-08T11:48:51.480+01:00",
+      "plannedDuration": 5,
+      "type": "work",
+      "taskPath": "Operation Note/8-7-2026 SCQA Meeting.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-08T11:43:51.480+01:00",
+          "endTime": "2026-07-08T11:48:51.480+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1783507752043",
+      "startTime": "2026-07-08T11:49:12.043+01:00",
+      "endTime": "2026-07-08T11:54:12.043+01:00",
+      "plannedDuration": 5,
+      "type": "work",
+      "taskPath": "Operation Note/8-7-2026 SCQA Meeting.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-08T11:49:12.043+01:00",
+          "endTime": "2026-07-08T11:54:12.043+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1783518006486",
+      "startTime": "2026-07-08T14:40:06.486+01:00",
+      "endTime": "2026-07-08T15:05:06.486+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "taskPath": "Tasks/SCQA O1 - Paddington Office Map.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-08T14:40:06.486+01:00",
+          "endTime": "2026-07-08T15:05:06.486+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1783519513781",
+      "startTime": "2026-07-08T15:05:13.781+01:00",
+      "endTime": "2026-07-08T15:30:13.781+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "taskPath": "Tasks/SCQA O1 - Paddington Office Map.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-08T15:05:13.781+01:00",
+          "endTime": "2026-07-08T15:30:13.781+01:00"
+        }
+      ]
     }
   ],
-  "lastSelectedTaskPath": "Operation Note/8-7-2026 SCQA Prep.md"
+  "lastSelectedTaskPath": "Tasks/SCQA O1 - Paddington Office Map.md"
 }

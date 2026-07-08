@@ -21,6 +21,7 @@ tags:
 - **生態 / DCB**:與生態團隊辦 DCB workshop、客戶生態交流會。
 - **Smartphone Workshop**(羅馬,6/5);HUAWEI Store MBB 可售清單;Super MiFi KSP;WindTre ODU 配件客製;H3G global workshop(FWA & smartphone)。
 - **App Touch 專案**:法律風險→談判終止。**策略 roadmap**(就是你在做的 FWA BD)。MWC Shanghai followup;核心客戶中國/香港高訪;到期樣機銷帳。
+- **樣機 / 用機管理(Kess 接手,7/8)**:櫃子盤點完成、Excel 已與實體對齊(盒⇄機、Excel⇄櫃子兩不一致問題已解);下一步建 in-out record 表單(off-record,可先在 Excel 加「誰拿/備註/日期」)。**Pura 90(Pro/Ultra)客戶樣機**:申請已提、尚未出庫,待機關樣機負責人走完 出庫→歐洲投遞(郵寄或深圳提貨帶回)流程——Kess 七月要全程走通並認識機關樣機管理員。
 
 **Telefonica — by Qixuan / Kaili / Emilio**
 - **Amazon 營運**:PSI / SO / SI 目標、SMR、Prime Day(PD)大促與廣告、ASIN / Andon Cord 風險、Vendor Central、DSP 自營試點。
@@ -52,10 +53,11 @@ tags:
 - 路由器:**X2 Pro / X3 Pro / V3 / VN1 / X2**。**Super MiFi**(可攜式);**MiFi**。
 - **ODU / IDU** = Outdoor / Indoor Unit(FWA 室外/室內機)。**CPE** = 客戶端設備。**MBB** = Mobile Broadband。**FWA** = 固定無線接入。
 - **WiFi 6 / 7(2x2)/ 8** = CPE 標準世代。**prpl / PRPL** = 開放寬頻軟體框架。
-- 手機:**Pura 90**。穿戴/音訊:FreeBuds / FreeClip(代號見上)。**TGS MINI** ⚠(德國一款裝置)。
+- 手機:**Pura 90**(含 Pro / Ultra;ASR 曾把「Ultra」拼成「90 澳洲」)。穿戴/音訊:FreeBuds / FreeClip(代號見上)。**TGS MINI** ⚠(德國一款裝置)。
 
 **流程 / 會議 / 縮寫**
 - **機關** = 總部(HQ)職能部門;**GTM** = Go-To-Market(總部產品行銷)。**地區部** = Regional(歐洲、東北歐地區部)。**系統部** = System Dept。
+- **組織鏈(7/8 主管確認,由下而上)**:5T 之一 = **大 T 和 IoT 業務部**(即和記業務部,負責 5 大 T + 整個歐洲 IoT)→ **歐洲中東地區部** → 機關 **MSS 部門** ⚠ → 終端 CD / 整個終端 → 華為公司。**歐洲 CBG** = 歐洲消費者 BG(地區部之上、HQ 概念)。往上聯繫原則:直屬地區部/機關的人要熟到職責;曾黎以上(Tony 等)只需「知道是誰」,勿貿然聯繫。
 - **1組 / 2組** ⚠ = 晨會分兩組(和記/TEF 在 2 組;DT/法電/VDF/路由在 1 組——**請向 Ziyi 確認分組**)。
 - **准入 / 集團准入** = 市場/集團上市核准(homologation)。**圈量** = 客戶承諾的量(volume lock-in)。**答標 / 標書** = 投標回應。**選型會** = 客戶選型(vendor selection)。**分貨規則** = 樣機/貨源分配規則。**排產** = 生產排程。**TA** = Type Approval(型式核准)。
 - **QRR / pre-QRR** ⚠ = (季度)某 Review(VDF);**SRS / pre-SRS** ⚠(Orange);**SMR** ⚠(2C router,疑為 Stock/Sales Mgmt Review);**MoM** = Minutes of Meeting。
@@ -74,10 +76,10 @@ tags:
 
 **人(群裡常出現,for 交接)**
 - **Ziyi Zhang 84434577** = 和記(交給你);**Qixuan Wang wx1252689**(云琪?⚠)= TEF/Amazon;**Kaili Li wx1252688(凱莉)** = TEF/Orange/VDF 樣機與活動;**Zhang Ziyi 84271109** = Orange,**也負責貼 1組綜合待辦**(≠ mentor 同名)。
-- 和記團隊:**丁程/程哥**(account lead)、**Selina(Huang Yi 84411269)**、**Michele Cappabianca**(手機/FWA 技術)。
-- 其他:**嚴佳/Jerry Hsueh**(法電/DT 談判)、**陳新/Xin Chen**(DT 技術)、**Olivier CADENE**(Orange 技術/RFQ)、**張銉**(路由器/機關 XG 材料)、**俞碧斐/碧斐** = [[yubeifei y00663235]](競爭分析/IOT 例會;歐洲 FWA/CPE 路標協調人——ATP 產能分配、對客成本/價格唯一口徑、主持 7/2 產品路標會)、**李楊(Li Yang)**(行政/績效)、**張明豪/明豪**(TEF/客戶)、**林穎署(Yingshu Lin)**(合規)、**曾力(Zeng Li)/黎叔** ⚠(資深主管,常轉述高層講話);上層:**Colin / Tony / 華哥 / 陳軍 / 余總 / 何總**。
+- 和記團隊:**丁程/程哥**(account lead;**Kess 直屬主管**——7/8 定七月方向:內部/客戶組織 + portfolio 熟悉)、**Selina(Huang Yi 84411269)**(客戶關係口徑:客戶人/背景找她)、**Michele Cappabianca**(手機/FWA 技術)。
+- 其他:**嚴佳/Jerry Hsueh**(法電/DT 談判)、**陳新/Xin Chen**(DT 技術)、**Olivier CADENE**(Orange 技術/RFQ)、**張銉**(路由器/機關 XG 材料)、**俞碧斐/碧斐** = [[yubeifei y00663235]](競爭分析/IOT 例會;歐洲 FWA/CPE 路標協調人——ATP 產能分配、對客成本/價格唯一口徑、主持 7/2 產品路標會)、**李楊(Li Yang)**(行政/績效)、**張明豪/明豪**(Kaili 帳戶負責人;7/8 確認,ASR 拼作「名号」)、**林穎署(Yingshu Lin)**(地區部**樣機**負責人,曾黎下屬;7/8 主管確認——先前記為「合規」待核 ⚠)、**曾力/曾黎(Zeng Li)/黎叔**(**大 T 和 IoT 業務部 boss**;林穎署、碧斐、程哥等皆其下屬,其上級為 Tony/榮濤);上層:**Tony(=榮濤/Rongtao,歐洲終端 BG 負責人,曾黎上級)/ Colin / 華哥 / 陳軍 / 余總 / 何總**。
 - 產品路標會(7/2 新增):⚠ **石小波/小波/宋博** = [[shixiaobo s00544127]](機關產品線,H175 / H168 裁剪負責,ASR 拼法多變待確認)、⚠ **小郭** (機關產品線,達標策略窗口)、**Donghao** = [[Donghao d00622509]](帳戶側,排產/ATP 對接)。⚠ **嘉杉(Jiashan)** = 去年 Dominic/FWA BD 問卷第一輪唯一參加者(全名/工號待確認;7/3 晨會提及,ASR 拼作「假山」)。
-- 客戶側人名:Leonor Ostos(TME)、Jose Angel Rivas(TEF Vendor Mgmt)、Andreas/Jaime(GCTIO/GDU)、Bastian(TEF)、**Dominique / Dominic**(內部——FWA BD 作者 Dominique Rousseau;7/1 策略 workshop 已開、報告二稿進行中;其 MBB 問卷 7/2「天降」TEF 側 Kaili/Qixuan/Emilio;ASR 常拼成「多美尼克/多米尼克/Storman Act」)、Agos/Dennis/Mark、**Cameron(Cameron Hole)**(和記客戶;與 Dennis 的 range review 會 8/11–17)、Aurora store。
+- 客戶側人名:Leonor Ostos(TME)、Jose Angel Rivas(TEF Vendor Mgmt)、Andreas/Jaime(GCTIO/GDU)、Bastian(TEF)、**Dominique / Dominic**(內部——FWA BD 作者 Dominique Rousseau;7/1 策略 workshop 已開、報告二稿進行中;其 MBB 問卷 7/2「天降」TEF 側 Kaili/Qixuan/Emilio;ASR 常拼成「多美尼克/多米尼克/Storman Act」)、Agos/**Dennis**(和記**一號/最大客戶**,7/8 確認)/Mark、**Kevin** ⚠(和記客戶側人名,待確認)、**Dominic** ⚠(和記側**顧問 consultant**,非客戶;待確認是否同上 Dominique Rousseau)、**Cameron(Cameron Hole)**(和記客戶;與 Dennis 的 range review 會 8/11–17)、Aurora store。
 
 ## 3. 晨會紀要格式(供日後「錄音→我整理」用)
 

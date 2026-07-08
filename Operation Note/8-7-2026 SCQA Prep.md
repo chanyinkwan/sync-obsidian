@@ -1,9 +1,9 @@
 ---
-status: doing
+status: done
 priority: high
 scheduled: 2026-07-08
 dateCreated: 2026-07-06T16:32:20.393+01:00
-dateModified: 2026-07-06T17:54:44.175+01:00
+dateModified: 2026-07-08T10:52:34.969+01:00
 tags:
   - task
 contexts:
@@ -14,6 +14,7 @@ timeEntries:
   - startTime: 2026-07-06T16:26:16.501Z
     description: Work session
     endTime: 2026-07-06T16:54:44.175Z
+completedDate: 2026-07-08
 ---
 
 Source links:

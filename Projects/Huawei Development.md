@@ -12,7 +12,7 @@ tags:
 
 ## Goal / my scope
 - Run the recurring **15-min McKinsey-style SCQA alignment** with my manager: surface a structural field observation, pitch a Situation → Complication → Question → Answer canvas, and secure **"True or Not / Feasible or Not"** validation.
-- Convert each cycle's work into industry-standard assets (Deal Governance / Scoping / Pricing) and career capital toward the SA/SE + Deal Desk targets. See [[SA-SE Lock-In — Gap Audit & 30-Day Sprint]].
+- Convert each cycle's work into industry-standard assets (Deal Governance / Scoping / Pricing) and career capital toward the SA/SE + Deal Desk targets. See [[SA Lock-In — Gap Audit & 30-Day Sprint]].
 
 ## Cadence
 - **Wednesdays · 15 min** with [[Manager]] (⚠ confirm the SCQA manager). One prep note per cycle → `Operation Note/<date> SCQA Prep (Huawei Development)`.

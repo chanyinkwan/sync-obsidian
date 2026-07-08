@@ -6,7 +6,10 @@ hub: "[[Life @Huawei System]]"
 tags:
   - reference
   - product-knowledge
+projects:
+  - "[[8-7-2026 SCQA Meeting]]"
 ---
+[[8-7-2026 SCQA Prep]]
 # H3G Operating Model — Three Cycles
 
 > My working map of the account's three cycles, drawn from our notes/meetings. Use for the SCQA "Product / Operation understanding". ⚠ = my onboarding read — verify with manager/Ziyi ("True or Not").

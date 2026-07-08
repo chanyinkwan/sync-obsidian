@@ -50,8 +50,3 @@ SORT status ASC
 ```
 
 ---
-### 純文字 fallback(Dataview 萬一失效時的保險)
-- [[FWA Business Development]]
-- [[Sample Management Ops]]
-- [[Career Hub Management]]
-- [[Mistakes Log]]
