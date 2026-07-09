@@ -9,7 +9,7 @@ role: 樣機管理(Orange 帳戶)
 location:
 languages: Mandarin
 email:
-relationship: 1
+relationship: 4
 status: active
 last_contact: 2026-06-24
 tags:

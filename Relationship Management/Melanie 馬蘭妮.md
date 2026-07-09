@@ -9,7 +9,7 @@ role: Customer contact
 location:
 languages:
 email:
-relationship: 2
+relationship: 1
 status: active
 last_contact: 2026-06-16
 tags:

@@ -11,7 +11,7 @@ tags:
 # Product Roadmap Meeting — Notes (2 Jul 2026)
 
 **Main speaker:** [[yubeifei y00663235]] (Beifei)
-**On call:** [[Jia Yan j00270380]] · [[Donghao d00622509]] · [[shixiaobo s00544127]] (HQ product line, joined late ⚠) · our side: [[Ding Cheng 00611102 (程哥)]], [[Ziyi Zhang 84434577]]
+**On call:** [[Jia Yan j00270380]] · [[Donghao d00622509]] · [[shixiaobo s00544127]] (HQ product line, joined late ⚠) · our side: [[Ding Cheng 00611102 (程哥or 丁程)]], [[Ziyi Zhang 84434577]]
 
 ## What is this meeting for
 

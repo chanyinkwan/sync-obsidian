@@ -19,12 +19,12 @@ tags:
 ## Kiran Gosal Kang
 
 ## At a glance
-- **Role:** 
-- **What they care about / their stake:** 
-- **How to work with them:** 
+- **Role:** Talent / recruiting contact at Trip.com (London).
+- **What they care about / their stake:** 待補 To fill.
+- **How to work with them:** LinkedIn connection — [profile](https://www.linkedin.com/in/kirankanggosal/). Potential external-opportunity touchpoint.
 
 ## Background
-
+External LinkedIn contact at Trip.com (talent side). Relevant to the external-sync track (industry/opportunity scanning) rather than Huawei ops.
 
 ## Last meeting / interaction
 ```dataview

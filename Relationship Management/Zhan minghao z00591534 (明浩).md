@@ -2,15 +2,15 @@
 type: contact
 category: internal
 name: 明浩
-employee_id:
+employee_id: "z00591534"
 aka: Minghao
 aliases: [Minghao, 明浩]
-org: Huawei CBG — 大T
-role: Team member
+org: Huawei CBG — 大T · Telefonica 系統部
+role: Telefonica Account Holder
 location:
 languages:
 email:
-relationship: 1
+relationship: 3
 status: active
 last_contact:
 tags:
@@ -19,7 +19,7 @@ tags:
 # 明浩 (Minghao)
 
 ## At a glance
-- **Role:** Team member (download attendee).
+- **Role:** Telefonica Account Holder
 - **What they care about / their stake:** Phone customization alignment across networks.
 - **How to work with them:** Fill in remit as I learn it.
 

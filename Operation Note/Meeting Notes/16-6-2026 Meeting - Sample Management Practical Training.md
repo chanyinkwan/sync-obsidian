@@ -114,12 +114,12 @@ tags:
 | Ziyi Zhang                          | Mentor, GTM Ops; 1-month handover                                   | Your day-to-day trainer; default approver for self-use                 | [[Ziyi Zhang 84434577]] |     |
 | Lin Yingshu (林穎署)                   | Sample administrator (機關) for all 大T samples | First point of contact; controls forecast & production | [[Lin Yingshu 林穎署]] |
 | Michele Cappabianca 00473733        | Italy tech colleague; account holder; admission owner | Very busy, replies delayed, keep chasing; account had issues | [[Michele Cappabianca 00473733]] |
-| Ding Cheng (程哥) 00611102            | UK account holder; main responsibility for receipts/write-off | Cares most about getting signed receipts back | [[Ding Cheng 00611102 (程哥)]] |
+| Ding Cheng (程哥) 00611102            | UK account holder; main responsibility for receipts/write-off | Cares most about getting signed receipts back | [[Ding Cheng 00611102 (程哥or 丁程)]] |
 | Huang Yi (Selina) 84411269          | Account Manager, customer-facing | Hands documents to customers for signature | [[Huang Yi 84411269 (Selina)]] |
 | Regional allocation person          | Per-category quota allocator | Coordinate/chase for extra units when quota runs out | — |
 | Kaidiliya Ainiwaer (Kaiya) 84425233 | Holds print card; reception handling | Logistics on-site contact | [[Kaidiliya Ainiwaer 84425233 (Kaiya)]] |
 
-> Contacts: [[Lin Yingshu 林穎署]] · [[Michele Cappabianca 00473733]] · [[Ding Cheng 00611102 (程哥)]] · [[Huang Yi 84411269 (Selina)]] · [[Kaidiliya Ainiwaer 84425233 (Kaiya)]]
+> Contacts: [[Lin Yingshu 林穎署]] · [[Michele Cappabianca 00473733]] · [[Ding Cheng 00611102 (程哥or 丁程)]] · [[Huang Yi 84411269 (Selina)]] · [[Kaidiliya Ainiwaer 84425233 (Kaiya)]]
 
 ## 7. Pain Points & Solution Seeds  `#scqa-feed`
 - **Observed pain point:** Sample tracking is heavily **manual and memory-dependent**. The system export has no remarks column (forced VLOOKUP merge), every cabinet in/out is logged by hand, receipts arrive late, and expiry/lost-unit awareness relies on individual memory + WeChat announcements. When volume scales this breaks — and expiry/loss carry **compliance + cost (賠錢) consequences** (internal notification on expiry; an already-lost unit inherited from a prior owner).

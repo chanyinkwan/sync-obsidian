@@ -10,7 +10,7 @@ role: Telefonica Account Manager
 location:
 languages:
 email:
-relationship: 3
+relationship: 4
 status: active
 last_contact:
 tags:

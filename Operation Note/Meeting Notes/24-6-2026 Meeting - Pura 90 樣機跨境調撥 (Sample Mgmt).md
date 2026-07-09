@@ -44,7 +44,7 @@ tags:
 | **優先歐洲版**,不行才用海外通用版 | 頻段/相容性風險低 | Ziyi |
 | 走**人肉帶貨** | 海外通用版不能 PO 直寄 | Ziyi |
 | 跨帳戶向 **Orange 借大貨**(事後還一台)當備援 | 自家庫存已罄、爭取時效 | Ziyi |
-| 表單主管填 **程哥**([[Ding Cheng 00611102 (程哥)]]) | 帳戶掛賬人/審批 | Ziyi |
+| 表單主管填 **程哥**([[Ding Cheng 00611102 (程哥or 丁程)]]) | 帳戶掛賬人/審批 | Ziyi |
 
 ## 5. Action Items
 | #   | Action                                                                                                               | Owner  | Due | Status            |
@@ -77,4 +77,4 @@ tags:
 - Project: [[Sample Management Ops]]
 - 今日日記: [[24-6-2026 Daily Operations Day 13]]
 - 逐字稿: [[24-6-2026 Meeting - Pura 90 樣機跨境調撥 - Transcript]]
-- 主管(掛賬/審批): [[Ding Cheng 00611102 (程哥)]]
+- 主管(掛賬/審批): [[Ding Cheng 00611102 (程哥or 丁程)]]

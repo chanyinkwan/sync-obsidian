@@ -11,7 +11,7 @@ role: Reception / logistics support
 location: UK office
 languages:
 email:
-relationship: 2
+relationship: 4
 status: active
 last_contact:
 tags:

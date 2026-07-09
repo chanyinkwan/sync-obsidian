@@ -9,7 +9,7 @@ role: Italy tech colleague / account holder
 location: Italy
 languages: Italian, English
 email:
-relationship: 2
+relationship: 3
 status: active
 last_contact:
 tags:

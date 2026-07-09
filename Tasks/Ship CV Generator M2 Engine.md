@@ -1,5 +1,4 @@
 ---
-title: Track A — Ship CV Generator M2 Engine
 status: todo
 priority: high
 due: 2026-09-23
@@ -11,8 +10,10 @@ tags:
 contexts:
   - hub
 tasknotes_manual_order: tnqgmzzzzzzv
+dateModified: 2026-07-09T16:49:33.577+01:00
 ---
-# Track A — Ship CV Generator M2 Engine
+
+Ship CV Generator M2 Engine
 
 ## Deliverable (what "done" looks like)
 - 90 日 north-star：input 一份 JD + base CV → M2「客製化」prompt chain → 輸出 tailored CV，end-to-end 跑得通（要 work，唔使靚）。
@@ -29,4 +30,3 @@ tasknotes_manual_order: tnqgmzzzzzzv
 - [ ] （ship 後）寫一篇 build-in-public 帖
 
 ## Working notes / draft
-

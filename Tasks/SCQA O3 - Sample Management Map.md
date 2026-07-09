@@ -1,6 +1,6 @@
 ---
 title: SCQA O3 - Sample Management Map
-status: todo
+status: hold
 priority: medium
 tags:
   - task
@@ -8,6 +8,7 @@ projects:
   - "[[8-7-2026 SCQA Meeting]]"
 contexts:
   - work
+dateModified: 2026-07-09T16:27:41.562+01:00
 ---
 # O3 · 樣機管理流程圖 — Sample Management Map
 

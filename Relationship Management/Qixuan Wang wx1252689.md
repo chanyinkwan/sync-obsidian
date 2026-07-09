@@ -10,7 +10,7 @@ role: Product / Launch & Market
 location:
 languages:
 email:
-relationship: 2
+relationship: 4
 status: active
 last_contact: 2026-06-17
 tags:

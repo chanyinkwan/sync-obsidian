@@ -13,7 +13,7 @@
 		{"id":"c30000000000s203","type":"text","x":720,"y":400,"width":480,"height":80,"text":"案例:Ziyi 向 yasi 申請海外通用版"},
 		{"id":"c30000000000s300","type":"group","x":1360,"y":0,"width":560,"height":680,"color":"5","label":"S3 · 審批 / 公單"},
 		{"id":"c30000000000s301","type":"text","x":1400,"y":60,"width":480,"height":90,"text":"「委託發貨」公單 — 主管欄填:程哥"},
-		{"id":"c30000000000s302","type":"file","file":"Relationship Management/Ding Cheng 00611102 (程哥).md","x":1400,"y":190,"width":480,"height":180},
+		{"id":"c30000000000s302","type":"file","file":"Relationship Management/Ding Cheng 00611102 (程哥or 丁程).md","x":1400,"y":190,"width":480,"height":180},
 		{"id":"c30000000000s400","type":"group","x":2040,"y":0,"width":560,"height":680,"color":"5","label":"S4 · 庫存確認"},
 		{"id":"c30000000000s401","type":"text","x":2080,"y":60,"width":480,"height":100,"text":"版本優先序:① 歐洲版\n② 海外通用版(無庫存才用)"},
 		{"id":"c30000000000s402","type":"text","x":2080,"y":200,"width":480,"height":100,"text":"檢查頻段/硬體差異\n(國內版 vs 歐版 → 樣機可用性)"},

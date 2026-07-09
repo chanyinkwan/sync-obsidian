@@ -99,7 +99,7 @@ Number logic: higher ≈ newer / higher tier. Regional suffixes (e.g. E5785**Lh-
 
 ## 7. People
 
-People now live as individual CRM-style contact notes — see **[[Huawei Key Contacts]]** for the dashboard (background, last meeting, open actions per person):
+People now live as individual CRM-style contact notes — see **[[0 Huawei Key Contacts]]** for the dashboard (background, last meeting, open actions per person):
 
 ---
 

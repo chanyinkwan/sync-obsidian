@@ -651,6 +651,36 @@
       "requestedAt": 1783502099202,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/TSMP In and Out Record.md",
+      "requestedAt": 1783594180164,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/Sample Management Playbook.md",
+      "requestedAt": 1783594353955,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/Onboarding Reflection.md",
+      "requestedAt": 1783610976800,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/how to become a Solution Architect (Presales).md",
+      "requestedAt": 1783611841876,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Identify what is a solution Architect.md",
+      "requestedAt": 1783611925039,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {
@@ -658,7 +688,7 @@
     "timeRemaining": 300,
     "nextSessionType": "short-break"
   },
-  "lastPomodoroDate": "2026-07-07",
+  "lastPomodoroDate": "2026-07-08",
   "pomodoroHistory": [
     {
       "id": "1781772563658",
@@ -1261,7 +1291,66 @@
           "endTime": "2026-07-08T15:30:13.781+01:00"
         }
       ]
+    },
+    {
+      "id": "1783586624723",
+      "startTime": "2026-07-09T09:43:44.723+01:00",
+      "endTime": "2026-07-09T10:08:44.723+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "taskPath": "Operation Note/TSMP Stock Take and Deadline Management System.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-09T09:43:44.723+01:00",
+          "endTime": "2026-07-09T10:08:44.723+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1783602188090",
+      "startTime": "2026-07-09T14:03:08.090+01:00",
+      "endTime": "2026-07-09T14:28:08.090+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "taskPath": "Tasks/8-7-2026 SCQA Meeting.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-09T14:03:08.090+01:00",
+          "endTime": "2026-07-09T14:28:08.090+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1783603700928",
+      "startTime": "2026-07-09T14:28:20.928+01:00",
+      "endTime": "2026-07-09T14:33:20.928+01:00",
+      "plannedDuration": 5,
+      "type": "short-break",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-09T14:28:20.928+01:00",
+          "endTime": "2026-07-09T14:33:20.928+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1783604009577",
+      "startTime": "2026-07-09T14:33:29.577+01:00",
+      "endTime": "2026-07-09T14:58:29.577+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "taskPath": "Tasks/8-7-2026 SCQA Meeting.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-09T14:33:29.577+01:00",
+          "endTime": "2026-07-09T14:58:29.577+01:00"
+        }
+      ]
     }
   ],
-  "lastSelectedTaskPath": "Tasks/SCQA O1 - Paddington Office Map.md"
+  "lastSelectedTaskPath": "Tasks/8-7-2026 SCQA Meeting.md"
 }

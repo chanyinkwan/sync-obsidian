@@ -6,7 +6,10 @@ tags:
   - reflection
   - review
 ---
-# 8-7-2026 Onboarded 1 Month Reflection
+# 8-7-2026 Monthly Reflection
+
+
+What do you want to achieve here in this journey
 
 ## Prompt 1 回覆 — 個人使用回顧報告
 
@@ -37,7 +40,7 @@ tags:
 
 ### 3. 反覆出現但從未真正解決的問題
 
-1. **🔴 Track A（進攻端）零執行**——最嚴重的一項。6/23 audit 已標記「Track 2 has 0% progress」；6/25 寫了 [[Career Hub Goal]]、設了 R/Y/G 記分板與每週兩個 deep-work block——**但記分板至今停在 W0，一次都沒填過；[[Track A — Ship CV Generator M2 Engine]] 自 6/27 排程起 status 一直是 todo**。診斷做了三次，執行零次。更深一層：**「建系統」本身變成了逃避執行的方式**——每次感到 Track A 焦慮，反應是再優化一次 vault。
+1. **🔴 Track A（進攻端）零執行**——最嚴重的一項。6/23 audit 已標記「Track 2 has 0% progress」；6/25 寫了 [[Career Hub Goal]]、設了 R/Y/G 記分板與每週兩個 deep-work block——**但記分板至今停在 W0，一次都沒填過；[[Ship CV Generator M2 Engine]] 自 6/27 排程起 status 一直是 todo**。診斷做了三次，執行零次。更深一層：**「建系統」本身變成了逃避執行的方式**——每次感到 Track A 焦慮，反應是再優化一次 vault。
 2. **淺層消化 / AI 代讀**——6/22 FWA 財報事件（沒自己讀財報就交付 insight）觸發了 Mistakes Log，但同類問題 7/2 又以「C5：資訊沒消化成原子筆記」的形式出現；當時提議的「digest 成 atomic notes」skill **從未動工**（`.claude/skills/` 至今只有 2 個 skill）。
 3. **職涯方向反覆重開機**——6/23 audit 談方向、7/3 兩場 shadow-work session 結論是「SA/SE 是 singular, non-negotiable lock-in」，但同日的 CV 工作瞄準的是 Trip.com Senior PM，CLAUDE.md 的 target roles 還是 Deal Desk / Analyst / AI SE 三個並列。每次教練 session 都從頭 re-derive，沒有一份「已鎖定決策」的記錄讓下一次對話站在上一次的肩膀上。
 4. **逐字稿準確度**——7/1 提出（義大利/普通話口音英文的 ASR 不可靠），討論過但沒有落地的改善機制（如：會前定義關鍵詞表、會後 5 分鐘人工標記重點段落）。

@@ -11,7 +11,7 @@ role: Account Manager / Demand Capture Lead
 location:
 languages:
 email:
-relationship: 3
+relationship: 4
 status: active
 last_contact: 2026-06-17
 tags:

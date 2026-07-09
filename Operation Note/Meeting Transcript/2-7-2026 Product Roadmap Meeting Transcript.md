@@ -5,7 +5,7 @@ account_or_project: FWA/CPE Product Roadmap (cross-account)
 host: "[[yubeifei y00663235]]"
 attendees:
   - "[[yubeifei y00663235]]"
-  - "[[Ding Cheng 00611102 (程哥)]]"
+  - "[[Ding Cheng 00611102 (程哥or 丁程)]]"
   - "[[Ziyi Zhang 84434577]]"
   - "[[Jia Yan j00270380]]"
   - "[[Donghao d00622509]]"
@@ -18,7 +18,7 @@ tags:
 # Product Roadmap Meeting — 2 Jul 2026
 
 **Date:** 2026-07-02 · **Duration:** ~6 min (Part 1) + ~55 min (Part 2, two recordings — timestamps are recording-elapsed, not clock time) · **Host / main speaker:** [[yubeifei y00663235]] (Beifei — European FWA/CPE portfolio & roadmap coordinator) · **Location:** WeLink call
-**Our side:** [[Ding Cheng 00611102 (程哥)]], [[Ziyi Zhang 84434577]] · **Also on call:** [[Jia Yan j00270380]], [[Donghao d00622509]], [[shixiaobo s00544127]] ⚠ (HQ product line — joined Part 2 at ~28:18)
+**Our side:** [[Ding Cheng 00611102 (程哥or 丁程)]], [[Ziyi Zhang 84434577]] · **Also on call:** [[Jia Yan j00270380]], [[Donghao d00622509]], [[shixiaobo s00544127]] ⚠ (HQ product line — joined Part 2 at ~28:18)
 
 > Recording goal (user's note, preserved): identify the vision/purpose of this meeting and key speaker [[yubeifei y00663235]]'s role. Precise attribution of the other speakers is not required — minor speakers are labelled "Account team" below.
 

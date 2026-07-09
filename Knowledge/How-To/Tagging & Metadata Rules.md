@@ -70,7 +70,7 @@ contexts:
 | #task | 身分 | TaskNotes 任務 | TaskNotes 插件、專案筆記任務查詢、Home 儀表板 |
 | #daily | 身分 | 每日操作筆記 | (目前無查詢——保留,C2 修復後儀表板會用) |
 | #meeting | 身分 | 會議筆記 | 聯絡人筆記「最近互動」查詢 |
-| #contact | 身分 | 聯絡人 | [[Huawei Key Contacts]] 聚合查詢 |
+| #contact | 身分 | 聯絡人 | [[0 Huawei Key Contacts]] 聚合查詢 |
 | #project | 身分 | 專案 | Home 儀表板活躍專案表 |
 | #goal | 身分 | 目標 | — |
 | #skill | 身分 | 可複用技能原子 | (C5 修復後:複利層轉化率統計) |

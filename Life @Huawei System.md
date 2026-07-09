@@ -97,4 +97,4 @@ Auto Job Lookup --> CV Generator --+      LinkedIn Scraper
 - [[Weekly SCQA Reflection Template]] · [[Daily Reflection Template]] · [[Meeting Note Template]]
 - Daily 範例:[[9-6-2026 Daily Operations Day 2]] · [[10-6-2026 Daily Operations Day 3]] · [[15-6-2026 Daily Operations Day 6]]
 - 知識(待原子化):[[Source Note - Sample Management Knowledge]] · [[什麼是WTTx]]
-- [[Huawei Key Contacts]] �
+- [[0 Huawei Key Contacts]] �

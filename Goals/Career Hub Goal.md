@@ -43,7 +43,7 @@ tags:
 - **Due：2026-09-23**（設定日 +90 天）
 - **「做到」嘅定義（Definition of Done）：** 自己 input 一份 JD + 一份 base CV → M2「客製化」prompt chain → 輸出一份 tailored CV，過程 end-to-end 跑得通（唔使靚，要 work）。
 - 核心筆記：[[CV-Generator-MVP-Schema]]
-- 對應 task：[[Track A — Ship CV Generator M2 Engine]]
+- 對應 task：[[Ship CV Generator M2 Engine]]
 
 > 一個 milestone 就夠。其他（Build-in-Public、第一個 user）係 M2 ship 咗之後嘅下一回合。
 

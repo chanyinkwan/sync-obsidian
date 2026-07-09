@@ -9,7 +9,7 @@ role: 樣機挪貨負責人(HQ)
 location:
 languages: Mandarin
 email:
-relationship: 2
+relationship: 3
 status: active
 last_contact: 2026-06-24
 tags:

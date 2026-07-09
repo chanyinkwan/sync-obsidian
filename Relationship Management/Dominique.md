@@ -9,7 +9,7 @@ role: 顧問 / 原 Vodafone 重大決策者
 location:
 languages: English
 email:
-relationship: 1
+relationship: 2
 status: active
 last_contact: 2026-06-24
 tags:

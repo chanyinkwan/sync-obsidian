@@ -9,7 +9,7 @@ role: Sample Administrator (all 大T samples)
 location:
 languages: Mandarin
 email:
-relationship: 2
+relationship: 4
 status: active
 last_contact:
 tags:

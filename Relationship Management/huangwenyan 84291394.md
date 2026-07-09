@@ -1,30 +1,30 @@
 ---
 type: contact
-category: internal
-name: Charco
-employee_id:
+category: hq
+name: huangwenyan
+employee_id: "84291394"
 aka:
-org: Huawei CBG — Vodafone 帳戶
-role: 樣機管理(Vodafone 帳戶)
+org: Huawei — TSMP Administration
+role: Admin managing TSMP access rights
 location:
 languages: Mandarin
 email:
 relationship: 4
 status: active
-last_contact: 2026-06-24
+last_contact:
 tags:
   - contact
   - sample-resource
 ---
-# Charco
+# huangwenyan · 84291394
 
 ## At a glance
-- **Role:** Vodafone 帳戶的樣機管理同仁;掌握 Vodafone 側樣機申請與挪貨流程。
-- **What they care about / their stake:** 樣機額度、挪貨群協調、簽收/銷帳。
-- **How to work with them:** 直接問他挪貨群與流程;他會把你拉進「大T 挪貨群」對接。
+- **Role:** Admin managing TSMP access rights.
+- **What they care about / their stake:** Correct account permissions in TSMP.
+- **How to work with them:** Contact point when TSMP access/permission issues come up (e.g. new account, role change, 掛賬人 setup).
 
 ## Background
-2026-06-24:Vodafone 為核心客戶申請 Pura 90 樣機,**透過機關 GTM 挪貨成功**;把 Ziyi 拉進大T 挪貨群。是了解「機關挪貨怎麼走」的第一手窗口。
+Administrator for TSMP access rights — relevant to [[Sample Management Ops]] whenever platform permissions block an application, transfer, or write-off.
 
 ## Last meeting / interaction
 ```dataview

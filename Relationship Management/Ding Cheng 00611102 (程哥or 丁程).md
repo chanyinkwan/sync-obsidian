@@ -15,7 +15,7 @@ last_contact: 2026-06-17
 tags:
   - contact
 ---
-# Ding Cheng (程哥) · 00611102
+# Ding Cheng (程哥or 丁程) · 00611102
 
 ## At a glance
 - **Role:** Account lead; runs the Mon/Wed/Fri team download.
