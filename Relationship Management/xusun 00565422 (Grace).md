@@ -24,7 +24,7 @@ tags:
 - **How to work with them:** 待補 To fill — direct manager of [[ZHOU Yulu 84401415 (Lulu)]], [[Ni Shuyuan 84421757 (Sherene)]], and [[Miranda Yuan 84428748]].
 
 ## Background
-Heads the CBG UK Marketing and E-Commerce team. Team members identified so far: Lulu (KOL communication), Sherene (UK Marketing), Miranda (E-Commerce). [[James ST John Darwall Warren 00627122]] is also noted as Head of Marketing and E-Commerce — the exact split between them 待確認.
+Heads the CBG UK Marketing and E-Commerce team. Team members identified so far: Lulu (KOL communication), Sherene (UK Marketing), Miranda (E-Commerce). [[Fergus]] is also noted as Head of Marketing and E-Commerce — the exact split between them 待確認.
 
 ## Last meeting / interaction
 ```dataview

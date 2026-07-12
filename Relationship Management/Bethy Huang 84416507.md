@@ -1,29 +1,29 @@
 ---
 type: contact
 category: internal
-name: James ST John Darwall Warren
-employee_id: "00627122"
-aka: James
-org: Huawei CBG UK — Marketing & E-Commerce
-role: Head of International Media
-location: UK
-languages: English
+name: Bethy Huang
+employee_id: "84416507"
+aka: Bethy
+org: Huawei CBG UK
+role: Delivery
+location: London (Paddington)
+languages:
 email:
-relationship: 2
+relationship:
 status: active
 last_contact:
 tags:
   - contact
 ---
-# James ST John Darwall Warren · 00627122
+# Bethy Huang · 84416507
 
 ## At a glance
-- **Role:** Head of International Media as well — alongside [[xusun 00565422 (Grace)]].
+- **Role:** **Delivery**;台灣人(依 Kess O1 canvas 培訓現場筆記)。
 - **What they care about / their stake:** 待補 To fill.
 - **How to work with them:** 待補 To fill.
 
 ## Background
-Noted as Head of the Marketing and E-Commerce team, in parallel with Grace ([[xusun 00565422 (Grace)]]) — clarify how leadership is divided between them (e.g. local vs HQ-assigned, marketing vs e-commerce).
+2026-07-10 [[Ziyi Zhang 84434577|Ziyi]] 交接培訓(座位圖環節)首次記錄 —— 坐 [[Kaidiliya Ainiwaer 84425233 (Kaiya)|Kaiya]] 旁;Kess 現場筆記標注 Delivery / 台灣人(錄音中未提及,以現場筆記為準)。
 
 ## Last meeting / interaction
 ```dataview

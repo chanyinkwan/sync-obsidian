@@ -1,6 +1,5 @@
 ---
-title: SCQA O3 - Sample Management Map
-status: hold
+status: doing
 priority: medium
 tags:
   - task
@@ -8,8 +7,9 @@ projects:
   - "[[8-7-2026 SCQA Meeting]]"
 contexts:
   - work
-dateModified: 2026-07-09T16:27:41.562+01:00
+dateModified: 2026-07-10T16:13:44.791+01:00
 ---
+
 # O3 · 樣機管理流程圖 — Sample Management Map
 
 母任務:[[8-7-2026 SCQA Meeting]]
@@ -21,11 +21,9 @@ canvas: [[O3 · Sample Management Map.canvas]]
 
 ## 對象
 - 子怡 [[Ziyi Zhang 84434577]] + 機關樣機管理員(待識別)。
-
-## 範圍(待定 — 下次一起定義)
-- 格式 / 欄位 / 填寫方式:_TBD_
-
 ## Sub-steps
-- [ ] 定義範圍
-- [ ] 建模板
-- [ ] 填寫 / 完成
+- [x] 定義範圍
+- [x] 建模板
+- [x] First Draft
+- [ ] Meet with ziyi and fill in the blanks
+- [ ] Complete the full mapping

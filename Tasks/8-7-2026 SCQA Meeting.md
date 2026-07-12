@@ -1,9 +1,9 @@
 ---
-status: doing
+status: done
 priority: high
 scheduled: 2026-08-07
 dateCreated: 2026-07-08T10:14:59.119+01:00
-dateModified: 2026-07-09T16:27:50.217+01:00
+dateModified: 2026-07-11T11:58:06.474+01:00
 tags:
   - task
 projects:
@@ -22,6 +22,8 @@ timeEntries:
     description: Work session
     endTime: 2026-07-09T13:58:29.736Z
 due: 2026-08-03
+tasknotes_manual_order: tnmbwhldsowg
+completedDate: 2026-07-11
 ---
 
 Source links: [[8-7-2026 SCQA Transcript]]
@@ -47,6 +49,14 @@ Source links: [[8-7-2026 SCQA Transcript]]
 
 Why yes?
 Why not?
-
-If yes -> what is the framework I will use here to go through the product development lifecycle?
-
+Decision -> No need to build, use canvas plugin
+Delivery O1-O3:
+9/7/2026
+Delivered First draft of relationship map
+10/7/2026
+Aligned with ziyi on my understanding
+Refined the delivery output
+13/7/2026
+Plan a meeting with selina to double verify on the current version
+Review the Product Materials
+Find the right communication framework to practise

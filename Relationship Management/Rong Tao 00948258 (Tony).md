@@ -26,6 +26,8 @@ tags:
 ## Background
 Head of the whole European Device BG (歐洲終端). Candidate to fill the L3「三級部門對接人」red card on the O2 org-to-customer map.
 
+2026-07-10 [[Ziyi Zhang 84434577|Ziyi]] 交接培訓補充:[[Dennis Lui]] 層級的客戶對接,要上升到 [[Zeng Li 00798010|曾黎]] **或榮濤** —— 他是和記最頂層客戶的內部對口之一。
+
 ## Last meeting / interaction
 ```dataview
 TABLE WITHOUT ID file.link AS "Note", date AS "Date"

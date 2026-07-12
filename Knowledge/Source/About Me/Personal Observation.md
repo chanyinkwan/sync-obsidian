@@ -1,0 +1,3 @@
+-> easily lost 理智while earning money
+-> interest in deriving things into formula
+->dont like to operate in randomness or unclearness

@@ -22,7 +22,7 @@ tags:
 - [ ]  [[Write a skill to list to-do list]]
 - [ ] [[Seed Log]]
 - [ ] [[Input Pipeline — Raw to Atomic Notes]] -> build Inbox folder
-- [[how to become a Solution Architect (Presales)]]
+- [[how to become a Solution Architect or Presales Consultant]]
 - [ ] writing with claude our own Humanising output such as CV and CL
 - [ ] What is your day-to-day looks like in your experience
 - [ ] Get my platform ready to apply for jobs during work time — from [[2-7-2026 Daily Operations|2-7]]
@@ -33,12 +33,12 @@ tags:
 - [[TSMP Stock Take and Deadline Management System]] — 痛點梳理 + 4 個範圍確認,方案 A(Excel VBA+Outlook)提案待拍板
 - [[SCQA O2 - Org-to-Customer Relationship Map]] — Canvas 重構:實際五級組織架構,附組織圖
 - [[SCQA O2 - Org-to-Customer Relationship Map]] — L4+L5 併層:大T = 5 系統部 pods,人員歸位
-- [[Huawei Key Contacts]] — 16 張 stub 聯絡卡統一為完整格式
-- [[Huawei Key Contacts]] — relationship 1–5 重定義(組織層級)+ 33 卡重評
+- [[0 Huawei Key Contacts|Huawei Key Contacts]] — 16 張 stub 聯絡卡統一為完整格式
+- [[0 Huawei Key Contacts|Huawei Key Contacts]] — relationship 1–5 重定義(組織層級)+ 33 卡重評
 
 ### How would you translate what you have done today into industry terminology?
 Scoping 範疇 / Pricing 定價 / Deal Governance 交易治理?
-
+- Deal governance
 
 ### How is your time allocated today?
 
@@ -50,10 +50,12 @@ Scoping 範疇 / Pricing 定價 / Deal Governance 交易治理?
 - ⚠ 10:08–14:03(~4h)無🍅無 chat 紀錄 — offline(任務列標 TSMP 2hrs,僅 25m 有🍅,confirm)
 
 ### What is the most challenging part of the day?
-
+- Automation excel with VBA and Scheduled Task, treat the PC like a robotic machine
 
 ### What is your win today and what will you do better next time?
 
-
+- Successful shipped one product, the unit size of this product is perfect, its fit the size of one-man newbie and it solve a very accurate problem
+- I think what i can do better is to put it together with other outputs and think about the compatibility
 ### What is your take away from today's work (What to sync?)
 
+**Seed**

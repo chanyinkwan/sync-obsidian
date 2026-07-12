@@ -26,6 +26,8 @@ tags:
 ## Background
 Org / role 待確認 — fill in as I learn it.
 
+2026-07-10 [[Ziyi Zhang 84434577|Ziyi]] 交接培訓補充:[[Sanjeewa Geegana Arachchige 84414674|Sanjeewa]](斯里蘭卡籍)與他管同一塊,幫他做執行的事情。
+
 ## Last meeting / interaction
 ```dataview
 TABLE WITHOUT ID file.link AS "Note", date AS "Date"

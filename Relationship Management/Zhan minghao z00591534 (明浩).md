@@ -26,6 +26,8 @@ tags:
 ## Background
 Team member referenced in the 17-Jun download — raised the need to confirm with each network whether **custom phone versions** are required and what group special-support follows. Limited info so far.
 
+2026-07-10 [[Ziyi Zhang 84434577|Ziyi]] 交接培訓補充:他是 **Telefonica 系統部主管**,同時嚴格來講是意大利國家的 GTM —— 但**和記意大利的項目他不參與**(與程哥 responsibility overlap + 個人關係上有點 conflict),這部分不用找他;和記意大利有事找 [[Michele Cappabianca 00473733|Michele]],再不行找程哥。
+
 ## Last meeting / interaction
 ```dataview
 TABLE WITHOUT ID file.link AS "Note", date AS "Date"

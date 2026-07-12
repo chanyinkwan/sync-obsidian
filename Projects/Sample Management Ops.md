@@ -2,8 +2,9 @@
 type: project
 status: active
 owner: me
-stakeholders: ["[[Ziyi Zhang 84434577]]"]
-domain: Sample Ops / GTM samples (大T)
+stakeholders:
+  - "[[Ziyi Zhang 84434577]]"
+domain: Sample Ops / Deal Desk Resources Management
 due:
 tags:
   - project

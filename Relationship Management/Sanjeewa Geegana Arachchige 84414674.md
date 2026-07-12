@@ -1,29 +1,29 @@
 ---
 type: contact
-category: customer
-name: Dennis
-employee_id:
-aka:
-org: Hutchison (Three)
-role: No.1 client from Hutchison
-location:
+category: internal
+name: Sanjeewa Geegana Arachchige
+employee_id: "84414674"
+aka: Sanjeewa
+org: Huawei CBG UK
+role: 執行支援(與 Felix 同一塊)
+location: London (Paddington)
 languages: English
 email:
-relationship: 1
+relationship:
 status: active
 last_contact:
 tags:
   - contact
 ---
-# Dennis
+# Sanjeewa Geegana Arachchige · 84414674
 
 ## At a glance
-- **Role:** No.1 client from Hutchison — our top customer contact on the Hutchison account.
+- **Role:** 斯里蘭卡人;與 [[Guo Wubin 00976469 (Felix)|Felix]] 管同一塊,幫 Felix 做執行的事情(近似助理但不完全是)。
 - **What they care about / their stake:** 待補 To fill.
-- **How to work with them:** 待補 To fill — Hutchison account is covered by Selina ([[Huang Yi 84411269 (Selina)]]); 程哥 [[Ding Cheng 00611102 (程哥or 丁程)]] met him 24-Jun with three follow-ups (see [[Dominique]]).
+- **How to work with them:** 見面打招呼即可。
 
 ## Background
-Key Hutchison-side customer contact. Sits in the L5 客戶/渠道 layer of [[SCQA O2 - Org-to-Customer Relationship Map]] under Hutchison 客戶.
+2026-07-10 [[Ziyi Zhang 84434577|Ziyi]] 交接培訓(座位圖環節)首次記錄,坐 Kaiya/Bethy 附近。
 
 ## Last meeting / interaction
 ```dataview

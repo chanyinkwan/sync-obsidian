@@ -1,6 +1,5 @@
 ---
-title: SCQA O2 - Org-to-Customer Relationship Map
-status: hold
+status: doing
 priority: medium
 tags:
   - task
@@ -8,8 +7,9 @@ projects:
   - "[[8-7-2026 SCQA Meeting]]"
 contexts:
   - work
-dateModified: 2026-07-09T16:20:25.243+01:00
+dateModified: 2026-07-10T16:13:43.479+01:00
 ---
+
 # O2 · 組織—客戶關係圖 — Org-to-Customer Relationship Map
 
 母任務:[[8-7-2026 SCQA Meeting]]
@@ -23,8 +23,10 @@ Layers
 
 ## 範圍(待定 — 下次定義)
 - 5 layers and another layer for customers
-- 
+
 ## Sub-steps
-- [ ] 定義範圍
-- [ ] 建模板
-- [ ] 填寫 / 完成
+- [x] 定義範圍
+- [x] 建模板
+- [x] First Draft
+- [ ] Meet with ziyi and fill in the blanks
+- [ ] Complete the full mapping

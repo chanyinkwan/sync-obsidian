@@ -25,6 +25,8 @@ tags:
 ## Background
 HQ-side sample administrator covering all 大T samples. Announces upcoming samples per product/month, collects the forecast (via her shared spreadsheet), and signals when samples are "ready to apply." She is in the two sample WeChat groups and is the go-to for any sample question.
 
+2026-07-10 [[Ziyi Zhang 84434577|Ziyi]] 交接培訓補充:組織上她是 DT 系統部的 contractor(head [[Xin Chen 00279864|陳昕]] 之下)——**名義掛德電,但樣機這塊掛整個 5T 所有人**。她發的是「available」通知;要不要申、申多少,聽程哥的需求(MWC 前會申一大批)。緊急需求時她也能找替代機(上次幫忙找到 Mate X7 頂上 Dennis Lui 試用需求)。
+
 ## Last meeting / interaction
 ```dataview
 TABLE WITHOUT ID file.link AS "Note", date AS "Date"

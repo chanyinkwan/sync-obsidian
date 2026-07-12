@@ -19,7 +19,7 @@ tags:
 
 每個筆記帶**恰好一個**身分標籤,對應它的筆記類型(與 frontmatter `type` 欄位互為鏡像):
 
-`#task` `#daily` `#meeting` `#contact` `#project` `#goal` `#skill` `#mistake` `#feedback` `#reference`
+`#task` `#daily` `#meeting` `#contact` `#project` `#goal` `#skill` `#constant` `#mistake` `#feedback` `#reference`
 
 身分標籤是機器合約——插件與查詢依賴它們運作(見註冊表「消費者」欄)。改動或省略會直接弄壞查詢。
 
@@ -73,7 +73,8 @@ contexts:
 | #contact | 身分 | 聯絡人 | [[0 Huawei Key Contacts]] 聚合查詢 |
 | #project | 身分 | 專案 | Home 儀表板活躍專案表 |
 | #goal | 身分 | 目標 | — |
-| #skill | 身分 | 可複用技能原子 | (C5 修復後:複利層轉化率統計) |
+| #skill | 身分 | 可複用技能原子(SKILL.md playbook) | (C5 修復後:複利層轉化率統計) |
+| #constant | 身分 | 常數原子(跨情境耐用的決策原則,住 `Knowledge/Constants/`) | — (2026-07-10 新增) |
 | #mistake | 身分 | 錯誤日誌 | [[Mistakes Log]] 查詢 |
 | #feedback | 身分 | 主管/同事回饋 | [[Fill FWA Roadmap Section 1.3]] 回饋查詢 |
 | #reference | 身分 | 參考資料 | — |
