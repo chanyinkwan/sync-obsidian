@@ -1,13 +1,17 @@
 ---
-status: todo
+status: doing
 priority: high
 scheduled: 2026-07-09
 dateCreated: 2026-07-09T11:49:40.080+01:00
-dateModified: 2026-07-09T11:50:14.679+01:00
+dateModified: 2026-07-14T09:57:27.856+01:00
 tags:
   - task
 projects:
   - "[[Sample Management Ops]]"
+timeEntries:
+  - startTime: 2026-07-14T08:32:27.490Z
+    description: Work session
+    endTime: 2026-07-14T08:57:27.857Z
 ---
 
 -> solve In and Out record Pain point

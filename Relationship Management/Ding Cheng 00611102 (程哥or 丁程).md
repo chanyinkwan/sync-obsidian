@@ -25,7 +25,7 @@ tags:
 ## Background
 Account lead for the 大T system department and the person who runs the recurring download. Decision-maker on bid priorities (e.g. pushed 173 to commercial bid; set group-level bidding). In sample management he is the **UK account holder (掛賬人)** — approvals route through him and he bears main responsibility for receipts/write-off. Approves my self-use of spare samples (alongside Ziyi).
 
-2026-07-10 [[Ziyi Zhang 84434577|Ziyi]] 交接培訓補充:① **答標由他出**(項目分析會後發正式答標函、帶 negotiation);② 客戶分工 —— [[Francesco Zampini]] 與 [[Melanie 馬蘭妮|Marlene Fantini]] 由程哥對接;③ **香港子網敏感,只限和記線由他親自對**;④ 和記意大利的 GTM 事務他管(明浩不參與);⑤ 回國高訪(一年兩次,約 6 月/10 月)由他接待;⑥ 6/24 初見 [[Dennis Lui]],觸發樣機急單;⑦ 指示 Kess 一個月內把產品包講流利。
+2026-07-10 [[Ziyi Zhang 84434577|Ziyi]] 交接培訓補充:① **答標由他出**(項目分析會後發正式答標函、帶 negotiation);② 客戶分工 —— [[Francesco Zampini]] 與 [[Melanie Fantini 馬蘭妮|Marlene Fantini]] 由程哥對接;③ **香港子網敏感,只限和記線由他親自對**;④ 和記意大利的 GTM 事務他管(明浩不參與);⑤ 回國高訪(一年兩次,約 6 月/10 月)由他接待;⑥ 6/24 初見 [[Dennis Lui]],觸發樣機急單;⑦ 指示 Kess 一個月內把產品包講流利。
 
 ## Last meeting / interaction
 ```dataview

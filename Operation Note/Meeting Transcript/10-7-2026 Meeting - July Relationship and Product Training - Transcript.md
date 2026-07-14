@@ -405,7 +405,7 @@ title 可複雜了,好幾個 chairman 什麼的,你不用管那些。你只需�
 (看圖)你剛才看到的(Dennis)再往上還有人([[Canning Fok 霍建寧]]),是 Dennis 的 head,但我們接觸不到。下面這一堆就都是 IOD 的人了,大部分 base 倫敦。IOD 整個部門的頭叫 [[Joe Parker]],但這個人不太管我們、不太管供應商。他底下的 [[Francesco Zampini]] 才是核心管供應商、管選型的 —— **選不選華為,他說了算**,是最核心的 decision maker。組織架構上他匯報給 Joe Parker,但實際上(虛線)他會直接跟 Dennis 聊我們 vendor 的情況,因為 Joe Parker 不管這一段。
 
 **[[Ziyi Zhang 84434577|Ziyi]]** · 1:07:47
-跟 Francesco 合作的還有一位 —— 就是我這次去意大利要送樣機的那個人 —— 相當於他們技術方向的 CTO。雖然叫 CTO,底下可能也就兩三個人,跟我們一樣;比如 Michele 要去影響意大利的選型,他也是能影響的。然後我們核心接觸的是 [[Melanie 馬蘭妮|Marlene Fantini]] —— 可能是最多在和我們 battle 的人:她沒有什麼決策權,但負責講價、負責談判、負責壓價,在 Francesco 下面、給 Francesco 打工。Marlene 下面主要是兩個人:一個叫 [[Mark Williams]],英國人,管所有 home broadband 這塊的選型;另一位([[Agostino Ruberto]])管手機、手錶這些東西。所以我們核心接觸的客戶就是這條線。
+跟 Francesco 合作的還有一位 —— 就是我這次去意大利要送樣機的那個人 —— 相當於他們技術方向的 CTO。雖然叫 CTO,底下可能也就兩三個人,跟我們一樣;比如 Michele 要去影響意大利的選型,他也是能影響的。然後我們核心接觸的是 [[Melanie Fantini 馬蘭妮|Marlene Fantini]] —— 可能是最多在和我們 battle 的人:她沒有什麼決策權,但負責講價、負責談判、負責壓價,在 Francesco 下面、給 Francesco 打工。Marlene 下面主要是兩個人:一個叫 [[Mark Williams (Bristish)]],英國人,管所有 home broadband 這塊的選型;另一位([[Agostino Ruberto]])管手機、手錶這些東西。所以我們核心接觸的客戶就是這條線。
 
 **Kess** · 1:09:39
 這些(細節)找 Selina?

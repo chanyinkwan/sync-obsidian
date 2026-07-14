@@ -18,7 +18,7 @@ tags:
 # Agostino Ruberto (Agos)
 
 ## At a glance
-- **Role:** [[Melanie 馬蘭妮|Marlene Fantini]] 之下,管**手機、手錶**這些品類的選型;意大利。
+- **Role:** [[Melanie Fantini 馬蘭妮|Marlene Fantini]] 之下,管**手機、手錶**這些品類的選型;意大利。
 - **What they care about / their stake:** 手機/手錶品類選型。
 - **How to work with them:** **[[Huang Yi 84411269 (Selina)|Selina]] 對接**;他是我們**最多直接接觸到**的 IOD 層級(其餘技術方向的人 [[Michele Cappabianca 00473733|Michele]] 全包)。
 

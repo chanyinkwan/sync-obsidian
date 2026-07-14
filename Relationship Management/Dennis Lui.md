@@ -25,7 +25,7 @@ tags:
 ## Background
 Key Hutchison-side customer contact. Sits in the L5 客戶/渠道 layer of [[SCQA O2 - Org-to-Customer Relationship Map]] under Hutchison 客戶.
 
-2026-07-10 [[Ziyi Zhang 84434577|Ziyi]] 交接培訓補充:程哥會前初見 Dennis,他對華為手機**生態替代方案**(不能裝 Google Play 的解決方案)評價「聽起來還不錯」,要求拿給歐洲團隊試用 —— 觸發了那單緊急樣機需求(最終以 Mate X7 頂上;Pura 90 等 7/14 發布會後再發)。客戶鏈:Canning Fok → **Dennis Lui** → [[Joe Parker]] → [[Francesco Zampini]] → [[Melanie 馬蘭妮|Marlene Fantini]] → [[Mark Williams]] / [[Agostino Ruberto]]。
+2026-07-10 [[Ziyi Zhang 84434577|Ziyi]] 交接培訓補充:程哥會前初見 Dennis,他對華為手機**生態替代方案**(不能裝 Google Play 的解決方案)評價「聽起來還不錯」,要求拿給歐洲團隊試用 —— 觸發了那單緊急樣機需求(最終以 Mate X7 頂上;Pura 90 等 7/14 發布會後再發)。客戶鏈:Canning Fok → **Dennis Lui** → [[Joe Parker]] → [[Francesco Zampini]] → [[Melanie Fantini 馬蘭妮|Marlene Fantini]] → [[Mark Williams (Bristish)]] / [[Agostino Ruberto]]。
 
 ## Last meeting / interaction
 ```dataview

@@ -703,9 +703,10 @@
   ],
   "pomodoroState": {
     "isRunning": false,
-    "timeRemaining": 1500
+    "timeRemaining": 300,
+    "nextSessionType": "short-break"
   },
-  "lastPomodoroDate": "2026-07-12",
+  "lastPomodoroDate": "2026-07-13",
   "pomodoroHistory": [
     {
       "id": "1781772563658",
@@ -1381,7 +1382,22 @@
           "endTime": "2026-07-13T10:36:32.086+01:00"
         }
       ]
+    },
+    {
+      "id": "1784017947464",
+      "startTime": "2026-07-14T09:32:27.464+01:00",
+      "endTime": "2026-07-14T09:57:27.464+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "taskPath": "Tasks/TSMP In and Out Record.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-14T09:32:27.464+01:00",
+          "endTime": "2026-07-14T09:57:27.464+01:00"
+        }
+      ]
     }
   ],
-  "lastSelectedTaskPath": "Tasks/8-7-2026 SCQA Meeting.md"
+  "lastSelectedTaskPath": "Tasks/TSMP In and Out Record.md"
 }

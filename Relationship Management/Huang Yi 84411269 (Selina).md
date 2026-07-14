@@ -29,7 +29,7 @@ tags:
 ## Background
 Inner-circle account manager (Colleague S). Highest client-interaction role; aggregates customer requirements (demand capture). In the 17-Jun download she assessed customer attendance for the Sept 2 launch event (Hutchison likely unavailable; clash with IFA). In sample ops, she (or 程哥) takes documents to customers and brings back signatures for write-off.
 
-2026-07-10 [[Ziyi Zhang 84434577|Ziyi]] 交接培訓補充:客戶分工 —— IOD 的 [[Agostino Ruberto]](手機/手錶)與 [[Mark Williams]](home broadband)**由 Selina 對接**;她與程哥每天都在和客戶溝通。她持有**最新版客戶關係圖**(Kess 待辦:向她要 —— **不可拍照,包括拍電腦屏幕**)及手機生態解決方案材料。
+2026-07-10 [[Ziyi Zhang 84434577|Ziyi]] 交接培訓補充:客戶分工 —— IOD 的 [[Agostino Ruberto]](手機/手錶)與 [[Mark Williams (Bristish)]](home broadband)**由 Selina 對接**;她與程哥每天都在和客戶溝通。她持有**最新版客戶關係圖**(Kess 待辦:向她要 —— **不可拍照,包括拍電腦屏幕**)及手機生態解決方案材料。
 
 ## Last meeting / interaction
 ```dataview

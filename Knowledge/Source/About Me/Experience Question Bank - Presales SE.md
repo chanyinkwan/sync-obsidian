@@ -11,9 +11,9 @@ Harvest questions are numbered continuously (H1, H2, ...) so answers can be file
 ### 1.1 Day-to-day narrative
 *"Describe your day-to-day as a Portfolio Solution Presales."*
 
-Draft answer (first person):
+Draft answer (first person) — *updated 2026-07-13 with candidate's H1-H7 answers*:
 
-> My day splits between bid work and customer-facing discovery. On the bid side I prepare RFI and RFP response materials for our UK portfolio — taking what the product can actually do and turning it into proposal content that answers the customer's technical and operational requirements. On the discovery side I join conferences with customers to run needs analysis, listening for what they actually need versus what they say they want, and I carry that back into solution shaping. A large part of the role is sourcing the best ground for a win-win: a structure the customer accepts and the company can profitably deliver. I also lead discussion in GTM on product roadmap and strategy — which features attract customers and how we price them. On the technical side I test against account subnet spec restrictions so we know a solution is feasible before we commit to it in a proposal. [GAP: typical week rhythm — how many bids/conferences in flight at once] [GAP: who I hand off to post-win and how the team is structured]
+> I work in a 5-person presales team dedicated to a single account — a Tier-1 UK mobile network operator. Our mandate is clear: presales hunts down the RFP and owns the pursuit through the formal response, then hands off to the sales team. That hunt is live right now, so part of my week goes to preparing RFI and RFP materials so we are bid-ready the moment the window opens. The discovery side is where I have the most reps so far: three technical workshops and a structured requirements-analysis session with the customer, surfacing what they actually need versus what they say they want. I carry that signal into GTM discussions on product roadmap and pricing — and it has already produced one concrete result: my input drove the removal of a low-value feature, cutting cost by USD 2 per unit. On the technical side I validate solution feasibility against the account's roughly six subnets and their spec restrictions, so nothing goes into a proposal we cannot deliver. [GAP: timeline of the current RFP pursuit — see H44]
 
 ### 1.2 Tech explainers
 *Format: "Explain [X] to a non-technical executive in 3 sentences." Answer left blank; hint = what a strong answer emphasizes.*
@@ -23,21 +23,21 @@ Draft answer (first person):
 - **Portfolio pricing in GTM** — Hint: pricing is a positioning decision, not a spreadsheet exercise — which feature bundles justify which price points for which customer segment.
 
 ### 1.3 Challenge stories (STAR skeletons)
-1. **Anchor: RFI/RFP response bullet.**
-   - S: Formal bid for a UK portfolio customer with technical and operational requirements to answer.
-   - T: Turn solution capability into bid-ready content under deadline.
-   - A: [BLANK — which bid, what was hard about it, what you changed in the response]
-   - R: [BLANK — submitted? shortlisted? won?]
-2. **Anchor: subnet-spec feasibility bullet.**
-   - S: Solutions must survive account-level subnet restrictions.
+1. **Anchor: RFI/RFP preparation bullet (IN-PROGRESS pursuit — do not present as a completed bid).**
+   - S: 5-person presales team dedicated to a Tier-1 UK mobile network operator; presales owns the pursuit through RFP, then hands off to sales. An RFP hunt is currently in progress.
+   - T: Get the team bid-ready before the RFP window opens — materials prepared, feasibility pre-validated.
+   - A: [BLANK — what you are preparing now, and how the workshop/requirements findings feed the response]
+   - R: [PENDING — record when the response ships; until then frame as "active pursuit", never as a submitted or won bid]
+2. **Anchor: subnet feasibility coverage bullet.**
+   - S: Every proposed solution must survive the account's ~6 subnets and their spec restrictions.
    - T: Validate feasibility before proposal commitment.
    - A: [BLANK — a specific restriction you tested against and how]
-   - R: [BLANK — issue caught / bid de-risked, what would have happened otherwise]
-3. **Anchor: win-win solution sourcing bullet.**
-   - S: Customer requirements and Huawei's commercial constraints in tension.
-   - T: Find a structure viable for both sides.
-   - A: [BLANK — the trade you brokered]
-   - R: [BLANK — outcome for deal and relationship]
+   - R: [PENDING — no feasibility catch yet as of 2026-07-13 (H5); capture the first one when it happens]
+3. **Anchor: USD 2/unit feature-removal win (the current anchor story).**
+   - S: GTM discussions on product roadmap and pricing for a Tier-1 UK mobile network operator account; a product feature was adding cost without adding customer value.
+   - T: Get a feature removal accepted through roadmap/pricing discussion — a trade viable for both the customer and Huawei.
+   - A: Advised in GTM discussion that the feature was low-value to the customer and drove the decision to remove it. [BLANK — which feature, how you evidenced that the customer didn't value it, who had to be convinced — see H43]
+   - R: Cost cut by USD 2 per unit. [BLANK — total dollar size once unit volume is known — see H42]
 
 ### 1.4 Transferable-skill stories toward presales
 1. **rfp-bid-management** — Evidence: RFI/RFP response preparation. Interviewer probe: "Walk me through the last RFP you contributed to — what section did you own and how did you decide what to claim?"
@@ -45,13 +45,28 @@ Draft answer (first person):
 3. **product-feedback** — Evidence: leading GTM roadmap/pricing discussions. Probe: "Give an example of field signal you brought back that changed a product or pricing decision."
 
 ### 1.5 Harvest questions
+*H1-H7 ANSWERED by candidate on 2026-07-13. Answers recorded inline; folded into MasterExperienceDB v2.2.*
+
 - H1. How many RFI/RFP responses have you contributed to since April 2026, and what is the approximate total bid value?
+  - **ANSWERED (2026-07-13):** None completed yet. RFI/RFP preparation is the role's mandate and a hunt is in progress, but no completed response as of this date. Bullet demoted to draft — do not use as an achievement.
 - H2. What is the win rate (or current status) of the bids you have touched?
+  - **ANSWERED (2026-07-13):** No bids concluded yet — no win rate exists.
 - H3. How many customer conferences or needs-analysis sessions have you joined, across how many distinct accounts?
+  - **ANSWERED (2026-07-13):** 3 technical workshops plus 1 requirements-analysis meeting (需求分析會議) so far. One account only: the team serves a single client, Hutchison 3G (Three UK's operating company). Use the public label "Tier-1 UK mobile network operator" in all external assets.
 - H4. Name one roadmap or pricing decision that changed because of your GTM input. What changed?
+  - **ANSWERED (2026-07-13):** His GTM input led to removing one product feature, cutting cost by USD 2 per unit. This is the role's anchor win (verified bullet in DB v2.2). Sizing follow-up: H42.
 - H5. Give one concrete example of a subnet-spec feasibility issue you caught before a bid went out. What would it have cost if missed?
+  - **ANSWERED (2026-07-13):** None yet ("don't know"). Feasibility validation is ongoing work; no catch story exists so far.
 - H6. What kinds of accounts are in the UK portfolio (carriers, retailers, distributors)? Any you can name or describe by tier?
+  - **ANSWERED (2026-07-13):** Single-account scope: Hutchison 3G only, with roughly 6 subnets under that account (candidate's estimate — treat as "~6").
 - H7. How large is the presales/solution team you work in, and where does your work hand off (sales? delivery?)?
+  - **ANSWERED (2026-07-13):** Presales team of 5. Workflow: presales hunts down the RFP and owns the pursuit, then hands over to the sales team.
+
+### 1.6 Harvest follow-ups (open)
+- H42. What is the unit volume (annual or contract) for the product affected by the feature removal, so the USD 2/unit saving can be sized in total dollars?
+- H43. Which feature was removed, and why did the customer not value it? How did you evidence that in the GTM discussion?
+- H44. What is the status and timeline of the current RFP pursuit — when is a completed response expected?
+- H45. Is naming Hutchison/Three publicly NDA-restricted, or must "Tier-1 UK mobile network operator" always be used externally? Confirm before any CV/LinkedIn use of the client name.
 
 ---
 
@@ -394,4 +409,4 @@ Draft answer (first person):
 2. **Answers get folded into `MasterExperienceDB.json`** — each answer either upgrades an existing bullet (draft → verified, adds the missing metric) or becomes a new bullet with proper competency tags.
 3. **Per-JD views generate from the DB** — resumes, LinkedIn sections, and interview prep sheets are all derived from the database, never hand-written from scratch, so every asset stays consistent with the verified fact base.
 
-Priority order: H1-H7 (Huawei — feeds the current role's gap_note), then H24-H27 (Apple B2B — anchors the strongest sales story), then the rest.
+Priority order: H42-H45 (Huawei follow-ups — size the $2/unit win and clear the client-naming question; H1-H7 answered 2026-07-13), then H24-H27 (Apple B2B — anchors the strongest sales story), then the rest.

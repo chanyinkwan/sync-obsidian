@@ -78,7 +78,7 @@ tags:
 | Person                                   | Position / Concern                      | Note                                                    | Link                    |
 | ---------------------------------------- | --------------------------------------- | ------------------------------------------------------- | ----------------------- |
 | Ding Cheng 00611102                      | Account lead; runs download             | Decision-maker; values speed on bids & chasing blockers | [[Ding Cheng 00611102 (程哥or 丁程)]] |
-| Melanie (馬蘭妮) | Customer | Pricing/volume negotiation at new price | [[Melanie 馬蘭妮]] |
+| Melanie (馬蘭妮) | Customer | Pricing/volume negotiation at new price | [[Melanie Fantini 馬蘭妮]] |
 | 大T = Deutsche Telekom | Major telco customer | Unlikely at Sept 2 event | — |
 | 合計 = Hutchison (和記黃埔) | Major telco customer | Likely unavailable for event | — |
 | 機關 (HQ / 總部) | HQ functions (payment, RFQ, allocation) | Recurring blocker; slow/no response | — |

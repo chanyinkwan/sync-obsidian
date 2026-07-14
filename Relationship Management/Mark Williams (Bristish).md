@@ -18,7 +18,7 @@ tags:
 # Mark Williams
 
 ## At a glance
-- **Role:** 英國人,[[Melanie 馬蘭妮|Marlene Fantini]] 之下,管所有 **home broadband** 這塊的選型。
+- **Role:** 英國人,[[Melanie Fantini 馬蘭妮|Marlene Fantini]] 之下,管所有 **home broadband** 這塊的選型。
 - **What they care about / their stake:** Home broadband 品類選型。
 - **How to work with them:** **[[Huang Yi 84411269 (Selina)|Selina]] 對接**(Agostino 和 Mark 都是 Selina 負責)。
 

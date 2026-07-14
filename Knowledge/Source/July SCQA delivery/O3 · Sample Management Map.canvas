@@ -39,7 +39,8 @@
 		{"id":"999f0e584f83a555","type":"text","text":"Collect needs from customers\n1.  (Daily basis)\n2. 2 Official Routine 招標\n3. customer urgent needs\n4. Country collected needs and inform us","x":-640,"y":1120,"width":320,"height":273},
 		{"id":"8769bcb4fb0e5b58","type":"text","text":"項目分析會\nCountry\nH3G\nGTM and Solution\nHQ Product Line\n\nDiscuss: Which Product, Price = answer request strategy fixed","x":-250,"y":1273,"width":300,"height":240},
 		{"id":"b2152e30a810d967","type":"text","text":"Customer answer yes or no, -> Letter","x":-250,"y":1690,"width":250,"height":60},
-		{"id":"d4f43af2990342e1","type":"text","text":"3 Chances of meeting\nMWC\nHQ visit (Customer visiting Huawei HQ) June and Oct\n\n---\nDevice Forum (Hosted by Hutchison) -> Hutchison CEO conference\nTechnical Workshop -> at least once (to identify strategic direction)\n","x":-640,"y":2160,"width":390,"height":340}
+		{"id":"d4f43af2990342e1","type":"text","text":"3 Chances of meeting\nMWC\nHQ visit (Customer visiting Huawei HQ) June and Oct\n\n---\nDevice Forum (Hosted by Hutchison) -> Hutchison CEO conference\nTechnical Workshop -> at least once (to identify strategic direction)\n","x":-640,"y":2160,"width":390,"height":340},
+		{"id":"15cc0e7da72bfea6","x":-720,"y":2640,"width":1074,"height":263,"type":"text","text":"Quarter Samples Stpck Take:\n1. receive an order of samples check list (excel table)\n2. stock take -. if you know where the sample is = 盤點結果 = 盤實, 使用狀態=（销服）实物在挂账人保管中；\n3. then upload a photo of the samples cabinet on cloud drive -> then attach the link on the remarks column\n4. send the filled in version of the excel to the \"挂帳人\" \n5. DONE!"}
 	],
 	"edges":[
 		{"id":"c3e0000000000001","fromNode":"c30000000000s100","fromSide":"right","toNode":"c30000000000s200","toSide":"left"},

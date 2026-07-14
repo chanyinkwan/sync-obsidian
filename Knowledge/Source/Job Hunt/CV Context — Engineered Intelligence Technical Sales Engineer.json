@@ -1,0 +1,69 @@
+{
+  "profile_summary": "Presales engineer for enterprise B2B software. Currently owns the technical side of a Tier-1 UK mobile network operator account at Huawei, covering discovery workshops, solution feasibility validation, RFI and RFP material, and pricing input alongside the account team. Before that, spent 14 months shipping payments and e-banking products under Hong Kong's financial regulator, including a Python anomaly detection prototype built over 50,000+ operational logs and a Grafana layer that pulled the reporting of 50+ teams into one live view. That is the same field-data-to-decision problem ENGIN solves for utilities, one industry over. Builds in Python and JavaScript, and has shipped RAG systems and data pipelines into production for paying clients. MSc Business Analytics (Merit), University of Exeter. Based in London, 45 minutes from Heathrow, and happy with roughly 30 percent travel.",
+  "experience": [
+    {
+      "company": "Huawei Consumer Business Group",
+      "location": "London, United Kingdom",
+      "role": "Portfolio Solution Presales",
+      "dates": "Apr 2026 – Present",
+      "bullets": [
+        "Own the presales technical track on a Tier-1 UK mobile network operator account as one of a 5-person team, from customer discovery through RFI and RFP response material to the handover into sales.",
+        "Surfaced the requirements the whole bid was built on by running 3 technical workshops and one structured requirements session with the customer's engineering stakeholders.",
+        "De-risked what the proposal could safely promise by testing solution feasibility against roughly 6 of the account's subnet specifications before anything was committed to the customer.",
+        "Took USD 2 of cost out of every unit by making the case in GTM roadmap and pricing discussions for dropping a feature the customer did not value."
+      ]
+    },
+    {
+      "company": "Freelance | Self-Employed",
+      "location": "Remote, United Kingdom",
+      "role": "AI Solutions Engineer",
+      "dates": "Oct 2025 – Mar 2026",
+      "bullets": [
+        "Shipped 4 AI systems into production for SME clients as the sole technical contact on each one, running the pain-point discovery, the solution design, the build in Python and JavaScript, the deployment, and the follow-up measurement.",
+        "Cut wealth management analysts' meeting prep from over 3 hours to 20 minutes by building a RAG assistant on n8n, Qdrant and the OpenAI API that answers plain English questions across 4,000+ financial documents and cites its sources.",
+        "Won an engagement that GDPR would otherwise have killed by self-hosting the entire stack so client financial data never left the firm, and by citing a source on every answer so compliance had its audit trail.",
+        "Raised a 6-SDR agency's monthly qualified leads by 50 to 60 percent by deploying an automated scraping, enrichment and scoring pipeline, then retuning the model on the client's own negative buying signals until its scores were worth acting on."
+      ]
+    },
+    {
+      "company": "Bank of China (Hong Kong)",
+      "location": "Hong Kong",
+      "role": "Technical Product Manager, E-Banking Product",
+      "dates": "Aug 2023 – Oct 2024",
+      "bullets": [
+        "Met 100 percent of the HKMA's regulatory mandates inside a hard 14-day window by turning the regulation into a technical implementation plan and coordinating internal teams and third-party vendors to ship Geo-IP fraud detection with impossible travel logic.",
+        "Ended a 3-year-old complaint about incident triage by mining 50,000+ historical logs and building a Python anomaly detection prototype, validated with stakeholders, that told real incidents apart from deployment noise.",
+        "Handed back over 1,000 hours a year of capacity across 50+ teams by replacing 50+ manual weekly reporting touchpoints with a single Grafana observability view.",
+        "Got that framework adopted in one sitting, answering 80 percent of the technical questions live, by demoing it to 30+ system leads and two department heads.",
+        "Saved 15 man-days of vendor evaluation by turning the scattered infrastructure needs of 50+ teams into one MoSCoW-prioritised roadmap and proving the shortlisted option through a Red Hat proof of concept."
+      ]
+    },
+    {
+      "company": "Apple",
+      "location": "Hong Kong",
+      "role": "Operation Data Analyst",
+      "dates": "Mar 2021 – Aug 2023",
+      "bullets": [
+        "Removed roughly 1,500 hours of manual work a year across 6 flagship sites by finding the 5-hour weekly data entry burden sitting at each one and replacing it with a self-sustaining reporting architecture that gave regional directors live numbers instead of week-old ones.",
+        "Got all 6 site leaders onto that tool by demoing it to each of them personally, showing them the old report still ran underneath as a fallback, and handing over daily ownership once they were comfortable with it.",
+        "Held operational uptime at 100 percent and NPS at 92 through the EasyPay POS migration by training 10+ Floor Champions in structured cohorts and rewriting the technical requirements into playbooks they could actually use on the floor."
+      ]
+    },
+    {
+      "company": "Apple",
+      "location": "Hong Kong",
+      "role": "B2B Solution Expert",
+      "dates": "Jan 2020 – Mar 2021",
+      "bullets": [
+        "Brought in GBP 350,000 of new B2B revenue and 7 strategic partnerships, lifting regional market penetration by 30 percent, by running the full cycle myself from market analysis and needs discovery through solution positioning to close.",
+        "Closed a GBP 50,000 deal with a Hong Kong broadcaster over 3 months by turning a casual store visit into a real opportunity, earning trust with hands-on technical support and a custom business pricing portal, then upselling device management once they raised concerns about controlling the fleet.",
+        "Ran the full B2B pipeline in CRM from first contact to closed won, escalating accounts to the corporate team once they matured past my coverage.",
+        "Moved the team off reactive tracking and onto proactive retention by analysing a 50+ account portfolio and pinning down 12+ root causes of revenue variance."
+      ]
+    }
+  ],
+  "activity_line": "",
+  "language_line": "Languages: English (fluent, professional), Cantonese (native), Mandarin (native)",
+  "skills_line": "Skills: Technical selling and presales discovery · RFI/RFP response · live demos and proofs of concept · solution feasibility validation · value engineering and pricing input · Python, JavaScript, SQL, R · data analysis and visualisation (Grafana, Plotly/Dash, XGBoost, SHAP) · LLM/RAG pipelines (OpenAI API, Qdrant, n8n) · CRM, JIRA/Confluence, Figma",
+  "interests_line": "Interests: Building AI tooling in public (github.com/chanyinkwan) · systems design · the energy transition"
+}
