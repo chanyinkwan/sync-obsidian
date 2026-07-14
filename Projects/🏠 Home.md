@@ -6,12 +6,13 @@ tags:
   - dashboard
   - home
 ---
-2# 🏠 Home — 指揮儀表板
+# 🏠 Home — 指揮儀表板
 
 ## ⚡ Quick Access
 - 📋 任務主控台(已釘選):[[kanban-default.base]]
 - 🧭 戰略地圖:[[Life @Huawei System]]
 - 🆕 新會議筆記:[[Meeting Note Template]]
+- Seed log [[Seed Log]]
 - ▶ 今日操作筆記:
 ```dataviewjs
 const t = dv.luxon.DateTime.now();
@@ -20,6 +21,22 @@ const exists = app.vault.getAbstractFileByPath(`Operation Note/${fname}.md`);
 dv.paragraph(exists
   ? `▶ [[${fname}|開啟今日操作筆記]]`
   : `今日筆記尚未建立 → 點左側 ribbon 日曆 icon,或命令面板輸入「Open today's daily note」`);
+```
+```dataviewjs
+const now = dv.luxon.DateTime.now();
+const exam = dv.luxon.DateTime.fromISO("2026-08-23T12:00:00");
+const today = now.startOf("day");
+const examDay = exam.startOf("day");
+const diff = Math.floor(examDay.diff(today, "days").days);
+let line;
+if (diff < 0) {
+  line = "🎯 AWS SAA-C03 · 2026-08-23 12:00 BST · 已考完";
+} else if (diff === 0) {
+  line = "🎯 AWS SAA-C03 · 2026-08-23 12:00 BST · EXAM TODAY";
+} else {
+  line = "🎯 AWS SAA-C03 · 2026-08-23 12:00 BST · T-" + diff + " 天";
+}
+dv.paragraph(line);
 ```
 
 ---

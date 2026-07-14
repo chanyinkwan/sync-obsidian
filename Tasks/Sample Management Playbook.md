@@ -1,6 +1,6 @@
 ---
 status: todo
-priority: high
+priority: low
 scheduled: 2026-07-09
 dateCreated: 2026-07-09T11:52:33.870+01:00
 dateModified: 2026-07-09T11:54:26.703+01:00

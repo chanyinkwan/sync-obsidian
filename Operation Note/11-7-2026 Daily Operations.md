@@ -15,8 +15,7 @@ set up 1.5 hours at the very beginning of the day -> add question in the daily o
 
 - [ ] [[Seed Log]]
 - [ ] [[Input Pipeline — Raw to Atomic Notes]] -> build Inbox folder
-- [[how to become a Solution Architect or Presales Consultant]]
-	- I feel a little 
+- [ ] [[how to become a Solution Architect or Presales Consultant]]
 - [ ] writing with claude our own Humanising output such as CV and CL
 - [ ] What is your day-to-day looks like in your experience
 - [ ] Get my platform ready to apply for jobs during work time — from [[2-7-2026 Daily Operations|2-7]]

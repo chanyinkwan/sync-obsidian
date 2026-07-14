@@ -9,7 +9,7 @@ contexts:
   - work
 dateModified: 2026-07-10T16:13:43.479+01:00
 ---
-
+1
 # O2 · 組織—客戶關係圖 — Org-to-Customer Relationship Map
 
 母任務:[[8-7-2026 SCQA Meeting]]

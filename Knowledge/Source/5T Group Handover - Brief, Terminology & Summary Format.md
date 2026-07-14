@@ -53,15 +53,16 @@ tags:
 - 路由器:**X2 Pro / X3 Pro / V3 / VN1 / X2**。**Super MiFi**(可攜式);**MiFi**。
 - **ODU / IDU** = Outdoor / Indoor Unit(FWA 室外/室內機)。**CPE** = 客戶端設備。**MBB** = Mobile Broadband。**FWA** = 固定無線接入。
 - **WiFi 6 / 7(2x2)/ 8** = CPE 標準世代。**prpl / PRPL** = 開放寬頻軟體框架。
+- ⚠ **X7** = 7/13 Download 提到庫內的一台手機(先借給客戶暫用);型號歸屬待確認,不在現有 H1xx / 路由器代碼清單中(ASR 拼作「X七」)。
 - 手機:**Pura 90**(含 Pro / Ultra;ASR 曾把「Ultra」拼成「90 澳洲」)。穿戴/音訊:FreeBuds / FreeClip(代號見上)。**TGS MINI** ⚠(德國一款裝置)。
 
 **流程 / 會議 / 縮寫**
 - **機關** = 總部(HQ)職能部門;**GTM** = Go-To-Market(總部產品行銷)。**地區部** = Regional(歐洲、東北歐地區部)。**系統部** = System Dept。
 - **組織鏈(7/8 主管確認,由下而上)**:5T 之一 = **大 T 和 IoT 業務部**(即和記業務部,負責 5 大 T + 整個歐洲 IoT)→ **歐洲中東地區部** → 機關 **MSS 部門** ⚠ → 終端 CD / 整個終端 → 華為公司。**歐洲 CBG** = 歐洲消費者 BG(地區部之上、HQ 概念)。往上聯繫原則:直屬地區部/機關的人要熟到職責;曾黎以上(Tony 等)只需「知道是誰」,勿貿然聯繫。(7/10 Ziyi 培訓:曾黎下共 **6 個團隊** = 5 大 T 系統部 + **GTM & Solutions 團隊**;歐洲 **CBG head = Kevin(何剛/He Gang)**;MSS 上面兩層具體是誰 Ziyi 待確認)
-- **1組 / 2組** ⚠ = 晨會分兩組(和記/TEF 在 2 組;DT/法電/VDF/路由在 1 組——**請向 Ziyi 確認分組**)。
+- **1組 / 2組** ⚠ = 晨會分兩組(和記/TEF 在 2 組;DT/法電/VDF/路由在 1 組——**請向 Ziyi 確認分組**)。7/13 Monday Download 同一場會同時涵蓋和記(機關漲價/丹尼斯)與 TEF(拉美/申訴)議題,佐證和記 + TEF 同在 2 組。
 - **准入 / 集團准入** = 市場/集團上市核准(homologation)。**圈量** = 客戶承諾的量(volume lock-in)。**答標 / 標書** = 投標回應。**選型會** = 客戶選型(vendor selection)。**分貨規則** = 樣機/貨源分配規則。**排產** = 生產排程。**TA** = Type Approval(型式核准)。
 - **QRR / pre-QRR** ⚠ = (季度)某 Review(VDF);**SRS / pre-SRS** ⚠(Orange);**SMR** ⚠(2C router,疑為 Stock/Sales Mgmt Review);**MoM** = Minutes of Meeting。
-- **DCB** ⚠ = 生態相關會議/議題(待確認全稱)。**JOD** ⚠(法電);**KSP** = Key Selling Points。**OKA 考核** ⚠ = 某績效考核。**RTC** ⚠ = 樣機歸還中心。
+- **DCB** ⚠ = 生態相關會議/議題(待確認全稱);ASR 亦拼作「**DCP**」(7/13 Download 同一段對話 2:59 vs 3:36,同一件事)——canonical 拼法待確認。**JOD** ⚠(法電);**KSP** = Key Selling Points。**OKA 考核** ⚠ = 某績效考核。**RTC** ⚠ = 樣機歸還中心。
 - **RDKB** ⚠ = RDK-B(Reference Design Kit for Broadband,寬頻 CPE 開放軟體棧)— 出現在 Dominic 的 MBB 問卷(7/2 分工)。**GTS** ⚠ = 疑為 Huawei Global Technical Service(技術服務)團隊 — 7/3 Selina 為其準備智能手機樣機。
 - **高訪 / 高層交流** = 客戶高層來訪。**defense meeting** = 對客戶答辯會。
 - **ATP** = Available-to-Promise(碧斐按帳戶分配的產能額度;統籌按 ATP 排產,超出部分靠 PO/備貨驅動)。⚠ **EPD** = 排產系統的承諾交付日(有 PO/備貨才放行;「刷 EPD」= 請統籌刷新)。**零毛** = 零毛利價(zero-margin cost)。**4CC / 5CC** = 載波聚合(carrier aggregation)CC 數。**裁剪** = 降規格/降成本變體(trim)。**物權轉化** = title transfer(EU 電池法規清關相關)。
@@ -80,6 +81,9 @@ tags:
 - 其他:**嚴佳(Yan Jia)**(DT GTM,正編;曾同時兼管法電——與 VDF 的 Jerry(台灣,base Luxembourg)**非同一人**,先前「嚴佳/Jerry Hsueh」併記有誤)、**陳昕/Chen Xin**(**DT 系統部 head**,正編;7/10 確認——先前記「DT 技術」)、**Olivier CADENE**(Orange 技術/RFQ)、**張銉**(路由器/機關 XG 材料)、**俞碧斐/碧斐** = [[yubeifei y00663235]](競爭分析/IOT 例會;歐洲 FWA/CPE 路標協調人——ATP 產能分配、對客成本/價格唯一口徑、主持 7/2 產品路標會)、**李楊(Li Yang)**(行政/績效)、**張明豪/明豪**(Kaili 帳戶負責人;7/8 確認,ASR 拼作「名号」)、**林穎署(Yingshu Lin)**(地區部**樣機**負責人,曾黎下屬;7/8 主管確認——先前記為「合規」待核 ⚠)、**曾力/曾黎(Zeng Li)/黎叔**(**大 T 和 IoT 業務部 boss**;林穎署、碧斐、程哥等皆其下屬,其上級為 Tony/榮濤);上層:**Tony(=榮濤/Rongtao,歐洲終端 BG 負責人,曾黎上級)/ Colin / 華哥 / 陳軍 / 余總 / 何總**。
 - 產品路標會(7/2 新增):⚠ **石小波/小波/宋博** = [[shixiaobo s00544127]](機關產品線,H175 / H168 裁剪負責,ASR 拼法多變待確認)、⚠ **小郭** (機關產品線,達標策略窗口)、**Donghao** = [[Donghao d00622509]](帳戶側,排產/ATP 對接)。⚠ **嘉杉(Jiashan)** = 去年 Dominic/FWA BD 問卷第一輪唯一參加者(全名/工號待確認;7/3 晨會提及,ASR 拼作「假山」)。
 - 客戶側人名:Leonor Ostos(TME)、Jose Angel Rivas(TEF Vendor Mgmt)、Andreas/Jaime(GCTIO/GDU)、Bastian(TEF)、**Dominique / Dominic**(內部——FWA BD 作者 Dominique Rousseau;7/1 策略 workshop 已開、報告二稿進行中;其 MBB 問卷 7/2「天降」TEF 側 Kaili/Qixuan/Emilio;ASR 常拼成「多美尼克/多米尼克/Storman Act」)、**Agos = Agostino Ruberto**(IOD,管手機/手錶,Selina 對接)、**Dennis = [[Dennis Lui]]**(和記電訊 head,base HK,一號/最大客戶;其上 **Canning Fok 霍建寧** 接觸不到)、**Mark Williams**(IOD,home broadband 選型,Selina 對接)、**Kevin(何剛/He Gang)**(歐洲 CBG head——7/10 更正,先前誤記為和記客戶側)、**Dominic** ⚠(和記側**顧問 consultant**,非客戶;待確認是否同上 Dominique Rousseau)、**Cameron(Cameron Hole)**(和記客戶;與 Dennis 的 range review 會 8/11–17)、Aurora store。
+- **何總 消歧義(重要)**:群裡出現過**兩個不同的「何總」**——(a)**領導講話**裡的何總 = 中國區 GMDP;(b)**[[He Gang 00866077 (Kevin)]]**(何剛/Kevin)= 歐洲 CBG head。**7/13 Download 的「何总跟丹尼斯的会」= (b) Kevin**(與 [[Dennis Lui]] 的高層會面,已向本人確認)。日後聽到「何總」先判斷語境,勿預設。
+- ⚠ **孔维城 / 孔卫城**(拼法不一,待確認)= **DCB 相關事務唯一責任人**(7/13 Download 由程哥 [[Ding Cheng 00611102 (程哥or 丁程)]] 指派;後續 DCB 會議紀要責任人一律掛他)。
+- ⚠ **7/13:[[Qixuan Wang wx1252689]] 在 [[Kaili Li wx1252688 (凱莉)]] 請假期間報了 TEF 樣機盤點**(是否為代理職責待確認)。
 
 **7/10 交接培訓新增(和記 1:1,Ziyi)**
 - **系統部人事**:DT = 陳昕(head)+ 嚴佳(GTM)+ **依涵** ⚠(台灣,operation/助理,contractor)+ 准入 **寇天孝** ⚠;[[Lin Yingshu 林穎署]] 名義掛 DT、樣機管整個 5T。Orange = **Olivier**(head,base Paris;難找到人、英文差)+ **孫昕** ⚠(Sun Xin,新到任;不熟的事可問嚴佳——法電/德電從前同一群人管)+ 准入 **林雪峰(ZF)**(前任**雪芳** ⚠ 已離職);VDF = 無 head(疑曾黎親帶 ⚠),實際負責 **Jerry**(台灣,base Luxembourg)+ [[Charco Chan]](台灣,Ops);准入:VDF+和記 = Michele 兼任,TEF 暫缺(借國家)。

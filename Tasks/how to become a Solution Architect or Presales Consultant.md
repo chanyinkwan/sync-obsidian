@@ -1,13 +1,14 @@
 ---
-status: doing
+status: done
 priority: high
 scheduled: 2026-07-09
 dateCreated: 2026-07-09T16:44:01.792+01:00
-dateModified: 2026-07-11T09:40:03.997+01:00
+dateModified: 2026-07-13T11:05:30.000+01:00
 tags:
   - task
 projects:
   - "[[Look for another job]]"
+completedDate: 2026-07-13
 ---
 
 Source links:

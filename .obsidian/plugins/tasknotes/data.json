@@ -687,14 +687,25 @@
       "requestedAt": 1783680029602,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/SCQA Meeting.md",
+      "requestedAt": 1783954715852,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/SCQA Prep.md",
+      "requestedAt": 1783954753809,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {
     "isRunning": false,
-    "timeRemaining": 300,
-    "nextSessionType": "short-break"
+    "timeRemaining": 1500
   },
-  "lastPomodoroDate": "2026-07-08",
+  "lastPomodoroDate": "2026-07-12",
   "pomodoroHistory": [
     {
       "id": "1781772563658",
@@ -1354,6 +1365,20 @@
         {
           "startTime": "2026-07-09T14:33:29.577+01:00",
           "endTime": "2026-07-09T14:58:29.577+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1783935390976",
+      "startTime": "2026-07-13T10:36:30.976+01:00",
+      "endTime": "2026-07-13T10:36:32.086+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "completed": false,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-13T10:36:30.976+01:00",
+          "endTime": "2026-07-13T10:36:32.086+01:00"
         }
       ]
     }
