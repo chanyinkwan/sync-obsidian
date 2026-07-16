@@ -25,6 +25,14 @@ tags:
 ## Background
 2026-07-10 [[Ziyi Zhang 84434577|Ziyi]] 交接培訓:客戶鏈 Canning Fok → Dennis Lui → Joe Parker → **Francesco Zampini** → Marlene Fantini → Mark Williams / Agostino Ruberto。與他合作的還有一位技術方向「CTO」(意大利,Ziyi 7 月送樣機對象,名字待補)。
 
+## Strategic account intel (Relationship Map · 15-7-2026)
+> Source: [[Huawei_Strategic_Key_Account_Relationship_Mapping_v1 (15-7-2026)]] (§1.4 / §2.1.4 / §2.2.4 / §2.3.4 / §4).
+- **Position:** Global Director of Digital Consumer Product & Service, CKH-IOD.
+- **Influence level:** Very High. · **Huawei relationship status:** Medium. · **Huawei sponsor:** [[Ding Cheng 00611102 (程哥or 丁程)]].
+- **Role in decision chain (L1):** price negotiation, ranging & procurement decision-maker (stance: Neutral). **Domain ownership:** owns strategy AND signs final approval for Smartphones / Devices / Procurement.
+- **Governance forum:** chairs the **Commercial / Procurement Board** (1–2/month; product roadmap, range opportunities, pricing negotiation, supply timeline; **Huawei access ~70%**).
+- **Ranking (§4):** Top-3 decision-maker **#2** for H3G.
+
 ## Last meeting / interaction
 ```dataview
 TABLE WITHOUT ID file.link AS "Note", date AS "Date"

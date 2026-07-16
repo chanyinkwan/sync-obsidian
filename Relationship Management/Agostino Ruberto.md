@@ -25,6 +25,15 @@ tags:
 ## Background
 2026-07-10 [[Ziyi Zhang 84434577|Ziyi]] 交接培訓:客戶鏈 Canning Fok → Dennis Lui → Joe Parker → Francesco Zampini → Marlene Fantini → Mark Williams / **Agostino Ruberto**。依 Kess 表格註記:意大利,即 Ziyi 本次(2026-07)赴意送樣機的對象。
 
+## Strategic account intel (Relationship Map · 15-7-2026)
+> Source: [[Huawei_Strategic_Key_Account_Relationship_Mapping_v1 (15-7-2026)]] (§1.4 / §2.1.4 / §2.3.4 / §4).
+- **Position:** CTO, CKH-IOD.
+- **Influence level:** High. · **Huawei relationship status:** Strong. · **Huawei sponsor:** [[Ding Cheng 00611102 (程哥or 丁程)]].
+- **Role in decision chain (L3):** RFI review, test-result assessment (Decision Maker, Champion).
+- **Governance forum:** chairs the **Technology Board** (1–2/month; product spec, ongoing project test progress & results assessment; **Huawei access ~90%**).
+- **Ranking (§4):** Top-3 decision-maker **#3** for H3G.
+- ⚠ *Framing note:* the relationship-map places him at the **CTO decision-maker tier with [[Ding Cheng 00611102 (程哥or 丁程)]] as sponsor**; the 7/10 handover above recorded him "under Marlene, Selina 對接." Both kept — reconcile as the relationship develops.
+
 ## Last meeting / interaction
 ```dataview
 TABLE WITHOUT ID file.link AS "Note", date AS "Date"

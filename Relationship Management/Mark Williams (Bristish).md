@@ -25,6 +25,12 @@ tags:
 ## Background
 2026-07-10 [[Ziyi Zhang 84434577|Ziyi]] 交接培訓:客戶鏈 Canning Fok → Dennis Lui → Joe Parker → Francesco Zampini → Marlene Fantini → **Mark Williams** / Agostino Ruberto。
 
+## Strategic account intel (Relationship Map · 15-7-2026)
+> Source: [[Huawei_Strategic_Key_Account_Relationship_Mapping_v1 (15-7-2026)]] (§1.4 / §2.1.4).
+- **Position:** Sr. Vendor Manager (MBB), CKH-IOD.
+- **Influence level:** Medium. · **Huawei relationship status:** Medium. · **Huawei sponsor:** [[Huang Yi 84411269 (Selina)]].
+- **Role in decision chain (L4):** RFI process management, quotation review (Influencer, Champion).
+
 ## Last meeting / interaction
 ```dataview
 TABLE WITHOUT ID file.link AS "Note", date AS "Date"

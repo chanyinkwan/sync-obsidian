@@ -7,15 +7,16 @@ projects:
   - "[[SA Presales Transition]]"
 contexts:
   - hub
-scheduled: 2026-07-14
+scheduled: 2026-07-16
 due: 2026-07-17
 recurrence: DTSTART:20260713;FREQ=DAILY;BYDAY=MO,TU,WE,TH,FR;UNTIL=20260717T235959Z
 timeEstimate: 15
 dateCreated: 2026-07-12T12:00:00.000+01:00
 complete_instances:
   - 2026-07-13
+  - 2026-07-15
 skipped_instances: []
-dateModified: 2026-07-13T10:46:22.070+01:00
+dateModified: 2026-07-15T16:02:30.137+01:00
 ---
 # SA 01 - LinkedIn Requisition Index
 

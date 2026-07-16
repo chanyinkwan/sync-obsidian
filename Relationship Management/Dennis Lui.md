@@ -27,6 +27,13 @@ Key Hutchison-side customer contact. Sits in the L5 客戶/渠道 layer of [[SCQ
 
 2026-07-10 [[Ziyi Zhang 84434577|Ziyi]] 交接培訓補充:程哥會前初見 Dennis,他對華為手機**生態替代方案**(不能裝 Google Play 的解決方案)評價「聽起來還不錯」,要求拿給歐洲團隊試用 —— 觸發了那單緊急樣機需求(最終以 Mate X7 頂上;Pura 90 等 7/14 發布會後再發)。客戶鏈:Canning Fok → **Dennis Lui** → [[Joe Parker]] → [[Francesco Zampini]] → [[Melanie Fantini 馬蘭妮|Marlene Fantini]] → [[Mark Williams (Bristish)]] / [[Agostino Ruberto]]。
 
+## Strategic account intel (Relationship Map · 15-7-2026)
+> Source: [[Huawei_Strategic_Key_Account_Relationship_Mapping_v1 (15-7-2026)]] (§1.4 / §2.3.4 / §4).
+- **Position:** Executive Deputy Chairman, Hutchison Telecommunications HK Holdings · Director, CK Hutchison Group Telecom Holdings Ltd.
+- **Influence level:** Very High. · **Huawei relationship status:** Medium. · **Huawei sponsor:** [[He Gang 00866077 (Kevin)]].
+- **Governance forum:** chairs the **Executive Committee** (2–3/year; scope: FWA market performance, innovative products, future device-collaboration alignment, range opportunities; **Huawei access ~50%**).
+- **Ranking (§4):** Top-3 decision-maker **#1** for H3G.
+
 ## Last meeting / interaction
 ```dataview
 TABLE WITHOUT ID file.link AS "Note", date AS "Date"

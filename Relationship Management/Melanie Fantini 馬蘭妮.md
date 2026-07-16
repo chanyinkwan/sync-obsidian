@@ -25,6 +25,13 @@ tags:
 ## Background
 Customer contact met ~15-16 Jun. Ding Cheng communicated this year's plan and the new (post-increase) pricing; we are waiting on her feedback to lock a this-year→next-year volume commitment. Identify her org and decision role as the relationship develops.
 
+## Strategic account intel (Relationship Map · 15-7-2026)
+> Source: [[Huawei_Strategic_Key_Account_Relationship_Mapping_v1 (15-7-2026)]] (§1.4 / §2.1.4 / §4).
+- **Position:** Head of Devices and Hardware Portfolio, CKH-IOD.
+- **Influence level:** High. · **Huawei relationship status:** Strong. · **Huawei sponsor:** [[Ding Cheng 00611102 (程哥or 丁程)]].
+- **Role in decision chain (L2):** price & volume negotiation, quotation review (Influencer, Champion).
+- **Ranking (§4):** Top-3 **influencer #1** for H3G.
+
 ## Last meeting / interaction
 ```dataview
 TABLE WITHOUT ID file.link AS "Note", date AS "Date"

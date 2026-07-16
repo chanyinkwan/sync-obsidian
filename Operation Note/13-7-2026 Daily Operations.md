@@ -49,18 +49,36 @@ tags:
 ### What actually happened today2
 
 Fable 5 extended to July 19! wahahahaha that's the charm of market competition 
+
+- [[Skill - Plan Daily Ops]] / [[Agent - SA Transition Advisor]] — wrote user-facing skill notes
+- [[Tidy up Meeting - July Relationship and Product Training - Transcript]] — tidied training transcript
+- [[SA Requisition Dashboard]] — built SA JD collection system + template
+- [[Skill - Transcript to Meeting Summary]] — added mermaid loop diagram
+- [[Seed Log]] — tidied into dataview decision table
+- [[SA 03 - Book AWS SAA Exam]] — booked SAA exam, 23 Aug
+- Added AWS exam countdown to Home + daily notes
+- [[MasterExperienceDB]] / [[Timeline Audit - 2026-07-13]] — recrafted all career bullets
+- [[O5 · Client Power Map]] — built client org chart from 和记/VDF3 pptx
+
 ### How would you translate what you have done today into industry terminology?
 Scoping 範疇 / Pricing 定價 / Deal Governance 交易治理?
 
 
 ### How is your time allocated today?
 
+⚠ No pomodoro logged 13-7 (one 1-sec aborted start). All below estimated from chat-timestamp clusters.
+**hub ~3h30m · work ~45m (est.)**
+- hub / build · ~2h50m ⚠ est — skill notes, SA requisition system, career DB recraft, countdown
+- hub / maintenance · ~30m ⚠ est — Seed Log tidy
+- hub / admin · ~10m ⚠ est — exam booking, daily plan
+- work / delivery · ~30m ⚠ est — O5 client power map
+- work / maintenance · ~15m ⚠ est — training transcript tidy
 
 ### What is the most challenging part of the day?
-
+nothing very challenging probably getting through the mental barrier and able to make a decision on booking an exam that happens next month
 
 ### What is your win today and what will you do better next time?
-
+big applause on literally booking an exam for the next month
 
 ### What is your take away from today's work (What to sync?)
 

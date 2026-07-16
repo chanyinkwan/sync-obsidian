@@ -23,7 +23,7 @@ tags:
 - **How to work with them:** My mentor right now — lean on her for any sample-management question during the handover.
 
 ## Background
-E-Commerce / GTM Ops lead (Amazon GTM & B2B). My **mentor for the 1-month sample-management handover** (16-Jun-2026 training). Manages Mall + Amazon product launches and the quarterly sample stocktake; will train me on the quarterly upload next month. Default approver (with 程哥) for self-use of spare samples.
+E-Commerce / GTM Ops lead (Amazon GTM & B2B). My **mentor for the 1-month sample-management handover** (16-Jun-2026 training). Manages Mall + Amazon product launches and the quarterly sample stocktake; will train me on the quarterly upload next month. Default approver (with 程哥) for self-use of spare samples. Leaving next month. 
 
 ## Last meeting / interaction
 ```dataview

@@ -16,6 +16,10 @@ description: >-
 Run the full pipeline below in order. It reproduces the exact process we settled on:
 **(1) clean → (2) clarify → (3) update the glossary → (4) append the Download Meeting Summary (Download/Team Sync meetings only).**
 
+## Model & delegation
+
+Run this skill on **Opus 4.8** (`claude-opus-4-8`). The core risk — speaker attribution/disambiguation (Step 1.4b) and term reconstruction — is deep, context-heavy reasoning where a wrong name is expensive; that is Opus work, not a formatting pass. Mechanical sub-steps *may* be handed to a **Sonnet 5** (`claude-sonnet-5`) subagent when they are high-volume and low-judgment: stripping WeLink `data:image` bloat, first-pass cleaning of an already-reliably-labelled dump, or writing out many uniform notes (e.g. contact/event cards) from a spec Opus has fixed. The confidence gate in Step 2.4 still binds inside any subagent. *(Naming note: "Sonnet 5" / "Opus 4.8" are the current IDs; the older "Claude 3.5 Sonnet / Claude 3 Opus" labels are superseded.)*
+
 ## Canonical references (read these first — they are the source of truth)
 
 - **Team map / who's who & internal→industry terms:** `CLAUDE.md` (project root).
@@ -59,9 +63,12 @@ Always re-read the 5T note at run time — it evolves. Do not hard-code its cont
    4. **Score each surviving candidate, then apply the confidence gate in Step 2.4.**
 
    **Too little signal = no name.** If a speaker's entire captured contribution cannot support a topic or behaviour inference (e.g. a single filler word), do **not** attribute. Keep the raw `Speaker N` label and note in Open questions that the audio is too sparse. This is a correct outcome, not a failure.
-5. **Fix metadata.** The date inside the body is often wrong; derive the real meeting date from the filename. Set/repair frontmatter: `type: meeting-transcript`, `date`, `account_or_project`, `attendees` (add anyone who spoke but was missing; add an `absent:` line for named no-shows). Add `monday-download` (or the relevant) tag.
+5. **Fix metadata.** The date inside the body is often wrong; derive the real meeting date from the filename. Set/repair frontmatter to the house style (see `13-7-2026 Meeting - Monday Download - Transcript.md` as the exemplar):
+   - `type: meeting-transcript`, `date` (ISO `YYYY-MM-DD`), `account_or_project`, `host:` (the person who asks for updates / assigns owners / closes topics), `attendees`, `absent` (named no-shows), `tags`.
+   - **`attendees:` and `absent:` are quoted `[[wikilinks]]`, not plain strings** — e.g. `- "[[Ding Cheng 00611102 (程哥or 丁程)]]"`. This is what makes each person's contact-card *"Last meeting / interaction"* Dataview resolve the note.
+   - **Tags must include `meeting`** (alongside `meeting-transcript` and the specific kind, e.g. `monday-download`). The contact cards' Last-meeting Dataview queries `FROM #meeting`, so a note tagged only `meeting-transcript` will **not** surface under the people who attended.
 6. **Lay out the note** in this structure:
-   - `# <Meeting name>` + a header block (Date · Duration · Host · Location · In-room vs Dialled-in · Absent).
+   - `# <Meeting name>` + a header block of **plain bold lines** (not a blockquote): a `**Date:** … · **Duration:** … · **Host:** … · **Location:** … · **In-room vs Dialled-in:** …` line, then a `**Presented by / Spoke this session:**` line of `[[people]]`, then an `**Absent:**` line. Reserve the `>` blockquote for the Context and Speaker-labels callouts only.
    - `> Context:` one-line framing (e.g. what anchors the week).
    - `## This week — action items by person` — bulleted digest grouped by `[[person]]`.
    - `## Cleaned transcript` — turn-by-turn (`**[[Speaker]]** · timestamp` then the line).

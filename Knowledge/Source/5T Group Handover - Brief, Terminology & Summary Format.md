@@ -46,11 +46,13 @@ tags:
 - **TEF** = Telefonica(西班牙/德國 O2)。**DT / 德電** = Deutsche Telekom。**法電** = Orange(France)。**VDF** = Vodafone。
 - **TME** ⚠ = Telefónica Móviles España(西班牙行動);客戶 Leonor Ostos。
 - **Buyin** ⚠ = DT/Orange 的聯合採購公司(採購窗口)。
+- **CPE 競品(和記 FWA)**:**ZTE**(頭號競爭對手,價格/供應/Wi-Fi 6+7 皆強,義大利等有網絡合作,無地緣政治包袱);**Nuuday**(丹麥電信集團,和記北歐主要競爭對手);Tier-2 穩定合作:GreenPacket、⚠「Excel」(廠商名待確認);備援池:**Vantiva**(前 Technicolor)、**Zyxel**、TCL(3DK 曾從華為轉單 Zyxel/Vantiva)。
 
 **產品代碼**
 - **H1xx**(H155 / H162 / H164 / H165 / H173 / H362 / H386)= CPE / FWA / MBB 裝置(H162/164/165=FWA CPE;H173=當前主推/答標機型)。
 - **H175** = 新 FWA CPE(主推 3+3 配置、512+512 記憶體;比 H162 低 5–6 美金,2×2 版再低 1–2;4CC 載波聚合為基線;2027/5 上市)。⚠ **H176** = 可能取消(連帶取消雙頻 8×8;3×3 產品線無 5.5G 8×8)。**V5** = 新路由 pro 版(零毛成本 75→90 美金,+15)。⚠ **相框** = 疑為「相框」造型 CPE(不進投標,先擱置)。⚠ **雙低/双低** = V5 待推的 ~3 美金選配(全稱待向碧斐確認)。
 - 路由器:**X2 Pro / X3 Pro / V3 / VN1 / X2**。**Super MiFi**(可攜式);**MiFi**。
+- **App Turbo**(≠ App Touch)= FWA 裝置**內建 AI 加值功能**(針對特定 App 的限速加速 / QoS 提速);已內建於華為 FWA 生態、Orange OpCo 已有商用成效(見 [[FWA Business Development V1 (15-7-2026)]])。⚠ 注意勿與已終止的 **App Touch 專案**(法律風險→談判終止,見 §1)混淆——ASR 常把兩者都拼成「APB/App Turbo/Touch」。搭配功能:**Smart Antenna Selection**(智能天線選擇)、AI chatbot troubleshooting。
 - **ODU / IDU** = Outdoor / Indoor Unit(FWA 室外/室內機)。**CPE** = 客戶端設備。**MBB** = Mobile Broadband。**FWA** = 固定無線接入。
 - **WiFi 6 / 7(2x2)/ 8** = CPE 標準世代。**prpl / PRPL** = 開放寬頻軟體框架。
 - ⚠ **X7** = 7/13 Download 提到庫內的一台手機(先借給客戶暫用);型號歸屬待確認,不在現有 H1xx / 路由器代碼清單中(ASR 拼作「X七」)。
@@ -84,6 +86,9 @@ tags:
 - **何總 消歧義(重要)**:群裡出現過**兩個不同的「何總」**——(a)**領導講話**裡的何總 = 中國區 GMDP;(b)**[[He Gang 00866077 (Kevin)]]**(何剛/Kevin)= 歐洲 CBG head。**7/13 Download 的「何总跟丹尼斯的会」= (b) Kevin**(與 [[Dennis Lui]] 的高層會面,已向本人確認)。日後聽到「何總」先判斷語境,勿預設。
 - ⚠ **孔维城 / 孔卫城**(拼法不一,待確認)= **DCB 相關事務唯一責任人**(7/13 Download 由程哥 [[Ding Cheng 00611102 (程哥or 丁程)]] 指派;後續 DCB 會議紀要責任人一律掛他)。
 - ⚠ **7/13:[[Qixuan Wang wx1252689]] 在 [[Kaili Li wx1252688 (凱莉)]] 請假期間報了 TEF 樣機盤點**(是否為代理職責待確認)。
+- **[[Manjit Dhanjal]]**(客戶側,CKH-IOD)= Sr. Vendor Manager(handset & accessories);Francesco Zampini 之下、負責 B2C 其他品類(smartphone / wearable);Influence Medium / Huawei relationship Strong / sponsor Selina。全名經 15-7 關係圖 doc 確認,contact card 已建。
+- **[[Lai Yunqi]]**(內部,Huawei)= 7/15 Dominique FWA review 預定與會但未上線者(ASR「Yun Ce」);此會非重要角色,contact card 已建、context 待 Kess 補。
+- **CKH-IOD 意大利技術/QA 團隊(客戶側,smartphone return 對口)**:**[[Vincenzo Verrillo]]**(Head of Digital Technology)、**[[Graziano Mosca]]**(Head of Quality Assurance)、**[[Mauro Nicoli]]**(Senior Radio Engineer)、**[[Laura Scutella]]**(Quality Assurance Lead)、**[[Barbara Balice]]**(Senior Radio Design Manager)。Huawei 對口:Michele(技術)、程哥(account)、Selina(AM)。均出自 15-7 關係圖 doc(Q2 羅馬 smartphone technical workshop + ecosystem workshop);contact cards 已建。
 
 **7/10 交接培訓新增(和記 1:1,Ziyi)**
 - **系統部人事**:DT = 陳昕(head)+ 嚴佳(GTM)+ **依涵** ⚠(台灣,operation/助理,contractor)+ 准入 **寇天孝** ⚠;[[Lin Yingshu 林穎署]] 名義掛 DT、樣機管整個 5T。Orange = **Olivier**(head,base Paris;難找到人、英文差)+ **孫昕** ⚠(Sun Xin,新到任;不熟的事可問嚴佳——法電/德電從前同一群人管)+ 准入 **林雪峰(ZF)**(前任**雪芳** ⚠ 已離職);VDF = 無 head(疑曾黎親帶 ⚠),實際負責 **Jerry**(台灣,base Luxembourg)+ [[Charco Chan]](台灣,Ops);准入:VDF+和記 = Michele 兼任,TEF 暫缺(借國家)。
@@ -91,7 +96,7 @@ tags:
 - **國家(子網)IoT GTM 對口**:北歐(瑞典+丹麥)= **駱鵬飛** ⚠(資深,直接找);意大利 = Michele 搞定 99%(國家 head **潘卓** ⚠ 交接中;名義 GTM 明浩不管和記——與程哥 responsibility overlap);英+愛 = **Vincent**(國家 head)+ **陳述** ⚠(GTM,駐英,Vincent 下屬);奧地利 = **宋敬坤** ⚠(無業務,少接觸);香港 = office politics 敏感,一律程哥自己對。
 - **機關(HQ)IoT 產品線**:**劉晝** ⚠(歐洲 IoT 產品 GTM,region 線,日常最多找到他)→ 主管**陳軍**(MBB 產品線 head,項目會基本都來;程哥/碧斐層對接)→ **Colin(孔方貴 ⚠)**(HQ IoT head,忙,不一定來)。product 線:**李靜** ⚠(CPE;申 CPE 樣機時即備貨接口人)、**言輕** ⚠(MiFi/mobile hotspot)、**暢佳** ⚠(senior,前 CPE GTM)。router 產品線不在陳軍下。
 - **樣機備貨/物流**:[[huangyasi 84110636]] = 本次 Pura 90 備貨接口人(之前管耳機;每產品接口人不同,看電子流「當前處理人」);電子流:申請→審批→財經審核(不卡)→備貨接口人確認→庫房(在**東莞**,非深圳)發貨+更新單號;「**物流查詢系統**」權限可複製 Ziyi 的;特急走特殊審批(可至曾黎甚至更上)。
-- **和記客戶架構(IOD)**:**IOD** ⚠(Innovation of Development)= 和記 global 終端對口團隊,base London(我們團隊在倫敦的原因)。[[Dennis Lui]] → IOD head **Joe Parker**(不管供應商)→ **Francesco Zampini**(核心選型 decision maker,「選不選華為他說了算」,虛線直通 Dennis)→ [[Melanie Fantini 馬蘭妮|Marlene Fantini]](談判/壓價,無決策權;ASR「馬來尼/馬蘭妮」)→ **Mark Williams**(home broadband)+ **Agostino Ruberto**(手機/手錶)。分工:Selina 對 Mark/Agostino;程哥對 Marlene/Francesco;Dennis 層 = 曾黎/榮濤。IOD 技術線客戶全由 Michele 包;子網客戶只對英國。**3UK 合併(Three+Vodafone UK)後 vendor 對接人離職(疑去 Verizon ⚠)、對接懸而未決**。最新客戶關係圖向 Selina 要(**不可拍照,含拍屏**)。
+- **和記客戶架構(IOD)**:**IOD** ⚠(Innovation of Development)= 和記 global 終端對口團隊,base London(我們團隊在倫敦的原因)。[[Dennis Lui]] → IOD head **Joe Parker**(不管供應商)→ **Francesco Zampini**(核心選型 decision maker,「選不選華為他說了算」,虛線直通 Dennis)→ [[Melanie Fantini 馬蘭妮|Marlene Fantini]](談判/壓價,無決策權;各品牌對接 + portfolio 談判報價;ASR「馬來尼/馬蘭妮」)→ **Mark Williams**(FWA / home broadband category)+ **[[Manjit Dhanjal]]**(Sr. Vendor Manager, handset & accessories;B2C 其他品類:smartphone / wearable;Huawei sponsor = Selina)+ **Agostino Ruberto**(手機/手錶技術,與 Francesco 同層)。群層決策 = Francesco + Dennis;OpCo 端 head of device 有選擇權但須 group 綠燈。分工:Selina 對 Mark/Agostino;程哥對 Marlene/Francesco;Dennis 層 = 曾黎/榮濤。IOD 技術線客戶全由 Michele 包;子網客戶只對英國。**3UK 合併(Three+Vodafone UK)後 vendor 對接人離職(疑去 Verizon ⚠)、對接懸而未決**。最新客戶關係圖向 Selina 要(**不可拍照,含拍屏**)。
 - **帕丁頓辦公室(非本部門,for 座位圖)**:[[Mun Leong Wong 84417145]](Moon)、[[Fergus]](PR,數週來一次、無固定座位)、**Wayne**(country sales director)、**Attila**(Amazon 渠道為主)、[[Kaidiliya Ainiwaer 84425233 (Kaiya)]](行政/打印卡)、**Bethy**(台灣,Delivery)、**Sanjeewa**(斯里蘭卡,協助 [[Guo Wubin 00976469 (Felix)|Felix]] 執行);其他區塊 = **Vodafone 帳戶團隊**(ASR 拼作「博導風/霍大峰的風」)。
 - **客戶互動節奏(和記)**:**MWC**(每年);**回國高訪** 2 次/年(約 6 月、10 月,程哥接待,客戶回總部);**Device Forum**(和記自辦,約 3 次/年,各國 C-level 看趨勢;不一定邀廠商,可爭取 10–20 min);**technical workshop** ≥1 次/年(不一定 formal);日常 = Selina/Ziyi 每天在聊。
 - **手機回歸** = 年底華為 5G 手機重返歐洲(自研芯片解決斷供;Google Play 替代方案為 open source;年末對客戶主動溝通的核心話題。ASR 誤拼「首期回歸」)。**保密代號**:產品發布前內部一律叫代號,樣機通知亦用代號。ASR 常見錯拼:「央基」=樣機、「tablet」=template、「G七」=GTM、「合資集團」=和記集團、「智能副導團」=智囊顧問團(?)。

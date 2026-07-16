@@ -12,6 +12,11 @@ tags: [seed]
 ## 一句話 pitch
 建一個帶特定人格(直言型導師)的 agent,在交付前用它壓力測試我的 SCQA / 決策 —— 先被 AI 罵,再見真人。
 
+Mentor list:
+1. Elon Musk -> criticise my logic and efficiency
+2. 金姐 -> the person that criticise from how the reality works perspective, being persuasive and not rude while pointing out your blind spot
+3. Thariq -> criticise the way I implement AI and assist me in writing mistake log in different kinds of way, how to prompt, the mental model, and keeping up with the fields' expectations
+
 ## Why yes
 - 原型成本極低:一個 system prompt / 一個 skill 就能開跑,本 hub 已有現成材料(SCQA canvas、每日反思)餵 context。
 - 與現有 15 分鐘 SCQA「True or Not / Feasible or Not」驗證閉環天然互補 —— persona 當紅隊,經理見到的是被打磨過的第二版。
