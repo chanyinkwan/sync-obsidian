@@ -1,8 +1,9 @@
+
 # Unknowns Navigator — Design Spec
 
 Date: 2026-07-16
 Status: approved-pending-user-review
-Source philosophy: "A Field Guide to Fable: Finding Your Unknowns" (Thariq / trq212) — as summarised by Chukwan in the design conversation. Vault stub: `Knowledge/Inbox/Fable Field Guide.md`.
+Source philosophy: "A Field Guide to Fable: Finding Your Unknowns" (Thariq / trq212) — as summarised by Chukwan in the design conversation. Vault stub: [[Fable Field Guide]]
 
 ## 1. Goal
 
