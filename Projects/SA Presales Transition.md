@@ -59,6 +59,8 @@ This is now the one immovable date in the sprint. Everything before it is study 
 ## Project advisor agent
 `.claude/agents/sa-transition-advisor.md` holds a project-scoped agent. Invoke it in Claude Code for any rescheduling/prioritization suggestion. Workflow: advisor (Sonnet) proposes → consultant (main session) reviews → user approves.
 
+Exam Prep [[SA 00 - Exam Prep]]
+
 ## Tasks in this project (auto)
 ```dataview
 TABLE WITHOUT ID file.link AS "Task", status AS "Status", priority AS "Priority", due AS "Due"

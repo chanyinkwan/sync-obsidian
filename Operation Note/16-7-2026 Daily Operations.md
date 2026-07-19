@@ -15,7 +15,7 @@ tags:
 
 - [ ] [[In and Out Receipt Excel Table]]
 - [ ] Product line change from booklet to website
-- [ ] Information or news integration hub
+- [ ] Infobermation or news integration hub
 #### 🚀 Hub (進攻)
 **[[SA Presales Transition]]**
 - [ ] [[SA 01 - LinkedIn Requisition Index]] 🔁 15m

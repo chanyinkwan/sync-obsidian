@@ -34,7 +34,7 @@
 		{"id":"a1000000000wh001","type":"text","text":"H1","x":567,"y":3616,"width":361,"height":109},
 		{"id":"a1000000000wh007","type":"text","text":"H6","x":1567,"y":3899,"width":361,"height":109},
 		{"id":"a10000000000pk01","type":"text","text":"會議中提到但還不知道座位的人,先丟這裡。\n散會後再定位 + 轉正式卡片。","x":-1340,"y":2789,"width":1223,"height":223},
-		{"id":"a1000000000000f2","type":"file","file":"Knowledge/Source/July SCQA delivery/Paddington Office Floorplan.pdf","x":-1450,"y":1651,"width":1445,"height":815},
+		{"id":"a1000000000000f2","type":"file","file":"Knowledge/Source/Life at Huawei/July SCQA delivery/Paddington Office Floorplan.pdf","x":-1450,"y":1651,"width":1445,"height":815},
 		{"id":"a1000000000000t1","type":"text","text":"# O1 · Paddington Office Map\n\n**會議中操作(3 秒協議)**\n1. 雙擊座位卡 → 在座位代號後打名字 → `Esc`\n2. 新角色沒座位?雙擊空白處建卡,先丟 Parking Lot\n3. 已有聯絡人卡片:從 `Relationship Management/` 拖進來\n4. 改錯了 `Ctrl+Z`\n\n**散會後**:臨時卡右鍵 → Convert to file → 搬入 Relationship Management","x":-1450,"y":366,"width":1445,"height":742},
 		{"id":"a1000000000ea007","type":"text","text":"A6","x":6681,"y":1882,"width":387,"height":119},
 		{"id":"094466d16625193e","type":"file","file":"Relationship Management/Ziyi Zhang 84434577.md","x":6256,"y":4331,"width":400,"height":94},
