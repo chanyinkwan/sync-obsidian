@@ -1,0 +1,10 @@
+{
+  "ai-chat-sidebar:new-conversation": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "A"
+    }
+  ]
+}

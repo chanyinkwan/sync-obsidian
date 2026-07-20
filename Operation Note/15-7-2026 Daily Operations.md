@@ -27,7 +27,7 @@ tags:
 - [ ] [[TSMP In and Out Record]]
 
 **(no project)**
-- [ ] [[22-7-2026 SCQA Prep]]
+- [ ] [[20-7-2026 SCQA Prep]]
 
 #### 🔁 Carry-over from 14-7-2026
 - [x] 2 Access Permissions 2/2 Done

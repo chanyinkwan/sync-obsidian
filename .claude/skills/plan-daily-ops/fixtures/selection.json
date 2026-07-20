@@ -1,0 +1,18 @@
+{
+  "today":"2026-07-20",
+  "weekday":"SU",
+  "available_minutes":480,
+  "tasks":[
+    {"id":"w1","context":"work","priority":"high","scheduled":"2026-07-20","estimate":120},
+    {"id":"w2","context":"work","priority":"normal","due":"2026-07-20","estimate":90},
+    {"id":"w3","context":"work","priority":"normal","scheduled":"2026-07-20","estimate":60},
+    {"id":"w4","context":"work","priority":"low","scheduled":"2026-07-20","estimate":60},
+    {"id":"h1","context":"hub","priority":"high","recurrence":"FREQ=DAILY;DTSTART=20260701","estimate":45},
+    {"id":"h2","context":"hub","priority":"normal","scheduled":"2026-07-20","estimate":45},
+    {"id":"h3","context":"hub","priority":"low","scheduled":"2026-07-20","estimate":30},
+    {"id":"old","context":"work","scheduled":"2026-07-09","estimate":30},
+    {"id":"expired","context":"hub","scheduled":"2026-07-01","recurrence":"FREQ=DAILY;UNTIL=20260717","estimate":30}
+  ],
+  "carry_over":[{"id":"w2","count":0},{"id":"h2","count":0},{"id":"old-carry","count":1}],
+  "expected":{"work_max":3,"hub_max":2,"total_max":5,"selected_include":["w1","h1"],"triage_include":["old","expired","old-carry"],"backlog_lines":0,"capacity_max_minutes":384}
+}

@@ -1,0 +1,13 @@
+{
+  "register_available": true,
+  "history_scans_before_sync": 1,
+  "candidates": [
+    {"id":"proc","kind":"procedure","claim":"Before pricing handoff, verify owner and source","when":"when preparing a customer-facing price response","source":"[[15-7-2026 FWA Business Strategies Meeting Transcript]]","status":"decided","priority":1},
+    {"id":"principle","kind":"principle","claim":"Chat timestamps prove activity, not duration","when":"when reconstructing a Daily Log without Pomodoro evidence","source":"[[15-7-2026 Daily Operations]]","status":"decided","priority":2},
+    {"id":"scqa","kind":"scqa","claim":"Repeated ownership ambiguity is an alignment risk","when":"when drafting the next manager SCQA","source":"[[20-7-2026 SCQA Prep]]","status":"observed","priority":3},
+    {"id":"summary","kind":"summary","claim":"Worked on the vault","when":"","source":"[[15-7-2026 Daily Operations]]","status":"observed","priority":4},
+    {"id":"proposal","kind":"idea","claim":"Automate SCQA feed collection","when":"when a consuming query has been approved","source":"[[20-7-2026 SCQA Prep]]","status":"proposed","priority":5},
+    {"id":"fact","kind":"domain-fact","claim":"ATP means Available to Promise","when":"when reading supply status","source":"[[5T Group Handover - Brief, Terminology & Summary Format]]","status":"confirmed","priority":6}
+  ],
+  "expected":{"history_scans_after_sync":1,"shipped_ids":["proc","principle","scqa"],"max_bullets":3,"proposal_label":"待拍板","forbidden_tag":"#scqa-feed"}
+}

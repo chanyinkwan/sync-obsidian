@@ -60,7 +60,7 @@ tags:
 
 **流程 / 會議 / 縮寫**
 - **機關** = 總部(HQ)職能部門;**GTM** = Go-To-Market(總部產品行銷)。**地區部** = Regional(歐洲、東北歐地區部)。**系統部** = System Dept。
-- **組織鏈(7/8 主管確認,由下而上)**:5T 之一 = **大 T 和 IoT 業務部**(即和記業務部,負責 5 大 T + 整個歐洲 IoT)→ **歐洲中東地區部** → 機關 **MSS 部門** ⚠ → 終端 CD / 整個終端 → 華為公司。**歐洲 CBG** = 歐洲消費者 BG(地區部之上、HQ 概念)。往上聯繫原則:直屬地區部/機關的人要熟到職責;曾黎以上(Tony 等)只需「知道是誰」,勿貿然聯繫。(7/10 Ziyi 培訓:曾黎下共 **6 個團隊** = 5 大 T 系統部 + **GTM & Solutions 團隊**;歐洲 **CBG head = Kevin(何剛/He Gang)**;MSS 上面兩層具體是誰 Ziyi 待確認)
+- **組織鏈(7/8 主管確認,由下而上)**:5T 之一 = **大 T 和 IoT 業務部**(即和記業務部,負責 5 大 T + 整個歐洲 IoT)→ **歐洲中東地區部** → 機關 **MSS 部門** ⚠ → 終端 CD / 整個終端 → 華為公司。**歐洲 CBG** = 歐洲消費者 BG(地區部之上、HQ 概念)。往上聯繫原則:直屬地區部/機關的人要熟到職責;曾黎以上(Tony 等)只需「知道是誰」,勿貿然聯繫。(7/10 Ziyi 培訓:曾黎下共 **6 個團隊** = 5 大 T 系統部 + **GTM & Solutions 團隊**;歐洲 **CBG head = Kevin(何剛/He Gang)**;MSS 上面兩層具體是誰 Ziyi 待確認;7/20 程哥另述:機關 **MSS 總台＝朱平** ⚠(無卡待建)、其下 荣涛/Tony,一級＝CBG(華為終端);何剛/Kevin 落 CBG 抑或 MSS 待 Kess 核——見 [[20-7-2026 SCQA Canvas (1on1 程哥)]])
 - **1組 / 2組** ⚠ = 晨會分兩組(和記/TEF 在 2 組;DT/法電/VDF/路由在 1 組——**請向 Ziyi 確認分組**)。7/13 Monday Download 同一場會同時涵蓋和記(機關漲價/丹尼斯)與 TEF(拉美/申訴)議題,佐證和記 + TEF 同在 2 組。
 - **准入 / 集團准入** = 市場/集團上市核准(homologation)。**圈量** = 客戶承諾的量(volume lock-in)。**答標 / 標書** = 投標回應。**選型會** = 客戶選型(vendor selection)。**分貨規則** = 樣機/貨源分配規則。**排產** = 生產排程。**TA** = Type Approval(型式核准)。
 - **QRR / pre-QRR** ⚠ = (季度)某 Review(VDF);**SRS / pre-SRS** ⚠(Orange);**SMR** ⚠(2C router,疑為 Stock/Sales Mgmt Review);**MoM** = Minutes of Meeting。
@@ -99,7 +99,7 @@ tags:
 - **和記客戶架構(IOD)**:**IOD** ⚠(Innovation of Development)= 和記 global 終端對口團隊,base London(我們團隊在倫敦的原因)。[[Dennis Lui]] → IOD head **Joe Parker**(不管供應商)→ **Francesco Zampini**(核心選型 decision maker,「選不選華為他說了算」,虛線直通 Dennis)→ [[Melanie Fantini 馬蘭妮|Marlene Fantini]](談判/壓價,無決策權;各品牌對接 + portfolio 談判報價;ASR「馬來尼/馬蘭妮」)→ **Mark Williams**(FWA / home broadband category)+ **[[Manjit Dhanjal]]**(Sr. Vendor Manager, handset & accessories;B2C 其他品類:smartphone / wearable;Huawei sponsor = Selina)+ **Agostino Ruberto**(手機/手錶技術,與 Francesco 同層)。群層決策 = Francesco + Dennis;OpCo 端 head of device 有選擇權但須 group 綠燈。分工:Selina 對 Mark/Agostino;程哥對 Marlene/Francesco;Dennis 層 = 曾黎/榮濤。IOD 技術線客戶全由 Michele 包;子網客戶只對英國。**3UK 合併(Three+Vodafone UK)後 vendor 對接人離職(疑去 Verizon ⚠)、對接懸而未決**。最新客戶關係圖向 Selina 要(**不可拍照,含拍屏**)。
 - **帕丁頓辦公室(非本部門,for 座位圖)**:[[Mun Leong Wong 84417145]](Moon)、[[Fergus]](PR,數週來一次、無固定座位)、**Wayne**(country sales director)、**Attila**(Amazon 渠道為主)、[[Kaidiliya Ainiwaer 84425233 (Kaiya)]](行政/打印卡)、**Bethy**(台灣,Delivery)、**Sanjeewa**(斯里蘭卡,協助 [[Guo Wubin 00976469 (Felix)|Felix]] 執行);其他區塊 = **Vodafone 帳戶團隊**(ASR 拼作「博導風/霍大峰的風」)。
 - **客戶互動節奏(和記)**:**MWC**(每年);**回國高訪** 2 次/年(約 6 月、10 月,程哥接待,客戶回總部);**Device Forum**(和記自辦,約 3 次/年,各國 C-level 看趨勢;不一定邀廠商,可爭取 10–20 min);**technical workshop** ≥1 次/年(不一定 formal);日常 = Selina/Ziyi 每天在聊。
-- **手機回歸** = 年底華為 5G 手機重返歐洲(自研芯片解決斷供;Google Play 替代方案為 open source;年末對客戶主動溝通的核心話題。ASR 誤拼「首期回歸」)。**保密代號**:產品發布前內部一律叫代號,樣機通知亦用代號。ASR 常見錯拼:「央基」=樣機、「tablet」=template、「G七」=GTM、「合資集團」=和記集團、「智能副導團」=智囊顧問團(?)。
+- **手機回歸** = 年底華為 5G 手機重返歐洲(自研芯片解決斷供;Google Play 替代方案為 open source;年末對客戶主動溝通的核心話題。ASR 誤拼「首期回歸」)。**保密代號**:產品發布前內部一律叫代號,樣機通知亦用代號。ASR 常見錯拼:「央基」=樣機、「tablet」=template、「G七」=GTM、「合資集團」=和記集團、「智能副導團」=智囊顧問團(?)、「合計／合記」=和記、「MPB」=MBB、「玉筆費」=[[yubeifei y00663235|碧斐]]、「阿狗子／dog archer／他狗」=Agostino([[Agostino Ruberto]])、「Joe Park／周帕克／周發科」=[[Joe Parker]]、「front as code／francisco」=[[Francesco Zampini]]、「down is」=[[Dennis Lui]]、「五個贈禮」=5T(以上 7/20 SCQA 確認,見 [[20-7-2026 SCQA Canvas (1on1 程哥)]])。
 
 ## 3. 晨會紀要格式(供日後「錄音→我整理」用)
 

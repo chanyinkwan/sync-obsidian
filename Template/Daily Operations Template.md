@@ -9,7 +9,16 @@ tags:
 > **`$= (()=>{const s=dv.luxon.DateTime.fromISO("2026-06-08");let d=dv.current().date||dv.current().file.day;if(!d)return"Day ?";let c=0,t=s;while(t<=d){if(t.weekday<=5)c++;t=t.plus({days:1});}return"Day "+c;})()`** · Hub: [[Life @Huawei System]]
 
 ### Today's linked tasks
+<!-- daily-plan:start -->
+#### ⚔️ Work (防守) — max 3
 - 
+
+#### 🚀 Hub (進攻) — max 2
+- 
+
+> ⏳ Preserve ≥20% strategic blank space.
+> 📥 Backlog stays in TaskNotes Kanban / Agenda.
+<!-- daily-plan:end -->
 
 ---
 ### What actually happened today

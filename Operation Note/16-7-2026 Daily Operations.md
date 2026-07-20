@@ -31,7 +31,7 @@ tags:
 - [ ] [[Ship CV Generator M2 Engine]]
 
 **(no project)**
-- [ ] [[22-7-2026 SCQA Prep]] 🔴 overdue
+- [ ] [[20-7-2026 SCQA Prep]] 🔴 overdue
 
 #### 🔁 Carry-over from 15-7-2026
 - [ ] Read [[Fable Field Guide]]
