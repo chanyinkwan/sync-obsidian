@@ -1,16 +1,25 @@
 ---
 type: daily
-date: 2026-07-17
+date: 2026-07-21
 hub: "[[Life @Huawei System]]"
 tags:
   - daily
 ---
-# 17-7-2026 Daily Operations
+# 21-7-2026 Daily Operations
 > **`$= (()=>{const s=dv.luxon.DateTime.fromISO("2026-06-08");let d=dv.current().date||dv.current().file.day;if(!d)return"Day ?";let c=0,t=s;while(t<=d){if(t.weekday<=5)c++;t=t.plus({days:1});}return"Day "+c;})()`** · Hub: [[Life @Huawei System]]
 
 ### Today's linked tasks
--  WFH lalala
+<!-- daily-plan:start -->
+#### ⚔️ Work (防守) — max 3
 - 
+
+#### 🚀 Hub (進攻) — max 2
+- 
+
+> ⏳ Preserve ≥20% strategic blank space.
+> 📥 Backlog stays in TaskNotes Kanban / Agenda.
+<!-- daily-plan:end -->
+
 ---
 ### What actually happened today
 

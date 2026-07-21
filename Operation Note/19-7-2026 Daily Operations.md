@@ -12,12 +12,9 @@ tags:
 ### Today's linked tasks
 - clean up undone operation note
 - prep scqa tmr [[20-7-2026 SCQA Prep]]
-- study certification
-
 ---
 ### What actually happened today
-
-
+- 極限預備SCQA
 ### How would you translate what you have done today into industry terminology?
 Scoping 範疇 / Pricing 定價 / Deal Governance 交易治理?
 
@@ -26,10 +23,11 @@ Scoping 範疇 / Pricing 定價 / Deal Governance 交易治理?
 
 
 ### What is the most challenging part of the day?
-
+- doing a 80/100 SCQA prep could not achieve a 80/100 SCQA
 
 ### What is your win today and what will you do better next time?
-
+- find an agent to follow up for me
+- regular session or maybe directly visualise the progress in the home page
 
 ### What is your take away from today's work (What to sync?)
 

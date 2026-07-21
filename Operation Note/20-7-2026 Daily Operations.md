@@ -9,7 +9,7 @@ tags:
 > **`$= (()=>{const s=dv.luxon.DateTime.fromISO("2026-06-08");let d=dv.current().date||dv.current().file.day;if(!d)return"Day ?";let c=0,t=s;while(t<=d){if(t.weekday<=5)c++;t=t.plus({days:1});}return"Day "+c;})()`** · Hub: [[Life @Huawei System]]
 
 ### Today's linked tasks
-- create sales stalker AI skills
+-
 
 #### 🚀 Hub (進攻)
 **[[Unknowns Navigator Playbook]]**
@@ -35,12 +35,6 @@ tags:
 
 **[[Career Hub Management]]**
 - [ ] [[Ship CV Generator M2 Engine]]
-
-#### 🔁 Carry-over from 19-7-2026
-- [ ] clean up undone operation note
-- [ ] prep scqa tmr [[20-7-2026 SCQA Prep]]
-- [ ] study certification
-
 ---
 ### What actually happened today
 

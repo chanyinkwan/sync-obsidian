@@ -715,10 +715,10 @@
   ],
   "pomodoroState": {
     "isRunning": false,
-    "timeRemaining": 300,
-    "nextSessionType": "short-break"
+    "timeRemaining": 1500,
+    "nextSessionType": "work"
   },
-  "lastPomodoroDate": "2026-07-13",
+  "lastPomodoroDate": "2026-07-20",
   "pomodoroHistory": [
     {
       "id": "1781772563658",
@@ -1409,7 +1409,51 @@
           "endTime": "2026-07-14T09:57:27.464+01:00"
         }
       ]
+    },
+    {
+      "id": "1784641242224",
+      "startTime": "2026-07-21T14:40:42.224+01:00",
+      "endTime": "2026-07-21T15:25:42.224+01:00",
+      "plannedDuration": 45,
+      "type": "work",
+      "taskPath": "Tasks/SA 00 - Exam Prep.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-21T14:40:42.224+01:00",
+          "endTime": "2026-07-21T15:25:42.224+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1784644110849",
+      "startTime": "2026-07-21T15:28:30.849+01:00",
+      "endTime": "2026-07-21T15:38:30.849+01:00",
+      "plannedDuration": 10,
+      "type": "work",
+      "taskPath": "Tasks/SA 00 - Exam Prep.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-21T15:28:30.849+01:00",
+          "endTime": "2026-07-21T15:38:30.849+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1784644720005",
+      "startTime": "2026-07-21T15:38:40.005+01:00",
+      "endTime": "2026-07-21T15:43:40.005+01:00",
+      "plannedDuration": 5,
+      "type": "short-break",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-21T15:38:40.005+01:00",
+          "endTime": "2026-07-21T15:43:40.005+01:00"
+        }
+      ]
     }
   ],
-  "lastSelectedTaskPath": "Tasks/TSMP In and Out Record.md"
+  "lastSelectedTaskPath": "Tasks/SA 00 - Exam Prep.md"
 }

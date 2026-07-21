@@ -12,6 +12,7 @@ tags:
 - 📋 任務主控台(已釘選):[[kanban-default.base]]
 - 🧭 戰略地圖:[[Life @Huawei System]]
 - 🆕 新會議筆記:[[Meeting Note Template]]
+- Exam Progress: [[AWS SAA-C03 Home]] [[AWS SAA-C03]]
 - Seed log [[Seed Log]]
 - ▶ 今日操作筆記:
 ```dataviewjs

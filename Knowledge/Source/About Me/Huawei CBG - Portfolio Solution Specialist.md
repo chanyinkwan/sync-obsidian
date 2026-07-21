@@ -1,3 +1,5 @@
+![[Pasted image 20260721162251.png]]
+-> specialise in technical presentations
 
 how does your day to day looks like:
 preparing RFI and RFP materials

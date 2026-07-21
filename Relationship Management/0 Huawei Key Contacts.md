@@ -12,6 +12,8 @@ tags:
 > Master view of everyone I work with. Each row is a [[contact]] note. Click in to see their background, last meeting, and open actions.
 > Powered by the **Dataview** plugin (Settings → Community plugins → Dataview). If the tables below are blank, Dataview isn't enabled yet.
 
+Key source - org chart: [iHR组织档案](https://hr.huawei.com/orgarchive/index.html#/?orgcode=024206)
+
 ## Relationship scale(組織關係層級,非親疏度)
 | #   | Level                                   | 定義                                |
 | --- | --------------------------------------- | --------------------------------- |
