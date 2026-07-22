@@ -372,8 +372,237 @@ function nextBestAction(syllabus, states, notes, activeUnknownsText, todayISO) {
   return { text: "no open action: all topics touched, nothing retest-eligible, no active unknowns", domainSlug: null };
 }
 
+// ---- Task 4: Dataview runtime ----
+
+const BASE = "Knowledge/Professionals/AWS SAA-C03";
+
+function toISO(value) {
+  if (value === null || value === undefined) return null;
+  if (typeof value === "string") {
+    const m = value.match(/^\d{4}-\d{2}-\d{2}/);
+    return m ? m[0] : null;
+  }
+  if (typeof value.toISODate === "function") return value.toISODate();
+  if (typeof value.toFormat === "function") return value.toFormat("yyyy-MM-dd");
+  if (value instanceof Date) return value.toISOString().slice(0, 10);
+  const s = String(value);
+  const m = s.match(/^\d{4}-\d{2}-\d{2}/);
+  return m ? m[0] : null;
+}
+
+function toArray(value) {
+  if (Array.isArray(value)) return value.map(String);
+  if (value === null || value === undefined || value === "") return [];
+  return [String(value)];
+}
+
+function pageToNoteMeta(p) {
+  return {
+    file: String(p.file.path),
+    status: p.status ?? null,
+    date: toISO(p.date),
+    mastered: toISO(p.mastered),
+    topics: toArray(p.topics),
+    domain: p.domain ?? null,
+  };
+}
+
+function pageToQuestionMeta(p) {
+  return {
+    file: String(p.file.path),
+    result: p.result ?? null,
+    date: toISO(p.date),
+    topics: toArray(p.topics),
+    domain: p.domain ?? null,
+    services: toArray(p.services),
+  };
+}
+
+function pageToSessionMeta(p) {
+  return {
+    date: toISO(p.date),
+    duration: typeof p.duration === "number" ? p.duration : p.duration ? Number(p.duration) : null,
+  };
+}
+
+function renderCompact(dv, ctx) {
+  const { headline, delta, pace, action } = ctx;
+  dv.paragraph(`**TOUCHED ${headline.touched}% · PROVEN ${headline.proven}%**`);
+  if (delta) {
+    dv.paragraph(
+      `This session: +${delta.dTouched}% touched, +${delta.dProven}% proven, +${delta.dNotes} notes, +${delta.dQuestions} questions`
+    );
+  }
+  dv.paragraph(pace.sentence);
+  dv.paragraph(`Next: ${action.text}`);
+}
+
+function renderFull(dv, ctx) {
+  const { syllabus, states, headline, delta, pace, action, streak, mockLine, questions, unmapped, todayISO } = ctx;
+
+  // 1. Dual headline
+  dv.el(
+    "div",
+    `<span style="font-size:1.6em">TOUCHED ${headline.touched}%</span> &middot; <span style="font-size:1.6em">PROVEN ${headline.proven}%</span>`
+  );
+  const examDaysLeft = daysBetweenISO(todayISO, "2026-08-23");
+  let slotsLeft = 0;
+  for (let d = todayISO; d < "2026-08-23"; d = addDaysISO(d, 1)) {
+    if (isWeekdayISO(d)) slotsLeft++;
+  }
+  dv.paragraph(`${examDaysLeft} days · ${slotsLeft} study slots to exam`);
+
+  // 2. Session-close delta
+  if (delta) {
+    dv.paragraph(
+      `This session: +${delta.dTouched}% touched, +${delta.dProven}% proven, +${delta.dNotes} notes, +${delta.dQuestions} questions`
+    );
+  } else {
+    dv.paragraph("This session: no prior Progress Log row yet");
+  }
+
+  // 3. Domain bars
+  dv.header(3, "Domains");
+  for (const d of headline.perDomain) {
+    const name = DOMAIN_DISPLAY_NAMES[d.slug] || d.slug;
+    const touchedPct = Math.round(d.touchedFrac * 1000) / 10;
+    const provenPct = Math.round(d.provenFrac * 1000) / 10;
+    dv.el(
+      "div",
+      `<div style="margin-bottom:0.6em">
+        <div>${name} (${d.weight}%) &middot; ${d.touchedCount}/${d.total} touched, ${d.provenCount}/${d.total} proven</div>
+        <div style="background:var(--background-modifier-border);height:8px;width:100%;position:relative">
+          <div style="background:var(--interactive-accent);opacity:0.35;height:8px;width:${touchedPct}%"></div>
+          <div style="background:var(--interactive-accent);height:8px;width:${provenPct}%;position:absolute;top:0;left:0"></div>
+        </div>
+      </div>`
+    );
+  }
+
+  // 4. Pace
+  dv.paragraph(`**Pace:** ${pace.sentence}`);
+
+  // 5. Next best action
+  dv.paragraph(`**Next best action:** ${action.text}`);
+
+  // 6. Streak + 28-day heat strip
+  dv.header(3, "Streak");
+  dv.paragraph(`${streak.hits} of last ${streak.window} slots, current run ${streak.run}`);
+  const squares = streak.days
+    .map((d) => {
+      const bucket = !d.hit ? 0 : d.duration === null ? 1 : d.duration < 30 ? 1 : d.duration < 60 ? 2 : 3;
+      const opacity = [0.12, 0.35, 0.65, 1][bucket];
+      const title = d.date + (d.duration ? ` (${d.duration}m)` : "");
+      return `<span title="${title}" style="display:inline-block;width:10px;height:10px;margin:1px;background:var(--interactive-accent);opacity:${opacity}"></span>`;
+    })
+    .join("");
+  dv.el("div", squares);
+
+  // 7. Mock evidence line
+  dv.paragraph(mockLine ? `**Latest mock:** ${mockLine}` : "**Latest mock:** none yet");
+
+  // 8. Error clustering (gated)
+  dv.header(3, "Error clustering");
+  if (questions.length < 20) {
+    dv.paragraph(`not enough data yet (${questions.length}/20 questions)`);
+  } else {
+    const bad = questions.filter((q) => q.result === "wrong" || q.result === "guessed");
+    const byDomain = new Map();
+    for (const q of bad) {
+      const domain = q.domain || "unmapped";
+      if (!byDomain.has(domain)) byDomain.set(domain, new Map());
+      const byService = byDomain.get(domain);
+      const services = q.services.length > 0 ? q.services : ["unspecified"];
+      for (const svc of services) byService.set(svc, (byService.get(svc) || 0) + 1);
+    }
+    for (const [domain, byService] of byDomain) {
+      const parts = [...byService.entries()].map(([svc, count]) => `${svc}: ${count}`).join(", ");
+      dv.paragraph(`${DOMAIN_DISPLAY_NAMES[domain] || domain}: ${parts}`);
+    }
+  }
+
+  // 9. Collapsed syllabus checklist
+  dv.header(3, "Syllabus");
+  const topicListHTML = (topics) =>
+    topics
+      .map((t) => {
+        const s = states.get(t.id);
+        const icon = s === "proven" ? "[proven]" : s === "contested" ? "[contested]" : s === "touched" ? "[touched]" : "[ ]";
+        return `<li>${icon} ${t.id} ${t.title}</li>`;
+      })
+      .join("");
+  const currentDomainSlug = action.domainSlug || (headline.perDomain[0] && headline.perDomain[0].slug);
+  for (const d of syllabus.domains) {
+    const name = DOMAIN_DISPLAY_NAMES[d.slug] || d.slug;
+    if (d.slug === currentDomainSlug) {
+      dv.el("div", `<strong>${name} (${d.weight}%)</strong><ul>${topicListHTML(d.topics)}</ul>`);
+    } else {
+      const per = headline.perDomain.find((p) => p.slug === d.slug);
+      dv.el(
+        "details",
+        `<summary>${name} (${d.weight}%) &middot; ${per.touchedCount}/${per.total} touched, ${per.provenCount}/${per.total} proven</summary><ul>${topicListHTML(d.topics)}</ul>`
+      );
+    }
+  }
+
+  // 10. Unmapped pile (only if nonempty)
+  if (unmapped.notes.length > 0 || unmapped.questions.length > 0) {
+    dv.header(3, "Unmapped");
+    for (const n of unmapped.notes) dv.paragraph(`Note: [[${noteBasename(n.file)}]]`);
+    for (const q of unmapped.questions) dv.paragraph(`Question: [[${noteBasename(q.file)}]]`);
+  }
+}
+
+async function main(dv, input) {
+  const mode = input && input.mode === "compact" ? "compact" : "full";
+  // Local calendar date, NOT toISO(new Date()): toISOString() is UTC, and on UK time
+  // (BST, UTC+1) that would compute yesterday's date between midnight and 1am, breaking
+  // the streak and pace panels for late-evening use.
+  const now = new Date();
+  const todayISO = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+
+  const syllabusText = await dv.io.load(BASE + "/01 Dashboard/Syllabus.md");
+  const syllabus = syllabusText ? parseSyllabus(syllabusText) : { domains: [] };
+  const totalTopics = syllabus.domains.reduce((sum, d) => sum + d.topics.length, 0);
+  if (totalTopics === 0) {
+    dv.paragraph("Syllabus not found or empty: generate and freeze 01 Dashboard/Syllabus.md first");
+    return;
+  }
+
+  const progressLogText = (await dv.io.load(BASE + "/01 Dashboard/Progress Log.md")) || "";
+  const rows = parseProgressLog(progressLogText);
+
+  const activeUnknownsText = (await dv.io.load(BASE + "/01 Dashboard/Active Unknowns.md")) || "";
+
+  const notes = dv.pages('"' + BASE + '/02 Notes"').map(pageToNoteMeta).array();
+  const questions = dv.pages('"' + BASE + '/03 Questions"').map(pageToQuestionMeta).array();
+
+  const { states, unmapped } = computeTopicStates(syllabus, notes, questions);
+  const headline = computeHeadline(syllabus, states);
+  const delta = sessionDelta(rows);
+  const pace = computePace(headline, rows, todayISO);
+  const action = nextBestAction(syllabus, states, notes, activeUnknownsText, todayISO);
+
+  if (mode === "compact") {
+    renderCompact(dv, { headline, delta, pace, action });
+    return;
+  }
+
+  const sessions = dv.pages('"' + BASE + '/04 Journey"').map(pageToSessionMeta).array();
+  const streak = computeStreak(sessions, todayISO);
+
+  const homeText = (await dv.io.load(BASE + "/01 Dashboard/AWS SAA-C03 Home.md")) || "";
+  const mockMatch = homeText.match(/Latest mock score:\s*(.+)/);
+  const mockLine = mockMatch && mockMatch[1].trim() !== "Not yet" ? mockMatch[1].trim() : null;
+
+  renderFull(dv, { syllabus, states, headline, delta, pace, action, streak, mockLine, questions, notes, unmapped, todayISO });
+}
+
 if (typeof dv !== "undefined") {
-  main(dv, input);
+  // Catch instead of await: this file is also parsed by Node as CommonJS, where top-level
+  // await is a syntax error. The catch keeps any runtime failure on the page instead of
+  // throwing to the Obsidian developer console (spec rule: never throw to the console).
+  main(dv, input).catch((e) => dv.paragraph("Dashboard error: " + e.message));
 }
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { parseSyllabus, parseProgressLog, computeTopicStates, computeHeadline, computeStreak, computePace, nextBestAction, sessionDelta };
