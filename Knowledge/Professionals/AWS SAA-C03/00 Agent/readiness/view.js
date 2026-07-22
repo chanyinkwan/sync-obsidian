@@ -71,9 +71,104 @@ function parseProgressLog(text) {
   return rows;
 }
 
+// ---- Task 2: topic state machine ----
+
+function computeTopicStates(syllabus, notes, questions) {
+  const allIds = new Set();
+  for (const d of syllabus.domains) for (const t of d.topics) allIds.add(t.id);
+
+  const states = new Map();
+  for (const id of allIds) states.set(id, "untouched");
+
+  const notesByTopic = new Map();
+  const unmappedNotes = [];
+  for (const n of notes) {
+    const topics = Array.isArray(n.topics) ? n.topics : [];
+    let hasValid = false;
+    let hasInvalid = topics.length === 0;
+    for (const id of topics) {
+      if (allIds.has(id)) {
+        hasValid = true;
+        if (!notesByTopic.has(id)) notesByTopic.set(id, []);
+        notesByTopic.get(id).push(n);
+      } else {
+        hasInvalid = true;
+      }
+    }
+    if (!hasValid || hasInvalid) unmappedNotes.push(n);
+  }
+
+  const questionsByTopic = new Map();
+  const unmappedQuestions = [];
+  for (const q of questions) {
+    const topics = Array.isArray(q.topics) ? q.topics : [];
+    let hasValid = false;
+    let hasInvalid = topics.length === 0;
+    for (const id of topics) {
+      if (allIds.has(id)) {
+        hasValid = true;
+        if (!questionsByTopic.has(id)) questionsByTopic.set(id, []);
+        questionsByTopic.get(id).push(q);
+      } else {
+        hasInvalid = true;
+      }
+    }
+    if (!hasValid || hasInvalid) unmappedQuestions.push(q);
+  }
+
+  for (const id of allIds) {
+    const mappedNotes = notesByTopic.get(id) || [];
+    if (mappedNotes.length === 0) {
+      states.set(id, "untouched");
+      continue;
+    }
+    const masteredNotes = mappedNotes.filter((n) => n.status === "mastered" && n.mastered);
+    if (masteredNotes.length === 0) {
+      states.set(id, "touched"); // includes "connected", which never counts as proven
+      continue;
+    }
+    const latestMastered = masteredNotes.map((n) => n.mastered).sort().slice(-1)[0];
+    const mappedQuestions = questionsByTopic.get(id) || [];
+    const contests = mappedQuestions.filter(
+      (q) => (q.result === "wrong" || q.result === "guessed") && q.date && q.date > latestMastered
+    );
+    states.set(id, contests.length > 0 ? "contested" : "proven");
+  }
+
+  return { states, unmapped: { notes: unmappedNotes, questions: unmappedQuestions } };
+}
+
+function computeHeadline(syllabus, states) {
+  let touchedPercent = 0;
+  let provenPercent = 0;
+  const perDomain = [];
+
+  for (const d of syllabus.domains) {
+    const total = d.topics.length;
+    let touchedCount = 0;
+    let provenCount = 0;
+    for (const t of d.topics) {
+      const s = states.get(t.id);
+      if (s === "touched" || s === "proven" || s === "contested") touchedCount++;
+      if (s === "proven") provenCount++;
+    }
+    const touchedFrac = total > 0 ? touchedCount / total : 0;
+    const provenFrac = total > 0 ? provenCount / total : 0;
+    touchedPercent += d.weight * touchedFrac;
+    provenPercent += d.weight * provenFrac;
+    perDomain.push({ slug: d.slug, weight: d.weight, touchedFrac, provenFrac, touchedCount, provenCount, total });
+  }
+
+  return {
+    touched: Math.round(touchedPercent * 10) / 10,
+    proven: Math.round(provenPercent * 10) / 10,
+    perDomain,
+  };
+}
+
 if (typeof dv !== "undefined") {
   main(dv, input);
 }
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { parseSyllabus, parseProgressLog };
+  module.exports = { parseSyllabus, parseProgressLog, computeTopicStates, computeHeadline };
 }
