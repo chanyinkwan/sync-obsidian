@@ -108,3 +108,128 @@ test("computeHeadline weights touched and proven percentages by domain weight", 
   assert.equal(resilient.touchedCount, 2);
   assert.equal(resilient.provenCount, 0);
 });
+
+const SESSIONS_FIXTURE = [
+  { date: "2026-07-21", duration: 45 },
+  { date: "2026-07-22", duration: 60 },
+];
+
+test("computeStreak counts 2 of the last 10 weekday slots with a run of 2, for sessions on the last two weekdays", () => {
+  const streak = computeStreak(SESSIONS_FIXTURE, "2026-07-22");
+  assert.equal(streak.window, 10);
+  assert.equal(streak.hits, 2);
+  assert.equal(streak.run, 2);
+});
+
+test("computeStreak does not break the run for today before a session is logged", () => {
+  // Today 2026-07-22 (Tue) has no session yet; the run must survive on yesterday's session.
+  const streak = computeStreak([{ date: "2026-07-21", duration: 45 }], "2026-07-22");
+  assert.equal(streak.hits, 1);
+  assert.equal(streak.run, 1);
+});
+
+test("computeStreak returns a 28-day heat strip, oldest first, with hit and duration per day", () => {
+  const streak = computeStreak(SESSIONS_FIXTURE, "2026-07-22");
+  assert.equal(streak.days.length, 28);
+  assert.equal(streak.days[27].date, "2026-07-22");
+  assert.equal(streak.days[27].hit, true);
+  assert.equal(streak.days[27].duration, 60);
+  assert.equal(streak.days[0].date, "2026-06-25");
+  assert.equal(streak.days[0].hit, false);
+  assert.equal(streak.days[0].duration, null);
+});
+
+test("sessionDelta computes the diff between the latest two Progress Log rows", () => {
+  const rows = [
+    { date: "2026-07-20", touched: 10, proven: 0, notes: 4, questions: 2 },
+    { date: "2026-07-22", touched: 15.5, proven: 2, notes: 6, questions: 6 },
+  ];
+  const delta = sessionDelta(rows);
+  assert.deepEqual(delta, { dTouched: 5.5, dProven: 2, dNotes: 2, dQuestions: 4 });
+});
+
+test("sessionDelta returns null with fewer than two rows", () => {
+  assert.equal(sessionDelta([]), null);
+  assert.equal(sessionDelta([{ date: "2026-07-22", touched: 10, proven: 0, notes: 1, questions: 0 }]), null);
+});
+
+test("computePace returns the baseline-not-logged sentence before any Progress Log row exists", () => {
+  const headline = { touched: 0, proven: 0, perDomain: [] };
+  const pace = computePace(headline, [], "2026-07-22");
+  assert.deepEqual(pace, { status: "ON LINE", sentence: "baseline not yet logged: run one session to anchor the pace line" });
+});
+
+test("computePace reports BEHIND with a same-day topic count against the tighter (touched) line", () => {
+  const headline = {
+    touched: 20,
+    proven: 0,
+    perDomain: [
+      { slug: "resilient-architectures", weight: 26, touchedFrac: 0.5, provenFrac: 0, touchedCount: 1, provenCount: 0, total: 2 },
+      { slug: "secure-architectures", weight: 30, touchedFrac: 0.75, provenFrac: 0, touchedCount: 3, provenCount: 0, total: 4 },
+    ],
+  };
+  const rows = [{ date: "2026-07-15", touched: 10, proven: 0, notes: 1, questions: 0 }];
+  const pace = computePace(headline, rows, "2026-07-22");
+  // expectedTouched = 10 + 90 * (7/19) = 43.157894...; deficit = 43.157894... - 20 = 23.157894...
+  // slopeTouched = 90/19 = 4.7368...; deficit > slope -> BEHIND, touched line is tighter
+  // avgTopicPercent = 100/6 = 16.6667; n = ceil(23.157894 / 16.6667) = ceil(1.3895) = 2
+  // heaviest-weight domain with an untouched topic: secure-architectures (30 > 26)
+  assert.equal(pace.status, "BEHIND");
+  assert.equal(pace.sentence, "BEHIND · today: touch 2 topics in Secure to get back on line");
+});
+
+test("computePace reports AHEAD against the tighter (proven) line", () => {
+  const headline = {
+    touched: 70,
+    proven: 36,
+    perDomain: [
+      { slug: "secure-architectures", weight: 60, touchedFrac: 1, provenFrac: 0.6, touchedCount: 3, provenCount: 2, total: 3 },
+      { slug: "resilient-architectures", weight: 40, touchedFrac: 1, provenFrac: 0.5, touchedCount: 3, provenCount: 1, total: 3 },
+    ],
+  };
+  const rows = [{ date: "2026-07-08", touched: 5, proven: 0, notes: 1, questions: 0 }];
+  const pace = computePace(headline, rows, "2026-07-22");
+  // expectedProven = 0 + 100 * (14/44) = 31.818...; deficit = 31.818... - 36 = -4.1818...
+  // slopeProven = 100/44 = 2.2727...; deficit < -slope -> AHEAD, proven line is tighter
+  assert.equal(pace.status, "AHEAD");
+  assert.equal(pace.sentence, "AHEAD · keep the current pace, proven line has slack");
+});
+
+test("nextBestAction picks the first untouched topic in the heaviest-weighted domain with an untouched topic", () => {
+  const syllabus = {
+    domains: [
+      { name: "Design Secure Architectures", slug: "secure-architectures", weight: 60, topics: [{ id: "sec-01", title: "KMS envelope encryption" }, { id: "sec-02", title: "Bucket policies" }] },
+      { name: "Design Resilient Architectures", slug: "resilient-architectures", weight: 40, topics: [{ id: "res-01", title: "Multi-AZ RDS" }] },
+    ],
+  };
+  const states = new Map([["sec-01", "untouched"], ["sec-02", "touched"], ["res-01", "untouched"]]);
+  const action = nextBestAction(syllabus, states, [], "", "2026-07-22");
+  assert.equal(action.domainSlug, "secure-architectures");
+  assert.equal(action.text, "touch: KMS envelope encryption (Secure)");
+});
+
+test("nextBestAction retests the closest-to-mastered note, connected before distilled, only if 3+ days old", () => {
+  const syllabus = {
+    domains: [{ name: "Design Secure Architectures", slug: "secure-architectures", weight: 100, topics: [{ id: "sec-01", title: "Topic A" }, { id: "sec-02", title: "Topic B" }, { id: "sec-03", title: "Topic C" }] }],
+  };
+  const states = new Map([["sec-01", "touched"], ["sec-02", "touched"], ["sec-03", "touched"]]);
+  const notes = [
+    { file: "02 Notes/Note One.md", status: "connected", date: "2026-07-17", mastered: null, topics: ["sec-01"], domain: "secure-architectures" },
+    { file: "02 Notes/Note Two.md", status: "distilled", date: "2026-07-10", mastered: null, topics: ["sec-02"], domain: "secure-architectures" },
+    { file: "02 Notes/Note Three.md", status: "connected", date: "2026-07-21", mastered: null, topics: ["sec-03"], domain: "secure-architectures" },
+  ];
+  const action = nextBestAction(syllabus, states, notes, "", "2026-07-22");
+  assert.equal(action.text, "retest [[Note One]]");
+  assert.equal(action.domainSlug, null);
+});
+
+test("nextBestAction falls back to the first Active Unknowns item when nothing is untouched or retest-eligible", () => {
+  const syllabus = {
+    domains: [{ name: "Design Secure Architectures", slug: "secure-architectures", weight: 100, topics: [{ id: "sec-01", title: "Topic A" }] }],
+  };
+  const states = new Map([["sec-01", "proven"]]);
+  const activeUnknownsText = "1. First unknown about policy evaluation order.\n2. Second unknown.";
+  const action = nextBestAction(syllabus, states, [], activeUnknownsText, "2026-07-22");
+  assert.equal(action.text, "close unknown: First unknown about policy evaluation order.");
+  assert.equal(action.domainSlug, null);
+});

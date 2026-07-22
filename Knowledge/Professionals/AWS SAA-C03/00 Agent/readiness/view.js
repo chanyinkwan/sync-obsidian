@@ -166,9 +166,215 @@ function computeHeadline(syllabus, states) {
   };
 }
 
+// ---- Task 3: time panels ----
+
+const DOMAIN_DISPLAY_NAMES = {
+  "secure-architectures": "Secure",
+  "resilient-architectures": "Resilient",
+  "high-performing-architectures": "High-Performing",
+  "cost-optimized-architectures": "Cost-Optimized",
+};
+
+const TOUCHED_TARGET_DATE = "2026-08-03";
+const PROVEN_TARGET_DATE = "2026-08-21";
+
+// Dates are "YYYY-MM-DD" strings, always compared/walked as UTC calendar days.
+function isoToDate(iso) {
+  const [y, m, d] = iso.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d));
+}
+
+function dateToISO(date) {
+  return date.toISOString().slice(0, 10);
+}
+
+function isWeekdayISO(iso) {
+  const day = isoToDate(iso).getUTCDay();
+  return day >= 1 && day <= 5;
+}
+
+function addDaysISO(iso, delta) {
+  const dt = isoToDate(iso);
+  dt.setUTCDate(dt.getUTCDate() + delta);
+  return dateToISO(dt);
+}
+
+function daysBetweenISO(fromISO, toISO) {
+  return Math.round((isoToDate(toISO).getTime() - isoToDate(fromISO).getTime()) / 86400000);
+}
+
+function noteBasename(filePath) {
+  const parts = String(filePath).split(/[\\/]/);
+  const last = parts[parts.length - 1];
+  return last.replace(/\.md$/i, "");
+}
+
+function computeStreak(sessions, todayISO) {
+  const sessionDates = new Set(sessions.map((s) => s.date));
+  const durationByDate = new Map(sessions.map((s) => [s.date, s.duration]));
+
+  const weekdaySlots = [];
+  let cursor = todayISO;
+  while (weekdaySlots.length < 10) {
+    if (isWeekdayISO(cursor)) weekdaySlots.push(cursor);
+    cursor = addDaysISO(cursor, -1);
+  }
+  const oldestWindowDate = weekdaySlots[weekdaySlots.length - 1];
+
+  let hits = 0;
+  for (const d of sessionDates) {
+    if (d >= oldestWindowDate && d <= todayISO) hits++;
+  }
+  hits = Math.min(hits, 10);
+
+  // Today's slot only breaks the run once the day is over: if today is a weekday slot with
+  // no session logged yet, skip it rather than reading run 0 all morning.
+  let runSlots = weekdaySlots;
+  if (runSlots.length > 0 && runSlots[0] === todayISO && !sessionDates.has(todayISO)) {
+    runSlots = runSlots.slice(1);
+  }
+  let run = 0;
+  for (const slot of runSlots) {
+    if (sessionDates.has(slot)) run++;
+    else break;
+  }
+
+  const days = [];
+  for (let i = 27; i >= 0; i--) {
+    const date = addDaysISO(todayISO, -i);
+    days.push({
+      date,
+      hit: sessionDates.has(date),
+      isWeekday: isWeekdayISO(date),
+      duration: durationByDate.has(date) ? durationByDate.get(date) : null,
+    });
+  }
+
+  return { hits, window: 10, run, days };
+}
+
+function sessionDelta(rows) {
+  if (!Array.isArray(rows) || rows.length < 2) return null;
+  const prev = rows[rows.length - 2];
+  const latest = rows[rows.length - 1];
+  return {
+    dTouched: Math.round((latest.touched - prev.touched) * 10) / 10,
+    dProven: Math.round((latest.proven - prev.proven) * 10) / 10,
+    dNotes: latest.notes - prev.notes,
+    dQuestions: latest.questions - prev.questions,
+  };
+}
+
+function computePace(headline, rows, todayISO) {
+  if (!Array.isArray(rows) || rows.length === 0) {
+    return { status: "ON LINE", sentence: "baseline not yet logged: run one session to anchor the pace line" };
+  }
+
+  const baseline = rows[0];
+  const totalTopicCount = headline.perDomain.reduce((sum, d) => sum + d.total, 0);
+  // Average topic weight is used only to turn a percent deficit into a topic count for the
+  // sentence; it is an unweighted average (100 / total topic count), stated here explicitly
+  // because the headline percent itself is weighted by domain.
+  const avgTopicPercent = totalTopicCount > 0 ? 100 / totalTopicCount : 0;
+
+  function expectedValue(baselineValue, targetDate) {
+    const totalDays = Math.max(1, daysBetweenISO(baseline.date, targetDate));
+    const elapsed = daysBetweenISO(baseline.date, todayISO);
+    const frac = Math.max(0, Math.min(1, elapsed / totalDays));
+    return baselineValue + (100 - baselineValue) * frac;
+  }
+
+  function slopeOf(baselineValue, targetDate) {
+    const totalDays = Math.max(1, daysBetweenISO(baseline.date, targetDate));
+    return (100 - baselineValue) / totalDays;
+  }
+
+  const expectedTouched = expectedValue(baseline.touched, TOUCHED_TARGET_DATE);
+  const slopeTouched = slopeOf(baseline.touched, TOUCHED_TARGET_DATE);
+  const deficitTouched = expectedTouched - headline.touched;
+
+  const expectedProven = expectedValue(baseline.proven, PROVEN_TARGET_DATE);
+  const slopeProven = slopeOf(baseline.proven, PROVEN_TARGET_DATE);
+  const deficitProven = expectedProven - headline.proven;
+
+  const provenIsTighter = deficitProven >= deficitTouched;
+  const tighter = provenIsTighter ? "proven" : "touched";
+  const deficit = provenIsTighter ? deficitProven : deficitTouched;
+  const slope = provenIsTighter ? slopeProven : slopeTouched;
+  const label = provenIsTighter ? "prove" : "touch";
+
+  let status;
+  if (deficit > slope) status = "BEHIND";
+  else if (deficit < -slope) status = "AHEAD";
+  else status = "ON LINE";
+
+  // Domain of the next best action, mirroring nextBestAction rule (a): the heaviest-weighted
+  // domain that still has an untouched topic. computePace only receives `headline`, not the
+  // full syllabus/states/notes, so it re-derives this from headline.perDomain rather than
+  // calling nextBestAction directly.
+  const candidateDomains = headline.perDomain
+    .filter((d) => d.touchedCount < d.total)
+    .sort((a, b) => b.weight - a.weight);
+  const domain = candidateDomains.length > 0 ? candidateDomains[0] : null;
+  const domainLabel = domain ? DOMAIN_DISPLAY_NAMES[domain.slug] || domain.slug : "the current domain";
+
+  let sentence;
+  if (status === "BEHIND") {
+    const n = Math.max(1, Math.ceil(deficit / avgTopicPercent));
+    sentence = `BEHIND · today: ${label} ${n} topic${n === 1 ? "" : "s"} in ${domainLabel} to get back on line`;
+  } else if (status === "AHEAD") {
+    sentence = `AHEAD · keep the current pace, ${tighter} line has slack`;
+  } else {
+    sentence = `ON LINE · keep the current pace on the ${tighter} line`;
+  }
+
+  return { status, sentence };
+}
+
+function nextBestAction(syllabus, states, notes, activeUnknownsText, todayISO) {
+  const allIds = new Set();
+  for (const d of syllabus.domains) for (const t of d.topics) allIds.add(t.id);
+
+  const domainsByWeight = [...syllabus.domains].sort((a, b) => b.weight - a.weight);
+  for (const domain of domainsByWeight) {
+    for (const topic of domain.topics) {
+      if (states.get(topic.id) === "untouched") {
+        return {
+          text: `touch: ${topic.title} (${DOMAIN_DISPLAY_NAMES[domain.slug] || domain.slug})`,
+          domainSlug: domain.slug,
+        };
+      }
+    }
+  }
+
+  const STATUS_RANK = { connected: 0, distilled: 1 };
+  const eligible = notes.filter((n) => {
+    if (STATUS_RANK[n.status] === undefined) return false;
+    if (!n.date) return false;
+    const topics = Array.isArray(n.topics) ? n.topics : [];
+    if (!topics.some((id) => allIds.has(id))) return false;
+    return daysBetweenISO(n.date, todayISO) >= 3;
+  });
+  if (eligible.length > 0) {
+    eligible.sort((a, b) => {
+      const rankDiff = STATUS_RANK[a.status] - STATUS_RANK[b.status];
+      if (rankDiff !== 0) return rankDiff;
+      return a.date < b.date ? -1 : a.date > b.date ? 1 : 0;
+    });
+    return { text: `retest [[${noteBasename(eligible[0].file)}]]`, domainSlug: null };
+  }
+
+  const match = String(activeUnknownsText).match(/^\d+\.\s*(.+)$/m);
+  if (match) {
+    return { text: `close unknown: ${match[1].trim().slice(0, 80)}`, domainSlug: null };
+  }
+
+  return { text: "no open action: all topics touched, nothing retest-eligible, no active unknowns", domainSlug: null };
+}
+
 if (typeof dv !== "undefined") {
   main(dv, input);
 }
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { parseSyllabus, parseProgressLog, computeTopicStates, computeHeadline };
+  module.exports = { parseSyllabus, parseProgressLog, computeTopicStates, computeHeadline, computeStreak, computePace, nextBestAction, sessionDelta };
 }
