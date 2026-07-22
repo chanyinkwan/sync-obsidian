@@ -2,6 +2,7 @@
 type: saa-question
 source: # e.g. Tutorials Dojo / Cantrill / AWS official
 domain: # secure-architectures / resilient-architectures / high-performing-architectures / cost-optimized-architectures
+topics: # id(s) from 01 Dashboard/Syllabus.md,例如 [sec-04]
 services:
 result: # wrong / guessed / slow(只記值得回顧的題目)
 date:

@@ -1,6 +1,7 @@
 ---
 type: saa-note
 domain: # secure-architectures / resilient-architectures / high-performing-architectures / cost-optimized-architectures
+topics: # id(s) from 01 Dashboard/Syllabus.md,例如 [sec-04]
 services: # 涉及的 AWS 服務,e.g. S3, EC2
 status: # capture / distilled / connected
 date:

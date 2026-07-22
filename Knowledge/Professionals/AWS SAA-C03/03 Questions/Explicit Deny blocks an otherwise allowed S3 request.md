@@ -2,6 +2,7 @@
 type: saa-question
 source: Codex guided study
 domain: secure-architectures
+topics: [sec-01]
 services: [IAM, S3]
 result: guessed
 date: 2026-07-21
