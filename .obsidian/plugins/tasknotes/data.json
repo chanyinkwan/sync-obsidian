@@ -714,11 +714,23 @@
     }
   ],
   "pomodoroState": {
-    "isRunning": false,
-    "timeRemaining": 1500,
-    "nextSessionType": "work"
+    "isRunning": true,
+    "timeRemaining": 3600,
+    "currentSession": {
+      "id": "1784734774698",
+      "taskPath": "Tasks/SA 00 - Exam Prep.md",
+      "startTime": "2026-07-22T16:39:34.698+01:00",
+      "plannedDuration": 60,
+      "type": "work",
+      "completed": false,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-22T16:39:34.698+01:00"
+        }
+      ]
+    }
   },
-  "lastPomodoroDate": "2026-07-20",
+  "lastPomodoroDate": "2026-07-21",
   "pomodoroHistory": [
     {
       "id": "1781772563658",

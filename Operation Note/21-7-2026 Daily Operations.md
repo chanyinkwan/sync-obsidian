@@ -11,12 +11,12 @@ tags:
 ### Today's linked tasks
 <!-- daily-plan:start -->
 #### ⚔️ Work (防守) — max 3
-- [ ] check for zhuping - SCQA meeting [[27-7-2026 SCQA Prep]]
-- [ ] update progress of SCQA action item on Home Page
+- [x] check for zhuping - SCQA meeting [[27-7-2026 SCQA Prep]]
+- [x] update progress of SCQA action item on Task Page
 - [ ] Industry Analysis resources scraping from Huawei Internal Websiete
 - [ ] Apply for Holiday
 - [ ] Look up for these people's location: Charco; Ding Cheng; Dominique; Emilio de la Iglesia; Gao Mingsheng; Guo Wubin (Felix); He Gang (Kevin); Huang Yi (Selina); huangwenyan; huangyasi; Jia Yan; KaiLi; Kou Tianxiao; Lai Yunqi; Li Qinghua; LIN Xuefeng; Lin Yingshu; Luxi Zhou; Manjit Dhanjal; Max Ashby; Qixuan Wang; Rong Tao (Tony); Sun Xin; Xiaozan Lu; Xin Chen; Yi Han Bajura; yubeifei; Zeng Li; Zeynep Ilayda Gurcum; Zhang Xuan; Zhang Ziyi; Ziyi Zhang; 明浩 (Zhan Minghao).
-- [ ] 
+
 #### 🚀 Hub (進攻) — max 2
 - [x] [[SA 04 - AWS SAA Study & Exam]] 🔁 60m
 - [x] [[SAA - Daily Session Processing]] 🔁 10m

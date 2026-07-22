@@ -6,6 +6,9 @@
 # Obsidian trash
 .trash/
 
+# Exam material PDFs — large third-party question banks, queried via NotebookLM instead
+Knowledge/Professionals/AWS SAA-C03/Exam Materials/
+
 # OS files
 .DS_Store
 Thumbs.db

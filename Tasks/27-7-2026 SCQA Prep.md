@@ -1,10 +1,10 @@
 ---
-status: doing
+status: todo
 priority: high
 scheduled: 2026-07-27
 due: 2026-07-27
 dateCreated: 2026-07-21
-dateModified: 2026-07-21
+dateModified: 2026-07-21T17:14:50.645+01:00
 tags:
   - task
 contexts:
