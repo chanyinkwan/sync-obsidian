@@ -2,12 +2,15 @@
 type: saa-syllabus
 frozen: true
 generated: 2026-07-22
+amended: 2026-07-23
 source: AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf via NotebookLM, notebook aws-saa-c03-architectural-prob
 ---
 
 # AWS SAA-C03 Syllabus
 
 Frozen denominator for the readiness dashboard. Adding notes can never add topics here; this file only changes by an explicit, user-approved edit.
+
+Amendment 2026-07-23 (user approved): added sec-15, sec-16, cost-13 after a domain comprehensiveness review found three exam-guide topics missing (secrets management, VPC endpoints, compute purchasing options).
 
 ## Design Secure Architectures (30%)
 
@@ -27,6 +30,8 @@ Frozen denominator for the readiness dashboard. Adding notes can never add topic
 | sec-12 | Encrypt data in transit and manage certificate renewal |
 | sec-13 | Set access policies and rotation schedules for encryption keys |
 | sec-14 | Design backup and replication strategies that meet retention requirements |
+| sec-15 | Protect application secrets and credentials with rotation (Secrets Manager vs Parameter Store) |
+| sec-16 | Use VPC endpoints for private access to AWS services without traversing the internet |
 
 ## Design Resilient Architectures (26%)
 
@@ -80,3 +85,4 @@ Frozen denominator for the readiness dashboard. Adding notes can never add topic
 | cost-10 | Configure routing and peering to cut data transfer cost |
 | cost-11 | Decide when a CDN or edge cache is worth the cost |
 | cost-12 | Choose a bandwidth or throttling strategy to control network cost |
+| cost-13 | Choose a compute purchasing option (On-Demand, Spot, Reserved, Savings Plans) for a workload's usage pattern |
