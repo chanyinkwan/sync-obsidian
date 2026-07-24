@@ -10,10 +10,10 @@ tags:
 
 ### Today's linked tasks
 <!-- daily-plan:start -->
-#### ⚔️ Work (防守) — max 3
+#### ⚔️ Work (防守) — max 5
 - 
 
-#### 🚀 Hub (進攻) — max 2
+#### 🚀 Hub (進攻) — max 5
 - 
 
 > ⏳ Preserve ≥20% strategic blank space.

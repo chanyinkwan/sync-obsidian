@@ -7,15 +7,17 @@ projects:
   - "[[AWS SAA-C03]]"
 contexts:
   - hub
-scheduled: 2026-07-22
+scheduled: 2026-07-24
 due: 2026-08-23
 recurrence: DTSTART:20260717;FREQ=DAILY;UNTIL=20260823T235959Z
 timeEstimate: 10
 dateCreated: 2026-07-17T12:00:00.000+01:00
 complete_instances:
   - 2026-07-21
+  - 2026-07-22
+  - 2026-07-23
 skipped_instances: []
-dateModified: 2026-07-21T15:39:53.506+01:00
+dateModified: 2026-07-23T17:24:03.445+01:00
 ---
 # SAA - Daily Session Processing
 

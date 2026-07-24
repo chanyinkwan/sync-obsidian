@@ -16,7 +16,7 @@ attendees:
   - "[[Dennis Lui]]"
   - "[[Francesco Zampini]]"
   - "[[Agostino Ruberto]]"
-  - "[[Melanie Fantini 馬蘭妮]]"
+  - "[[Marlene Fantini]]"
 tags:
   - meeting
   - event
@@ -29,7 +29,7 @@ tags:
 ## Participants
 **Huawei:** [[He Gang 00866077 (Kevin)]] (CBG CEO), Jun Yu (CBG IoT Product Line President), [[Rong Tao 00948258 (Tony)]] (European CBG European Device Dept Director), [[Kong Fanggui 00860023 (Colin)]] (CBG IoT GTM Dept Director), Bo Li (CBG Health GTM Dept Director), [[Zeng Li 00798010]] (Global Key Account & IoT Business Dept Director), [[Ding Cheng 00611102 (程哥or 丁程)]] (Hutchison Account Director)
 
-**H3G / Hutchison:** [[Dennis Lui]] (CK Hutchison Group Telecom Holdings Limited – Director), [[Francesco Zampini]] (CKH-IOD Global Director of Digital Consumer Product & Service), [[Agostino Ruberto]] (CKH-IOD CTO), [[Melanie Fantini 馬蘭妮]] (CKH-IOD Head of Devices and Hardware Portfolio)
+**H3G / Hutchison:** [[Dennis Lui]] (CK Hutchison Group Telecom Holdings Limited – Director), [[Francesco Zampini]] (CKH-IOD Global Director of Digital Consumer Product & Service), [[Agostino Ruberto]] (CKH-IOD CTO), [[Marlene Fantini]] (CKH-IOD Head of Devices and Hardware Portfolio)
 
 ## Topics
 - CBG Market performance

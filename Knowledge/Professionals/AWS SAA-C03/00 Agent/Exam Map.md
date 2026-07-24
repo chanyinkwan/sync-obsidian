@@ -23,7 +23,7 @@ Read this at the start of every session to brief the map before choosing scope. 
 
 | # | Domain | Weight | Coverage so far |
 |---|---|---|---|
-| 1 | Design Secure Architectures | **30%** | Started 2026-07-21: IAM Role, temporary credentials, policy evaluation, Explicit Deny |
+| 1 | Design Secure Architectures | **30%** | 2 sessions. IAM Role, STS temporary credentials, SigV4 signing, policy evaluation order, Explicit Deny, SCP guardrails |
 | 2 | Design Resilient Architectures | **26%** | Not started |
 | 3 | Design High-Performing Architectures | **24%** | Not started |
 | 4 | Design Cost-Optimized Architectures | **20%** | Not started |
@@ -33,9 +33,10 @@ Secure and Resilient together are 56% of the exam. Weight study time accordingly
 ## Coverage detail
 
 ### 1. Design Secure Architectures (30%)
-- Covered: the end user → application → IAM Role → temporary credentials → `s3:GetObject` → S3 policy evaluation request path, at a basic level. Explicit Deny overrides Allow; absent an Allow, Implicit Deny applies.
-- Open: how temporary credentials sign a request and resolve to a Role principal; real guardrail use cases for Explicit Deny.
-- Evidence: [[2026-07-21 IAM, EC2 and S3 Foundations]]
+- Covered: the end user → application → IAM Role → temporary credentials → `s3:GetObject` → S3 policy evaluation request path. STS issues the temporary credential triple (access key, secret key, session token); the session token self-carries the Role principal and expiry because temporary credentials are not persisted in IAM. SigV4 signs each request, separate from and sequential to STS. IAM permissions are additive. Explicit Deny overrides Allow and is evaluated first; absent an Allow, Implicit Deny applies. SCP sets a permission ceiling above the account and cannot be bypassed from inside it, which is how a guardrail is implemented.
+- Retention status: Explicit Deny as a design choice is the best-retained concept. Weak on unaided recall: the policy evaluation order (mis-sequenced under test, then dropped entirely), the three credential components, and the exact expansions of STS and SCP.
+- Open: how an end-user identity relates to a backend workload identity across architectures. Not yet touched: encryption at rest and in transit, KMS, VPC network security, Security Groups and NACLs.
+- Evidence: [[2026-07-21 IAM, EC2 and S3 Foundations]], 2026-07-22 session on temporary credentials and Explicit Deny guardrails
 
 ### 2. Design Resilient Architectures (26%)
 - Not started.

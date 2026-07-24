@@ -40,3 +40,8 @@ Most importantly, you can see yourself contributing and thriving in the position
 - Demonstrates a bold, challenger mindset—unafraid to question conventional thinking, push boundaries, and advocate for transformative solutions that elevate client outcomes and drive
 ---
 
+European and Asian market users analysis, in an industry view
+Perform joint business strategy road map with clients (FWA)
+-Directly negotiating and/or providing detailed support for negotiations on the more complex and challenging commercial arrangements with our clients for both account level framework arrangements and specific bids and opportunities.
+prof of concept presentation
+Creating tailored innovative pricing and commercial solutions for bids and proposals

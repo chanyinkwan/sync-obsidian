@@ -1,23 +1,29 @@
 ---
 type: daily
-date: 2026-07-21
+date: 2026-07-24
 hub: "[[Life @Huawei System]]"
 tags:
   - daily
 ---
-# 21-7-2026 Daily Operations
+# 24-7-2026 Daily Operations
 > **`$= (()=>{const s=dv.luxon.DateTime.fromISO("2026-06-08");let d=dv.current().date||dv.current().file.day;if(!d)return"Day ?";let c=0,t=s;while(t<=d){if(t.weekday<=5)c++;t=t.plus({days:1});}return"Day "+c;})()`** · Hub: [[Life @Huawei System]]
 
 ### Today's linked tasks
 <!-- daily-plan:start -->
-#### ⚔️ Work (防守) — max 3
-- 
+#### ⚔️ Work (防守) — max 5
+- [ ] [[Amazon Handover Meeting]] ↪1
+- [ ] [[27-7-2026 SCQA Prep]]
+- [ ] [[Friday Download Transcript__raw__20260724-110433]]
+#### 🚀 Hub (進攻) — max 5
+- [ ] [[SA 04 - AWS SAA Study & Exam]] 🔁
+- [x] [[SA 00 - Exam Prep]]
+- [ ] [[SAA - Daily Session Processing]] 🔁
+- [ ] [[SA 01 - LinkedIn Requisition Index]]
+- [ ] [[SA 02 - Unfair Advantage Intersection]]
+- [ ] fill in the day to day with claude and chatgpt to fine tune then update linkedin
 
-#### 🚀 Hub (進攻) — max 2
-- 
-
-> ⏳ Preserve ≥20% strategic blank space.
-> 📥 Backlog stays in TaskNotes Kanban / Agenda.
+> ⏳ 保留 ≥20% 策略留白空間。
+> 📥 25 open tasks remain in TaskNotes Kanban / Agenda.
 <!-- daily-plan:end -->
 
 ---

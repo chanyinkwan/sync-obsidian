@@ -108,6 +108,8 @@ The mapping identifies:
 |Sr. Vendor Manager \(MBB\)|Mark Williams|Medium|Medium|Yi Huang|not applicable|
 |Sr. Vendor Manager \(handset&amp;accessories\)|Manjit Dhanjal|Medium|Strong|Yi Huang|not applicable|
 
+> ✅ **2026-07-22 reconciliation note** (not an edit to the original consultant deliverable above — kept intact as delivered): 《2026年3月和記集團客戶MWC接待策劃報告 V9》, an official Huawei internal account-planning document, independently confirmed **Agostino Ruberto's** reporting line and title — current title is **Global Technical Director** (this table's "CTO" was his 2017 title at the time he moved into IOD; same role, title has since evolved), reporting to **Joe Parker** (IOD CEO), peer-level with Francesco Zampini. The **Huawei Sponsor** column for Agostino ("Cheng Ding") still conflicts with the relationship card / Ziyi handover ("Selina") — that specific question remains open, see [[Agostino Ruberto]] for the live tracking of this. See also [[Dennis Lui]] for a reconciliation of "Kevin He" (sponsor, per this table) vs. "Zeng Li / Rong Tao" (escalation contact, per the 20-7 SCQA transcript) — likely two different, coexisting roles rather than a contradiction.
+
 # 2. Decision\-Making and Influence Chain Mapping
 
 **Purpose**

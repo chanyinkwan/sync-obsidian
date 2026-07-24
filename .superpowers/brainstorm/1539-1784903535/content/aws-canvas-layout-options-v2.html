@@ -1,0 +1,47 @@
+<h2>AWS Request &amp; Authorization Canvas</h2>
+<p class="subtitle">Corrected preview: full-width choices, clear selection border, no overlapping cards.</p>
+
+<div class="options">
+  <div class="option" data-choice="a-linear-journey" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Linear guided journey</h3>
+      <p>Human → Application → AWS SDK → temporary credentials → SigV4 → S3 → policy evaluation</p>
+      <div style="margin-top:10px;padding:10px;border-left:3px solid #60a5fa;background:var(--bg-tertiary)">
+        Runtime and study-status cards sit directly underneath each station.
+      </div>
+      <p style="margin-top:8px">Strongest chronological story; the complete policy atlas eventually makes the line very long.</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b-layered-swimlane" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Layered swimlane atlas · recommended</h3>
+      <div style="margin-top:10px">
+        <div style="padding:7px 10px;margin:4px 0;background:var(--bg-tertiary);border-radius:6px"><strong>Human POV</strong> · download, CLI, federated login</div>
+        <div style="padding:7px 10px;margin:4px 0;background:var(--bg-tertiary);border-radius:6px"><strong>Client</strong> · Application → SDK → credentials → SigV4</div>
+        <div style="padding:7px 10px;margin:4px 0;background:var(--bg-tertiary);border-radius:6px"><strong>Identity</strong> · IAM Role ↔ STS session → Principal</div>
+        <div style="padding:7px 10px;margin:4px 0;background:var(--bg-tertiary);border-radius:6px"><strong>AWS service</strong> · authenticate → request context → evaluate</div>
+        <div style="padding:7px 10px;margin:4px 0;background:var(--bg-tertiary);border-radius:6px"><strong>Policy layer</strong> · identity, resource, boundary, session, SCP, RCP</div>
+      </div>
+      <p style="margin-top:8px">Best balance: preserves the Human story while separating responsibilities and supporting full exam coverage.</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c-hub-spoke" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Hub-and-spoke concept map</h3>
+      <p style="margin-top:8px;text-align:center">
+        Principal · Action · Resource · IAM · SCP/RCP · Allow/Deny<br>
+        <strong>↘ Request Context ↙</strong>
+      </p>
+      <div style="margin-top:10px;padding:10px;border-left:3px solid #f59e0b;background:var(--bg-tertiary)">
+        Strong relationship atlas and comprehensive reference; weaker for reconstructing the request chronologically.
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="subtitle" style="margin-top:18px">Click once. The chosen row should gain a blue border and filled letter.</p>

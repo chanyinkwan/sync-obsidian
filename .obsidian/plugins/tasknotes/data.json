@@ -711,24 +711,36 @@
       "requestedAt": 1784291842716,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Amazon Handover Meeting.md",
+      "requestedAt": 1784745512042,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/Industry Analysis resources scraping from Huawei Internal Website ↪1.md",
+      "requestedAt": 1784747539478,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/standardized recurring task - gathering clients' news.md",
+      "requestedAt": 1784803442852,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/call ritz carlton for confirming the menu with selina.md",
+      "requestedAt": 1784881028241,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {
-    "isRunning": true,
-    "timeRemaining": 3600,
-    "currentSession": {
-      "id": "1784734774698",
-      "taskPath": "Tasks/SA 00 - Exam Prep.md",
-      "startTime": "2026-07-22T16:39:34.698+01:00",
-      "plannedDuration": 60,
-      "type": "work",
-      "completed": false,
-      "activePeriods": [
-        {
-          "startTime": "2026-07-22T16:39:34.698+01:00"
-        }
-      ]
-    }
+    "isRunning": false,
+    "timeRemaining": 300,
+    "nextSessionType": "short-break"
   },
   "lastPomodoroDate": "2026-07-21",
   "pomodoroHistory": [
@@ -1463,6 +1475,21 @@
         {
           "startTime": "2026-07-21T15:38:40.005+01:00",
           "endTime": "2026-07-21T15:43:40.005+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1784734774698",
+      "startTime": "2026-07-22T16:39:34.698+01:00",
+      "endTime": "2026-07-22T17:39:34.698+01:00",
+      "plannedDuration": 60,
+      "type": "work",
+      "taskPath": "Tasks/SA 00 - Exam Prep.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-07-22T16:39:34.698+01:00",
+          "endTime": "2026-07-22T17:39:34.698+01:00"
         }
       ]
     }

@@ -9,7 +9,7 @@ attendees:
   - "[[Ding Cheng 00611102 (程哥or 丁程)]]"
   - "[[Huang Yi 84411269 (Selina)]]"
   - "[[Francesco Zampini]]"
-  - "[[Melanie Fantini 馬蘭妮]]"
+  - "[[Marlene Fantini]]"
   - "[[Mark Williams (Bristish)]]"
   - "[[Manjit Dhanjal]]"
   - "Device Director of all OpCos"
@@ -27,7 +27,7 @@ tags:
 ## Participants
 **Huawei:** [[Ding Cheng 00611102 (程哥or 丁程)]] (Hutchison Account Director), [[Huang Yi 84411269 (Selina)]] (Hutchison Account Manager)
 
-**H3G / Hutchison:** [[Francesco Zampini]] (CKH-IOD Global Director of Digital Consumer Product & Service), [[Melanie Fantini 馬蘭妮]] (CKH-IOD Head of Devices and Hardware Portfolio), [[Mark Williams (Bristish)]] (Sr. Vendor Manager), [[Manjit Dhanjal]] (Sr. Vendor Manager), Device Director of all OpCos (role only, no individual named in source)
+**H3G / Hutchison:** [[Francesco Zampini]] (CKH-IOD Global Director of Digital Consumer Product & Service), [[Marlene Fantini]] (CKH-IOD Head of Devices and Hardware Portfolio), [[Mark Williams (Bristish)]] (Sr. Vendor Manager), [[Manjit Dhanjal]] (Sr. Vendor Manager), Device Director of all OpCos (role only, no individual named in source)
 
 ## Topics
 - Wearables and Audio Market performance

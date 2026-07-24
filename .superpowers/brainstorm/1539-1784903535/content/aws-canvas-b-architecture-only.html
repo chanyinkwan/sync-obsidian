@@ -1,0 +1,73 @@
+<h2>AWS Request &amp; Authorization Architecture · AWS 請求與授權架構</h2>
+<p class="subtitle">Architecture only 純架構視圖。English AWS term first，Traditional Chinese 作澄清。</p>
+
+<div class="mockup">
+  <div class="mockup-header">Zone 1 · Human POV 人類視角的入口情境</div>
+  <div class="mockup-body">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px">
+      <div style="padding:12px;border:1px solid var(--border);border-radius:8px"><strong>Customer 客戶</strong><br>Clicks “Download invoice”<br><small>點擊下載發票</small></div>
+      <div style="padding:12px;border:1px solid var(--border);border-radius:8px"><strong>Employee 員工</strong><br>Runs an AWS CLI command<br><small>執行 AWS CLI 指令</small></div>
+      <div style="padding:12px;border:1px solid var(--border);border-radius:8px"><strong>Federated user 聯合身份使用者</strong><br>Signs in through company identity<br><small>使用公司身份登入</small></div>
+      <div style="padding:12px;border:1px solid var(--border);border-radius:8px"><strong>Operator 操作人員</strong><br>Triggers an application/Lambda workflow<br><small>觸發應用程式或 Lambda 工作流程</small></div>
+    </div>
+  </div>
+</div>
+
+<div class="mockup">
+  <div class="mockup-header">Zone 2 · Shared request backbone 共用請求主幹 — read left to right 由左至右</div>
+  <div class="mockup-body" style="overflow-x:auto">
+    <div style="display:grid;grid-template-columns:repeat(8,minmax(150px,1fr));gap:8px;min-width:1260px;align-items:stretch">
+      <div style="padding:12px;border:2px solid #60a5fa;border-radius:8px"><strong>Human intent 人類意圖</strong><br><small>想完成哪個 business action？</small></div>
+      <div style="padding:12px;border:2px solid #60a5fa;border-radius:8px"><strong>Client 用戶端</strong><br><small>Browser、application、CLI、Lambda</small></div>
+      <div style="padding:12px;border:2px solid #60a5fa;border-radius:8px"><strong>AWS SDK 軟件開發工具套件</strong><br><small>Method call → HTTPS request</small></div>
+      <div style="padding:12px;border:2px solid #a78bfa;border-radius:8px"><strong>Credential provider 憑證提供者</strong><br><small>尋找有效 credentials</small></div>
+      <div style="padding:12px;border:2px solid #a78bfa;border-radius:8px"><strong>SigV4 request signing 請求簽署</strong><br><small>SDK 在 client side 簽署</small></div>
+      <div style="padding:12px;border:2px solid #34d399;border-radius:8px"><strong>AWS service AWS 服務</strong><br><small>S3 receives and authenticates 接收及驗證</small></div>
+      <div style="padding:12px;border:2px solid #34d399;border-radius:8px"><strong>Request context 請求情境</strong><br><small>Principal、action、resource、conditions</small></div>
+      <div style="padding:12px;border:2px solid #f59e0b;border-radius:8px"><strong>Policy evaluation 政策評估</strong><br><small>Applicable policies → Allow/Deny</small></div>
+    </div>
+  </div>
+</div>
+
+<div class="split">
+  <div class="mockup">
+    <div class="mockup-header">Zone 3 · Credential acquisition 憑證取得</div>
+    <div class="mockup-body">
+      <p><strong>Not every API call creates a new STS session.</strong><br>並非每次 API call 都建立新的 STS session。</p>
+      <div style="margin-top:10px;padding:10px;background:var(--bg-tertiary);border-radius:8px">
+        Identity source / IAM Role 身份來源<br>
+        ↓<br>
+        STS issues temporary credentials<br>STS 簽發臨時憑證三件套<br>
+        ↓<br>
+        Credential provider caches and refreshes<br>Credential provider 快取並在需要時更新<br>
+        ↓<br>
+        SDK performs SigV4 signing<br>SDK 執行 SigV4 簽署
+      </div>
+    </div>
+  </div>
+
+  <div class="mockup">
+    <div class="mockup-header">Zone 4 · Policy evaluation + applicable policy sources 政策評估及適用來源</div>
+    <div class="mockup-body">
+      <div style="padding:8px;border-left:3px solid #ef4444;margin-bottom:7px"><strong>Applicable Explicit Deny 適用的明確拒絕</strong> → Deny</div>
+      <div style="padding:8px;border-left:3px solid #34d399;margin-bottom:7px"><strong>Applicable Allow + ceilings permit 有效允許且所有上限放行</strong> → Allow</div>
+      <div style="padding:8px;border-left:3px solid #9ca3af"><strong>No effective Allow 沒有有效允許</strong> → Implicit Deny</div>
+      <div style="margin-top:12px;padding:10px;background:var(--bg-tertiary);border-radius:8px">
+        <strong>Permission sources 權限來源</strong><br>
+        Identity-based policy · Resource-based policy<br><br>
+        <strong>Permission ceilings / limits 權限上限與限制</strong><br>
+        Permissions boundary · Session policy · SCP · RCP
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="options">
+  <div class="option" data-choice="approve-architecture-only" onclick="toggleSelect(this)">
+    <div class="letter">✓</div>
+    <div class="content">
+      <h3>Approve the architecture-only canvas 批准純架構 Canvas</h3>
+      <p>No study-status lane、no flashcard anatomy；沒有學習狀態區或卡片結構。</p>
+    </div>
+  </div>
+</div>

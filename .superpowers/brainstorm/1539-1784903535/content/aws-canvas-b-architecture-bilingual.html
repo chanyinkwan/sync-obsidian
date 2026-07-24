@@ -1,0 +1,82 @@
+<h2>B · Layered Swimlane Atlas 分層泳道圖 — proposed architecture 設計方案</h2>
+<p class="subtitle">English AWS term first，Traditional Chinese 作澄清。永久 Obsidian Canvas 由 Human POV 開始，再逐層展開 request、identity 與 policy evaluation。</p>
+
+<div class="mockup">
+  <div class="mockup-header">Zone 1 · Human POV 人類視角的入口情境</div>
+  <div class="mockup-body">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px">
+      <div style="padding:12px;border:1px solid var(--border);border-radius:8px"><strong>Customer 客戶</strong><br>Clicks “Download invoice”<br><small>點擊下載發票</small></div>
+      <div style="padding:12px;border:1px solid var(--border);border-radius:8px"><strong>Employee 員工</strong><br>Runs an AWS CLI command<br><small>執行 AWS CLI 指令</small></div>
+      <div style="padding:12px;border:1px solid var(--border);border-radius:8px"><strong>Federated user 聯合身份使用者</strong><br>Signs in through company identity<br><small>使用公司身份登入</small></div>
+      <div style="padding:12px;border:1px solid var(--border);border-radius:8px"><strong>Operator 操作人員</strong><br>Triggers an application/Lambda workflow<br><small>觸發應用程式或 Lambda 工作流程</small></div>
+    </div>
+  </div>
+</div>
+
+<div class="mockup">
+  <div class="mockup-header">Zone 2 · Shared request backbone 共用請求主幹 — read left to right 由左至右</div>
+  <div class="mockup-body" style="overflow-x:auto">
+    <div style="display:grid;grid-template-columns:repeat(8,minmax(150px,1fr));gap:8px;min-width:1260px;align-items:stretch">
+      <div style="padding:12px;border:2px solid #60a5fa;border-radius:8px"><strong>Human intent 人類意圖</strong><br><small>想完成哪個 business action？</small></div>
+      <div style="padding:12px;border:2px solid #60a5fa;border-radius:8px"><strong>Client 用戶端</strong><br><small>Browser、application、CLI、Lambda</small></div>
+      <div style="padding:12px;border:2px solid #60a5fa;border-radius:8px"><strong>AWS SDK 軟件開發工具套件</strong><br><small>Method call → HTTPS request</small></div>
+      <div style="padding:12px;border:2px solid #a78bfa;border-radius:8px"><strong>Credential provider 憑證提供者</strong><br><small>尋找有效 credentials</small></div>
+      <div style="padding:12px;border:2px solid #a78bfa;border-radius:8px"><strong>SigV4 request signing 請求簽署</strong><br><small>SDK 在 client side 簽署</small></div>
+      <div style="padding:12px;border:2px solid #34d399;border-radius:8px"><strong>AWS service AWS 服務</strong><br><small>S3 receives and authenticates 接收及驗證</small></div>
+      <div style="padding:12px;border:2px solid #34d399;border-radius:8px"><strong>Request context 請求情境</strong><br><small>Principal、action、resource、conditions</small></div>
+      <div style="padding:12px;border:2px solid #f59e0b;border-radius:8px"><strong>Policy evaluation 政策評估</strong><br><small>Applicable policies → Allow/Deny</small></div>
+    </div>
+  </div>
+</div>
+
+<div class="split">
+  <div class="mockup">
+    <div class="mockup-header">Zone 3 · Credential acquisition branch 憑證取得分支</div>
+    <div class="mockup-body">
+      <p><strong>Not every API call creates a new STS session.</strong><br>並非每次 API call 都建立新的 STS session。</p>
+      <div style="margin-top:10px;padding:10px;background:var(--bg-tertiary);border-radius:8px">
+        Identity source / IAM Role 身份來源<br>
+        ↓<br>
+        STS issues temporary credentials<br>STS 簽發臨時憑證三件套<br>
+        ↓<br>
+        SDK credential provider caches and refreshes<br>SDK 快取並在需要時更新<br>
+        ↓<br>
+        SDK performs SigV4 signing<br>SDK 執行 SigV4 簽署
+      </div>
+      <p style="margin-top:10px;color:var(--text-secondary)">Linked flashcard 連結卡片：IAM vs STS vs SDK vs SigV4 responsibilities 職責分工。</p>
+    </div>
+  </div>
+
+  <div class="mockup">
+    <div class="mockup-header">Zone 4 · Policy evaluation + policy-source atlas 政策評估及來源圖譜</div>
+    <div class="mockup-body">
+      <div style="padding:8px;border-left:3px solid #ef4444;margin-bottom:7px"><strong>Applicable Explicit Deny 適用的明確拒絕</strong> → Deny</div>
+      <div style="padding:8px;border-left:3px solid #34d399;margin-bottom:7px"><strong>Applicable Allow + ceilings permit 有效允許且所有上限放行</strong> → Allow</div>
+      <div style="padding:8px;border-left:3px solid #9ca3af"><strong>No effective Allow 沒有有效允許</strong> → Implicit Deny</div>
+      <p style="margin-top:12px;color:var(--text-secondary)">Reference nodes 參考節點：identity policy、resource policy、permissions boundary、session policy、SCP、RCP。每個節點說明儲存位置、適用時機，以及它是 grant permission 還是只限制上限。</p>
+    </div>
+  </div>
+</div>
+
+<div class="mockup">
+  <div class="mockup-header">Zone 5 · Station card anatomy 站點卡片結構 + coverage evidence 學習證據</div>
+  <div class="mockup-body">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px">
+      <div style="padding:12px;background:var(--bg-tertiary);border-radius:8px"><strong>English term first 英文術語優先</strong><br><small>Traditional Chinese clarification 繁體中文澄清</small></div>
+      <div style="padding:12px;background:var(--bg-tertiary);border-radius:8px"><strong>Runtime job 執行職責</strong><br><small>What this station does 此站做甚麼</small></div>
+      <div style="padding:12px;background:var(--bg-tertiary);border-radius:8px"><strong>Exam trap 考試陷阱</strong><br><small>What it does not do 此站不做甚麼</small></div>
+      <div style="padding:12px;background:var(--bg-tertiary);border-radius:8px"><strong>Evidence 學習證據</strong><br><small>✓ learned 已掌握 · ◐ weak 薄弱 · ○ untouched 未接觸</small></div>
+      <div style="padding:12px;background:var(--bg-tertiary);border-radius:8px"><strong>Clickable links 可點擊連結</strong><br><small>Knowledge Note 知識筆記 + retrieval Question 檢索題</small></div>
+    </div>
+  </div>
+</div>
+
+<div class="options">
+  <div class="option" data-choice="approve-b-bilingual-architecture" onclick="toggleSelect(this)">
+    <div class="letter">✓</div>
+    <div class="content">
+      <h3>Approve this bilingual architecture 批准此雙語架構</h3>
+      <p>Next 下一步：specify exact nodes、links、statuses and maintenance behaviour；定義實際節點、連結、狀態和維護方式。</p>
+    </div>
+  </div>
+</div>

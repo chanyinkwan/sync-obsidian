@@ -19,7 +19,12 @@ This session is designed to run on Sonnet. If the current model is heavier, ment
 
 ## 3. Run the session exactly per the protocol
 
-- **Open** (about 10 min): retrieval warm-up first (previous session's 下一步, then 1 to 2 more items per step 1), map briefing, today's scope in one sentence, baseline check of what's already in his head, confirm timeframe.
+- **Open** (about 10 min), in this order. Steps 1 to 3 are mandatory and none may be skipped or merged:
+  1. **Ask how long he has today.** Ask it outright and wait for an answer. Never assume the default 45+15, and never begin the study block without a stated timeframe.
+  2. **Brief current progress**: sessions completed and what they covered, the four domains and their weights, which domains are untouched, days remaining to the exam, and the current Phase.
+  3. **State today's goal and scope in one sentence, sized to the timeframe he just gave.** The scope is a function of his available time, so it cannot be stated before step 1.
+  4. Retrieval warm-up: previous session's 下一步 first, then 1 to 2 more items per step 1 of this skill.
+  5. Baseline check: ask what is already in his head on today's topic before teaching it. Assume nothing.
 - **Study** (about 35 min): follow the teaching loop, and shape it by whichever phase in the Phase arc the current date falls into (Foundations, Drill, or Mock + repair). From 2026-07-28 onward, end the question set with one cross-domain scenario.
 - **Close** (15 min): joint reflection, unaided recall with no notes, then handoff.
 

@@ -27,7 +27,7 @@ For recurrence, require today on/after `DTSTART` or the scheduled anchor and on/
 
 Rank: user must-do → active recurrence → due today → scheduled today → priority → smaller estimate. Carry forward at most two unchecked items from yesterday only if not previously carried; mark `↪1`. A carry-over consumes its lane cap. On the second day it goes to triage.
 
-Hard limits: **Work ≤3**, **Hub ≤2**, total ≤5. Unassigned items do not bypass caps. If any Hub candidate exists, reserve at least one Hub slot unless the user explicitly overrides. When available time is known, selected estimates must fit within 80%, leaving ≥20% blank space.
+Hard limits: **Work ≤5**, **Hub ≤5**, total ≤10. Unassigned items do not bypass caps. If any Hub candidate exists, reserve at least one Hub slot unless the user explicitly overrides. When available time is known, selected estimates must fit within 80%, leaving ≥20% blank space.
 
 ## 4. Render idempotently
 

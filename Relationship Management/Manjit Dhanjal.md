@@ -12,15 +12,18 @@ email:
 relationship: 3
 status: active
 last_contact:
+birthday: "7-23"
 tags:
   - contact
 ---
 # Manjit Dhanjal
 
 ## At a glance
-- **Role:** Sr. Vendor Manager (handset & accessories) at CKH-IOD — sits in the group device decision layer under [[Francesco Zampini]], owning the B2C non-FWA categories (smartphone, wearables/audio).
+- **Role:** Sr. Vendor Manager (handset & accessories) at CKH-IOD — sits in the group device decision layer under [[Francesco Zampini]], owning the B2C non-FWA categories (smartphone, wearables/audio). Birthday **23 July**.
 - **What they care about / their stake:** Vendor onboarding and portfolio decisions for handsets, wearables and accessories (separate lane from [[Mark Williams (Bristish)]], who covers MBB/FWA).
 - **How to work with them:** Huawei Relationship Status is rated **Strong** with Influence Level **Medium** (per the relationship mapping doc). Huawei-side sponsor/counterpart is [[Huang Yi 84411269 (Selina)]].
+
+> ⚠ O5 關係圖上有一則註記「Manjit - BBI - Indian」，意涵不明、可能不適合直接沿用，尚未納入本卡片——待向程哥／Ziyi 確認去留後再決定是否補入。
 
 ## Background
 Per §1.4 H3G of [[Huawei_Strategic_Key_Account_Relationship_Mapping_v1 (15-7-2026)]]: Position — Sr. Vendor Manager (handset & accessories); Influence Level Medium; Huawei Relationship Status Strong; Huawei Sponsor [[Huang Yi 84411269 (Selina)]]; Successor not applicable.

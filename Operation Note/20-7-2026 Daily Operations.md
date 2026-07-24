@@ -9,7 +9,7 @@ tags:
 > **`$= (()=>{const s=dv.luxon.DateTime.fromISO("2026-06-08");let d=dv.current().date||dv.current().file.day;if(!d)return"Day ?";let c=0,t=s;while(t<=d){if(t.weekday<=5)c++;t=t.plus({days:1});}return"Day "+c;})()`** · Hub: [[Life @Huawei System]]
 
 ### Today's linked tasks
--
+[[20-7-2026 Monday Download - Transcript]]
 
 #### 🚀 Hub (進攻)
 **[[Unknowns Navigator Playbook]]**

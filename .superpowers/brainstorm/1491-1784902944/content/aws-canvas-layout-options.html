@@ -1,0 +1,77 @@
+<h2>Choose the AWS Request &amp; Authorization Canvas structure</h2>
+<p class="subtitle">All three begin from Human POV, link into Obsidian notes/flashcards, and show both runtime responsibility and study coverage.</p>
+
+<div class="cards">
+  <div class="card" data-choice="a-linear-journey" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:18px;min-height:300px">
+      <div class="label">A · LINEAR GUIDED JOURNEY</div>
+      <div style="display:flex;align-items:center;gap:8px;margin:18px 0;flex-wrap:wrap">
+        <div style="padding:10px;border:1px solid #6b7280;border-radius:8px">👤 Human</div>
+        <div>→</div>
+        <div style="padding:10px;border:1px solid #6b7280;border-radius:8px">🌐 App</div>
+        <div>→</div>
+        <div style="padding:10px;border:1px solid #6b7280;border-radius:8px">📦 SDK</div>
+        <div>→</div>
+        <div style="padding:10px;border:1px solid #6b7280;border-radius:8px">🔐 SigV4</div>
+        <div>→</div>
+        <div style="padding:10px;border:1px solid #6b7280;border-radius:8px">🪣 S3</div>
+      </div>
+      <div style="padding:10px;border-left:3px solid #60a5fa;margin:8px 0">Runtime: constructs + signs request</div>
+      <div style="padding:10px;border-left:3px solid #f59e0b;margin:8px 0">Study: SDK/SigV4 · learning</div>
+      <div style="padding:10px;border-left:3px solid #a78bfa;margin:8px 0">Branches: CLI · Lambda · Federation</div>
+    </div>
+    <div class="card-body">
+      <h3>A. Linear journey</h3>
+      <p>Easiest to follow as a story. Deep policy detail eventually makes the path long and crowded.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b-layered-swimlane" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:18px;min-height:300px">
+      <div class="label">B · LAYERED SWIMLANE ATLAS · RECOMMENDED</div>
+      <div style="display:grid;grid-template-columns:95px 1fr;gap:6px;margin-top:14px">
+        <div style="font-weight:700">Human</div>
+        <div style="padding:7px;border:1px solid #6b7280;border-radius:6px">Click download / CLI command / federated login</div>
+        <div style="font-weight:700">Client</div>
+        <div style="padding:7px;border:1px solid #6b7280;border-radius:6px">App → SDK → credentials → SigV4 → HTTPS request</div>
+        <div style="font-weight:700">Identity</div>
+        <div style="padding:7px;border:1px solid #6b7280;border-radius:6px">IAM Role ↔ STS session → Principal</div>
+        <div style="font-weight:700">AWS service</div>
+        <div style="padding:7px;border:1px solid #6b7280;border-radius:6px">S3 authenticates → builds context → evaluates</div>
+        <div style="font-weight:700">Policies</div>
+        <div style="padding:7px;border:1px solid #6b7280;border-radius:6px">Identity · Resource · Boundary · Session · SCP · RCP</div>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
+        <span style="padding:5px 8px;border-radius:12px;background:#14532d">✓ learned</span>
+        <span style="padding:5px 8px;border-radius:12px;background:#78350f">◐ weak</span>
+        <span style="padding:5px 8px;border-radius:12px;background:#374151">○ untouched</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B. Layered swimlane atlas</h3>
+      <p>Preserves the Human story while separating client, identity, service, and policy responsibilities. Best balance of clarity and comprehensive coverage.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c-hub-spoke" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:18px;min-height:300px;text-align:center">
+      <div class="label">C · HUB-AND-SPOKE CONCEPT MAP</div>
+      <div style="margin:22px auto 12px;padding:16px;border:2px solid #60a5fa;border-radius:50%;width:125px">Request Context</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
+        <div style="padding:8px;border:1px solid #6b7280;border-radius:8px">Principal</div>
+        <div style="padding:8px;border:1px solid #6b7280;border-radius:8px">Action</div>
+        <div style="padding:8px;border:1px solid #6b7280;border-radius:8px">Resource</div>
+        <div style="padding:8px;border:1px solid #6b7280;border-radius:8px">IAM</div>
+        <div style="padding:8px;border:1px solid #6b7280;border-radius:8px">SCP/RCP</div>
+        <div style="padding:8px;border:1px solid #6b7280;border-radius:8px">Allow/Deny</div>
+      </div>
+      <div style="padding:10px;margin-top:12px;border-left:3px solid #f59e0b;text-align:left">Strong reference atlas; weaker as a chronological Human story.</div>
+    </div>
+    <div class="card-body">
+      <h3>C. Hub-and-spoke map</h3>
+      <p>Excellent for relationships and completeness, but harder to reconstruct the actual request sequence unaided.</p>
+    </div>
+  </div>
+</div>
+
+<p class="subtitle" style="margin-top:20px">Click the structure that feels easiest to study from. Recommendation: B.</p>

@@ -73,13 +73,13 @@ projects:
 
 ### B. 我提案追加的 5 欄（理由附後）
 
-| # | 欄位 | 為什麼值得加 |
-|---|---|---|
-| 9 | **華為側對接人（Owner / Sponsor）** | vault 裡已有現成答案（Agostino & Mark → Selina；Marlene & Francesco → 程哥；Dennis → 曾黎／榮濤）。加上這欄，檔案立刻從「人事資料」變成**覆蓋度地圖**——一眼看出哪個客戶沒人管。這是程哥身為 Account Director 最想要的一張表。 |
-| 10 | **決策角色（DM / Champion / Gatekeeper / Blocker）+ 品類** | 標準 key-account 詞彙，關係圖裡其實已標了（Agostino = Decision Maker + Champion）。用行業語言呈現，等於同時完成你的對外資產（Deal Desk / Presales 履歷素材）。 |
-| 11 | **下一次接觸點（Next touchpoint）** | 🔥 最高價值。掃描發現 **8 月 11–13 日有 [[He Gang 00866077 (Kevin)]] × [[Dennis Lui]] 高層會議**（程哥 7/1 自己派的任務），Q3 還有 Mid-year Roadmap Workshop 與 Q4 HQ Visit。把「下一次見到他是什麼場合」寫進檔案，交付物就從**靜態資料**變成**可執行的排程武器** —— 而且直接接上程哥手上的活。 |
-| 12 | **關切議題 / Hot buttons** | 「態度」是形容詞，「他在追什麼」才可行動。已知：Dennis → 手機回歸歐洲 + 香港市場表現 + Aurora Store（他自己不熟）；Francesco → 定價與 ranging；Agostino → 測試結果。生日要辦活動，hot button 才是平時能講的話。 |
-| 13 | **來源與可信度（Source / Confidence）** | 這批資料大量是二手轉述，且已出現至少一組互相矛盾的說法。**把傳聞當事實講給程哥，是這份交付唯一真正的風險。** 每格標來源與 High/Med/Low，才是專業情報品，不是八卦彙整。 |
+| #   | 欄位                                                 | 為什麼值得加                                                                                                                                                                                                        |
+| --- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 9   | **華為側對接人（Owner / Sponsor）**                        | vault 裡已有現成答案（Agostino & Mark → Selina；Marlene & Francesco → 程哥；Dennis → 曾黎／榮濤）。加上這欄，檔案立刻從「人事資料」變成**覆蓋度地圖**——一眼看出哪個客戶沒人管。這是程哥身為 Account Director 最想要的一張表。                                                     |
+| 10  | **決策角色（DM / Champion / Gatekeeper / Blocker）+ 品類** | 標準 key-account 詞彙，關係圖裡其實已標了（Agostino = Decision Maker + Champion）。用行業語言呈現，等於同時完成你的對外資產（Deal Desk / Presales 履歷素材）。                                                                                            |
+| 11  | **下一次接觸點（Next touchpoint）**                        | 🔥 最高價值。掃描發現 **8 月 11–13 日有 [[He Gang 00866077 (Kevin)]] × [[Dennis Lui]] 高層會議**（程哥 7/1 自己派的任務），Q3 還有 Mid-year Roadmap Workshop 與 Q4 HQ Visit。把「下一次見到他是什麼場合」寫進檔案，交付物就從**靜態資料**變成**可執行的排程武器** —— 而且直接接上程哥手上的活。 |
+| 12  | **關切議題 / Hot buttons**                             | 「態度」是形容詞，「他在追什麼」才可行動。已知：Dennis → 手機回歸歐洲 + 香港市場表現 + Aurora Store（他自己不熟）；Francesco → 定價與 ranging；Agostino → 測試結果。生日要辦活動，hot button 才是平時能講的話。                                                                    |
+| 13  | **來源與可信度（Source / Confidence）**                    | 這批資料大量是二手轉述，且已出現至少一組互相矛盾的說法。**把傳聞當事實講給程哥，是這份交付唯一真正的風險。** 每格標來源與 High/Med/Low，才是專業情報品，不是八卦彙整。                                                                                                                  |
 
 > 建議 9–13 全上，但**排版上收成一行 meta 列**，不要膨脹成 13 欄的表格。八欄照程哥的順序走，追加欄位放在每人檔案的頁首當「行動摘要」。
 
