@@ -13,3 +13,6 @@ Knowledge/Professionals/AWS SAA-C03/Exam Materials/
 .DS_Store
 Thumbs.db
 .gstack/
+
+# Local isolated feature worktrees
+.worktrees/
