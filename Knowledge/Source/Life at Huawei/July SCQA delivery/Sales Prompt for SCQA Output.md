@@ -1,0 +1,51 @@
+## Sales strategy & planning
+
+_Guides account, territory, and pipeline planning for strategic growth. Use a_ _**reasoning model**_ _for deeper strategic insights._
+
+|                                                         |                                                                                                                                                                                                                                                                 |
+| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Use Case                                                | Prompt                                                                                                                                                                                                                                                          |
+| **Generate strategic account plan**                     | Create an account plan for [customer name]. Use these inputs: company profile, known priorities, current product usage, stakeholders, and renewal date. Output a structured plan with goals, risks, opportunities, and next steps.                              |
+| **Design territory planning framework**                 | Create a territory planning guide for our next fiscal year. Inputs: team headcount, target industries, regions, and historical revenue. Recommend allocation method and sample coverage plan.                                                                   |
+| **Prioritize accounts using firmographic data**         | I have this list of accounts: [paste sample]. Prioritize them based on [criteria: industry, size, funding, tech stack]. Output a ranked list with reasons why.                                                                                                  |
+| **Spot high-potential accounts using weighted scoring** | Score accounts based on [insert rules—e.g., company size, engagement score, intent signals]. Data: [Upload account list]. Output top 10 ranked accounts with their score and a note explaining why.                                                             |
+| **Regional market entry planning**                      | I’m evaluating market entry into [region/country] for our [SaaS solution]. Research local buying behaviors, competitive landscape, economic conditions, and regulatory concerns. Format as a go/no-go market readiness summary with citations and action steps. |
+
+## Competitive intelligence & enablement
+
+_Equips sales teams with insights, positioning, and tools to win against competitors. Use_ _**deep research**_ _or_ _**web search**_ _for deeper real-time insights._
+
+|                                                     |                                                                                                                                                                                                                                                                |
+| --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Use Case                                            | Prompt                                                                                                                                                                                                                                                         |
+| **Create battlecard for competitor**                | Create a battlecard for [competitor name]. Use these notes: [insert positioning data]. Include strengths, weaknesses, how we win, and quick talk track. Output as table format.                                                                                |
+| **Competitive positioning analysis**                | I’m preparing a competitive battlecard for [competitor name]. Research their pricing model, product positioning, recent customer wins/losses, and sales motion. Compare it to ours based on these strengths: [insert]. Output a 1-page summary with citations. |
+| **Create a sales enablement one-pager**             | Create a one-pager to help reps pitch [product name] to [persona]. Include key benefits, features, common use cases, and competitor differentiators. Format as copy-ready enablement doc.                                                                      |
+| **Prepare sales objection rebuttals**               | Create rebuttals to these common objections: [insert 2–3 objections]. Make them sound natural and confident, and include a backup stat or story where useful. Output as list.                                                                                  |
+| **Find customer proof points in the public domain** | Research recent online reviews, social mentions, and testimonials about [our product OR competitor product]. Focus on what customers are praising or criticizing. Summarize top 5 quotes, what persona each came from, and where it was posted. Include links. |
+
+## Data analysis & performance insights
+
+_ChatGPT analyzes sales data to uncover performance trends and actionable insights._
+
+|                                                    |                                                                                                                                                                                                                      |
+| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Use Case**                                       | Prompt                                                                                                                                                                                                               |
+| **Analyze pipeline conversion rates by stage**     | Analyze this sales pipeline export. Calculate conversion rates between each stage and identify the biggest drop-off point. Data: [Upload pipeline CSV]. Output a short summary and a table of conversion % by stage. |
+| **Identify top-performing reps by close rate**     | From this dataset of rep activities and closed deals, calculate the close rate for each rep and rank them. Data: [Upload rep performance CSV]. Output a ranked list and a sentence for each rep’s strength.          |
+| **Visualize deal velocity across quarters**        | Use this CRM export to calculate average deal velocity per quarter (days from lead to close). Data: [Upload with open/close dates]. Show velocity trend in a simple chart and summarize the trendline.               |
+| **Summarize campaign attribution to closed deals** | Match campaign sources to closed-won deals from this data. Identify which campaign drove the most closed revenue. Data: [Upload campaign + deal export]. Output a ranked list and a short campaign summary.          |
+| **Generate performance comparison chart**          | Here’s a table of rep performance by quarter: [paste data]. Compare top vs bottom performers. Show chart with trends and call out key differences. Output as table + insights.                                       |
+
+## Visuals & Sales Collateral
+
+_ChatGPT creates visual assets and structured collateral for sales enablement._
+
+|                                            |                                                                                                                                                                                                                                                          |
+| ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Use Case                                   | Prompt                                                                                                                                                                                                                                                   |
+| **Visualize sales process in funnel view** | Create a funnel graphic showing our sales stages: [insert stages]. Make it clean and easy to read for onboarding docs. Output as simple image.                                                                                                           |
+| **Visualize the B2B sales funnel**         | Create an image of a standard B2B SaaS sales funnel with these stages: Prospecting, Discovery, Demo, Proposal, Closed Won/Lost. Use clean, modern icons and text labels. Output should be clear enough for use in a slide or enablement doc.             |
+| **Illustrate key sales personas**          | Create professional illustrations for 3 personas: (1) CFO of a mid-market company, (2) VP of IT at a global enterprise, and (3) Operations Manager at a logistics firm. Style should be flat and modern, ideal for use in a one-pager or training slide. |
+| **Create a territory coverage map**        | Create a simplified U.S. map showing sales territories split by region: West, Central, East. Use distinctive color zones and label key states. Output should look clean and suitable for a sales kickoff deck.                                           |
+| **Draft a team celebration graphic**       | Design a fun, modern graphic to celebrate “Top Rep of the Month.” Include a placeholder for name/photo and stylized trophy or badge. Style should match internal brand or newsletter vibe.                                                               |

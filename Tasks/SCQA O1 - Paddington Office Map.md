@@ -1,5 +1,5 @@
 ---
-status: doing
+status: done
 priority: medium
 tags:
   - task
@@ -7,7 +7,7 @@ projects:
   - "[[8-7-2026 SCQA Meeting]]"
 contexts:
   - work
-dateModified: 2026-07-10T16:13:41.065+01:00
+dateModified: 2026-07-27T00:00:00.000+01:00
 timeEntries:
   - startTime: 2026-07-08T13:40:06.493Z
     description: Work session

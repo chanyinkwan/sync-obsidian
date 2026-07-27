@@ -17,6 +17,102 @@ Live analysis of the JD corpus in this folder. You paste raw JDs into chat; each
 
 **Corpus exists to answer one question:** which domain do you claim in your 定位宣言? That is Gate 1, due **2026-07-19**. Everything below is built backwards from that.
 
+> [!success] Corpus closed 2026-07-27 — 50/50 captured, schema extracted, domain vocabulary frozen.
+> Sections 0a–0c below are a **static snapshot** taken at close. The Dataview blocks under them stay live and will drift if you add JDs; the snapshot is what Gate 1 was actually decided on. Domain vocabulary was frozen on 2026-07-27 (see `_JD Template`) and JDs 01–06, 08 retro-normalised onto it.
+
+---
+
+## 0a. Corpus integrity — read this before trusting any count
+
+50 files, but they are not 50 clean UK SA requisitions. Known defects, all left in place and labelled rather than quietly dropped:
+
+| File | Defect | Effect |
+|---|---|---|
+| `31` | Truncated Indeed scrape — title and pay only, no JD body. Frontmatter says `company: UNPARSEABLE`. | Not countable in any tally. `domain: unclear`. |
+| `34` / `47` | **Same Deloitte role**, "Commercial Strategist, Technology & Transformation", posted to England and to Wales. | One role double-counted in `consulting-advisory`. |
+| `32` | Datel "New Business Sales Consultant" — a pure quota sales role, no presales/SA content. | Inflates `enterprise-saas` by one. |
+| `07` | Google TAM, **Sunnyvale CA** — outside the UK/EEA search scope. | Inflates `cloud-infra` by one. |
+
+Effective clean n = **46**. Re-running the domain tally with all four removed changes the ordering nowhere in the top two and leaves a three-way tie at rank 3 — the Gate 1 call below is robust to every one of these defects, which is why it stands.
+
+**Second-order caveat, stated plainly:** `seniority` is `unclear` on 16 of 50 because most presales titles carry no modifier. Section 8 is therefore weak evidence — do not tune your targeting on it. And `moat_hits`/`gap_hits` are *my inference against your background*, not the JDs' words. They are the most useful and least trustworthy fields here.
+
+---
+
+## 0b. Snapshot — domain tally at close (the heatmap, SA 01's deliverable)
+
+| Rank | Domain | Reqs | Share of 50 |
+|---|---|---:|---:|
+| **1** | **`ai-ml-platform`** | **10** | **20%** |
+| **2** | **`fintech-payments`** | **6** | **12%** |
+| **2=** | **`enterprise-saas`** | **6** | **12%** |
+| 4= | `industrial-energy-ot` | 5 | 10% |
+| 4= | `security-compliance` | 5 | 10% |
+| 6= | `consulting-advisory` | 4 | 8% |
+| 6= | `retail-commerce` | 4 | 8% |
+| 8 | `cloud-infra` | 3 | 6% |
+| 9= | `data-analytics` | 2 | 4% |
+| 9= | `devtools-web-infra` | 2 | 4% |
+| 9= | `telco-networking` | 2 | 4% |
+| — | `unclear` (file 31) | 1 | 2% |
+
+**Top 3 = `ai-ml-platform`, `fintech-payments`, `enterprise-saas`.** `ai-ml-platform` leads by 67% over the next label and is the only domain that clears 15%. There is no tie at rank 1, so SA 02's tie-break rule never has to fire.
+
+**The uncomfortable line in this table:** `telco-networking` is **2 of 50 — 4%**. Your deepest existing domain is the thinnest market in the corpus. That is the single most decision-relevant number here and it is an argument against claiming telco as your positioning domain, not for it.
+
+### Snapshot — what the job actually IS, day to day
+
+| Responsibility | Appears in |
+|---|---:|
+| technical-discovery | 25 |
+| solution-architecture-design | 24 |
+| demo-delivery | 24 |
+| enablement-content-creation | 22 |
+| cross-functional-alignment | 22 |
+| product-feedback-loop | 21 |
+| customer-advisory | 21 |
+| customer-presentations | 20 |
+| poc-management | 17 |
+| proposal-ownership / requirements-gathering / rfx-response / stakeholder-management / account-growth | 15 each |
+| cost-estimation-pricing | 14 |
+| technical-workshops | 11 |
+
+Discovery and demo tie at the top, which is what SA 05 (discovery bank) and SA 08 (demo Loom) already assume — those two tasks are correctly prioritised. `cost-estimation-pricing` at 14 is the surprise: it is a top-tier presales responsibility and it is *already your day job*.
+
+### Snapshot — moat vs gap
+
+| You already have | Reqs | | Gap to build | Reqs |
+|---|---:|---|---|---:|
+| executive-and-technical-audience-communication | 39 | | domain-vertical-knowledge | 32 |
+| cross-functional-account-governance | 34 | | genai-hands-on-literacy | 20 |
+| b2b-enterprise-sales | 29 | | saas-product-experience | 15 |
+| commercial-and-pricing-deal-work | 21 | | solutions-architect-title-experience | 14 |
+| portfolio-solution-positioning | 15 | | hands-on-cloud-architecture-depth | 11 |
+| multi-account-stakeholder-management | 10 | | hands-on-coding-depth | 10 |
+| rfx-proposal-experience | 10 | | poc-end-to-end-ownership | 9 |
+| named-account-growth | 8 | | consulting-delivery-experience | 9 |
+| vendor-management-experience | 8 | | demo-asset-ownership | 6 |
+
+Read the two columns against each other: the top four things the market asks for are all things you already do. **The gate is not capability, it is evidence** — `solutions-architect-title-experience` (14) and `demo-asset-ownership` (6) are credential/artifact gaps, not skill gaps, and SA 08–SA 10 exist precisely to manufacture the artifacts. `domain-vertical-knowledge` topping the gap list at 32 is not one gap, it is 32 different verticals asking for their own; it collapses the moment you pick a domain, which is the whole point of Gate 1.
+
+---
+
+## 0c. Section 5 verdict — the AWS SAA falsification test RESOLVED
+
+This dashboard committed in writing to letting the corpus kill SA 03/SA 04. It has to be honoured now, because the result is unambiguous:
+
+> **Zero of 50 requisitions name AWS SAA. Zero name any cloud certification at all.**
+> The only two certifications named anywhere in the corpus are `togaf` (1, OutSystems) and `pmp` (1, Parloa nice-to-have). Verified by full-text search for `aws-saa`, `Solutions Architect Associate`, and `SAA-C0` across all 50 files: **no hits.**
+
+Cloud *platforms* are named — `aws` in 6, `azure` in 5, `gcp` in 5 — but as familiarity, never as credential. The distinction matters: the market wants you to be able to hold a cloud conversation, not to hold a badge.
+
+**By the stated rule, this falsifies the premise behind SA 03/SA 04.** The honest reading, with both sides:
+
+- **Against the spend:** 0/50 is not a weak signal, it is the strongest possible negative. The weeks SA 04 costs buy a credential no requisition in your own sampled market asks for. `cloud-certification` shows up as a gap in 5 JDs, but that is *my inference*, not any JD's words — it should not be used to rescue the cert.
+- **For keeping it:** the corpus is UK presales-titled roles. It systematically under-samples hyperscaler and partner-side SA roles, where the cert genuinely is a screen — note that file `06` is AWS's own Telco SA req. And `hands-on-cloud-architecture-depth` (11) is a real gap the SAA syllabus partly closes even if the badge is worthless.
+
+**This is your call, not mine, and it belongs in SA 03/SA 04 — but the dashboard's own rule says downgrade.** Recommended: keep studying for the *knowledge* if it is closing `hands-on-cloud-architecture-depth`, drop the exam booking from the critical path, and stop letting SA 04 block anything. Do not let it outrank SA 08–SA 10, which attack gaps the corpus actually ranks (`demo-asset-ownership`, `poc-end-to-end-ownership`, `solutions-architect-title-experience`).
+
 ---
 
 ## 1. Progress to 50
@@ -161,6 +257,11 @@ SORT captured DESC, company ASC
 ## How to use this
 
 1. Paste a raw JD into chat. I create the note, extract the schema, and it appears above.
-2. **At JD ~10, stop and freeze the domain vocabulary** (see `_JD Template`). Skipping this is how the tally at 50 ends up meaningless.
-3. **At 50, do not wait for Friday.** Section 2's top 3 rows are SA 02's input; start SA 02 the moment the count lands, since Gate 1 is due 07-19 and there's no slack to push it into W2.
-4. Section 5 is allowed to kill SA 03/SA 04. That's the point of collecting evidence before spending the weeks.
+2. ~~At JD ~10, freeze the domain vocabulary~~ — **done 2026-07-27**, see `_JD Template`. Any new JD must use a frozen label.
+3. ~~At 50, do not wait for Friday~~ — **corpus closed 2026-07-27**, SA 02 written the same day off section 0b.
+4. ~~Section 5 is allowed to kill SA 03/SA 04~~ — **it did.** See section 0c. Route the decision into SA 03/SA 04; do not leave it sitting here.
+
+## Log
+
+- **2026-07-27** — Corpus closed at 50. JDs 07 and 09–50 (42 files) were still raw pastes with no frontmatter; all extracted against `_JD Template`. Domain vocabulary frozen to 11 labels, JDs 01–06 and 08 retro-normalised. Responsibility/moat/gap synonyms collapsed onto a canonical vocabulary so the tallies aggregate. Snapshot sections 0a–0c added. Gate 1 decided: `ai-ml-platform`. AWS SAA falsification test resolved 0/50.
+- Recruiter contacts captured on 15 of 50 postings, verbatim URLs only — these are SA 12's warm-intro surface. The other 35 postings named no job poster; those fields are correctly blank, not missing.

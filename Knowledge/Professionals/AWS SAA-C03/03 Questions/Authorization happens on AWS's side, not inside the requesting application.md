@@ -21,8 +21,11 @@ tags: [saa-c03, question]
 - "alice request -> application layer verify permission -> application sign off temporary credentials -> AWS S3 receive request -> s3 get object -> read IAM role -> determine permission -> make sure not violating with explicit deny -> allow"
 - on the distractor: "not sure what is 機制 here means, but as per my understanding, it should use the IAM role to identify whether to allow this request or not, hard coding would lead to not able to update credentials? (not sure about this)"
 
+- 2026-07-26 final unaided recall: `STS issues a set of three components, session token, Access key ID (Authentication) , Secret Key ID (Authorization); while AWS SDK send the SignV4 signed request and S3 do the suthentication and authorization according to the policy execution; it has to be true n true n true -> allow, all other scenarios -> deny`
+- The flow and decision formula were retained, but `Secret Access Key` was misnamed and incorrectly treated as authorization. All three credential components support authentication; policies determine authorization.
+
 ## 抽出的 Unknown
-- Where authorization actually happens (app side vs AWS side), and the real security reason hardcoding is wrong (auto-expire vs manual revoke), not just update convenience.
+- Explain without prompts why temporary credentials authenticate while policies authorize.
 
 ## 連結
 - 對應 Knowledge Note [[An EC2 workload should use an IAM Role to obtain temporary credentials]]

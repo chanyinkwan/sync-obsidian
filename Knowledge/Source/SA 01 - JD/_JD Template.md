@@ -43,13 +43,29 @@ recruiter_linkedin: # full URL to their LinkedIn profile — ONLY if it appears 
 ---
 ```
 
-## Domain vocabulary — deliberately NOT frozen yet
+## Domain vocabulary — FROZEN 2026-07-27
 
 The single biggest failure mode for this corpus is a premature enum: if I invent ten domain labels today and the real market clusters differently, the tally at JD 50 is garbage and Gate 1 rests on a miscount.
 
-So: for the **first ~10 JDs I label `domain` freely** with my best description. At JD 10 we look at what actually appeared, freeze the vocabulary to the real clusters, and I retro-normalise the earlier notes. Everything from JD 11 on uses the frozen list.
+So the first batch of JDs was labelled freely. On **2026-07-27**, before extracting JDs 07 and 09–50, the vocabulary was frozen to the eleven clusters below and JDs 01–06 and 08 were retro-normalised onto it. Everything from here on uses this list and nothing else.
 
-Provisional starting labels (expect these to change): `cloud-infra`, `data-platform`, `ai-ml`, `observability`, `security`, `devtools`, `fintech`, `telco-networking`, `vertical-saas`.
+| label | means |
+|---|---|
+| `cloud-infra` | hyperscaler / cloud platform / infrastructure & migration |
+| `ai-ml-platform` | AI/ML/GenAI/agentic products and platforms |
+| `data-analytics` | data platform, BI, analytics, data engineering products |
+| `fintech-payments` | banking software, payments, insurance tech |
+| `telco-networking` | telecom, 5G, OSS/BSS, network infrastructure |
+| `security-compliance` | cybersecurity, IAM, GRC products |
+| `enterprise-saas` | HCM / ERP / CRM / ITSM / horizontal business SaaS |
+| `devtools-web-infra` | developer tools, web infra, CI/CD, observability, APIs |
+| `industrial-energy-ot` | energy, grid, manufacturing, OT/IIoT, engineering |
+| `retail-commerce` | retail, e-commerce, supply chain, martech |
+| `consulting-advisory` | vendor-neutral consultancies / SI advisory roles |
+
+When a JD straddles two, pick the one the *product being sold* belongs to and note the ambiguity in Signal notes.
+
+Retro-normalisation applied: `energy-grid-software`→`industrial-energy-ot`, `ai-solution-design-marketing`→`ai-ml-platform`, `agentic-web-infrastructure-presales`→`devtools-web-infra`, `strategic-account-advisory`→`enterprise-saas`, `core-banking-software`→`fintech-payments`, `telecom-cloud-transformation`→`telco-networking`, `ai-saas-presales`→`ai-ml-platform`.
 
 ## `moat_hits` / `gap_hits` — read these skeptically
 

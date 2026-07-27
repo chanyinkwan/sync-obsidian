@@ -9,6 +9,12 @@
 // QuestionMeta: {file: string, result: string, date: string|null, topics: string[], domain: string|null, services: string[]}
 // SessionMeta: {date: string, duration: number|null}
 // TopicState: "untouched" | "touched" | "proven" | "contested"
+// Ladder (canonical def in 00 Agent/Agent Instructions.md): Untouched < Touched < Proven.
+//   touched = at least one engaged note (status capture/distilled/connected) maps to the topic.
+//             Backward-compat: any leftover note with status:"primed" (from the retired priming
+//             design) does not count as engaged; a topic with only such notes reads as untouched.
+//   proven  = a mastered note exists (status:"mastered" + mastered date) and no later wrong/guessed
+//             question contests it; contested if one does.
 // ProgressRow: {date: string, touched: number, proven: number, notes: number, questions: number}
 
 const DOMAIN_SLUGS = {
@@ -118,11 +124,14 @@ function computeTopicStates(syllabus, notes, questions) {
 
   for (const id of allIds) {
     const mappedNotes = notesByTopic.get(id) || [];
-    if (mappedNotes.length === 0) {
+    // Backward-compat: any leftover note with status:"primed" (from the retired priming design)
+    // does not count as engaged, so a topic with only such notes reads as untouched.
+    const engagedNotes = mappedNotes.filter((n) => n.status !== "primed");
+    if (engagedNotes.length === 0) {
       states.set(id, "untouched");
       continue;
     }
-    const masteredNotes = mappedNotes.filter((n) => n.status === "mastered" && n.mastered);
+    const masteredNotes = engagedNotes.filter((n) => n.status === "mastered" && n.mastered);
     if (masteredNotes.length === 0) {
       states.set(id, "touched"); // includes "connected", which never counts as proven
       continue;
@@ -440,7 +449,7 @@ function renderCompact(dv, ctx) {
 function renderFull(dv, ctx) {
   const { syllabus, states, headline, delta, pace, action, streak, mockLine, questions, unmapped, todayISO } = ctx;
 
-  // 1. Dual headline
+  // 1. State-ladder headline (Untouched < Touched < Proven)
   dv.el(
     "div",
     `<span style="font-size:1.6em">TOUCHED ${headline.touched}%</span> &middot; <span style="font-size:1.6em">PROVEN ${headline.proven}%</span>`
@@ -472,7 +481,7 @@ function renderFull(dv, ctx) {
       `<div style="margin-bottom:0.6em">
         <div>${name} (${d.weight}%) &middot; ${d.touchedCount}/${d.total} touched, ${d.provenCount}/${d.total} proven</div>
         <div style="background:var(--background-modifier-border);height:8px;width:100%;position:relative">
-          <div style="background:var(--interactive-accent);opacity:0.35;height:8px;width:${touchedPct}%"></div>
+          <div style="background:var(--interactive-accent);opacity:0.35;height:8px;width:${touchedPct}%;position:absolute;top:0;left:0"></div>
           <div style="background:var(--interactive-accent);height:8px;width:${provenPct}%;position:absolute;top:0;left:0"></div>
         </div>
       </div>`

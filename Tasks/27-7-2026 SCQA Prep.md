@@ -1,16 +1,17 @@
 ---
-status: todo
+status: done
 priority: high
 scheduled: 2026-07-27
 due: 2026-07-27
 dateCreated: 2026-07-21
-dateModified: 2026-07-21T17:14:50.645+01:00
+dateModified: 2026-07-27T10:54:29.290+01:00
 tags:
   - task
 contexts:
   - work
 projects:
   - "[[Huawei Development]]"
+completedDate: 2026-07-27
 ---
 
 # 27-7-2026 SCQA Prep — 客戶人物檔案交付

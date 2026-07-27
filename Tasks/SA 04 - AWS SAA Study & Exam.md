@@ -7,7 +7,7 @@ projects:
   - "[[SA Presales Transition]]"
 contexts:
   - hub
-scheduled: 2026-07-24
+scheduled: 2026-07-27
 due: 2026-08-23
 recurrence: DTSTART:20260720;FREQ=DAILY;BYDAY=MO,TU,WE,TH,FR;UNTIL=20260821T235959Z
 timeEstimate: 60
@@ -16,8 +16,9 @@ complete_instances:
   - 2026-07-21
   - 2026-07-22
   - 2026-07-23
+  - 2026-07-26
 skipped_instances: []
-dateModified: 2026-07-23T17:24:01.684+01:00
+dateModified: 2026-07-26T15:57:37.460+01:00
 ---
 # SA 04 - AWS SAA Study & Exam
 

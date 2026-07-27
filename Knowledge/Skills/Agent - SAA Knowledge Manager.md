@@ -40,7 +40,9 @@ Output contract: end with a short list of files created / extended / moved, plus
 ## 設計筆記(為何這樣寫)
 - **規則正本擺喺 vault,唔係寫死喺 agent 度**:同 advisor 相反,呢個 agent 嘅詳細規則放咗喺 [[Agent Instructions]],agent 定義淨係留 hard boundaries。因為知識管理規則會隨住讀書習慣演化,擺喺 Obsidian 入面你自己都改到;`.claude/` 嗰份得個薄殼,唔使成日 sync。
 - **五個職責各自綁死一個 template + folder**(SAA Knowledge Note / Question Note / Study Session / Content Idea → `02`–`05`),Sonnet 冇得自己發明格式。
-- **關鍵規則**:Knowledge Note 標題必須係一句論點唔係主題(Question / Session / Content 三類可以用描述式標題);錯題只記 wrong / guessed / slow,改寫題目唔准成題貼;「我為何錯」保留你原本推理一字不改;mastered 要過齊四關(冇筆記都講得出、兩條唔同 scenario 題答啱、其中一次成功測試隔 3 日以上、講得出主要 distractor 點解錯);Active Unknowns 上限 3,升一個要降一個,各寫一句理由;唔准刪檔,過期嘢入 `99 Archive/`,而 archive / merge / rename 現有 note 之前要先簡述提案等你批准(小修小補唔使問)。
+- **關鍵規則**:Knowledge Note 標題必須係一句論點唔係主題(Question / Session / Content 三類可以用描述式標題);錯題只記 wrong / guessed / slow,改寫題目唔准成題貼;每次 mock 之後要將 wrong / guessed / slow 題 autopsy 入 `03 Questions/`,各貼一個 `knowledge-gap` / `misread` / `trap-pattern` tag;「我為何錯」保留你原本推理一字不改;Active Unknowns 上限 3,升一個要降一個,各寫一句理由;唔准刪檔,過期嘢入 `99 Archive/`,而 archive / merge / rename 現有 note 之前要先簡述提案等你批准(小修小補唔使問)。
+- **State model 只有一個正本**:topic 狀態階梯 **Untouched < Touched < Proven**(加 contested)同埋 Proven 嗰個四關 mastery test,正本淨係住喺 [[Agent Instructions]],呢度唔重覆定義,免得同正本有出入。要點:Proven = mastered = 過齊四關;狀態由 agent 根據 session 內容同 quiz 表現判斷,唔會自報;單一 mastery clock——四關入面「distilled 後 3+ 日(72 小時)」嗰關係唯一計時標準;唔同 triage bucket 目標唔同(Core→Proven、Tail→Functional 即 Touched 已夠、Sacrifice→skip),per-topic 目標睇 [[Study Triage]],唔好對 Tail / Sacrifice 追 Proven。
+- **Cantrill 用法**:淨係 JIT remediation——卡到底先指派一條指定短片,喺相關筆記度落一個 flag(唔係狀態),session note 要記低當日派咗嘅 watch-task,lecture 對照 [[Cantrill Index]]。
 - **固定處理次序**:session note → question notes → knowledge notes → unknowns triage → dashboard update,最後交一張 created / extended / archived 清單。
 
 ## 連結

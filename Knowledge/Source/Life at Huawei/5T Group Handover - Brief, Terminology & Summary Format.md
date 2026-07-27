@@ -89,7 +89,7 @@ tags:
 - **profit rate 30%** = 定價時地區部的默認放行線(系統可查價格對應利潤率);**router 品類大多低於此線**,需與 [[Zhang Xuan 00942107|張炫]] 談「犧牲銷量還是犧牲利潤」。新增一個顏色需承諾全生命週期銷量門檻(數字待確認),而 router 一年所有型號合計僅 10000 台出頭,故基本撐不起。
 
 **人(群裡常出現,for 交接)**
-- **Ziyi Zhang 84434577** = 和記(交給你);**Qixuan Wang wx1252689**(云琪?⚠)= TEF/Amazon;**Kaili Li wx1252688(凱莉)** = TEF/Orange/VDF 樣機與活動;**Zhang Ziyi 84271109** = Orange,**也負責貼 1組綜合待辦**(≠ mentor 同名)。
+- **Ziyi Zhang 84434577** = 和記(交給你);**Qixuan Wang wx1252689**(云琪?⚠)= TEF/Amazon;**Kaili Li wx1252688(凱莉)** = TEF/Orange/VDF 樣機與活動;**Zhang Ziyi 84271109** = Orange,**也負責貼 1組綜合待辦**(≠ mentor 同名);Amazon 群內暱稱**子怡**,亦管交付(✅ 2026-07-27 Kess 確認,見 [[Amazon Handover Meeting Transcript Part 2]] Open questions)。
 - 和記團隊:**丁程/程哥**(account lead;**Kess 直屬主管**——7/8 定七月方向:內部/客戶組織 + portfolio 熟悉)、**Selina(Huang Yi 84411269)**(客戶關係口徑:客戶人/背景找她)、**Michele Cappabianca**(手機/FWA 技術)。
 - 其他:**嚴佳(Yan Jia)**(DT GTM,正編;曾同時兼管法電——與 VDF 的 Jerry(台灣,base Luxembourg)**非同一人**,先前「嚴佳/Jerry Hsueh」併記有誤)、**陳昕/Chen Xin**(**DT 系統部 head**,正編;7/10 確認——先前記「DT 技術」)、**Olivier CADENE**(Orange 技術/RFQ)、**張銉**(路由器/機關 XG 材料)、**俞碧斐/碧斐** = [[yubeifei y00663235]](競爭分析/IOT 例會;歐洲 FWA/CPE 路標協調人——ATP 產能分配、對客成本/價格唯一口徑、主持 7/2 產品路標會)、**李楊(Li Yang)**(行政/績效)、**張明豪/明豪**(Kaili 帳戶負責人;7/8 確認,ASR 拼作「名号」)、**林穎署(Yingshu Lin)**(地區部**樣機**負責人,曾黎下屬;7/8 主管確認——先前記為「合規」待核 ⚠)、**曾力/曾黎(Zeng Li)/黎叔**(**大 T 和 IoT 業務部 boss**;林穎署、碧斐、程哥等皆其下屬,其上級為 Tony/榮濤);上層:**Tony(=榮濤/Rongtao,歐洲終端 BG 負責人,曾黎上級)/ Colin / 華哥 / 陳軍 / 余總 / 何總**。
 - 產品路標會(7/2 新增):⚠ **石小波/小波/宋博** = [[shixiaobo s00544127]](機關產品線,H175 / H168 裁剪負責,ASR 拼法多變待確認)、⚠ **小郭** (機關產品線,達標策略窗口)、**Donghao** = [[Donghao d00622509]](帳戶側,排產/ATP 對接)。⚠ **嘉杉(Jiashan)** = 去年 Dominic/FWA BD 問卷第一輪唯一參加者(全名/工號待確認;7/3 晨會提及,ASR 拼作「假山」)。
