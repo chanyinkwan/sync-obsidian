@@ -44,7 +44,7 @@ tags:
 
 - [[TSMP In and Out Record]] — logged sample in/out (25m 🍅)
 - [[O5 · Client Power Map]] — prepped account-manager meeting questions
-- [[SA 01 - JD/11]] — wrote tailored CV for Engineered Intelligence
+- [[11]] — wrote tailored CV for Engineered Intelligence
 - [[CV Writing Rules]] — authored CV rules + memory note
 
 ### How would you translate what you have done today into industry terminology?

@@ -40,15 +40,15 @@ Overlay W1.
 Left = what you already are, weighted by how often the corpus asked for it (SA 01 §0b moat tally).
 Right = the top-3 domains from the 50-JD heatmap.
 
-| Your background (moat) | Reqs asking | | Top-3 domain | Reqs | What it needs that you lack |
-|---|---:|---|---|---:|---|
-| executive + technical audience communication | 39 | | **`ai-ml-platform`** | **10** | genai-hands-on-literacy, demo-asset ownership |
-| cross-functional account governance | 34 | | `fintech-payments` | 6 | core-banking / payments domain depth (years, not weeks) |
-| B2B enterprise sales | 29 | | `enterprise-saas` | 6 | product-ecosystem depth (Workday, ServiceNow, Asana — vendor-specific) |
-| commercial and pricing deal work | 21 | | | | |
-| portfolio solution positioning | 15 | | | | |
-| multi-account stakeholder management | 10 | | | | |
-| RFx / proposal experience | 10 | | | | |
+| Your background (moat)                       | Reqs asking |     | Top-3 domain         |   Reqs | What it needs that you lack                                            |
+| -------------------------------------------- | ----------: | --- | -------------------- | -----: | ---------------------------------------------------------------------- |
+| executive + technical audience communication |          39 |     | **`ai-ml-platform`** | **10** | genai-hands-on-literacy, demo-asset ownership                          |
+| cross-functional account governance          |          34 |     | `fintech-payments`   |      6 | core-banking / payments domain depth (years, not weeks)                |
+| B2B enterprise sales                         |          29 |     | `enterprise-saas`    |      6 | product-ecosystem depth (Workday, ServiceNow, Asana — vendor-specific) |
+| commercial and pricing deal work             |          21 |     |                      |        |                                                                        |
+| portfolio solution positioning               |          15 |     |                      |        |                                                                        |
+| multi-account stakeholder management         |          10 |     |                      |        |                                                                        |
+| RFx / proposal experience                    |          10 |     |                      |        |                                                                        |
 
 ## Which intersection needs the least re-explaining
 

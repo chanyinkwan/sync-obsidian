@@ -1,11 +1,13 @@
 {
   "meta": {
-    "version": "2.2",
+    "version": "3.0",
     "created": "2026-07-13",
-    "recrafted": "2026-07-13",
+    "recrafted": "2026-07-28",
     "authoritative_timeline_source": "LinkedIn PDF export 2026-07-13",
     "target_path": "Presales Solutions Engineer / customer-facing Solutions Architect (AI SaaS & cloud infrastructure)",
-    "predecessor": "NewProofBank.json (archived, dates unreliable)"
+    "predecessor": "NewProofBank.json (archived, dates unreliable)",
+    "integrity_pass": "2026-07-28 repositioning interview. Every surviving number was re-grounded against what the user can reconstruct on demand. Bullets carry status: verified (defensible in a 10-second explanation), needs_grounding (real work, figure not yet reconstructed), secondary (true, kept for per-JD views, not front-line CV material), blocked (cannot be used until an external event completes), cut (removed, reason given).",
+    "hard_rule": "Never render a bullet whose status is not 'verified' or 'secondary'. Never restore anything in excluded_from_cv."
   },
   "competency_model": {
     "discovery": "Uncovering customer pain points, requirements, and buying context through structured questioning and stakeholder engagement.",
@@ -27,92 +29,79 @@
       "end": "Present",
       "location": "London Area, United Kingdom",
       "employment_type": "Full-time",
-      "narrative": "Presales solution ownership for Huawei CBG's UK portfolio: RFI/RFP response, customer needs analysis, win-win solution design, and product roadmap/pricing strategy input.",
-      "gap_note": "Still missing: unit volume (annual/contract) to size the USD 2/unit saving in total dollars; first completed RFI/RFP response; a concrete subnet feasibility-catch story. See harvest follow-ups H42-H45.",
+      "narrative": "Presales solution ownership for Huawei CBG's UK portfolio on a Tier-1 operator account: requirements analysis, solution feasibility, product roadmap and pricing input, and end-to-end ownership of the evaluation and demo unit programme.",
+      "gap_note": "Contract unit volume behind the USD 2/unit saving is not accessible to the user (confirmed 2026-07-28); the bullet stands on the per-unit figure and the roadmap decision. RFP and proposal bullets stay blocked until a bid concludes.",
       "team_context": "5-person presales team dedicated to the Hutchison 3G (Three UK) account; presales owns the pursuit through RFP, then hands off to sales.",
       "client_private": "Hutchison 3G UK (Three)",
       "client_public_label": "Tier-1 UK mobile network operator",
       "master_bullets": [
-        { "text": "Cut product cost by USD 2 per unit by driving the removal of a low-value feature through GTM roadmap and pricing discussions for a Tier-1 UK mobile network operator account.", "raw": "Candidate answer H4 (2026-07-13): GTM input led to removing one product feature, cutting cost by USD 2 per unit.", "competencies": ["product-feedback", "value-engineering"], "status": "verified", "source": "candidate-2026-07-13", "note": "Missing: annual/total unit volume to size the saving — see harvest follow-up H42." },
-        { "text": "Surfaced solution requirements for a Tier-1 UK mobile network operator account by running 3 technical workshops and a structured requirements-analysis session with the customer.", "raw": "Conduct customer needs analysis through direct participation in customer conferences, surfacing requirements to shape solution positioning. | Candidate answer H3 (2026-07-13): 3 technical workshops + 1 requirements-analysis meeting so far; single client account.", "competencies": ["discovery"], "status": "verified", "source": "candidate-2026-07-13" },
-        { "text": "Provide dedicated presales coverage of a Tier-1 UK mobile network operator account, validating solution feasibility across ~6 account subnets ahead of proposal commitment.", "raw": "Perform technical validation and testing of account-level subnet specification restrictions to confirm solution feasibility ahead of proposal submission. | Candidate answer H6 (2026-07-13): single account, roughly 6 subnets.", "competencies": ["architecture-design", "discovery"], "status": "verified", "source": "candidate-2026-07-13" },
-        { "text": "Prepare RFI and RFP response materials for a Tier-1 UK mobile network operator pursuit — an active RFP hunt is in progress, owned by presales through to sales handoff.", "raw": "Prepare and contribute to RFI and RFP response materials for Huawei CBG's UK portfolio, translating solution capabilities into formal proposal content.", "competencies": ["rfp-bid-management"], "status": "draft", "source": "huawei-note", "note": "No completed RFI/RFP response yet as of 2026-07-13 — do not use in CV/interview until one ships." },
-        { "text": "Structure win-win solution proposals that reconcile customer requirements with Huawei's commercial and product constraints, keeping pursuits viable for both sides.", "raw": "Source and structure win-win solution proposals that balance customer requirements against Huawei's commercial and product constraints.", "competencies": ["value-engineering", "objection-handling"], "status": "draft", "source": "huawei-note", "note": "No concluded deal outcome yet as of 2026-07-13 — do not use as an achievement in CV/interview until a bid concludes." }
-      ]
-    },
-    {
-      "company": "Freelance | Self-Employed",
-      "title": "AI Solutions Engineer",
-      "start": "Oct 2025",
-      "end": "Mar 2026",
-      "location": "Dartford, United Kingdom",
-      "employment_type": "Freelance / Self-employed",
-      "narrative": "Freelance forward deployment for SME clients: diagnose business pain points, design AI-powered solutions, deploy to production, and measure impact. Every engagement follows the same cycle from discovery, build, deploy, iterate.",
-      "master_bullets": [],
-      "projects": [
         {
-          "id": "AI Lead Enrichment Pipeline (B2B Marketing Agency)",
-          "timeline": { "start": "Oct 2025", "end": "Mar 2026" },
-          "github_url": "https://github.com/chanyinkwan/Lead-Enrichment-Pipeline",
-          "industry": "B2B Marketing / Sales",
-          "domain": ["Lead Generation", "Sales Automation", "AI Scoring", "Data Enrichment"],
-          "core_skills": ["n8n", "OpenAI GPT-4o", "Apollo.io API", "Lead Scoring"],
-          "context": "A B2B growth agency's 6 SDRs spent 60% of their time on manual lead research, hitting only 350-400 of their 500/month qualified lead target.",
-          "bullets": [
-            { "text": "Lifted monthly qualified lead output 50-60% (350-400 to 550-650) for a 6-SDR B2B growth agency by designing and deploying an automated scraping, enrichment, and AI-scoring pipeline.", "raw": "Increased monthly qualified lead output from 350-400 to 550-650 (~50-60% increase) through automated scraping, enrichment, and AI scoring.", "competencies": ["value-engineering", "build-execution"], "status": "verified", "source": "proofbank" },
-            { "text": "Tripled SDR throughput (20 to 60-80 leads/day) and cut research load from 60% to ~20% of each rep's day by engineering manual lead research out of the workflow.", "raw": "Reduced SDR research time from 60% to ~20% of their day, enabling 3-4x throughput (20 leads/day to 60-80 leads/day).", "competencies": ["value-engineering", "build-execution"], "status": "verified", "source": "proofbank" },
-            { "text": "Turned an undiscriminating AI scoring model into a real decision tool — shifting distribution from 80% of leads scoring 7+ to a usable 15%/40%/45% split — by encoding client-specific negative buying signals (consultant = not buyer, company <10 = too small).", "raw": "Recalibrated AI scoring with specific negative signals (consultant = not buyer, company <10 = too small), improving score distribution from 80% scoring 7+ to a useful 15%/40%/45% split.", "competencies": ["product-feedback", "discovery"], "status": "verified", "source": "proofbank" },
-            { "text": "Cut email bounce rate from 12% to 2.5-4% by diagnosing that Apollo.io enrichment delivered ~70% accuracy against its advertised 95%, then layering SMTP validation as a secondary check.", "raw": "Cut email bounce rate from 12% to 2.5-4% by adding SMTP validation as a secondary check after Apollo.io enrichment (which delivered ~70% accuracy, not the advertised 95%).", "competencies": ["build-execution", "product-feedback"], "status": "verified", "source": "proofbank" },
-            { "text": "Raised lead-to-meeting conversion from 3.2% to 5.1-5.8% by refocusing SDR outreach exclusively on AI-qualified high-score leads.", "raw": "Improved lead-to-meeting conversion from 3.2% to 5.1-5.8% by enabling SDRs to focus outreach on AI-qualified high-score leads.", "competencies": ["value-engineering", "build-execution"], "status": "verified", "source": "proofbank" }
-          ]
+          "text": "Removed a low-value feature from the device configuration for a Tier-1 UK mobile network operator, cutting USD 2 per unit in product cost, by making the case across GTM roadmap and pricing reviews that the feature carried no weight in the customer's buying decision.",
+          "competencies": [
+            "product-feedback",
+            "value-engineering"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28",
+          "arithmetic": "USD 2 per unit only. Contract volume not accessible. If asked, say so plainly."
         },
         {
-          "id": "Financial RAG Assistant (Wealth Management)",
-          "timeline": { "start": "Feb 2026", "end": "Mar 2026" },
-          "github_url": "https://github.com/chanyinkwan/Financial-RAG-Assistant",
-          "industry": "Finance / Wealth Management",
-          "domain": ["RAG", "Document Intelligence", "AI Integration", "Compliance"],
-          "core_skills": ["n8n", "Qdrant", "OpenAI API", "SQL", "GDPR Compliance"],
-          "context": "Wealth management analysts spent 3+ hours preparing for each client meeting, manually searching through 4,000+ financial documents for relevant information.",
-          "bullets": [
-            { "text": "Compressed analyst meeting prep from 3+ hours to 20 minutes by delivering a RAG system that answers plain-English queries across 4,000+ financial documents with source citations attached.", "raw": "Cut analyst meeting prep from 3+ hours to 20 minutes by building a RAG system for querying 4,000+ financial documents in plain English with source citations.", "competencies": ["value-engineering", "architecture-design"], "status": "verified", "source": "proofbank" },
-            { "text": "Unified structured and unstructured financial data behind natural-language queries by architecting the retrieval stack on n8n, a Qdrant vector database, and the OpenAI API.", "raw": "Built on n8n with a Qdrant vector database and the OpenAI API, enabling natural language queries across structured and unstructured financial data.", "competencies": ["architecture-design", "build-execution"], "status": "verified", "source": "proofbank" },
-            { "text": "Met audit-trail compliance requirements in regulated wealth management by engineering source citations into every AI response — no answer without provenance.", "raw": "Implemented source citation in every response, meeting compliance requirements for audit trails in regulated wealth management.", "competencies": ["value-engineering", "objection-handling"], "status": "verified", "source": "proofbank" },
-            { "text": "Kept client financial data inside the firm's own infrastructure — the GDPR constraint that gated the engagement — by self-hosting the entire stack.", "raw": "Self-hosted the entire stack for GDPR compliance, ensuring client financial data never left the firm's infrastructure.", "competencies": ["architecture-design", "objection-handling"], "status": "verified", "source": "proofbank" },
-            { "text": "Gave analysts precision retrieval by designing SQL-based metadata filtering that scopes queries by client, date range, and document type.", "raw": "Designed SQL-based metadata filtering allowing analysts to scope queries by client, date range, and document type for precise retrieval.", "competencies": ["architecture-design", "build-execution"], "status": "verified", "source": "proofbank" }
-          ]
+          "text": "Own the evaluation and demo unit programme for a Tier-1 UK operator account, tracking 60 to 80 live sample units against launch deadlines, clearing cross-border transfers, and holding sign-off so product reaches the customer's evaluation teams ahead of decision points.",
+          "competencies": [
+            "stakeholder-management",
+            "build-execution"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28",
+          "arithmetic": "60 to 80 live sample units at any time."
         },
         {
-          "id": "AI Bank Reconciliation System (Property Management)",
-          "timeline": { "start": "Mar 2026", "end": "Mar 2026" },
-          "github_url": "https://github.com/chanyinkwan/AI-Bank-Reconciliation",
-          "industry": "Property Management / Finance",
-          "domain": ["Workflow Automation", "AI Integration", "Financial Operations", "Data Matching"],
-          "core_skills": ["n8n", "GPT-4o", "REST APIs", "Fuzzy Matching", "JavaScript"],
-          "context": "A 200-unit property management company spent 15+ hours per month manually reconciling bank statements against tenant records, with frequent mismatches due to inconsistent payment references.",
-          "bullets": [
-            { "text": "Cut monthly bank reconciliation from 15+ hours to 30 minutes for a 200-unit property portfolio by shipping an n8n workflow that uses GPT-4o fuzzy matching to pair rental payments with tenant records.", "raw": "Reduced monthly bank reconciliation from 15+ hours to 30 minutes using an n8n workflow with GPT-4o for fuzzy matching rental payments against tenant records.", "competencies": ["value-engineering", "build-execution"], "status": "verified", "source": "proofbank" },
-            { "text": "Solved the root problem of inconsistent payment references by delivering end-to-end automation — bank-statement parsing, GPT-4o fuzzy matching, and structured output validation — across the 200-unit portfolio.", "raw": "Built end-to-end workflow automation on n8n integrating bank-statement parsing, GPT-4o fuzzy matching, and structured output validation for a 200-unit property portfolio.", "competencies": ["build-execution", "architecture-design"], "status": "verified", "source": "proofbank" },
-            { "text": "Caught discrepancies manual review consistently missed by building automated flagging of underpayments and duplicate payments into the pipeline.", "raw": "Implemented automated flagging of underpayments and duplicate payments, catching discrepancies that manual review consistently missed.", "competencies": ["build-execution", "value-engineering"], "status": "verified", "source": "proofbank" },
-            { "text": "Guaranteed reliable daily reconciliation runs by designing production-grade error handling and logging into every n8n workflow.", "raw": "Designed production-grade error handling and logging within n8n workflows to ensure reliable daily reconciliation runs.", "competencies": ["build-execution", "architecture-design"], "status": "verified", "source": "proofbank" },
-            { "text": "Retired fragmented spreadsheet-based processes by unifying multiple data sources into a single reconciliation pipeline over REST APIs.", "raw": "Connected multiple data sources via REST APIs into a unified reconciliation pipeline, replacing fragmented spreadsheet-based processes.", "competencies": ["architecture-design", "build-execution"], "status": "verified", "source": "proofbank" }
-          ]
+          "text": "Took the manual layer out of that programme with VBA automation and a scheduled task, replacing a daily hand-check of every live sample with automated deadline reminders, and cutting about an hour a week of sign-off document assembly by generating it from template.",
+          "competencies": [
+            "build-execution",
+            "value-engineering"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28",
+          "arithmetic": "5 sign-off documents a week at 10 to 15 minutes each is roughly 1 hour a week. Plus one daily manual check across 60 to 80 samples, eliminated.",
+          "note": "VBA is real code the user wrote. It is not evidence of production software engineering. Do not stretch it."
         },
         {
-          "id": "AI Email Autoresponder (Consulting Firm)",
-          "timeline": { "start": "Mar 2026", "end": "Mar 2026" },
-          "github_url": "https://github.com/chanyinkwan/AI-Email-Autoresponder",
-          "industry": "Consulting / Professional Services",
-          "domain": ["AI Integration", "Workflow Automation", "RAG", "Human-in-the-Loop"],
-          "core_skills": ["RAG", "LLM API", "n8n", "JavaScript", "Prompt Engineering"],
-          "context": "A 40-person consulting firm averaged 48-hour email response times due to manual drafting, losing client confidence and repeat business.",
-          "bullets": [
-            { "text": "Cut average client email response time from 48 hours to under 4 for a 40-person consulting firm by deploying an AI autoresponder gated by human-in-the-loop approval.", "raw": "Cut average email response time from 48 hours to under 4 hours by building an AI autoresponder with human-in-the-loop approval.", "competencies": ["value-engineering", "build-execution"], "status": "verified", "source": "proofbank" },
-            { "text": "Grounded every AI-drafted reply in firm-specific policies and client history by integrating an LLM API with a RAG knowledge base — no generic responses reached clients.", "raw": "Integrated an LLM API with a RAG knowledge base to draft contextual replies grounded in firm-specific policies and client history.", "competencies": ["architecture-design", "build-execution"], "status": "verified", "source": "proofbank" },
-            { "text": "Protected output quality without surrendering the speed gain by designing a 3-step approval workflow (approve/edit/reject) on every drafted reply.", "raw": "Designed a 3-step approval workflow (approve/edit/reject) ensuring output quality while maintaining speed gains for a 40-person consulting firm.", "competencies": ["objection-handling", "build-execution"], "status": "verified", "source": "proofbank" },
-            { "text": "Standardised tone and accuracy across all client communications by building reusable prompt-engineering patterns with output validation before human review.", "raw": "Built prompt-engineering patterns for consistent tone and accuracy across client communications, with output validation before human review.", "competencies": ["build-execution", "product-feedback"], "status": "verified", "source": "proofbank" },
-            { "text": "Shipped production-grade reliability — monitoring, error handling, and fallback routing — so edge cases the AI could not handle degraded gracefully to humans.", "raw": "Deployed a production-ready workflow with monitoring, error handling, and fallback routing for edge cases the AI could not handle.", "competencies": ["build-execution", "architecture-design"], "status": "verified", "source": "proofbank" }
-          ]
+          "text": "Covered the full requirements cycle for a Tier-1 UK operator across 3 technical workshops and a structured analysis session, turning customer input into documented solution scope for the pursuit team.",
+          "competencies": [
+            "discovery"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28",
+          "note": "User went through the whole workshop cycle but did NOT present. Never claim presenting or facilitating."
+        },
+        {
+          "text": "Validated solution feasibility across 6 account subnets before proposal commitment, as dedicated presales cover inside a 5-person pursuit team.",
+          "competencies": [
+            "architecture-design",
+            "discovery"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28"
+        },
+        {
+          "text": "Prepare RFI and RFP response materials for a Tier-1 UK operator pursuit.",
+          "competencies": [
+            "rfp-bid-management"
+          ],
+          "status": "blocked",
+          "source": "interview-2026-07-28",
+          "note": "No RFI/RFP has concluded. Unusable until one ships."
+        },
+        {
+          "text": "Structure win-win solution proposals reconciling customer requirements with commercial and product constraints.",
+          "competencies": [
+            "value-engineering",
+            "objection-handling"
+          ],
+          "status": "blocked",
+          "source": "interview-2026-07-28",
+          "note": "No concluded deal outcome. Unusable as an achievement until a bid closes."
         }
       ]
     },
@@ -123,20 +112,116 @@
       "end": "Oct 2024",
       "location": "Hong Kong SAR",
       "employment_type": "Full-time",
-      "narrative": "Led an E-banking UX team owning end-to-end delivery for BOC Pay and Bank of China's e-banking platform in a regulated environment: stakeholder discovery, requirements translation, vendor management, prototype validation, compliance delivery, and cross-region launch.",
+      "narrative": "Owned end-to-end delivery for BOC Pay and Bank of China's e-banking platform in a regulated environment, without direct reports: stakeholder discovery, requirements translation, vendor management, prototype validation, compliance delivery, and cross-region launch.",
       "master_bullets": [
-        { "text": "Delivered 100% of HKMA regulatory mandates inside a strict 14-day window — shipping Geo-IP fraud detection with 'Impossible Travel' logic — by translating regulation into a technical implementation plan and orchestrating internal teams plus third-party vendors under deadline.", "raw": "Delivered 100% of HKMA regulatory mandates inside a strict 14-day window by translating regulation into a technical implementation plan and orchestrating internal teams and third-party vendors to ship Geo-IP fraud detection with 'Impossible Travel' logic, keeping the payments platform compliant under deadline.", "competencies": ["stakeholder-management", "value-engineering"], "status": "verified", "source": "merged" },
-        { "text": "Aligned third-party vendors and internal teams on a single integration path by running technical workshops that folded external fraud solutions into the bank's internal detection framework.", "raw": "Facilitated technical workshops with internal teams and third-party vendors to integrate their solutions into the internal fraud-detection framework.", "competencies": ["stakeholder-management", "architecture-design"], "status": "verified", "source": "proofbank" },
-        { "text": "De-risked the BOC Pay launch across 4 global regions and saved 15 man-days of project budget by designing a follow-the-sun, 24-hour synchronised UAT plan built on timezone gap analysis.", "raw": "De-risked the BOC Pay launch across 4 global regions and saved 15 man-days of project budget by designing a follow-the-sun, 24-hour synchronised UAT plan built on timezone gap analysis.", "competencies": ["stakeholder-management", "value-engineering"], "status": "verified", "source": "merged" },
-        { "text": "Recovered 1,000+ hours/year of cross-functional capacity — a 20-hour-per-week drain across 50+ teams — by deploying a centralised Grafana observability framework that retired 50+ manual weekly reporting touchpoints.", "raw": "Recovered 1,000+ hours per year of cross-functional capacity, a 20-hour-per-week drain across 50+ teams, by deploying a centralised Grafana observability framework that retired 50+ manual weekly reporting touchpoints.", "competencies": ["architecture-design", "value-engineering"], "status": "verified", "source": "merged" },
-        { "text": "Won adoption of the observability framework in a single session — resolving 80% of technical queries live — by delivering a demo and slide deck to 30+ system leads, the UX department head, and the networking team lead.", "raw": "Presented the observability framework via live demo and slide deck to 30+ system leads, the UX department head, and the networking team lead, resolving 80% of technical queries in the first session.", "competencies": ["demo-technical-win", "stakeholder-management"], "status": "verified", "source": "proofbank" },
-        { "text": "Killed a 3+ year legacy pain point in e-banking incident triage by mining 50,000+ historical logs and shipping a stakeholder-validated Python anomaly-detection prototype that separated critical incidents from deployment noise.", "raw": "Resolved a 3+ year legacy pain point in e-banking incident triage by mining 50,000+ historical logs and shipping a stakeholder-validated Python anomaly-detection prototype that isolated critical incidents from deployment noise.", "competencies": ["build-execution", "demo-technical-win"], "status": "verified", "source": "merged" },
-        { "text": "Cut 15 man-days of vendor-evaluation churn by converting fragmented infrastructure needs from 50+ teams into a MoSCoW-prioritised vendor roadmap, then proving it through a Red Hat proof of concept.", "raw": "Cut 15 man-days of vendor-evaluation churn by converting fragmented infrastructure needs from 50+ teams into a prioritised vendor roadmap, validated through a Red Hat proof of concept.", "competencies": ["rfp-bid-management", "demo-technical-win"], "status": "verified", "source": "merged" },
-        { "text": "Ran discovery at scale with a structured 7-question elicitation framework (objective, context, stakeholders, success criteria, scope, constraints, insight sources), closing gaps through follow-up interviews before committing requirements as JIRA user stories.", "raw": "Elicited requirements using a structured 7-question framework (objective, context, stakeholders, success criteria, scope, constraints, insight sources), then extended with follow-up interviews to fill gaps before documenting as user stories in JIRA.", "competencies": ["discovery", "rfp-bid-management"], "status": "verified", "source": "proofbank" },
-        { "text": "Kept competing projects unblocked by negotiating resource allocation across priorities — stepping in on dependent tasks or building the business rationale for timeline adjustments whenever manday conflicts arose.", "raw": "Negotiated resource allocation across competing project priorities, stepping in to unblock dependent tasks or building rationale for timeline adjustments when manday conflicts arose.", "competencies": ["stakeholder-management", "objection-handling"], "status": "verified", "source": "proofbank" },
-        { "text": "Unified 30+ product design specialists onto a single tooling roadmap by diagnosing the mismatch between legacy software and team procedures, synthesising 15+ behavioural data points, and securing procurement of the replacement.", "raw": "Unified 30+ product design specialists onto a single tooling roadmap by diagnosing the mismatch between legacy software and team procedures, synthesising 15+ behavioural data points, and securing procurement of the replacement.", "competencies": ["discovery", "value-engineering"], "status": "verified", "source": "merged" },
-        { "text": "Prevented stagnation across 3+ high-priority technical streams by engineering a sustainable talent pipeline that onboarded 5+ elite specialists into critical niche gaps and streamlined the acquisition logic for specialised roles.", "raw": "Engineered a sustainable technical talent pipeline that onboarded 5+ specialists and resolved resourcing gaps across 3+ high-priority streams simultaneously, preventing project stagnation and reducing time-to-hire for specialized roles.", "competencies": ["stakeholder-management", "build-execution"], "status": "draft", "source": "proofbank", "note": "Missing: quantified time-to-hire reduction and delivery outcomes after staffing." }
-      ]
+        {
+          "text": "Delivered 100% of HKMA regulatory mandates inside a 14-day window by translating the regulation into an implementation plan and coordinating internal teams alongside third-party vendors, shipping Geo-IP fraud detection with impossible-travel logic.",
+          "competencies": [
+            "stakeholder-management",
+            "value-engineering"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28"
+        },
+        {
+          "text": "Recovered 8 hours a week of manual reporting effort across 20 systems, roughly 400 hours a year, by deploying a centralised Grafana observability framework in place of hand-assembled weekly reports.",
+          "competencies": [
+            "architecture-design",
+            "value-engineering"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28",
+          "arithmetic": "8 hours a week across 20 systems, times 50 weeks, is about 400 hours a year.",
+          "correction": "Previously claimed 1,000+ hours/year and 20 hours/week across 50+ teams. Both inflated and internally contradictory. Corrected by the user 2026-07-28."
+        },
+        {
+          "text": "Kept competing projects moving by arbitrating manday conflicts across priorities, either absorbing dependent work directly or building the business case for a timeline change.",
+          "competencies": [
+            "stakeholder-management",
+            "objection-handling"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28",
+          "note": "Strongest leadership evidence in the database. Promote it, do not bury it."
+        },
+        {
+          "text": "Closed a 3-year backlog in e-banking incident triage by specifying and validating a Python anomaly-detection prototype, built with a developer, that separated critical incidents from deployment noise across 50,000+ historical logs.",
+          "competencies": [
+            "discovery",
+            "demo-technical-win"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28",
+          "correction": "Previously read as if the user wrote the code. User specced it and worked with a developer (confirmed 2026-07-28). Never present this as personally written software."
+        },
+        {
+          "text": "Standardised requirements intake with a 7-question elicitation framework covering objective, context, stakeholders, success criteria, scope, constraints and evidence sources, closing gaps through follow-up interviews before anything reached JIRA.",
+          "competencies": [
+            "discovery",
+            "rfp-bid-management"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28"
+        },
+        {
+          "text": "Won adoption of the observability framework in a single session by demoing it to 30+ system leads, the UX department head and the networking lead, answering most technical objections live.",
+          "competencies": [
+            "demo-technical-win",
+            "stakeholder-management"
+          ],
+          "status": "needs_grounding",
+          "source": "interview-2026-07-28",
+          "note": "The original '80% of queries resolved live' was not reconstructed. Softened to 'most'. Reinstate a figure only if the user can source it."
+        },
+        {
+          "text": "Launched BOC Pay across 4 regions with no handover gaps and returned 15 man-days to the project budget by designing a follow-the-sun UAT schedule off a timezone gap analysis.",
+          "competencies": [
+            "stakeholder-management",
+            "value-engineering"
+          ],
+          "status": "needs_grounding",
+          "source": "interview-2026-07-28",
+          "note": "The 15 man-days has not been through the arithmetic test."
+        },
+        {
+          "text": "Cut 15 man-days of vendor-evaluation churn by turning fragmented infrastructure needs from 50+ teams into a MoSCoW-prioritised roadmap, then proving the shortlist through a Red Hat proof of concept.",
+          "competencies": [
+            "rfp-bid-management",
+            "demo-technical-win"
+          ],
+          "status": "needs_grounding",
+          "source": "interview-2026-07-28",
+          "note": "Second separate '15 man-days' claim. Two identical savings figures in one role reads as a polish artifact. Ground both or cut one."
+        },
+        {
+          "text": "Unified 30+ product design specialists onto a single tooling roadmap by diagnosing the mismatch between legacy software and team procedures, then securing procurement of the replacement.",
+          "competencies": [
+            "discovery",
+            "value-engineering"
+          ],
+          "status": "secondary",
+          "source": "interview-2026-07-28"
+        },
+        {
+          "text": "Aligned third-party vendors and internal teams on a single integration path by running technical workshops that folded external fraud solutions into the bank's internal detection framework.",
+          "competencies": [
+            "stakeholder-management",
+            "architecture-design"
+          ],
+          "status": "secondary",
+          "source": "interview-2026-07-28"
+        },
+        {
+          "text": "Engineered a talent pipeline that onboarded 5+ specialists into niche gaps across 3+ technical streams.",
+          "competencies": [
+            "stakeholder-management"
+          ],
+          "status": "cut",
+          "source": "interview-2026-07-28",
+          "note": "Overclaims hiring ownership for a project owner with no reports. Removed 2026-07-28."
+        }
+      ],
+      "leadership_note": "User was a project owner with no direct reports (confirmed 2026-07-28). Admin staff handled low-value collection tasks; that is resource access, not leadership, and never goes on the CV. The defensible leadership claim is delivery ownership and influence without authority."
     },
     {
       "company": "Apple",
@@ -147,15 +232,91 @@
       "employment_type": "Full-time",
       "narrative": "Owning problem discovery phase through deployment for Apple's flagship retail operations, turning frontline workflow pain into internal products: diagnosis, requirements, zero-to-one build, and multi-site rollout.",
       "master_bullets": [
-        { "text": "Recovered 400+ leadership hours/year by diagnosing an 8-hour/week productivity drain through frontline workflow discovery, then shipping a zero-to-one digital ticketing system that converted ad-hoc interruptions into a structured, store-wide-adopted queue.", "raw": "Recovered 400+ leadership hours/year by diagnosing an 8-hour/week productivity drain through workflow analysis and shipping a zero-to-one digital ticketing system, replacing ad-hoc support interruptions with a structured, store-wide-adopted queue.", "competencies": ["discovery", "build-execution"], "status": "verified", "source": "merged" },
-        { "text": "Contributed to a 15% year-over-year lift in customer satisfaction by running a structured voice-of-frontline discovery program — 20+ cross-functional round tables converted into a prioritised improvement backlog.", "raw": "Contributed to a 15% year-over-year lift in customer satisfaction by running a structured voice-of-frontline discovery program, converting 20+ cross-functional round tables into a prioritized improvement backlog.", "competencies": ["discovery", "product-feedback"], "status": "verified", "source": "linkedin" },
-        { "text": "Protected 100% operational uptime and held NPS at 92 through the EasyPay POS migration by leading 10+ Floor Champions and translating technical requirements into floor-level execution playbooks.", "raw": "Protected 100% operational uptime and sustained a 92 NPS through the EasyPay POS migration by leading 10+ Floor Champions and translating technical requirements into floor-level execution playbooks.", "competencies": ["stakeholder-management", "enablement-training"], "status": "verified", "source": "merged" },
-        { "text": "Equipped the migration frontline by designing and delivering 3 hours of group training across 2-3 cohorts of 3-5 Floor Champions — blending Shanghai system materials with locally customised content aligned to store-leader strategy.", "raw": "Designed and delivered 3 hours of group training across 2-3 cohorts of 3-5 Floor Champions, combining Shanghai system materials with locally customised content aligned to store leader strategy.", "competencies": ["enablement-training", "stakeholder-management"], "status": "verified", "source": "proofbank" },
-        { "text": "Reversed the Shanghai development team's centralised training approach in favour of store-specific delivery by presenting evidence that operations varied across locations — a data-backed challenge to the headquarters default.", "raw": "Influenced the Shanghai development team to shift from centralised demo training to store-specific delivery by presenting evidence that operations varied across locations.", "competencies": ["objection-handling", "stakeholder-management"], "status": "verified", "source": "proofbank" },
-        { "text": "Closed knowledge gaps in near-real time during the migration by running daily Floor Champion check-ins that surfaced edge cases, feeding fixes back into training materials via the daily download.", "raw": "Ran daily check-ins with Floor Champions to surface edge cases and challenges, updating training materials in the daily download to close knowledge gaps.", "competencies": ["enablement-training", "discovery"], "status": "verified", "source": "proofbank" },
-        { "text": "Eliminated ~1,500 manual hours/year across 6 flagship stores by surfacing a 5-hour/week/store data-entry burden in cross-site discovery and deploying a self-sustaining 'Zero-Ops' reporting architecture — moving regional directors from lagging reports to real-time labour insights.", "raw": "Eliminated ~1,500 manual hours/year across 6 flagship stores by surfacing a 5-hour/week/store data-entry burden in cross-site discovery and deploying a self-sustaining 'Zero-Ops' reporting architecture, moving regional directors from lagging reports to real-time labour insights.", "competencies": ["discovery", "architecture-design"], "status": "verified", "source": "merged" },
-        { "text": "Secured adoption from all 6 flagship store leaders by independently delivering live demos of the new reporting tool — walking through use cases and daily maintenance — before handing over operational ownership.", "raw": "Independently walked all 6 flagship store leaders through the new reporting tool via live demo, covering use cases and daily maintenance, then handed over operational ownership.", "competencies": ["demo-technical-win", "enablement-training"], "status": "verified", "source": "proofbank" },
-        { "text": "Defused store leaders' rollback concerns during the reporting migration by demonstrating the original report flow remained intact as a fallback and committing dedicated technical support through the transition.", "raw": "Addressed store leaders' backup concerns by demonstrating that the original report flow remained intact as a fallback, with dedicated technical support during the transition.", "competencies": ["objection-handling", "stakeholder-management"], "status": "verified", "source": "proofbank" }
+        {
+          "text": "Reversed a headquarters decision by presenting evidence that store operations varied by location, moving the Shanghai development team off centralised training onto store-specific delivery.",
+          "competencies": [
+            "objection-handling",
+            "stakeholder-management"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28",
+          "note": "Flagship bullet. This is the influence-without-authority proof and it is the closest thing in the database to the core SE skill."
+        },
+        {
+          "text": "Eliminated roughly 1,500 manual hours a year across 6 flagship stores by replacing a 5-hour-per-store weekly data entry routine with a self-maintaining reporting setup, moving regional directors from lagging reports onto current labour data.",
+          "competencies": [
+            "discovery",
+            "architecture-design"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28",
+          "arithmetic": "5 hours x 6 stores x 50 weeks = 1,500 hours a year. Closes cleanly."
+        },
+        {
+          "text": "Recovered 400+ leadership hours a year by turning an 8-hour weekly interruption drain into a structured digital ticketing queue adopted store-wide.",
+          "competencies": [
+            "discovery",
+            "build-execution"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28",
+          "arithmetic": "8 hours x 50 weeks = 400 hours a year. Closes cleanly."
+        },
+        {
+          "text": "Secured adoption from all 6 flagship store leaders by demoing the reporting tool myself, walking each through their own use cases and daily upkeep before handing over ownership.",
+          "competencies": [
+            "demo-technical-win",
+            "enablement-training"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28"
+        },
+        {
+          "text": "Defused rollback demands mid-migration by showing store leaders the original report flow still ran as a fallback and committing technical support through the transition.",
+          "competencies": [
+            "objection-handling",
+            "stakeholder-management"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28"
+        },
+        {
+          "text": "Held NPS at 92 and full operational uptime through the EasyPay POS migration by preparing 10+ Floor Champions and converting technical requirements into floor-level playbooks.",
+          "competencies": [
+            "stakeholder-management",
+            "enablement-training"
+          ],
+          "status": "needs_grounding",
+          "source": "interview-2026-07-28",
+          "correction": "Was 'leading 10+ Floor Champions'. User influenced selection but did not decide it, and acted as trainer (confirmed 2026-07-28). 'Preparing' is the honest verb. NPS 92 not yet grounded."
+        },
+        {
+          "text": "Contributed to a 15% year-over-year lift in customer satisfaction by running a voice-of-frontline discovery programme across 20+ cross-functional round tables, converted into a prioritised improvement backlog.",
+          "competencies": [
+            "discovery",
+            "product-feedback"
+          ],
+          "status": "needs_grounding",
+          "source": "interview-2026-07-28",
+          "note": "The 15% has not been through the arithmetic test and 'contributed to' already signals shared credit."
+        },
+        {
+          "text": "Delivered 3 hours of group training across cohorts of 3 to 5 Floor Champions, blending Shanghai system materials with locally customised content.",
+          "competencies": [
+            "enablement-training"
+          ],
+          "status": "secondary",
+          "source": "interview-2026-07-28"
+        },
+        {
+          "text": "Closed knowledge gaps in near real time during the migration by running daily Floor Champion check-ins that surfaced edge cases and fed fixes back into the training materials.",
+          "competencies": [
+            "enablement-training",
+            "discovery"
+          ],
+          "status": "secondary",
+          "source": "interview-2026-07-28"
+        }
       ]
     },
     {
@@ -167,13 +328,66 @@
       "employment_type": "Full-time",
       "narrative": "Consultative B2B account ownership: needs discovery, solution positioning, revenue generation, and workforce optimisation across Apple's flagship retail environment.",
       "master_bullets": [
-        { "text": "Pivoted the team from 100% reactive tracking to proactive account retention by leading diagnostic analysis of a 50+ account B2B portfolio that isolated 12+ root causes of revenue variance.", "raw": "Led diagnostic analysis of a 50+ account B2B portfolio to identify 12+ root causes of revenue variance, driving a strategic pivot from 100% reactive tracking to proactive account retention.", "competencies": ["discovery", "value-engineering"], "status": "verified", "source": "merged" },
-        { "text": "Expanded the managed base by onboarding 12 B2B portfolio accounts onto custom stores with post-sales service coverage.", "raw": "Onboarded 12 B2B portfolio accounts onto custom stores, offering post-sales services.", "competencies": ["stakeholder-management", "value-engineering"], "status": "verified", "source": "linkedin" },
-        { "text": "Generated GBP 350,000 in new revenue and 7 high-value strategic partnerships — lifting regional market penetration 30% — through full-cycle consultative selling: market analysis, needs discovery, tailored solution positioning, and close.", "raw": "Generated GBP 350,000 in new revenue through consultative needs discovery and tailored solution positioning, securing 7 high-value strategic partnerships and achieving 30% regional market penetration growth.", "competencies": ["value-engineering", "discovery"], "status": "verified", "source": "merged" },
-        { "text": "Closed a £50K deal with Hong Kong broadcaster Viu TV over 3 months by converting a casual store visit into a qualified opportunity — building trust through technical support and a custom business pricing portal, then upselling MDM to resolve their device-management objections.", "raw": "Closed a £50K deal with Viu TV (Hong Kong media) over 3 months: identified the opportunity from a casual store visit, built trust through technical support and a custom business pricing portal, then upsold MDM solutions to address device-management concerns.", "competencies": ["discovery", "objection-handling", "value-engineering"], "status": "verified", "source": "proofbank" },
-        { "text": "Owned the full B2B pipeline in Apple CRM from first contact through closed-won, escalating matured major accounts to the corporate team for ongoing relationship management.", "raw": "Managed the full B2B client pipeline via Apple CRM from first contact through closed-won, escalating established major accounts to the corporate team for continued relationship management.", "competencies": ["stakeholder-management", "discovery"], "status": "verified", "source": "proofbank" },
-        { "text": "Resolved all peak-time scheduling conflicts for a 200+ employee workforce and recovered 5 hours/week of leadership floor-planning effort by designing a data-driven capacity model.", "raw": "Resolved all peak-time scheduling conflicts for a 200+ employee workforce by designing a data-driven capacity model, recovering 5 hours/week of manual floor-planning effort for leadership.", "competencies": ["build-execution", "value-engineering"], "status": "verified", "source": "merged" },
-        { "text": "Grounded the capacity model in evidence by developing a workforce-efficiency visualization that mapped staffing levels against customer traffic patterns.", "raw": "Developed a workforce-efficiency visualization model mapping staffing against customer traffic patterns to inform the capacity plan.", "competencies": ["build-execution", "architecture-design"], "status": "verified", "source": "proofbank" }
+        {
+          "text": "Generated GBP 350,000 in new B2B pipeline across a 50+ account portfolio by running discovery, solution positioning and qualification end to end, then escalating matured accounts to the corporate sales team to close.",
+          "competencies": [
+            "value-engineering",
+            "discovery",
+            "stakeholder-management"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28",
+          "correction": "Previously claimed as generated revenue with 7 partnerships and 30% regional market penetration stacked into one bullet. User confirmed 2026-07-28 it was pipeline, with some deals closed by the corporate team. The 30% penetration figure could not be sourced and was cut.",
+          "note": "This framing maps directly onto the SE motion: generate and advance, hand off to close. Lead with it."
+        },
+        {
+          "text": "Closed a GBP 50,000 deal with Hong Kong broadcaster Viu TV over 3 months, working it from a walk-in store visit into a qualified opportunity, building credibility through hands-on technical support and a custom business pricing portal, then clearing their device-management objection by upselling MDM.",
+          "competencies": [
+            "discovery",
+            "objection-handling",
+            "value-engineering"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28",
+          "note": "Never sum this with the GBP 350,000 pipeline figure. Overlap is unresolved, so keep them apart."
+        },
+        {
+          "text": "Shifted the team from reactive tracking to proactive retention by running a diagnostic across the 50+ account portfolio that isolated 12 root causes of revenue variance.",
+          "competencies": [
+            "discovery",
+            "value-engineering"
+          ],
+          "status": "needs_grounding",
+          "source": "interview-2026-07-28",
+          "note": "The '12 root causes' figure has not been reconstructed."
+        },
+        {
+          "text": "Onboarded 12 portfolio accounts onto custom stores with post-sales service coverage.",
+          "competencies": [
+            "stakeholder-management",
+            "value-engineering"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28"
+        },
+        {
+          "text": "Resolved peak-time scheduling conflicts for a 200+ person workforce and gave leadership back 5 hours a week by building a capacity model from staffing-against-traffic data.",
+          "competencies": [
+            "build-execution",
+            "value-engineering"
+          ],
+          "status": "verified",
+          "source": "interview-2026-07-28"
+        },
+        {
+          "text": "Built a workforce-efficiency visualisation mapping staffing levels against customer traffic patterns to ground the capacity model.",
+          "competencies": [
+            "build-execution",
+            "architecture-design"
+          ],
+          "status": "secondary",
+          "source": "interview-2026-07-28"
+        }
       ]
     },
     {
@@ -185,9 +399,36 @@
       "employment_type": "Full-time",
       "narrative": "High-volume flagship retail technical support: root-cause diagnosis, solution mapping, and consultative positioning to drive customer satisfaction.",
       "master_bullets": [
-        { "text": "Delivered consultative solution-mapping under flagship volume — resolving 21+ high-complexity technical inquiries daily — by pairing structured root-cause diagnosis with plain-language translation of technical trade-offs for non-technical customers.", "raw": "Resolved 21+ high-complexity technical inquiries daily through structured root-cause diagnosis and solution mapping, consistently translating technical complexity into accessible solutions.", "competencies": ["discovery", "objection-handling"], "status": "verified", "source": "merged" },
-        { "text": "Sustained 95%+ NPS in a high-volume flagship environment by mapping product capabilities to each customer's specific needs — consultative solution positioning for dozens of customers daily.", "raw": "Maintained 95%+ NPS in a high-volume flagship retail environment, mapping product capabilities to specific user needs for dozens of customers daily through consultative solution positioning.", "competencies": ["value-engineering", "stakeholder-management"], "status": "verified", "source": "merged" },
-        { "text": "Converted transactional support moments into relationship-building by executing Apple's 5 proprietary Service Steps in every customer interaction.", "raw": "Executed 5 proprietary Apple Service Steps to transform transactional support into relationship-building with every customer interaction.", "competencies": ["stakeholder-management", "discovery"], "status": "verified", "source": "proofbank" }
+        {
+          "text": "Delivered consultative solution-mapping under flagship volume — resolving 21+ high-complexity technical inquiries daily — by pairing structured root-cause diagnosis with plain-language translation of technical trade-offs for non-technical customers.",
+          "raw": "Resolved 21+ high-complexity technical inquiries daily through structured root-cause diagnosis and solution mapping, consistently translating technical complexity into accessible solutions.",
+          "competencies": [
+            "discovery",
+            "objection-handling"
+          ],
+          "status": "verified",
+          "source": "merged"
+        },
+        {
+          "text": "Sustained 95%+ NPS in a high-volume flagship environment by mapping product capabilities to each customer's specific needs — consultative solution positioning for dozens of customers daily.",
+          "raw": "Maintained 95%+ NPS in a high-volume flagship retail environment, mapping product capabilities to specific user needs for dozens of customers daily through consultative solution positioning.",
+          "competencies": [
+            "value-engineering",
+            "stakeholder-management"
+          ],
+          "status": "verified",
+          "source": "merged"
+        },
+        {
+          "text": "Converted transactional support moments into relationship-building by executing Apple's 5 proprietary Service Steps in every customer interaction.",
+          "raw": "Executed 5 proprietary Apple Service Steps to transform transactional support into relationship-building with every customer interaction.",
+          "competencies": [
+            "stakeholder-management",
+            "discovery"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        }
       ]
     },
     {
@@ -199,11 +440,57 @@
       "employment_type": "Internship",
       "narrative": "First forward deployment experience: bridged business and engineering in a healthcare AI startup — requirements discovery, data quality engineering, and UX prototype validation.",
       "master_bullets": [
-        { "text": "Secured the development path to the company's first patient-centred MVP by diagnosing the data-quality gaps blocking model performance and designing a comprehensive Chinese-to-English parallel corpus for ML training.", "raw": "Designed a comprehensive Chinese-to-English parallel corpus for ML training by diagnosing data quality gaps blocking model performance, securing the development path for the company's first patient-centred MVP.", "competencies": ["discovery", "build-execution"], "status": "verified", "source": "merged" },
-        { "text": "Achieved 'zero-drift' alignment between business intent and shipped code by bridging two misaligned departments with a Formal Requirements Synthesis Framework that turned vague user stories into code-ready specifications.", "raw": "Achieved 'zero-drift' alignment between business intent and technical execution by bridging two misaligned departments with a Formal Requirements Synthesis Framework, translating vague user stories into code-ready specifications.", "competencies": ["discovery", "stakeholder-management"], "status": "verified", "source": "merged" },
-        { "text": "Re-anchored engineering effort to business milestones by prioritising a strategic backlog of 40+ technical tasks across the two previously fragmented departments.", "raw": "Prioritized a strategic backlog of 40+ technical tasks to align fragmented business and engineering communication with company milestones.", "competencies": ["stakeholder-management", "build-execution"], "status": "verified", "source": "proofbank" },
-        { "text": "Increased task-completion rates across 5 core user journeys by validating Figma prototypes through iterative discovery — aligning design and engineering on the solution before build and cutting handoff friction.", "raw": "Increased task-completion rates across 5 core user journeys through iterative discovery and Figma prototype validation, reducing design-to-development handoff friction by aligning both teams on the solution before build.", "competencies": ["discovery", "demo-technical-win"], "status": "draft", "source": "merged", "note": "Missing: percentage improvement in task-completion rates." },
-        { "text": "De-risked design decisions before build by synthesising 200+ user data points into iterative design cycles that validated UX hypotheses.", "raw": "Synthesized 200+ user data points into iterative design cycles to validate UX hypotheses ahead of build.", "competencies": ["discovery", "product-feedback"], "status": "verified", "source": "proofbank" }
+        {
+          "text": "Secured the development path to the company's first patient-centred MVP by diagnosing the data-quality gaps blocking model performance and designing a comprehensive Chinese-to-English parallel corpus for ML training.",
+          "raw": "Designed a comprehensive Chinese-to-English parallel corpus for ML training by diagnosing data quality gaps blocking model performance, securing the development path for the company's first patient-centred MVP.",
+          "competencies": [
+            "discovery",
+            "build-execution"
+          ],
+          "status": "verified",
+          "source": "merged"
+        },
+        {
+          "text": "Achieved 'zero-drift' alignment between business intent and shipped code by bridging two misaligned departments with a Formal Requirements Synthesis Framework that turned vague user stories into code-ready specifications.",
+          "raw": "Achieved 'zero-drift' alignment between business intent and technical execution by bridging two misaligned departments with a Formal Requirements Synthesis Framework, translating vague user stories into code-ready specifications.",
+          "competencies": [
+            "discovery",
+            "stakeholder-management"
+          ],
+          "status": "verified",
+          "source": "merged"
+        },
+        {
+          "text": "Re-anchored engineering effort to business milestones by prioritising a strategic backlog of 40+ technical tasks across the two previously fragmented departments.",
+          "raw": "Prioritized a strategic backlog of 40+ technical tasks to align fragmented business and engineering communication with company milestones.",
+          "competencies": [
+            "stakeholder-management",
+            "build-execution"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Increased task-completion rates across 5 core user journeys by validating Figma prototypes through iterative discovery — aligning design and engineering on the solution before build and cutting handoff friction.",
+          "raw": "Increased task-completion rates across 5 core user journeys through iterative discovery and Figma prototype validation, reducing design-to-development handoff friction by aligning both teams on the solution before build.",
+          "competencies": [
+            "discovery",
+            "demo-technical-win"
+          ],
+          "status": "draft",
+          "source": "merged",
+          "note": "Missing: percentage improvement in task-completion rates."
+        },
+        {
+          "text": "De-risked design decisions before build by synthesising 200+ user data points into iterative design cycles that validated UX hypotheses.",
+          "raw": "Synthesized 200+ user data points into iterative design cycles to validate UX hypotheses ahead of build.",
+          "competencies": [
+            "discovery",
+            "product-feedback"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        }
       ]
     }
   ],
@@ -218,184 +505,1196 @@
         {
           "id": "AutoTailor: Batch Résumé Optimisation via LLM-Driven Approach",
           "industry": "Technology / HR Tech",
-          "domain": ["AI & Prompt Engineering", "Recruitment Workflow Automation", "NLP"],
-          "core_skills": ["Python", "GPT-4o", "OpenAI API", "Prompt Engineering"],
+          "domain": [
+            "AI & Prompt Engineering",
+            "Recruitment Workflow Automation",
+            "NLP"
+          ],
+          "core_skills": [
+            "Python",
+            "GPT-4o",
+            "OpenAI API",
+            "Prompt Engineering"
+          ],
           "context": "UK job seekers submit an average of 162 applications before securing an offer, making manual tailoring impractical.",
           "bullets": [
-            { "text": "Boosted ATS performance by an average of 19.4 absolute points — measured on fine-tuned LLM simulators — through refined prompt engineering.", "raw": "Boosted ATS performance by an average of 19.4 absolute points on fine-tuned LLM simulators through refined prompt engineering.", "competencies": ["build-execution", "value-engineering"], "status": "verified", "source": "proofbank" },
-            { "text": "Proved pipeline scalability by processing 20+ job-specific CVs in a single automated run.", "raw": "Processed a batch of 20+ job-specific CVs in a single automated run to verify pipeline scalability.", "competencies": ["build-execution", "demo-technical-win"], "status": "verified", "source": "proofbank" },
-            { "text": "Sized the automation to the real problem — the 162 applications an average UK job seeker submits before an offer — by systematising the full application workflow.", "raw": "Systematized the application workflow to handle the average requirement of 162 applications per job seeker.", "competencies": ["build-execution", "value-engineering"], "status": "verified", "source": "proofbank" },
-            { "text": "Raised output quality by integrating 4 advanced prompt-engineering techniques — persona adoption and XML tagging among them — into a single pipeline.", "raw": "Integrated 4 advanced prompt engineering techniques—including persona adoption and XML tagging—into a single pipeline.", "competencies": ["build-execution"], "status": "verified", "source": "proofbank" },
-            { "text": "Standardised experience rephrasing across every resume in a batch by enforcing the 4-part STAR framework.", "raw": "Standardized experience rephrasing across multiple resumes using the 4-part STAR model framework.", "competencies": ["build-execution"], "status": "verified", "source": "proofbank" }
+            {
+              "text": "Boosted ATS performance by an average of 19.4 absolute points — measured on fine-tuned LLM simulators — through refined prompt engineering.",
+              "raw": "Boosted ATS performance by an average of 19.4 absolute points on fine-tuned LLM simulators through refined prompt engineering.",
+              "competencies": [
+                "build-execution",
+                "value-engineering"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Proved pipeline scalability by processing 20+ job-specific CVs in a single automated run.",
+              "raw": "Processed a batch of 20+ job-specific CVs in a single automated run to verify pipeline scalability.",
+              "competencies": [
+                "build-execution",
+                "demo-technical-win"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Sized the automation to the real problem — the 162 applications an average UK job seeker submits before an offer — by systematising the full application workflow.",
+              "raw": "Systematized the application workflow to handle the average requirement of 162 applications per job seeker.",
+              "competencies": [
+                "build-execution",
+                "value-engineering"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Raised output quality by integrating 4 advanced prompt-engineering techniques — persona adoption and XML tagging among them — into a single pipeline.",
+              "raw": "Integrated 4 advanced prompt engineering techniques—including persona adoption and XML tagging—into a single pipeline.",
+              "competencies": [
+                "build-execution"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Standardised experience rephrasing across every resume in a batch by enforcing the 4-part STAR framework.",
+              "raw": "Standardized experience rephrasing across multiple resumes using the 4-part STAR model framework.",
+              "competencies": [
+                "build-execution"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            }
           ]
         },
         {
           "id": "Expedia: Yearly Performance Dashboard (Retail Analytics)",
           "industry": "Travel / E-commerce",
-          "domain": ["Retail Analytics", "Data Visualization", "Dashboarding"],
-          "core_skills": ["Python", "Dash/Plotly", "KPI Optimization", "Data Storytelling"],
+          "domain": [
+            "Retail Analytics",
+            "Data Visualization",
+            "Dashboarding"
+          ],
+          "core_skills": [
+            "Python",
+            "Dash/Plotly",
+            "KPI Optimization",
+            "Data Storytelling"
+          ],
           "context": "Leadership required a strategic tool to address the 'black box' of travel search-to-booking transitions.",
           "bullets": [
-            { "text": "Gave global leadership one 'Single Source of Truth' by consolidating disparate data streams into a single strategic dashboard.", "raw": "Consolidated disparate data streams into 1 'Single Source of Truth' dashboard for global leadership.", "competencies": ["build-execution", "value-engineering"], "status": "verified", "source": "proofbank" },
-            { "text": "Exposed specific regional underperformance by visualising search-to-booking transitions across 5+ global markets.", "raw": "Visualized search-to-booking transitions across 5+ global markets to identify specific regional underperformance.", "competencies": ["discovery", "value-engineering"], "status": "verified", "source": "proofbank" },
-            { "text": "Enabled real-time market comparison by developing 2 interactive visualisation types — choropleth heat maps and time-series charts.", "raw": "Developed 2 distinct interactive visualization types—choropleth heat maps and time-series charts—for real-time comparison.", "competencies": ["build-execution"], "status": "verified", "source": "proofbank" },
-            { "text": "Unlocked 'black box' search trends previously inaccessible to stakeholders by surfacing them in the consolidated view.", "raw": "Enabled the identification of hidden 'black box' search trends that were previously inaccessible to stakeholders.", "competencies": ["discovery", "product-feedback"], "status": "verified", "source": "proofbank" },
-            { "text": "Automated yearly retail KPI tracking end-to-end on a Python-based Dash/Plotly architecture.", "raw": "Automated the tracking of yearly retail performance KPIs using a Python-based Dash/Plotly architecture.", "competencies": ["build-execution", "architecture-design"], "status": "verified", "source": "proofbank" }
+            {
+              "text": "Gave global leadership one 'Single Source of Truth' by consolidating disparate data streams into a single strategic dashboard.",
+              "raw": "Consolidated disparate data streams into 1 'Single Source of Truth' dashboard for global leadership.",
+              "competencies": [
+                "build-execution",
+                "value-engineering"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Exposed specific regional underperformance by visualising search-to-booking transitions across 5+ global markets.",
+              "raw": "Visualized search-to-booking transitions across 5+ global markets to identify specific regional underperformance.",
+              "competencies": [
+                "discovery",
+                "value-engineering"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Enabled real-time market comparison by developing 2 interactive visualisation types — choropleth heat maps and time-series charts.",
+              "raw": "Developed 2 distinct interactive visualization types—choropleth heat maps and time-series charts—for real-time comparison.",
+              "competencies": [
+                "build-execution"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Unlocked 'black box' search trends previously inaccessible to stakeholders by surfacing them in the consolidated view.",
+              "raw": "Enabled the identification of hidden 'black box' search trends that were previously inaccessible to stakeholders.",
+              "competencies": [
+                "discovery",
+                "product-feedback"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Automated yearly retail KPI tracking end-to-end on a Python-based Dash/Plotly architecture.",
+              "raw": "Automated the tracking of yearly retail performance KPIs using a Python-based Dash/Plotly architecture.",
+              "competencies": [
+                "build-execution",
+                "architecture-design"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            }
           ]
         },
         {
           "id": "Intel: Smartwatch Strategic Launch (Customer Heterogeneity)",
           "industry": "Technology / Wearables",
-          "domain": ["Market Segmentation", "Strategic Planning", "Market Entry"],
-          "core_skills": ["R", "Hierarchical Clustering", "Perceptual Mapping", "STP Framework"],
+          "domain": [
+            "Market Segmentation",
+            "Strategic Planning",
+            "Market Entry"
+          ],
+          "core_skills": [
+            "R",
+            "Hierarchical Clustering",
+            "Perceptual Mapping",
+            "STP Framework"
+          ],
           "context": "Intel needed to move beyond a 'one-size-fits-all' strategy by identifying high-profit segments for smartwatch entry.",
           "bullets": [
-            { "text": "Defined high-profit market entry points by segmenting a 1,000-sample survey population.", "raw": "Segmented a survey population of 1,000 samples to define high-profit market entry points.", "competencies": ["discovery", "value-engineering"], "status": "verified", "source": "proofbank" },
-            { "text": "Focused targeting by statistically identifying 4 distinct customer personas from the segmentation.", "raw": "Statistically identified 4 distinct customer personas to guide targeted marketing efforts.", "competencies": ["discovery"], "status": "verified", "source": "proofbank" },
-            { "text": "Formalised a strategic recommendation for 1 major partnership with Google to bridge the Android productivity gap.", "raw": "Formalized a strategic recommendation for 1 major partnership with Google to bridge the Android productivity gap.", "competencies": ["value-engineering", "stakeholder-management"], "status": "verified", "source": "proofbank" },
-            { "text": "Positioned the market entry against incumbents by mapping competitor placement across the smartwatch landscape with multi-dimensional perceptual maps.", "raw": "Mapped competitor positioning across the smartwatch landscape using multi-dimensional perceptual maps.", "competencies": ["discovery", "value-engineering"], "status": "verified", "source": "proofbank" },
-            { "text": "Validated segment accuracy with 2 clustering methodologies — Ward's Method and the Elbow Method.", "raw": "Utilized 2 advanced clustering methodologies (Ward's Method and Elbow Method) to validate segment accuracy.", "competencies": ["build-execution"], "status": "verified", "source": "proofbank" }
+            {
+              "text": "Defined high-profit market entry points by segmenting a 1,000-sample survey population.",
+              "raw": "Segmented a survey population of 1,000 samples to define high-profit market entry points.",
+              "competencies": [
+                "discovery",
+                "value-engineering"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Focused targeting by statistically identifying 4 distinct customer personas from the segmentation.",
+              "raw": "Statistically identified 4 distinct customer personas to guide targeted marketing efforts.",
+              "competencies": [
+                "discovery"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Formalised a strategic recommendation for 1 major partnership with Google to bridge the Android productivity gap.",
+              "raw": "Formalized a strategic recommendation for 1 major partnership with Google to bridge the Android productivity gap.",
+              "competencies": [
+                "value-engineering",
+                "stakeholder-management"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Positioned the market entry against incumbents by mapping competitor placement across the smartwatch landscape with multi-dimensional perceptual maps.",
+              "raw": "Mapped competitor positioning across the smartwatch landscape using multi-dimensional perceptual maps.",
+              "competencies": [
+                "discovery",
+                "value-engineering"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Validated segment accuracy with 2 clustering methodologies — Ward's Method and the Elbow Method.",
+              "raw": "Utilized 2 advanced clustering methodologies (Ward's Method and Elbow Method) to validate segment accuracy.",
+              "competencies": [
+                "build-execution"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            }
           ]
         },
         {
           "id": "AI Credit Scoring: Fairness & Interpretability Audit",
           "industry": "Finance / Fintech",
-          "domain": ["Explainable AI", "Risk Management", "Regulatory Compliance"],
-          "core_skills": ["XGBoost", "SHAP/LIME", "Fairness Metrics", "SMOTE"],
+          "domain": [
+            "Explainable AI",
+            "Risk Management",
+            "Regulatory Compliance"
+          ],
+          "core_skills": [
+            "XGBoost",
+            "SHAP/LIME",
+            "Fairness Metrics",
+            "SMOTE"
+          ],
           "context": "High-stakes credit scoring models suffered from opacity, risking regulatory non-compliance and hidden biases.",
           "bullets": [
-            { "text": "Increased correct loan approvals (True Positives) by 74 per 100 previous correct cases through a data-centric debugging pipeline.", "raw": "Increased the number of correct loan approvals (True Positives) by 74 for every 100 previous correct cases.", "competencies": ["build-execution", "value-engineering"], "status": "verified", "source": "proofbank" },
-            { "text": "Cut high-risk incorrect approvals (False Positives) by 24 cases per 100 previous instances, reducing lending risk exposure.", "raw": "Reduced high-risk, incorrect approvals (False Positives) by 24 cases per 100 previous instances.", "competencies": ["build-execution", "value-engineering"], "status": "verified", "source": "proofbank" },
-            { "text": "Improved the Disparate Impact fairness score for the age demographic by 0.255 absolute points, directly reducing regulatory bias risk.", "raw": "Improved the Disparate Impact fairness score for the age demographic by 0.255 absolute points.", "competencies": ["build-execution", "value-engineering"], "status": "verified", "source": "proofbank" },
-            { "text": "Corrected hidden model bias at the data layer by deploying a data-centric debugging pipeline built on SMOTE and oversampling.", "raw": "Deployed a data-centric debugging pipeline utilizing 2 key techniques: SMOTE and oversampling.", "competencies": ["build-execution"], "status": "verified", "source": "proofbank" },
-            { "text": "Made opaque model decisions defensible to non-technical stakeholders by generating automated 'Trust Reports' with SHAP waterfall plots for plain-language interpretability.", "raw": "Generated automated 'Trust Reports' for stakeholders by integrating SHAP waterfall plots for plain-language interpretability.", "competencies": ["value-engineering", "stakeholder-management"], "status": "verified", "source": "proofbank" }
+            {
+              "text": "Increased correct loan approvals (True Positives) by 74 per 100 previous correct cases through a data-centric debugging pipeline.",
+              "raw": "Increased the number of correct loan approvals (True Positives) by 74 for every 100 previous correct cases.",
+              "competencies": [
+                "build-execution",
+                "value-engineering"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Cut high-risk incorrect approvals (False Positives) by 24 cases per 100 previous instances, reducing lending risk exposure.",
+              "raw": "Reduced high-risk, incorrect approvals (False Positives) by 24 cases per 100 previous instances.",
+              "competencies": [
+                "build-execution",
+                "value-engineering"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Improved the Disparate Impact fairness score for the age demographic by 0.255 absolute points, directly reducing regulatory bias risk.",
+              "raw": "Improved the Disparate Impact fairness score for the age demographic by 0.255 absolute points.",
+              "competencies": [
+                "build-execution",
+                "value-engineering"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Corrected hidden model bias at the data layer by deploying a data-centric debugging pipeline built on SMOTE and oversampling.",
+              "raw": "Deployed a data-centric debugging pipeline utilizing 2 key techniques: SMOTE and oversampling.",
+              "competencies": [
+                "build-execution"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Made opaque model decisions defensible to non-technical stakeholders by generating automated 'Trust Reports' with SHAP waterfall plots for plain-language interpretability.",
+              "raw": "Generated automated 'Trust Reports' for stakeholders by integrating SHAP waterfall plots for plain-language interpretability.",
+              "competencies": [
+                "value-engineering",
+                "stakeholder-management"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            }
           ]
         },
         {
           "id": "CDC: Diabetes Prevalence Predictive Modeling",
           "industry": "Healthcare / Public Sector",
-          "domain": ["Predictive Modeling", "Public Health", "Data Analytics"],
-          "core_skills": ["Logistic Regression", "EFA", "SMOTE", "Python"],
+          "domain": [
+            "Predictive Modeling",
+            "Public Health",
+            "Data Analytics"
+          ],
+          "core_skills": [
+            "Logistic Regression",
+            "EFA",
+            "SMOTE",
+            "Python"
+          ],
           "context": "Rising diabetes cases required identifying modifiable lifestyle indicators to reduce healthcare strain.",
           "bullets": [
-            { "text": "Modelled diabetes prevalence at population scale by analysing a public-health dataset of 138,146 individual participants.", "raw": "Analyzed a large-scale public health dataset containing 138,146 individual participants.", "competencies": ["build-execution", "discovery"], "status": "verified", "source": "proofbank" },
-            { "text": "Achieved 0.75 absolute predictive accuracy across the total population sample.", "raw": "Achieved an absolute predictive accuracy score of 0.75 across the total population sample.", "competencies": ["build-execution"], "status": "verified", "source": "proofbank" },
-            { "text": "Quantified the negative health-risk impact of alcohol consumption at a -0.722 coefficient, converting a lifestyle factor into a measurable policy input.", "raw": "Quantified the negative impact of alcohol consumption on health risk at a coefficient of -0.722.", "competencies": ["build-execution", "value-engineering"], "status": "verified", "source": "proofbank" },
-            { "text": "Ensured model reliability on an imbalanced dataset by rebalancing class distribution with SMOTE oversampling.", "raw": "Balanced class distribution across the dataset using SMOTE oversampling to ensure model reliability.", "competencies": ["build-execution"], "status": "verified", "source": "proofbank" },
-            { "text": "Directed preventative healthcare resource allocation by identifying 2 primary modifiable lifestyle indicators.", "raw": "Identified 2 primary modifiable lifestyle indicators to guide preventative healthcare resource allocation.", "competencies": ["discovery", "value-engineering"], "status": "verified", "source": "proofbank" }
+            {
+              "text": "Modelled diabetes prevalence at population scale by analysing a public-health dataset of 138,146 individual participants.",
+              "raw": "Analyzed a large-scale public health dataset containing 138,146 individual participants.",
+              "competencies": [
+                "build-execution",
+                "discovery"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Achieved 0.75 absolute predictive accuracy across the total population sample.",
+              "raw": "Achieved an absolute predictive accuracy score of 0.75 across the total population sample.",
+              "competencies": [
+                "build-execution"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Quantified the negative health-risk impact of alcohol consumption at a -0.722 coefficient, converting a lifestyle factor into a measurable policy input.",
+              "raw": "Quantified the negative impact of alcohol consumption on health risk at a coefficient of -0.722.",
+              "competencies": [
+                "build-execution",
+                "value-engineering"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Ensured model reliability on an imbalanced dataset by rebalancing class distribution with SMOTE oversampling.",
+              "raw": "Balanced class distribution across the dataset using SMOTE oversampling to ensure model reliability.",
+              "competencies": [
+                "build-execution"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            },
+            {
+              "text": "Directed preventative healthcare resource allocation by identifying 2 primary modifiable lifestyle indicators.",
+              "raw": "Identified 2 primary modifiable lifestyle indicators to guide preventative healthcare resource allocation.",
+              "competencies": [
+                "discovery",
+                "value-engineering"
+              ],
+              "status": "verified",
+              "source": "proofbank"
+            }
           ]
         }
-      ]
+      ],
+      "end_note": "CANONICAL: Oct 2024 to Dec 2025, user-aligned 2026-07-28. This is the date to use on CV, LinkedIn and every application. Supersedes the earlier Sep 2025 and Aug 2024 variants.",
+      "review_flag": "Dissertation project 'AutoTailor' claims 19.4 ATS points and Python/GPT-4o work. Not re-grounded in the 2026-07-28 pass. Verify before using: it would be the strongest honest AI credential on the CV."
     }
   ],
   "independent_projects": [
     {
       "id": "Modular AI Automation Platform (Personal Operations)",
-      "timeline": { "start": "Jan 2026", "end": "Present" },
+      "timeline": {
+        "start": "Jan 2026",
+        "end": "Present"
+      },
       "github_url": "https://github.com/chanyinkwan/career-ops",
       "industry": "Technology / AI Automation",
-      "domain": ["AI Agent Orchestration", "System Architecture", "Process Automation", "Platform Engineering"],
-      "core_skills": ["Claude Code", "Python", "SQLite", "MCP Plugins", "Telegram API", "Obsidian"],
+      "domain": [
+        "AI Agent Orchestration",
+        "System Architecture",
+        "Process Automation",
+        "Platform Engineering"
+      ],
+      "core_skills": [
+        "Claude Code",
+        "Python",
+        "SQLite",
+        "MCP Plugins",
+        "Telegram API",
+        "Obsidian"
+      ],
       "context": "Demonstrated full-lifecycle AI solution design by architecting a modular automation platform with pluggable AI agents, event-driven scheduling, and CRM integration across 6 operational domains.",
       "bullets": [
-        { "text": "Architected a modular automation platform spanning 6 independent domains — career ops, content agency, reading, learning, finance, fitness — each with dedicated AI agents, config-driven workflows, and SQLite persistence.", "raw": "Architected a modular platform with 6 independent domains (career ops, content agency, reading, learning, finance, fitness), each with dedicated AI agents, config-driven workflows, and SQLite persistence.", "competencies": ["architecture-design", "build-execution"], "status": "verified", "source": "proofbank" },
-        { "text": "Ran end-to-end workflows — automated research, document generation, quality assurance, multi-channel outreach, and CRM synchronisation — by designing and deploying 13 specialised AI agents.", "raw": "Designed and deployed 13 specialised AI agents handling end-to-end workflows: automated research, document generation, quality assurance, multi-channel outreach, and CRM synchronisation.", "competencies": ["build-execution", "architecture-design"], "status": "verified", "source": "proofbank" },
-        { "text": "Cut per-deliverable turnaround from 4 hours (manual) to 15 minutes (automated) across document generation, company research, and personalised outreach drafting.", "raw": "Reduced per-deliverable turnaround from 4 hours (manual) to 15 minutes (automated) across document generation, company research, and personalised outreach drafting.", "competencies": ["value-engineering", "build-execution"], "status": "verified", "source": "proofbank" },
-        { "text": "Closed the continuous-improvement loop with a 3-layer reflection and analytics engine (daily/weekly/monthly) integrating identity-based tracking, behavioural diagnosis, and systems-thinking frameworks.", "raw": "Built a 3-layer reflection and analytics engine (daily/weekly/monthly) integrating identity-based tracking, behavioural diagnosis, and systems thinking frameworks for continuous improvement.", "competencies": ["build-execution", "product-feedback"], "status": "verified", "source": "proofbank" },
-        { "text": "Wired the platform into daily operations with cross-platform integration — Telegram MCP, Gmail MCP, Obsidian vault, Google Slides API — plus automated scheduling and Telegram-based approval workflows.", "raw": "Implemented cross-platform integration across Telegram MCP, Gmail MCP, Obsidian vault, and Google Slides API, with automated scheduling and Telegram-based approval workflows.", "competencies": ["architecture-design", "build-execution"], "status": "verified", "source": "proofbank" }
+        {
+          "text": "Architected a modular automation platform spanning 6 independent domains — career ops, content agency, reading, learning, finance, fitness — each with dedicated AI agents, config-driven workflows, and SQLite persistence.",
+          "raw": "Architected a modular platform with 6 independent domains (career ops, content agency, reading, learning, finance, fitness), each with dedicated AI agents, config-driven workflows, and SQLite persistence.",
+          "competencies": [
+            "architecture-design",
+            "build-execution"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Ran end-to-end workflows — automated research, document generation, quality assurance, multi-channel outreach, and CRM synchronisation — by designing and deploying 13 specialised AI agents.",
+          "raw": "Designed and deployed 13 specialised AI agents handling end-to-end workflows: automated research, document generation, quality assurance, multi-channel outreach, and CRM synchronisation.",
+          "competencies": [
+            "build-execution",
+            "architecture-design"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Cut per-deliverable turnaround from 4 hours (manual) to 15 minutes (automated) across document generation, company research, and personalised outreach drafting.",
+          "raw": "Reduced per-deliverable turnaround from 4 hours (manual) to 15 minutes (automated) across document generation, company research, and personalised outreach drafting.",
+          "competencies": [
+            "value-engineering",
+            "build-execution"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Closed the continuous-improvement loop with a 3-layer reflection and analytics engine (daily/weekly/monthly) integrating identity-based tracking, behavioural diagnosis, and systems-thinking frameworks.",
+          "raw": "Built a 3-layer reflection and analytics engine (daily/weekly/monthly) integrating identity-based tracking, behavioural diagnosis, and systems thinking frameworks for continuous improvement.",
+          "competencies": [
+            "build-execution",
+            "product-feedback"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Wired the platform into daily operations with cross-platform integration — Telegram MCP, Gmail MCP, Obsidian vault, Google Slides API — plus automated scheduling and Telegram-based approval workflows.",
+          "raw": "Implemented cross-platform integration across Telegram MCP, Gmail MCP, Obsidian vault, and Google Slides API, with automated scheduling and Telegram-based approval workflows.",
+          "competencies": [
+            "architecture-design",
+            "build-execution"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        }
       ]
     },
     {
       "id": "Multi-Platform Job Scanning System (Career Automation)",
-      "timeline": { "start": "Feb 2026", "end": "Present" },
+      "timeline": {
+        "start": "Feb 2026",
+        "end": "Present"
+      },
       "industry": "HR Tech / Career Services",
-      "domain": ["Web Scraping", "AI Scoring", "Multi-Platform Integration", "Automated Filtering"],
-      "core_skills": ["gstack Browser", "Claude Code Agents", "WebSearch API", "YAML Config", "Desire/Match Scoring"],
+      "domain": [
+        "Web Scraping",
+        "AI Scoring",
+        "Multi-Platform Integration",
+        "Automated Filtering"
+      ],
+      "core_skills": [
+        "gstack Browser",
+        "Claude Code Agents",
+        "WebSearch API",
+        "YAML Config",
+        "Desire/Match Scoring"
+      ],
       "context": "Manual job searching across multiple UK platforms consumed 2-3 hours daily with inconsistent coverage and no systematic way to evaluate role fit against personal criteria.",
       "bullets": [
-        { "text": "Replaced 2-3 hours/day of manual job searching by designing a scanning system that queries 5 UK platforms (Indeed, LinkedIn, Reed, Totaljobs, Adzuna) simultaneously, processing 50+ roles per batch.", "raw": "Designed a multi-platform scanning system searching 5 UK job platforms (Indeed, LinkedIn, Reed, Totaljobs, Adzuna) simultaneously, processing 50+ roles per batch scan.", "competencies": ["build-execution", "architecture-design"], "status": "verified", "source": "proofbank" },
-        { "text": "Made role fit measurable by building a dual-scoring engine — desire score (salary, location, role fit, seniority) and match score (skills gap, experience alignment) — with configurable 60% minimum thresholds.", "raw": "Built a dual-scoring engine: desire score (salary, location, role fit, seniority) and match score (skills gap, experience alignment) with configurable thresholds (60% minimum both).", "competencies": ["build-execution", "value-engineering"], "status": "verified", "source": "proofbank" },
-        { "text": "Eliminated wasted review time on unqualified roles by implementing non-bridgeable-gap filtering that auto-rejects postings requiring a PhD, 10+ years of experience, or unmet language requirements.", "raw": "Implemented non-bridgeable gap filtering that auto-rejects roles requiring PhD, 10+ years experience, or specific language requirements not met, saving review time on unqualified roles.", "competencies": ["build-execution", "value-engineering"], "status": "verified", "source": "proofbank" },
-        { "text": "Made the search strategy reconfigurable without code changes via a config-driven profile (job_search_config.yaml) controlling keywords, location, salary range, and company-type filters.", "raw": "Created a config-driven search profile (job_search_config.yaml) allowing rapid adjustment of keywords, location, salary range, and company type filters without code changes.", "competencies": ["build-execution", "architecture-design"], "status": "verified", "source": "proofbank" },
-        { "text": "Enabled one-tap mobile triage by integrating Telegram alerts with Yes/No approval buttons that trigger the application pipeline directly from the phone.", "raw": "Integrated with Telegram for real-time job alerts with Yes/No approval buttons, enabling mobile-first job review with one-tap application pipeline triggering.", "competencies": ["build-execution", "architecture-design"], "status": "verified", "source": "proofbank" }
+        {
+          "text": "Replaced 2-3 hours/day of manual job searching by designing a scanning system that queries 5 UK platforms (Indeed, LinkedIn, Reed, Totaljobs, Adzuna) simultaneously, processing 50+ roles per batch.",
+          "raw": "Designed a multi-platform scanning system searching 5 UK job platforms (Indeed, LinkedIn, Reed, Totaljobs, Adzuna) simultaneously, processing 50+ roles per batch scan.",
+          "competencies": [
+            "build-execution",
+            "architecture-design"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Made role fit measurable by building a dual-scoring engine — desire score (salary, location, role fit, seniority) and match score (skills gap, experience alignment) — with configurable 60% minimum thresholds.",
+          "raw": "Built a dual-scoring engine: desire score (salary, location, role fit, seniority) and match score (skills gap, experience alignment) with configurable thresholds (60% minimum both).",
+          "competencies": [
+            "build-execution",
+            "value-engineering"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Eliminated wasted review time on unqualified roles by implementing non-bridgeable-gap filtering that auto-rejects postings requiring a PhD, 10+ years of experience, or unmet language requirements.",
+          "raw": "Implemented non-bridgeable gap filtering that auto-rejects roles requiring PhD, 10+ years experience, or specific language requirements not met, saving review time on unqualified roles.",
+          "competencies": [
+            "build-execution",
+            "value-engineering"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Made the search strategy reconfigurable without code changes via a config-driven profile (job_search_config.yaml) controlling keywords, location, salary range, and company-type filters.",
+          "raw": "Created a config-driven search profile (job_search_config.yaml) allowing rapid adjustment of keywords, location, salary range, and company type filters without code changes.",
+          "competencies": [
+            "build-execution",
+            "architecture-design"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Enabled one-tap mobile triage by integrating Telegram alerts with Yes/No approval buttons that trigger the application pipeline directly from the phone.",
+          "raw": "Integrated with Telegram for real-time job alerts with Yes/No approval buttons, enabling mobile-first job review with one-tap application pipeline triggering.",
+          "competencies": [
+            "build-execution",
+            "architecture-design"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        }
       ]
     },
     {
       "id": "System Architecture Migration (Monolithic to Distributed)",
-      "timeline": { "start": "Mar 2026", "end": "Apr 2026" },
+      "timeline": {
+        "start": "Mar 2026",
+        "end": "Apr 2026"
+      },
       "industry": "Technology / Software Architecture",
-      "domain": ["System Migration", "Architecture Design", "Reliability Engineering", "Technical Debt Reduction"],
-      "core_skills": ["Architecture Design", "Claude Code Native", "MCP Plugins", "Python", "Git"],
+      "domain": [
+        "System Migration",
+        "Architecture Design",
+        "Reliability Engineering",
+        "Technical Debt Reduction"
+      ],
+      "core_skills": [
+        "Architecture Design",
+        "Claude Code Native",
+        "MCP Plugins",
+        "Python",
+        "Git"
+      ],
       "context": "A monolithic Python Telegram bot suffered chronic silent failures, message routing conflicts, and maintenance overhead that made reliable automation impossible.",
       "bullets": [
-        { "text": "Eliminated 90% of silent failures with zero functionality loss by migrating a monolithic Python bot to a distributed Claude Code native architecture.", "raw": "Migrated from monolithic Python bot to distributed Claude Code native architecture, eliminating 90% of silent failures while preserving full pipeline functionality.", "competencies": ["architecture-design", "build-execution"], "status": "verified", "source": "proofbank" },
-        { "text": "Shrank the blast radius of any change to single-module scope by decomposing a single-process bot into 6 self-contained module projects, each with independent agents, config, and database.", "raw": "Decomposed a single-process bot into 6 self-contained module projects, each with independent agents, config, and database, reducing blast radius of changes to single-module scope.", "competencies": ["architecture-design", "build-execution"], "status": "verified", "source": "proofbank" },
-        { "text": "Cut maintenance surface area ~70% and removed all async message-routing bugs by replacing custom Telegram bot code with the official MCP plugin.", "raw": "Replaced custom Telegram bot code with official MCP plugin, cutting maintenance surface area by ~70% and removing all async message routing bugs.", "competencies": ["value-engineering", "build-execution"], "status": "verified", "source": "proofbank" },
-        { "text": "Standardised zero-friction onboarding across all 6 modules by designing a single modular project template (CLAUDE.md, config.yaml, agents/, commands/, db/, vault/).", "raw": "Designed a modular project template (CLAUDE.md, config.yaml, agents/, commands/, db/, vault/) adopted consistently across all 6 modules for zero-friction onboarding.", "competencies": ["architecture-design", "enablement-training"], "status": "verified", "source": "proofbank" },
-        { "text": "Preserved a clean rollback path by archiving 3 legacy systems (ChukwanAssistant, LifeOSManager, obsidian-sync) with full documentation before cut-over.", "raw": "Archived 3 legacy systems (ChukwanAssistant, LifeOSManager, obsidian-sync) with full documentation, enabling clean rollback if needed.", "competencies": ["build-execution", "architecture-design"], "status": "verified", "source": "proofbank" }
+        {
+          "text": "Eliminated 90% of silent failures with zero functionality loss by migrating a monolithic Python bot to a distributed Claude Code native architecture.",
+          "raw": "Migrated from monolithic Python bot to distributed Claude Code native architecture, eliminating 90% of silent failures while preserving full pipeline functionality.",
+          "competencies": [
+            "architecture-design",
+            "build-execution"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Shrank the blast radius of any change to single-module scope by decomposing a single-process bot into 6 self-contained module projects, each with independent agents, config, and database.",
+          "raw": "Decomposed a single-process bot into 6 self-contained module projects, each with independent agents, config, and database, reducing blast radius of changes to single-module scope.",
+          "competencies": [
+            "architecture-design",
+            "build-execution"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Cut maintenance surface area ~70% and removed all async message-routing bugs by replacing custom Telegram bot code with the official MCP plugin.",
+          "raw": "Replaced custom Telegram bot code with official MCP plugin, cutting maintenance surface area by ~70% and removing all async message routing bugs.",
+          "competencies": [
+            "value-engineering",
+            "build-execution"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Standardised zero-friction onboarding across all 6 modules by designing a single modular project template (CLAUDE.md, config.yaml, agents/, commands/, db/, vault/).",
+          "raw": "Designed a modular project template (CLAUDE.md, config.yaml, agents/, commands/, db/, vault/) adopted consistently across all 6 modules for zero-friction onboarding.",
+          "competencies": [
+            "architecture-design",
+            "enablement-training"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Preserved a clean rollback path by archiving 3 legacy systems (ChukwanAssistant, LifeOSManager, obsidian-sync) with full documentation before cut-over.",
+          "raw": "Archived 3 legacy systems (ChukwanAssistant, LifeOSManager, obsidian-sync) with full documentation, enabling clean rollback if needed.",
+          "competencies": [
+            "build-execution",
+            "architecture-design"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        }
       ]
     },
     {
       "id": "Intentional-Vibe Coding Education Plugin (EdTech)",
-      "timeline": { "start": "Mar 2026", "end": "Present" },
+      "timeline": {
+        "start": "Mar 2026",
+        "end": "Present"
+      },
       "industry": "EdTech / Developer Tools",
-      "domain": ["Education Technology", "Developer Experience", "Skill Assessment", "Plugin Architecture"],
-      "core_skills": ["Claude Code Skills", "Instructional Design", "Exercise Generation", "Quality Evaluation"],
+      "domain": [
+        "Education Technology",
+        "Developer Experience",
+        "Skill Assessment",
+        "Plugin Architecture"
+      ],
+      "core_skills": [
+        "Claude Code Skills",
+        "Instructional Design",
+        "Exercise Generation",
+        "Quality Evaluation"
+      ],
       "context": "Non-technical founders building tech products often 'vibe code' without understanding what they are building, leading to fragile products they cannot maintain or debug.",
       "bullets": [
-        { "text": "Shipped v1.5a of an educational plugin with 3 skill modules (scope-define, debug-learn, micro-learn) that embeds intentional development practice directly inside the coding workflow.", "raw": "Designed and shipped v1.5a of an educational plugin with 3 skill modules (scope-define, debug-learn, micro-learn) that teaches intentional development practices within the coding workflow.", "competencies": ["build-execution", "enablement-training"], "status": "draft", "source": "proofbank", "note": "Missing: user/adoption numbers for the shipped plugin." },
-        { "text": "Matched teaching moments to real work by building a complexity-gated exercise engine with 5 exercise types (MC, Match, Spot Bug, Architecture, Decision Journal) that auto-triggers on task complexity.", "raw": "Built a complexity-gated exercise engine with 5 exercise types (MC, Match, Spot Bug, Architecture, Decision Journal) that auto-triggers based on task complexity.", "competencies": ["build-execution", "architecture-design"], "status": "verified", "source": "proofbank" },
-        { "text": "Prevented learning fatigue while preserving skill reinforcement by implementing frequency caps — max 4 exercises/session, max 2 build + 1 debug.", "raw": "Implemented frequency caps (max 4 exercises/session, max 2 build + 1 debug) to prevent learning fatigue while maintaining consistent skill reinforcement.", "competencies": ["enablement-training", "build-execution"], "status": "verified", "source": "proofbank" },
-        { "text": "Held educational quality to a measurable standard by creating an evaluation framework (eval-checklist.md) scoring every exercise 1-5 on relevance, accuracy, and tone.", "raw": "Created a quality evaluation framework (eval-checklist.md) scoring exercises on relevance, accuracy, and tone (1-5 scale) to ensure educational value.", "competencies": ["product-feedback", "build-execution"], "status": "verified", "source": "proofbank" },
-        { "text": "Made adoption a one-command decision by packaging the plugin as a self-contained skill with install.sh, deployable to any Claude Code environment.", "raw": "Designed the plugin as a self-contained skill package with install.sh for one-command deployment to any Claude Code environment.", "competencies": ["build-execution", "enablement-training"], "status": "verified", "source": "proofbank" }
+        {
+          "text": "Shipped v1.5a of an educational plugin with 3 skill modules (scope-define, debug-learn, micro-learn) that embeds intentional development practice directly inside the coding workflow.",
+          "raw": "Designed and shipped v1.5a of an educational plugin with 3 skill modules (scope-define, debug-learn, micro-learn) that teaches intentional development practices within the coding workflow.",
+          "competencies": [
+            "build-execution",
+            "enablement-training"
+          ],
+          "status": "draft",
+          "source": "proofbank",
+          "note": "Missing: user/adoption numbers for the shipped plugin."
+        },
+        {
+          "text": "Matched teaching moments to real work by building a complexity-gated exercise engine with 5 exercise types (MC, Match, Spot Bug, Architecture, Decision Journal) that auto-triggers on task complexity.",
+          "raw": "Built a complexity-gated exercise engine with 5 exercise types (MC, Match, Spot Bug, Architecture, Decision Journal) that auto-triggers based on task complexity.",
+          "competencies": [
+            "build-execution",
+            "architecture-design"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Prevented learning fatigue while preserving skill reinforcement by implementing frequency caps — max 4 exercises/session, max 2 build + 1 debug.",
+          "raw": "Implemented frequency caps (max 4 exercises/session, max 2 build + 1 debug) to prevent learning fatigue while maintaining consistent skill reinforcement.",
+          "competencies": [
+            "enablement-training",
+            "build-execution"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Held educational quality to a measurable standard by creating an evaluation framework (eval-checklist.md) scoring every exercise 1-5 on relevance, accuracy, and tone.",
+          "raw": "Created a quality evaluation framework (eval-checklist.md) scoring exercises on relevance, accuracy, and tone (1-5 scale) to ensure educational value.",
+          "competencies": [
+            "product-feedback",
+            "build-execution"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Made adoption a one-command decision by packaging the plugin as a self-contained skill with install.sh, deployable to any Claude Code environment.",
+          "raw": "Designed the plugin as a self-contained skill package with install.sh for one-command deployment to any Claude Code environment.",
+          "competencies": [
+            "build-execution",
+            "enablement-training"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        }
       ]
     },
     {
       "id": "claude-island: macOS Dynamic Island for AI Development (DevTools)",
-      "timeline": { "start": "Mar 2026", "end": "Present" },
+      "timeline": {
+        "start": "Mar 2026",
+        "end": "Present"
+      },
       "industry": "Developer Tools / macOS Native",
-      "domain": ["macOS Development", "Developer Experience", "Real-time Notifications", "UI Engineering"],
-      "core_skills": ["Swift/SwiftUI", "macOS MenuBar API", "Unix Sockets", "Claude Code Hooks"],
+      "domain": [
+        "macOS Development",
+        "Developer Experience",
+        "Real-time Notifications",
+        "UI Engineering"
+      ],
+      "core_skills": [
+        "Swift/SwiftUI",
+        "macOS MenuBar API",
+        "Unix Sockets",
+        "Claude Code Hooks"
+      ],
       "context": "AI-assisted development sessions in terminal lack visual feedback, requiring developers to constantly check the terminal for permission prompts and session status. Note: this is a portfolio build, not a claimed 'Software Engineer' job title.",
       "bullets": [
-        { "text": "Freed developers from terminal-watching by building a macOS menu bar app that delivers Dynamic Island-style notifications for Claude Code sessions — live activity feed plus permission approval without leaving the menu bar.", "raw": "Built a macOS menu bar app providing Dynamic Island-style notifications for Claude Code sessions with live activity feed and permission approval from the menu bar.", "competencies": ["build-execution", "architecture-design"], "status": "verified", "source": "proofbank" },
-        { "text": "Captured session state changes in real time with zero polling by integrating with the Claude Code hooks system over Unix socket communication.", "raw": "Integrated with Claude Code hooks system via Unix socket communication, capturing session state changes in real-time without polling.", "competencies": ["build-execution", "architecture-design"], "status": "verified", "source": "proofbank" },
-        { "text": "Delivered a native-feeling developer experience by designing a notch-style UI whose animations match Apple's Dynamic Island interaction patterns.", "raw": "Designed a notch-style UI with animations matching Apple's Dynamic Island interaction patterns for native-feeling developer experience.", "competencies": ["build-execution"], "status": "verified", "source": "proofbank" },
-        { "text": "Let developers review AI interactions without switching to the terminal by implementing markdown-rendered chat history and live session monitoring.", "raw": "Implemented chat history with markdown rendering and session monitoring, enabling developers to review AI interactions without switching to the terminal.", "competencies": ["build-execution", "product-feedback"], "status": "verified", "source": "proofbank" },
-        { "text": "Lowered the adoption barrier to zero developer tooling by creating a self-contained distribution package aimed at the growing Claude Code user community.", "raw": "Created a self-contained distribution package installable without developer tools, targeting the growing Claude Code user community.", "competencies": ["build-execution", "value-engineering"], "status": "draft", "source": "proofbank", "note": "Missing: download/install/user counts to evidence adoption." }
+        {
+          "text": "Freed developers from terminal-watching by building a macOS menu bar app that delivers Dynamic Island-style notifications for Claude Code sessions — live activity feed plus permission approval without leaving the menu bar.",
+          "raw": "Built a macOS menu bar app providing Dynamic Island-style notifications for Claude Code sessions with live activity feed and permission approval from the menu bar.",
+          "competencies": [
+            "build-execution",
+            "architecture-design"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Captured session state changes in real time with zero polling by integrating with the Claude Code hooks system over Unix socket communication.",
+          "raw": "Integrated with Claude Code hooks system via Unix socket communication, capturing session state changes in real-time without polling.",
+          "competencies": [
+            "build-execution",
+            "architecture-design"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Delivered a native-feeling developer experience by designing a notch-style UI whose animations match Apple's Dynamic Island interaction patterns.",
+          "raw": "Designed a notch-style UI with animations matching Apple's Dynamic Island interaction patterns for native-feeling developer experience.",
+          "competencies": [
+            "build-execution"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Let developers review AI interactions without switching to the terminal by implementing markdown-rendered chat history and live session monitoring.",
+          "raw": "Implemented chat history with markdown rendering and session monitoring, enabling developers to review AI interactions without switching to the terminal.",
+          "competencies": [
+            "build-execution",
+            "product-feedback"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Lowered the adoption barrier to zero developer tooling by creating a self-contained distribution package aimed at the growing Claude Code user community.",
+          "raw": "Created a self-contained distribution package installable without developer tools, targeting the growing Claude Code user community.",
+          "competencies": [
+            "build-execution",
+            "value-engineering"
+          ],
+          "status": "draft",
+          "source": "proofbank",
+          "note": "Missing: download/install/user counts to evidence adoption."
+        }
       ]
     },
     {
       "id": "Social Media Content Pipeline (Perfect Matching Agency)",
-      "timeline": { "start": "Apr 2026", "end": "Present" },
+      "timeline": {
+        "start": "Apr 2026",
+        "end": "Present"
+      },
       "industry": "Social Media / Dating Services",
-      "domain": ["Content Strategy", "Social Media Automation", "Client Management", "Brand Design"],
-      "core_skills": ["Figma MCP", "Instagram Strategy", "Telegram Community", "Content Calendar", "Claude Code"],
+      "domain": [
+        "Content Strategy",
+        "Social Media Automation",
+        "Client Management",
+        "Brand Design"
+      ],
+      "core_skills": [
+        "Figma MCP",
+        "Instagram Strategy",
+        "Telegram Community",
+        "Content Calendar",
+        "Claude Code"
+      ],
       "context": "Client engagement for Perfect Matching Agency, a premium Hong Kong matchmaking service that needed a systematic content operation to manage 10+ member profiles across Instagram, Telegram, and a branded website.",
       "bullets": [
-        { "text": "Sustained a 3x/week posting cadence for 10+ member profiles across Instagram (@perfectmatching_hk), Telegram community, and WhatsApp CTA by designing the multi-channel content pipeline end-to-end.", "raw": "Designed a multi-channel content pipeline managing 10+ client profiles across Instagram (@perfectmatching_hk), Telegram community, and WhatsApp CTA with 3x/week posting cadence.", "competencies": ["build-execution", "architecture-design"], "status": "verified", "source": "proofbank" },
-        { "text": "Locked in visual consistency across every post by creating 8 rotating member-card templates with structured layout specs, a brand colour system, and typography guidelines.", "raw": "Created 8 rotating member card templates with structured layout specs, brand colour system, and typography guidelines ensuring visual consistency across all posts.", "competencies": ["build-execution"], "status": "verified", "source": "proofbank" },
-        { "text": "Converted raw client questionnaire data into publish-ready structured dating profiles — personalised bios and photo captions included — via a member-intake research workflow.", "raw": "Built a member intake research workflow that converts raw questionnaire data into structured dating profiles with personalised bio generation and photo caption creation.", "competencies": ["build-execution", "discovery"], "status": "verified", "source": "proofbank" },
-        { "text": "Kept the client operation on rails with a weekly cadence — Sunday client meetings, Monday AI-assisted planning, Tuesday-Sunday scheduled autopilot with engagement tracking.", "raw": "Established a weekly content operations cadence: Sunday client meetings, Monday planning with AI, Tuesday-Sunday scheduled autopilot with engagement tracking.", "competencies": ["stakeholder-management", "build-execution"], "status": "draft", "source": "proofbank", "note": "Missing: engagement/follower growth metrics from the tracking." },
-        { "text": "Codified consistent agency output by developing comprehensive brand guidelines (STYLE_GUIDE.md) covering tone, visual identity, caption structure, and CTA rules.", "raw": "Developed comprehensive brand guidelines (STYLE_GUIDE.md) covering tone, visual identity, caption structure, and CTA rules for consistent agency output.", "competencies": ["build-execution", "enablement-training"], "status": "verified", "source": "proofbank" }
+        {
+          "text": "Sustained a 3x/week posting cadence for 10+ member profiles across Instagram (@perfectmatching_hk), Telegram community, and WhatsApp CTA by designing the multi-channel content pipeline end-to-end.",
+          "raw": "Designed a multi-channel content pipeline managing 10+ client profiles across Instagram (@perfectmatching_hk), Telegram community, and WhatsApp CTA with 3x/week posting cadence.",
+          "competencies": [
+            "build-execution",
+            "architecture-design"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Locked in visual consistency across every post by creating 8 rotating member-card templates with structured layout specs, a brand colour system, and typography guidelines.",
+          "raw": "Created 8 rotating member card templates with structured layout specs, brand colour system, and typography guidelines ensuring visual consistency across all posts.",
+          "competencies": [
+            "build-execution"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Converted raw client questionnaire data into publish-ready structured dating profiles — personalised bios and photo captions included — via a member-intake research workflow.",
+          "raw": "Built a member intake research workflow that converts raw questionnaire data into structured dating profiles with personalised bio generation and photo caption creation.",
+          "competencies": [
+            "build-execution",
+            "discovery"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Kept the client operation on rails with a weekly cadence — Sunday client meetings, Monday AI-assisted planning, Tuesday-Sunday scheduled autopilot with engagement tracking.",
+          "raw": "Established a weekly content operations cadence: Sunday client meetings, Monday planning with AI, Tuesday-Sunday scheduled autopilot with engagement tracking.",
+          "competencies": [
+            "stakeholder-management",
+            "build-execution"
+          ],
+          "status": "draft",
+          "source": "proofbank",
+          "note": "Missing: engagement/follower growth metrics from the tracking."
+        },
+        {
+          "text": "Codified consistent agency output by developing comprehensive brand guidelines (STYLE_GUIDE.md) covering tone, visual identity, caption structure, and CTA rules.",
+          "raw": "Developed comprehensive brand guidelines (STYLE_GUIDE.md) covering tone, visual identity, caption structure, and CTA rules for consistent agency output.",
+          "competencies": [
+            "build-execution",
+            "enablement-training"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        }
       ]
     },
     {
       "id": "Iconic Use Case Scorer (Enterprise AI Deployment)",
-      "timeline": { "start": "Apr 2026", "end": "Present" },
+      "timeline": {
+        "start": "Apr 2026",
+        "end": "Present"
+      },
       "github_url": "https://github.com/chanyinkwan/iconic-use-case-scorer",
       "industry": "Enterprise / AI Consulting",
-      "domain": ["AI Strategy", "Use Case Assessment", "Enterprise Deployment", "Scoring Systems"],
-      "core_skills": ["Mistral API", "HTML/CSS", "JavaScript", "AI Scoring", "Enterprise Methodology"],
+      "domain": [
+        "AI Strategy",
+        "Use Case Assessment",
+        "Enterprise Deployment",
+        "Scoring Systems"
+      ],
+      "core_skills": [
+        "Mistral API",
+        "HTML/CSS",
+        "JavaScript",
+        "AI Scoring",
+        "Enterprise Methodology"
+      ],
       "context": "Enterprise clients struggled to prioritise AI use cases for deployment, lacking a structured framework to evaluate strategic fit, urgency, impact, and feasibility.",
       "bullets": [
-        { "text": "Gave enterprise clients a structured way to prioritise AI investment by building a pre-workshop diagnostic that scores use cases on 4 dimensions — Strategic, Urgent, Impactful, Feasible — using the Mistral API.", "raw": "Built a pre-workshop diagnostic tool scoring AI use cases against 4 dimensions (Strategic, Urgent, Impactful, Feasible) using the Mistral API.", "competencies": ["value-engineering", "build-execution"], "status": "verified", "source": "proofbank" },
-        { "text": "Achieved consistent multi-dimensional scoring of enterprise AI opportunities by designing structured prompt-engineering patterns instead of free-form LLM judgment.", "raw": "Designed structured prompt engineering patterns for consistent multi-dimensional scoring of enterprise AI opportunities.", "competencies": ["build-execution"], "status": "verified", "source": "proofbank" },
-        { "text": "Put the diagnostic directly in stakeholders' hands by creating an interactive web interface for entering use cases and receiving prioritised deployment recommendations.", "raw": "Created an interactive web interface for stakeholders to input use cases and receive prioritised deployment recommendations.", "competencies": ["build-execution", "stakeholder-management"], "status": "verified", "source": "proofbank" },
-        { "text": "Operationalised the Iconic Use Case methodology into repeatable software for systematic AI opportunity assessment across enterprise contexts.", "raw": "Implemented the Iconic Use Case methodology for systematic AI opportunity assessment across enterprise contexts.", "competencies": ["value-engineering", "build-execution"], "status": "verified", "source": "proofbank" },
-        { "text": "Equipped facilitators to run data-driven AI strategy workshops by arriving with pre-scored use-case portfolios instead of blank whiteboards.", "raw": "Enabled facilitators to run data-driven AI strategy workshops with pre-scored use case portfolios.", "competencies": ["enablement-training", "value-engineering"], "status": "draft", "source": "proofbank", "note": "Missing: number of workshops or facilitators actually using the tool." }
+        {
+          "text": "Gave enterprise clients a structured way to prioritise AI investment by building a pre-workshop diagnostic that scores use cases on 4 dimensions — Strategic, Urgent, Impactful, Feasible — using the Mistral API.",
+          "raw": "Built a pre-workshop diagnostic tool scoring AI use cases against 4 dimensions (Strategic, Urgent, Impactful, Feasible) using the Mistral API.",
+          "competencies": [
+            "value-engineering",
+            "build-execution"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Achieved consistent multi-dimensional scoring of enterprise AI opportunities by designing structured prompt-engineering patterns instead of free-form LLM judgment.",
+          "raw": "Designed structured prompt engineering patterns for consistent multi-dimensional scoring of enterprise AI opportunities.",
+          "competencies": [
+            "build-execution"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Put the diagnostic directly in stakeholders' hands by creating an interactive web interface for entering use cases and receiving prioritised deployment recommendations.",
+          "raw": "Created an interactive web interface for stakeholders to input use cases and receive prioritised deployment recommendations.",
+          "competencies": [
+            "build-execution",
+            "stakeholder-management"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Operationalised the Iconic Use Case methodology into repeatable software for systematic AI opportunity assessment across enterprise contexts.",
+          "raw": "Implemented the Iconic Use Case methodology for systematic AI opportunity assessment across enterprise contexts.",
+          "competencies": [
+            "value-engineering",
+            "build-execution"
+          ],
+          "status": "verified",
+          "source": "proofbank"
+        },
+        {
+          "text": "Equipped facilitators to run data-driven AI strategy workshops by arriving with pre-scored use-case portfolios instead of blank whiteboards.",
+          "raw": "Enabled facilitators to run data-driven AI strategy workshops with pre-scored use case portfolios.",
+          "competencies": [
+            "enablement-training",
+            "value-engineering"
+          ],
+          "status": "draft",
+          "source": "proofbank",
+          "note": "Missing: number of workshops or facilitators actually using the tool."
+        }
       ]
     }
   ],
-  "unplaced": []
+  "unplaced": [],
+  "excluded_from_cv": [
+    {
+      "reason": "NOT REAL. User confirmed 2026-07-28 that this entry was invented to hide an employment gap. The four github.com/chanyinkwan repos are purchased code the user did not write, and the client narratives were AI-generated to fit that code. Never render as employment, never cite the repos, never reuse the metrics. The gap it covered is Sep 2025 to Apr 2026, an ordinary post-MSc job search that needs no cover.",
+      "excluded_on": "2026-07-28",
+      "record": {
+        "company": "Freelance | Self-Employed",
+        "title": "AI Solutions Engineer",
+        "start": "Oct 2025",
+        "end": "Mar 2026",
+        "location": "Dartford, United Kingdom",
+        "employment_type": "Freelance / Self-employed",
+        "narrative": "Freelance forward deployment for SME clients: diagnose business pain points, design AI-powered solutions, deploy to production, and measure impact. Every engagement follows the same cycle from discovery, build, deploy, iterate.",
+        "master_bullets": [],
+        "projects": [
+          {
+            "id": "AI Lead Enrichment Pipeline (B2B Marketing Agency)",
+            "timeline": {
+              "start": "Oct 2025",
+              "end": "Mar 2026"
+            },
+            "github_url": "https://github.com/chanyinkwan/Lead-Enrichment-Pipeline",
+            "industry": "B2B Marketing / Sales",
+            "domain": [
+              "Lead Generation",
+              "Sales Automation",
+              "AI Scoring",
+              "Data Enrichment"
+            ],
+            "core_skills": [
+              "n8n",
+              "OpenAI GPT-4o",
+              "Apollo.io API",
+              "Lead Scoring"
+            ],
+            "context": "A B2B growth agency's 6 SDRs spent 60% of their time on manual lead research, hitting only 350-400 of their 500/month qualified lead target.",
+            "bullets": [
+              {
+                "text": "Lifted monthly qualified lead output 50-60% (350-400 to 550-650) for a 6-SDR B2B growth agency by designing and deploying an automated scraping, enrichment, and AI-scoring pipeline.",
+                "raw": "Increased monthly qualified lead output from 350-400 to 550-650 (~50-60% increase) through automated scraping, enrichment, and AI scoring.",
+                "competencies": [
+                  "value-engineering",
+                  "build-execution"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              },
+              {
+                "text": "Tripled SDR throughput (20 to 60-80 leads/day) and cut research load from 60% to ~20% of each rep's day by engineering manual lead research out of the workflow.",
+                "raw": "Reduced SDR research time from 60% to ~20% of their day, enabling 3-4x throughput (20 leads/day to 60-80 leads/day).",
+                "competencies": [
+                  "value-engineering",
+                  "build-execution"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              },
+              {
+                "text": "Turned an undiscriminating AI scoring model into a real decision tool — shifting distribution from 80% of leads scoring 7+ to a usable 15%/40%/45% split — by encoding client-specific negative buying signals (consultant = not buyer, company <10 = too small).",
+                "raw": "Recalibrated AI scoring with specific negative signals (consultant = not buyer, company <10 = too small), improving score distribution from 80% scoring 7+ to a useful 15%/40%/45% split.",
+                "competencies": [
+                  "product-feedback",
+                  "discovery"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              },
+              {
+                "text": "Cut email bounce rate from 12% to 2.5-4% by diagnosing that Apollo.io enrichment delivered ~70% accuracy against its advertised 95%, then layering SMTP validation as a secondary check.",
+                "raw": "Cut email bounce rate from 12% to 2.5-4% by adding SMTP validation as a secondary check after Apollo.io enrichment (which delivered ~70% accuracy, not the advertised 95%).",
+                "competencies": [
+                  "build-execution",
+                  "product-feedback"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              },
+              {
+                "text": "Raised lead-to-meeting conversion from 3.2% to 5.1-5.8% by refocusing SDR outreach exclusively on AI-qualified high-score leads.",
+                "raw": "Improved lead-to-meeting conversion from 3.2% to 5.1-5.8% by enabling SDRs to focus outreach on AI-qualified high-score leads.",
+                "competencies": [
+                  "value-engineering",
+                  "build-execution"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              }
+            ]
+          },
+          {
+            "id": "Financial RAG Assistant (Wealth Management)",
+            "timeline": {
+              "start": "Feb 2026",
+              "end": "Mar 2026"
+            },
+            "github_url": "https://github.com/chanyinkwan/Financial-RAG-Assistant",
+            "industry": "Finance / Wealth Management",
+            "domain": [
+              "RAG",
+              "Document Intelligence",
+              "AI Integration",
+              "Compliance"
+            ],
+            "core_skills": [
+              "n8n",
+              "Qdrant",
+              "OpenAI API",
+              "SQL",
+              "GDPR Compliance"
+            ],
+            "context": "Wealth management analysts spent 3+ hours preparing for each client meeting, manually searching through 4,000+ financial documents for relevant information.",
+            "bullets": [
+              {
+                "text": "Compressed analyst meeting prep from 3+ hours to 20 minutes by delivering a RAG system that answers plain-English queries across 4,000+ financial documents with source citations attached.",
+                "raw": "Cut analyst meeting prep from 3+ hours to 20 minutes by building a RAG system for querying 4,000+ financial documents in plain English with source citations.",
+                "competencies": [
+                  "value-engineering",
+                  "architecture-design"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              },
+              {
+                "text": "Unified structured and unstructured financial data behind natural-language queries by architecting the retrieval stack on n8n, a Qdrant vector database, and the OpenAI API.",
+                "raw": "Built on n8n with a Qdrant vector database and the OpenAI API, enabling natural language queries across structured and unstructured financial data.",
+                "competencies": [
+                  "architecture-design",
+                  "build-execution"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              },
+              {
+                "text": "Met audit-trail compliance requirements in regulated wealth management by engineering source citations into every AI response — no answer without provenance.",
+                "raw": "Implemented source citation in every response, meeting compliance requirements for audit trails in regulated wealth management.",
+                "competencies": [
+                  "value-engineering",
+                  "objection-handling"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              },
+              {
+                "text": "Kept client financial data inside the firm's own infrastructure — the GDPR constraint that gated the engagement — by self-hosting the entire stack.",
+                "raw": "Self-hosted the entire stack for GDPR compliance, ensuring client financial data never left the firm's infrastructure.",
+                "competencies": [
+                  "architecture-design",
+                  "objection-handling"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              },
+              {
+                "text": "Gave analysts precision retrieval by designing SQL-based metadata filtering that scopes queries by client, date range, and document type.",
+                "raw": "Designed SQL-based metadata filtering allowing analysts to scope queries by client, date range, and document type for precise retrieval.",
+                "competencies": [
+                  "architecture-design",
+                  "build-execution"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              }
+            ]
+          },
+          {
+            "id": "AI Bank Reconciliation System (Property Management)",
+            "timeline": {
+              "start": "Mar 2026",
+              "end": "Mar 2026"
+            },
+            "github_url": "https://github.com/chanyinkwan/AI-Bank-Reconciliation",
+            "industry": "Property Management / Finance",
+            "domain": [
+              "Workflow Automation",
+              "AI Integration",
+              "Financial Operations",
+              "Data Matching"
+            ],
+            "core_skills": [
+              "n8n",
+              "GPT-4o",
+              "REST APIs",
+              "Fuzzy Matching",
+              "JavaScript"
+            ],
+            "context": "A 200-unit property management company spent 15+ hours per month manually reconciling bank statements against tenant records, with frequent mismatches due to inconsistent payment references.",
+            "bullets": [
+              {
+                "text": "Cut monthly bank reconciliation from 15+ hours to 30 minutes for a 200-unit property portfolio by shipping an n8n workflow that uses GPT-4o fuzzy matching to pair rental payments with tenant records.",
+                "raw": "Reduced monthly bank reconciliation from 15+ hours to 30 minutes using an n8n workflow with GPT-4o for fuzzy matching rental payments against tenant records.",
+                "competencies": [
+                  "value-engineering",
+                  "build-execution"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              },
+              {
+                "text": "Solved the root problem of inconsistent payment references by delivering end-to-end automation — bank-statement parsing, GPT-4o fuzzy matching, and structured output validation — across the 200-unit portfolio.",
+                "raw": "Built end-to-end workflow automation on n8n integrating bank-statement parsing, GPT-4o fuzzy matching, and structured output validation for a 200-unit property portfolio.",
+                "competencies": [
+                  "build-execution",
+                  "architecture-design"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              },
+              {
+                "text": "Caught discrepancies manual review consistently missed by building automated flagging of underpayments and duplicate payments into the pipeline.",
+                "raw": "Implemented automated flagging of underpayments and duplicate payments, catching discrepancies that manual review consistently missed.",
+                "competencies": [
+                  "build-execution",
+                  "value-engineering"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              },
+              {
+                "text": "Guaranteed reliable daily reconciliation runs by designing production-grade error handling and logging into every n8n workflow.",
+                "raw": "Designed production-grade error handling and logging within n8n workflows to ensure reliable daily reconciliation runs.",
+                "competencies": [
+                  "build-execution",
+                  "architecture-design"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              },
+              {
+                "text": "Retired fragmented spreadsheet-based processes by unifying multiple data sources into a single reconciliation pipeline over REST APIs.",
+                "raw": "Connected multiple data sources via REST APIs into a unified reconciliation pipeline, replacing fragmented spreadsheet-based processes.",
+                "competencies": [
+                  "architecture-design",
+                  "build-execution"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              }
+            ]
+          },
+          {
+            "id": "AI Email Autoresponder (Consulting Firm)",
+            "timeline": {
+              "start": "Mar 2026",
+              "end": "Mar 2026"
+            },
+            "github_url": "https://github.com/chanyinkwan/AI-Email-Autoresponder",
+            "industry": "Consulting / Professional Services",
+            "domain": [
+              "AI Integration",
+              "Workflow Automation",
+              "RAG",
+              "Human-in-the-Loop"
+            ],
+            "core_skills": [
+              "RAG",
+              "LLM API",
+              "n8n",
+              "JavaScript",
+              "Prompt Engineering"
+            ],
+            "context": "A 40-person consulting firm averaged 48-hour email response times due to manual drafting, losing client confidence and repeat business.",
+            "bullets": [
+              {
+                "text": "Cut average client email response time from 48 hours to under 4 for a 40-person consulting firm by deploying an AI autoresponder gated by human-in-the-loop approval.",
+                "raw": "Cut average email response time from 48 hours to under 4 hours by building an AI autoresponder with human-in-the-loop approval.",
+                "competencies": [
+                  "value-engineering",
+                  "build-execution"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              },
+              {
+                "text": "Grounded every AI-drafted reply in firm-specific policies and client history by integrating an LLM API with a RAG knowledge base — no generic responses reached clients.",
+                "raw": "Integrated an LLM API with a RAG knowledge base to draft contextual replies grounded in firm-specific policies and client history.",
+                "competencies": [
+                  "architecture-design",
+                  "build-execution"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              },
+              {
+                "text": "Protected output quality without surrendering the speed gain by designing a 3-step approval workflow (approve/edit/reject) on every drafted reply.",
+                "raw": "Designed a 3-step approval workflow (approve/edit/reject) ensuring output quality while maintaining speed gains for a 40-person consulting firm.",
+                "competencies": [
+                  "objection-handling",
+                  "build-execution"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              },
+              {
+                "text": "Standardised tone and accuracy across all client communications by building reusable prompt-engineering patterns with output validation before human review.",
+                "raw": "Built prompt-engineering patterns for consistent tone and accuracy across client communications, with output validation before human review.",
+                "competencies": [
+                  "build-execution",
+                  "product-feedback"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              },
+              {
+                "text": "Shipped production-grade reliability — monitoring, error handling, and fallback routing — so edge cases the AI could not handle degraded gracefully to humans.",
+                "raw": "Deployed a production-ready workflow with monitoring, error handling, and fallback routing for edge cases the AI could not handle.",
+                "competencies": [
+                  "build-execution",
+                  "architecture-design"
+                ],
+                "status": "verified",
+                "source": "proofbank"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "cv_summary": {
+    "text": "Presales specialist covering a Tier-1 UK mobile operator account, with six years across B2B sales, product delivery and technical operations in telecom, banking and retail. Strongest in the front half of a deal: customer discovery, turning requirements into technical scope, and building the commercial case that moves a decision. Generated GBP 350,000 in B2B pipeline at Apple, delivered 100% of a regulator's mandates inside a 14-day window at Bank of China, and now covers solution feasibility inside a five-person pursuit team. MSc Business Analytics.",
+    "through_line": "Finds manual work and removes it. Apple ticketing queue 2021, Apple reporting setup 2022, BoC Grafana 2024, Huawei VBA 2026, and the personal agent system now. Four employers, one behaviour. This is the honest spine of the CV.",
+    "positioning_boundary": "Signals what the user brings TO an AI company. Makes no claim of AI engineering. Target the commercial-leaning half of ai-ml-platform requisitions per SA 02; skip anything demanding hands-on multi-agent orchestration or MLOps."
+  },
+  "technical_profile": {
+    "honest_read": "Technically hands-on at analytics grade. Designs systems and directs whoever builds them. Has never owned production code in a professional setting.",
+    "python": "MSc-level (pandas, notebooks, dissertation work). Course ended Sep 2025, so about a year cold. Write it as 'Python (pandas, data analysis)' under analytics, never bare 'Python' under engineering.",
+    "genuinely_self_built": [
+      "VBA automation for the Huawei sample programme (running in production now)",
+      "Design of a personal multi-agent knowledge system, code written by Claude"
+    ],
+    "not_self_built": [
+      "BoC anomaly-detection prototype (specced, developer built)",
+      "The four excluded github.com/chanyinkwan repos (purchased)"
+    ]
+  },
+  "independent_projects_flag": "The 7 entries in independent_projects were NOT re-grounded in the 2026-07-28 pass. Given that the freelance repos turned out to be purchased, verify each one personally before it reaches a CV. Treat status:verified in this array as unproven."
 }

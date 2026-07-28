@@ -18,6 +18,8 @@ tags:
 
 關聯：[[Career Hub Goal]] · [[Exploring What I want to do]] · [[SA Lock-In — Gap Audit & 30-Day Sprint]] · Hub：[[Life @Huawei System]]
 
+**執行載體：[[SA Presales Transition]]** — 呢份 exit strategy 嘅實際落地 sprint（2026-07-13 → 09-20，10 週，三個 gates）。要睇「離開」呢件事而家行到邊，睇嗰度嘅 Progress section。
+
 **用法：** 做任何 prioritization / 接唔接 task / 點樣分配時間嘅決定之前，返嚟呢度過一次 decision test（§5）。唔係日記，係 decision anchor。有變就寫入 §7 Amendment Log。
 
 ---

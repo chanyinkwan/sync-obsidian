@@ -14,6 +14,7 @@ tags:
 > **核心一句：** 唔好再讓防守端（Huawei）吃光所有時間。**目標係保住 barbell 兩邊都有重量** — Track B 守住現金流同情報，Track A 真係 ship 到可展示、可變現嘅資產。
 
 關聯：[[Career Hub Management]] · [[North Star — Role Reality & Exit Strategy]]（方向同決策原則以佢為準）· Hub：[[Life @Huawei System]]
+Track A 而家嘅實際載體：**[[SA Presales Transition]]**（10 週 sprint，有 deadline、有 gates、有記分板 — 即係呢個 goal §0 講嘅「幫 Track A 補返 Track B 自動有嘅嘢」）。
 設定日：2026-06-25 ｜ Review：每週（寫入 Weekly SCQA）
 
 ---

@@ -13,6 +13,11 @@ tags:
 ## Goal / my scope
 
 
+## Active sprint
+**[[SA Presales Transition]]** (2026-07-13 → 2026-09-20) is the child sprint currently executing this goal: domain selection → AWS SAA cert → discovery/demo skills → applications → panels. Its child project is [[AWS SAA-C03]]. Strategy context: [[North Star — Role Reality & Exit Strategy]].
+
+Applications against the criteria below go out at W8 (2026-08-31) via [[SA 12 - First 5 Applications Out]].
+
 ## 🎯 North-Star For your next job
 - [ ] Able to work from home at least 2 days a week
 - [ ] salary >45k gbp per annual

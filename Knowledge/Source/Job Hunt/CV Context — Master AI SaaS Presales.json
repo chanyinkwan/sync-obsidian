@@ -1,0 +1,54 @@
+{
+  "_provenance": "Built 2026-07-28 from MasterExperienceDB.json v3.0. Every bullet is status:verified. No needs_grounding, blocked, secondary or cut bullets were used. The freelance AI Solutions Engineer entry and the four github.com/chanyinkwan repos are excluded permanently, see excluded_from_cv in the DB.",
+  "profile_summary": "Presales specialist covering a Tier-1 UK mobile network operator account, with six years across B2B sales, product delivery and technical operations in telecom, banking and retail. Strongest in the front half of a deal: running discovery with the customer, turning what they need into technical scope, and building the commercial case that moves a decision. Brought in GBP 350,000 of B2B pipeline at Apple and met 100 percent of a financial regulator's mandates inside a 14-day window at Bank of China. The pattern is the same everywhere: find the manual process, define the fix, get it adopted.",
+  "experience": [
+    {
+      "company": "Huawei Consumer Business Group",
+      "location": "London, United Kingdom",
+      "role": "Portfolio Solution Presales",
+      "dates": "Apr 2026 – Present",
+      "bullets": [
+        "Took USD 2 of cost out of every unit by making the case across GTM roadmap and pricing reviews for dropping a feature the customer did not value.",
+        "Cut a daily manual check across 60 to 80 live sample units and about an hour a week of paperwork by writing VBA automation into the evaluation programme I own, swapping hand-tracked deadlines for scheduled reminders and template-generated sign-off.",
+        "Surfaced the requirements the bid was built on by running 3 technical workshops and one structured requirements session with the customer's engineering stakeholders.",
+        "De-risked what the proposal could promise by testing solution feasibility against 6 of the account's subnets before anything went to the customer, as presales cover inside a 5-person pursuit team."
+      ]
+    },
+    {
+      "company": "Bank of China (Hong Kong)",
+      "location": "Hong Kong",
+      "role": "Technical Product Manager, E-Banking Product",
+      "dates": "Aug 2023 – Oct 2024",
+      "bullets": [
+        "Met 100 percent of the HKMA's regulatory mandates inside a hard 14-day window by turning the regulation into an implementation plan and coordinating internal teams with third-party vendors to ship Geo-IP fraud detection with impossible travel logic.",
+        "Handed back 8 hours a week of manual reporting across 20 systems, roughly 400 hours a year, by replacing hand-assembled weekly reports with a single Grafana observability view.",
+        "Got that framework adopted in one sitting by demoing it to 30+ system leads and two department heads and answering their technical objections live.",
+        "Ended a 3-year-old complaint about incident triage by specifying and validating a Python anomaly detection prototype, built with a developer, that told real incidents apart from deployment noise across 50,000+ operational logs."
+      ]
+    },
+    {
+      "company": "Apple",
+      "location": "Hong Kong",
+      "role": "Operation Data Analyst",
+      "dates": "Mar 2021 – Aug 2023",
+      "bullets": [
+        "Removed roughly 1,500 hours of manual work a year across 6 flagship sites by finding the 5-hour weekly data entry burden sitting at each one and replacing it with a self-sustaining reporting setup that gave regional directors live numbers instead of week-old ones.",
+        "Reversed a headquarters decision by showing the Shanghai development team evidence that store operations varied by location, moving the POS migration off centralised training and onto store-specific delivery."
+      ]
+    },
+    {
+      "company": "Apple",
+      "location": "Hong Kong",
+      "role": "B2B Solution Expert",
+      "dates": "Jan 2020 – Mar 2021",
+      "bullets": [
+        "Brought in GBP 350,000 of new B2B pipeline across a 50+ account portfolio by running discovery, solution positioning and qualification myself, then escalating matured accounts to the corporate team to close.",
+        "Closed a GBP 50,000 deal with a Hong Kong broadcaster over 3 months by turning a casual store visit into a real opportunity, earning trust through hands-on technical support and a custom pricing portal, then upselling device management once they raised fleet-control concerns."
+      ]
+    }
+  ],
+  "activity_line": "CERTIFICATION: AWS Certified Solutions Architect, Associate (SAA-C03), exam booked for August 2026.",
+  "language_line": "Languages: English (fluent, professional), Cantonese (native), Mandarin (native)",
+  "skills_line": "Skills: Presales discovery and requirements analysis · solution feasibility validation · RFI/RFP response · live demos and stakeholder adoption · value engineering and pricing input · Python (pandas, data analysis), SQL, R · Grafana, Power BI, VBA · LLM tooling and agent workflow design · JIRA, CRM",
+  "interests_line": "Interests: Designing agent-based knowledge systems · enterprise AI adoption · systems design"
+}

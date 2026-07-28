@@ -6,6 +6,8 @@ dateCreated: 2026-07-22T19:38:31.688+01:00
 dateModified: 2026-07-27T16:13:30.577+01:00
 tags:
   - task
+projects:
+  - "[[Amazon take over]]"
 ---
 
 [[Amazon Handover Meeting Transcript Part 1]]

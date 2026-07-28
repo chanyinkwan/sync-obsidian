@@ -8,6 +8,8 @@ tags: [career, solutions-engineering, gap-audit, sprint]
 # SA/SE Lock-In — Gap Audit & 30-Day Sprint
 *Part 2 of the career consult. Part 1: [[Exploring What I want to do]].*
 
+> **Operationalised as [[SA Presales Transition]]** (2026-07-13 → 2026-09-20). The 30-day sprint below became the 10-week task board there — Category B gaps map to SA 04 (cert), SA 05–07 (discovery/demo reps) and SA 08–10 (artifacts). This document holds the *argument*; the sprint note holds the *schedule and current state*.
+
 ---
 # Eng:
 ## 0. The brief contains one demand I refuse — read this first

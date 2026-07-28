@@ -35,7 +35,7 @@ tags:
 4. **`[ASSOCIATESHARED] IAM Identity Policies`**
     
     Explains how applicable policy statements match Action and Resource, producing Allow or AccessDenied.
-
+- [ ] contact lin ying shu ask 1. september product launch, when can we apply for samples, ask for BOM to decide how many we should apply for
 #### 🚀 Hub (進攻) — max 5
 - [ ] [[SA 04 - AWS SAA Study & Exam]] 🔁
 - [ ] [[SA 06 - Persona-Based Script Reps]] 🔁
