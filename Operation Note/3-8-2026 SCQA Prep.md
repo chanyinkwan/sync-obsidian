@@ -16,6 +16,8 @@ related:
   - "[[27-7-2026 July SCQA Reflection]]"
   - "[[27-7-2026 SCQA Transcript]]"
   - "[[27-7-2026 SCQA Prep]]"
+  - "[[SCQA O6 - H3G Stakeholder Brief Pack]]"
+  - "[[SCQA O7 - Portfolio Battlecard and Comparison Tool]]"
 ---
 
 # 3-8-2026 SCQA Prep — 三人檔案交付 ＋ 產品學習計畫
@@ -65,6 +67,29 @@ related:
 
 **8/3 交付：FWA／MBB 這一條線的完整表，加一個能跑的 HTML 比較檢視。其餘品類只交框架與排期。**
 （做法、行業對標、紅線 → 見下面「產品知識的成功範疇」末段〈交接資產怎麼做〉）
+
+---
+
+## 🧭 兩個交付物 × 七問題定義表（Problem Definition Worksheet）
+
+> 用途：程哥 7/27 12:36 的方法論作業原話是「**你要先自己想，你都需要哪些資訊，然後再一步一步把它填進去**」。這張表就是那一步。
+> 任務筆記：**A ＝ [[SCQA O6 - H3G Stakeholder Brief Pack]]** · **B ＝ [[SCQA O7 - Portfolio Battlecard and Comparison Tool]]**
+> 🟡 ＝ 資訊有缺口，需在 8/3 當場向程哥問；🔴 ＝ 已知衝突，不准自己裁決。
+
+| # | 問題 | **A · 三人 Stakeholder Brief Pack** | **B · Portfolio Battlecard ＋ 比較工具** |
+|---|---|---|---|
+| **1** | **基本要解決的問題**<br>Basic question | 「主管臨時過來想了解和記，我們有沒有一張紙能讓他看清？」（程哥 7/27 · 8:31 原話）<br><br>底層真問題：**這個團隊沒有常設的客戶關係認知層**，經歷／年資／生日跨四個人原本全部是零，任何人接手都得從零重建。 | 「你要能夠**跟客戶去講產品**，這是最終的目標。」（程哥 7/27 · 13:44）<br><br>底層真問題：一個新進 SA 怎麼在**沒有結構化教材**的情況下，把上百頁膠片變成能對客戶口頭輸出的能力？ |
+| **2** | **情境與背景**<br>Context | 7/20 交辦「客戶組織關係深度梳理，下週一 present」→ 7/27 Kess 口頭回報職責／匯報線已對齊 → 程哥判定「**資訊大部分都有，缺的是形式**」，要求做成 per-person presentation → 8/3 交。<br><br>⚠ **8/3 這個日期是 Kess 自己提的，不是程哥給的**（27-7 · 13:13）。<br>平行背景：八月 Kevin × Dennis 高層會議、[[Ziyi Zhang 84434577]] 八月離職、Munich 九月 launch。 | 7/10 [[Ziyi Zhang 84434577]] 轉述程哥指示「**一個月內把產品包講到能對客戶流利輸出**」（≈ 8/10 到期）→ 7/20 程哥「你把我當成客戶，對著我講」＋「**不用輸出**」（12:19）→ 7/27 Kess 自承「**還在摸索**」，承諾 8/3 一併匯報「我怎麼去了解這件事情的」。<br><br>「不用輸出」＝ 他要的成果**存在腦子裡、用嘴巴交付**，這是 presales 的標準驗收方式。 |
+| **3** | **決策者與關鍵利害關係人**<br>Decision maker & stakeholders | **決策／驗收**：[[Ding Cheng 00611102 (程哥or 丁程)]]<br>**真正的終端使用者**：[[He Gang 00866077 (Kevin)]]（八月見 [[Dennis Lui]]）🟡 日期與與會者待核<br>**資訊持有者**：[[Selina]]（AM，最高客戶接觸、關係圖持有人）、[[Ziyi Zhang 84434577]]（7/10 交接）<br>**被寫的對象**：[[Dennis Lui]]、[[Francesco Zampini]]、[[Agostino Ruberto]]（Tier A）／[[Marlene Fantini]]、[[Mark Williams (Bristish)]]、[[Manjit Dhanjal]]（Tier B）<br>🔴 Agostino 的我方對接人＝程哥 or Selina？ | **決策／驗收**：[[Ding Cheng 00611102 (程哥or 丁程)]]（並曾自願扮演客戶陪練，20-7）<br>**知識持有者**：[[Ziyi Zhang 84434577]] ⏳ **八月離職，窗口在關 — 最高優先**<br>**最終評判者**：客戶本人，特別是 **Francesco（已認為我方產品有風險）**——對他規格表打不動，能打動的是異議處理<br>**潛在繼承者**：下一個接手這個角色的人（這是把作業變成交接資產的理由） |
+| **4** | **成功標準／成功要素**<br>Criteria for success | **量化**：三張卡 × 五塊欄位全填（個人／對華為／歷史／未來／組織）＋ 一頁 Influence Map ＋ 一頁 Discovery Gap Log；會議行為指標 **≥ 85 / 100**（前次 18）<br>**質化**：「拿這張紙給主管看清」；**態度欄必須是具名的決策標準，不是形容詞**——通過線是「Francesco ＝ guarded，認為我方產品有風險」，不是「關係普通」<br>每格有 **Source / Confidence**（這是資產 vs 八卦的唯一差別） | **量化**：**20 分鐘、零材料、0 次翻資料、結尾有明確推薦＋理由**；FWA／MBB 七格填滿；HTML 比較檢視可跑（雙視圖 ＋ 推薦邏輯）<br>**質化**：**兩個版本**——對「什麼都不懂」的客戶（廣度、故事線）、對「很懂我們」的客戶（縱深、代際、競品對位）（8-7 · 17:53）<br>會議上的答案**要帶數字，不要帶形容詞**：「錄了兩次，第二次 18 分鐘卡殼一次」≠「還在摸索」 |
+| **5** | **解決方案範疇**<br>Scope of solution space | **在範圍內**：H3G / Hutchison IOD 終端決策鏈 — 人 ＋ 關係 ＋ 組織匯報線。<br>8/3 交 **Tier A 三人**；Tier B（Marlene、Mark、Manjit）會後按同模板補成常設資產。<br>**不在範圍內**：商務條款、價格、合約；VodafoneThree 側（已在 [[SCQA O5 - Client Power Map]]，本次不動）。 | **在範圍內**：歐洲可賣品類，按和記優先序 —— **MBB / IoT（最高）→ 穿戴（五／六大手錶系列）→ 音頻（FreeClip）→ 手機回歸故事＋生態解決方案**。<br>8/3 只交 **FWA／MBB 完整列**，其餘交欄位框架＋排期。<br>**已砍掉**（省一半工作量）：手機 SKU 級細節（只留「回歸歐洲」故事線）／平板・PC／sustainability（和記不看，Orange 才在乎）。 |
+| **6** | **限制條件**<br>Constraints | **時間**：7 天（7/27 → 8/3），且真正的硬期限是八月那場高層會<br>**人力**：需 [[Selina]] 一場對話才能補 Joe Parker 態度欄 ＋ Tier B 生日<br>🚫 **合規紅線**：Selina 那版關係圖**不可拍照、不可拍屏**，只能重建；生日／愛好／家庭**永不外流**——那是 AM 情報，對外一律收斂成 "relationship development cadence" | **時間**：7 天 ＋ 🟡 **8/10 這個期限未經程哥當面確認**（子義轉述）<br>**人力**：子義的產品專場窗口八月關閉<br>🚫 **紅線**：零毛利成本（$75 → $90）、排產分配、未發布 roadmap 日期 **只能存在對內視圖**，且不得進入任何對外求職 portfolio<br>⛔ **最大風險**：做 HTML 能吃掉 15 小時而串講仍是零 → **先資料，後設計；FWA 列填完前不准打開 CSS** |
+| **7** | **關鍵洞察與資訊來源**<br>Key sources of insight | [[Selina]]（第一手，最高客戶接觸）· 程哥本人（Agostino／Marlene 對接人）· 子義 7/10 交接 · 客戶提供的 organization chart · [[SCQA O5 - Client Power Map]] · [[SCQA O2 - Org-to-Customer Relationship Map]] · [[20-7-2026 SCQA Transcript]] ＋ [[27-7-2026 SCQA Transcript]] · **與客戶本人的對話**（程哥 12:36：「一點一點地想，給它挖出來」） | [[2-7-2026 Product Roadmap Meeting Transcript]] ＋ [[15-7-2026 FWA Business Strategies Meeting Transcript]] —— **這兩份已含 L2 級原料**（H162–H176 代際、V5 $75→$90、H175 定 4CC、EU 可拆卸電池法規、ZTE 對位、晶片透明度卡點）<br>· 子義產品專場 · 產品膠片 · ZTE 公開資料／規格頁 · [[10-7-2026 Meeting - July Relationship and Product Training - Transcript]] |
+
+### 🟡 這張表暴露出的三個缺口（8/3 當場問，不要自己填）
+1. **產品期限**到底是不是八月中？（子義轉述，程哥未當面說）→ Feasible or Not
+2. **Agostino 的層級**三個版本互相矛盾 → True or Not
+3. **Kevin × Dennis 那場會**的日期、與會者、材料是否已有人在做 → Feasible or Not
 
 ---
 

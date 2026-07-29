@@ -23,3 +23,4 @@
 [2026-07-22 17:00:07] Pushed: Auto-sync 2026-07-22 17:00
 [2026-07-24 17:00:09] Pushed: Auto-sync 2026-07-24 17:00
 [2026-07-27 17:01:55] Pushed: Auto-sync 2026-07-27 17:00
+[2026-07-28 17:00:17] ERROR: git push failed: fatal: unable to access 'https://github.com/chanyinkwan/sync-obsidian/': Failed to connect to github.com:443 after 12958 ms: Could not connect to server
