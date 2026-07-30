@@ -29,13 +29,13 @@ Sits inside the wider [[Huawei Development]] SCQA cadence with [[Manager]]; this
 | 2026-07-27 | Part 2 (Ziyi × 齊軒, Kess sat in) | MBB handover walkthrough — roadmap, pricing/sales tracker, competitor landscape, ads/DSP, HQ + region contacts | [[Amazon Handover Meeting Transcript Part 2]] |
 | TBD | Kess ⇄ 齊軒 1:1 | Router-specific: sales-estimation method, current open items | not yet scheduled — action item on Kess |
 
-Tracking task: [[Amazon Handover Meeting]].
+Tracking task: [[Amazon Handover]].
 
 ## Open items (from Part 1/2 action items)
 - [ ] Get router roadmap (cheapest → most expensive SKU) before syncing with 齊軒/張炫.
 - [ ] Apply for pricing/profit-rate system access.
 - [ ] Propose next 1:1 with 齊軒 (router sales-estimation method, current open items).
-- [ ] Digest Part 1/2 transcripts into an SCQA-style problem statement (checklist already drafted in [[Amazon Handover Meeting]]).
+- [ ] Digest Part 1/2 transcripts into an SCQA-style problem statement (checklist already drafted in [[Amazon Handover]]).
 - [ ] Confirm who owns the weekly price/sales/days-of-stock forecast handoff post-Ziyi.
 
 ## Key contacts

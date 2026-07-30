@@ -14,14 +14,16 @@ tags:
 - [ ]  [[3-8-2026 SCQA Prep]]
 - [ ] [[SCQA O7 - Portfolio Battlecard and Comparison Tool]]
 - [ ] [[SCQA O6 - H3G Stakeholder Brief Pack]]
-- [ ] [[Amazon Back to School Promotion Planning Meeting Transcript]]
-- [ ] [[chat history.pdf]]
+- [ ] [[Amazon Handover]]
+- [ ] [[Amazon Handover — 7Q Known-Unknown Digest (2026-07-28)]]
+- [ ] [[Amazon Back to School Promotion Planning Meeting Transcript Part 1]]
+- [ ] [[chat history.pdf]] GTM Procedures
 - [ ] [[Problem Note - Excel Tracker Automation]]
 - [ ] [[Problem Note - Successor Playbook Handover]]
 - [ ] [[Problem Note - O3 Process and Stakeholder Map]]
+- [ ] [[Tracker - 樣機申請窗口總表]] w/ excel
 
 #### 🚀 Hub (進攻) — max 5
-- 
 
 > ⏳ Preserve ≥20% strategic blank space.
 > 📥 Backlog stays in TaskNotes Kanban / Agenda.

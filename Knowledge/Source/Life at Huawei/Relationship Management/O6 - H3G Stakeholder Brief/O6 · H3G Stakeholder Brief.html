@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<!-- O6 · H3G Stakeholder Brief — internal document, Traditional Chinese -->
+<!-- Design intent: the org chart IS made of the cards. No separate card grid, no trailing tables. -->
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>H3G · 客戶決策鏈常設檔案</title>
+<style>
+  :root{
+    --hw-red:#c7000b; --hw-red-dark:#cb0007; --hw-red-hover:#f66f6a;
+    --hw-ink:#111; --hw-text:#333; --hw-muted:#666; --hw-faint:#999;
+    --hw-line:#d4d4d4; --hw-line-soft:#e6e6e6;
+    --hw-bg:#fff; --hw-bg-alt:#f5f5f5; --hw-unknown:#f2f2f2;
+    --card-w:310px;
+    --front-h:150px;
+    --level2-gap:56px;
+    --tick-h:24px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--hw-bg);
+    color:var(--hw-text);
+    font-family:"HuaweiSans","Huawei Sans",Arial,Helvetica,"Microsoft YaHei","PingFang TC","Noto Sans TC",sans-serif;
+    font-size:14px;
+    line-height:1.6;
+  }
+  .wrap{max-width:1100px;margin:0 auto;padding:48px 24px 80px;}
+
+  /* ---------- Header ---------- */
+  header.page-header{margin-bottom:48px;}
+  h1.page-title{
+    font-size:40px;
+    line-height:1.25;
+    color:var(--hw-ink);
+    margin:0 0 8px;
+    font-weight:700;
+    border-radius:0;
+  }
+  .page-subtitle{font-size:16px;color:var(--hw-muted);margin:0 0 20px;}
+  .legend-row{
+    display:flex;flex-wrap:wrap;align-items:center;gap:10px 28px;
+    font-size:13px;color:var(--hw-text);
+    padding:14px 16px;background:var(--hw-bg-alt);border:1px solid var(--hw-line-soft);
+    margin-bottom:14px;
+  }
+  .legend-group{display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+  .legend-caption{color:var(--hw-muted);margin-right:2px;}
+  .legend-divider{width:1px;height:16px;background:var(--hw-line);display:inline-block;}
+  .legend-swatch{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;}
+  .page-note{font-size:12px;color:var(--hw-faint);margin:0;}
+
+  /* ---------- Badges (D / I) ---------- */
+  .badge{
+    display:inline-flex;align-items:center;justify-content:center;
+    border-radius:50%;
+    font-weight:700;
+    vertical-align:middle;
+    line-height:1;
+  }
+  .badge.d{width:24px;height:24px;font-size:12px;background:var(--hw-red);color:#fff;}
+  .badge.i{width:24px;height:24px;font-size:12px;background:transparent;color:var(--hw-text);border:1px solid var(--hw-line);}
+  .badge.g{width:24px;height:24px;font-size:12px;background:var(--hw-bg-alt);color:var(--hw-muted);border:1px dashed var(--hw-line);}
+  .badge.legend-size{width:16px;height:16px;font-size:9px;}
+
+  /* ---------- Three-state field rendering ----------
+     .v  已核實 -> normal text, --hw-text
+     .f  推斷   -> italic, --hw-muted, with trailing .src note
+     .u  未知   -> --hw-unknown background chip, --hw-faint, literal "未知"
+  ------------------------------------------------------------------------ */
+  .fld{border-radius:0;}
+  .fld.v{color:var(--hw-text);font-style:normal;}
+  .fld.f{color:var(--hw-muted);font-style:italic;}
+  .fld.u{
+    display:inline-block;
+    background:var(--hw-unknown);
+    color:var(--hw-faint);
+    padding:1px 8px;
+    border-radius:0;
+  }
+  .src{
+    display:inline-block;
+    font-size:12px;
+    color:var(--hw-faint);
+    font-style:normal;
+    margin-left:6px;
+  }
+  .field-row{margin:6px 0;font-size:13px;}
+  .field-label{color:var(--hw-muted);margin-right:4px;}
+
+  /* ---------- The tree (org chart made of cards) ---------- */
+  .tree{
+    display:flex;flex-direction:column;align-items:center;
+    padding:8px 0 0;
+  }
+  .node-fok{
+    border:1px solid var(--hw-line-soft);
+    background:var(--hw-bg-alt);
+    color:var(--hw-faint);
+    padding:10px 18px;
+    font-size:13px;
+    text-align:center;
+    border-radius:0;
+  }
+  .connector{width:1px;height:32px;background:var(--hw-line);}
+  .connector.short{height:24px;}
+
+  .level2-wrap{
+    position:relative;
+    padding-top:var(--tick-h);
+    margin-bottom:var(--level2-gap);
+  }
+  .bracket-h{
+    position:absolute;
+    top:0;
+    left:calc(var(--card-w) / 2);
+    right:calc(var(--card-w) / 2);
+    height:1px;
+    background:var(--hw-line);
+  }
+  .bracket-h::before,.bracket-h::after{
+    content:"";
+    position:absolute;
+    top:0;
+    width:1px;
+    height:var(--tick-h);
+    background:var(--hw-line);
+  }
+  .bracket-h::before{left:0;}
+  .bracket-h::after{right:0;}
+  .bracket-label{
+    position:absolute;
+    top:-9px;
+    left:50%;
+    transform:translateX(-50%);
+    background:var(--hw-bg);
+    padding:0 10px;
+    font-size:12px;
+    color:var(--hw-faint);
+    white-space:nowrap;
+  }
+  .level2-row{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:56px;
+  }
+  /* L 形轉折線：Francesco 卡底中心 → 下 28px → 橫移至頁面中線 → 下 28px 接 Marlene 卡頂 */
+  .connector-francesco{
+    position:absolute;
+    left:calc(var(--card-w) / 2);
+    width:calc(50% - var(--card-w) / 2);
+    bottom:calc(-1 * var(--level2-gap) / 2);
+    height:1px;
+    background:var(--hw-line);
+  }
+  .connector-francesco::before{
+    content:"";position:absolute;left:0;bottom:0;
+    width:1px;height:calc(var(--level2-gap) / 2);background:var(--hw-line);
+  }
+  .connector-francesco::after{
+    content:"";position:absolute;right:0;top:0;
+    width:1px;height:calc(var(--level2-gap) / 2);background:var(--hw-line);
+  }
+  .card-mount{margin-bottom:0;}
+  .branch{display:flex;flex-direction:column;align-items:center;}
+
+  /* Valentina：Francesco 的秘書／行政窗口，非決策鏈成員，虛線側掛，不佔決策鏈直向流 */
+  .francesco-row{display:flex;align-items:center;gap:14px;}
+  .satellite-connector{width:22px;height:0;border-top:1px dashed var(--hw-line);}
+  .card-mount.satellite{--card-w:220px;--front-h:120px;}
+
+  /* ---------- Flip cards ---------- */
+  .flip-card{
+    width:var(--card-w);
+    perspective:1600px;
+    cursor:pointer;
+    outline:none;
+    transition:transform .3s;
+  }
+  .flip-card:hover{transform:translateY(-2px);}
+  .flip-card:focus-visible .flip-front,
+  .flip-card:focus-visible .flip-back{
+    outline:2px solid var(--hw-red);outline-offset:2px;
+  }
+  .flip-card-inner{
+    position:relative;
+    width:100%;
+    height:var(--front-h);           /* 未翻面＝精簡正面高度；翻面時由 JS 撐到背面內容自然高度 */
+    transition:transform .4s, height .4s;
+    transform-style:preserve-3d;
+  }
+  .flip-card.flipped .flip-card-inner{transform:rotateY(180deg);}
+  .flip-front,.flip-back{
+    position:absolute;
+    inset:0;
+    backface-visibility:hidden;
+    border:1px solid var(--hw-line);
+    background:var(--hw-bg);
+    border-radius:0;
+    box-shadow:0 1px 4px rgba(0,0,0,.08);
+  }
+  .flip-front{
+    display:flex;flex-direction:row;align-items:flex-start;
+    text-align:left;gap:12px;
+    padding:16px 16px;
+  }
+  .flip-back{
+    transform:rotateY(180deg);
+    text-align:left;
+    display:flex;flex-direction:column;gap:12px;
+    padding:16px 18px;
+    overflow:hidden;                 /* 翻面時卡片長高到內容高度，不做內部滾動 */
+  }
+  .front-badge{position:absolute;top:12px;right:12px;}
+  .avatar{
+    flex:0 0 48px;
+    width:48px;height:48px;border-radius:50%;
+    background:var(--hw-bg-alt);
+    border:1px solid var(--hw-line);
+    display:flex;align-items:center;justify-content:center;
+    font-size:16px;font-weight:700;color:var(--hw-ink);
+  }
+  .front-main{min-width:0;padding-right:28px;}   /* 避開右上角徽章 */
+  .card-name{font-size:18px;font-weight:700;color:var(--hw-ink);margin:0 0 2px;line-height:1.3;}
+  .card-title{
+    font-size:12px;color:var(--hw-muted);margin:0;line-height:1.5;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  }
+  .front-meta{font-size:12px;color:var(--hw-muted);margin-top:6px;}
+  .front-meta > div{margin:1px 0;}
+
+  .back-name{
+    font-size:14px;font-weight:700;color:var(--hw-ink);
+    border-bottom:1px solid var(--hw-line);padding-bottom:6px;
+  }
+  .flip-hint{position:absolute;right:14px;bottom:12px;font-size:11px;color:var(--hw-faint);}
+
+  .back-block h3{
+    font-size:12px;color:var(--hw-ink);margin:0 0 6px;font-weight:700;
+    border-bottom:1px solid var(--hw-line-soft);padding-bottom:4px;
+    letter-spacing:.3px;
+  }
+  .emph-line{
+    display:block;
+    font-weight:700;color:var(--hw-red);
+    border-left:3px solid var(--hw-red);
+    padding-left:8px;margin-bottom:6px;font-size:13px;font-style:normal;
+  }
+  .activity-row{margin:6px 0;padding-bottom:6px;border-bottom:1px dotted var(--hw-line-soft);}
+  .activity-occasion{font-weight:700;color:var(--hw-ink);display:block;margin-bottom:2px;font-size:13px;}
+  .activity-flow{font-size:12px;}
+  .card-meta{
+    font-size:12px;color:var(--hw-muted);
+    border-top:1px solid var(--hw-line-soft);
+    padding-top:8px;
+  }
+  .card-meta div{margin:2px 0;}
+  .last-verified{
+    font-size:11px;
+    color:var(--hw-faint);
+  }
+  .mark-warning-line{
+    color:var(--hw-red);font-weight:700;font-size:12px;
+  }
+
+  /* ---------- Footer ---------- */
+  footer.page-footer{
+    margin-top:64px;padding-top:20px;border-top:1px solid var(--hw-line);
+    font-size:12px;color:var(--hw-faint);
+  }
+  footer.page-footer .warn-line{
+    color:var(--hw-red);font-weight:700;margin-top:8px;
+  }
+
+  /* ---------- Print ---------- */
+  .print-chain-summary{display:none;}
+  @media print{
+    @page{ size:A4 portrait; margin:16mm 14mm; }
+    body{font-size:11px;}
+    .wrap{max-width:none;padding:0;}
+    .legend-row{border:1px solid #000;background:none;}
+    .print-chain-summary{
+      display:block;font-size:12px;font-weight:700;color:#000;
+      margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #000;
+    }
+    .connector,.node-fok,.bracket-h,.bracket-label,.connector-francesco,.flip-hint,.satellite-connector{display:none !important;}
+    .tree{display:block;}
+    .branch{display:block;}
+    .francesco-row{display:block !important;}
+    .level2-wrap{position:static;padding-top:0;margin-bottom:0;}
+    .level2-row{display:block !important;}
+    .level2-row .card-mount{margin-bottom:16px;}
+    .card-mount{margin-bottom:16px;}
+    .card-mount.satellite{--card-w:auto;--front-h:auto;}
+    .flip-card{width:100%;cursor:default;}
+    .flip-card-inner{
+      height:auto !important;
+      transform:none !important;
+      transform-style:flat;
+      position:static;
+      display:block;
+    }
+    .flip-front,.flip-back{
+      position:static;
+      transform:none !important;
+      backface-visibility:visible;
+      border:1px solid #000;
+      page-break-inside:avoid;
+      break-inside:avoid;
+      display:block;
+      box-shadow:none;
+      overflow:visible;
+      padding:10px 12px;
+    }
+    .flip-front{
+      display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start;
+      text-align:left;gap:12px;position:relative;
+      border-bottom:none;
+    }
+    .front-badge{position:static;margin-left:auto;}
+    .flip-card{margin-bottom:16px;page-break-inside:avoid;break-inside:avoid;display:block;}
+    h1.page-title,.emph-line,.mark-warning-line,footer.page-footer .warn-line{
+      color:#000 !important;font-weight:700 !important;
+    }
+    .badge.d{background:#000 !important;color:#fff !important;border-color:#000 !important;}
+    .badge.i{background:#fff !important;color:#000 !important;border:1.5px solid #000 !important;}
+    .badge.g{background:#fff !important;color:#000 !important;border:1.5px dashed #000 !important;}
+    .emph-line{border-color:#000 !important;}
+    .fld.u{background:#ddd !important;color:#000 !important;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- Header -->
+  <header class="page-header">
+    <h1 class="page-title">H3G · 客戶決策鏈常設檔案</h1>
+    <div class="legend-row">
+      <div class="legend-group">
+        <span class="legend-swatch"><span class="badge d legend-size">D</span> D＝Decision Maker</span>
+        <span class="legend-swatch"><span class="badge i legend-size">I</span> I＝Influencer</span>
+        <span class="legend-swatch"><span class="badge g legend-size">G</span> G＝Gatekeeper</span>
+      </div>
+      <span class="legend-divider"></span>
+      <div class="legend-group">
+        <span style="color:var(--hw-muted);">最後更新：2026-07-29</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="print-chain-summary">Canning Fok → Dennis Lui → [Francesco ｜ Agostino] → Marlene → Mark</div>
+
+  <!-- The integrated decision-chain: org chart made of flip cards -->
+  <div class="tree" role="group" aria-label="H3G 決策鏈">
+
+    <div class="card-mount" id="mount-fok"></div>
+    <div class="connector"></div>
+
+    <div class="card-mount" id="mount-dennis"></div>
+    <div class="connector"></div>
+
+    <div class="level2-wrap">
+      <div class="bracket-h"></div>
+      <span class="bracket-label">同層</span>
+      <div class="level2-row">
+        <div class="card-mount" id="mount-francesco"></div>
+        <div class="card-mount" id="mount-agostino"></div>
+      </div>
+      <div class="connector-francesco"></div>
+    </div>
+
+    <div class="card-mount" id="mount-marlene"></div>
+    <div class="connector"></div>
+
+    <div class="card-mount" id="mount-mark"></div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer">
+    <p>資料來源：《2026年3月和記集團客戶MWC接待策劃報告 V9》· Strategic Key Account Relationship Mapping v1 (15-7-2026) · 27-7-2026 SCQA · 子義 7/10 交接</p>
+    <p class="warn-line">🚫 對內文件。生日／愛好／家庭永不外流，對外一律收斂成 relationship development cadence。</p>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  function esc(s){
+    return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  }
+  // render a single field object {state:'v'|'f'|'u', text, src}
+  function fld(f){
+    if(!f || f.state==='u'){
+      return '<span class="fld u">未知</span>';
+    }
+    if(f.state==='f'){
+      var src = f.src ? '<span class="src">來源：'+esc(f.src)+'</span>' : '';
+      return '<span class="fld f">'+esc(f.text)+'</span>'+src;
+    }
+    return '<span class="fld v">'+esc(f.text)+'</span>';
+  }
+  function row(label, f){
+    return '<div class="field-row">'+(label?'<span class="field-label">'+esc(label)+'：</span>':'')+fld(f)+'</div>';
+  }
+
+  // ---------- data (edit only this array to swap client) ----------
+  var PEOPLE = [
+    {
+      id:"fok",
+      name:"Canning Fok",
+      title:"CK Hutchison 集團副主席",
+      badge:"D",
+      initials:"CF",
+      personal:[
+        {state:"u"}
+      ],
+      huaweiEmphasis:null,
+      huawei:[
+        {state:"v", text:"接觸不到 —— 客戶組織圖最頂端，僅標記匯報終點"},
+        {state:"u"}
+      ],
+      activities:[
+        {occasion:null, stance:{state:"u"}, meaning:{state:"u"}}
+      ],
+      future:{state:"u"},
+      contact:{state:"u"},
+      forum:null,
+      warning:null,
+      lastVerified:"2026-07-29"
+    },
+    {
+      id:"dennis",
+      name:"Dennis Lui",
+      title:"Executive Deputy Chairman, HTHKH · Group MD, Hutchison Asia Telecom",
+      badge:"D",
+      initials:"DL",
+      personal:[
+        {state:"v", text:"75 歲"},
+        {state:"v", text:"1986 年入和記、近 40 年全在集團"},
+        {label:"生日", state:"u"},
+        {label:"婚姻", state:"u"},
+        {label:"子女", state:"u"},
+        {label:"愛好", state:"u"}
+      ],
+      huaweiEmphasis:null,
+      huawei:[
+        {state:"v", text:"長期高度支持，具名戰績："},
+        {state:"v", text:"2025/11 香港 26–29 四年 bundle 議標關閉（無線／核心網／MS／CS 獨家）"},
+        {state:"v", text:"2025 H1 香港議標關閉"},
+        {state:"v", text:"奧地利 IPCORE 議標關閉"},
+        {state:"v", text:"2024 印尼 IOH 無線突破首都、IPCORE 破思科"},
+        {state:"v", text:"2023 Q3 印尼核心網獨家"},
+        {state:"f", text:"策略地圖標 Huawei relationship status＝Medium，與戰績不符", src:"Strategic Key Account Relationship Mapping v1 (15-7-2026)"}
+      ],
+      activities:[
+        {occasion:"2026 年中 程哥會前初見",
+         stance:{state:"v", text:"對生態替代方案評「聽起來還不錯」"},
+         meaning:{state:"v", text:"要求給歐洲團隊試用，觸發緊急樣機需求"}},
+        {occasion:"2025/09", stance:{state:"u"}, meaning:{state:"u"}},
+        {occasion:"2025/03 MWC 巴展座談", stance:{state:"u"}, meaning:{state:"u"}}
+      ],
+      future:{state:"f", text:"2026/08 Kevin × Dennis 高層會議", src:"日期待核，聽到的版本是 11–13 號"},
+      contact:{state:"v", text:"He Gang (Kevin)"},
+      forum:{state:"v", text:"Executive Committee（2–3／年）"},
+      warning:null,
+      lastVerified:"2026-07-29"
+    },
+    {
+      id:"francesco",
+      name:"Francesco Zampini",
+      title:"Global Director of Digital Consumer Product & Service, CKH-IOD",
+      badge:"D",
+      initials:"FZ",
+      personal:[
+        {label:"生日", state:"v", text:"10/15"},
+        {state:"v", text:"2008–2017 Accenture 高管、2017/7 入 IOD、約 9 年"},
+        {label:"婚姻", state:"u"},
+        {label:"子女", state:"u"},
+        {label:"愛好", state:"u"}
+      ],
+      huaweiEmphasis:{state:"v", text:"guarded：受制於和記高層對合規問題的擔憂，合作態度謹慎"},
+      huawei:[
+        {state:"v", text:"恢復 XG 合作上積極協助推動內部匯報"},
+        {state:"v", text:"Smartphones／Devices／Procurement 策略所有權＋最終簽核 —— 選不選華為他說了算"}
+      ],
+      activities:[
+        {occasion:"2025/11 攜歐洲子網 CEO 訪深圳總部", stance:{state:"u"}, meaning:{state:"u"}},
+        {occasion:"2025/10 攜集團高層訪深圳總部", stance:{state:"u"}, meaning:{state:"u"}},
+        {occasion:"2025/09 巴黎發布會與榮濤總交流", stance:{state:"u"}, meaning:{state:"u"}}
+      ],
+      future:{state:"u"},
+      contact:{state:"v", text:"程哥（丁程）"},
+      forum:{state:"v", text:"Commercial / Procurement Board（1–2／月）"},
+      warning:null,
+      lastVerified:"2026-07-29"
+    },
+    {
+      id:"agostino",
+      name:"Agostino Ruberto",
+      title:"Global Technical Director, CKH-IOD",
+      badge:"D",
+      initials:"AR",
+      personal:[
+        {state:"v", text:"2001 入和記意大利、2017 轉 IOD 任 CTO"},
+        {label:"年資", state:"f", text:"文件寫「近 15 年」，依 2001 年入職應近 25 年，兩數字對不上", src:"個人履歷文件，待口頭確認"},
+        {label:"生日", state:"u"},
+        {label:"婚姻", state:"u"},
+        {label:"子女", state:"u"},
+        {label:"愛好", state:"u"}
+      ],
+      huaweiEmphasis:null,
+      huawei:[
+        {state:"v", text:"支持，認可華為技術與解決方案能力"},
+        {state:"v", text:"持一票否決權"},
+        {state:"v", text:"管供應商測試、集團自測流程、芯片廠商溝通、新技術落地"}
+      ],
+      activities:[
+        {occasion:"2026/07 子義赴意送樣機對象", stance:{state:"u"}, meaning:{state:"u"}},
+        {occasion:"2025/10 訪深圳總部", stance:{state:"u"}, meaning:{state:"u"}},
+        {occasion:"2025/06 與曾黎總交流", stance:{state:"v", text:"確定回復 XG 合作"}, meaning:{state:"u"}}
+      ],
+      future:{state:"u"},
+      contact:{state:"f", text:"程哥（丁程）", src:"本次裁定；5T glossary 寫 Selina，兩文件衝突待當面確認"},
+      forum:{state:"v", text:"Technology Board（1–2／月）"},
+      warning:null,
+      lastVerified:"2026-07-29"
+    },
+    {
+      id:"marlene",
+      name:"Marlene Fantini",
+      title:"Head of Devices and Hardware Portfolio, CKH-IOD",
+      badge:"I",
+      initials:"MF",
+      personal:[
+        {label:"生日", state:"v", text:"1/19"},
+        {state:"v", text:"2001 入意大利和記、2010–2017 WINDTRE 終端主管、2018 入 IOD"},
+        {label:"婚姻", state:"u"},
+        {label:"子女", state:"u"},
+        {label:"愛好", state:"u"}
+      ],
+      huaweiEmphasis:null,
+      huawei:[
+        {state:"v", text:"支持，關係穩固"},
+        {state:"v", text:"關注 pricing 與 committed volume"},
+        {label:"當前量能承諾態度", state:"u"},
+        {state:"f", text:"2026-06-16 與程哥談漲價後新報價，回饋至今未回——是未知，不是支持", src:"2026-06-16 程哥會面紀錄"}
+      ],
+      activities:[
+        {occasion:"2025/10 訪深圳總部", stance:{state:"u"}, meaning:{state:"u"}},
+        {occasion:"2025/09 巴黎發布會", stance:{state:"u"}, meaning:{state:"u"}},
+        {occasion:"2025/06 與曾黎總交流", stance:{state:"v", text:"確定回復 XG 合作"}, meaning:{state:"u"}}
+      ],
+      future:{state:"v", text:"等待量能承諾回饋"},
+      contact:{state:"v", text:"程哥（丁程）"},
+      forum:null,
+      warning:null,
+      lastVerified:"2026-07-29"
+    },
+    {
+      id:"mark",
+      name:"Mark Williams",
+      title:"未知",
+      badge:"I",
+      initials:"MW",
+      personal:[
+        {state:"u"}
+      ],
+      huaweiEmphasis:null,
+      huawei:[
+        {state:"u"}
+      ],
+      activities:[
+        {occasion:null, stance:{state:"u"}, meaning:{state:"u"}}
+      ],
+      future:{state:"u"},
+      contact:{state:"u"},
+      forum:null,
+      warning:"⚠ 全份資料最薄的一張，8/3 前必補（需 Selina 一場對話）",
+      lastVerified:"2026-07-29"
+    }
+  ];
+
+  // ---------- render ----------
+  function renderPersonal(list){
+    return list.map(function(f){
+      return row(f.label, f);
+    }).join("");
+  }
+
+  function renderHuawei(person){
+    var out = "";
+    if(person.huaweiEmphasis){
+      out += '<span class="emph-line">'+fld(person.huaweiEmphasis)+'</span>';
+    }
+    out += person.huawei.map(function(f){
+      return row(f.label, f);
+    }).join("");
+    return out;
+  }
+
+  function renderActivities(list){
+    return list.map(function(a){
+      var occ = a.occasion ? esc(a.occasion) : '<span class="fld u">未知</span>';
+      return '<div class="activity-row">'+
+        '<span class="activity-occasion">'+occ+'</span>'+
+        '<div class="activity-flow">立場：'+fld(a.stance)+' → 含義：'+fld(a.meaning)+'</div>'+
+      '</div>';
+    }).join("");
+  }
+
+  function renderCard(person){
+    var badgeClass = person.badge === "D" ? "d" : "i";
+    var frontMeta = '<div class="front-meta">'+
+      '<div>對接人：'+fld(person.contact)+'</div>'+
+    '</div>';
+    var metaLine = '<div>華為對接人：'+fld(person.contact)+'</div>';
+    if(person.forum){
+      metaLine += '<div>主持論壇：'+fld(person.forum)+'</div>';
+    }
+    var warningBlock = person.warning ? '<div class="mark-warning-line">'+esc(person.warning)+'</div>' : '';
+
+    return (
+      '<div class="flip-card" tabindex="0" role="button" aria-pressed="false" data-id="'+person.id+'">'+
+        '<div class="flip-card-inner">'+
+          '<div class="flip-front">'+
+            '<!-- 待換官方 IR/新聞稿照片；不可用社群頭像（GDPR） -->'+
+            '<div class="avatar">'+esc(person.initials)+'</div>'+
+            '<div class="front-main">'+
+              '<p class="card-name">'+esc(person.name)+'</p>'+
+              '<p class="card-title">'+esc(person.title)+'</p>'+
+              frontMeta+
+            '</div>'+
+            '<span class="badge '+badgeClass+' front-badge">'+person.badge+'</span>'+
+            '<span class="flip-hint">翻面 ↻</span>'+
+          '</div>'+
+          '<div class="flip-back">'+
+            '<div class="back-name">'+esc(person.name)+' <span class="badge '+badgeClass+' legend-size">'+person.badge+'</span></div>'+
+            '<div class="back-block"><h3>① 個人</h3>'+renderPersonal(person.personal)+'</div>'+
+            '<div class="back-block"><h3>② 對華為</h3>'+renderHuawei(person)+'</div>'+
+            '<div class="back-block"><h3>③ 近三場活動</h3>'+renderActivities(person.activities)+'</div>'+
+            '<div class="back-block"><h3>④ 未來</h3><div class="field-row">'+fld(person.future)+'</div></div>'+
+            (warningBlock ? '<div class="back-block">'+warningBlock+'</div>' : '')+
+            '<div class="card-meta">'+metaLine+'<div class="last-verified">last_verified：'+esc(person.lastVerified)+'</div></div>'+
+          '</div>'+
+        '</div>'+
+      '</div>'
+    );
+  }
+
+  function init(){
+    PEOPLE.forEach(function(person){
+      var mount = document.getElementById("mount-"+person.id);
+      if(mount){ mount.innerHTML = renderCard(person); }
+    });
+
+    document.querySelectorAll(".flip-card").forEach(function(card){
+      var inner = card.querySelector(".flip-card-inner");
+      var back  = card.querySelector(".flip-back");
+      function toggle(){
+        var flipped = card.classList.toggle("flipped");
+        card.setAttribute("aria-pressed", flipped ? "true" : "false");
+        // 翻面時卡片長高到背面內容的自然高度；翻回時收回正面高度
+        inner.style.height = flipped ? Math.max(back.scrollHeight + 2, 200) + "px" : "";
+      }
+      card.addEventListener("click", toggle);
+      card.addEventListener("keydown", function(e){
+        if(e.key === "Enter" || e.key === " " || e.key === "Spacebar"){
+          e.preventDefault();
+          toggle();
+        }
+      });
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", init);
+})();
+</script>
+</body>
+</html>

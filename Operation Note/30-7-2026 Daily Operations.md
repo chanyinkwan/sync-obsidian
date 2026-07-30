@@ -1,28 +1,37 @@
 ---
 type: daily
-date: 2026-07-23
+date: 2026-07-30
 hub: "[[Life @Huawei System]]"
 tags:
   - daily
 ---
-# 23-7-2026 Daily Operations
+# 30-7-2026 Daily Operations
 > **`$= (()=>{const s=dv.luxon.DateTime.fromISO("2026-06-08");let d=dv.current().date||dv.current().file.day;if(!d)return"Day ?";let c=0,t=s;while(t<=d){if(t.weekday<=5)c++;t=t.plus({days:1});}return"Day "+c;})()`** · Hub: [[Life @Huawei System]]
 
 ### Today's linked tasks
 <!-- daily-plan:start -->
 #### ⚔️ Work (防守) — max 5
-- [x] [[standardized recurring task - gathering clients' news]]
+**🎯 3-8 SCQA 交付包（母任務 [[3-8-2026 SCQA Prep]] · 硬期限 08-03 週一）**
+- [ ] [[SCQA O6 - H3G Stakeholder Brief Pack]] ↪1
+- [ ] [[SCQA O7 - Portfolio Battlecard and Comparison Tool]] ↪1
 - [ ] [[Amazon Handover]]
-- [ ] [[27-7-2026 SCQA Prep]] ↪1
-- [ ] [[Industry Analysis resources scraping from Huawei Internal Website]]↪1
-- [x] Compare menu to figure out which one is closer to the last menu
 
+**📦 GTM / 樣機管理**
+
+- [ ] [[Samples Application Management]]
+make my life better：
+- [ ] [[Operation Note/Sample Enquires Management]]
+- [ ] 
 #### 🚀 Hub (進攻) — max 5
-- [x] [[SA 04 - AWS SAA Study & Exam]] 🔁 60m
-- [x] [[SAA - Daily Session Processing]] 🔁 10m
+**☁️ AWS SAA 學習迴路（[[SA Presales Transition]]）**
+- [ ] [[SA 04 - AWS SAA Study & Exam]] 🔁
+- [ ] [[SAA - Daily Session Processing]] 🔁
+
+**🗣️ SA 話術操練（同專案 overlay · 本週期最後一天 07-31）**
+- [ ] [[SA 06 - Persona-Based Script Reps]] 🔁
 
 > ⏳ Preserve ≥20% strategic blank space.
-> 📥 24 open tasks remain in TaskNotes Kanban / Agenda.
+> 📥 19 個未完成任務留在 TaskNotes Kanban / Agenda。
 <!-- daily-plan:end -->
 
 ---

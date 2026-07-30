@@ -11,7 +11,7 @@ tags:
 ### Today's linked tasks
 <!-- daily-plan:start -->
 #### ⚔️ Work (防守) — max 5
-- [x] [[Amazon Handover Meeting]] ↪1
+- [x] [[Amazon Handover]] ↪1
 - [ ] [[27-7-2026 SCQA Prep]]
 - [ ] [[Friday Download Transcript__raw__20260724-110433]]
 #### 🚀 Hub (進攻) — max 5
@@ -29,7 +29,7 @@ tags:
 ---
 ### What actually happened today
 - 執行 /plan-daily-ops，產出當日任務計畫
-- [[Amazon Handover Meeting]] — 整理逐字稿、Fable 覆核、Sonnet 修正、套用 5T 詞彙表增量
+- [[Amazon Handover]] — 整理逐字稿、Fable 覆核、Sonnet 修正、套用 5T 詞彙表增量
 - [[24-7-2026 Friday Download - Transcript]] — 整理逐字稿，回補 20-7 Monday Download 逐字稿，排查 Raw 備份遺失
 - 回答 sample application form（GTM/MKT）相關快速提問
 - 設計並建構 AWS request authorization canvas（brainstorm、spec、plan、backbone、STS/Principal 對應）
@@ -41,7 +41,7 @@ Scoping 範疇 / Pricing 定價 / Deal Governance 交易治理?
 ### How is your time allocated today?
 無 Pomodoro 或使用者陳述時長證據，故無計時總計。
 
-- work / admin · untimed — [[Amazon Handover Meeting]] 逐字稿整理與詞彙表更新
+- work / admin · untimed — [[Amazon Handover]] 逐字稿整理與詞彙表更新
 - work / admin · untimed — [[24-7-2026 Friday Download - Transcript]] 逐字稿整理與回補
 - work / admin · untimed — sample application form 提問
 - hub / admin · untimed — /plan-daily-ops 當日計畫

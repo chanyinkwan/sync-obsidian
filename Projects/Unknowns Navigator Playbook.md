@@ -1,6 +1,6 @@
 ---
 type: project
-status: active
+status: living
 owner: me
 stakeholders:
 domain: Career Hub / Methodology

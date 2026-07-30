@@ -1,10 +1,11 @@
 ---
 type: project
-status: active
+status: done
 owner: me
-stakeholders: ["[[Ziyi Zhang 84434577]]"]
+stakeholders:
+  - "[[Ziyi Zhang 84434577]]"
 domain: FWA / MBB
-due: 2026-06-18
+due: 2026-07-01
 tags:
   - project
 ---

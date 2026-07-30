@@ -741,6 +741,18 @@
       "requestedAt": 1785144563354,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/Samples Application Management.md",
+      "requestedAt": 1785416406470,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Operation Note/Sample Enquires Management.md",
+      "requestedAt": 1785421499681,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {

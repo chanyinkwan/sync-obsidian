@@ -18,7 +18,7 @@ tags:
 - [x] [[27-7-2026 SCQA Transcript]]
 - [x] [[27-7-2026 July SCQA Reflection]]
 - [x] [[3-8-2026 SCQA Prep]]finalising output
-- [x] [[Amazon Handover Meeting]]tidying script
+- [x] [[Amazon Handover]]tidying script
 - [ ] reflection over current work flow -> post meeting understanding -> no immediate questioning
 - [ ] 1. **`[ASSOCIATESHARED] EC2 Instance Roles & Profile`**
     

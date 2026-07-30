@@ -1,8 +1,9 @@
 ---
 type: project
-status: active
+status: living
 owner: me
-stakeholders: ["[[Manager]]"]
+stakeholders:
+  - "[[Manager]]"
 domain: Career Development @Huawei (SCQA alignment + skill building)
 due:
 tags:
