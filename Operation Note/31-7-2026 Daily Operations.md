@@ -17,6 +17,9 @@ tags:
 **📦 GTM / 樣機管理**
 - [ ] [[Samples Application Management]] ↪1
 - [ ] [[Operation Note/Sample Enquires Management]] ↪1
+- [ ] GTM mastery done
+- [ ] note: for applying samples prioritise finding head quarters GTM Team, even if they are not responsible for that product, they would know who is responsible for that
+- [ ] morning meeting assigned till Sept 30
 
 #### 🚀 Hub (進攻) — max 5
 **☁️ AWS SAA 學習迴路([[SA Presales Transition]])**
@@ -49,3 +52,5 @@ Scoping 範疇 / Pricing 定價 / Deal Governance 交易治理?
 
 ### What is your take away from today's work (What to sync?)
 
+
+---

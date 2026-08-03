@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>H3G 客戶決策鏈人物檔案</title>
+  <style>
+    :root {
+      --huawei-red: #e9002f;
+      --navy: #1a2746;
+      --blue: #0070c0;
+      --teal: #34b29d;
+      --pale-blue: #e4efff;
+      --pale-grey: #f2f2f2;
+      --mid-grey: #d9d9d9;
+      --line: #ccd4df;
+      --ink: #1d1d1a;
+      --muted: #626b78;
+      --paper: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+    html { color-scheme: light; }
+    body {
+      min-width: 320px;
+      min-height: 100vh;
+      margin: 0;
+      color: var(--ink);
+      background: var(--pale-grey);
+      font-family: Arial, "Microsoft YaHei", "微軟正黑體", sans-serif;
+    }
+    button { font: inherit; }
+
+    .masthead {
+      position: relative;
+      z-index: 3;
+      background: var(--paper);
+      border-top: 6px solid var(--huawei-red);
+      border-bottom: 1px solid var(--mid-grey);
+    }
+    .masthead-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      max-width: 1800px;
+      min-height: 88px;
+      margin: 0 auto;
+      padding: 15px clamp(22px, 3vw, 52px);
+    }
+    .brand-lockup { display: flex; align-items: center; gap: 17px; min-width: 0; }
+    .brand-mark {
+      display: grid;
+      flex: 0 0 auto;
+      width: 50px;
+      height: 50px;
+      place-items: center;
+      color: var(--paper);
+      background: var(--huawei-red);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .04em;
+    }
+    .eyebrow {
+      margin: 0 0 4px;
+      color: var(--huawei-red);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .11em;
+    }
+    h1 { margin: 0; color: var(--navy); font-size: clamp(21px, 2vw, 29px); line-height: 1.15; }
+    .document-meta { flex: 0 0 auto; text-align: right; }
+    .document-meta strong { display: block; color: var(--navy); font-size: 13px; }
+    .document-meta span { color: var(--muted); font-size: 11px; }
+
+    .confidential {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 34px;
+      margin: 0;
+      padding: 7px 24px;
+      color: #5c1723;
+      background: #fff3f5;
+      border-bottom: 1px solid #f2c9d1;
+      font-size: 11px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .confidential::before {
+      padding: 3px 7px;
+      color: #fff;
+      background: var(--huawei-red);
+      content: "內部";
+      letter-spacing: .08em;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 430px;
+      max-width: 1800px;
+      min-height: calc(100vh - 128px);
+      margin: 0 auto;
+      background: var(--paper);
+    }
+    .chart-panel { min-width: 0; padding: 30px clamp(20px, 3vw, 46px) 42px; background: #fafafa; }
+    .section-heading {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 19px;
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--navy);
+    }
+    .section-heading h2 { margin: 0; color: var(--navy); font-size: 21px; }
+    .section-heading p { max-width: 690px; margin: 6px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
+    .scope {
+      flex: 0 0 auto;
+      padding-left: 12px;
+      color: var(--navy);
+      border-left: 4px solid var(--huawei-red);
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.45;
+      text-align: right;
+    }
+
+    .chart-scroll {
+      min-height: 650px;
+      overflow-x: auto;
+      padding: 18px 20px 22px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+    }
+    .org-chart {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, 192px);
+      column-gap: 56px;
+      width: 936px;
+      min-height: 608px;
+      margin: 0 auto;
+    }
+    .connectors {
+      position: absolute;
+      z-index: 0;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      pointer-events: none;
+    }
+    .connector {
+      fill: none;
+      stroke: var(--navy);
+      stroke-width: 2;
+      vector-effect: non-scaling-stroke;
+    }
+    .connector.secondary { stroke: var(--blue); stroke-dasharray: 6 5; }
+    .connector.support { stroke: var(--teal); stroke-dasharray: 3 4; }
+    .stage {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-rows: 33px 1fr;
+      min-height: 608px;
+    }
+    .stage-label {
+      align-self: start;
+      padding: 6px 8px;
+      color: var(--paper);
+      background: var(--navy);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-align: center;
+    }
+    .node-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 14px;
+      padding: 14px 0;
+    }
+    .person-node {
+      position: relative;
+      display: grid;
+      grid-template-columns: 52px minmax(0, 1fr);
+      gap: 11px;
+      align-items: center;
+      width: 192px;
+      min-height: 98px;
+      padding: 12px 11px;
+      overflow: hidden;
+      color: var(--ink);
+      background: var(--paper);
+      border: 1px solid #bfc8d4;
+      border-left: 4px solid var(--blue);
+      border-radius: 2px;
+      box-shadow: 0 3px 8px rgba(26, 39, 70, .08);
+      cursor: pointer;
+      text-align: left;
+      transition: border-color 140ms ease, background-color 140ms ease, box-shadow 140ms ease;
+    }
+    .person-node:hover { border-color: var(--huawei-red); box-shadow: 0 4px 12px rgba(26, 39, 70, .14); }
+    .person-node[aria-pressed="true"] {
+      color: var(--paper);
+      background: var(--navy);
+      border-color: var(--navy);
+      border-left-color: var(--huawei-red);
+      box-shadow: 0 0 0 2px rgba(233, 0, 47, .18);
+    }
+    .person-node[data-influence="primary"] {
+      border-left-color: var(--huawei-red);
+      box-shadow: 0 3px 10px rgba(233, 0, 47, .12);
+    }
+    .person-node[data-influence="secondary"] { background: #f7fbff; }
+    .person-node[data-org-role="secretary"] {
+      background: #f5fbfa;
+      border-left-color: var(--teal);
+    }
+    .person-node:focus-visible { outline: 3px solid #ffc000; outline-offset: 3px; }
+    .avatar {
+      display: grid;
+      width: 52px;
+      height: 52px;
+      place-items: center;
+      overflow: hidden;
+      color: var(--navy);
+      background: var(--pale-blue);
+      border: 1px solid #9cb5d2;
+      border-radius: 50%;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .node-copy { min-width: 0; }
+    .node-name { display: block; overflow: hidden; font-size: 13px; font-weight: 700; line-height: 1.2; text-overflow: ellipsis; white-space: nowrap; }
+    .node-tier { display: inline-block; margin-top: 5px; padding: 2px 5px; color: #005b9d; background: var(--pale-blue); font-size: 9px; font-weight: 700; }
+    .node-role { display: -webkit-box; margin-top: 5px; overflow: hidden; color: var(--muted); font-size: 10px; line-height: 1.3; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+    .person-node[aria-pressed="true"] .node-tier { color: var(--navy); background: #fff; }
+    .person-node[aria-pressed="true"] .node-role { color: #dfe6f0; }
+    .chart-legend { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 13px; color: var(--muted); font-size: 11px; }
+    .legend-item { display: inline-flex; align-items: center; gap: 7px; }
+    .legend-line { width: 27px; border-top: 2px solid var(--navy); }
+    .legend-line.secondary { border-top-color: var(--blue); border-top-style: dashed; }
+
+    .drawer {
+      min-width: 0;
+      padding: 28px 30px 36px;
+      overflow-y: auto;
+      background: var(--paper);
+      border-left: 1px solid var(--mid-grey);
+      box-shadow: -6px 0 18px rgba(26, 39, 70, .05);
+    }
+    .drawer-kicker { margin: 0 0 14px; color: var(--huawei-red); font-size: 11px; font-weight: 700; letter-spacing: .12em; }
+    .profile-head {
+      display: grid;
+      grid-template-columns: 68px minmax(0, 1fr);
+      gap: 15px;
+      align-items: center;
+      padding-bottom: 18px;
+      border-bottom: 2px solid var(--navy);
+    }
+    .drawer-avatar { width: 68px; height: 68px; }
+    .drawer h2 { margin: 0; color: var(--navy); font-size: 25px; line-height: 1.12; }
+    .drawer-role { margin: 6px 0 0; color: var(--muted); font-size: 12px; line-height: 1.4; }
+    .responsibility { margin: 14px 0 0; font-size: 13px; line-height: 1.55; }
+    .priority-block {
+      margin: 18px 0;
+      padding: 14px 16px;
+      background: var(--pale-blue);
+      border-left: 4px solid var(--huawei-red);
+    }
+    .priority-block strong, .content-section h3 { display: block; margin: 0 0 6px; color: var(--navy); font-size: 11px; letter-spacing: .06em; }
+    .priority-block p { margin: 0; font-size: 13px; line-height: 1.5; }
+    .details { display: grid; margin: 0; border-top: 1px solid var(--line); }
+    .detail-row { display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 12px; padding: 9px 0; border-bottom: 1px solid #e5e8ed; }
+    .detail-row dt { color: var(--navy); font-size: 10px; font-weight: 700; }
+    .detail-row dd { margin: 0; overflow-wrap: anywhere; font-size: 12px; line-height: 1.45; }
+    .content-section { margin-top: 20px; }
+    .content-section h3 { padding-bottom: 7px; border-bottom: 2px solid var(--navy); }
+    .compact-list { margin: 0; padding-left: 18px; font-size: 12px; line-height: 1.5; }
+    .compact-list li + li { margin-top: 4px; }
+    .empty { color: #7b8490; font-style: italic; }
+    .verified { margin: 22px 0 0; color: var(--muted); font-size: 10px; text-align: right; }
+
+    @media (max-width: 1120px) {
+      main { grid-template-columns: 1fr; }
+      .drawer { border-top: 1px solid var(--mid-grey); border-left: 0; box-shadow: 0 -6px 18px rgba(26, 39, 70, .04); }
+    }
+    @media (max-width: 640px) {
+      .masthead-inner { align-items: flex-start; }
+      .document-meta { display: none; }
+      .brand-mark { width: 42px; height: 42px; }
+      .chart-panel { padding: 24px 12px 32px; }
+      .section-heading { align-items: flex-start; flex-direction: column; }
+      .scope { text-align: left; }
+      .chart-scroll { padding-inline: 12px; }
+      .drawer { padding: 25px 20px 32px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="brand-lockup">
+        <div class="brand-mark" aria-hidden="true">H3G</div>
+        <div>
+          <p class="eyebrow">客戶關係管理｜H3G</p>
+          <h1>客戶決策鏈人物檔案</h1>
+        </div>
+      </div>
+      <div class="document-meta">
+        <strong>關係情報工作稿</strong>
+        <span>更新日期：2026-08-03　｜　密級：內部</span>
+      </div>
+    </div>
+  </header>
+  <p class="confidential">婚姻、家庭、飲食及興趣資料不得對外分享；對外只可轉化為關係維繫節奏。</p>
+
+  <main>
+    <section class="chart-panel" aria-labelledby="chart-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="chart-title">H3G 橫向組織關係圖</h2>
+          <p>點選人物可在右側查看完整檔案。組織圖保持固定，不會因切換人物而翻轉或改變卡片尺寸。</p>
+        </div>
+        <div class="scope">8 位客戶<br>+ 1 位集團錨點</div>
+      </div>
+
+      <div class="chart-scroll" tabindex="0" aria-label="可橫向捲動的組織關係圖">
+        <div class="org-chart" id="org-chart">
+          <svg class="connectors" id="connectors" aria-hidden="true"></svg>
+        </div>
+      </div>
+      <div class="chart-legend" aria-label="關係線圖例">
+        <span class="legend-item"><span class="legend-line"></span>主要匯報／管理關係</span>
+        <span class="legend-item"><span class="legend-line secondary"></span>部分職能匯報／關係待核實</span>
+        <span class="legend-item"><span class="legend-line support" style="border-top-color: var(--teal); border-top-style: dotted;"></span>秘書／協調支援關係</span>
+      </div>
+    </section>
+
+    <aside class="drawer" id="profile-drawer" aria-labelledby="drawer-name" aria-live="polite">
+      <p class="drawer-kicker">人物檔案</p>
+      <div id="drawer-content"></div>
+    </aside>
+  </main>
+
+  <script src="stakeholder-data.js"></script>
+  <script>
+    (() => {
+      "use strict";
+
+      const people = Array.isArray(window.STAKEHOLDERS) ? window.STAKEHOLDERS : [];
+      const byId = new Map(people.map(person => [person.id, person]));
+      const stages = [
+        { label: "集團治理", ids: ["fok"] },
+        { label: "業務單元決策層", ids: ["dennis", "francesco", "joe"] },
+        { label: "專業主管／支援", ids: ["marlene", "agostino", "valentina"] },
+        { label: "品類執行", ids: ["mark", "manjit"] }
+      ];
+      const orgMeta = {
+        dennis: { tag: "電訊業務決策" },
+        francesco: { influence: "primary", tag: "IOD 主要影響" },
+        joe: { influence: "secondary", tag: "IOD 專業範圍" },
+        valentina: { role: "secretary", tag: "秘書／協調窗口" }
+      };
+      const relationships = [
+        ["fok", "dennis", "primary"],
+        ["fok", "francesco", "primary"],
+        ["fok", "joe", "secondary"],
+        ["francesco", "marlene", "primary"],
+        ["francesco", "agostino", "primary"],
+        ["francesco", "valentina", "support"],
+        ["marlene", "mark", "primary"],
+        ["francesco", "manjit", "primary"]
+      ];
+      const rows = [
+        ["匯報線", "reportsTo"],
+        ["互動偏好", "meetingStyle"],
+        ["對華為態度", "attitude"],
+        ["和記年資", "tenure"],
+        ["生日", "birthday"],
+        ["婚姻狀況", "maritalStatus"],
+        ["家庭狀況", "family"],
+        ["飲食偏好", "foodPreferences"],
+        ["興趣愛好", "interests"],
+        ["華為側對接人", "huaweiContact"]
+      ];
+
+      const display = value => {
+        if (Array.isArray(value)) return value.length ? value.join("、") : "未提供";
+        return value === undefined || value === null || value === "" ? "未提供" : String(value);
+      };
+      const initials = person => person.initials || display(person.name).split(/\s+/).map(part => part[0]).slice(0, 2).join("").toUpperCase();
+
+      function makeAvatar(person, className = "") {
+        const avatar = document.createElement("span");
+        avatar.className = `avatar ${className}`.trim();
+        if (person.photo) {
+          const img = document.createElement("img");
+          img.src = person.photo;
+          img.alt = "";
+          img.addEventListener("error", () => { avatar.replaceChildren(document.createTextNode(initials(person))); });
+          avatar.append(img);
+        } else {
+          avatar.textContent = initials(person);
+        }
+        return avatar;
+      }
+
+      function createNode(person) {
+        const meta = orgMeta[person.id] || {};
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "person-node";
+        button.dataset.personId = person.id;
+        if (meta.influence) button.dataset.influence = meta.influence;
+        if (meta.role) button.dataset.orgRole = meta.role;
+        button.setAttribute("aria-pressed", "false");
+        button.setAttribute("aria-controls", "profile-drawer");
+        const copy = document.createElement("span");
+        copy.className = "node-copy";
+        const name = document.createElement("span");
+        name.className = "node-name";
+        name.textContent = person.name;
+        const tier = document.createElement("span");
+        tier.className = "node-tier";
+        tier.textContent = meta.tag || person.tier || "客戶";
+        const role = document.createElement("span");
+        role.className = "node-role";
+        role.textContent = display(person.responsibility);
+        copy.append(name, tier, role);
+        button.append(makeAvatar(person), copy);
+        button.addEventListener("click", () => selectPerson(person.id));
+        return button;
+      }
+
+      const chart = document.getElementById("org-chart");
+      stages.forEach(stageData => {
+        const stage = document.createElement("section");
+        stage.className = "stage";
+        stage.setAttribute("aria-label", stageData.label);
+        const label = document.createElement("div");
+        label.className = "stage-label";
+        label.textContent = stageData.label;
+        const group = document.createElement("div");
+        group.className = "node-group";
+        stageData.ids.forEach(id => {
+          const person = byId.get(id);
+          if (person) group.append(createNode(person));
+        });
+        stage.append(label, group);
+        chart.append(stage);
+      });
+
+      function drawConnections() {
+        const svg = document.getElementById("connectors");
+        const chartRect = chart.getBoundingClientRect();
+        svg.setAttribute("viewBox", `0 0 ${chartRect.width} ${chartRect.height}`);
+        svg.replaceChildren();
+        relationships.forEach(([fromId, toId, type]) => {
+          const from = chart.querySelector(`[data-person-id="${fromId}"]`);
+          const to = chart.querySelector(`[data-person-id="${toId}"]`);
+          if (!from || !to) return;
+          const a = from.getBoundingClientRect();
+          const b = to.getBoundingClientRect();
+          const x1 = a.right - chartRect.left;
+          const y1 = a.top + a.height / 2 - chartRect.top;
+          const x2 = b.left - chartRect.left;
+          const y2 = b.top + b.height / 2 - chartRect.top;
+          const mid = x1 + (x2 - x1) / 2;
+          const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+          path.setAttribute("d", `M ${x1} ${y1} H ${mid} V ${y2} H ${x2}`);
+          path.dataset.from = fromId;
+          path.dataset.to = toId;
+          path.dataset.type = type;
+          path.setAttribute("class", `connector ${type === "secondary" ? "secondary" : type === "support" ? "support" : ""}`);
+          svg.append(path);
+        });
+      }
+
+      function appendValue(container, value) {
+        if (Array.isArray(value) && value.length) {
+          const list = document.createElement("ul");
+          list.className = "compact-list";
+          value.forEach(item => {
+            const li = document.createElement("li");
+            li.textContent = item;
+            list.append(li);
+          });
+          container.append(list);
+          return;
+        }
+        const text = document.createElement("span");
+        text.textContent = display(value);
+        if (!value || (Array.isArray(value) && !value.length)) text.className = "empty";
+        container.append(text);
+      }
+
+      function selectPerson(id) {
+        const person = byId.get(id);
+        if (!person) return;
+        chart.querySelectorAll(".person-node").forEach(node => node.setAttribute("aria-pressed", String(node.dataset.personId === id)));
+        const content = document.getElementById("drawer-content");
+        content.replaceChildren();
+
+        const head = document.createElement("div");
+        head.className = "profile-head";
+        const headCopy = document.createElement("div");
+        const name = document.createElement("h2");
+        name.id = "drawer-name";
+        name.textContent = person.name;
+        const role = document.createElement("p");
+        role.className = "drawer-role";
+        role.textContent = display(person.title);
+        headCopy.append(name, role);
+        head.append(makeAvatar(person, "drawer-avatar"), headCopy);
+        content.append(head);
+
+        const responsibility = document.createElement("p");
+        responsibility.className = "responsibility";
+        responsibility.textContent = display(person.responsibility);
+        content.append(responsibility);
+
+        const priority = document.createElement("div");
+        priority.className = "priority-block";
+        const priorityLabel = document.createElement("strong");
+        priorityLabel.textContent = "關切議題";
+        const priorityText = document.createElement("p");
+        priorityText.textContent = display(person.keyConcerns);
+        if (!person.keyConcerns) priorityText.className = "empty";
+        priority.append(priorityLabel, priorityText);
+        content.append(priority);
+
+        const details = document.createElement("dl");
+        details.className = "details";
+        rows.forEach(([label, field]) => {
+          const row = document.createElement("div");
+          row.className = "detail-row";
+          const term = document.createElement("dt");
+          term.textContent = label;
+          const description = document.createElement("dd");
+          appendValue(description, person[field]);
+          row.append(term, description);
+          details.append(row);
+        });
+        content.append(details);
+
+        [["對上三次會面", person.recentMeetings], ["職歷摘要", person.career]].forEach(([label, value]) => {
+          const section = document.createElement("section");
+          section.className = "content-section";
+          const heading = document.createElement("h3");
+          heading.textContent = label;
+          section.append(heading);
+          appendValue(section, value);
+          content.append(section);
+        });
+
+        const verified = document.createElement("p");
+        verified.className = "verified";
+        verified.textContent = `最後核實：${display(person.lastVerified)}`;
+        content.append(verified);
+      }
+
+      const observer = new ResizeObserver(drawConnections);
+      observer.observe(chart);
+      window.addEventListener("load", drawConnections, { once: true });
+      selectPerson("francesco");
+      requestAnimationFrame(drawConnections);
+    })();
+  </script>
+</body>
+</html>

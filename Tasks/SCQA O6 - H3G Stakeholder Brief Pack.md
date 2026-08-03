@@ -99,6 +99,56 @@ dateModified: 2026-07-29T21:06:07.856+01:00
 
 ---
 
+## 📋 簡化人物檔案表（8 words/cell 上限 · HTML 資料源 · 2026-07-31）
+
+來源：`27-7-2026 SCQA 客戶人物檔案（Tier A-B 精簡單表版＋官方英文職稱 2026-07-27）.docx`（桌面）。
+
+> **例外**：「Official English Title」是專有名詞，不可壓縮，原文照登；其餘每格 ≤8 字/詞。
+> **範圍**：只收 O6 決策鏈 8 人（Fok／Dennis／Francesco／Agostino／Marlene／Mark／Manjit／Valentina）。Joe Parker、義大利技術團隊、Barbara Balice、VodafoneThree 側不在 O6 範圍內（見下方明確排除表），完整資料留在原始 docx 供查。
+> 這張表**取代**卡片內容的口語化描述，是 HTML `PEOPLE` 陣列改版時的直接資料源——每欄對應卡片正面／背面的一個欄位。
+
+### 表 A — Fok／Dennis／Francesco／Agostino
+
+| 欄位 | Canning Fok | Dennis Lui | Francesco Zampini | Agostino Ruberto |
+|---|---|---|---|---|
+| Official Title | 未知（僅知集團副主席，中文頭銜） | Executive Deputy Chairman and Executive Director | Director of Devices and Digital Products & Services, CKH IOD | Global Technical Director, CKH IOD |
+| 職責 | 集團層決策，接觸不到 | 掌管亞洲及集團電訊業務 | 主導終端供應商選型 | 負責測試、晶片協作及新技術 |
+| 匯報線（org 圖已畫） | 頂端，向下無匯報對象 | 向 Frank Sixt、Canning Fok | 終端業務向 Dennis 匯報 | 向 Joe Parker 匯報 |
+| 彼此關係 | 集團層，高於 Dennis | 地位高於 Joe Parker | 與 Agostino 同層 | 與 Francesco 同層 |
+| 對華為態度（具名標準） | 未知 | 長期高度支持 | 審慎但積極協助（合規顧慮） | 支持並認可技術能力 |
+| 近期歷史事件 | 未知 | 2026-06-24 首次與程哥面談 | 2025-06 推動恢復 XG 合作 | 主持 Technology Board 多次交流 |
+| 來和記前經歷 | 未知 | 1986 年加入，無更早職歷 | 2008–2017 任職 Accenture | 曾任 Ericsson Senior Engineer |
+| 在和記年資 | 未知 | 約 40 年（1986 年起） | 約 9 年（2017 年起） | 約 25 年（文件誤植 15 年） |
+| 年紀／生日 | 未知 | 75 歲，1951 年 3 月生 | 生日 10 月 15 日 | 未知 |
+| 華為側對接人 | 未知 | 何剛（維繫）／曾黎、榮濤（審核） | 程哥（Ding Cheng） | 未定——Selina 或程哥，待核實 |
+| 決策角色（badge） | D（不參與，僅標記頂端） | D，H3G Top-3 #1 | D，H3G Top-3 #2 | D，具技術准入否決權 |
+| 下一次接觸點 | 未知 | 8/11–13 何剛×Dennis 高層會議 | 每月 Commercial Board；Q4 HQ Visit | 每月 Technology Board；Q4 HQ Visit |
+| 關切議題 | 未知 | 香港手機表現、Aurora Store、AI | 定價、ranging、DDR4 供應、合規 | 測試結果、產品規格、新技術 |
+| 來源可信度 | 低（僅組織圖標記，未查證） | 高（面談、逐字稿、文件互證） | 高（匯報線、履歷、生日佐證） | 中（對接人、部分履歷待核） |
+
+### 表 B — Marlene／Mark／Manjit／Valentina
+
+| 欄位 | Marlene Fantini | Mark Williams | Manjit Dhanjal | Valentina |
+|---|---|---|---|---|
+| Official Title | Head of Devices and Hardware Portfolio, CKH IOD | Senior Vendor Manager - Mobile Broadband and Home Broadband, CKH IOD | Senior Vendor Manager - Handsets and Accessories, CKH IOD | Executive Senior Project Assistant to CEO and Digital Products & Services Director, CKH IOD |
+| 職責 | 終端選型執行主管 | 負責 MBB／Home Broadband 供應商 | 負責手機及配件供應商 | Francesco 秘書，行政支援 |
+| 匯報線（org 圖已畫） | 向 Francesco 匯報 | 向 Marlene 匯報 | 向 Francesco 匯報 | 向 Francesco 匯報 |
+| 彼此關係 | Francesco 下屬，首位影響者 | 與 Manjit 分管品類 | 與 Mark 分管品類 | 行政支援窗口 |
+| 對華為態度（具名標準） | 支持，關係穩固 | 未知 | 未知 | 未知 |
+| 近期歷史事件 | 2026-06-16 與程哥談年度計畫 | 出席 Q1 Device Forum | 2026-07-15 首次浮現於名單 | 未知 |
+| 來和記前經歷 | 未知 | 約 20 年跨職能全球經驗 | 曾任職 Psion，後入 3UK | 未知 |
+| 在和記年資 | 2001 意大利入職，2018 轉 IOD | 未知 | 未知 | 未知 |
+| 年紀／生日 | 生日 1 月 19 日 | 生日 11 月 30 日 | 生日 7 月 23 日 | 40 歲，生日 10 月 12 日 |
+| 華為側對接人 | 程哥（Ding Cheng） | Selina | Selina | 未知 |
+| 決策角色（badge） | I，終端選型議價關鍵 | I ＋ Champion | I，手機品類執行窗口 | G（行政支援，非決策人） |
+| 下一次接觸點 | 未知 | Q3 期中路線圖工作坊（規劃） | Q3 期中路線圖工作坊（規劃） | 未知 |
+| 關切議題 | 定價、量能承諾、終端 portfolio | MBB、Home Broadband、FWA | 手機、配件、非 FWA 品類 | 未知 |
+| 來源可信度 | 高（內部關係圖、接觸紀錄） | 中（公開履歷不完整） | 中（早期背景來自公開資料） | 中（僅內部基本資料） |
+
+> ⚠ 註記未沿用：O5 關係圖「Manjit - BBI - Indian」意涵不明，未收錄（見 [[Manjit Dhanjal]] 原註）。
+> ⚠ Agostino 對接人（矛盾 #2）仍完全開放，需 8/3 現場口頭確認，不進卡片正面。
+
+---
 
 ## ✂️ 明確排除（範圍邊界）
 

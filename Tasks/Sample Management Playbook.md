@@ -28,3 +28,16 @@ how to 核銷 (write-off via 禮品庫)
 3. 佢掛完賬之後，就可以喺 sample management website 入面見到嗰個 serial number。
 4. 簽完單之後，就可以拎去核銷。
 5. 核銷經特殊渠道核銷，原因填「入網測試」或「客戶測試」。
+
+basic idea when applying samples：
+who own this quota?
+who deliver this product?
+who receive this product？
+need second delivery for this product?
+
+Scope of Sample Management:
+
+1. when new product launches -> yingshu lin will announce -> we apply through TSMP 
+what are the departments involved here? who are the one that manage the delivery and stock? UK receive
+2. we need certain product -> 5T samples run out-> head quarter GTM -> delivery > all aligned no problem -> we apply through TSMP
+3. we need certain product urgently -> borrow from 5T -> 
