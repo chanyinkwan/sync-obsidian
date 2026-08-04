@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="zh-Hans">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>H3G 客戶決策鏈人物檔案</title>
+  <title>H3G 客户决策链人物档案</title>
   <style>
     :root {
       --huawei-red: #e9002f;
@@ -27,7 +27,7 @@
       margin: 0;
       color: var(--ink);
       background: var(--pale-grey);
-      font-family: Arial, "Microsoft YaHei", "微軟正黑體", sans-serif;
+      font-family: Arial, "Microsoft YaHei", "微软正黑体", sans-serif;
     }
     button { font: inherit; }
 
@@ -92,7 +92,7 @@
       padding: 3px 7px;
       color: #fff;
       background: var(--huawei-red);
-      content: "內部";
+      content: "内部";
       letter-spacing: .08em;
     }
 
@@ -313,47 +313,47 @@
       <div class="brand-lockup">
         <div class="brand-mark" aria-hidden="true">H3G</div>
         <div>
-          <p class="eyebrow">客戶關係管理｜H3G</p>
-          <h1>客戶決策鏈人物檔案</h1>
+          <p class="eyebrow">客户关系管理｜H3G</p>
+          <h1>客户决策链人物档案</h1>
         </div>
       </div>
       <div class="document-meta">
-        <strong>關係情報工作稿</strong>
-        <span>更新日期：2026-08-03　｜　密級：內部</span>
+        <strong>关系情报工作稿</strong>
+        <span>更新日期：2026-08-03　｜　密级：内部</span>
       </div>
     </div>
   </header>
-  <p class="confidential">婚姻、家庭、飲食及興趣資料不得對外分享；對外只可轉化為關係維繫節奏。</p>
+  <p class="confidential">婚姻、家庭、饮食及兴趣资料不得对外分享；对外只可转化为关系维系节奏。</p>
 
   <main>
     <section class="chart-panel" aria-labelledby="chart-title">
       <div class="section-heading">
         <div>
-          <h2 id="chart-title">H3G 橫向組織關係圖</h2>
-          <p>點選人物可在右側查看完整檔案。組織圖保持固定，不會因切換人物而翻轉或改變卡片尺寸。</p>
+          <h2 id="chart-title">H3G 横向组织关系图</h2>
+          <p>点选人物可在右侧查看完整档案。组织图保持固定，不会因切换人物而翻转或改变卡片尺寸。</p>
         </div>
-        <div class="scope">8 位客戶<br>+ 1 位集團錨點</div>
+        <div class="scope">8 位客户<br>+ 1 位集团锚点</div>
       </div>
 
-      <div class="chart-scroll" tabindex="0" aria-label="可橫向捲動的組織關係圖">
+      <div class="chart-scroll" tabindex="0" aria-label="可横向卷动的组织关系图">
         <div class="org-chart" id="org-chart">
           <svg class="connectors" id="connectors" aria-hidden="true"></svg>
         </div>
       </div>
-      <div class="chart-legend" aria-label="關係線圖例">
-        <span class="legend-item"><span class="legend-line"></span>主要匯報／管理關係</span>
-        <span class="legend-item"><span class="legend-line secondary"></span>部分職能匯報／關係待核實</span>
-        <span class="legend-item"><span class="legend-line support" style="border-top-color: var(--teal); border-top-style: dotted;"></span>秘書／協調支援關係</span>
+      <div class="chart-legend" aria-label="关系线图例">
+        <span class="legend-item"><span class="legend-line"></span>主要汇报／管理关系</span>
+        <span class="legend-item"><span class="legend-line secondary"></span>部分职能汇报／关系待核实</span>
+        <span class="legend-item"><span class="legend-line support" style="border-top-color: var(--teal); border-top-style: dotted;"></span>秘书／协调支援关系</span>
       </div>
     </section>
 
     <aside class="drawer" id="profile-drawer" aria-labelledby="drawer-name" aria-live="polite">
-      <p class="drawer-kicker">人物檔案</p>
+      <p class="drawer-kicker">人物档案</p>
       <div id="drawer-content"></div>
     </aside>
   </main>
 
-  <script src="stakeholder-data.js"></script>
+  <script src="stakeholder-data.zh-Hans.js"></script>
   <script>
     (() => {
       "use strict";
@@ -361,18 +361,18 @@
       const people = Array.isArray(window.STAKEHOLDERS) ? window.STAKEHOLDERS : [];
       const byId = new Map(people.map(person => [person.id, person]));
       const stages = [
-        { label: "集團錨點", ids: ["fok"] },
-        { label: "Level 1｜業務決策", ids: ["dennis", "joe"] },
-        { label: "Level 2｜職能領導", ids: ["francesco", "valentina", "agostino"] },
-        { label: "Level 3｜組合管理", ids: ["marlene"] },
-        { label: "Level 4｜品類執行", ids: ["mark", "manjit"] }
+        { label: "集团锚点", ids: ["fok"] },
+        { label: "Level 1｜业务决策", ids: ["dennis", "joe"] },
+        { label: "Level 2｜职能领导", ids: ["francesco", "valentina", "agostino"] },
+        { label: "Level 3｜组合管理", ids: ["marlene"] },
+        { label: "Level 4｜品类执行", ids: ["mark", "manjit"] }
       ];
       const orgMeta = {
-        dennis: { tag: "電訊業務決策" },
-        francesco: { influence: "primary", tag: "終端主要影響" },
-        joe: { influence: "secondary", tag: "IOD 業務決策" },
-        agostino: { tag: "全球技術" },
-        valentina: { role: "secretary", tag: "秘書／協調窗口" }
+        dennis: { tag: "电讯业务决策" },
+        francesco: { influence: "primary", tag: "终端主要影响" },
+        joe: { influence: "secondary", tag: "IOD 业务决策" },
+        agostino: { tag: "全球技术" },
+        valentina: { role: "secretary", tag: "秘书／协调窗口" }
       };
       const relationships = [
         ["fok", "dennis", "primary"],
@@ -386,16 +386,16 @@
         ["marlene", "manjit", "primary"]
       ];
       const rows = [
-        ["匯報線", "reportsTo"],
-        ["互動偏好", "meetingStyle"],
-        ["對華為態度", "attitude"],
-        ["和記年資", "tenure"],
+        ["汇报线", "reportsTo"],
+        ["互动偏好", "meetingStyle"],
+        ["对华为态度", "attitude"],
+        ["和记年资", "tenure"],
         ["生日", "birthday"],
-        ["婚姻狀況", "maritalStatus"],
-        ["家庭狀況", "family"],
-        ["飲食偏好", "foodPreferences"],
-        ["興趣愛好", "interests"],
-        ["華為側對接人", "huaweiContact"]
+        ["婚姻状况", "maritalStatus"],
+        ["家庭状况", "family"],
+        ["饮食偏好", "foodPreferences"],
+        ["兴趣爱好", "interests"],
+        ["华为侧对接人", "huaweiContact"]
       ];
 
       const display = value => {
@@ -436,7 +436,7 @@
         name.textContent = person.name;
         const tier = document.createElement("span");
         tier.className = "node-tier";
-        tier.textContent = meta.tag || person.tier || "客戶";
+        tier.textContent = meta.tag || person.tier || "客户";
         const role = document.createElement("span");
         role.className = "node-role";
         role.textContent = display(person.responsibility);
@@ -541,7 +541,7 @@
         const priority = document.createElement("div");
         priority.className = "priority-block";
         const priorityLabel = document.createElement("strong");
-        priorityLabel.textContent = "關切議題";
+        priorityLabel.textContent = "关切议题";
         const priorityText = document.createElement("p");
         priorityText.textContent = display(person.keyConcerns);
         if (!person.keyConcerns) priorityText.className = "empty";
@@ -562,7 +562,7 @@
         });
         content.append(details);
 
-        [["對上三次會面", person.recentMeetings], ["職歷摘要", person.career]].forEach(([label, value]) => {
+        [["对上三次会面", person.recentMeetings], ["职历摘要", person.career]].forEach(([label, value]) => {
           const section = document.createElement("section");
           section.className = "content-section";
           const heading = document.createElement("h3");
@@ -574,7 +574,7 @@
 
         const verified = document.createElement("p");
         verified.className = "verified";
-        verified.textContent = `最後核實：${display(person.lastVerified)}`;
+        verified.textContent = `最后核实：${display(person.lastVerified)}`;
         content.append(verified);
       }
 

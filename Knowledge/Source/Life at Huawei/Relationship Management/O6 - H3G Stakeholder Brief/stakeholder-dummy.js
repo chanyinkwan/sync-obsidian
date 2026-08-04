@@ -56,7 +56,7 @@
     },
     {
       id: "manjit", name: "Manjit Dhanjal", title: "Senior Vendor Manager – Handsets and Accessories, CKH IOD", tier: "影響層", initials: "MD",
-      photo: "Data/Manjit Dhanjal.jpg", responsibility: "資深供應商經理，負責手機及配件。", reportsTo: "Francesco Zampini",
+      photo: "Data/Manjit Dhanjal.jpg", responsibility: "資深供應商經理，負責手機及配件。", reportsTo: "Marlene Fantini",
       meetingStyle: "非正式會面", attitude: "支持", recentMeetings: ["MWC｜會面（日期待確認）", "非正式會面（日期待確認）"],
       tenure: "未提供", birthday: "1972 年 7 月 23 日", maritalStatus: "已婚；夫婦均為英國出生印度裔",
       family: "兩子（2013／2017）；長子有多種食物過敏", foodPreferences: ["不吃牛肉"], interests: ["足球", "板球"],

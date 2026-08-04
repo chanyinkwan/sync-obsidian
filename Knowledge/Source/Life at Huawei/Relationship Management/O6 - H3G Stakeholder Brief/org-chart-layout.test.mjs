@@ -88,12 +88,20 @@ try {
   });
   const { nodes, edges } = result.result.value;
   assert.equal(Object.keys(nodes).length, 9, "all eight clients and the group anchor must render");
-  assert.ok(Math.abs(nodes.joe.x - nodes.francesco.x) <= 2, "Joe and Francesco must be on the same organisational level");
+  assert.ok(Math.abs(nodes.dennis.x - nodes.joe.x) <= 2, "Dennis and Joe must be on level 1");
+  assert.ok(Math.abs(nodes.francesco.x - nodes.agostino.x) <= 2, "Francesco and Agostino must be on level 2");
+  assert.ok(nodes.dennis.x < nodes.francesco.x && nodes.francesco.x < nodes.marlene.x && nodes.marlene.x < nodes.mark.x, "levels 1–4 must progress from left to right");
   assert.equal(nodes.francesco.influence, "primary", "Francesco must carry the stronger IOD influence treatment");
   assert.equal(nodes.joe.influence, "secondary", "Joe must carry the lower-influence IOD treatment");
   assert.ok(Math.abs(nodes.mark.x - nodes.manjit.x) <= 2, "Mark and Manjit must be on the same organisational level");
   assert.equal(nodes.valentina.role, "secretary", "Valentina must be presented as Francesco's secretary");
-  assert.ok(!edges.some(edge => edge.startsWith("joe>francesco:")), "Joe must not be shown as Francesco's manager");
+  assert.ok(nodes.valentina.x > nodes.francesco.x && nodes.valentina.x < nodes.marlene.x, "Valentina must sit on a side track beside Francesco rather than a numbered level");
+  assert.ok(!edges.some(edge => edge.startsWith("francesco>agostino:")), "Agostino must be Francesco's level-2 peer");
+  assert.ok(edges.includes("joe>agostino:primary"), "Agostino must connect from Joe's IOD branch");
+  assert.ok(edges.includes("francesco>marlene:primary"), "Marlene must be level 3 under Francesco");
+  assert.ok(edges.includes("marlene>mark:primary"), "Mark must report to Marlene");
+  assert.ok(edges.includes("marlene>manjit:primary"), "Manjit must report to Marlene");
+  assert.ok(!edges.some(edge => edge.startsWith("francesco>manjit:")), "Manjit must not connect directly to Francesco");
   assert.ok(edges.includes("francesco>valentina:support"), "Valentina must have a support relationship to Francesco");
   console.log("PASS: H3G hierarchy matches the confirmed peer levels, influence, and secretary relationship.");
 } finally {
