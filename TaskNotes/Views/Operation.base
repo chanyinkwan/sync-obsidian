@@ -2,27 +2,36 @@
 #
 # Step 1 spike (groupBy on a user field) could not be run live: Obsidian was
 # closed for this task, so no drag-and-drop test was possible. Instead the
-# question was settled by static investigation of
+# question was investigated statically in
 # .obsidian/plugins/tasknotes/main.js:
 #   - No code path anywhere in the bundle restricts `groupBy.property` to a
 #     fixed enum of built-in properties. The default-kanban-template
 #     generator (case "open-kanban-view", ~line 2886-2902) builds
 #     `groupBy: property: ${l}` by substituting whatever field-key string is
 #     configured for "status" — plain string substitution, no allowlist.
+#     Caveat: this generator is a template-string builder that only runs
+#     when a user invokes the "create Kanban view" command — it emits
+#     suggested YAML text and never executes a query, so its lack of an
+#     enum shows only that the generator doesn't gatekeep. It says nothing
+#     about whether the runtime engine actually groups by a non-built-in
+#     property.
 #   - The v4 changelog entry "Refactored Bases integration to use public
 #     API" (~line 2325-2330) states TaskNotes "Trusts Bases plugin to
-#     provide pre-sorted and pre-grouped data via public API" — i.e.
-#     grouping is delegated to Obsidian's core Bases plugin through the same
-#     generic property-resolution path used by filters and sort, not a
-#     TaskNotes-side restricted implementation.
-#   - Changelog (~line 1857-1859): "Fixed user-defined custom fields
-#     appearing as `user:field_xxx` in generated base templates ... Ensures
-#     Bases can properly query user-defined properties" — user-defined
-#     fields (like `eisenhower`) are explicitly confirmed to resolve
-#     correctly through the same Bases querying layer that groupBy uses.
-# Verdict: clearly supported. Board is written as the primary design,
-# `groupBy: property: eisenhower`, per the brief. Live drag-to-persist
-# behavior is left for the human's rendering checklist.
+#     provide pre-sorted and pre-grouped data via public API" and a second
+#     entry (~line 1857-1859) states custom fields "Ensures Bases can
+#     properly query user-defined properties". Both are vendor-authored
+#     changelog prose describing intent, not inspected code paths.
+#   - The actual column-grouping logic lives in Obsidian's core Bases
+#     plugin, shipped inside the app itself, not present anywhere in this
+#     vault — so it could not be inspected either way, by this
+#     investigation or by the review that checked it.
+#   - `TaskNotes/Views/kanban-default.base` groups by `status`, a built-in.
+#     There is no precedent anywhere in this vault of a Kanban grouping by
+#     a user-defined field.
+# Verdict: likely supported — no restriction was found anywhere in the
+# bundle, but no positive runtime proof is obtainable statically. This is
+# the file's one unconfirmed risk, pending a live check. Board is written
+# as the primary design, `groupBy: property: eisenhower`, per the brief.
 
 filters:
   and:
@@ -71,12 +80,30 @@ formulas:
   daysSinceNudged: if((nudged.isEmpty() == false), ((number(today()) - number(date(nudged))) / 86400000).floor(), null)
   isStale: (nudged.isEmpty() == false) && date(nudged) < (today() - "3 days")
 views:
+  # Recurring tasks are excluded here on purpose: a set `recurrence` means
+  # the item is already triaged by definition — it is the cadence, not an
+  # untriaged inbox item — and it surfaces on its own in `This week` /
+  # `This month` instead. Without this exclusion the seven recurring
+  # cadence tasks (daily/weekly/monthly, none of which carries an
+  # `eisenhower` value) would sit in this section forever, defeating the
+  # premise that Inbox is emptied daily. This matches the plan's boundary
+  # rule that a set `recurrence` means the item is an operation, not a
+  # project.
   - type: tasknotesTaskList
     name: Inbox
     filters:
       and:
         - status != "done"
         - eisenhower.isEmpty()
+        - recurrence.isEmpty()
+    order:
+      - priority
+      - due
+      - scheduled
+      - contexts
+      - source
+      - assigned_by
+      - file.name
     sort:
       - property: file.ctime
         direction: DESC
@@ -86,10 +113,18 @@ views:
     filters:
       and:
         - status != "done"
+        - status != "hold"
         - eisenhower.isEmpty() == false
     groupBy:
       property: eisenhower
       direction: ASC
+    order:
+      - priority
+      - due
+      - scheduled
+      - contexts
+      - projects
+      - file.name
     sort:
       - property: tasknotes_manual_order
         direction: DESC
@@ -106,10 +141,25 @@ views:
     groupBy:
       property: waiting_on
       direction: ASC
+    order:
+      - waiting_on
+      - nudged
+      - priority
+      - due
+      - scheduled
+      - contexts
+      - file.name
     sort:
       - property: nudged
         direction: ASC
 
+  # Deliberately no lower date bound: this view admits every overdue task
+  # indefinitely, not just the next 7 days, by design — do not add one.
+  # Recurring tasks carry no quadrant, so they never appear on the Board.
+  # If this cadence strip also hid overdue items, a missed 巡店 or a
+  # skipped monthly price guidance would vanish from the cockpit entirely,
+  # with no trace anywhere. The absent lower bound is what keeps overdue
+  # cadence items visible until they are actually done.
   - type: tasknotesTaskList
     name: This week
     filters:
@@ -128,6 +178,14 @@ views:
             - and:
                 - scheduled.isEmpty() == false
                 - date(scheduled).format("YYYY-MM-DD") <= (today() + "7 days").format("YYYY-MM-DD")
+    order:
+      - priority
+      - due
+      - scheduled
+      - contexts
+      - recurrence
+      - complete_instances
+      - file.name
     sort:
       - property: formula.urgencyScore
         direction: DESC
@@ -144,6 +202,14 @@ views:
             - and:
                 - scheduled.isEmpty() == false
                 - date(scheduled).format("YYYY-MM") == today().format("YYYY-MM")
+    order:
+      - priority
+      - due
+      - scheduled
+      - contexts
+      - projects
+      - recurrence
+      - file.name
     sort:
       - property: due
         direction: ASC
