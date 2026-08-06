@@ -685,7 +685,7 @@ These three gaps are the reason enrichment is worth ninety seconds. None of them
 ## Missing detail
 - [ ] **Plan B has an unowned critical path.** It needs Selina's and 程哥's international departure city and date before 蒙清萍 can ship anything. Nobody in the plan table owns getting that. The source gives no lead time for shipping to a departure city, so how late those details can arrive before Plan B becomes unworkable is itself unknown. → mine to chase, this week.
 - [ ] **The 8.18 deadline has no stated cause.** E6898 launch is already pushed to ~2027 Q1 (battery spec failed, requires re-initiation — Amazon Operations Glossary §6), so 8.18 is driven by something else. Without knowing what, Plan C's cost cannot be argued for or against. → ask 程哥.
-- [ ] **Plan A and Plan B are assigned to two evaluators separately, with nothing in the request indicating they are coordinated.** 张程 on air freight, 刘宙 on carry-on. Risk is one idling on the other's answer. → tell each that the other is running in parallel.
+- [ ] **Plan A and Plan B are assigned to two evaluators separately, with nothing in the request indicating they are coordinated.** 张程 on air freight, 刘宙 on carry-on. Whether one is idling on the other's answer is unknown. → ask each whether they have visibility into the other's progress.
 ```
 
 - [ ] **Step 3: Create the three children**
