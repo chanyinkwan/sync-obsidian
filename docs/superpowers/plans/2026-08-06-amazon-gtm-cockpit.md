@@ -451,7 +451,7 @@ Amazon Operations Glossary §1 already contains the durable read for the core ca
 
 **`yubeifei y00663235.md` (俞碧斐, 歐洲 MBB 產品 GTM)**
 - Decides: which products go on next year's roadmap, and how supply is allocated
-- Only influences: MOQ floors and marketing budget — he can go and get them, he does not hold them
+- Only influences: MOQ floors and marketing budget — she can go and get them, she does not hold them
 - Measured on: moving the full European MBB portfolio, including products that are hard to sell
 - Default stance: at year-end planning, pushing products Kess may not want to sell
 - What gets a yes: an evidenced "I cannot sell this at MOQ 500" paired with a specific ask (drop MOQ to 100, or fund marketing)
