@@ -22,6 +22,24 @@ tags:
 - **What they care about / their stake:** 地區部層面的價格合理性、選品合理性、競爭情報、部門長期盈利。
 - **How to work with them:** 需求回來開項目分析會時她會上(MBB 品類與 [[yubeifei y00663235|碧斐]] 一起)。**可能年底調崗**,留意接任者。
 
+## Stakeholder read
+- **Decides:** approve or reject every on-top price request from the countries
+- **Only influences:** 
+- **Measured on:** 
+- **Default stance:** gatekeeping — she sees the requests directly, and as of now Kess is not in that loop
+- **What gets a yes:** agreement from her or 碧斐 *before* the request is raised, when breaking the 大促 floor
+- **Escalates to:** 
+- **Observed pattern:** <!-- append-only, dated one-liners from real interactions -->
+  - 2026-08-06 Kess is not currently in steps 4–6 of the pricing chain; joining requires asking.
+
+### Balls currently in their court
+```dataview
+TABLE WITHOUT ID file.link AS "Task", due AS "Due", nudged AS "Last nudged"
+FROM #task
+WHERE contains(waiting_on, this.file.link) AND status != "done"
+SORT nudged ASC
+```
+
 ## Background
 2026-07-10 [[Ziyi Zhang 84434577|Ziyi]] 交接培訓:曾黎下共 6 個團隊 = 5 大T + GTM & Solutions。此團隊不直接面向客戶,對接機關產品線,輸入定價/選品/競爭 intelligence。她帶三人:[[yubeifei y00663235|俞碧斐]](MBB)、[[Zhang Xuan 00942107|張炫]](router)、[[Xiaozan Lu 84444549|陸小珍 ⚠]](testing/准入,新)。
 

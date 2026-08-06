@@ -22,6 +22,24 @@ tags:
 - **What they care about / their stake:** Speed on bids and unblocking stalled flows; getting signed sample receipts back (he bears the responsibility).
 - **How to work with them:** Be concise and action-oriented; bring blockers + a proposed next step, not just status.
 
+## Stakeholder read
+- **Decides:** what lands on Kess's desk; account-level priorities
+- **Only influences:** 
+- **Measured on:** 
+- **Default stance:** assigns by email or verbally with the deliverable shape left unstated
+- **What gets a yes:** proposing the output format yourself rather than asking what he wants
+- **Escalates to:** 
+- **Observed pattern:** <!-- append-only, dated one-liners from real interactions -->
+  - 2026-08-06 asked for "familiarise with Huawei's in-market products + output materials" without specifying the artefact. Ziyi's read: start from the MBB category roadmap 產品包 and the 和記 competitor material.
+
+### Balls currently in their court
+```dataview
+TABLE WITHOUT ID file.link AS "Task", due AS "Due", nudged AS "Last nudged"
+FROM #task
+WHERE contains(waiting_on, this.file.link) AND status != "done"
+SORT nudged ASC
+```
+
 ## Background
 Account lead for the 大T system department and the person who runs the recurring download. Decision-maker on bid priorities (e.g. pushed 173 to commercial bid; set group-level bidding). In sample management he is the **UK account holder (掛賬人)** — approvals route through him and he bears main responsibility for receipts/write-off. Approves my self-use of spare samples (alongside Ziyi).
 

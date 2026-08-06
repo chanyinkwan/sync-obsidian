@@ -1,26 +1,26 @@
 ---
 type: contact
-category:          # internal | customer | hq | partner
-name:
-employee_id:
-aka:
-org:
-role:
+category: internal
+name: Zhang Cheng
+employee_id: "00500696"
+aka: 张程
+org: 交付
+role: 交付評估
 location:
 languages:
 email:
-relationship:     # 1-5 (closeness / trust)
-decision_rights:  # what they can actually decide, vs only influence
-incentive:        # what they are measured on
-default_stance:   # where they start before you say anything
-unlocks:          # what gets a yes out of them
-escalation:       # who overrides them
+relationship:
+decision_rights: whether Plan A (air freight to a non-EU destination) is feasible
+incentive:
+default_stance: unknown — first interaction
+unlocks:
+escalation:
 status: active
-last_contact:     # YYYY-MM-DD — update when you interact
+last_contact:
 tags:
   - contact
 ---
-# {Name} ({aka}) · {employee_id}
+# Zhang Cheng (张程) · 00500696
 
 ## At a glance
 - **Role:** 
@@ -28,13 +28,14 @@ tags:
 - **How to work with them:** 
 
 ## Stakeholder read
-- **Decides:** 
+- **Decides:** whether Plan A (air freight to a non-EU destination) is feasible
 - **Only influences:** 
 - **Measured on:** 
-- **Default stance:** 
+- **Default stance:** unknown — first interaction
 - **What gets a yes:** 
 - **Escalates to:** 
 - **Observed pattern:** <!-- append-only, dated one-liners from real interactions -->
+  - 2026-08-06 first contact, via 程哥's E6898 sample task. No pattern yet.
 
 ### Balls currently in their court
 ```dataview
@@ -69,13 +70,3 @@ LIST
 WHERE contains(file.outlinks, this.file.link) AND file.name != this.file.name
 SORT file.mtime DESC
 ```
-
----
-<!-- USAGE
-1. Requires the Dataview plugin (Settings → Community plugins → Dataview).
-2. The queries auto-populate from any note that links to this contact via [[ ]]
-   (e.g. meeting notes' attendees / stakeholder tables).
-3. For correct chronological sort, use ISO dates (YYYY-MM-DD) in meeting frontmatter.
-4. 'last_contact' + 'relationship' are manual fields you can also surface in a
-   master Contacts dashboard (see [[Huawei Key Contacts]]).
--->

@@ -1,26 +1,26 @@
 ---
 type: contact
-category:          # internal | customer | hq | partner
-name:
-employee_id:
-aka:
+category: internal
+name: Meng Qingping
+employee_id: "84291389"
+aka: 蒙清萍
 org:
-role:
+role: 樣機發貨安排
 location:
 languages:
 email:
-relationship:     # 1-5 (closeness / trust)
-decision_rights:  # what they can actually decide, vs only influence
-incentive:        # what they are measured on
-default_stance:   # where they start before you say anything
-unlocks:          # what gets a yes out of them
-escalation:       # who overrides them
+relationship:
+decision_rights: none — executes shipping once given an address and a date
+incentive:
+default_stance:
+unlocks: a confirmed destination city and date
+escalation:
 status: active
-last_contact:     # YYYY-MM-DD — update when you interact
+last_contact:
 tags:
   - contact
 ---
-# {Name} ({aka}) · {employee_id}
+# Meng Qingping (蒙清萍) · 84291389
 
 ## At a glance
 - **Role:** 
@@ -28,11 +28,11 @@ tags:
 - **How to work with them:** 
 
 ## Stakeholder read
-- **Decides:** 
+- **Decides:** none — executes shipping once given an address and a date
 - **Only influences:** 
 - **Measured on:** 
 - **Default stance:** 
-- **What gets a yes:** 
+- **What gets a yes:** a confirmed destination city and date
 - **Escalates to:** 
 - **Observed pattern:** <!-- append-only, dated one-liners from real interactions -->
 
@@ -69,13 +69,3 @@ LIST
 WHERE contains(file.outlinks, this.file.link) AND file.name != this.file.name
 SORT file.mtime DESC
 ```
-
----
-<!-- USAGE
-1. Requires the Dataview plugin (Settings → Community plugins → Dataview).
-2. The queries auto-populate from any note that links to this contact via [[ ]]
-   (e.g. meeting notes' attendees / stakeholder tables).
-3. For correct chronological sort, use ISO dates (YYYY-MM-DD) in meeting frontmatter.
-4. 'last_contact' + 'relationship' are manual fields you can also surface in a
-   master Contacts dashboard (see [[Huawei Key Contacts]]).
--->

@@ -26,6 +26,23 @@ tags:
 - **What they care about / their stake:** Customer relationships, clean requirements into the team, and customer attendance at key events.
 - **How to work with them:** Customer-facing — route sample write-off documents to her for customer signatures; coordinate on Hutchison and event logistics.
 
+## Stakeholder read
+- **Decides:** nothing on E6898 — she would be doing a favour, not a duty
+- **Only influences:** 
+- **Measured on:** 
+- **Default stance:** 
+- **What gets a yes:** asking early, and asking politely; she needs her flight city and date requested well before 8.18
+- **Escalates to:** 
+- **Observed pattern:** <!-- append-only, dated one-liners from real interactions -->
+
+### Balls currently in their court
+```dataview
+TABLE WITHOUT ID file.link AS "Task", due AS "Due", nudged AS "Last nudged"
+FROM #task
+WHERE contains(waiting_on, this.file.link) AND status != "done"
+SORT nudged ASC
+```
+
 ## Background
 Inner-circle account manager (Colleague S). Highest client-interaction role; aggregates customer requirements (demand capture). In the 17-Jun download she assessed customer attendance for the Sept 2 launch event (Hutchison likely unavailable; clash with IFA). In sample ops, she (or 程哥) takes documents to customers and brings back signatures for write-off.
 
