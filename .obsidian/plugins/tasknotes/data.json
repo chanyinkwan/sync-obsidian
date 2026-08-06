@@ -116,7 +116,7 @@
       {
         "propertyId": "priority",
         "trigger": "!",
-        "enabled": false
+        "enabled": true
       },
       {
         "propertyId": "field_1781770525920",
@@ -126,6 +126,26 @@
       {
         "propertyId": "field_1781770791517",
         "trigger": "field_1781770791517:",
+        "enabled": false
+      },
+      {
+        "propertyId": "field_1786025208583",
+        "trigger": "field_1786025208583:",
+        "enabled": false
+      },
+      {
+        "propertyId": "field_1786025208584",
+        "trigger": "field_1786025208584:",
+        "enabled": false
+      },
+      {
+        "propertyId": "field_1786025208585",
+        "trigger": "field_1786025208585:",
+        "enabled": false
+      },
+      {
+        "propertyId": "field_1786025208586",
+        "trigger": "field_1786025208586:",
         "enabled": false
       }
     ]
@@ -307,6 +327,30 @@
       "displayName": "Source",
       "key": "source",
       "type": "text"
+    },
+    {
+      "id": "field_1786025208583",
+      "displayName": "Quadrant",
+      "key": "eisenhower",
+      "type": "text"
+    },
+    {
+      "id": "field_1786025208584",
+      "displayName": "Waiting on",
+      "key": "waiting_on",
+      "type": "list"
+    },
+    {
+      "id": "field_1786025208585",
+      "displayName": "Last nudged",
+      "key": "nudged",
+      "type": "date"
+    },
+    {
+      "id": "field_1786025208586",
+      "displayName": "Stakeholders",
+      "key": "stakeholders",
+      "type": "list"
     }
   ],
   "modalFieldsConfig": {
@@ -421,6 +465,46 @@
         "visibleInCreation": true,
         "visibleInEdit": true,
         "order": 1,
+        "enabled": true
+      },
+      {
+        "id": "field_1786025208583",
+        "fieldType": "user",
+        "group": "custom",
+        "displayName": "Quadrant",
+        "visibleInCreation": true,
+        "visibleInEdit": true,
+        "order": 2,
+        "enabled": true
+      },
+      {
+        "id": "field_1786025208584",
+        "fieldType": "user",
+        "group": "custom",
+        "displayName": "Waiting on",
+        "visibleInCreation": true,
+        "visibleInEdit": true,
+        "order": 3,
+        "enabled": true
+      },
+      {
+        "id": "field_1786025208585",
+        "fieldType": "user",
+        "group": "custom",
+        "displayName": "Last nudged",
+        "visibleInCreation": true,
+        "visibleInEdit": true,
+        "order": 4,
+        "enabled": true
+      },
+      {
+        "id": "field_1786025208586",
+        "fieldType": "user",
+        "group": "custom",
+        "displayName": "Stakeholders",
+        "visibleInCreation": true,
+        "visibleInEdit": true,
+        "order": 5,
         "enabled": true
       }
     ],
