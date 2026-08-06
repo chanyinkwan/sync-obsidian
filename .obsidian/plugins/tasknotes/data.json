@@ -236,7 +236,7 @@
       "value": "high",
       "label": "High",
       "color": "#FF6361",
-      "weight": 0
+      "weight": 2
     },
     {
       "id": "low",
@@ -250,7 +250,7 @@
       "value": "low",
       "label": "Low",
       "color": "#d2d462",
-      "weight": 2
+      "weight": 0
     }
   ],
   "recurrenceMigrated": false,
