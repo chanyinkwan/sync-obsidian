@@ -12,12 +12,12 @@ tags:
 
 ## 1. 四層結構(每層只做一件事)
 
-| 層 | 位置 | 這一層回答什麼 | 可不可以改 |
-|---|---|---|---|
-| **L0 原始檔** | `Operation Note/Meeting Transcript/Raw/` | 「他到底說了什麼」——WeLink/Otter 原始匯出,含圖片 blob | **永不修改、永不刪除**。檔名 `<原名>__raw__<YYYYMMDD-HHmmss>.md`,存檔前後各驗一次 SHA-256 |
-| **L1 逐字稿** | `Knowledge/Source/Life at Huawei/Amazon Hand Over/` | 「可讀、可追溯的版本」——每個 turn、每個時間戳都在,不翻譯、不猜名字 | 只在拿到新事實時補 Open questions / 詞彙表增補,正文不重寫 |
-| **L2 運作圖** | `Amazon Handover.xlsx` + 本檔 | 「這份工作到底怎麼運轉」——8 個流程 × 7 個問題 | 每次會後增補;**A–D 欄是你的思路,只增不改;E–G 欄放會議實證** |
-| **L3 行動** | `Tasks/Amazon Handover.md`、`Projects/Amazon take over.md` | 「我下一步要做什麼、要問誰」 | 隨時 |
+| 層          | 位置                                                        | 這一層回答什麼                               | 可不可以改                                                               |
+| ---------- | --------------------------------------------------------- | ------------------------------------- | ------------------------------------------------------------------- |
+| **L0 原始檔** | `Operation Note/Meeting Transcript/Raw/`                  | 「他到底說了什麼」——WeLink/Otter 原始匯出,含圖片 blob | **永不修改、永不刪除**。檔名 `<原名>__raw__<YYYYMMDD-HHmmss>.md`,存檔前後各驗一次 SHA-256 |
+| **L1 逐字稿** | `Knowledge/Source/Life at Huawei/Amazon Hand Over/`       | 「可讀、可追溯的版本」——每個 turn、每個時間戳都在,不翻譯、不猜名字 | 只在拿到新事實時補 Open questions / 詞彙表增補,正文不重寫                              |
+| **L2 運作圖** | `Amazon Handover.xlsx` + 本檔                               | 「這份工作到底怎麼運轉」——8 個流程 × 7 個問題           | 每次會後增補;**A–D 欄是你的思路,只增不改;E–G 欄放會議實證**                               |
+| **L3 行動**  | `Tasks/Amazon Handover.md`、`Projects/Amazon take over.md` | 「我下一步要做什麼、要問誰」                        | 隨時                                                                  |
 
 **規則:事實只寫一次。** L2 只寫結論並註明來源(會議 + 時間戳),不複製逐字稿原文;L3 只寫動作,不複製結論。要查證據就順著來源跳回 L1。
 
@@ -39,10 +39,12 @@ tags:
   - `1. Roadmap Management`:Annual Roadmap Plan / New Product Launch Checklist / Market Analysis / Commercial · Promo plan management
   - `2. Sales Performance Management`:BP and SI plan forecast / BP achievement monitor / CPFR Management / Sales Performance Tracking
   - 加上 `Operation Optimization checklist`(6 項可改的地方)與 `What access should I apply for?`(10 項權限)
-- [[Amazon Handover Prep]] — 角色定義、問題陳述、驗收指標與留白的商業 KPI。**建議移到本資料夾**(目前在 vault 根目錄)。
+- ~~`Amazon Handover Prep`~~ — **已於 2026-08-06 刪除**(router 框架隨範圍變更作廢)。
+- **[[Amazon Operations Glossary]]** — Amazon 運營專用術語表(價格體系、deal tag、Buy Box、路標、競品分析、MBB SKU 現況、系統清單、ASR 錯拼對照)。**這是接 MBB 後的主要參考。**
 
 ### 待處理
-- `Operation Note/Amazon Handover — 7Q Known-Unknown Digest (2026-07-28).md` — **空殼**,只有 frontmatter。它的功能已被 Excel 的 E–G 欄取代。建議刪掉,或改成純粹的 Active Unknowns 清單(見下)。
+- ~~`Amazon Handover — 7Q Known-Unknown Digest (2026-07-28)`~~ — **已於 2026-08-06 刪除**(空殼,只有 frontmatter,功能已被 Excel 的 E–G 欄取代)。
+- **⚠ 本 Note Map 標題與內容仍是 router 框架。**2026-08-03 起 Kess 接的是 **MBB**,router 由 [[Zhang Xuan 00942107|張炫]] 直接接手——L2 運作圖的 8 個流程仍然通用,但品類邊界、SKU 清單與 KPI 需重做。
 
 ## 3. 每場會後的三個動作(不要再想第四件事)
 

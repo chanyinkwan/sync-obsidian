@@ -3,14 +3,16 @@ status: doing
 priority: high
 scheduled: 2026-07-27T10:30
 dateCreated: 2026-07-22T19:38:31.688+01:00
-dateModified: 2026-07-29T21:50:10.766+01:00
+dateModified: 2026-08-05T15:04:55.912+01:00
 tags:
   - task
 projects:
   - "[[Amazon take over]]"
 ---
 
-**入口:[[00 Amazon Router GTM — Note Map]]** — 逐字稿、7Q Excel、Active Unknowns 都從這裡進。
+**入口:[[00 Amazon Router GTM — Note Map]]** 
+
+Materials path: 
 
 [[Amazon Handover Meeting Transcript Part 1]]
 [[Amazon Handover Meeting Transcript Part 2]]
@@ -20,12 +22,18 @@ part 2 take away -> product implementation
 Propose next meeting with qixuan
 [[Amazon Back to School Promotion Planning Meeting Transcript Part 1]]
 [[Amazon Back to School Promotion Planning Meeting Transcript Part 2]]
-[[Amazon Handover Prep]]
 
 [[Amazon Handover Meeting Transcript Part 3]]
 
+New Scope for Amazon
+[[Amazon MBB Handover Meeting Transcript]]
+
+Operation Training
+[[Amazon MBB Pricing Meeting Transcript]]
+[[Actual Amazon MBB Pricing Meeting Transcript]]
+
+Reference
+[[Amazon Operations Glossary]]
 
 
-[[Yan Li 00504988]]
-[[Zhang Xuan 00942107]]
-
+[[Master Template Index — Build Spec & ChatGPT Prompt]]
