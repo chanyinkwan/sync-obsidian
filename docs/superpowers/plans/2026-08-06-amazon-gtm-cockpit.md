@@ -27,7 +27,7 @@
 | `.obsidian/plugins/tasknotes/data.json` | field definitions, priority weights, NLP triggers, body-template switch |
 | `.obsidian/hotkeys.json` | Instant Convert binding |
 | `TaskNotes/Views/*.base` (7 existing) | priority formula fix only |
-| `TaskNotes/Views/Amazon GTM.base` | **new** — the five cockpit views, single source of truth |
+| `TaskNotes/Views/Operation.base` | **new** — the five cockpit views, single source of truth |
 | `Template/Task Body Template.md` | **new** — enrichment prompts injected into every new task |
 | `Template/Contact Template.md` | gains the stakeholder read section and owes-me query |
 | `Template/Daily Operations Template.md` | gains the embedded cockpit above the reflection questions |
@@ -155,11 +155,11 @@ git commit -m "feat: add eisenhower, waiting_on, nudged, stakeholders task field
 The riskiest task, so it starts with a five-minute spike. TaskNotes' Kanban `groupBy` is confirmed to work on `status` (the existing `kanban-default.base` proves it). Whether it accepts a **user field** is unverified. Everything else in the plan works either way; only the drag axis depends on the answer.
 
 **Files:**
-- Create: `TaskNotes/Views/Amazon GTM.base`
+- Create: `TaskNotes/Views/Operation.base`
 
 **Interfaces:**
 - Consumes: `eisenhower`, `waiting_on`, `nudged`, `contexts`, `projects` from Task 2; `formula.priorityWeight` from Task 1.
-- Produces: five named views embedded by Task 6 as `![[Amazon GTM.base#<View name>]]`. The exact view names other tasks depend on: `Inbox`, `Board`, `Ball in their court`, `This week`, `This month`.
+- Produces: five named views embedded by Task 6 as `![[Operation.base#<View name>]]`. The exact view names other tasks depend on: `Inbox`, `Board`, `Ball in their court`, `This week`, `This month`.
 
 - [ ] **Step 1: Spike — can Kanban group by a user field?**
 
@@ -187,7 +187,7 @@ Delete `spike.base` before continuing.
 
 - [ ] **Step 2: Write the base file**
 
-Create `TaskNotes/Views/Amazon GTM.base`. Copy the entire `formulas:` block verbatim from `TaskNotes/Views/tasks-default.base` (it is long and shared by every base in this vault; retyping it invites divergence), then add these two formulas to the end of that block:
+Create `TaskNotes/Views/Operation.base`. Copy the entire `formulas:` block verbatim from `TaskNotes/Views/tasks-default.base` (it is long and shared by every base in this vault; retyping it invites divergence), then add these two formulas to the end of that block:
 
 ```yaml
   daysSinceNudged: if((nudged.isEmpty() == false), ((number(today()) - number(date(nudged))) / 86400000).floor(), null)
@@ -200,7 +200,6 @@ Then use this top-level filter and these five views:
 filters:
   and:
     - file.hasTag("task")
-    - projects.contains(link("Projects/Amazon take over")) || projects.contains(link("Projects/Sample Management Ops"))
 views:
   - type: tasknotesTaskList
     name: Inbox
@@ -284,20 +283,22 @@ Note `q1`–`q4` sort ascending as plain strings, which puts urgent+important le
 
 - [ ] **Step 3: Verify each view renders**
 
-Open `Amazon GTM.base` in Obsidian and click through all five view tabs.
+Open `Operation.base` in Obsidian and click through all five view tabs.
 
 Expected: no error banner on any tab. `Inbox` shows the tasks you have with no quadrant set. `Board` shows one column per distinct `eisenhower` value in use. `Ball in their court` is empty for now (nothing has `waiting_on` yet) — that is correct, and Task 8 fills it.
 
 If a view errors, the cause is almost always a property name typo or a filter referencing a field Task 2 did not create. Check the field key spelling against Settings → TaskNotes → User Fields.
 
-- [ ] **Step 4: Verify the project filter actually excludes**
+- [ ] **Step 4: Verify the base is vault-wide, not Amazon-only**
 
-Confirm that a task with no `projects` value, or one belonging to `[[SA Presales Transition]]`, does **not** appear in any of the five views. If unrelated tasks leak in, the `projects.contains(link(...))` path is wrong — check the exact file paths of `Projects/Amazon take over.md` and `Projects/Sample Management Ops.md`.
+There is deliberately no project filter at the top level. This is the operations cockpit for everything, not an Amazon dashboard — Amazon MBB, Sample Ops, SA Presales Transition, and AWS study all surface in one place, which is the whole point of not having two homes.
+
+Confirm that tasks from at least two different projects appear across the five views. Then confirm scoping still works when you want it: add `projects.contains(link("Projects/Amazon take over"))` to the Board view's filter temporarily, verify only Amazon tasks remain, then remove it again.
 
 - [ ] **Step 5: Commit**
 
 ```bash
-git add "TaskNotes/Views/Amazon GTM.base"
+git add "TaskNotes/Views/Operation.base"
 git commit -m "feat: add Amazon GTM base with inbox, board, waiting-on, week and month views"
 ```
 
@@ -513,13 +514,13 @@ and creates cards for the three people on the E6898 sample task."
 
 - [ ] **Step 1: Confirm base embeds work at all**
 
-In any scratch note, type `![[Amazon GTM.base#Inbox]]` and switch to reading view. Expected: the Inbox view renders inline.
+In any scratch note, type `![[Operation.base#Inbox]]` and switch to reading view. Expected: the Inbox view renders inline.
 
 If it renders as a broken link, this Obsidian build wants the fenced form instead:
 
 ````
 ```base
-file: TaskNotes/Views/Amazon GTM.base
+file: TaskNotes/Views/Operation.base
 view: Inbox
 ```
 ````
@@ -532,20 +533,20 @@ Replace lines 11–23 of `Template/Daily Operations Template.md` — the whole `
 
 ```markdown
 ## 📥 Inbox — untriaged
-![[Amazon GTM.base#Inbox]]
+![[Operation.base#Inbox]]
 
 ## 🎯 Board
-![[Amazon GTM.base#Board]]
+![[Operation.base#Board]]
 
 > 🔴 q1 urgent+important · 🟠 q2 important · 🟡 q3 urgent · ⚪ q4 neither
 > Drag a card between columns to reclassify it.
 
 ## ⏳ Ball in their court
-![[Amazon GTM.base#Ball in their court]]
+![[Operation.base#Ball in their court]]
 
 ## 🗓 Cadence
-![[Amazon GTM.base#This week]]
-![[Amazon GTM.base#This month]]
+![[Operation.base#This week]]
+![[Operation.base#This month]]
 
 ---
 
@@ -597,7 +598,7 @@ This is what makes the project/operation boundary disappear. Anything with `recu
 
 - [ ] **Step 1: Create the seven recurring tasks**
 
-Create each via the TaskNotes modal so `recurrence` is written in the plugin's own format. All seven get `projects: [[Amazon take over]]`. Content is from Amazon Operations Glossary §8.
+Create each via the TaskNotes modal so `recurrence` is written in the plugin's own format. All seven get `projects: [[Amazon take over]]` — that is how they stay identifiable as Amazon cadence inside a vault-wide board. Content is from Amazon Operations Glossary §8.
 
 | Title | Recurrence | Context | Priority |
 |---|---|---|---|

@@ -10,8 +10,8 @@
 	Kess took over Amazon MBB category GTM on 2026-08-03 (scope changed from router after 齊軒 resigned; Ziyi leaves shortly). The role owns the sales outcome for the category but executes nothing — all work is coordinating other functions. Three properties of that work break normal task management:
 	
 	1. **Ad-hoc arrival.** Tasks arrive verbally, by WeLink, or buried in email, with details missing. There is no capture step today, so items are held in the head or scattered.
-	2. **Multi-stakeholder.** Every task involves several functions with different incentives and decision rights. Stakeholder positions must be mapped before outreach, or the outreach wastes a turn.
-	3. **Project/operation boundary is fluid.** A fixed recurring cadence (daily 巡店, weekly SO, monthly offer plan, annual roadmap) runs alongside bounded projects, and the same item can look like either.
+		1. **Multi-stakeholder.** Every task involves several functions with different incentives and decision rights. Stakeholder positions must be mapped before outreach, or the outreach wastes a turn.
+	2. **Project/operation boundary is fluid.** A fixed recurring cadence (daily 巡店, weekly SO, monthly offer plan, annual roadmap) runs alongside bounded projects, and the same item can look like either.
 	
 	The existing vault has the raw material — `Projects/🏠 Home.md`, TaskNotes 4.11.1, Bases, Templater, `Relationship Management/` person notes — but Home and the daily Operation Note are separate surfaces, and neither shows urgency at a glance.
 	
@@ -172,7 +172,7 @@
 	
 	## 4. The cockpit — daily Operation Note template
 	
-	All views are live embedded Bases from a single `Amazon GTM.base`, so one definition renders in every day's note. Embeds are references, so no duplication accumulates across daily files.
+	All views are live embedded Bases from a single `Operation.base`, so one definition renders in every day's note. Embeds are references, so no duplication accumulates across daily files.
 	
 	Layout, top to bottom:
 	
@@ -211,7 +211,9 @@
 	- **Staleness warning** fires when `today - nudged > 3d`.
 	- **Card face** shows: due badge, `@context`, `waiting_on`, priority colour.
 	
-	### Views in `Amazon GTM.base`
+	### Views in `Operation.base`
+	
+	The base carries no project filter. It is the operations cockpit for every stream — Amazon MBB, Sample Ops, SA Presales Transition, AWS study — because the requirement was one surface, not two. Views scope by date, quadrant, and who holds the ball, never by project.
 	
 	| View | Type | Filter |
 	|---|---|---|
@@ -311,7 +313,7 @@
 	| Step | Work | Estimate |
 	|---|---|---|
 	| 1 | Add four `userFields`; enable `!` priority trigger; fix `priorityWeight` in all seven `TaskNotes/Views/*.base`; correct `customPriorities` weights | 20 min |
-	| 2 | Write `Amazon GTM.base` with the five views | 40 min |
+	| 2 | Write `Operation.base` with the five views | 40 min |
 	| 3 | Turn on `useBodyTemplate` with the enrichment template; rewrite the Daily Operations template to embed the five views above the reflection questions | 20 min |
 	| 4 | Seed the recurring cadence tasks from §5 | 30 min |
 	| 5 | Create the three missing contact cards (张程 00500696, 蒙清萍 84291389, 金哲 00837646) and write the stakeholder read onto each, plus onto [[Liu Zhou 00542940]] and [[Huang Yi 84411269 (Selina)]]; add the read section and the owes-me dataview to the contact template | 30 min |
