@@ -29,8 +29,8 @@
     "defaultDueTime": "none",
     "defaultScheduledDate": "today",
     "defaultScheduledTime": "none",
-    "bodyTemplate": "",
-    "useBodyTemplate": false,
+    "bodyTemplate": "Template/Task Body Template",
+    "useBodyTemplate": true,
     "occurrenceBodyTemplate": "",
     "useOccurrenceBodyTemplate": false,
     "defaultReminders": []
