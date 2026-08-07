@@ -1,3 +1,22 @@
+---
+status: done
+priority: high
+scheduled: 2026-07-20
+contexts:
+  - work
+projects:
+  - "[[FWA Business Development]]"
+timeEstimate: 120
+dateModified: 2026-08-07T11:58:40.259+01:00
+tags:
+  - task
+  - fwa
+  - h3g
+  - market-intelligence
+assigned_by: "[[Huang Yi 84411269]]"
+source: WeLink request, 2026-07-20
+completedDate: 2026-08-07
+---
 ﻿---
 status: doing
 priority: high

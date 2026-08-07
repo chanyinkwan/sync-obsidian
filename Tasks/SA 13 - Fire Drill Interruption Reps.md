@@ -3,6 +3,7 @@ status: todo
 priority: mid
 tags:
   - task
+  - archived
 projects:
   - "[[SA Presales Transition]]"
 contexts:
@@ -12,6 +13,7 @@ due: 2026-09-06
 recurrence: FREQ=WEEKLY;BYDAY=MO,WE,FR;UNTIL=20260904T235959Z
 timeEstimate: 50
 dateCreated: 2026-07-12T12:00:00.000+01:00
+dateModified: 2026-08-07T11:47:12.112+01:00
 ---
 # SA 13 - Fire Drill Interruption Reps
 

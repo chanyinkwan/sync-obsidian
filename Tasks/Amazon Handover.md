@@ -1,13 +1,15 @@
 ---
-status: doing
+status: done
 priority: high
 scheduled: 2026-07-27T10:30
 dateCreated: 2026-07-22T19:38:31.688+01:00
-dateModified: 2026-08-05T15:04:55.912+01:00
+dateModified: 2026-08-07T11:44:49.223+01:00
 tags:
   - task
 projects:
   - "[[Amazon take over]]"
+completedDate: 2026-08-07
+eisenhower: q1
 ---
 
 **入口:[[00 Amazon Router GTM — Note Map]]** 

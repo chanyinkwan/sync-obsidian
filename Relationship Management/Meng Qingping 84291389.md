@@ -23,7 +23,7 @@ tags:
 # Meng Qingping (蒙清萍) · 84291389
 
 ## At a glance
-- **Role:** 
+- **Role:** MSS Operation, Delivery
 - **What they care about / their stake:** 
 - **How to work with them:** 
 

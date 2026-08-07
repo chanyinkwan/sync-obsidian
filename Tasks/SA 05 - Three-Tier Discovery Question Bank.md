@@ -10,6 +10,9 @@ contexts:
 scheduled: 2026-07-20
 due: 2026-07-26
 dateCreated: 2026-07-12T12:00:00.000+01:00
+dateModified: 2026-08-07T11:58:52.635+01:00
+eisenhower: q1
+tasknotes_manual_order: tnwhldsowhlc
 ---
 # SA 05 - Three-Tier Discovery Question Bank
 

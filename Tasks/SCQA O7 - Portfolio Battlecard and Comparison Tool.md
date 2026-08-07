@@ -1,5 +1,4 @@
 ---
-title: SCQA O7 - Portfolio Battlecard and Comparison Tool
 status: todo
 priority: high
 due: 2026-08-03
@@ -20,6 +19,9 @@ related:
   - "[[2-7-2026 Product Roadmap Meeting Transcript]]"
   - "[[15-7-2026 FWA Business Strategies Meeting Transcript]]"
   - "[[10-7-2026 Meeting - July Relationship and Product Training - Transcript]]"
+dateModified: 2026-08-07T11:58:10.318+01:00
+eisenhower: q3
+tasknotes_manual_order: tnvririririo
 ---
 
 # O7 · Portfolio Battlecard ＋ 比較工具（交接資產）

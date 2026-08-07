@@ -1,10 +1,10 @@
 ---
-status: doing
+status: done
 priority: high
 scheduled: 2026-08-03
 due: 2026-08-03
 dateCreated: 2026-07-27T10:29:23.283+01:00
-dateModified: 2026-07-27T16:13:26.215+01:00
+dateModified: 2026-08-07T11:58:23.122+01:00
 tags:
   - task
   - scqa
@@ -18,6 +18,8 @@ related:
   - "[[27-7-2026 SCQA Prep]]"
   - "[[SCQA O6 - H3G Stakeholder Brief Pack]]"
   - "[[SCQA O7 - Portfolio Battlecard and Comparison Tool]]"
+completedDate: 2026-08-07
+eisenhower: q1
 ---
 
 # 3-8-2026 SCQA Prep — 三人檔案交付 ＋ 產品學習計畫

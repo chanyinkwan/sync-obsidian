@@ -848,6 +848,30 @@
       "requestedAt": 1785421499681,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Map On-going Project in Task Note.md",
+      "requestedAt": 1786099958493,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Apply Sample - Pura Pro Max.md",
+      "requestedAt": 1786112253198,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Amazon Product Level Category Identification.md",
+      "requestedAt": 1786112813178,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Apply for Technical Product Manager.md",
+      "requestedAt": 1786114616090,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {

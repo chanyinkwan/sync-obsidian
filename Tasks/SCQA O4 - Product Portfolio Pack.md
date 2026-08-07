@@ -1,13 +1,15 @@
 ---
-title: SCQA O4 - Product Portfolio Pack
-status: todo
+status: hold
 priority: medium
 tags:
+  - q3
   - task
 projects:
   - "[[8-7-2026 SCQA Meeting]]"
 contexts:
   - work
+dateModified: 2026-08-07T11:59:02.666+01:00
+eisenhower: q1
 ---
 # O4 · 產品組合串講包 — Product Portfolio Pack
 

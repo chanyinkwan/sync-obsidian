@@ -1,6 +1,6 @@
 ---
 type: project
-status: active
+status: hold
 owner: me
 stakeholders:
 domain: Career / Job Search

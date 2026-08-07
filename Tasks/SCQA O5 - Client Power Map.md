@@ -1,5 +1,5 @@
 ---
-status: doing
+status: done
 priority: medium
 tags:
   - task
@@ -7,7 +7,8 @@ projects:
   - "[[8-7-2026 SCQA Meeting]]"
 contexts:
   - work
-dateModified: 2026-07-13T00:00:00.000+01:00
+dateModified: 2026-08-07T11:58:46.859+01:00
+completedDate: 2026-08-07
 ---
 
 # O5 · 客戶權力地圖 — Client Power Map

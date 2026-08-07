@@ -1,12 +1,15 @@
 ---
-status: doing
+status: done
 priority: normal
 scheduled: 2026-07-16
 projects:
   - "[[Unknowns Navigator Playbook]]"
 tags:
   - task
-contexts: hub
+contexts:
+  - hub
+dateModified: 2026-08-07T11:57:01.012+01:00
+completedDate: 2026-08-07
 ---
 
 Build Unknowns Navigator Playbook

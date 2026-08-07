@@ -3,7 +3,7 @@ status: hold
 priority: high
 scheduled: 2026-06-29
 dateCreated: 2026-06-29T16:20:12.712+01:00
-dateModified: 2026-07-03T17:03:15.577+01:00
+dateModified: 2026-08-07T11:57:22.162+01:00
 tags:
   - task
 projects:
@@ -11,6 +11,7 @@ projects:
 contexts:
   - hub
 tasknotes_manual_order: tniririririr
+eisenhower: q3
 ---
 
 Features:

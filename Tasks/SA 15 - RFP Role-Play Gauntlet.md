@@ -3,6 +3,7 @@ status: todo
 priority: high
 tags:
   - task
+  - archived
 projects:
   - "[[SA Presales Transition]]"
 contexts:
@@ -12,6 +13,7 @@ due: 2026-09-20
 recurrence: FREQ=WEEKLY;BYDAY=TU,TH;UNTIL=20260917T235959Z
 timeEstimate: 60
 dateCreated: 2026-07-12T12:00:00.000+01:00
+dateModified: 2026-08-07T11:47:17.196+01:00
 ---
 # SA 15 - RFP Role-Play Gauntlet
 

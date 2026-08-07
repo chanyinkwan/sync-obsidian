@@ -1,5 +1,4 @@
 ---
-title: SCQA O6 - H3G Stakeholder Brief Pack
 status: doing
 priority: high
 due: 2026-08-03
@@ -20,7 +19,9 @@ related:
   - "[[SCQA O5 - Client Power Map]]"
   - "[[SCQA O2 - Org-to-Customer Relationship Map]]"
   - "[[SCQA O7 - Portfolio Battlecard and Comparison Tool]]"
-dateModified: 2026-07-29T21:06:07.856+01:00
+dateModified: 2026-08-07T11:55:51.457+01:00
+eisenhower: q2
+tasknotes_manual_order: tnoceiririrh
 ---
 
 # O6 · H3G Stakeholder Brief Pack
