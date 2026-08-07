@@ -248,6 +248,17 @@
       "order": 3,
       "autoArchive": false,
       "autoArchiveDelay": 5
+    },
+    {
+      "id": "cancelled",
+      "value": "cancelled",
+      "label": "Cancelled",
+      "color": "#8a8a8a",
+      "isCompleted": true,
+      "excludeFromCycle": true,
+      "order": 4,
+      "autoArchive": false,
+      "autoArchiveDelay": 5
     }
   ],
   "customPriorities": [
@@ -1596,5 +1607,6 @@
       ]
     }
   ],
-  "lastSelectedTaskPath": "Tasks/SA 00 - Exam Prep.md"
+  "lastSelectedTaskPath": "Tasks/SA 00 - Exam Prep.md",
+  "lastNotifiedReleaseVersion": "4.12.0"
 }

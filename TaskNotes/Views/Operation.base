@@ -94,6 +94,7 @@ views:
     filters:
       and:
         - status != "done"
+        - status != "cancelled"
         - eisenhower.isEmpty()
         - recurrence.isEmpty()
     order:
@@ -113,6 +114,7 @@ views:
     filters:
       and:
         - status != "done"
+        - status != "cancelled"
         - status != "hold"
         - eisenhower.isEmpty() == false
     groupBy:
@@ -137,6 +139,7 @@ views:
     filters:
       and:
         - status != "done"
+        - status != "cancelled"
         - waiting_on.isEmpty() == false
     groupBy:
       property: waiting_on
@@ -168,6 +171,7 @@ views:
             - and:
                 - recurrence.isEmpty()
                 - status != "done"
+                - status != "cancelled"
             - and:
                 - recurrence.isEmpty() == false
                 - complete_instances.map(date(value).format("YYYY-MM-DD")).contains(today().format("YYYY-MM-DD")) != true
@@ -195,6 +199,7 @@ views:
     filters:
       and:
         - status != "done"
+        - status != "cancelled"
         - or:
             - and:
                 - due.isEmpty() == false

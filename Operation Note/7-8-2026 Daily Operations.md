@@ -1,11 +1,11 @@
 ---
 type: daily
-date: {{date:YYYY-MM-DD}}
+date: 2026-08-07
 hub: "[[Life @Huawei System]]"
 tags:
   - daily
 ---
-# {{date:D-M-YYYY}} Daily Operations
+# 7-8-2026 Daily Operations
 > **`$= (()=>{const s=dv.luxon.DateTime.fromISO("2026-06-08");let d=dv.current().date||dv.current().file.day;if(!d)return"Day ?";let c=0,t=s;while(t<=d){if(t.weekday<=5)c++;t=t.plus({days:1});}return"Day "+c;})()`** · Hub: [[Life @Huawei System]]
 
 ## 📥 Inbox — untriaged
