@@ -8,6 +8,7 @@ tags:
   - task
 projects:
   - "[[Look for another job]]"
+  - "[[Trip.com Interview]]"
 contexts:
   - hub
 tasknotes_manual_order: tnqsowhldsov

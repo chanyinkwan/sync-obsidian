@@ -872,6 +872,48 @@
       "requestedAt": 1786114616090,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Background Research on Trip.com.md",
+      "requestedAt": 1786294619578,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Amazon MBB Product Categorising.md",
+      "requestedAt": 1786353815342,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Write in sell out data - Amazon.md",
+      "requestedAt": 1786354928729,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Competencies Prep with Stories - Trip.biz Interview.md",
+      "requestedAt": 1786358157934,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Portfolio Preparation - Trip.biz.md",
+      "requestedAt": 1786362273616,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/How my day to day looks like - match with Product Manager.md",
+      "requestedAt": 1786362758620,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/First Mock Interview.md",
+      "requestedAt": 1786369181458,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {

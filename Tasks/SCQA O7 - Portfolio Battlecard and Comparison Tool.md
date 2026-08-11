@@ -21,7 +21,7 @@ related:
   - "[[10-7-2026 Meeting - July Relationship and Product Training - Transcript]]"
 dateModified: 2026-08-07T11:58:10.318+01:00
 eisenhower: q3
-tasknotes_manual_order: tnvririririo
+tasknotes_manual_order: tngmzzzzzzzz
 ---
 
 # O7 · Portfolio Battlecard ＋ 比較工具（交接資產）

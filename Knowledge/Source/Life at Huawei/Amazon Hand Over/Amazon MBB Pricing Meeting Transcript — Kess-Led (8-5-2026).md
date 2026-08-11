@@ -12,7 +12,7 @@ tags:
   - meeting
   - meeting-transcript
 ---
-# Actual Amazon MBB Pricing Meeting — 九月價格指引對齊
+# Amazon MBB Pricing Meeting — Kess-Led 九月價格指引對齊(8-5-2026)
 
 **Date:** 2026-08-05(週三) · **Duration:** 00:07–11:00 · **Host:** Kess Chan(本人,逐型號報價) · **Location:** 未提及(WeLink 視訊) · **In-room vs dialled-in:** Kess 與 Ziyi 共用一支麥克風/帳號,董淼另一端
 

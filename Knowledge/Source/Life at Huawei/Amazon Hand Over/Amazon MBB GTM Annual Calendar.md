@@ -11,7 +11,7 @@ source:
   - "Handover Book Doc/2026年 亚马逊MBB价格及销毛 v3.xlsx"
   - "[[Amazon MBB Handover Meeting Transcript]]"
   - "[[Amazon MBB Pricing Meeting Transcript]]"
-  - "[[Actual Amazon MBB Pricing Meeting Transcript]]"
+  - "[[Amazon MBB Pricing Meeting Transcript â Kess-Led (8-5-2026)]]"
   - "[[Amazon Handover Meeting Transcript Part 3]]"
 tags:
   - reference
@@ -283,7 +283,7 @@ tags:
 - [ ] 波蘭代表處 GTM(檔案裡是 TBD)。`___`
 
 **資料**
-- [ ] **`232a` 到底是哪個型號**(九月 45.99、斷貨)—— 你答 E5783-230a,但「232a」字串在三份檔案中**只**對應 **B535-232a**,且會上順序 B530→232a→B636 剛好連號。**45.99 在所有價格檔案裡都查不到。**見 [[Actual Amazon MBB Pricing Meeting Transcript]] Open questions。`___`
+- [ ] **`232a` 到底是哪個型號**(九月 45.99、斷貨)—— 你答 E5783-230a,但「232a」字串在三份檔案中**只**對應 **B535-232a**,且會上順序 B530→232a→B636 剛好連號。**45.99 在所有價格檔案裡都查不到。**見 [[Amazon MBB Pricing Meeting Transcript â Kess-Led (8-5-2026)]] Open questions。`___`
 - [ ] E5785-320b 九月泛歐下半月數字(逐字稿 `72.4` 不完整),且本場定的低價方向與 `by SKU progress`「泛歐保持高價、導流至 E5783」相反。`___`
 - [ ] 庫存線上表格的正式名稱(Ziyi 說「在那個 work station 裡面」)。`___`
 - [ ] 廣告 Dashboard 的正式名稱與入口。`___`

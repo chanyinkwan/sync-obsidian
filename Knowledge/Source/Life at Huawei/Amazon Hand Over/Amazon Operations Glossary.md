@@ -6,7 +6,7 @@ account_or_project: "[[Amazon take over]]"
 source:
   - "[[Amazon MBB Handover Meeting Transcript]]"
   - "[[Amazon MBB Pricing Meeting Transcript]]"
-  - "[[Actual Amazon MBB Pricing Meeting Transcript]]"
+  - "[[Amazon MBB Pricing Meeting Transcript â Kess-Led (8-5-2026)]]"
   - "[[Amazon Handover Meeting Transcript Part 1]]"
   - "[[Amazon Handover Meeting Transcript Part 2]]"
   - "[[Amazon Handover Meeting Transcript Part 3]]"
@@ -60,7 +60,7 @@ tags:
   - **法、意、西等其他國家 = 5%**
 - 推論出來的鐵律:**必須先跑高價滿 30 天,再做 offer,deal tag 才有效**;**offer 超過兩週 deal tag 就沒了**。
 - 所以 **run rate : offer ≈ 2/3 : 1/3**(30 天 vs 兩週)。
-- **同一個價連續跑 30 天會把划線價拉低**——實務上會在下半月微調 1~2 塊錢避開(H173 的九月做法,[[Actual Amazon MBB Pricing Meeting Transcript]] 02:15)。
+- **同一個價連續跑 30 天會把划線價拉低**——實務上會在下半月微調 1~2 塊錢避開(H173 的九月做法,[[Amazon MBB Pricing Meeting Transcript â Kess-Led (8-5-2026)]] 02:15)。
 - 各國門檻不同會導致**同一產品各國跑不同價**:低不到 15% 時就只低到 5%,**保證部分國家能拿到 deal tag**([[Amazon MBB Pricing Meeting Transcript]] 07:17)。
 
 ### 促銷日曆與節奏
@@ -157,19 +157,19 @@ tags:
 
 ## 7. 系統與檔案
 
-| 名稱 | 用途 |
-|---|---|
-| `Handover book.xlsx` | **最大的一個 mapping**,其他所有資料夾都是它的支撐材料。四個分頁:`Task & Template`(所有要做的事)、`by SKU progress`(每個型號現況)、`Business Org Map & PoC`(聯絡人)、`Ongoing Projects`(8 個在辦項目) |
-| `泛欧亚马逊月度价格指引.xlsx` | 月度價格指引,對齊會的產出 |
-| `2026年 亚马逊MBB价格及销毛 v3.xlsx` | 三段價 + 銷毛率 + 按月成本上漲 |
-| `AMZ MBB量价模拟 V4.xlsx` | 量價模擬 / BP;分型號 sheet + `by月SO模拟` + 運費 + BSR 數據 |
-| **MBB category roadmap / 產品包** | 每個產品的規格、賣點、認證報告(歐盟法規);**重點產品直接附競品對比**;有人維護、新品會更新 |
-| `Product Launch Checklist.xlsx` | 新品上市 checklist template,所有產品共用 |
-| `MBB SI volume&Rev Tracker.xlsx` | SI 量與收入追蹤 |
-| **iPrice** | 內部定價/商務授權工具 |
-| **SellerSprite(賣家精靈)** | 匯出各國 BSR 前 100 |
-| **FineBI / 靈熙(Lingxing)流量報表** | SO 數據 / 流量報表 |
-| **⚠ 庫存線上表格** | Ziyi 說「在那個 work station 裡面」,要從 handover Excel 進去——**正式名稱待確認** |
+| 名稱                               | 用途                                                                                                                                                   |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Handover book.xlsx`             | **最大的一個 mapping**,其他所有資料夾都是它的支撐材料。四個分頁:`Task & Template`(所有要做的事)、`by SKU progress`(每個型號現況)、`Business Org Map & PoC`(聯絡人)、`Ongoing Projects`(8 個在辦項目) |
+| `泛欧亚马逊月度价格指引.xlsx`               | 月度價格指引,對齊會的產出                                                                                                                                        |
+| `2026年 亚马逊MBB价格及销毛 v3.xlsx`      | 三段價 + 銷毛率 + 按月成本上漲                                                                                                                                   |
+| `AMZ MBB量价模拟 V4.xlsx`            | 量價模擬 / BP;分型號 sheet + `by月SO模拟` + 運費 + BSR 數據                                                                                                        |
+| **MBB category roadmap / 產品包**   | 每個產品的規格、賣點、認證報告(歐盟法規);**重點產品直接附競品對比**;有人維護、新品會更新                                                                                                     |
+| `Product Launch Checklist.xlsx`  | 新品上市 checklist template,所有產品共用                                                                                                                       |
+| `MBB SI volume&Rev Tracker.xlsx` | SI 量與收入追蹤                                                                                                                                            |
+| **iPrice**                       | 內部定價/商務授權工具                                                                                                                                          |
+| **SellerSprite(賣家精靈)**           | 匯出各國 BSR 前 100                                                                                                                                       |
+| **FineBI / 靈熙(Lingxing)流量報表**    | SO 數據 / 流量報表                                                                                                                                         |
+| **⚠ 庫存線上表格**                     | Ziyi 說「在那個 work station 裡面」,要從 handover Excel 進去——**正式名稱待確認**                                                                                        |
 
 ---
 
@@ -202,7 +202,7 @@ tags:
 - `Et三` = **H173** · `一期三 / 藥物三` = **H153** · `16五 / HE六 / 665` = **H165**
 - `1688 / 16888 / 6888` = **E6888** · `555 586` = **E5586** · `B30 / B三20` = **B320**
 - `SKO` = SKU
-- ⚠ `232a / 232ha`(45.99、斷貨)= **未能還原**,見 [[Actual Amazon MBB Pricing Meeting Transcript]] Open questions
+- ⚠ `232a / 232ha`(45.99、斷貨)= **未能還原**,見 [[Amazon MBB Pricing Meeting Transcript â Kess-Led (8-5-2026)]] Open questions
 
 **人名**
 - `懂廟 / 董秘淼` = [[Dongmiao|董淼]] · `厘清法` = [[Li Qinghua 00861267|李清華]]

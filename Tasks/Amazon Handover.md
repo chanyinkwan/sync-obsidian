@@ -32,7 +32,7 @@ New Scope for Amazon
 
 Operation Training
 [[Amazon MBB Pricing Meeting Transcript]]
-[[Actual Amazon MBB Pricing Meeting Transcript]]
+[[Amazon MBB Pricing Meeting Transcript â Kess-Led (8-5-2026)]]
 
 Reference
 [[Amazon Operations Glossary]]

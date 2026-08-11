@@ -7,10 +7,10 @@ dateCreated: 2026-08-07T15:17:33.122+01:00
 dateModified: 2026-08-07T16:48:17.106+01:00
 tags:
   - task
-eisenhower: q1
+eisenhower: q3
 projects:
   - "[[Sample Management Ops]]"
-tasknotes_manual_order: tnldsowhldso
+tasknotes_manual_order: tnoqgmzzzzzx
 waiting_on:
   - "[[Dai Linpo 00514722]]"
 ---

@@ -1,15 +1,11 @@
 ---
-status: todo
+status: done
 priority: high
-scheduled: 2026-08-07
-projects:
-  - "[[Amazon take over]]"
-dateCreated: 2026-08-07T15:26:53.103+01:00
-dateModified: 2026-08-07T15:26:53.103+01:00
+scheduled: 2026-08-10
+dateCreated: 2026-08-10T14:39:41.388+01:00
+dateModified: 2026-08-10T14:39:41.388+01:00
 tags:
   - task
-eisenhower: q3
-tasknotes_manual_order: tngmzzzzzzzx
 ---
 
 ## Ask as received

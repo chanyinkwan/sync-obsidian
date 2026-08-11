@@ -29,7 +29,7 @@ Applications against the criteria below go out at W8 (2026-08-31) via [[SA 12 - 
 
 
 ## Materials and deliverables
-
+- [[Trip.com Interview]] — active in parallel: Trip.Biz Senior PM EMEA, panel interview 13 Aug 2026 with Jim Chung. Shares several task notes with this project (dual-tagged).
 
 ## Tasks in this project (auto)
 ```dataview
