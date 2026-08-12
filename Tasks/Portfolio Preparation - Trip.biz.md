@@ -39,6 +39,9 @@ eisenhower: q1
         
     - Attach working samples or screenshots with explicit context explaining what it is, your role, quantified impact, and data sources.
 
+### 60s Introduction
+
+Hi Jim, thanks for having me. I'm Kessog, a commercial product strategist based in London, with around seven years of experience across B2B solutions, product operations, and deployment work at Apple, Bank of China and Huawei. Recently at Huawei, I worked on portfolio strategy across five European markets, connecting customer needs with technical and HQ decisions. Before that at Bank of China, I worked with cross-functional teams on fraud prevention platforms under tight regulatory timelines. What I bring is the ability to translate technical and commercial complexity into scalable, enterprise-ready solutions. I'm directly aligned with trip. biz mission to scale of a corporate travel in EMEA.
 ## Story Bank — 5 pulled stories (Senior PM competencies)
 
 Source: `Knowledge/Source/Job Hunt/Project Database (Master).json`, `CV Context — TripBiz Senior PM EMEA.json`, cross-checked against `Knowledge/About Me/MasterExperienceDB.json` for evidence status.
@@ -46,10 +49,16 @@ Source: `Knowledge/Source/Job Hunt/Project Database (Master).json`, `CV Context 
 
 ### Finalised Framework for story telling
 
+- Context 1 breath
 - Decision 10s
-- Evidence 30s
-- Conflict 20s
+- Outcome with a number 30s
 - Vision or Lesson 10s-
+At Huawei, I was involved in a price negotiation with HQ in China. Our account team believed a price discount was needed to improve our competitiveness, but HQ was strongly focused on protecting sales margin. 
+
+Instead of keeping the discussion only around discounting, I convinced HQ to move away from a price discount discussion by removing a low-value feature instead. That decision reduced cost by $2 per unit, protected margin, and improved our solution competitiveness. 
+
+Looking back, I learned that when stakeholders are stuck between two opposing positions, the better product decision is often finding a third option that serves the underlying goals on both sides.
+
 
 ### The 5 competencies (from the JD + Jim Chung mock question set)
 
@@ -134,8 +143,12 @@ Source: `Knowledge/Source/Job Hunt/Project Database (Master).json`, `CV Context 
 
 ---
 
+## Draft
+- [[Portfolio Draft v1 — TripBiz Senior PM EMEA]] — first draft against the 3-page framework, written 2026-08-12.
+
 ## Missing detail
-- [ ]
+- [ ] Grafana hours figure: CV says 1,000+ hrs/yr, story bank says ~400 hrs/yr verified. Draft says "several hundred hours a year". Pick one before the interview.
+- [ ] Work samples 1–3 need sanitised rebuilds; nothing employer-owned leaves the machine.
 
 ## Who holds what
 | Who | What they hold on THIS task | Delta from usual stance |
