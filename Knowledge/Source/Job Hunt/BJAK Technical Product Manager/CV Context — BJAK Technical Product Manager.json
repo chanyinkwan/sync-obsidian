@@ -1,0 +1,96 @@
+{
+  "_targeting": {
+    "jd": "BJAK Technical Product Manager, London hybrid. Neobank superapp for Southeast Asia. Own a product vertical end to end where real money moves.",
+    "criteria": [
+      "C1. Money-movement correctness in a product where mistakes are immediately visible. Named in the title area, repeated three times across responsibilities and outcomes.",
+      "C2. Regulated constraints as first-class launch gates, shipping per rail as each partner and regulatory gate clears.",
+      "C3. AI judgement: where a model may decide, where deterministic systems must stay in control, human in the loop, eval-ability.",
+      "C4. Hard trade-offs made under uncertainty and defended to an engineering, compliance or ops lead who pushes back.",
+      "C5. Cross-functional alignment across engineering, design, compliance, operations, treasury and finance."
+    ],
+    "anchor_role": "Bank of China (Hong Kong), Technical Product Manager, E-Banking Product. Answers C1 and C2, the two criteria most likely to bin the CV, and carries the most bullet mass.",
+    "bullets_used": [
+      "huawei: cost removed via GTM and pricing reviews (C4)",
+      "huawei: feasibility validated across 6 account subnets (C5)",
+      "huawei: VBA automation of the evaluation programme (technical foundation gate)",
+      "boc: 100% HKMA mandates in 14 days, Geo-IP fraud detection (C1, C2)",
+      "boc: anomaly-detection prototype specced with a developer (C3)",
+      "boc: manday arbitration across competing priorities (C4)",
+      "boc: 7-question requirements elicitation framework (C5)",
+      "boc: Grafana observability, 400 hours a year (C5)",
+      "apple-oda: rollback demand defused with a live fallback (C1, C2)",
+      "apple-oda: reversed a headquarters decision on evidence (C4)",
+      "apple-b2b: GBP 350,000 pipeline (timeline continuity)"
+    ],
+    "cut_for_page_budget": [
+      "apple-oda: 1,500 manual hours a year eliminated. The automation through-line is already carried by the Grafana and VBA bullets.",
+      "apple-b2b: capacity model for a 200+ person workforce. Answered no ranked criterion.",
+      "Nothing was cut that answered a ranked criterion. C1 to C5 all remain covered."
+    ],
+    "killed": [
+      {"bullet": "MoSCoW vendor roadmap proven through a Red Hat proof of concept", "status": "needs_grounding", "criterion": "C2, third-party rails. Best single match in the pool for this JD and still unusable."},
+      {"bullet": "BOC Pay launched across 4 regions on a follow-the-sun UAT schedule", "status": "needs_grounding", "criterion": "C2, shipping against external gates."},
+      {"bullet": "Observability adoption won in a single session with 30+ system leads", "status": "needs_grounding", "criterion": "C5, cross-functional alignment."},
+      {"bullet": "NPS 92 held through the EasyPay POS migration with 10+ Floor Champions", "status": "needs_grounding", "criterion": "C1, money movement where mistakes are visible."},
+      {"bullet": "12 root causes of revenue variance isolated across the account portfolio", "status": "needs_grounding", "criterion": "C4, diagnosis under uncertainty."},
+      {"bullet": "15% year-over-year customer satisfaction lift", "status": "needs_grounding", "criterion": "C1, users never misled."},
+      {"bullet": "AutoTailor LLM dissertation project, 19.4 point ATS lift", "status": "blocked by education review_flag", "criterion": "C3, hands-on LLM product work. Gate 4 bars it until personally verified."},
+      {"bullet": "RFI and RFP response materials for the Tier-1 operator pursuit", "status": "blocked", "criterion": "C5. No bid has concluded."}
+    ],
+    "gap_bridge": "No neobank or Southeast Asia superapp on the record. Bridged once in the summary to regulated money-movement delivery at Bank of China, on the transferable invariants: correctness over convenience, irreversible states, partners nobody controls.",
+    "exceptions": [
+      "The manday arbitration bullet carries no numeric Y, which fails the CV Writing Rules bullet test. Rendered anyway because it is status verified and its binding note reads 'Strongest leadership evidence in the database. Promote it, do not bury it.' Gate 3 makes that note binding and rank-1 data outranks rank-2 style. Logged in the grounding backlog so it gets a number."
+    ],
+    "provenance": "Built 2026-08-13 from MasterExperienceDB.json under the craft-cv skill. Supersedes the pre-skill draft of the same date, which had no ranked criteria, no targeting record and no keyword or bullet-budget check."
+  },
+  "profile_summary": "Technical product manager out of regulated money movement. At Bank of China I ran e-banking and BOC Pay delivery where compliance set the launch gate: 100% of HKMA mandates cleared inside a hard 14-day window, Geo-IP fraud detection shipped against it, and a 3-year incident-triage backlog closed by specifying an anomaly-detection prototype with a developer. That is where I learned where a model earns its place and where a deterministic check has to hold. No neobank or Southeast Asia superapp on the record, the honest match is that regulated-delivery record: correctness over convenience, irreversible states, partners nobody controls.",
+  "experience": [
+    {
+      "company": "Huawei Consumer Business Group",
+      "location": "London, United Kingdom",
+      "role": "Portfolio Solution Presales",
+      "dates": "Apr 2026 – Present",
+      "bullets": [
+        "Cut USD 2 per unit in product cost for a Tier-1 UK mobile network operator by making the case across GTM roadmap and pricing reviews that a feature carried no weight in the customer's buying decision, then removing it from the device configuration.",
+        "Validated solution feasibility across 6 account subnets before proposal commitment, as dedicated presales cover inside a 5-person pursuit team.",
+        "Cut the manual layer out of a 60 to 80 unit evaluation programme with VBA automation and a scheduled task, replacing a daily hand-check of every live sample with automated deadline reminders and cutting about an hour a week of sign-off document assembly."
+      ]
+    },
+    {
+      "company": "Bank of China (Hong Kong)",
+      "location": "Hong Kong",
+      "role": "Technical Product Manager, E-Banking Product",
+      "dates": "Aug 2023 – Oct 2024",
+      "bullets": [
+        "Cleared 100% of HKMA regulatory mandates inside a hard 14-day window, shipping Geo-IP fraud detection with impossible-travel logic, by turning the regulation into an implementation plan and running internal teams alongside third-party vendors against the gate.",
+        "Closed a 3-year backlog in e-banking incident triage by specifying and validating a Python anomaly-detection prototype, built with a developer, that separated critical incidents from deployment noise across 50,000+ historical logs.",
+        "Kept competing projects moving by arbitrating manday conflicts across priorities, either absorbing dependent work directly or building the business case for a timeline change.",
+        "Standardised requirements intake on a 7-question elicitation framework covering objective, context, stakeholders, success criteria, scope, constraints and evidence sources, closing gaps through follow-up interviews before anything reached JIRA.",
+        "Recovered 8 hours a week of manual reporting effort across 20 systems, roughly 400 hours a year, by deploying a centralised Grafana observability framework in place of hand-assembled weekly reports."
+      ]
+    },
+    {
+      "company": "Apple",
+      "location": "Hong Kong",
+      "role": "Operation Data Analyst",
+      "dates": "Mar 2021 – Aug 2023",
+      "bullets": [
+        "Defused rollback demands in the middle of a POS migration by showing store leaders the original report flow still ran as a fallback and committing technical support through the transition.",
+        "Reversed a headquarters decision by presenting evidence that store operations varied by location, moving the Shanghai development team off centralised training onto store-specific delivery."
+      ]
+    },
+    {
+      "company": "Apple",
+      "location": "Hong Kong",
+      "role": "B2B Solution Expert",
+      "dates": "Jan 2020 – Mar 2021",
+      "bullets": [
+        "Generated GBP 350,000 in new B2B pipeline across a 50+ account portfolio by running discovery, solution positioning and qualification end to end, then escalating matured accounts to the corporate sales team to close."
+      ]
+    }
+  ],
+  "activity_line": "CERTIFICATION: AWS Certified Solutions Architect, Associate (SAA-C03), exam scheduled 23 Aug 2026.",
+  "language_line": "Languages: English (fluent, professional), Cantonese (native), Mandarin (native)",
+  "skills_line": "Skills: End-to-end product ownership · requirements elicitation and acceptance criteria · regulatory delivery against hard gates (HKMA) · third-party vendor integration · fraud detection and incident triage · UAT and launch management · observability (Grafana) · LLM product judgement: what a model may decide, human in the loop, evaluation · Python (pandas, data analysis), SQL · JIRA",
+  "interests_line": "Interests: Payments and fintech infrastructure · systems design for regulated products"
+}

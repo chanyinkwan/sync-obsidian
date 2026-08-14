@@ -181,6 +181,7 @@ The shape is diagnosis first, then a guiding policy, then a small number of cohe
 
 ### Days 31 to 60 — Sequence the migration and start the kit
 
+
 1. **Publish the cohort migration plan.** Which client cohorts move when, what must exist before each cohort moves, what the rollback is, and who owns the call. Highest switching cost and highest touch accounts move last, after the platform has earned it.
 2. **Fix the handoff before it is tested at scale.** Specify a context summarisation handoff that pushes a single incident card into the agent's workspace at the moment of transfer, so nobody is asked to explain their problem twice. Scope the integration to the existing contact centre stack rather than replacing it.
 3. **Start the RFP response kit as a versioned product artefact**, not a document: security pack, DPA position, SSO and integration specification, SLA schedule, implementation and transition plan. Every migration cohort feeds it.
@@ -220,9 +221,11 @@ Each sample carries the same four lines: what it is, my role, quantified impact,
 | 3 | Floor level migration playbook, Apple | Technical requirements converted into store specific execution playbooks plus a Floor Champion model | Author, then adoption lead | Uptime held, satisfaction held, all six stores adopted | Internal ops documentation | **Redraw one page as a template.** |
 | 4 | Business pricing portal, Apple B2B | Custom pricing surface that unblocked a procurement objection | Requirements owner, presales | £50K close inside a £350K pipeline | Internal deal record | **Describe verbally, no artefact.** |
 | 5 | Bid and pricing analysis pack, Huawei | Group level bid response structure and pricing analysis across five markets | Owner | USD 2 per unit cost removed from configuration | Internal bid material | **Confidential. Describe the method only, no document.** |
-| 6 | AI career tooling, personal | LLM and RAG pipelines built end to end, public on GitHub | Sole builder | Shows hands on delivery, not just specification | github.com/chanyinkwan | **Safe to show live.** |
+| 6 | Sample programme automation, Huawei | VBA automation built for the sample programme, running in production now | Sole builder | Genuinely self built, per `MasterExperienceDB.technical_profile` | Internal tooling | **Describe verbally. Employer owned, no file.** |
 
-**Rule for the room:** nothing that belongs to a current or former employer gets handed over as a file. Samples 1, 2 and 3 go in as sanitised rebuilds that show the structure of the thinking. Sample 6 is the only one that can be opened on a laptop.
+> ⚠️ **Removed 2026-08-13:** an earlier version of this table listed "AI career tooling, github.com/chanyinkwan" as a sample that was safe to show live. `MasterExperienceDB.json` `excluded_from_cv` records that those four repos are purchased code, not the user's work, excluded permanently on 2026-07-28. **Never cite those repos, their metrics, or the freelance AI Solutions Engineer entry in any application or interview.** The honest technical read is in `technical_profile.honest_read`: hands on at analytics grade, designs systems and directs whoever builds them, has never owned production code professionally.
+
+**Rule for the room:** nothing that belongs to a current or former employer gets handed over as a file. Samples 1, 2 and 3 go in as sanitised rebuilds that show the structure of the thinking. Nothing gets opened on a laptop, so the samples are talked through rather than handed over.
 
 ---
 

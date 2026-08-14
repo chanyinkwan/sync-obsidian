@@ -37,7 +37,7 @@ Allowed: hyphens in genuine compounds (`cross-functional`, `Tier-1`, `real-time`
 
 ## 5. Truth gating
 
-- Bullets come from `Knowledge/Source/About Me/MasterExperienceDB.json`. That file is canonical for titles, dates, and claims.
+- Bullets come from `Knowledge/About Me/MasterExperienceDB.json`. That file is canonical for titles, dates, and claims.
 - A bullet marked `"status": "draft"` with a `note` saying *do not use in CV* stays out of the CV until the underlying thing actually ships. No exceptions, no clever rephrasing to sneak it in.
 - Ongoing responsibilities may be stated as responsibilities. They may not be dressed up as completed achievements.
 - Timeline comes from the canonical LinkedIn-confirmed dates in `MasterExperienceDB.json`, not from `NewProofBank.json` (archived, dates unreliable) and not from `CLAUDE.md` (stale role title).

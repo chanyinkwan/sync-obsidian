@@ -41,10 +41,12 @@ eisenhower: q1
 
 ### 60s Introduction
 
-Hi Jim, thanks for having me. I'm Kessog, a commercial product strategist based in London, with around seven years of experience across B2B solutions, product operations, and deployment work at Apple, Bank of China and Huawei. Recently at Huawei, I worked on portfolio strategy across five European markets, connecting customer needs with technical and HQ decisions. Before that at Bank of China, I worked with cross-functional teams on fraud prevention platforms under tight regulatory timelines. What I bring is the ability to translate technical and commercial complexity into scalable, enterprise-ready solutions. I'm directly aligned with trip. biz mission to scale of a corporate travel in EMEA.
+Hi Jim, thanks for having me. I'm Kessog, a commercial product strategist based in London, with around seven years of experience across B2B solutions, product operations, ad deployment work at Apple, Bank of China and Huawei. Recently at Huawei, I worked on portfolio strategy across five European markets, connecting customer needs with technical and HQ decisions. Before that at Bank of China, I worked with cross-functional teams on fraud prevention features under tight regulatory banking products. What I bring is the ability to translate technical and commercial complexity into scalable, enterprise-ready solutions. I'm directly aligned with trip. biz mission to scale of a corporate travel in EMEA.
 ## Story Bank — 5 pulled stories (Senior PM competencies)
 
-Source: `Knowledge/Source/Job Hunt/Project Database (Master).json`, `CV Context — TripBiz Senior PM EMEA.json`, cross-checked against `Knowledge/About Me/MasterExperienceDB.json` for evidence status.
+Source: `CV Context — TripBiz Senior PM EMEA.json`, cross-checked against `Knowledge/About Me/MasterExperienceDB.json` for evidence status.
+
+> ⚠️ **2026-08-13:** these stories were originally pulled partly from `Project Database (Master).json`, which has since been **deleted** as contaminated (it carried the fabricated freelance block and the four purchased repos, unmarked, plus inflated figures the DB had already corrected). Recoverable at commit `2ce25d4` if ever needed. `MasterExperienceDB.json` is now the only source. Re-check any story detail here against it before reuse.
 
 
 ### Finalised Framework for story telling

@@ -1,0 +1,133 @@
+{
+  "_purpose": "Append-only demand log for evidence that was cut from an application because it was not grounded. One record per bullet per application. Demand count is the priority queue: ground the most-demanded bullets first. Created 2026-08-13 after the BJAK draft lost six on-target bullets whose loss would otherwise have existed only in a chat transcript.",
+  "_contract": "craft-cv appends here. It never edits MasterExperienceDB.json. A bullet's status changes only in a grounding session with Chukwan, recorded in the DB with a source and date.",
+  "_key": "Bullets have no stable IDs yet, so records key on a short descriptor plus role. Migrate to bullet IDs when DATA-REDESIGN.md is applied.",
+  "records": [
+    {
+      "bullet": "MoSCoW-prioritised vendor roadmap validated through a Red Hat proof of concept",
+      "role": "Bank of China, Technical Product Manager",
+      "status": "needs_grounding",
+      "grounding_question": "What did the vendor evaluation actually save, and is that the same saving as the BOC Pay UAT figure or a separate one? The DB flags the two 15-manday claims as a possible duplicate: ground both or cut one.",
+      "demand": [
+        {
+          "date": "2026-08-13",
+          "jd": "BJAK Technical Product Manager",
+          "criterion": "third-party rail reliance and vendor evaluation",
+          "note": "Single best-matching bullet for this JD's hardest criterion. Cut for lack of a grounded number."
+        }
+      ]
+    },
+    {
+      "bullet": "BOC Pay four-region launch on a follow-the-sun 24-hour synchronised UAT plan",
+      "role": "Bank of China, Technical Product Manager",
+      "status": "needs_grounding",
+      "grounding_question": "What is the real saving from the follow-the-sun UAT schedule, and where is it recorded? Currently stated as 15 mandays, unsourced.",
+      "demand": [
+        {
+          "date": "2026-08-13",
+          "jd": "BJAK Technical Product Manager",
+          "criterion": "shipping against external gates, multi-region launch",
+          "note": "Also cut from the TripBiz portfolio narrative, where it was softened to 'roughly two weeks of budget'."
+        }
+      ]
+    },
+    {
+      "bullet": "Grafana adoption demo to 30+ system leads and department heads",
+      "role": "Bank of China, Technical Product Manager",
+      "status": "needs_grounding",
+      "grounding_question": "What share of technical objections actually closed in the first session? The 80 percent figure was never re-sourced.",
+      "demand": [
+        {
+          "date": "2026-08-13",
+          "jd": "BJAK Technical Product Manager",
+          "criterion": "aligning engineering, compliance and operations with minimal friction",
+          "note": "The adoption half of the observability story. The build half rendered fine at ~400 hrs/year."
+        }
+      ]
+    },
+    {
+      "bullet": "EasyPay POS migration led through 10+ Floor Champions",
+      "role": "Apple, Operation Data Analyst",
+      "status": "needs_grounding",
+      "grounding_question": "Can NPS 92 be sourced, or should the claim be reduced to operational uptime held through the migration?",
+      "demand": [
+        {
+          "date": "2026-08-13",
+          "jd": "BJAK Technical Product Manager",
+          "criterion": "money movement where mistakes are immediately visible",
+          "note": "A payment-system migration with uptime held is close to the centre of this JD. Lost to one ungrounded number."
+        }
+      ]
+    },
+    {
+      "bullet": "Manday arbitration keeping competing projects moving",
+      "role": "Bank of China, Technical Product Manager",
+      "status": "verified, but carries no numeric Y",
+      "grounding_question": "How many competing projects, over what period, and what would have slipped without the arbitration? The DB calls this the strongest leadership evidence on record and it has no Y.",
+      "demand": [
+        {
+          "date": "2026-08-13",
+          "jd": "BJAK Technical Product Manager",
+          "criterion": "making hard trade-offs and defending them under pushback",
+          "note": "RENDERED by exception, not killed. Status is verified and the binding note says promote it, so gate 3 (rank-1 data) beat the rank-2 style rule requiring a number. Still the highest-value grounding target here: a number would remove the exception."
+        }
+      ]
+    },
+    {
+      "bullet": "Third-party vendor alignment on fraud solutions",
+      "role": "Bank of China, Technical Product Manager",
+      "status": "no number",
+      "grounding_question": "How many vendors, and what changed because of the alignment work? Cycle time, rework avoided, or scope agreed.",
+      "demand": [
+        {
+          "date": "2026-08-13",
+          "jd": "BJAK Technical Product Manager",
+          "criterion": "third-party rail reliance and rail-down behaviour",
+          "note": "Directly on-topic for the JD. Unusable without a number."
+        }
+      ]
+    },
+    {
+      "bullet": "12 root causes of revenue variance isolated across the 50+ account portfolio",
+      "role": "Apple, B2B Solution Expert",
+      "status": "needs_grounding",
+      "grounding_question": "Where does the count of 12 root causes come from, and can the diagnostic itself be described without the count?",
+      "demand": [
+        {
+          "date": "2026-08-13",
+          "jd": "BJAK Technical Product Manager",
+          "criterion": "diagnosis and trade-offs under uncertainty",
+          "note": "Would have shown structured diagnosis rather than sales activity, which is the harder thing to evidence from a B2B role."
+        }
+      ]
+    },
+    {
+      "bullet": "AutoTailor dissertation project, 19.4 point ATS lift on fine-tuned LLM simulators",
+      "role": "University of Exeter, MSc Business Analytics",
+      "status": "blocked by education review_flag",
+      "grounding_question": "Is the AutoTailor work personally verifiable, including the 19.4 point figure and the batch of 20+ CVs? It carries status verified but the education review_flag overrides that.",
+      "demand": [
+        {
+          "date": "2026-08-13",
+          "jd": "BJAK Technical Product Manager",
+          "criterion": "hands-on with LLM-based products, eval-ability",
+          "note": "The JD names hands-on LLM product experience as a requirement. This is the only asset in the record that answers it directly, and gate 4 bars it. Highest-leverage verification on the list for AI-adjacent roles."
+        }
+      ]
+    },
+    {
+      "bullet": "CSAT improvement year on year",
+      "role": "Apple",
+      "status": "needs_grounding",
+      "grounding_question": "Where does the 15 percent year-on-year CSAT figure come from, and over which period?",
+      "demand": [
+        {
+          "date": "2026-08-13",
+          "jd": "BJAK Technical Product Manager",
+          "criterion": "users are never misled about the state of their funds",
+          "note": "Weakest fit of the seven. Ground it last."
+        }
+      ]
+    }
+  ]
+}
