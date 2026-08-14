@@ -42,15 +42,16 @@ These decide more first screens than any story. Have the actual answers, not app
 
 Rewritten so it matches the order of roles on the CV she is reading, keeps the pipeline and Viu TV figures apart, and lands the level question on your terms.
 
-> I'm Kessog, based in London. Six years across B2B sales, product delivery and technical operations, and now presales.
->
-> Right now I'm presales cover on a Tier-1 UK mobile network operator account at Huawei: feasibility, device portfolio, pricing input. Before that, technical product management at Bank of China on e-banking and payments, delivering a regulator's mandates inside a hard 14-day window. Before that I spent two and a half years at Apple as an operations data analyst, and before that in their B2B team, where I built GBP 350,000 of pipeline across a 50-account portfolio.
->
-> There is one thread through all four: I find manual work and I remove it. A ticketing queue at Apple, a reporting setup the year after, a Grafana observability layer at Bank of China, and VBA automation running in production on the programme I own at Huawei now. Four employers, one behaviour.
->
-> What pulls me to Samsara is that it points that at physical operations, where the device and the data are the product. And to say the obvious one first: I know six years against an Associate title looks odd, and I'm happy to take that head on whenever you want it.
+> Hi, I'm Kessog, based in London. Around 6 years across B2B sales, product delivery and technical operations, and now presales. I work between customers and technical teams to turn business needs into solutions that can actually be delivered. 
+> 
+> Currently, I am a pre-sales consultant at Huawei supporting a Tier 1 UK mobile operator, bridging the gap between customer account teams and technical execution, end to end supporting the presales services. Day to day, I host commercial discovery meetings with customers, translate those needs into technical requirements, align with internal teams, to ensure the product fits our clients' needs and deliver the commercial side with pricing and proposals, back and forth until the deal is closed.
+> 
+> Previously, I was a technical product manager at Bank of China, where I delivered a regulator-mandated fraud requirement in 14 days. 
+> 
+> Earlier, I spent three years at Apple in B2B solutions, running demo sections with Apple Ecosystem including Apple Business Manager, device deployment etc, managing a over 20 account portfolio and generating £350,000 revenue in pipeline. 
 
-**Why the changes:** the old version skipped Operation Data Analyst, your largest CV block, so the story did not match the page. It also claimed "six years in the front half of technical deals," which one follow-up puncture ("which of those was presales?") turns into a retreat. And it fused the GBP 350,000 pipeline with the Viu TV close, which your database explicitly forbids because the overlap is unresolved.
+
+Samsara’s mix of hardware, data, and real-world operations is exactly the sales engineering path I want to build.
 
 ---
 
@@ -66,12 +67,16 @@ Every question below is lifted from [[Past Interview Questions]], the cleaned Gl
 
 *Reported in every recruiter-screen account. This is the one they always ask.*
 
-> "I have already run the front half of a technical deal end to end, and the part I liked most was when a technical objection was the thing standing in the way. At Apple, a Hong Kong broadcaster walked into the store with no opportunity attached to it. I worked it for three months, did the technical support myself to earn credibility, and built a custom business pricing portal because that was the artifact procurement needed in order to say yes. The last thing blocking it was fleet control, and I cleared that by bringing in device management. It closed at GBP 50,000.
->
-> What I do not have yet is one product I know deeply enough to answer on the call instead of coming back with an answer. That is the specific part of the SE job I want, and it is why I am applying at Associate rather than pitching myself into something wider."
+> Over the past six years I've naturally gravitated towards the front half of technical deals. The part I've enjoyed most isn't negotiating price—it's understanding the customer's problem, working out whether we can solve it, and removing the technical objections that stop a deal moving forward.
 
-- **Do not say** SE is a promotion out of sales, or a softer landing in engineering. Both read as "does not want this job, wants a different one."
-- **If she asks why Samsara specifically:** the device and the data are the same product, and the customers are depots, yards and fleets. Physical operations is where your automation instinct actually has somewhere to land.
+One example was at Apple, where a Hong Kong broadcaster came in without a defined opportunity. I spent three months building the relationship, providing the technical support myself, and introducing device management when fleet control became their final concern. That eventually became a £50,000 deal.
+
+Since then, both at Bank of China and Huawei, I've found myself sitting between customers, commercial teams and engineers. That's the work I enjoy most.
+
+What attracts me to Sales Engineering is becoming the technical expert customers trust during that process.
+
+And specifically at Samsara, you're not just selling software. You're helping customers digitise physical operations using hardware, data and AI, which is exactly the kind of environment where I think my background fits."
+
 
 ---
 
@@ -79,7 +84,7 @@ Every question below is lifted from [[Past Interview Questions]], the cleaned Gl
 
 *Reported twice, in both the recruiter screen and the behavioural round. Have one answer, not three.*
 
-> "Halfway through migrating six flagship stores off a manual reporting routine, the store leaders wanted to roll back. They were in peak trading, they did not trust the new flow, and they were the ones who would carry it if it broke.
+> "Halfway through migrating six flagship stores off a manual reporting routine, the store leaders ask if the old system is still working, they want it as a solution of unsolved challenge. They were in peak trading, they did not trust the new flow, and they were the ones who would carry it if it broke.
 >
 > I did not argue the merits. I showed them the original report flow was still running underneath as a fallback, so rolling back was available to them at any point, and I committed to carrying the technical support myself through the whole transition rather than handing them a tool and leaving.
 >

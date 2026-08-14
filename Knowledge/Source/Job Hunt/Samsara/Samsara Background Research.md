@@ -1,3 +1,4 @@
+> Ready-to-run Gemini Deep Research prompts for all five sections: [[Deep Research Prompts — Samsara]]
 
 1. The Rapid 20-Minute Triage Questions
 
