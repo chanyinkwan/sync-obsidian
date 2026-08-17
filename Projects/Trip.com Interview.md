@@ -32,7 +32,7 @@ tags:
 ## Materials and deliverables
 **Role and application**
 - [[Senior Product Manager EMEA JD]] — tidied job description.
-- [[Kessog Chan CV — TripBiz Senior PM EMEA.pdf]] / `.docx` — submitted CV (3 Jul 2026).
+- [[Knowledge/Source/Job Hunt/Kessog Chan CV — TripBiz Senior PM EMEA.pdf]] / `.docx` — submitted CV (3 Jul 2026).
 - [[Jim Chung - Hiring Manager.pdf]] — hiring manager's profile/portfolio.
 
 **Company and market research**

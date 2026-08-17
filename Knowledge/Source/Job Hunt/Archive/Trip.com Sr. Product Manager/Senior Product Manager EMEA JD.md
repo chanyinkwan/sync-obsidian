@@ -6,7 +6,15 @@ role: Senior Product Manager — EMEA (Corporate Travel)
 location: London, UK (70 St Mary Axe)
 reports_to: Head of Product
 source: https://jobs.careers.trip.com/en_US/careers/JobDetail/Sr-Product-Manager-EMEA/6007
-status: listed as open (verified 2026-07-03)
+stage: rejected
+posting_status: open
+salary_range: unknown
+exit_fit: sideways
+fit: low
+fit_reason: "Rejected 2026-08-17 on seniority, the second time on the same role after the 2026-07-09 pass. Panel with Jim Chung on 2026-08-13 did not change the seniority read. Closed."
+inside_contact: Kiran Gosal Kang
+next_action: "None. Thank Kiran and keep the contact warm."
+next_action_date:
 tags:
   - job-description
   - trip-biz

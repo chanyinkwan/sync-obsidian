@@ -18,7 +18,7 @@ tasknotes_manual_order: tniririririr
 ## Materials
 [[Message with Kiran]]
 [[Senior Product Manager EMEA JD]]
-[[Kessog Chan CV — TripBiz Senior PM EMEA.pdf]]
+[[Knowledge/Source/Job Hunt/Kessog Chan CV — TripBiz Senior PM EMEA.pdf]]
 [[Jim Chung - Hiring Manager.pdf]]
 [[Trip.com 歐洲業務分析.pdf]]
 

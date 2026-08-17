@@ -1,0 +1,97 @@
+{
+  "_provenance": "Built 2026-08-17 from MasterExperienceDB.json v3.0 for Equinix, Sales Engineer, Telco & Media (JR-162621). Updated 2026-08-17 QA pass: all rendered bullets are status:verified except one status:secondary bullet (Bank of China, 'Aligned third-party vendors...') rendered against criterion 4, per the DB's hard_rule permitting verified or secondary. No needs_grounding, blocked, draft or cut bullets were used. The freelance AI Solutions Engineer entry and the four github.com/chanyinkwan repos are excluded permanently per excluded_from_cv. independent_projects and the AutoTailor education bullet are not used, per independent_projects_flag and education[].review_flag.",
+  "_targeting": {
+    "jd": "Equinix, Sales Engineer, Telco & Media (JR-162621). Base cities London, Amsterdam, Warsaw, Madrid, Paris, hybrid. Framed as an entry-level presales opportunity with mentorship. Backfill for an existing vacancy.",
+    "criteria": [
+      "1. Telco and media industry background: the vertical is in the job title itself and 'telecom/media industry background' is explicitly named a plus in the required qualifications.",
+      "2. Presales workflow management, discovery through RFI/RFP/RFQ to quoting: appears in both Key Responsibilities ('Assist with RFI/RFP/RFQ documentation') and Required Qualifications ('manage presales workflows from discovery through quoting').",
+      "3. Foundational data centre, network and cloud infrastructure knowledge: a Required Qualification, explicitly scoped as 'foundational' and 'basic to moderate complexity, developing solutions under supervision' given the entry-level framing.",
+      "4. Cross-functional stakeholder collaboration and translating technical work into commercial and business terms: 'collaborate with Account Executives', 'build relationships with internal stakeholders', 'collaborate with Pre/Post Sales Support and Operations teams', communication 'for technical and business audiences'."
+    ],
+    "anchor_role": "Huawei Consumer Business Group, Portfolio Solution Presales (Apr 2026-Present). The only telco account on the CV, and the role that answers criterion 1 and criterion 2 directly. Given the most bullets (5) and the summary's opening claim.",
+    "bullets_used": [
+      {"role": "Huawei Consumer Business Group", "bullet": "Turned customer input into documented solution scope for a Tier-1 UK mobile network operator pursuit by covering the full requirements cycle across 3 technical workshops and a structured analysis session with the customer's engineering stakeholders.", "criterion": "1, 2"},
+      {"role": "Huawei Consumer Business Group", "bullet": "De-risked what a Tier-1 UK operator pursuit could commit to by validating solution feasibility across 6 of the account's subnets before proposal, as dedicated presales cover inside a 5-person pursuit team.", "criterion": "1, 2, 3 (adjacent)"},
+      {"role": "Huawei Consumer Business Group", "bullet": "Cut USD 2 of cost out of every unit for a Tier-1 UK mobile network operator by making the case across GTM roadmap and pricing reviews that a low-value feature carried no weight in the customer's buying decision.", "criterion": "1, 4"},
+      {"role": "Huawei Consumer Business Group", "bullet": "Kept a Tier-1 UK operator's evaluation and demo unit programme on schedule by tracking 60 to 80 live sample units against launch deadlines, clearing cross-border transfers, and holding sign-off so product reached the customer's evaluation teams ahead of decision points.", "criterion": "1, 4"},
+      {"role": "Huawei Consumer Business Group", "bullet": "Cut about an hour a week of sign-off paperwork and removed a daily manual check across every live sample by building VBA automation and a scheduled task into that programme, swapping hand-tracked deadlines for automated reminders and template-generated documents.", "criterion": "3 (technical solutioning, hands-on build)"},
+      {"role": "Bank of China (Hong Kong)", "bullet": "Delivered 100 percent of the HKMA's regulatory mandates inside a hard 14-day window by translating the regulation into an implementation plan and coordinating internal teams and third-party vendors to ship Geo-IP fraud detection with impossible-travel logic.", "criterion": "4"},
+      {"role": "Bank of China (Hong Kong)", "bullet": "Recovered 8 hours a week of manual reporting effort across 20 systems, about 400 hours a year, by deploying a centralised Grafana observability framework in place of hand-assembled weekly reports.", "criterion": "3"},
+      {"role": "Bank of China (Hong Kong)", "bullet": "Closed a 3-year backlog in e-banking incident triage by specifying and validating a Python anomaly-detection prototype, built with a developer, that separated critical incidents from deployment noise across 50,000+ historical logs.", "criterion": "3 (technical solutioning, analytics grade)"},
+      {"role": "Bank of China (Hong Kong)", "bullet": "Kept competing projects moving by arbitrating manday conflicts across priorities, either absorbing dependent work directly or building the business case for a timeline change.", "criterion": "4"},
+      {"role": "Bank of China (Hong Kong)", "bullet": "Standardised requirements intake with a 7-question elicitation framework covering objective, context, stakeholders, success criteria, scope, constraints and evidence sources, closing gaps through follow-up interviews before anything reached JIRA.", "criterion": "2"},
+      {"role": "Bank of China (Hong Kong)", "bullet": "Aligned third-party vendors and internal teams on a single integration path by running technical workshops that folded external fraud solutions into the bank's internal detection framework.", "criterion": "4 (secondary, named against cross-functional stakeholder collaboration)"},
+      {"role": "Apple, Operation Data Analyst", "bullet": "Reversed a headquarters decision by presenting evidence that store operations varied by location, moving the Shanghai development team off centralised training and onto store-specific delivery.", "criterion": "4"},
+      {"role": "Apple, Operation Data Analyst", "bullet": "Won reporting-tool adoption from all 6 flagship store leaders by demoing it myself, walking each through their own use cases and daily upkeep before handing over ownership.", "criterion": "4 (demo win, stakeholder buy-in)"},
+      {"role": "Apple, Operation Data Analyst", "bullet": "Eliminated roughly 1,500 manual hours a year across 6 flagship stores by replacing a 5-hour-per-store weekly data entry routine with a self-maintaining reporting setup, moving regional directors from lagging reports onto current labour data.", "criterion": "3 (technical solutioning, build)"},
+      {"role": "Apple, B2B Solution Expert", "bullet": "Generated GBP 350,000 in new B2B pipeline across a 50+ account portfolio by running discovery, solution positioning and qualification end to end, then escalating matured accounts to the corporate sales team to close.", "criterion": "4"},
+      {"role": "Apple, B2B Solution Expert", "bullet": "Closed a GBP 50,000 deal with Hong Kong broadcaster Viu TV over 3 months, turning a walk-in store visit into a qualified opportunity, building credibility through hands-on technical support and a custom business pricing portal, then clearing their device-management objection by upselling MDM.", "criterion": "1, 4"},
+      {"role": "Apple, B2B Solution Expert", "bullet": "Onboarded 12 portfolio accounts onto custom stores with post-sales service coverage.", "criterion": "4"}
+    ],
+    "killed": [
+      {"bullet": "Prepare RFI and RFP response materials for a Tier-1 UK operator pursuit.", "status": "blocked", "criterion": "2 (presales workflow: RFI/RFP/RFQ) - the single most direct match to the JD's named responsibility, unusable because no RFI/RFP has concluded"},
+      {"bullet": "Structure win-win solution proposals reconciling customer requirements with commercial and product constraints.", "status": "blocked", "criterion": "2, 4 (proposal structuring / value engineering) - unusable, no concluded deal outcome"},
+      {"bullet": "Cut 15 man-days of vendor-evaluation churn by turning fragmented infrastructure needs from 50+ teams into a MoSCoW-prioritised roadmap, then proving the shortlist through a Red Hat proof of concept.", "status": "needs_grounding", "criterion": "3 (foundational infrastructure knowledge, vendor/infra evaluation) - would be the strongest available answer to this criterion if the 15 man-days figure were grounded"},
+      {"bullet": "Won adoption of the observability framework in a single session by demoing it to 30+ system leads, the UX department head and the networking lead, answering most technical objections live.", "status": "needs_grounding", "criterion": "4 (cross-functional stakeholder buy-in, live technical objection handling) - the original 80 percent live-resolution figure was never reconstructed"},
+      {"bullet": "Launched BOC Pay across 4 regions with no handover gaps and returned 15 man-days to the project budget by designing a follow-the-sun UAT schedule off a timezone gap analysis.", "status": "needs_grounding", "criterion": "4 (cross-functional, multi-region coordination) - 15 man-days arithmetic not verified"},
+      {"bullet": "Held NPS at 92 and full operational uptime through the EasyPay POS migration by preparing 10+ Floor Champions and converting technical requirements into floor-level playbooks.", "status": "needs_grounding", "criterion": "4 (stakeholder communication under a technical migration) - NPS 92 not grounded"}
+    ],
+    "gap_bridge": "No data centre or interconnection role on the CV. Bridged once in the summary with the presales motion itself (discovery to documented scope, feasibility validation before commitment, translating technical trade-offs into a business decision) plus the AWS Certified Solutions Architect, Associate (SAA-C03) exam, scheduled for 23 August 2026, as the honest, in-progress signal of infrastructure study. Never presented as complete or as data centre hands-on experience."
+  },
+  "profile_summary": "Presales specialist on a Tier-1 UK mobile network operator account at Huawei, Equinix's own telecom and media buying context. Runs deal discovery through feasibility checks to the commercial case, most recently cutting USD 2 per unit in GTM and pricing reviews. Previously at Bank of China, delivered 100 percent of a regulator's mandates in 14 days and deployed a Grafana layer giving 20 systems one view. No data centre role on the CV: the honest match is this presales motion. Studying for the AWS Certified Solutions Architect, Associate (SAA-C03), exam scheduled 23 August 2026. MSc Business Analytics.",
+  "experience": [
+    {
+      "company": "Huawei Consumer Business Group",
+      "location": "London, United Kingdom",
+      "role": "Portfolio Solution Presales",
+      "dates": "Apr 2026 – Present",
+      "bullets": [
+        "Turned customer input into documented solution scope for a Tier-1 UK mobile network operator pursuit by covering the full requirements cycle across 3 technical workshops and a structured analysis session with the customer's engineering stakeholders.",
+        "De-risked what a Tier-1 UK operator pursuit could commit to by validating solution feasibility across 6 of the account's subnets before proposal, as dedicated presales cover inside a 5-person pursuit team.",
+        "Cut USD 2 of cost out of every unit for a Tier-1 UK mobile network operator by making the case across GTM roadmap and pricing reviews that a low-value feature carried no weight in the customer's buying decision.",
+        "Kept a Tier-1 UK operator's evaluation and demo unit programme on schedule by tracking 60 to 80 live sample units against launch deadlines, clearing cross-border transfers, and holding sign-off so product reached the customer's evaluation teams ahead of decision points.",
+        "Cut about an hour a week of sign-off paperwork and removed a daily manual check across every live sample by building VBA automation and a scheduled task into that programme, swapping hand-tracked deadlines for automated reminders and template-generated documents."
+      ]
+    },
+    {
+      "company": "Bank of China (Hong Kong)",
+      "location": "Hong Kong",
+      "role": "Technical Product Manager, E-Banking Product",
+      "dates": "Aug 2023 – Oct 2024",
+      "bullets": [
+        "Delivered 100 percent of the HKMA's regulatory mandates inside a hard 14-day window by translating the regulation into an implementation plan and coordinating internal teams and third-party vendors to ship Geo-IP fraud detection with impossible-travel logic.",
+        "Recovered 8 hours a week of manual reporting effort across 20 systems, about 400 hours a year, by deploying a centralised Grafana observability framework in place of hand-assembled weekly reports.",
+        "Closed a 3-year backlog in e-banking incident triage by specifying and validating a Python anomaly-detection prototype, built with a developer, that separated critical incidents from deployment noise across 50,000+ historical logs.",
+        "Kept competing projects moving by arbitrating manday conflicts across priorities, either absorbing dependent work directly or building the business case for a timeline change.",
+        "Standardised requirements intake with a 7-question elicitation framework covering objective, context, stakeholders, success criteria, scope, constraints and evidence sources, closing gaps through follow-up interviews before anything reached JIRA.",
+        "Aligned third-party vendors and internal teams on a single integration path by running technical workshops that folded external fraud solutions into the bank's internal detection framework."
+      ]
+    },
+    {
+      "company": "Apple",
+      "location": "Hong Kong",
+      "role": "Operation Data Analyst",
+      "dates": "Mar 2021 – Aug 2023",
+      "bullets": [
+        "Reversed a headquarters decision by presenting evidence that store operations varied by location, moving the Shanghai development team off centralised training and onto store-specific delivery.",
+        "Won reporting-tool adoption from all 6 flagship store leaders by demoing it myself, walking each through their own use cases and daily upkeep before handing over ownership.",
+        "Eliminated roughly 1,500 manual hours a year across 6 flagship stores by replacing a 5-hour-per-store weekly data entry routine with a self-maintaining reporting setup, moving regional directors from lagging reports onto current labour data."
+      ]
+    },
+    {
+      "company": "Apple",
+      "location": "Hong Kong",
+      "role": "B2B Solution Expert",
+      "dates": "Jan 2020 – Mar 2021",
+      "bullets": [
+        "Generated GBP 350,000 in new B2B pipeline across a 50+ account portfolio by running discovery, solution positioning and qualification end to end, then escalating matured accounts to the corporate sales team to close.",
+        "Closed a GBP 50,000 deal with Hong Kong broadcaster Viu TV over 3 months, turning a walk-in store visit into a qualified opportunity, building credibility through hands-on technical support and a custom business pricing portal, then clearing their device-management objection by upselling MDM.",
+        "Onboarded 12 portfolio accounts onto custom stores with post-sales service coverage."
+      ]
+    }
+  ],
+  "activity_line": "CERTIFICATION: AWS Certified Solutions Architect, Associate (SAA-C03), exam scheduled for 23 August 2026, in progress.",
+  "language_line": "Languages: English (fluent, professional), Cantonese (native), Mandarin (native)",
+  "skills_line": "Skills: Presales discovery and requirements intake · solution feasibility validation · value engineering and commercial case-building · cross-functional stakeholder coordination (GTM, vendors, evaluation teams) · objection handling · RFI/RFP response support · Python (pandas, data analysis), VBA, Grafana, JIRA, R",
+  "interests_line": "Interests: Telecom and network infrastructure · systems design · data-driven decision making"
+}

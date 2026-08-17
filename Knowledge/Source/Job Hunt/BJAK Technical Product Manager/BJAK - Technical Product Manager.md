@@ -6,6 +6,15 @@ location: London, UK (hybrid, 3 days/week in office)
 department: Product
 employment_type: Full time
 source: https://jobs.ashbyhq.com/bjakcareer/2347b9d2-e919-4218-9474-056d1282da49
+stage: applied
+posting_status: stale
+salary_range: unknown
+exit_fit: sideways
+fit: medium
+fit_reason: "Capped: a PM move away from the SA/presales lock-in. Applied earlier with no response since. London hybrid 3 days in office only just clears the WFH filter, the UK entity is thin for a SEA-focused neobank, and there is no inside contact."
+inside_contact: none
+next_action: "Chase for a status update, or write it off"
+next_action_date:
 tags:
   - job-description
   - bjak

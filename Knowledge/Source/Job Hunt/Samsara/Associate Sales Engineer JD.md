@@ -4,6 +4,15 @@ company: Samsara
 role: Associate Sales Engineer, UK&I
 location: London, England, United Kingdom; Remote - UK
 source: https://www.samsara.com/uk/company/careers/roles/8083447
+stage: screening
+posting_status: open
+salary_range: unknown
+exit_fit: forward
+fit: high
+fit_reason: "Forward: Sales Engineer is the exact SA/presales target, London or remote UK clears the WFH filter, screen call already done. Binding constraint: Associate-level band vs the no-pay-cut rule."
+inside_contact: none
+next_action: "Ask Elmira Maksudova for screen feedback and the salary band"
+next_action_date:
 tags:
   - job-description
   - samsara

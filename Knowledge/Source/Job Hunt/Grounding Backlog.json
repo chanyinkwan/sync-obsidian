@@ -14,6 +14,18 @@
           "jd": "BJAK Technical Product Manager",
           "criterion": "third-party rail reliance and vendor evaluation",
           "note": "Single best-matching bullet for this JD's hardest criterion. Cut for lack of a grounded number."
+        },
+        {
+          "date": "2026-08-17",
+          "jd": "Geotab Solutions Engineer",
+          "criterion": "C/D: viable solution and systems integration",
+          "note": "Cut for the ungrounded 15 man-day figure."
+        },
+        {
+          "date": "2026-08-17",
+          "jd": "Equinix Sales Engineer, Telco & Media",
+          "criterion": "3: foundational infrastructure knowledge",
+          "note": "Strongest available infrastructure-evaluation evidence for this JD. Cut for the ungrounded 15 man-day figure."
         }
       ]
     },
@@ -28,6 +40,18 @@
           "jd": "BJAK Technical Product Manager",
           "criterion": "shipping against external gates, multi-region launch",
           "note": "Also cut from the TripBiz portfolio narrative, where it was softened to 'roughly two weeks of budget'."
+        },
+        {
+          "date": "2026-08-17",
+          "jd": "Geotab Solutions Engineer",
+          "criterion": "B: cross-functional coordination",
+          "note": "Cut for the unverified 15 man-day arithmetic."
+        },
+        {
+          "date": "2026-08-17",
+          "jd": "Equinix Sales Engineer, Telco & Media",
+          "criterion": "4: multi-region cross-functional coordination",
+          "note": "Cut for the unverified 15 man-day arithmetic."
         }
       ]
     },
@@ -42,6 +66,24 @@
           "jd": "BJAK Technical Product Manager",
           "criterion": "aligning engineering, compliance and operations with minimal friction",
           "note": "The adoption half of the observability story. The build half rendered fine at ~400 hrs/year."
+        },
+        {
+          "date": "2026-08-17",
+          "jd": "Google Cloud Customer Engineer, AI Natives, Junior Talent Programme",
+          "criterion": "4. Communicates technical concepts to different audiences and drives adoption",
+          "note": "Second demand. Demoing a technical framework to 30+ leads and closing objections live is the Customer Engineer motion almost exactly. Lost again to the unsourced share of objections closed. Highest-value grounding target for any presales or CE application."
+        },
+        {
+          "date": "2026-08-17",
+          "jd": "Geotab Solutions Engineer",
+          "criterion": "A: demo and live technical objection handling",
+          "note": "Geotab wants customer-facing technical communication. Cut for the ungrounded live-resolution figure."
+        },
+        {
+          "date": "2026-08-17",
+          "jd": "Equinix Sales Engineer, Telco & Media",
+          "criterion": "4: cross-functional stakeholder buy-in",
+          "note": "Cut for the ungrounded 80 percent live-resolution figure."
         }
       ]
     },
@@ -56,6 +98,24 @@
           "jd": "BJAK Technical Product Manager",
           "criterion": "money movement where mistakes are immediately visible",
           "note": "A payment-system migration with uptime held is close to the centre of this JD. Lost to one ungrounded number."
+        },
+        {
+          "date": "2026-08-17",
+          "jd": "Google Cloud Customer Engineer, AI Natives, Junior Talent Programme",
+          "criterion": "4. Communicates technical concepts to different audiences, and helps transition projects to post-sales teams",
+          "note": "Second demand. Enablement plus handover to the people who run it afterwards is a stated JD responsibility. Cut for NPS 92."
+        },
+        {
+          "date": "2026-08-17",
+          "jd": "Geotab Solutions Engineer",
+          "criterion": "A: partner and end-user enablement",
+          "note": "Cut for the ungrounded NPS 92 figure."
+        },
+        {
+          "date": "2026-08-17",
+          "jd": "Equinix Sales Engineer, Telco & Media",
+          "criterion": "4: stakeholder communication under a technical migration",
+          "note": "Cut for the ungrounded NPS 92 figure."
         }
       ]
     },
@@ -63,7 +123,7 @@
       "bullet": "Manday arbitration keeping competing projects moving",
       "role": "Bank of China, Technical Product Manager",
       "status": "verified, but carries no numeric Y",
-      "grounding_question": "How many competing projects, over what period, and what would have slipped without the arbitration? The DB calls this the strongest leadership evidence on record and it has no Y.",
+      "grounding_question": "How many projects, and how many mandays, were actually arbitrated? Rendered on the Geotab CV on 2026-08-17 as a documented exception: the DB flags it promote-do-not-bury and no number exists to cite, so it ships with the mechanism clause carrying it instead of a Y. A real count would make it unambiguously defensible. Not counted as a demand because it was not cut.",
       "demand": [
         {
           "date": "2026-08-13",
@@ -98,13 +158,19 @@
           "jd": "BJAK Technical Product Manager",
           "criterion": "diagnosis and trade-offs under uncertainty",
           "note": "Would have shown structured diagnosis rather than sales activity, which is the harder thing to evidence from a B2B role."
+        },
+        {
+          "date": "2026-08-17",
+          "jd": "Geotab Solutions Engineer",
+          "criterion": "C: data-driven commercial analysis",
+          "note": "Cut for the ungrounded count of 12 root causes."
         }
       ]
     },
     {
       "bullet": "AutoTailor dissertation project, 19.4 point ATS lift on fine-tuned LLM simulators",
       "role": "University of Exeter, MSc Business Analytics",
-      "status": "blocked by education review_flag",
+      "status": "RESOLVED 2026-08-17. Chukwan confirmed personally that the GPT-4o and OpenAI API pipeline is his own work and that the 19.4 point figure is defensible. Rendered in full on the Google Customer Engineer AI Natives CV. The education review_flag in MasterExperienceDB.json still reads unverified: that DB edit belongs to a grounding session, not to craft-cv, so the flag should be cleared there at the next opportunity.",
       "grounding_question": "Is the AutoTailor work personally verifiable, including the 19.4 point figure and the batch of 20+ CVs? It carries status verified but the education review_flag overrides that.",
       "demand": [
         {
@@ -126,6 +192,102 @@
           "jd": "BJAK Technical Product Manager",
           "criterion": "users are never misled about the state of their funds",
           "note": "Weakest fit of the seven. Ground it last."
+        },
+        {
+          "date": "2026-08-17",
+          "jd": "Geotab Solutions Engineer",
+          "criterion": "C: business challenge to measurable outcome",
+          "note": "Cut for the ungrounded 15 percent year-on-year lift."
+        }
+      ]
+    },
+    {
+      "bullet": "Huawei RFI and RFP response materials, and win-win proposals reconciling customer requirements with commercial constraints",
+      "role": "Huawei Consumer Business Group, Portfolio Solution Presales",
+      "status": "blocked, no bid has concluded",
+      "grounding_question": "Not a grounding question, a waiting question. Which pursuit concludes first, and on what date? The moment one closes, these two become the strongest presales bullets on the CV and both are currently unusable.",
+      "demand": [
+        {
+          "date": "2026-08-17",
+          "jd": "Google Cloud Customer Engineer, AI Natives, Junior Talent Programme",
+          "criterion": "3. Supports the technical win: technical validation alongside senior CEs and Sales",
+          "note": "Two blocked bullets against the JD's central pre-sales criterion. The Huawei block had to carry the criterion on feasibility validation and workshop scope alone."
+        },
+        {
+          "date": "2026-08-17",
+          "jd": "Equinix Sales Engineer, Telco & Media",
+          "criterion": "2: presales workflow, RFI/RFP/RFQ preparation, and proposal structuring",
+          "note": "Both blocked bullets wanted again, this time against a JD that names RFI/RFP/RFQ preparation as a core responsibility. Second application in one day blocked on the same pair. Highest-value unblock in this backlog for presales targets."
+        }
+      ]
+    },
+    {
+      "bullet": "Monolithic to distributed architecture migration, 6 self-contained modules, 90 percent of silent failures removed, custom Telegram bot code replaced with the official MCP plugin",
+      "role": "Independent project, Mar 2026 to Apr 2026",
+      "status": "unproven under independent_projects_flag",
+      "grounding_question": "Is this migration your own work end to end, and where does the 90 percent silent-failure reduction come from? Chukwan was asked on 2026-08-17 and confirmed only career-ops and Iconic Use Case Scorer, leaving this one unclaimed.",
+      "demand": [
+        {
+          "date": "2026-08-17",
+          "jd": "Google Cloud Customer Engineer, AI Natives, Junior Talent Programme",
+          "criterion": "1. Builder-CE, specifically strong debugging skills and configuring developer environments",
+          "note": "The single best answer in the whole record to the debugging half of the hardest criterion, and it could not be used. Ground this first for any builder-flavoured engineering req."
+        }
+      ]
+    },
+    {
+      "bullet": "claude-island, macOS menu bar app in Swift/SwiftUI over Unix sockets and Claude Code hooks",
+      "role": "Independent project, Mar 2026 to present",
+      "status": "unproven under independent_projects_flag",
+      "grounding_question": "Did you write the Swift yourself or direct it, and are there any install or user numbers? Not confirmed by Chukwan on 2026-08-17.",
+      "demand": [
+        {
+          "date": "2026-08-17",
+          "jd": "Google Cloud Customer Engineer, AI Natives, Junior Talent Programme",
+          "criterion": "1. Builder-CE, building and deploying personal applications and tools",
+          "note": "A named preferred qualification. Would have shown a shipped personal tool in a compiled language, which nothing else in the record does."
+        }
+      ]
+    },
+    {
+      "bullet": "Apple ODA: reversed a headquarters decision on training delivery",
+      "role": "Apple, Operation Data Analyst",
+      "status": "verified, but carries no numeric Y",
+      "grounding_question": "How many stores or teams did the reversal change delivery for, and what did store-specific training change once it landed? Completion rate, time to competence, or rollout duration. The DB calls this the closest thing on record to the core solutions-engineering skill and it has no number.",
+      "demand": [
+        {
+          "date": "2026-08-17",
+          "jd": "Google Cloud Customer Engineer, AI Natives, Junior Talent Programme",
+          "criterion": "4. Communicates technical concepts to different audiences, and 3. supports the technical win through influence",
+          "note": "RENDERED by exception, not killed. Same precedent as the manday-arbitration bullet: the binding DB note calls it the flagship influence proof, so gate 3 beat the rank-2 rule requiring a number. A reviewer proposed borrowing '6 flagship stores' from a neighbouring bullet; refused under gate 8. One real number here removes the exception permanently and it would be reusable on every presales and CE application."
+        }
+      ]
+    },
+    {
+      "bullet": "RAG, vector database and conversational agent evidence",
+      "role": "None. The only instances in the record sit inside excluded_from_cv.",
+      "status": "permanently unusable from the current record",
+      "grounding_question": "Not a grounding question, a build question. The Qdrant and RAG work lives in the purchased repos and can never be cited. What small RAG system can you build and defend yourself, ideally on Vertex AI with Gemini, so this becomes real evidence?",
+      "demand": [
+        {
+          "date": "2026-08-17",
+          "jd": "Google Cloud Customer Engineer, AI Natives, Junior Talent Programme",
+          "criterion": "2. AI-native fluency: LLM APIs, prompt engineering, vector databases, RAG, conversational agents",
+          "note": "Half of the JD's named AI preferred qualification returns nothing. The CV answers LLM APIs, prompt engineering and agent design and is silent on RAG and vector databases, holding keyword coverage near 75 percent against an 80 percent target. One genuine Vertex AI or Gemini RAG build closes this gap, the Google Cloud gap and the keyword shortfall at the same time. Highest-leverage single action on this list."
+        }
+      ]
+    },
+    {
+      "bullet": "Docker and cloud infrastructure hands-on experience",
+      "role": "No role. No bullet exists anywhere in MasterExperienceDB.json.",
+      "status": "no evidence in the record",
+      "grounding_question": "What have you actually containerised or deployed, on which platform, and what did it do? Chukwan confirmed Docker hands-on and some Google Cloud exposure verbally on 2026-08-17, but there is no artifact, project or number behind either. Both currently sit on the skills line with nothing under them.",
+      "demand": [
+        {
+          "date": "2026-08-17",
+          "jd": "Google Cloud Customer Engineer, AI Natives, Junior Talent Programme",
+          "criterion": "5. Gate: cloud infrastructure, and the tie-breaker on configuring developer environments with Docker and Linux",
+          "note": "The largest weakness of this application. A Google Cloud req with a bare skills-line cloud claim and no supporting bullet is the first thing an interviewer will probe. Linux command line was explicitly not claimed at all. Fix by shipping one small thing on Google Cloud (Cloud Run or Vertex AI) and grounding a number for it."
         }
       ]
     }

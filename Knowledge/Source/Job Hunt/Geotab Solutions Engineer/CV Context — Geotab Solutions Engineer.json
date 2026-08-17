@@ -1,0 +1,107 @@
+{
+  "profile_summary": "Presales and technical product specialist working the customer-facing bridge between engineering, product and sales across enterprise tech and telecom. No fleet telematics on the CV: the honest match is hardware-plus-data sold into operations teams, connected-device evaluation, and the discovery-to-viable-solution motion Geotab runs with partners and end-users. Currently covers requirements discovery, solution feasibility and pricing input on a Tier-1 UK mobile network operator account at Huawei. Delivered 100 percent of a regulator's mandates inside a 14-day window at Bank of China, and generated GBP 350,000 in B2B pipeline at Apple by running discovery through to solution positioning. MSc Business Analytics, University of Exeter.",
+  "experience": [
+    {
+      "company": "Huawei Consumer Business Group",
+      "location": "London, United Kingdom",
+      "role": "Portfolio Solution Presales",
+      "dates": "Apr 2026 – Present",
+      "bullets": [
+        "Turned customer input into documented solution scope for a Tier-1 UK mobile network operator by covering the full requirements cycle across 3 technical workshops and a structured analysis session with the account's engineering stakeholders.",
+        "Got hardware in front of the customer's evaluation teams ahead of decision points by owning the demo unit programme for a Tier-1 UK mobile network operator, tracking 60 to 80 live evaluation devices against launch deadlines, clearing cross-border transfers and holding sign-off throughout.",
+        "Cleared the technical path for the pursuit team's proposal by validating solution feasibility across 6 account subnets before commitment, as dedicated presales cover inside a 5-person cross-functional pursuit team.",
+        "Cut USD 2 per unit in product cost for a Tier-1 UK mobile network operator by making the case across GTM roadmap and pricing reviews that a low-value feature carried no weight in the customer's buying decision.",
+        "Cut about an hour a week of sign-off document assembly and removed the daily manual check across 60 to 80 live evaluation devices by building VBA automation and a scheduled task that generates documents from template and raises deadline reminders automatically."
+      ]
+    },
+    {
+      "company": "Bank of China (Hong Kong)",
+      "location": "Hong Kong",
+      "role": "Technical Product Manager, E-Banking Product",
+      "dates": "Aug 2023 – Oct 2024",
+      "bullets": [
+        "Delivered 100 percent of the HKMA's regulatory mandates inside a hard 14-day window by translating the regulation into an implementation plan and coordinating internal teams and third-party vendors to ship Geo-IP fraud detection with impossible-travel logic.",
+        "Kept competing projects moving by arbitrating manday conflicts across priorities, either absorbing dependent work directly or building the business case for a timeline change.",
+        "Recovered 8 hours a week of manual reporting effort, about 400 hours a year, across 20 systems by deploying a centralised Grafana observability framework in place of hand-assembled weekly reports.",
+        "Closed a 3-year-old backlog in e-banking incident triage by specifying and validating a Python anomaly-detection prototype, built with a developer, that separated critical incidents from deployment noise across 50,000+ historical logs.",
+        "Closed requirements gaps before anything reached JIRA by standardising intake with a 7-question elicitation framework covering objective, context, stakeholders, success criteria, scope, constraints and evidence sources, backed by follow-up interviews."
+      ]
+    },
+    {
+      "company": "Apple",
+      "location": "Hong Kong",
+      "role": "Operation Data Analyst",
+      "dates": "Mar 2021 – Aug 2023",
+      "bullets": [
+        "Won reporting-tool adoption from all 6 flagship store leaders by demoing it myself, walking each through their own use cases and daily upkeep before handing over ownership.",
+        "Reversed a headquarters decision on store training strategy by presenting evidence that store operations varied by location, moving Apple's Shanghai development team off centralised training onto store-specific delivery.",
+        "Eliminated roughly 1,500 manual hours a year across 6 flagship stores by replacing a 5-hour-per-store weekly data entry routine with a self-maintaining reporting setup, moving regional directors from lagging reports onto current labour data.",
+        "Recovered 400+ leadership hours a year by turning an 8-hour weekly interruption drain into a structured digital ticketing queue adopted store-wide."
+      ]
+    },
+    {
+      "company": "Apple",
+      "location": "Hong Kong",
+      "role": "B2B Solution Expert",
+      "dates": "Jan 2020 – Mar 2021",
+      "bullets": [
+        "Generated GBP 350,000 in new B2B pipeline across a 50+ account portfolio by running discovery, solution positioning and qualification end to end, then escalating matured accounts to the corporate sales team to close.",
+        "Closed a GBP 50,000 deal with Hong Kong broadcaster Viu TV over 3 months by turning a walk-in store visit into a qualified opportunity, building credibility through hands-on technical support and a custom business pricing portal, then clearing their device-management objection by upselling MDM.",
+        "Onboarded 12 portfolio accounts onto custom stores with post-sales service coverage."
+      ]
+    }
+  ],
+  "activity_line": "",
+  "language_line": "Languages: English (fluent, professional), Cantonese (native), Mandarin (native)",
+  "skills_line": "Skills: Presales discovery and requirements elicitation, technical demonstrations and workshops, solution feasibility validation, RFI/RFP support, value engineering and pricing input, cross-functional stakeholder coordination, Python (pandas, data analysis), VBA automation, Grafana, JIRA",
+  "interests_line": "Interests: Connected hardware and IoT, systems design, sustainable transport",
+  "_targeting": {
+    "jd": "https://job-boards.greenhouse.io/geotab/jobs/5376456008",
+    "criteria": [
+      "A: Customer-facing technical discovery, demos and presentations, translating technical detail for technical and non-technical audiences (repeated: 'Conduct discovery, requirements gathering, technical demonstrations, and presentations'; 'Excellent communication and presentation abilities for technical and non-technical audiences')",
+      "B: Cross-functional technical liaison bridging sales, product and customer care as key technical resource for partners and end-users (repeated: 'bridges sales channels, customer care, and product management'; 'Partner with revenue-generating and product teams as key technical resource')",
+      "C: Analyzing business challenges and identifying viable technical solutions, commercial/value-engineering judgment ('Analyze business challenges and identify viable Geotab solutions'; 'Ensure partner and end-user satisfaction')",
+      "D (gate): Professional customer-facing technical experience in software engineering, data analysis or systems integration",
+      "E (gate, gap): Working knowledge of telematics, IoT and APIs, and related technologies"
+    ],
+    "anchor_role": "Huawei Consumer Business Group, Portfolio Solution Presales. Answers criterion E (hardest, honest gap) via the closest available analogue, an evaluation/demo unit programme for connected consumer devices, and carries the most bullets (5) plus the summary lead.",
+    "bullets_used": [
+      "Huawei: requirements cycle / documented solution scope -> criterion A",
+      "Huawei: demo unit programme, 60-80 evaluation devices -> criterion E, B",
+      "Huawei: solution feasibility across 6 subnets, 5-person team -> criterion A, C",
+      "Huawei: USD 2/unit cost cut via GTM/pricing case -> criterion C",
+      "Huawei: VBA automation, sign-off document assembly -> criterion D",
+      "BoC: HKMA 100% in 14-day window -> criterion B, C",
+      "BoC: manday conflict arbitration -> criterion B (leadership, DB note: promote, do not bury)",
+      "BoC: Grafana observability, 400 hrs/yr -> criterion D",
+      "BoC: Python anomaly-detection prototype (specced, dev-built) -> criterion A, D",
+      "BoC: 7-question elicitation framework -> criterion A",
+      "Apple ODA: reporting-tool demo, 6 store leaders -> criterion A",
+      "Apple ODA: HQ decision reversal (flagship influence-without-authority) -> criterion B, C",
+      "Apple ODA: 1,500 hrs/yr reporting automation -> criterion D",
+      "Apple ODA: 400+ hrs/yr ticketing queue -> criterion D",
+      "Apple B2B: GBP 350,000 pipeline, discovery-to-handoff -> criterion A, C",
+      "Apple B2B: Viu TV deal, objection handling -> criterion C, D",
+      "Apple B2B: 12 accounts onboarded, post-sales coverage -> criterion (partner/end-user satisfaction, tie to B/C)"
+    ],
+    "killed": [
+      {"bullet": "Won adoption of the observability framework in a single session by demoing it to 30+ system leads, the UX department head and the networking lead, answering most technical objections live.", "status": "needs_grounding", "criterion": "A (demo/technical win)"},
+      {"bullet": "Launched BOC Pay across 4 regions with no handover gaps and returned 15 man-days to the project budget by designing a follow-the-sun UAT schedule off a timezone gap analysis.", "status": "needs_grounding", "criterion": "B (cross-functional coordination)"},
+      {"bullet": "Cut 15 man-days of vendor-evaluation churn by turning fragmented infrastructure needs from 50+ teams into a MoSCoW-prioritised roadmap, then proving the shortlist through a Red Hat proof of concept.", "status": "needs_grounding", "criterion": "C/D (viable solution, systems integration)"},
+      {"bullet": "Unified 30+ product design specialists onto a single tooling roadmap by diagnosing the mismatch between legacy software and team procedures, then securing procurement of the replacement.", "status": "secondary", "criterion": "B (cut for space, not a named-criterion render)"},
+      {"bullet": "Aligned third-party vendors and internal teams on a single integration path by running technical workshops that folded external fraud solutions into the bank's internal detection framework.", "status": "secondary", "criterion": "A/B (cut for space)"},
+      {"bullet": "Engineered a talent pipeline that onboarded 5+ specialists into niche gaps across 3+ technical streams.", "status": "cut", "criterion": "B (DB-level cut, overclaims hiring authority)"},
+      {"bullet": "Defused rollback demands mid-migration by showing store leaders the original report flow still ran as a fallback and committing technical support through the transition.", "status": "verified", "criterion": "C (cut for space; responsive service)"},
+      {"bullet": "Held NPS at 92 and full operational uptime through the EasyPay POS migration by preparing 10+ Floor Champions and converting technical requirements into floor-level playbooks.", "status": "needs_grounding", "criterion": "A (enablement, NPS figure not grounded)"},
+      {"bullet": "Contributed to a 15% year-over-year lift in customer satisfaction by running a voice-of-frontline discovery programme across 20+ cross-functional round tables, converted into a prioritised improvement backlog.", "status": "needs_grounding", "criterion": "C (15% not grounded)"},
+      {"bullet": "Delivered 3 hours of group training across cohorts of 3 to 5 Floor Champions, blending Shanghai system materials with locally customised content.", "status": "secondary", "criterion": "A (partner/end-user upskilling; cut for space)"},
+      {"bullet": "Closed knowledge gaps in near real time during the migration by running daily Floor Champion check-ins that surfaced edge cases and fed fixes back into the training materials.", "status": "secondary", "criterion": "C (responsive service; cut for space)"},
+      {"bullet": "Shifted the team from reactive tracking to proactive retention by running a diagnostic across the 50+ account portfolio that isolated 12 root causes of revenue variance.", "status": "needs_grounding", "criterion": "C (12 root causes not grounded)"},
+      {"bullet": "Resolved peak-time scheduling conflicts for a 200+ person workforce and gave leadership back 5 hours a week by building a capacity model from staffing-against-traffic data.", "status": "verified", "criterion": "D (cut for space, domain fit weaker than other D evidence)"},
+      {"bullet": "Built a workforce-efficiency visualisation mapping staffing levels against customer traffic patterns to ground the capacity model.", "status": "secondary", "criterion": "D (cut for space)"},
+      {"bullet": "Apple Specialist role (3 bullets: 21+ daily technical inquiries, 95%+ NPS, 5 Service Steps) and EchoRoaster internship (5 bullets) dropped in full for one-page space; both pre-2021, lower relevance to Geotab's core buying criteria than the roles used.", "status": "verified/draft mix", "criterion": "role-level space cut, not a gate failure"},
+      {"bullet": "Entire excluded_from_cv freelance 'AI Solutions Engineer' record (Lead Enrichment Pipeline, Financial RAG Assistant, AI Bank Reconciliation, AI Email Autoresponder) and all independent_projects entries (Modular AI Automation Platform, Job Scanning System, System Architecture Migration, Intentional-Vibe Coding plugin, claude-island, Social Media Content Pipeline, Iconic Use Case Scorer).", "status": "excluded_from_cv / independent_projects_flag (unproven)", "criterion": "categorical exclusion, not evaluated against JD criteria"}
+    ],
+    "gap_bridge": "No fleet telematics/IoT/APIs on the CV. Named once in the summary: 'the honest match is hardware-plus-data sold into operations teams, connected-device evaluation, and the discovery-to-viable-solution motion Geotab runs with partners and end-users.' Reinforced by the Huawei demo-unit-programme bullet (60 to 80 live evaluation devices, cross-border logistics, sign-off gates)."
+  }
+}
