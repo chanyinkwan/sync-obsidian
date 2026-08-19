@@ -20,7 +20,7 @@ Design principle (from Kess's commitment mechanism): prep only happens when it i
 
 ## 2. Architecture — three pieces
 
-1. **Prep Tracker template** — `Templates/Interview Prep Tracker Template.md`, a Templater template inserted by Obsidian hotkey `Ctrl+Shift+I`. One tracker note per application: stage checklist with time budgets, gate log. The "where am I" surface.
+1. **Prep Tracker template** — `Template/Interview Prep Tracker Template.md`, a Templater template inserted by Obsidian hotkey `Ctrl+Shift+I`. One tracker note per application: stage checklist with time budgets, gate log. The "where am I" surface.
 2. **Standing assets** — `Knowledge/Source/Job Hunt/$Interview System/`, built once, reused every application (see §4).
 3. **`/interview-prep` skill** — `.claude/skills/interview-prep/SKILL.md`, drives each stage in chat and writes progress back into the tracker note. Sibling of `research-baseline` and `craft-cv`. It **invokes** `research-baseline` for research; it never duplicates it.
 
@@ -86,14 +86,14 @@ Plus the **fast story selector table** (question keyword → story), carried ove
 Protocol (`/interview-prep gate`):
 
 1. Skill draws 5 questions: 2 from the compulsory anchors, 3 from the stage's question bank weighted toward the JD's keywords.
-2. Per question: Kess says the answer **out loud with a timer, materials closed**, then types what he actually said (own words; dictation fine).
+2. Per question: Kess says the answer **out loud with a timer, materials closed**, then types what they actually said (own words; dictation fine).
 3. Skill scores each answer on 4 axes, 1 point each: **Structure** (STAR+Link present), **Timing** (self-reported ≤75s), **Specificity** (at least one concrete number or named artifact), **Company link** (ends by tying to this company/role).
 4. **Pass = 4 of 5 answers scoring ≥3/4.** Fail → skill names the weak answers only; redo those, not the whole prep.
 5. Verdict block appended to the tracker note: date, stage, per-question scores, verdict `READY` / `NOT YET`, and the typed answers. This is the dated, externally-scored proof.
 
 ## 8. Tracker template + hotkey
 
-`Templates/Interview Prep Tracker Template.md` (Templater syntax):
+`Template/Interview Prep Tracker Template.md` (Templater syntax):
 
 - Prompts on insert: company, role, stage (screen / hiring-manager), interview datetime.
 - Frontmatter: `type: interview-prep-tracker`, company, role, stage, interview_date, status.
