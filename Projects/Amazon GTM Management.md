@@ -24,6 +24,11 @@ Five work areas:
 | **廣告**    | Feeds KSP + competitor list to per-country traffic managers.                                        |
 | **運營**    | Weekly price + sales + days-of-stock forecast table; the core working sheet.                        |
 
+## 營運系統
+
+- [[Amazon GTM Operation]] — 個人 MBB 週期性檢查、來源導航、例外決策及後續 TaskNote 的 BAU 控制塔。
+- 上市、EOL／圈量、選品及其他有明確終點的工作，仍作為本範圍下的獨立專案管理。
+
 Handover stage Tracking task: [[Amazon Handover]].
 ## Key contact
 - [[Zhang Xuan 00942107]] (張炫) — 地區部 GTM for router; pricing and new-SKU decisions go through him.
