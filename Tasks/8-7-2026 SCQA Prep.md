@@ -9,6 +9,7 @@ tags:
 contexts:
   - work
 projects:
+  - "[[SCQA Cadence]]"
   - "[[Huawei Development]]"
 timeEntries:
   - startTime: 2026-07-06T16:26:16.501Z

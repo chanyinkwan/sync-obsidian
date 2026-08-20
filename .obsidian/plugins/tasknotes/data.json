@@ -1004,6 +1004,24 @@
       "requestedAt": 1787153630985,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/SCQA Product.md",
+      "requestedAt": 1787216110384,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/H173 Sales Monitoring.md",
+      "requestedAt": 1787235130568,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Deriving Handover Materials.md",
+      "requestedAt": 1787238857156,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {

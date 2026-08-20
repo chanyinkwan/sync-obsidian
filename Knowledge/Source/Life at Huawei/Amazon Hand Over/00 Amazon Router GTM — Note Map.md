@@ -31,6 +31,7 @@ tags:
 | [[Amazon Back to School Promotion Planning Meeting Transcript Part 1]] | 2026-07-29 | BTS 資源位 + 逐 SKU 要貨檢視 | 李哥 / 齊軒 / 張炫 / 董淼 |
 | [[Amazon Back to School Promotion Planning Meeting Transcript Part 2]] | 2026-07-30 | 續昨:要貨、排產週期、下半年 PSI | 李哥 / 齊軒 / 張炫 |
 | [[Amazon Handover Meeting Transcript Part 3]] | 2026-07-30 | 路標管理 + 新品上市倒排(1:1) | 齊軒 → Kess |
+| [[Amazon Hutchison 8-Project Status Handover Meeting Transcript]] | 2026-08-07(推定) | 8 個未關閉項目逐項過會(Material 表 + 7Q 已移入 [[Map On-going Project in Task Note]]) | Ziyi → Kess,程哥列席未發言 |
 
 > ⚠ **Part 3 與 BTS Part 2 是同一場會**(同一條時間軸:Part 3 走 00:29→07:29 後跳到 50:46,中間 08:26→50:39 就是 BTS Part 2)。兩檔都保留、互相交叉引用,**不合併**——因為與會者不同、議題不同,分開比較好查。
 

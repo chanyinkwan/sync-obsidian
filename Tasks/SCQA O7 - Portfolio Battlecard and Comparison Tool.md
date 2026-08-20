@@ -1,9 +1,10 @@
 ---
 status: todo
 priority: high
-due: 2026-08-03
+due: 2026-08-24
 scheduled: 2026-07-29
 projects:
+  - "[[SCQA Cadence]]"
   - "[[Huawei Development]]"
 timeEstimate: 600
 assigned_by: "[[Ding Cheng 00611102 (程哥or 丁程)]]"
@@ -19,9 +20,9 @@ related:
   - "[[2-7-2026 Product Roadmap Meeting Transcript]]"
   - "[[15-7-2026 FWA Business Strategies Meeting Transcript]]"
   - "[[10-7-2026 Meeting - July Relationship and Product Training - Transcript]]"
-dateModified: 2026-08-07T11:58:10.318+01:00
+dateModified: 2026-08-20T11:00:07.779+01:00
 eisenhower: q3
-tasknotes_manual_order: tngmzzzzzzzz
+tasknotes_manual_order: tnqgmzzzzzzv
 ---
 
 # O7 · Portfolio Battlecard ＋ 比較工具（交接資產）

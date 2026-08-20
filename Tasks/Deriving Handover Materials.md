@@ -1,16 +1,14 @@
 ---
 status: todo
 priority: high
-due: 2026-08-07
-scheduled: 2026-08-07
+scheduled: 2026-08-20
 projects:
-  - "[[Look for another job]]"
-dateCreated: 2026-08-07T15:56:56.017+01:00
-dateModified: 2026-08-07T15:56:56.017+01:00
+  - "[[Amazon GTM Management]]"
+dateCreated: 2026-08-20T16:14:17.060+01:00
+dateModified: 2026-08-20T16:14:17.060+01:00
 tags:
   - task
-eisenhower: q3
-tasknotes_manual_order: tnjtmzzzzzzx
+eisenhower: q1
 ---
 
 ## Ask as received

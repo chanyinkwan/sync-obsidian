@@ -12,6 +12,8 @@ tags:
   - july-direction
   - onboarding
   - hutchison
+projects:
+  - "[[SCQA Cadence]]"
 ---
 # 7/8 SCQA 對齊 — 七月方向設定（與直屬主管 程哥）
 

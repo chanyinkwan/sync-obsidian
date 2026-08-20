@@ -10,6 +10,7 @@ tags:
 contexts:
   - work
 projects:
+  - "[[SCQA Cadence]]"
   - "[[Huawei Development]]"
 completedDate: 2026-07-27
 ---

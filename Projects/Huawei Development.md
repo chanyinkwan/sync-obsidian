@@ -16,11 +16,7 @@ tags:
 - Convert each cycle's work into industry-standard assets (Deal Governance / Scoping / Pricing) and career capital toward the SA/SE + Deal Desk targets. See [[SA Lock-In — Gap Audit & 30-Day Sprint]].
 
 ## Cadence
-- **Wednesdays · 15 min** with [[Manager]] (⚠ confirm the SCQA manager). One prep note per cycle → `Operation Note/<date> SCQA Prep (Huawei Development)`.
-- Canvas template: [[Weekly SCQA Reflection Template]]. Source material: Daily Log Q2 (常數) + Q4 (痛點).
-
-## SCQA prep notes (log)
-- [[8-7-2026 SCQA Prep]] — **first cycle** (Wed 2026-07-08)
+The SCQA ritual itself now lives in its own project: **[[SCQA Cadence]]** — cadence rules, every prep note, meeting, transcript, reflection and output are indexed there. This note keeps the career-capital framing only.
 
 ## Reference / knowledge
 - [[H3G Operating Model — Three Cycles]] — Operation · Sample · Sales cycle maps (Mermaid)

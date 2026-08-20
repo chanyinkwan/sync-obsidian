@@ -17,6 +17,8 @@ tags:
   - 1on1
   - hutchison
   - july-direction
+projects:
+  - "[[SCQA Cadence]]"
 ---
 # 7/27 SCQA 1on1 — 客戶關係檔案交付檢視（與直屬主管 程哥）
 

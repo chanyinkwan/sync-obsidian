@@ -8,6 +8,8 @@ tags:
   - task
 due: 2026-07-15
 completedDate: 2026-07-21
+projects:
+  - "[[SCQA Cadence]]"
 ---
 
 Go through these:

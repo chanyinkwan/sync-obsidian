@@ -12,6 +12,8 @@ tags:
   - reflection
   - scqa
   - hutchison
+projects:
+  - "[[SCQA Cadence]]"
 ---
 # 27-7 SCQA 反思 — 準備與呈現之間的落差
 

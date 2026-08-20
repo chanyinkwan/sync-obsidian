@@ -1,6 +1,6 @@
 ---
 type: project
-status: active
+status: done
 owner: me
 stakeholders:
   - "[[Kiran Gosal Kang]]"

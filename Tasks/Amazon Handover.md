@@ -27,6 +27,9 @@ Propose next meeting with qixuan
 
 [[Amazon Handover Meeting Transcript Part 3]]
 
+8 個未關閉項目過會(Ziyi, 程哥, Kess)
+[[Amazon Hutchison 8-Project Status Handover Meeting Transcript]]
+
 New Scope for Amazon
 [[Amazon MBB Handover Meeting Transcript]]
 

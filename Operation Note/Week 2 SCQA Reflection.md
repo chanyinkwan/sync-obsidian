@@ -2,6 +2,8 @@
 type: scqa-sprint-review
 cycle_date::
 status: [ ] Ready to Present / [ ] Presented
+projects:
+  - "[[SCQA Cadence]]"
 ---
 
 # Sprint Review & High-Stakes SCQA Canvas

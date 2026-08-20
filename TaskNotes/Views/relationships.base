@@ -47,11 +47,9 @@ views:
         - file.hasTag("task")
         - file.hasLink(this.file) && list(note.projects).map(file(value.replace(/^\[[^\]]+\]\((.*)\)$/, "$1").replace(/%20/g, " ")).asLink()).contains(this.file.asLink())
     groupBy:
-      property: status
+      property: eisenhower
       direction: ASC
     order:
-      - status
-      - priority
       - due
       - scheduled
       - projects
@@ -62,6 +60,7 @@ views:
       - recurrence
       - complete_instances
       - file.tasks
+      - status
     sort:
       - property: tasknotes_manual_order
         direction: DESC
@@ -130,3 +129,5 @@ views:
     sort:
       - property: tasknotes_manual_order
         direction: DESC
+  - type: tasknotesMiniCalendar
+    name: View

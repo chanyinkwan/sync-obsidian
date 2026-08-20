@@ -4,6 +4,7 @@ priority: medium
 tags:
   - task
 projects:
+  - "[[SCQA Cadence]]"
   - "[[8-7-2026 SCQA Meeting]]"
 contexts:
   - work

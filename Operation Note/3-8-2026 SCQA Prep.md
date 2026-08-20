@@ -11,6 +11,7 @@ tags:
 contexts:
   - work
 projects:
+  - "[[SCQA Cadence]]"
   - "[[Huawei Development]]"
 related:
   - "[[27-7-2026 July SCQA Reflection]]"

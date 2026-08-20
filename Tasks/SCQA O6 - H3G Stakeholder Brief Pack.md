@@ -1,9 +1,10 @@
 ---
-status: doing
+status: done
 priority: high
 due: 2026-08-03
 scheduled: 2026-07-29
 projects:
+  - "[[SCQA Cadence]]"
   - "[[Huawei Development]]"
 timeEstimate: 480
 assigned_by: "[[Ding Cheng 00611102 (程哥or 丁程)]]"
@@ -19,9 +20,10 @@ related:
   - "[[SCQA O5 - Client Power Map]]"
   - "[[SCQA O2 - Org-to-Customer Relationship Map]]"
   - "[[SCQA O7 - Portfolio Battlecard and Comparison Tool]]"
-dateModified: 2026-08-07T11:55:51.457+01:00
-eisenhower: q2
-tasknotes_manual_order: tnoceiririrh
+dateModified: 2026-08-20T15:05:19.105+01:00
+eisenhower: q1
+tasknotes_manual_order: tncxcxcxcxcx
+completedDate: 2026-08-20
 ---
 
 # O6 · H3G Stakeholder Brief Pack

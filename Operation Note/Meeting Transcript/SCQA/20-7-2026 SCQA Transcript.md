@@ -15,6 +15,8 @@ tags:
   - 1on1
   - hutchison
   - july-direction
+projects:
+  - "[[SCQA Cadence]]"
 ---
 # 7/20 SCQA 1on1 — 七月 mandate checkpoint（與直屬主管 程哥）
 

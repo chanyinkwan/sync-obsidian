@@ -7,6 +7,8 @@ dateCreated: 2026-07-13T15:58:35.779+01:00
 dateModified: 2026-07-21
 tags:
   - task
+projects:
+  - "[[SCQA Cadence]]"
 ---
 
 > ⚠️ **這一格原本排給 7/22（週三）的 SCQA，但程哥把會提前到 7/20（週一）開了。**

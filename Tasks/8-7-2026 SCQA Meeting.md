@@ -7,6 +7,7 @@ dateModified: 2026-07-11T11:58:06.474+01:00
 tags:
   - task
 projects:
+  - "[[SCQA Cadence]]"
   - "[[Huawei Development]]"
 timeEntries:
   - startTime: 2026-07-08T09:17:58.613Z
