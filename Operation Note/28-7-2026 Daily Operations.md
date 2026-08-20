@@ -18,7 +18,7 @@ tags:
 - [ ] Problem to solve 1: customer sign contract  (problem: keep changing combination) -> print request tool (for them to use)
 - [ ] Problem to solve 2: michele email -> one at a time
 - [ ] Problem to solve 3: in and out record for samples management
-- [ ] 7 questions to identify the amazon known and unknown -> then bring questions to ask qixuan and ziyi [[Amazon take over]]
+- [ ] 7 questions to identify the amazon known and unknown -> then bring questions to ask qixuan and ziyi [[Amazon GTM Management]]
 	- [ ] add a task for tmr frame the understanding on amazon task with the mckinsey 7 questions and ask qixuan to fill in when she have time
 - [ ] [[3-8-2026 SCQA Prep]]
 - [x] [[禮品庫核銷]]

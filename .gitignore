@@ -16,3 +16,7 @@ Thumbs.db
 
 # Local isolated feature worktrees
 .worktrees/
+
+# gemini-dr MCP server — Python venv, not vendored
+scripts/gemini-dr-mcp/.venv/
+scripts/gemini-dr-mcp/__pycache__/

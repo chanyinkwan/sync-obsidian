@@ -7,7 +7,7 @@ dateModified: 2026-08-07T11:44:49.223+01:00
 tags:
   - task
 projects:
-  - "[[Amazon take over]]"
+  - "[[Amazon GTM Management]]"
 completedDate: 2026-08-07
 eisenhower: q1
 ---

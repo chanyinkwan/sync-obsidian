@@ -2,7 +2,7 @@
 type: reference
 status: active
 date: 2026-08-06
-account_or_project: "[[Amazon take over]]"
+account_or_project: "[[Amazon GTM Management]]"
 source:
   - "[[Amazon MBB Handover Meeting Transcript]]"
   - "[[Amazon MBB Pricing Meeting Transcript]]"
@@ -10,10 +10,10 @@ source:
   - "[[Amazon Handover Meeting Transcript Part 1]]"
   - "[[Amazon Handover Meeting Transcript Part 2]]"
   - "[[Amazon Handover Meeting Transcript Part 3]]"
-  - "Handover book.xlsx"
-  - "2026年 亚马逊MBB价格及销毛 v3.xlsx"
-  - "泛欧亚马逊MBB产品基础信息汇总.xlsx"
-  - "AMZ MBB量价模拟 V4.xlsx"
+  - Handover book.xlsx
+  - 2026年 亚马逊MBB价格及销毛 v3.xlsx
+  - 泛欧亚马逊MBB产品基础信息汇总.xlsx
+  - AMZ MBB量价模拟 V4.xlsx
 tags:
   - reference
   - terminology

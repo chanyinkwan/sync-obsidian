@@ -10,6 +10,8 @@ attendees:
   - "Kess Chan (Chukwan) — 本人,在線旁聽(本段未發言)"
 absent:
   - "[[Dongmiao]](前一日已先行離席,本場未上線)"
+projects:
+  - "[[Amazon GTM Management]]"
 tags:
   - meeting
   - meeting-transcript

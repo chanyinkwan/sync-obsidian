@@ -1,9 +1,9 @@
 ---
-status: doing
+status: done
 priority: high
 scheduled: 2026-08-10
 dateCreated: 2026-08-10T11:35:57.817+01:00
-dateModified: 2026-08-10T15:00:00.000+01:00
+dateModified: 2026-08-18T09:50:08.937+01:00
 tags:
   - task
   - trip-biz
@@ -12,6 +12,7 @@ projects:
   - "[[Look for another job]]"
   - "[[Trip.com Interview]]"
 tasknotes_manual_order: tnririririri
+completedDate: 2026-08-18
 ---
 
 ## 原始訊息（照錄）

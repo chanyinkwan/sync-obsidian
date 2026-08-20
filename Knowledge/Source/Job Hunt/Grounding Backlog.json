@@ -26,6 +26,12 @@
           "jd": "Equinix Sales Engineer, Telco & Media",
           "criterion": "3: foundational infrastructure knowledge",
           "note": "Strongest available infrastructure-evaluation evidence for this JD. Cut for the ungrounded 15 man-day figure."
+        },
+        {
+          "date": "2026-08-17",
+          "jd": "Jamf Sales Engineer, EMEIA",
+          "criterion": "3: proof-of-concept projects owned through to completion",
+          "note": "THIRD demand and the highest count on this list. Jamf names PoC ownership as a core responsibility and this is the only named PoC in the record. Losing the same bullet to the same ungrounded 15 man-day figure across three applications is the clearest signal on the board that this is the next grounding session."
         }
       ]
     },
@@ -84,6 +90,12 @@
           "jd": "Equinix Sales Engineer, Telco & Media",
           "criterion": "4: cross-functional stakeholder buy-in",
           "note": "Cut for the ungrounded 80 percent live-resolution figure."
+        },
+        {
+          "date": "2026-08-17",
+          "jd": "Jamf Sales Engineer, EMEIA",
+          "criterion": "2: the technical voice in the room, delivering customised demos",
+          "note": "Demoing to a room of 30+ and closing objections live is the Jamf role definition almost word for word. Cut again for the unsourced share of objections closed."
         }
       ]
     },
@@ -116,6 +128,12 @@
           "jd": "Equinix Sales Engineer, Telco & Media",
           "criterion": "4: stakeholder communication under a technical migration",
           "note": "Cut for the ungrounded NPS 92 figure."
+        },
+        {
+          "date": "2026-08-17",
+          "jd": "Jamf Sales Engineer, EMEIA",
+          "criterion": "4: partner enablement and technical training",
+          "note": "Largest enablement effort on record and Jamf names enablement twice. Cut for NPS 92. The secondary Floor Champion training bullet had to carry the criterion instead."
         }
       ]
     },
@@ -260,6 +278,12 @@
           "jd": "Google Cloud Customer Engineer, AI Natives, Junior Talent Programme",
           "criterion": "4. Communicates technical concepts to different audiences, and 3. supports the technical win through influence",
           "note": "RENDERED by exception, not killed. Same precedent as the manday-arbitration bullet: the binding DB note calls it the flagship influence proof, so gate 3 beat the rank-2 rule requiring a number. A reviewer proposed borrowing '6 flagship stores' from a neighbouring bullet; refused under gate 8. One real number here removes the exception permanently and it would be reusable on every presales and CE application."
+        },
+        {
+          "date": "2026-08-17",
+          "jd": "Jamf Sales Engineer, EMEIA",
+          "criterion": "5: explains complex technical topics to mixed audiences",
+          "note": "Cut here on space rather than on grounding: criteria 2, 4 and 5 each already had a numbered bullet. Still has no Y."
         }
       ]
     },
@@ -288,6 +312,34 @@
           "jd": "Google Cloud Customer Engineer, AI Natives, Junior Talent Programme",
           "criterion": "5. Gate: cloud infrastructure, and the tie-breaker on configuring developer environments with Docker and Linux",
           "note": "The largest weakness of this application. A Google Cloud req with a bare skills-line cloud claim and no supporting bullet is the first thing an interviewer will probe. Linux command line was explicitly not claimed at all. Fix by shipping one small thing on Google Cloud (Cloud Run or Vertex AI) and grounding a number for it."
+        }
+      ]
+    },
+    {
+      "bullet": "Jamf 300 or Jamf 400 certification, and Cybersecurity Fundamentals certification",
+      "role": "None. Not held.",
+      "status": "not held, nothing in the record substitutes",
+      "grounding_question": "Not a grounding question, a purchase question. Jamf 300 is the cheapest credibility buy available if this application progresses. Worth doing before an interview, not before applying.",
+      "demand": [
+        {
+          "date": "2026-08-17",
+          "jd": "Jamf Sales Engineer, EMEIA",
+          "criterion": "Preferred qualifications",
+          "note": "Both preferred quals are certifications and neither is held. The HKMA Geo-IP fraud detection bullet carries the security foundation with no credential behind it."
+        }
+      ]
+    },
+    {
+      "bullet": "Apple ODA: defused rollback demands mid-migration with a fallback and committed technical support",
+      "role": "Apple, Operation Data Analyst",
+      "status": "verified, but carries no numeric Y",
+      "grounding_question": "How many store leaders demanded a rollback, at what point in the migration, and what would it have cost if it had happened? Rollback avoided, days of migration saved, or teams kept on the new flow.",
+      "demand": [
+        {
+          "date": "2026-08-17",
+          "jd": "Jamf Sales Engineer, EMEIA",
+          "criterion": "2: the technical voice in the room, specifically objection handling under pressure",
+          "note": "The only rendered proof of handling a technical objection under real pressure, and it had to be cut on the no-number rule. The DB bullet is equally numberless, so there is nothing honest to add without a grounding session. High value for every presales and SE application."
         }
       ]
     }

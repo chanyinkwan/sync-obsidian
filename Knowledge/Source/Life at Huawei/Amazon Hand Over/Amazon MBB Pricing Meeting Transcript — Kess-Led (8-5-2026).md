@@ -8,6 +8,8 @@ attendees:
   - "[[Ziyi Zhang 84434577]] — 與 Kess 共用同一 WeLink 帳號 `KessogChan`"
   - "[[Dongmiao]] — Amazon 渠道側對口"
 absent: []
+projects:
+  - "[[Amazon GTM Management]]"
 tags:
   - meeting
   - meeting-transcript

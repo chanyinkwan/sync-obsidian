@@ -1,0 +1,2 @@
+gemini-webapi==2.1.0
+mcp>=1.0,<2

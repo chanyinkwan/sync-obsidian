@@ -3,7 +3,7 @@ status: todo
 priority: high
 scheduled: 2026-08-07
 projects:
-  - "[[Amazon take over]]"
+  - "[[Amazon GTM Management]]"
 dateCreated: 2026-08-07T15:26:53.103+01:00
 dateModified: 2026-08-07T15:26:53.103+01:00
 tags:

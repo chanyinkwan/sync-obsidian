@@ -24,6 +24,8 @@ Readiness is proven, not felt. A fixed 3-hour budget across five stages replaces
 
 The tracker note is the only piece of durable state. It carries `type: interview-prep-tracker`, `company`, `role`, `stage`, `interview_date`, `status`, the Stage Checklist, and `## Gate Log`.
 
+**Output locations.** Every per-application file this skill writes (brief, reps deck, anything company-specific) goes in that application's job folder: `Knowledge/Source/Job Hunt/<Company>/`. `$Interview System/` holds standing assets only and is read-only to this skill. Never create files at the vault root.
+
 ## Universal rules
 
 1. **Announce before acting.** At the start of every stage, before doing anything else, say the stage's budget and its one-line "done means" (pull both from the SOP or the table below — do not paraphrase them away).
@@ -76,15 +78,16 @@ One item at a time. Never print the whole deck up front.
 1. Announce budget (60 min) and done-line.
 2. Read `Master Story Bank.md` fresh (do not rely on anything cached from a prior run).
 3. If `<Job Folder>/Interview Brief - <Company>.md` exists, pull its Part 3 text and the company-specific line to use for Deck A story A3 (why this company) and the `[FILL]` in A5. If the brief doesn't exist yet, tell Kess and proceed with the rest of the deck; A3 and the A5 fill-in wait for the brief.
-4. Drill Deck A anchors first, one at a time, in order (A1–A5):
+4. Write `<Job Folder>/Reps Deck - <Company>.md` before drilling starts: the complete speakable deck, self-contained so Kess never has to open another note. Copy the full text of every Deck A anchor (A1–A5) and every Deck B story from the Master Story Bank, with every `[FILL]` and `[Link: ...]` slot resolved for this company from the brief (A3 middle = brief Part 3; A5 includes the company-specific question; each story ends with its resolved company link, not the template). Keep the bolded anchor numbers bold. Include the supporting proof points and the fast story selector table. If the file already exists for this company, overwrite it fresh from the current bank and brief.
+5. Drill Deck A anchors first, one at a time, in order (A1–A5):
    - State which anchor it is.
    - Start a 60s timer, wait for Kess to say it out loud, stop the timer.
    - No transcript needed here — just confirm delivered and move on, or repeat once if Kess asks.
-5. Then drill Deck B, one story at a time (Story 1–5):
+6. Then drill Deck B, one story at a time (Story 1–5):
    - Same 60s-timer pattern.
    - After each, check what Kess said against that story's **bolded anchor points** in the bank (e.g. "three workshops, six subnets, validated scope"). If a bolded number or artifact was dropped or changed, flag the drift by name — do not let it pass silently.
-6. Selector drill: pick a question at random from either question bank (screen or hiring-manager bank matching the tracker's stage, or both if Kess wants more reps), read it out, and require Kess to first name which story they'd use, then answer it out loud with the timer. Repeat for a handful of rounds — Kess decides when to stop, but do not end the stage until at least 3 selector rounds have run.
-7. Tick B2, timestamp it.
+7. Selector drill: pick a question at random from either question bank (screen or hiring-manager bank matching the tracker's stage, or both if Kess wants more reps), read it out, and require Kess to first name which story they'd use, then answer it out loud with the timer. Repeat for a handful of rounds — Kess decides when to stop, but do not end the stage until at least 3 selector rounds have run.
+8. Tick B2, timestamp it.
 
 ## `gate`
 

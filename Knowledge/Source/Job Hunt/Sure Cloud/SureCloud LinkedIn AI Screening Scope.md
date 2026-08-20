@@ -94,7 +94,7 @@ Practice all 16. These are the most likely to be generated directly from the job
 
 **60-second answer**
 
-I am a presales specialist with six years across B2B sales, technical product delivery, and operations in telecom, banking, and technology. In my current Huawei role, I support a Tier-1 UK mobile operator: I have led technical workshops, converted engineering requirements into scope, and tested feasibility across six subnets before commitments reached the customer. Previously at Bank of China, I build and deploy fraud  reporting automation that returned about 400 hours a year. At Apple, I generated GBP350,000 of B2B pipeline through discovery and qualification. The consistent pattern is that I uncover the real problem, translate it for technical and commercial teams, prove the solution, and help people adopt it. That is why SureCloud's Solutions Consultant role is a strong fit.
+I am a presales specialist with six years across B2B sales, technical product delivery, and product operations. In my current Huawei role, I support a Tier-1 UK mobile operator: I have led technical workshops, converted engineering requirements into scope, and tested feasibility across six subnets before commitments reached the customer. Previously at Bank of China, I build and deploy fraud  reporting automation that returned about 400 hours a year. At Apple, I generated GBP350,000 of B2B pipeline through discovery and qualification. The consistent pattern is that I uncover the real problem, translate it for technical and commercial teams, prove the solution, and help people adopt it. That is why SureCloud's Solutions Consultant role is a strong fit.
 
 **Proof:** H1, H2, B1, B2, A1.
 

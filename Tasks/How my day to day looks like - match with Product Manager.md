@@ -1,10 +1,10 @@
 ---
-status: in-progress
+status: done
 priority: high
 due: 2026-08-12
 scheduled: 2026-08-10
 dateCreated: 2026-08-10T12:52:38.542+01:00
-dateModified: 2026-08-10T13:40:00.000+01:00
+dateModified: 2026-08-18T09:50:40.226+01:00
 tags:
   - task
   - trip-biz
@@ -16,6 +16,7 @@ related:
   - "[[Message with Kiran]]"
   - "[[Competencies Prep with Stories - Trip.biz Interview]]"
 eisenhower: q1
+completedDate: 2026-08-18
 ---
 
 # How my day to day looks like, matched to the Product Manager JD

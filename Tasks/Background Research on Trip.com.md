@@ -1,18 +1,19 @@
 ---
-status: doing
+status: done
 priority: high
 scheduled: 2026-08-09
 projects:
   - "[[Look for another job]]"
   - "[[Trip.com Interview]]"
 dateCreated: 2026-08-09T17:56:59.503+01:00
-dateModified: 2026-08-10T11:34:01.556+01:00
+dateModified: 2026-08-18T09:50:00.146+01:00
 tags:
   - task
 eisenhower: q1
 stakeholders:
   - "[[Kiran Gosal Kang]]"
 tasknotes_manual_order: tniririririr
+completedDate: 2026-08-18
 ---
 
 ## Materials

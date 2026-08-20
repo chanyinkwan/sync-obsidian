@@ -914,6 +914,96 @@
       "requestedAt": 1786369181458,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/依照這個資訊和參考，收集一下信息，匯總成一段和記的內容.md",
+      "requestedAt": 1787042488608,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Proglove Interview Prep.md",
+      "requestedAt": 1787043086867,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/德國 B636 流量優化.md",
+      "requestedAt": 1787044421261,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/8 月和記月報.md",
+      "requestedAt": 1787049382117,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Update the Sample Stock Data Table.md",
+      "requestedAt": 1787132188535,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/feedback on interview prep skills.md",
+      "requestedAt": 1787136621427,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/H173首銷.md",
+      "requestedAt": 1787150572286,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/H173.md",
+      "requestedAt": 1787150613293,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/E6888圈量.md",
+      "requestedAt": 1787151541954,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/商務授權統一調整.md",
+      "requestedAt": 1787151619242,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Brovi服務退換能力建設.md",
+      "requestedAt": 1787151695080,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Brovi透明計劃.md",
+      "requestedAt": 1787151782653,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Super MiFi (E6898) 上市.md",
+      "requestedAt": 1787151872030,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Brovi B 影片頁面入口.md",
+      "requestedAt": 1787152012069,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Amazon GTM - Do research on current sales data and summarise insights fro 程哥 as well.md",
+      "requestedAt": 1787153630985,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {
@@ -1674,5 +1764,5 @@
     }
   ],
   "lastSelectedTaskPath": "Tasks/SA 00 - Exam Prep.md",
-  "lastNotifiedReleaseVersion": "4.12.0"
+  "lastNotifiedReleaseVersion": "4.12.3"
 }

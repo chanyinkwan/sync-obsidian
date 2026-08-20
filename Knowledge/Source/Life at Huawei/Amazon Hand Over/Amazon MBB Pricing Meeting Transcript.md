@@ -8,6 +8,8 @@ attendees:
   - "Kess Chan (Chukwan) — 本人"
   - "[[Huang Yi 84411269 (Selina)]] — 見下方 speaker labels 的指認依據"
 absent: []
+projects:
+  - "[[Amazon GTM Management]]"
 tags:
   - meeting
   - meeting-transcript

@@ -1,15 +1,16 @@
 ---
-status: doing
+status: done
 priority: high
 scheduled: 2026-08-10
 projects:
   - "[[Look for another job]]"
   - "[[Trip.com Interview]]"
 dateCreated: 2026-08-10T12:44:33.535+01:00
-dateModified: 2026-08-10T14:10:00.000+01:00
+dateModified: 2026-08-18T09:50:23.004+01:00
 tags:
   - task
 eisenhower: q1
+completedDate: 2026-08-18
 ---
 
 ## Framework Used

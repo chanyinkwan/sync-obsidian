@@ -2,13 +2,13 @@
 type: reference
 status: active
 date: 2026-08-06
-account_or_project: "[[Amazon take over]]"
+account_or_project: "[[Amazon GTM Management]]"
 source:
-  - "Handover book.xlsx — Task & Template / by SKU progress / Ongoing Projects / Business Org Map & PoC"
-  - "Handover Book Doc/Product Launch Checklist.xlsx"
-  - "Handover Book Doc/AMZ MBB量价模拟 V4.xlsx"
-  - "Handover Book Doc/MBB SI volume&Rev Tracker.xlsx"
-  - "Handover Book Doc/2026年 亚马逊MBB价格及销毛 v3.xlsx"
+  - Handover book.xlsx — Task & Template / by SKU progress / Ongoing Projects / Business Org Map & PoC
+  - Handover Book Doc/Product Launch Checklist.xlsx
+  - Handover Book Doc/AMZ MBB量价模拟 V4.xlsx
+  - Handover Book Doc/MBB SI volume&Rev Tracker.xlsx
+  - Handover Book Doc/2026年 亚马逊MBB价格及销毛 v3.xlsx
   - "[[Amazon MBB Handover Meeting Transcript]]"
   - "[[Amazon MBB Pricing Meeting Transcript]]"
   - "[[Amazon MBB Pricing Meeting Transcript â Kess-Led (8-5-2026)]]"

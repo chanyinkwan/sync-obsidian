@@ -4,6 +4,7 @@
     "created": "2026-07-13",
     "recrafted": "2026-07-28",
     "authoritative_timeline_source": "LinkedIn PDF export 2026-07-13",
+    "reconciliation_2026-08-19": "Reconciled against My Profile.pdf LinkedIn export 2026-08-19. Apple Business Expert / Operation Data Analyst date boundary conflict flagged on both role entries (see date_conflict field); stored 2026-07-13 user-confirmed dates retained as authoritative pending Apple contract/promotion letter. Huawei LinkedIn display title 'Presales Consultant (B2B)' added alongside the authoritative contract title. Hang Seng University BSc Information Technology (Sep 2018 - Sep 2022) added to education, sourced from the PDF. Excluded freelance/AI Solutions Engineer entry cross-checked: removed from the public LinkedIn profile as of this export, but the github.com/chanyinkwan link is still listed in the LinkedIn contact section. No literal LinkedIn headline/summary field exists in this schema; cv_summary is a separately curated, verified-bullets-only asset and was left untouched.",
     "target_path": "Presales Solutions Engineer / customer-facing Solutions Architect (AI SaaS & cloud infrastructure)",
     "predecessor": "NewProofBank.json (archived, dates unreliable)",
     "integrity_pass": "2026-07-28 repositioning interview. Every surviving number was re-grounded against what the user can reconstruct on demand. Bullets carry status: verified (defensible in a 10-second explanation), needs_grounding (real work, figure not yet reconstructed), secondary (true, kept for per-JD views, not front-line CV material), blocked (cannot be used until an external event completes), cut (removed, reason given).",
@@ -30,6 +31,8 @@
       "location": "London Area, United Kingdom",
       "employment_type": "Full-time",
       "narrative": "Presales solution ownership for Huawei CBG's UK portfolio on a Tier-1 operator account: requirements analysis, solution feasibility, product roadmap and pricing input, and end-to-end ownership of the evaluation and demo unit programme.",
+      "linkedin_display_title": "Presales Consultant (B2B)",
+      "linkedin_pdf_cross_check": "My Profile.pdf export 2026-08-19 independently corroborates all 4 bullets already in master_bullets below (discovery workshops producing bid requirements, 6-subnet feasibility validation, USD 2/unit cost-out via GTM roadmap and pricing, and the 60-80 unit evaluation programme with VBA automation). No new bullets added; the existing interview-grounded phrasing (source: interview-2026-07-28) is retained as authoritative over the LinkedIn copy.",
       "gap_note": "Contract unit volume behind the USD 2/unit saving is not accessible to the user (confirmed 2026-07-28); the bullet stands on the per-unit figure and the roadmap decision. RFP and proposal bullets stay blocked until a bid concludes.",
       "team_context": "5-person presales team dedicated to the Hutchison 3G (Three UK) account; presales owns the pursuit through RFP, then hands off to sales.",
       "client_private": "Hutchison 3G UK (Three)",
@@ -230,6 +233,7 @@
       "end": "Aug 2023",
       "location": "Hong Kong SAR",
       "employment_type": "Full-time",
+      "date_conflict": "LinkedIn as of 2026-08-19 shows Business Expert Jan 2020 - Jul 2022 and Operation Data Analyst Jul 2022 - Aug 2023; stored dates are the 2026-07-13 user-confirmed record; unresolved pending Apple contract/promotion letter",
       "narrative": "Owning problem discovery phase through deployment for Apple's flagship retail operations, turning frontline workflow pain into internal products: diagnosis, requirements, zero-to-one build, and multi-site rollout.",
       "master_bullets": [
         {
@@ -321,11 +325,12 @@
     },
     {
       "company": "Apple",
-      "title": "B2B Solution Expert",
+      "title": "Business Expert",
       "start": "Jan 2020",
       "end": "Mar 2021",
       "location": "Hong Kong SAR",
       "employment_type": "Full-time",
+      "date_conflict": "LinkedIn as of 2026-08-19 shows Business Expert Jan 2020 - Jul 2022 and Operation Data Analyst Jul 2022 - Aug 2023; stored dates are the 2026-07-13 user-confirmed record; unresolved pending Apple contract/promotion letter",
       "narrative": "Consultative B2B account ownership: needs discovery, solution positioning, revenue generation, and workforce optimisation across Apple's flagship retail environment.",
       "master_bullets": [
         {
@@ -495,6 +500,14 @@
     }
   ],
   "education": [
+    {
+      "institution": "The Hang Seng University of Hong Kong",
+      "degree": "BSc Information Technology",
+      "start": "Sep 2018",
+      "end": "Sep 2022",
+      "location": "Hong Kong SAR",
+      "source": "My Profile.pdf LinkedIn export 2026-08-19"
+    },
     {
       "institution": "University of Exeter",
       "degree": "MSc Business Analytics",
@@ -1366,6 +1379,7 @@
     {
       "reason": "NOT REAL. User confirmed 2026-07-28 that this entry was invented to hide an employment gap. The four github.com/chanyinkwan repos are purchased code the user did not write, and the client narratives were AI-generated to fit that code. Never render as employment, never cite the repos, never reuse the metrics. The gap it covered is Sep 2025 to Apr 2026, an ordinary post-MSc job search that needs no cover.",
       "excluded_on": "2026-07-28",
+      "linkedin_status_2026-08-19": "Removed from the public LinkedIn profile as of the 2026-08-19 My Profile.pdf export (this employment entry no longer appears). However, the github.com/chanyinkwan link is still listed in the LinkedIn contact section. This does not restore the entry; the hard_rule in meta still applies. Do not cite or reuse any chanyinkwan-derived content anywhere.",
       "record": {
         "company": "Freelance | Self-Employed",
         "title": "AI Solutions Engineer",

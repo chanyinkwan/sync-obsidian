@@ -1,11 +1,11 @@
 ---
-status: todo
+status: done
 priority: mid
 scheduled: 2026-08-10
 recurrence: DTSTART:20260810;FREQ=WEEKLY
 recurrence_anchor: scheduled
 dateCreated: 2026-08-10T10:42:08.643+01:00
-dateModified: 2026-08-10T11:34:47.255+01:00
+dateModified: 2026-08-18T09:50:31.315+01:00
 tags:
   - task
 eisenhower: q1

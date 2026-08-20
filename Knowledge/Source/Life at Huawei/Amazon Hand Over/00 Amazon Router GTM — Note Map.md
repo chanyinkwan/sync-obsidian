@@ -1,7 +1,7 @@
 ---
 type: moc
 date: 2026-07-30
-account_or_project: "[[Amazon take over]]"
+account_or_project: "[[Amazon GTM Management]]"
 tags:
   - moc
   - handover
@@ -85,5 +85,5 @@ tags:
 ## 5. 交叉引用
 
 - 術語與人名的**權威來源**是 [[5T Group Handover - Brief, Terminology & Summary Format]];本資料夾各逐字稿末的「詞彙表增補建議」是**待併入**的 delta,確認後才寫回 5T 簡報。
-- 專案層:[[Amazon take over]] · 任務層:[[Amazon Handover]]
+- 專案層:[[Amazon GTM Management]] · 任務層:[[Amazon Handover]]
 - 人:[[Ziyi Zhang 84434577]] · [[Qixuan Wang wx1252689]] · [[Yan Li 00504988]] · [[Zhang Xuan 00942107]] · [[Dongmiao]]
