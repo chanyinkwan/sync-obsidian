@@ -1,7 +1,7 @@
 # Amazon MBB Zero-Drop-Ball Operating Control Tower — 設計規格
 
 Date: 2026-08-20
-Status: approved design, not yet built
+Status: implemented; structural verification passed; live Obsidian acceptance pending after integration
 Owner: Kess Chan
 Parent scope: `[[Amazon GTM Management]]`
 Operational project: `[[Amazon GTM Operation]]`
