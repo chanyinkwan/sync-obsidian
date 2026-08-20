@@ -11,94 +11,96 @@ tags:
 ---
 # Amazon MBB 營運情境矩陣
 
-> 用途：我在哪裡 → 是否安全 → Where do I look → What do I do → When can I close.
+> 用途：我在哪裡 → 是否安全 → 去哪裡查看 → 要做甚麼 → 何時可以關閉。
 
 本矩陣是靜態決策指引；線上來源仍是唯一真源，正常 KPI 數據不得複製到 Obsidian。營運粒度固定為 `SKU × EU Aggregate` 與 `SKU × UK`；只有月度價格工作流在來源內檢查 DE／FR／IT／ES，並僅在該 SKU 的 EU 紀錄中註明國家異常。
 
 ## 健康狀態模型
 
-- Business Green：KPI 在參考範圍內，沒有需要處理的風險；不建立 action 或 record。
-- Business Amber：風險正在形成，但可在下一次 scheduled review 前處理。
-- Business Red：已影響或即將影響 sales、stock、delivery、price 或 margin；同一工作日處理。
-- Control Red：尚未通知正確 stakeholder，或尚未確認 Decision Owner。
-- Control Amber：Owner 已知情，但下一步或期限仍缺失。
-- Control Green：Decision Owner、下一步及期限全部確認。
+- 業務綠燈：KPI 在參考範圍內，沒有需要處理的風險；不建立行動或紀錄。
+- 業務黃燈：風險正在形成，但可在下一次排定檢查前處理。
+- 業務紅燈：已影響或即將影響銷售、庫存、交付、價格或毛利；同一工作日處理。
+- 管控紅燈：尚未通知正確相關人員，或尚未確認決策負責人。
+- 管控黃燈：負責人已知情，但下一步或期限仍缺失。
+- 管控綠燈：決策負責人、下一步及期限全部確認。
 
-Business Health 與 Control Health 必須獨立判斷。訊息已發出或對方已讀不等於 handoff 完成；即使 Control Health 為綠燈，Business Health 仍可維持紅燈。Decision 已作出但尚未執行或尚未驗證時，事項仍然開啟。
+業務健康狀態與管控健康狀態必須獨立判斷。訊息已發出或對方已讀不等於交接完成；即使管控健康狀態為綠燈，業務健康狀態仍可維持紅燈。決定已作出但尚未執行或尚未驗證時，事項仍然開啟。
 
-## Zero-Drop-Ball 流程
+實際情境與已確認入庫優先於固定參考門檻。若相關人員覆寫門檻，必須保存新值、理由、日期及適用 SKU／情境。
 
-1. 開啟 scenario 指定的 Source IDs。
-2. 套用 EU Aggregate 或 UK filter。
+## 零遺漏流程
+
+1. 開啟情境指定的來源 ID。
+2. 套用 EU Aggregate 或 UK 篩選條件。
 3. 把線上數據與參考門檻比較。
-4. Green：完成 recurring occurrence，不建立其他記錄。
-5. Amber／Red：截圖並加入 Monthly Operations Log entry。
-6. 寫明影響及建議，拉入正確 stakeholders。
-7. 在 [[Amazon GTM Operation]] 下建立 Action／Follow-up TaskNote。
-8. 確認 Decision Owner、下一步及期限。
+4. 綠燈：完成週期任務項目，不建立其他紀錄。
+5. 黃燈／紅燈：截圖並加入月度營運紀錄項目。
+6. 寫明影響及建議，拉入正確相關人員。
+7. 在 [[Amazon GTM Operation]] 下建立行動／跟進 TaskNote。
+8. 確認決策負責人、下一步及期限。
 9. 驗證結果後才關閉。
 
-## 9.1 SO 與 Forecast 偏差
+## 9.1 SO 與預測偏差
 
 ### 我在哪裡
 
-Actual SO 明顯高於或低於 Forecast。優先以 rolling four-week view 判斷，避免單週 Amazon 波動立即改變判斷。
+實際 SO 明顯高於或低於預測。優先以滾動四週檢視判斷，避免單週 Amazon 波動立即改變判斷。
 
 ### 去哪裡查看
 
-[[Amazon MBB Source Index#S01 — FineBI]] 的 Actual SO，以及 [[Amazon MBB Source Index#S02 — AMZ泛欧 路由&MBB上市进展.xlsx]] 的 Forecast；按 `SKU × EU Aggregate` 與 `SKU × UK` 分別檢查。
+[[Amazon MBB Source Index#S01 — FineBI]] 的實際 SO，以及 [[Amazon MBB Source Index#S02 — AMZ泛欧 路由&MBB上市进展.xlsx]] 的預測；按 `SKU × EU Aggregate` 與 `SKU × UK` 分別檢查。
 
 ### 是否安全
 
-| Business Health | 參考門檻 |
+| 業務健康狀態 | 參考門檻 |
 |---|---|
-| Green | Rolling four-week variance 在 ±10% 內 `Experience` |
-| Amber | 偏離 10–20%，但未造成 stock 風險 `Experience` |
-| Red | 偏離 >20% `Experience`，或較小偏離已令庫存無法覆蓋下一次 confirmed inbound `Derived` |
+| 綠燈 | 滾動四週差異在 ±10% 內 `Experience` |
+| 黃燈 | 偏離 10–20%，但未造成庫存風險 `Experience` |
+| 紅燈 | 偏離 >20% `Experience`，或較小偏離已令庫存無法覆蓋下一次已確認入庫 `Derived` |
 
 ### 要做甚麼
 
-1. 確認是否由 promotion、price 或一次性波動造成。
-2. 查看 DOS 及 confirmed inbound。
-3. Amber／Red 保存截圖及建立 Monthly Operations Log entry。
-4. 通知相關 stakeholder，建議修正 forecast／volume。
-5. 建立 follow-up TaskNote，寫明 Decision Owner、下一步及期限。
+1. 確認是否由促銷、價格或一次性波動造成。
+2. 查看 DOS 及已確認入庫。
+3. 黃燈／紅燈保存截圖及建立月度營運紀錄項目。
+4. 通知相關人員，建議修正預測／數量。
+5. 建立跟進 TaskNote，寫明決策負責人、下一步及期限。
 
 ### 何時可以關閉
 
-Stakeholder 已確認下一版 forecast／volume 的處理方式，並在下一週重新驗證結果。
+相關人員已確認下一版預測／數量的處理方式，並在下一週重新驗證結果。
 
-## 9.2 Forecast 更新狀態
+## 9.2 預測更新狀態
 
 ### 我在哪裡
 
-上週 SO 未補入，或 rolling 3+3／six-month forecast 未向後刷新。
+上週 SO 未補入，或滾動 3+3／六個月預測未向後刷新。
 
 ### 去哪裡查看
 
-[[Amazon MBB Source Index#S01 — FineBI]] 與 [[Amazon MBB Source Index#S02 — AMZ泛欧 路由&MBB上市进展.xlsx]]；按 `SKU × EU Aggregate` 與 `SKU × UK` 檢查上週 SO 及未來六個月 forecast。
+[[Amazon MBB Source Index#S01 — FineBI]] 與 [[Amazon MBB Source Index#S02 — AMZ泛欧 路由&MBB上市进展.xlsx]]；按 `SKU × EU Aggregate` 與 `SKU × UK` 檢查上週 SO 及未來六個月預測。
 
 ### 是否安全
 
-| Business Health | 參考門檻 |
+| 業務健康狀態 | 參考門檻 |
 |---|---|
-| Green | 上週 SO 已更新，未來六個月 forecast 完整 `Confirmed` |
-| Amber | 延遲一個 review cycle，但未影響 supply decision `Experience` |
-| Red | Forecast 缺失／過期，已阻礙 production、PO 或 delivery 判斷 |
+| 綠燈 | 上週 SO 已更新，未來六個月預測完整 `Confirmed` |
+| 黃燈 | 延遲一個檢查週期，但未影響供應決策 `Experience` |
+| 紅燈 | 預測缺失／過期，已阻礙生產、PO 或交付判斷 |
 
 ### 要做甚麼
 
-確認缺失範圍 → 找 source owner → 說明受影響 SKU 與 decision → 建立有期限的 TaskNote，並確認 Decision Owner、下一步及期限。
+確認缺失範圍 → 找來源負責人 → 說明受影響 SKU 與決策 → 建立有期限的 TaskNote，並確認決策負責人、下一步及期限。
 
 ### 何時可以關閉
 
-Forecast 已更新，並可用於本週判斷。
+預測已更新，並可用於本週判斷。
 
 ## 9.3 低 DOS／缺貨風險
 
 ### 我在哪裡
 
-Coverage Buffer = Current DOS − Weeks until next Confirmed Inbound。以最新 SO run rate 及 confirmed inbound 為準。
+庫存覆蓋緩衝 = 當前 DOS − 距離下一個已確認入庫的週數。以最新 SO 銷售速度及已確認入庫為準。
 
 ### 去哪裡查看
 
@@ -106,29 +108,29 @@ Coverage Buffer = Current DOS − Weeks until next Confirmed Inbound。以最新
 
 ### 是否安全
 
-| Business Health | 參考門檻 |
+| 業務健康狀態 | 參考門檻 |
 |---|---|
-| Green | Coverage Buffer ≥2 weeks `Derived` |
-| Amber | Coverage Buffer 介於 0–2 weeks `Derived` |
-| Red | Coverage Buffer <0；預計 inbound 前已斷貨 `Derived` |
+| 綠燈 | 庫存覆蓋緩衝 ≥2 週 `Derived` |
+| 黃燈 | 庫存覆蓋緩衝介於 0–2 週 `Derived` |
+| 紅燈 | 庫存覆蓋緩衝 <0；預計入庫前已斷貨 `Derived` |
 
 ### 要做甚麼
 
-1. 確認 Amazon 可售庫存、NL hub 及 inbound。
-2. 排除 tentative shipment 被誤當 confirmed。
-3. 檢查近期 promotion uplift。
-4. Red 同日拉入 channel／delivery stakeholder。
-5. 提供 expedite、forecast adjustment、promotion hold 或 volume adjustment 建議，並建立含 Decision Owner、下一步及期限的 follow-up TaskNote。
+1. 確認 Amazon 可售庫存、NL 樞紐及入庫。
+2. 排除暫定出貨被誤當已確認。
+3. 檢查近期促銷拉升。
+4. 紅燈同日拉入渠道／交付相關人員。
+5. 提供加急、預測調整、暫停促銷或數量調整建議，並建立含決策負責人、下一步及期限的跟進 TaskNote。
 
 ### 何時可以關閉
 
-Inbound、調整方案及下一次驗證日期全部確認，且重新計算後風險解除。
+入庫、調整方案及下一次驗證日期全部確認，且重新計算後風險解除。
 
 ## 9.4 高 DOS／滯銷風險
 
 ### 我在哪裡
 
-DOS 過高，或在沒有 demand／promotion 計劃下持續上升。13／26 weeks 對應 rolling 3+3 視角，只是初始經驗值。
+DOS 過高，或在沒有需求／促銷計劃下持續上升。13／26 週對應滾動 3+3 視角，只是初始經驗值。
 
 ### 去哪裡查看
 
@@ -136,51 +138,51 @@ DOS 過高，或在沒有 demand／promotion 計劃下持續上升。13／26 wee
 
 ### 是否安全
 
-| Business Health | 參考門檻 |
+| 業務健康狀態 | 參考門檻 |
 |---|---|
-| Green | DOS ≤13 weeks `Experience` |
-| Amber | DOS >13 且 ≤26 weeks `Experience` |
-| Red | DOS >26 weeks `Experience`，或未來四週持續上升且沒有 demand／promotion 計劃 `Experience` |
+| 綠燈 | DOS ≤13 週 `Experience` |
+| 黃燈 | DOS >13 且 ≤26 週 `Experience` |
+| 紅燈 | DOS >26 週 `Experience`，或未來四週持續上升且沒有需求／促銷計劃 `Experience` |
 
 ### 要做甚麼
 
-確認庫存所在位置 → 排除 PO／SI timing → 查看 promotion 與 price plan → 建議降低 forecast／後續 supply 或調整價格節奏 → 拉入 channel、delivery 及 pricing stakeholder，並建立含 Decision Owner、下一步及期限的 TaskNote。
+確認庫存所在位置 → 排除 PO／SI 時點 → 查看促銷與價格計劃 → 建議降低預測／後續供應或調整價格節奏 → 拉入渠道、交付及定價相關人員，並建立含決策負責人、下一步及期限的 TaskNote。
 
 ### 何時可以關閉
 
-Stakeholder 已確認處理方向，且 DOS 在後續 review 不再惡化。
+相關人員已確認處理方向，且 DOS 在後續檢查不再惡化。
 
 ## 9.5 PO 預計日期／數量偏差
 
 ### 我在哪裡
 
-PO 的 expected date 未確認或 quantity 與預期不符。Amazon PO 到 sell-in 約兩週是已知運作規則，但 PO 不是固定季度節奏。
+PO 的預計日期未確認或數量與預期不符。Amazon PO 到銷入約兩週是已知運作規則，但 PO 不是固定季度節奏。
 
 ### 去哪裡查看
 
-[[Amazon MBB Source Index#S02 — AMZ泛欧 路由&MBB上市进展.xlsx]] 與 [[Amazon MBB Source Index#S03 — AMZ Delivery Plan／Delivery Tracker]]；按 `SKU × EU Aggregate` 與 `SKU × UK` 檢查 expected PO date、quantity 與 DOS 影響。
+[[Amazon MBB Source Index#S02 — AMZ泛欧 路由&MBB上市进展.xlsx]] 與 [[Amazon MBB Source Index#S03 — AMZ Delivery Plan／Delivery Tracker]]；按 `SKU × EU Aggregate` 與 `SKU × UK` 檢查預計 PO 日期、數量與 DOS 影響。
 
 ### 是否安全
 
-| Business Health | 參考門檻 |
+| 業務健康狀態 | 參考門檻 |
 |---|---|
-| Green | PO 在預期日期確認，quantity variance ≤10% `Experience` |
-| Amber | PO 預期日期在三個工作日內但未確認，或 variance 10–20% `Experience` |
-| Red | 預期日期已過，或 variance >20% 並影響 DOS／delivery `Experience` |
+| 綠燈 | PO 在預期日期確認，數量差異 ≤10% `Experience` |
+| 黃燈 | PO 預期日期在三個工作日內但未確認，或差異 10–20% `Experience` |
+| 紅燈 | 預期日期已過，或差異 >20% 並影響 DOS／交付 `Experience` |
 
 ### 要做甚麼
 
-確認 expected PO date 及 quantity → 計算 DOS 影響 → 拉入 Amazon channel PO 窗口 → 說明最遲日期及缺口 → 提供 quantity adjustment 建議，並確認 Decision Owner、下一步及期限。
+確認預計 PO 日期及數量 → 計算 DOS 影響 → 拉入 Amazon 渠道 PO 窗口 → 說明最遲日期及缺口 → 提供數量調整建議，並確認決策負責人、下一步及期限。
 
 ### 何時可以關閉
 
-PO 或替代方案已確認，並已反映在 delivery／DOS 判斷。
+PO 或替代方案已確認，並已反映在交付／DOS 判斷。
 
-## 9.6 交付／inbound ETA 延誤
+## 9.6 交付／入庫 ETA 延誤
 
 ### 我在哪裡
 
-Delivery Buffer = Required Available Date − Current Confirmed ETA。
+交付緩衝 = 所需可售日期 − 當前已確認 ETA。
 
 ### 去哪裡查看
 
@@ -188,107 +190,107 @@ Delivery Buffer = Required Available Date − Current Confirmed ETA。
 
 ### 是否安全
 
-| Business Health | 參考門檻 |
+| 業務健康狀態 | 參考門檻 |
 |---|---|
-| Green | ETA 比 required date 早 ≥14 days `Derived` |
-| Amber | ETA 在 required date 前 0–14 days `Derived` |
-| Red | ETA 晚於 required date，或沒有 confirmed ETA `Derived` |
+| 綠燈 | ETA 比所需日期早 ≥14 日 `Derived` |
+| 黃燈 | ETA 在所需日期前 0–14 日 `Derived` |
+| 紅燈 | ETA 晚於所需日期，或沒有已確認 ETA `Derived` |
 
 ### 要做甚麼
 
-定位 production／departure／customs／NL hub／Amazon warehouse milestone → 確認 forecast 已反映延誤 → 找 Tony 取得執行排期 → 必要時拉 Eric 確認方向 → 建議 expedite、reallocation 或 promotion adjustment，並確認 Decision Owner、下一步及期限。
+定位生產／出貨／清關／NL 樞紐／Amazon 倉庫里程碑 → 確認預測已反映延誤 → 找 Tony 取得執行排期 → 必要時拉 Eric 確認方向 → 建議加急、重新分配或促銷調整，並確認決策負責人、下一步及期限。
 
 ### 何時可以關閉
 
-新 ETA、Owner 及處理方式已確認，並完成結果驗證。
+新 ETA、負責人及處理方式已確認，並完成結果驗證。
 
-## 9.7 SI 與 Plan 偏差
+## 9.7 SI 與計劃偏差
 
 ### 我在哪裡
 
-Actual SI 與 plan 出現顯著差異，或令 SO／inventory 判斷失真。
+實際 SI 與計劃出現顯著差異，或令 SO／庫存判斷失真。
 
 ### 去哪裡查看
 
-[[Amazon MBB Source Index#S03 — AMZ Delivery Plan／Delivery Tracker]] 與 [[Amazon MBB Source Index#S04 — MBB SI volume&Rev Tracker.xlsx]]；按 `SKU × EU Aggregate` 與 `SKU × UK` 檢查 actual SI、plan 與差異。
+[[Amazon MBB Source Index#S03 — AMZ Delivery Plan／Delivery Tracker]] 與 [[Amazon MBB Source Index#S04 — MBB SI volume&Rev Tracker.xlsx]]；按 `SKU × EU Aggregate` 與 `SKU × UK` 檢查實際 SI、計劃與差異。
 
 ### 是否安全
 
-| Business Health | 參考門檻 |
+| 業務健康狀態 | 參考門檻 |
 |---|---|
-| Green | Actual SI 與 plan 差異 ≤10% `Experience` |
-| Amber | 差異 10–20% `Experience` |
-| Red | 差異 >20% `Experience`，或令 SO／inventory 判斷失真 |
+| 綠燈 | 實際 SI 與計劃差異 ≤10% `Experience` |
+| 黃燈 | 差異 10–20% `Experience` |
+| 紅燈 | 差異 >20% `Experience`，或令 SO／庫存判斷失真 |
 
 ### 要做甚麼
 
-排除 timing difference → 確認 PO／receipt → 更新受影響的 DOS 判斷 → 通知 delivery／finance stakeholder → 追蹤修正，並確認 Decision Owner、下一步及期限。
+排除時點差異 → 確認 PO／收貨 → 更新受影響的 DOS 判斷 → 通知交付／財務相關人員 → 追蹤修正，並確認決策負責人、下一步及期限。
 
 ### 何時可以關閉
 
-Actual 與 plan 差異已被解釋或修正，且後續 decision 使用正確基數。
+實際 SI 與計劃差異已被解釋或修正，且後續決策使用正確基數。
 
 ## 9.8 月度價格指引／審批漂移
 
 ### 我在哪裡
 
-Guidance、final approval 或商務授權不一致。營運紀錄仍維持 `SKU × EU Aggregate`，但在來源內按 DE／FR／IT／ES 檢查 country price；只有國家價格異常時，才在該 SKU 的 EU log entry 註明國家。
+價格指引、最終核准或商務授權不一致。營運紀錄仍維持 `SKU × EU Aggregate`，但在來源內按 DE／FR／IT／ES 檢查各國價格；只有國家價格異常時，才在該 SKU 的 EU 紀錄項目註明國家。
 
 ### 去哪裡查看
 
-[[Amazon MBB Source Index#S06 — 2026年 亚马逊MBB价格及销毛 v3.xlsx]]、[[Amazon MBB Source Index#S07 — 泛欧亚马逊月度价格指引.xlsx]]、[[Amazon MBB Source Index#S08 — Amazon GTM final email]] 與 [[Amazon MBB Source Index#S11 — iPrice]]；在來源內按 DE／FR／IT／ES 比對 price、margin、final approval 與授權下限。
+[[Amazon MBB Source Index#S06 — 2026年 亚马逊MBB价格及销毛 v3.xlsx]]、[[Amazon MBB Source Index#S07 — 泛欧亚马逊月度价格指引.xlsx]]、[[Amazon MBB Source Index#S08 — Amazon GTM final email]] 與 [[Amazon MBB Source Index#S11 — iPrice]]；在來源內按 DE／FR／IT／ES 比對價格、毛利、最終核准與授權下限。
 
 ### 是否安全
 
-| Business Health | 參考門檻 |
+| 業務健康狀態 | 參考門檻 |
 |---|---|
-| Green | Guidance、final approval 及商務授權一致 |
-| Amber | Country on-top request 待批准，或價格理由待確認 |
-| Red | 價格低於授權底線、margin 不合要求，或未批准便執行 |
+| 綠燈 | 價格指引、最終核准及商務授權一致 |
+| 黃燈 | 各國加碼要求待批准，或價格理由待確認 |
+| 紅燈 | 價格低於授權底線、毛利不合要求，或未批准便執行 |
 
 ### 要做甚麼
 
-找出差異來源 → 確認 margin 及底線 → 拉入 Amazon GTM／李清華 → 突破授權時加入俞碧斐 → 提供接受、駁回或調整建議，並確認 Decision Owner、下一步及期限。
+找出差異來源 → 確認毛利及底線 → 拉入 Amazon GTM／李清華 → 突破授權時加入俞碧斐 → 提供接受、駁回或調整建議，並確認決策負責人、下一步及期限。
 
 ### 何時可以關閉
 
-Final approved decision 已收到並可追溯。
+最終核准的價格決定已收到並可追溯，且已完成執行及結果驗證。
 
 ## 9.9 促銷價格與 DOS 準備度風險
 
 ### 我在哪裡
 
-Promotion price 或 promotion-driven DOS 可能不符合核准、deal-tag logic、margin 或供貨準備度。
+促銷價格或促銷帶動的 DOS 可能不符合核准、優惠標籤規則、毛利或供貨準備度。
 
 ### 去哪裡查看
 
-[[Amazon MBB Source Index#S02 — AMZ泛欧 路由&MBB上市进展.xlsx]]、[[Amazon MBB Source Index#S05 — Inventory online table]]、[[Amazon MBB Source Index#S06 — 2026年 亚马逊MBB价格及销毛 v3.xlsx]]、[[Amazon MBB Source Index#S08 — Amazon GTM final email]]、[[Amazon MBB Source Index#S09 — Promotion Tracker]] 與 [[Amazon MBB Source Index#S11 — iPrice]]；按 `SKU × EU Aggregate` 與 `SKU × UK` 重算 promotion DOS buffer。
+[[Amazon MBB Source Index#S02 — AMZ泛欧 路由&MBB上市进展.xlsx]]、[[Amazon MBB Source Index#S05 — Inventory online table]]、[[Amazon MBB Source Index#S06 — 2026年 亚马逊MBB价格及销毛 v3.xlsx]]、[[Amazon MBB Source Index#S08 — Amazon GTM final email]]、[[Amazon MBB Source Index#S09 — Promotion Tracker]] 與 [[Amazon MBB Source Index#S11 — iPrice]]；按 `SKU × EU Aggregate` 與 `SKU × UK` 重算促銷 DOS 緩衝。
 
 ### 是否安全
 
-Confirmed Amazon 規則：run price 約需 30 日 `Confirmed`；offer 最多約兩週 `Confirmed`；deal tag 相對過去 30 日最低價，DE／UK 約 15% `Confirmed`，FR／IT／ES 約 5% `Confirmed`；斷貨 SKU 不應安排低價 promotion `Confirmed`。
+已確認的 Amazon 規則：平銷價約需 30 日 `Confirmed`；促銷檔期最多約兩週 `Confirmed`；優惠標籤相對過去 30 日最低價，DE／UK 約 15% `Confirmed`，FR／IT／ES 約 5% `Confirmed`；斷貨 SKU 不應安排低價促銷 `Confirmed`。
 
-| Business Health | 參考門檻 |
+| 業務健康狀態 | 參考門檻 |
 |---|---|
-| Green | 價格符合 approval、deal-tag logic 及 margin；promotion DOS buffer ≥2 weeks `Derived` |
-| Amber | 價格可執行但可能沒有 deal tag，或 buffer 為 0–2 weeks `Derived` |
-| Red | 未批准突破底線、promotion 會令 inbound 前斷貨，或斷貨 SKU 仍安排低價 |
+| 綠燈 | 價格符合核准、優惠標籤規則及毛利；促銷 DOS 緩衝 ≥2 週 `Derived` |
+| 黃燈 | 價格可執行但可能沒有優惠標籤，或緩衝為 0–2 週 `Derived` |
+| 紅燈 | 未批准突破底線、促銷會令入庫前斷貨，或斷貨 SKU 仍安排低價 |
 
 ### 要做甚麼
 
-確認活動日期及 final price → 以 promotion forecast 重算 DOS buffer → 價格風險拉入 Amazon GTM／approver → DOS 風險拉入 channel／delivery → 建議改價、縮短活動、hold promotion 或調整 volume，並確認 Decision Owner、下一步及期限。
+確認活動日期及最終價格 → 以促銷預測重算 DOS 緩衝 → 價格風險拉入 Amazon GTM／核准人 → DOS 風險拉入渠道／交付 → 建議改價、縮短活動、暫停促銷或調整數量，並確認決策負責人、下一步及期限。
 
 ### 何時可以關閉
 
-價格及 DOS 處理已確認，並在活動後的 weekly review 重新驗證。
+價格及 DOS 處理已確認，並在活動後的每週檢查重新驗證。
 
 ## 邊界與錯誤規則
 
-- Source URL 無效：在 [[Amazon MBB Source Index]] 更新 link status；不建立獨立 data-quality scenario。
-- Source owner 未知：Owner 欄留空，不能自行填入猜測姓名。
-- Sources 互相衝突：Business Health 至少為 Amber；記錄兩個來源及差異，找 owner 確認。
-- Confirmed inbound 變成 tentative：立即重算 Coverage Buffer。
-- Threshold 被 stakeholder 覆寫：保存新值、理由、日期及適用 SKU／scenario。
-- Handoff 只有「收到」：Control Health 維持 Amber。
-- Decision 已作出但未執行：Control Health 維持 Amber；TaskNote 不可關閉。
-- 結果完成但未驗證：建立或保留 verification TaskNote。
+- 來源 URL 無效：在 [[Amazon MBB Source Index]] 更新連結狀態；不建立獨立資料品質情境。
+- 來源負責人未知：負責人欄留空，不能自行填入猜測姓名。
+- 來源互相衝突：業務健康狀態至少為黃燈；記錄兩個來源及差異，找負責人確認。
+- 已確認入庫變成暫定：立即重算庫存覆蓋緩衝。
+- 門檻被相關人員覆寫：保存新值、理由、日期及適用 SKU／情境；實際情境與已確認入庫優先於固定參考門檻。
+- 交接只有「收到」：管控健康狀態維持黃燈。
+- 決定已作出但未執行：管控健康狀態維持黃燈；TaskNote 不可關閉。
+- 結果完成但未驗證：建立或保留驗證 TaskNote。
