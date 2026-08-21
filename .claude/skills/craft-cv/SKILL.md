@@ -14,7 +14,7 @@ A CV is a claim set, not a history. Every claim must survive a reader holding th
 | Rank | Source | Authoritative for |
 |---|---|---|
 | 1 | `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/MasterExperienceDB.json` | Titles, dates, claims, bullet status. Canonical. **This skill treats it as read-only.** |
-| 2 | `Knowledge/Source/Job Hunt/CV Writing Rules.md` | Bullet style. Binding. |
+| 2 | `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/CV Writing Rules.md` | Bullet style. Binding. |
 | 3 | `.claude/skills/craft-cv/TARGETING.md` | Positioning strategy above the bullet. |
 | 4 | Prior `CV Context — *.json` | JSON shape only. Their prose predates the rules. |
 | — | `CLAUDE.md`, `NewProofBank.json` | **Stale. Never use for titles or dates.** |
