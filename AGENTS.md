@@ -14,7 +14,7 @@ Last Updated: 2026-08-06
 ## 1. User Career Profile & Target
 * Current Role: Portfolio Solution & Commercial Sales Specialist (Enterprise Tech/Telecom)
 * Current Strategy: Preserving 20% strategic blank space daily, minimizing operational friction via automation.
-* Target Roles: Deal Desk Manager, Large Customer Sales Analyst, AI Solutions Engineer (AI SaaS / Cloud Infrastructure).
+* Target Roles: Presales Consultant and Sales Engineer in B2B SaaS, cloud, or connected-product companies; customer-facing Solution Architect only where the role is Presales-led rather than production-engineering-heavy.
 
 ## 2. Team Architecture & Inner-Circle Knowledge (Desensitized)
 This is the live structural mapping of the current department to maintain consistency in all SCQA and reflection exercises.

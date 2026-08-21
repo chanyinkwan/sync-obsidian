@@ -59,7 +59,7 @@ tags:
 
 ## 連結
 - 規則:[[CV Writing Rules]]（風格層）
-- 資料:`Knowledge/About Me/MasterExperienceDB.json`(canonical)· `Knowledge/Source/Job Hunt/Grounding Backlog.json`
+- 資料:`Knowledge/Source/Job Hunt/Presales Journey/00_Master System/MasterExperienceDB.json`(canonical)· `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Grounding Backlog.json`
 - 已刪除:`Project Database (Master).json` 於 2026-08-13 刪除(內含未標記的虛構 freelance 區塊與被修正過的膨脹數字),commit `2ce25d4` 可復原
 - 產出範例:`Knowledge/Source/Job Hunt/BJAK Technical Product Manager/`
 - Show-don't-tell 範例:[[Portfolio Draft v1 — TripBiz Senior PM EMEA]]

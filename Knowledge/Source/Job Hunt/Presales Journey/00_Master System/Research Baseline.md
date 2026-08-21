@@ -152,6 +152,6 @@ Stop researching when you can do these three things without notes:
 - **Do not run all six blocks before a screen is booked.** The SureCloud pack was six deep reports; that depth is a second-round investment, not a triage cost. Blocks A, B, C, F, G first.
 - **Every claim needs a source and a date.** Analyst pages, G2 and PitchBook figures go stale, and an interviewer who owns the number will know the current one.
 - **Reuse across competitors.** Blocks B, D and E are category-level, not company-level. Research a category once and it serves every company in it. The Samsara pack largely transfers to [[Geotab - Solutions Engineer]]; only Blocks A and C need rebuilding.
-- **Output lives in the job's own folder**, alongside the JD note, so [[On List Jobs]] keeps one folder per opportunity.
+- **Output lives in `Knowledge/Source/Job Hunt/Presales Journey/Companies/<Company — Role>/Research/`**, alongside the role-specific materials. Link the opportunity back to [[Application Pipeline]].
 
-Related: [[On List Jobs]] · [[CV Writing Rules]] · [[Look for another job]]
+Related: [[Application Pipeline]] · [[CV Writing Rules]] · [[Look for another job]]

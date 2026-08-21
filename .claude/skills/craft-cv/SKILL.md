@@ -13,7 +13,7 @@ A CV is a claim set, not a history. Every claim must survive a reader holding th
 
 | Rank | Source | Authoritative for |
 |---|---|---|
-| 1 | `Knowledge/About Me/MasterExperienceDB.json` | Titles, dates, claims, bullet status. Canonical. **This skill treats it as read-only.** |
+| 1 | `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/MasterExperienceDB.json` | Titles, dates, claims, bullet status. Canonical. **This skill treats it as read-only.** |
 | 2 | `Knowledge/Source/Job Hunt/CV Writing Rules.md` | Bullet style. Binding. |
 | 3 | `.claude/skills/craft-cv/TARGETING.md` | Positioning strategy above the bullet. |
 | 4 | Prior `CV Context — *.json` | JSON shape only. Their prose predates the rules. |
@@ -58,7 +58,7 @@ Replace prose provenance with a `_targeting` block in the CV context JSON:
   "gap_bridge": ""}
 ```
 
-Append every kill to `Knowledge/Source/Job Hunt/Grounding Backlog.json`: one record per bullet per application. Demand count is the priority queue, so the most-wanted evidence gets grounded first. A kill reported only in chat is a silent loss.
+Append every kill to `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Grounding Backlog.json`: one record per bullet per application. Demand count is the priority queue, so the most-wanted evidence gets grounded first. A kill reported only in chat is a silent loss.
 
 ## 5. Render
 

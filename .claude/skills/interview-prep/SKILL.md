@@ -13,18 +13,18 @@ Readiness is proven, not felt. A fixed 3-hour budget across five stages replaces
 
 | File | Used by |
 |---|---|
-| `Knowledge/Source/Job Hunt/$Interview System/Interview Prep SOP.md` | Reference for the full sequence, budgets, done-lines |
-| `Knowledge/Source/Job Hunt/$Interview System/Master Story Bank.md` | `reps` |
-| `Knowledge/Source/Job Hunt/$Interview System/Question Bank - Screen.md` | `gate` when tracker `stage: screen` |
-| `Knowledge/Source/Job Hunt/$Interview System/Question Bank - Hiring Manager.md` | `gate` when tracker `stage: hiring-manager` |
-| `Knowledge/Source/Job Hunt/$Interview System/Readiness Rubric.md` | `gate` |
-| `Knowledge/Source/Job Hunt/$Interview System/Pre-flight Checklist.md` | `preflight` |
+| `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Interview Prep SOP.md` | Reference for the full sequence, budgets, done-lines |
+| `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Master Story Bank.md` | `reps` |
+| `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Question Banks/Question Bank - Screen.md` | `gate` when tracker `stage: screen` |
+| `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Question Banks/Question Bank - Hiring Manager.md` | `gate` when tracker `stage: hiring-manager` |
+| `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Readiness Rubric.md` | `gate` |
+| `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Pre-flight Checklist.md` | `preflight` |
 | `Template/Interview Prep Tracker Template.md` | Fallback shape if a tracker must be created by hand |
 | `research-baseline` skill | invoked by `start`, and by `brief` if blocks are missing |
 
 The tracker note is the only piece of durable state. It carries `type: interview-prep-tracker`, `company`, `role`, `stage`, `interview_date`, `status`, the Stage Checklist, and `## Gate Log`.
 
-**Output locations.** Every per-application file this skill writes (brief, reps deck, anything company-specific) goes in that application's job folder: `Knowledge/Source/Job Hunt/<Company>/`. `$Interview System/` holds standing assets only and is read-only to this skill. Never create files at the vault root.
+**Output locations.** Every per-application file this skill writes (brief, reps deck, anything company-specific) goes in that application's interview folder: `Knowledge/Source/Job Hunt/Presales Journey/Companies/<Company — Role>/Interview/`. `Presales Journey/00_Master System/` holds standing assets only and is read-only to this skill. Never create files at the vault root.
 
 ## Universal rules
 
