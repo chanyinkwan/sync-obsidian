@@ -5,6 +5,7 @@ scheduled: 2026-08-19
 projects:
   - "[[Client Training]]"
   - "[[Amazon GTM Management]]"
+  - "[[E6898]]"
 dateCreated: 2026-08-19T16:04:31.948+01:00
 dateModified: 2026-08-19T16:09:17.431+01:00
 tags:
