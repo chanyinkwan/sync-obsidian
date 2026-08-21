@@ -631,7 +631,7 @@ If time slips, do not cut the official practice or final reset. Cut the second a
 
 - [[Presales Solution Consultant JD]]
 - [[Research on SureCloud]]
-- [[Knowledge/Source/Job Hunt/Presales Journey/Sure Cloud/Kessog Chan CV — Presales.pdf]]
+- [[Kessog Chan CV — Presales.pdf]]
 - [[Matthew Davies Profile (Hiring Manager).pdf]]
 - [[SureCloud Presales Mastery Guide.pdf]]
 - [[Enterprise GRC Buying Journey.pdf]]
