@@ -25,14 +25,18 @@ tags:
 ## 控制筆記
 - [[Amazon MBB Source Index]]
 - [[Amazon MBB Operations Scenario Matrix]]
+
+## 當月營運紀錄
+
 - [[2026-08 Amazon MBB Operations Log]]
+- 月度控制在月份轉換時更新上述連結，使所有週期檢查經由本節前往當月紀錄。
 
 ## 例外流程
-週期檢查 → Amber／Red 洞察 → 截圖＋來源連結＋月度紀錄 → 行動／後續 TaskNote → 決策負責人＋下一步＋期限 → 驗證結果 → 關閉。
+週期檢查 → 黃燈／紅燈洞察 → 截圖＋來源連結＋月度紀錄 → 行動／後續 TaskNote → 決策負責人＋下一步＋期限 → 驗證結果 → 關閉。
 
 ## 何時建立 TaskNote
 - 需要修正、通知、回覆或再次檢查：在 `[[Amazon GTM Operation]]` 建立 TaskNote。
-- 全部 Green 且沒有下一步：只完成該次週期執行，不建立 TaskNote。
+- 全部為綠燈且沒有下一步：只完成該次週期執行，不建立 TaskNote。
 - 有明確成果、期限，並涉及多步驟跨團隊協作：另建有明確範圍的獨立專案，不放入 BAU 控制塔。
 
 ## 本專案任務（自動）

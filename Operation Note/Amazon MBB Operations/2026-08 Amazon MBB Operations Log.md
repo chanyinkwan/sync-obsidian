@@ -16,7 +16,7 @@ tags:
 
 ## 決策紀錄
 
-<!-- 僅在琥珀／紅色洞察產生建議、決策或後續行動時複製以下區塊。
+<!-- 僅在黃燈／紅燈洞察產生建議、決策或後續行動時複製以下區塊。
 ### YYYY-MM-DD — [情境] [SKU] [EU/UK]
 
 - 來源連結:
@@ -31,6 +31,7 @@ tags:
 - 已確認下一步:
 - 期限:
 - 後續 TaskNote:
+- 每個後續 TaskNote 必須包含標題層級回連，格式為 `[[YYYY-MM Amazon MBB Operations Log#YYYY-MM-DD — 情境 SKU EU/UK]]`。
 - 結果／關閉依據:
 -->
 

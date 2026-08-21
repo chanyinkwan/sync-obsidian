@@ -9,7 +9,7 @@ tags:
 eisenhower: q1
 ---
 
-> 歷史任務；Recurring control已移至 [[Amazon MBB 每週 CPFR 檢查]]。
+> 歷史任務；週期性控制已移至 [[Amazon MBB 每週 CPFR 檢查]]。
 
 ## Ask as received
 > 你今天在workstation上把上周亚马逊的SO刷一下，遇到问题随时问我哈
