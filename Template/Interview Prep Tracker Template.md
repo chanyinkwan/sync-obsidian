@@ -16,16 +16,12 @@ status: in-progress
 
 ## Stage Checklist
 
-- [ ] **T0 Commit** — `/interview-prep start <% company %>` — 15 min, invite night — Done: interview slot booked ≤48h out, partner informed, tracker note exists, research-baseline triggered. No reading tonight.
-- [ ] **B1 Brief** — `/interview-prep brief` — 45 min — Done: one-page HM-POV brief written and read by Kess. Block notes never opened.
-- [ ] **B2 Reps** — `/interview-prep reps` — 60 min — Done: compulsory anchors + 5 competency stories said out loud at ≤60s each; selector drill run.
-- [ ] **B3 Gate** — `/interview-prep gate` — 45 min — Done: scored mock passed and verdict logged in tracker.
+- [ ] **T0 Commit** — `/interview-prep start <% company %>` — 15 min, invite night — Done: interview slot booked ≤48h out, partner informed, tracker note exists, research prompt written and fired into Gemini. No reading tonight.
+- [ ] **B1 Brief** — `/interview-prep brief` — 45 min — Done: research output pasted back; brief + Top 5 Stories written and both read.
+- [ ] **B2 Read & Mock** — no command, this one is yours — ~60 min — Done: brief and stories read; at least one full mock said out loud with a real-time voice AI.
 - [ ] **Pre-flight** — `/interview-prep preflight` — 15 min before interview — Done: checklist all green — room claimed, partner told, notes closed, link/mic tested, water.
 
 ## Links
 - [[Interview Prep SOP]]
 - [[Master Story Bank]]
 - [[Pre-flight Checklist]]
-
-## Gate Log
-<!-- /interview-prep gate appends scored verdicts here. Do not edit by hand. -->

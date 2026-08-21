@@ -1,46 +1,45 @@
 ---
 name: interview-prep
-description: Use when Chukwan wants to run or continue interview preparation for a Sales Engineer / Presales Consultant role, book and commit to an interview invite, get a one-page hiring-manager-POV brief, drill stories out loud, run the scored readiness gate, or do the pre-call checklist. Trigger on "interview prep", "prep for the interview", "prep for the screen", "/interview-prep", "run the gate", or Chukwan mentioning that an interview invite has arrived.
+description: Use when Chukwan wants to run or continue interview preparation for a Sales Engineer / Presales Consultant role, book and commit to an interview invite, generate the Gemini deep-research prompt, turn pasted research output into a one-page hiring-manager-POV brief plus the top 5 tailored stories, or do the pre-call checklist. Trigger on "interview prep", "prep for the interview", "prep for the screen", "/interview-prep", or Chukwan mentioning that an interview invite has arrived.
 ---
 
 # Interview Prep
 
 ## Core principle
 
-Readiness is proven, not felt. A fixed 3-hour budget across five stages replaces deferral, unread research, zero reps, and gut-feel confidence with one externally scored gate. The skill never hardcodes questions, the rubric, or stories — every stage reads its asset file at run time, because these files get edited independently of this skill.
+Readiness is proven, not felt. A fixed budget across three skill stages replaces deferral, unread research, and gut-feel confidence. Division of labour: **Gemini gathers, Claude synthesises, Kess speaks.** Gemini Deep Research does the broad sweep (business model, market, competitors); Claude turns the pasted output plus the vault (Master Story Bank, CV evidence) into exactly two readable artefacts — the brief and the top 5 stories. Kess reads only finished artefacts, then mocks out loud with a real-time voice AI on his own; the mock is deliberately outside this skill and unscored (2026-08-21 redesign — the booked interview itself is the external test).
+
+The skill never hardcodes stories or checklists — every stage reads its asset file at run time, because these files get edited independently of this skill.
 
 ## Assets (read at run time, never copy into this file)
 
 | File | Used by |
 |---|---|
 | `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Interview Prep SOP.md` | Reference for the full sequence, budgets, done-lines |
-| `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Master Story Bank.md` | `reps` |
-| `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Question Banks/Question Bank - Screen.md` | `gate` when tracker `stage: screen` |
-| `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Question Banks/Question Bank - Hiring Manager.md` | `gate` when tracker `stage: hiring-manager` |
-| `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Readiness Rubric.md` | `gate` |
+| `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Master Story Bank.md` | `brief` (story selection) |
+| `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/CV Writing Rules.md` | `brief` (tone: humanised, no em/en dashes) |
 | `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Pre-flight Checklist.md` | `preflight` |
+| `Companies/<Company — Role>/Role Brief.md` | `start` (seeds the research prompt), `brief` (JD keywords) |
 | `Template/Interview Prep Tracker Template.md` | Fallback shape if a tracker must be created by hand |
-| `research-baseline` skill | invoked by `start`, and by `brief` if blocks are missing |
 
-The tracker note is the only piece of durable state. It carries `type: interview-prep-tracker`, `company`, `role`, `stage`, `interview_date`, `status`, the Stage Checklist, and `## Gate Log`.
+The tracker note is the only piece of durable state. It carries `type: interview-prep-tracker`, `company`, `role`, `stage`, `interview_date`, `status`, and the Stage Checklist.
 
-**Output locations.** Every per-application file this skill writes (brief, reps deck, anything company-specific) goes in that application's interview folder: `Knowledge/Source/Job Hunt/Presales Journey/Companies/<Company — Role>/Interview/`. `Presales Journey/00_Master System/` holds standing assets only and is read-only to this skill. Never create files at the vault root.
+**Output locations.** Company folders live at `Knowledge/Source/Job Hunt/Presales Journey/Companies/<Company — Role>/`. Research prompt and pasted research output go in `<Company folder>/Research/`; brief and stories go in `<Company folder>/Interview/`. `00_Master System/` holds standing assets only and is read-only to this skill. Never create files at the vault root.
 
 ## Universal rules
 
 1. **Announce before acting.** At the start of every stage, before doing anything else, say the stage's budget and its one-line "done means" (pull both from the SOP or the table below — do not paraphrase them away).
-2. **Tick and stamp.** When a stage completes, check its box in the tracker's Stage Checklist and append a timestamp on that line (e.g. ` — done 2026-08-19 21:40`).
-3. **ADHD-friendly shape.** Lead with the action, not the explanation. In `reps` and `gate`, one question at a time — never dump a list and wait. No walls of text; short lines, plain asks.
-4. **No argument → resume.** Search the vault for notes with frontmatter `type: interview-prep-tracker` and `status: in-progress`, take the most recently modified one, read its Stage Checklist, announce which stage is next (first unticked box), and run that stage. If none exists, say so and ask whether to start one.
+2. **Tick and stamp.** When a stage completes, check its box in the tracker's Stage Checklist and append a timestamp on that line (e.g. ` — done 2026-08-21 21:40`).
+3. **ADHD-friendly shape.** Lead with the action, not the explanation. No walls of text; short lines, plain asks, one confirmation at a time.
+4. **No argument → resume.** Search the vault for notes with frontmatter `type: interview-prep-tracker` and `status: in-progress`, take the most recently modified one, read its Stage Checklist, announce which stage is next (first unticked box), and run that stage. If the next box is B2 Read & Mock, remind Kess that stage is his alone and offer `preflight` when he is done. If no tracker exists, say so and ask whether to start one.
 
 ## Stage table
 
 | Stage | Command | Budget | Done means |
 |---|---|---|---|
-| T0 Commit | `/interview-prep start <company>` | 15 min, invite night | Interview slot booked ≤48h out, partner informed, tracker note exists, `research-baseline` triggered. No reading tonight. |
-| B1 Brief | `/interview-prep brief` | 45 min | One-page HM-POV brief written and read by Kess. Block notes never opened by Kess. |
-| B2 Reps | `/interview-prep reps` | 60 min | Compulsory anchors + 5 competency stories said out loud at ≤60s each; selector drill run. |
-| B3 Gate | `/interview-prep gate` | 45 min | Scored mock passed (4 of 5 answers ≥3/4) and verdict logged in tracker. |
+| T0 Commit | `/interview-prep start <company>` | 15 min, invite night | Interview slot booked ≤48h out, partner informed, tracker note exists, research prompt written and fired into Gemini. No reading tonight. |
+| B1 Brief | `/interview-prep brief` | 45 min | Research output pasted back; brief + Top 5 Stories written in parallel and both read by Kess. |
+| B2 Read & Mock | — (Kess's own, no command) | ~60 min | Brief and stories read; at least one full mock said out loud with a real-time voice AI. |
 | Pre-flight | `/interview-prep preflight` | 15 min before interview | Checklist all green: room claimed, partner told, notes closed, link/mic tested, water. |
 
 ## `start <company>`
@@ -48,78 +47,56 @@ The tracker note is the only piece of durable state. It carries `type: interview
 1. Announce budget (15 min) and done-line.
 2. Search the vault for an existing `type: interview-prep-tracker` note for this company.
    - Found → confirm it with Kess, continue.
-   - Not found → tell Kess to run `Ctrl+Shift+I` (or `Ctrl+Alt+I` if that was rebound) to insert `Template/Interview Prep Tracker Template.md` and fill company/role/stage/interview date. If Kess cannot do that right now, create the tracker note directly using the same frontmatter and body shape as the template, asking Kess for company, role, stage, and interview datetime in chat.
+   - Not found → tell Kess to run `Ctrl+Shift+I` to insert `Template/Interview Prep Tracker Template.md` and fill company/role/stage/interview date. If Kess cannot do that right now, create the tracker note directly using the same frontmatter and body shape as the template, asking Kess for company, role, stage, and interview datetime in chat.
 3. Ask Kess to confirm, one at a time, as human steps — do not assume either:
    - "Booked the interview slot, ≤48h out — confirm?"
    - "Told your partner — confirm?"
-4. Invoke the `research-baseline` skill for this company (baseline tier is the default; let that skill decide tier).
-5. Say explicitly: **"No reading tonight."** Research runs in the background; brief is tomorrow's stage.
-6. Tick T0 in the tracker, timestamp it, stop. Do not chain into `brief`.
+4. Write `<Company folder>/Research/Research Prompt - <Company>.md`: one self-contained, paste-ready Gemini Deep Research prompt. Read `Role Brief.md` first and weave the role context in. The prompt must ask for, in this order:
+   - **How this business makes money**: who pays, for what, pricing model, revenue mix, and the two or three levers that actually drive revenue growth right now.
+   - **Market structure and position**: market size and shape, where this company sits, what a general manager of this business would worry about this year.
+   - **Competitors**: main rivals, how this company wins and loses deals.
+   - **Recent news and strategy**: last 12 months — funding, launches, leadership, direction.
+   - **Role context**: given the JD (paste key lines from Role Brief into the prompt), how this role connects to the revenue levers above; what the hiring manager likely needs this hire to fix.
+   - Instruct Gemini to answer under those exact headers so the output pastes back cleanly.
+5. Tell Kess: paste the prompt into Gemini Deep Research now (phone is fine), then close the laptop. When the report is ready — tonight or tomorrow — paste it into `<Company folder>/Research/Research Output - <Company>.md`.
+6. Say explicitly: **"No reading tonight."**
+7. Tick T0 in the tracker, timestamp it, stop. Do not chain into `brief`.
 
 ## `brief`
 
 1. Announce budget (45 min) and done-line.
-2. Resolve the job folder: `Knowledge/Source/Job Hunt/<company>/` using the tracker's `company` field. Confirm with Kess if more than one folder plausibly matches.
-3. Check for `<Job Folder>/Research - Index.md` and at least the company-scope block notes it references (plus any `$Categories` blocks it points to).
-   - **Missing or incomplete → invoke `research-baseline` for this company now, tell Kess why, and stop.** Do not write a brief from thin air.
-4. Read the index and every block it references — never summarise from memory, never let Kess read them. Kess reads only the finished brief.
-5. Write `<Job Folder>/Interview Brief - <Company>.md` in exactly this shape:
-   - **Voice**: written AS the hiring manager, addressed to Kess. Opens roughly "Here is what I expect a candidate to know about us, and why you specifically fit."
-   - **Part 1 — Five facts you must be able to say**: up to 5 bullets (company, product, market, competitors, recent news), each speakable in one breath.
-   - **Part 2 — My worries about you, and your counter**: 2–3 objections a HM would plausibly hold about Kess's profile, each with a one-line counter drawn from real evidence in the blocks (not invented).
-   - **Part 3 — Your why-company answer, pre-drafted in your voice**: ≤90 words, conversational, no em dashes or en dashes, humanised per `Knowledge/Source/Job Hunt/CV Writing Rules.md` tone.
-   - **Hard cap: ~400 words total, one page.** No em/en dashes anywhere in the prose.
-6. Tell Kess the brief is ready and where it is. Tick B1, timestamp it.
-
-## `reps`
-
-One item at a time. Never print the whole deck up front.
-
-1. Announce budget (60 min) and done-line.
-2. Read `Master Story Bank.md` fresh (do not rely on anything cached from a prior run).
-3. If `<Job Folder>/Interview Brief - <Company>.md` exists, pull its Part 3 text and the company-specific line to use for Deck A story A3 (why this company) and the `[FILL]` in A5. If the brief doesn't exist yet, tell Kess and proceed with the rest of the deck; A3 and the A5 fill-in wait for the brief.
-4. Write `<Job Folder>/Reps Deck - <Company>.md` before drilling starts: the complete speakable deck, self-contained so Kess never has to open another note. Copy the full text of every Deck A anchor (A1–A5) and every Deck B story from the Master Story Bank, with every `[FILL]` and `[Link: ...]` slot resolved for this company from the brief (A3 middle = brief Part 3; A5 includes the company-specific question; each story ends with its resolved company link, not the template). Keep the bolded anchor numbers bold. Include the supporting proof points and the fast story selector table. If the file already exists for this company, overwrite it fresh from the current bank and brief.
-5. Drill Deck A anchors first, one at a time, in order (A1–A5):
-   - State which anchor it is.
-   - Start a 60s timer, wait for Kess to say it out loud, stop the timer.
-   - No transcript needed here — just confirm delivered and move on, or repeat once if Kess asks.
-6. Then drill Deck B, one story at a time (Story 1–5):
-   - Same 60s-timer pattern.
-   - After each, check what Kess said against that story's **bolded anchor points** in the bank (e.g. "three workshops, six subnets, validated scope"). If a bolded number or artifact was dropped or changed, flag the drift by name — do not let it pass silently.
-7. Selector drill: pick a question at random from either question bank (screen or hiring-manager bank matching the tracker's stage, or both if Kess wants more reps), read it out, and require Kess to first name which story they'd use, then answer it out loud with the timer. Repeat for a handful of rounds — Kess decides when to stop, but do not end the stage until at least 3 selector rounds have run.
-8. Tick B2, timestamp it.
-
-## `gate`
-
-One question at a time. This is the proof of readiness, not a formality.
-
-1. Announce budget (45 min) and done-line: scored mock passed (4 of 5 ≥3/4) and verdict logged.
-2. Read `Readiness Rubric.md` fresh at run time — never reuse a cached copy of the axes or the pass rule.
-3. Determine the question bank from the tracker's `stage` field: `screen` → `Question Bank - Screen.md`, `hiring-manager` → `Question Bank - Hiring Manager.md`.
-4. Draw 5 questions:
-   - 2 from `#anchor/*` tagged lines (cover two different anchors, not the same one twice).
-   - 3 from the stage's question bank, **excluding every line tagged `#logistics`** (not scorable STAR answers), weighted toward keywords found in the JD note in the job folder or in the brief's Part 1/2 if no JD note exists.
-5. For each of the 5, in order:
-   - State the question only.
-   - Tell Kess: materials closed, timer starts now, speak it out loud.
-   - Start a timer. When Kess says done, stop it.
-   - Ask Kess to type what they actually said, in their own words, plus the time it took.
-   - Score the typed answer on the rubric's 4 axes (Structure, Timing, Specificity, Company link), 1 point each, using the rubric's own scoring language — show the score and a one-line why per axis, same shape as the rubric's worked example.
-6. Verdict: pass = 4 of 5 answers at ≥3/4 each. Otherwise fail.
-   - Fail → name only the weak answers (score <3) and tell Kess to redo just those, not the whole gate.
-7. Append to the tracker note under `## Gate Log` (never overwrite prior entries):
-   - Date, stage, per-question scores (question, 4 axis scores, total), verdict `READY` / `NOT YET`, and the typed answers verbatim.
-8. Tick B3 in the Stage Checklist only if the verdict is `READY`; timestamp it either way with the verdict noted.
+2. Resolve the company folder from the tracker's `company` field. Confirm with Kess if more than one folder plausibly matches.
+3. Check `<Company folder>/Research/Research Output - <Company>.md`.
+   - **Missing or empty → stop.** Tell Kess to paste the Gemini output there first (and where the prompt file is if it never ran). Do not write a brief from thin air.
+4. Read the research output, `Role Brief.md`, `Master Story Bank.md`, and `CV Writing Rules.md`. Kess reads none of these — only the two finished artefacts.
+5. Draft the why-company answer yourself first (≤90 words, conversational, no em or en dashes, humanised per CV Writing Rules). Both artefacts need it, so it is written once, up front.
+6. Dispatch **two subagents in parallel**, handing each the research output, the Role Brief context, and the why-company draft (if subagents are unavailable, write the brief first, then the stories):
+   - **Brief writer** → `<Company folder>/Interview/Interview Brief - <Company>.md`:
+     - **Voice**: written AS the hiring manager, addressed to Kess. Opens roughly "Here is what I expect a candidate to know about us, and why you specifically fit."
+     - **Part 1 — How they make money**: ~3 bullets (who pays, for what, what drives growth) plus one sentence stating the straight line from this role to their revenue growth.
+     - **Part 2 — Five facts you must be able to say**: up to 5 bullets (company, product, market, competitors, recent news), each speakable in one breath.
+     - **Part 3 — My worries about you, and your counter**: 2–3 objections a HM would plausibly hold about Kess's profile, each with a one-line counter drawn from real evidence (not invented).
+     - **Part 4 — Your why-company answer**: the pre-drafted text from step 5.
+     - **Hard cap: ~500 words, one page.** No em/en dashes anywhere in the prose.
+   - **Story picker** → `<Company folder>/Interview/Top 5 Stories - <Company>.md`:
+     - Pick the 5 best Deck B stories from the Master Story Bank for this role and company. Selection is weighted toward stories that can end in a revenue-shaped outcome for this company — Kenny rule: every story should let Kess draw a direct link between what he did and how a business makes money.
+     - Copy each story's full speakable text with every `[FILL]` and `[Link: ...]` slot resolved from the research output; keep the bolded anchor points bold; close each story with its one-line revenue tie to this company.
+     - Top of file: the compulsory anchors (A1 intro from the bank, why-company from step 5) so the file is fully self-contained — Kess never opens another note.
+     - Bottom of file: a small selector table (question theme → which story), for use during the voice-AI mock.
+     - If the file already exists for this company, overwrite it fresh.
+7. Tell Kess both files are ready and where they are. Done means he has read both.
+8. Hand off B2 explicitly: "Next is yours — read both, then mock out loud with your voice AI. Nothing to run here until preflight." Tick B1, timestamp it. B2 is Kess's box to tick (or tell Claude to tick).
 
 ## `preflight`
 
 One item at a time, not a dump.
 
 1. Announce budget (15 min, right before the interview) and done-line.
-2. Read `Pre-flight Checklist.md` fresh.
-3. Walk each checkbox item in order: state it, wait for Kess to confirm done, mark it. Do not move to the next item until the current one is confirmed.
-4. When all items are confirmed, tell Kess they're clear, tick Pre-flight in the tracker, timestamp it.
+2. If B2 Read & Mock is unticked, ask once: "Did you read the brief and stories and run at least one voice mock?" Yes → tick B2 with timestamp. No → say the risk in one line and let Kess decide whether to proceed; do not block.
+3. Read `Pre-flight Checklist.md` fresh.
+4. Walk each checkbox item in order: state it, wait for Kess to confirm done, mark it. Do not move to the next item until the current one is confirmed.
+5. When all items are confirmed, tell Kess they're clear, tick Pre-flight in the tracker, timestamp it.
 
 ## Self-catch
 
-If you catch yourself about to print a question bank, the rubric axes, or a story from memory instead of reading the file for this run, stop and read the file. If you catch yourself writing more than a short paragraph before Kess has to act or answer, stop and cut it down to the next single action.
+If you catch yourself writing a brief without a pasted research output, summarising research from memory, or printing a story from memory instead of reading the Master Story Bank for this run, stop and read the file. If you catch yourself scoring, drilling, or mocking Kess in chat — that was removed on purpose; the mock belongs to Kess and his voice AI. If you catch yourself writing more than a short paragraph before Kess has to act or answer, stop and cut it down to the next single action.
