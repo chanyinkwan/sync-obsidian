@@ -26,9 +26,20 @@ function Get-Frontmatter {
     param([string]$Text)
     $map = @{}
     if ($Text -notmatch '(?s)^---\r?\n(.*?)\r?\n---') { return $null }
+    $currentKey = $null
     foreach ($line in ($Matches[1] -split "`r?`n")) {
         if ($line -match '^([A-Za-z_][A-Za-z0-9_]*):\s*(.*)$') {
-            $map[$Matches[1]] = $Matches[2].Trim()
+            $currentKey = $Matches[1]
+            $map[$currentKey] = $Matches[2].Trim()
+        }
+        elseif ($null -ne $currentKey -and $line -match '^\s+-\s*(.+)$') {
+            $item = $Matches[1].Trim()
+            if ([string]::IsNullOrWhiteSpace($map[$currentKey])) {
+                $map[$currentKey] = $item
+            }
+            else {
+                $map[$currentKey] = "$($map[$currentKey]); $item"
+            }
         }
     }
     return $map
