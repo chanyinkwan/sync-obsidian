@@ -16,4 +16,3 @@ No item in this review has been removed. The candidates below need explicit user
 | `Presales Journey/01_Pipeline/Source Notes/On List Jobs (legacy).md` | Legacy dashboard source retained only as reconstruction evidence. | `Presales Journey/01_Pipeline/Application Pipeline.md` and the company-role records. | Yes — its original tracked source is recoverable from Git history. |
 
 Do not remove either Source Note until the user confirms that its historical reconstruction value is no longer needed.
-
