@@ -1,0 +1,52 @@
+filters:
+  and:
+    - file.hasTag("product")
+    - type == "product"
+formulas:
+  daysSinceReviewed: if((lifecycle_reviewed.isEmpty() == false), ((number(today()) - number(date(lifecycle_reviewed))) / 86400000).floor(), null)
+  isStale: (lifecycle_reviewed.isEmpty() == false) && date(lifecycle_reviewed) < (today() - "45 days")
+  ukState: if(lifecycle_uk.isEmpty(), "同 EU", lifecycle_uk)
+views:
+  - type: table
+    name: SKU 狀態
+    groupBy:
+      property: lifecycle
+      direction: ASC
+    order:
+      - model
+      - priority_tier
+      - formula.ukState
+      - watch
+      - lifecycle_reviewed
+      - formula.isStale
+    sort:
+      - property: priority_tier
+        direction: ASC
+      - property: model
+        direction: ASC
+  - type: table
+    name: 需要複核
+    filters:
+      and:
+        - formula.isStale
+    order:
+      - model
+      - lifecycle
+      - lifecycle_reviewed
+      - formula.daysSinceReviewed
+    sort:
+      - property: lifecycle_reviewed
+        direction: ASC
+  - type: table
+    name: 盯點總覽
+    filters:
+      and:
+        - priority_tier != "drain"
+    order:
+      - model
+      - lifecycle
+      - watch
+      - strategy
+    sort:
+      - property: model
+        direction: ASC
