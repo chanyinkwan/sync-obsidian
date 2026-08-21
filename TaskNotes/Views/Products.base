@@ -28,7 +28,8 @@ views:
     name: 需要複核
     filters:
       and:
-        - formula.isStale
+        - lifecycle_reviewed.isEmpty() == false
+        - date(lifecycle_reviewed) < (today() - "45 days")
     order:
       - model
       - lifecycle
