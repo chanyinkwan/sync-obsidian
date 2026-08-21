@@ -1,7 +1,7 @@
 # Amazon MBB SKU Note Layer — 設計規格
 
 Date: 2026-08-21
-Status: approved; implementation pending
+Status: implemented; structural verification passed; live Obsidian acceptance pending
 Owner: Kess Chan
 Parent scope: `[[Amazon GTM Management]]`
 Operational project: `[[Amazon GTM Operation]]`
