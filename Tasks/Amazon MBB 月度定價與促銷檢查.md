@@ -23,6 +23,7 @@ eisenhower: q2
 
 > 本清單只供每次發生事項閱讀；請勿編輯 ☐ 標記，只完成 TaskNotes 發生事項。
 
+- ☐ 先看每個 SKU 的 `lifecycle`（見 [[SKU Lifecycle Profiles]]），跳過該輪廓「不做」欄列出的項目；逐 SKU 狀態見 `Products/`。
 - ☐ 實際月度價格會日期確定後，將本次發生事項移至該日期的前一個工作日。
 - ☐ 使用 [[Amazon MBB Monthly Operations Log Template]] 建立或開啟當月的 `YYYY-MM Amazon MBB Operations Log`。
 - ☐ 月份轉換時，更新 [[Amazon GTM Operation#當月營運紀錄]] 內的當月紀錄連結。

@@ -2,10 +2,11 @@ filters:
   and:
     - file.hasTag("product")
     - type == "product"
+    - file.inFolder("Products")
 formulas:
   daysSinceReviewed: if((lifecycle_reviewed.isEmpty() == false), ((number(today()) - number(date(lifecycle_reviewed))) / 86400000).floor(), null)
   isStale: (lifecycle_reviewed.isEmpty() == false) && date(lifecycle_reviewed) < (today() - "45 days")
-  ukState: if(lifecycle_uk.isEmpty(), "同 EU", lifecycle_uk)
+  ukState: if(lifecycle_uk.isEmpty(), "未另記", lifecycle_uk)
 views:
   - type: table
     name: SKU 狀態

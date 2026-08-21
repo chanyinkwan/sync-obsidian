@@ -23,6 +23,7 @@ eisenhower: q2
 
 > 本清單只供每次發生事項閱讀；請勿編輯 ☐ 標記，只完成 TaskNotes 發生事項。
 
+- ☐ 先看每個 SKU 的 `lifecycle`（見 [[SKU Lifecycle Profiles]]），跳過該輪廓「不做」欄列出的項目；逐 SKU 狀態見 `Products/`。
 - ☐ 依 [[Amazon MBB Source Index#S02 — AMZ泛欧 路由&MBB上市进展.xlsx]]、[[Amazon MBB Source Index#S03 — AMZ Delivery Plan／Delivery Tracker]] 及 [[Amazon MBB Source Index#S04 — MBB SI volume&Rev Tracker.xlsx]]，確認目前里程碑及已確認 ETA。
 - ☐ 計算交付緩衝：所需可售日期相對已確認 ETA 的差距。
 - ☐ 依 S03 與 S04 檢查實際 SI 相對計劃的差異。

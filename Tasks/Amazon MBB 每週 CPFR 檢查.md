@@ -23,6 +23,7 @@ eisenhower: q2
 
 > 本清單只供每次發生事項閱讀；請勿編輯 ☐ 標記，只完成 TaskNotes 發生事項。
 
+- ☐ 先看每個 SKU 的 `lifecycle`（見 [[SKU Lifecycle Profiles]]），跳過該輪廓「不做」欄列出的項目；逐 SKU 狀態見 `Products/`。
 - ☐ 依 [[Amazon MBB Source Index#S01 — FineBI]] 與 [[Amazon MBB Source Index#S02 — AMZ泛欧 路由&MBB上市进展.xlsx]]，按 SKU × EU Aggregate 及 SKU × UK 檢查 Actual SO、滾動四週差異、預測新鮮度、3+3 與六個月刷新。
 - ☐ 依 [[Amazon MBB Source Index#S02 — AMZ泛欧 路由&MBB上市进展.xlsx]]、[[Amazon MBB Source Index#S03 — AMZ Delivery Plan／Delivery Tracker]] 及 [[Amazon MBB Source Index#S05 — Inventory online table]]，檢查 EU 與 UK DOS、已確認入庫、低 DOS 及高 DOS。
 - ☐ 依 [[Amazon MBB Source Index#S02 — AMZ泛欧 路由&MBB上市进展.xlsx]] 及 [[Amazon MBB Source Index#S03 — AMZ Delivery Plan／Delivery Tracker]]，檢查 PO 預計日期及數量偏差。

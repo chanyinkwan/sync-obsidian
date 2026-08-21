@@ -7,6 +7,7 @@ dateCreated: 2026-08-10T10:23:35.223+01:00
 dateModified: 2026-08-10T10:23:35.223+01:00
 tags:
   - task
+completedDate: 2026-08-21
 eisenhower: q3
 tasknotes_manual_order: tntmzzzzzzzu
 ---

@@ -23,6 +23,7 @@ eisenhower: q2
 
 > 本清單只供每次發生事項閱讀；請勿編輯 ☐ 標記，只完成 TaskNotes 發生事項。
 
+- ☐ 先看每個 SKU 的 `lifecycle`（見 [[SKU Lifecycle Profiles]]），跳過該輪廓「不做」欄列出的項目；逐 SKU 狀態見 `Products/`。
 - ☐ 檢視 [[Amazon GTM Operation]] 下到期、逾期及等待中的未完成 TaskNote。
 - ☐ 紅燈業務風險在同一工作日採取行動。
 - ☐ 黃燈風險在下一次排定檢查前採取行動。

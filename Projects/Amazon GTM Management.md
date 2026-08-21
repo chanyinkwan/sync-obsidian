@@ -38,6 +38,15 @@ Handover stage Tracking task: [[Amazon Handover]].
 
 ### Materials
 [[Scope of Amazon GTM - MBB Product]]
+組織圖:[[Amazon GTM Org Map.canvas]]
+[[IOT Product Launch SOP Template]]
+
+
+## SKU 狀態
+
+每個 SKU 的生命週期、盯點與策略意圖見 `Products/`。生命週期決定哪些週期檢查適用，定義見 [[SKU Lifecycle Profiles]]。
+
+![[Products.base]]
 
 ## Tasks in this project (auto)
 ```dataview
