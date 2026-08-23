@@ -93,7 +93,12 @@ Ask three. Never zero. Take one from the brief.
 
 One master story each. STAR + Link, spoken in 60 seconds, numbers in bold.
 
+**Evidence status convention:** `ELIGIBLE` stories may be selected, copied or drilled. `REVIEW_REQUIRED` stories are blocked until the named evidence conflict is resolved and the status is explicitly changed.
+
 ### Story 1 - Consultative discovery and scoping
+
+**Evidence status:** `REVIEW_REQUIRED`  
+**Blocker:** Workshop ownership conflicts with the canonical Master DB note that the user did not present or facilitate.
 
 **Question shapes:** discovery, requirements, ambiguity, understanding customer needs, scoping a solution, tailoring.
 
@@ -109,6 +114,9 @@ One master story each. STAR + Link, spoken in 60 seconds, numbers in bold.
 
 ### Story 2 - Technical translation
 
+**Evidence status:** `REVIEW_REQUIRED`  
+**Blocker:** The 30-plus audience and live-objection handling remain `needs_grounding`.
+
 **Question shapes:** explaining something complex, non-technical audience, presentation, adoption, making a technical case land.
 
 > At Bank of China, teams were losing about **eight hours a week** assembling reports by hand across **20 systems**. I replaced that with a single Grafana observability view. Building it was the easy part. It was only worth anything if the system owners and the department heads actually used it.
@@ -122,6 +130,8 @@ One master story each. STAR + Link, spoken in 60 seconds, numbers in bold.
 **Anchors: 20 systems, 30-plus stakeholders, 400 hours returned.**
 
 ### Story 3 - Objection handling and stakeholder buy-in
+
+**Evidence status:** `ELIGIBLE`
 
 **Question shapes:** disagreement, pushback, resistance, influence without authority, changing someone's mind, challenging a decision.
 
@@ -139,6 +149,8 @@ One master story each. STAR + Link, spoken in 60 seconds, numbers in bold.
 
 ### Story 4 - Commercial judgment and value selling
 
+**Evidence status:** `ELIGIBLE`
+
 **Question shapes:** commercial value, qualification, ROI, expansion, upsell, customer focus, turning a need into revenue.
 
 > At Apple, a Hong Kong broadcaster walked in with no formal enterprise opportunity attached to them. I suspected the request in front of me was a symptom of something bigger, so I started asking how they chose, bought and managed their devices.
@@ -152,6 +164,8 @@ One master story each. STAR + Link, spoken in 60 seconds, numbers in bold.
 **Anchors: casual visit, £50,000 deal, £350,000 pipeline.**
 
 ### Story 5 - Problem-solving under pressure and fast learning
+
+**Evidence status:** `ELIGIBLE`
 
 **Question shapes:** challenge, deadline, pressure, ambiguity, regulation, learning something new fast, project coordination.
 
@@ -171,8 +185,8 @@ One master story each. STAR + Link, spoken in 60 seconds, numbers in bold.
 
 | If the question mentions... | Use | Competency |
 |---|---|---|
-| Discovery, requirements, ambiguity, customer needs, scoping, tailoring a solution | Story 1 | Consultative discovery and scoping |
-| Explaining, presenting, non-technical audience, demo, adoption, complexity | Story 2 | Technical translation |
+| Discovery, requirements, ambiguity, customer needs, scoping, tailoring a solution | No eligible story yet; Story 1 is review-required | Consultative discovery and scoping |
+| Explaining, presenting, non-technical audience, demo, adoption, complexity | No eligible story yet; Story 2 is review-required | Technical translation |
 | Objection, pushback, disagreement, influence, no authority, changing a decision | Story 3 | Objection handling and stakeholder buy-in |
 | Commercial value, qualification, ROI, expansion, upsell, sales, customer focus | Story 4 | Commercial judgment and value selling |
 | Challenge, pressure, deadline, regulation, learning fast, coordination, failure risk | Story 5 | Problem-solving under pressure and fast learning |

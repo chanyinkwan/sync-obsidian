@@ -76,12 +76,11 @@ views:
       property: eisenhower
       direction: ASC
     order:
-      - priority
-      - due
-      - scheduled
       - contexts
-      - projects
       - file.name
+      - due
+      - projects
+      - status
     sort:
       - property: tasknotes_manual_order
         direction: DESC

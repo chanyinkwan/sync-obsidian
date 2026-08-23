@@ -34,11 +34,12 @@
       {"bullet": "Cut 15 man-days of vendor-evaluation churn by turning fragmented infrastructure needs from 50+ teams into a MoSCoW-prioritised roadmap, then proving the shortlist through a Red Hat proof of concept.", "status": "needs_grounding", "criterion": "3 (foundational infrastructure knowledge, vendor/infra evaluation) - would be the strongest available answer to this criterion if the 15 man-days figure were grounded"},
       {"bullet": "Won adoption of the observability framework in a single session by demoing it to 30+ system leads, the UX department head and the networking lead, answering most technical objections live.", "status": "needs_grounding", "criterion": "4 (cross-functional stakeholder buy-in, live technical objection handling) - the original 80 percent live-resolution figure was never reconstructed"},
       {"bullet": "Launched BOC Pay across 4 regions with no handover gaps and returned 15 man-days to the project budget by designing a follow-the-sun UAT schedule off a timezone gap analysis.", "status": "needs_grounding", "criterion": "4 (cross-functional, multi-region coordination) - 15 man-days arithmetic not verified"},
-      {"bullet": "Held NPS at 92 and full operational uptime through the EasyPay POS migration by preparing 10+ Floor Champions and converting technical requirements into floor-level playbooks.", "status": "needs_grounding", "criterion": "4 (stakeholder communication under a technical migration) - NPS 92 not grounded"}
+      {"bullet": "Held NPS at 92 and full operational uptime through the EasyPay POS migration by preparing 10+ Floor Champions and converting technical requirements into floor-level playbooks.", "status": "needs_grounding", "criterion": "4 (stakeholder communication under a technical migration) - NPS 92 not grounded"},
+      {"bullet": "AWS Certified Solutions Architect, Associate (SAA-C03) exam booking", "status": "unsupported: absent from the canonical DB; blocked from renderer-supplied fields", "criterion": "3 (foundational cloud infrastructure knowledge) - do not render until the canonical DB supports it"}
     ],
-    "gap_bridge": "No data centre or interconnection role on the CV. Bridged once in the summary with the presales motion itself (discovery to documented scope, feasibility validation before commitment, translating technical trade-offs into a business decision) plus the AWS Certified Solutions Architect, Associate (SAA-C03) exam, scheduled for 23 August 2026, as the honest, in-progress signal of infrastructure study. Never presented as complete or as data centre hands-on experience."
+    "gap_bridge": "No data centre or interconnection role on the CV. Bridged once in the summary with the presales motion itself: discovery to documented scope, feasibility validation before commitment, and translating technical trade-offs into a business decision."
   },
-  "profile_summary": "Presales specialist on a Tier-1 UK mobile network operator account at Huawei, Equinix's own telecom and media buying context. Runs deal discovery through feasibility checks to the commercial case, most recently cutting USD 2 per unit in GTM and pricing reviews. Previously at Bank of China, delivered 100 percent of a regulator's mandates in 14 days and deployed a Grafana layer giving 20 systems one view. No data centre role on the CV: the honest match is this presales motion. Studying for the AWS Certified Solutions Architect, Associate (SAA-C03), exam scheduled 23 August 2026. MSc Business Analytics.",
+  "profile_summary": "Presales specialist on a Tier-1 UK mobile network operator account at Huawei, Equinix's own telecom and media buying context. Runs deal discovery through feasibility checks to the commercial case, most recently cutting USD 2 per unit in GTM and pricing reviews. Previously at Bank of China, delivered 100 percent of a regulator's mandates in 14 days and deployed a Grafana layer giving 20 systems one view. No data centre role on the CV: the honest match is this presales motion. MSc Business Analytics.",
   "experience": [
     {
       "company": "Huawei Consumer Business Group",
@@ -90,7 +91,7 @@
       ]
     }
   ],
-  "activity_line": "CERTIFICATION: AWS Certified Solutions Architect, Associate (SAA-C03), exam scheduled for 23 August 2026, in progress.",
+  "activity_line": "",
   "language_line": "Languages: English (fluent, professional), Cantonese (native), Mandarin (native)",
   "skills_line": "Skills: Presales discovery and requirements intake · solution feasibility validation · value engineering and commercial case-building · cross-functional stakeholder coordination (GTM, vendors, evaluation teams) · objection handling · RFI/RFP response support · Python (pandas, data analysis), VBA, Grafana, JIRA, R",
   "interests_line": "Interests: Telecom and network infrastructure · systems design · data-driven decision making"

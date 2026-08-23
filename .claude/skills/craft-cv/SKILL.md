@@ -65,8 +65,7 @@ Append every kill to `Knowledge/Source/Job Hunt/Presales Journey/00_Master Syste
 Never hand-build the `.docx`.
 
 ```bash
-cd "Knowledge/Source/Job Hunt"
-python render_cv.py "<folder>/CV Context — <Company> <Role>.json" "<folder>/Kessog Chan CV — <Company> <Role>.docx"
+python "Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Tools/render_cv.py" "Knowledge/Source/Job Hunt/Presales Journey/Companies/<Company — Role>/CV/CV Context — <Company> <Role>.json" "Knowledge/Source/Job Hunt/Presales Journey/Companies/<Company — Role>/CV/Kessog Chan CV — <Company> <Role>.docx"
 ```
 
 Keys: `profile_summary`, `experience[{company, location, role, dates, bullets[]}]`, `activity_line`, `language_line`, `skills_line`, `interests_line`. Education is hard-coded in `Resume_Template.docx`.

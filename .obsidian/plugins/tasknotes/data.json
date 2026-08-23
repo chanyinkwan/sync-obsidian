@@ -1022,6 +1022,12 @@
       "requestedAt": 1787238857156,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/SCQA Prep 21-8-2026.md",
+      "requestedAt": 1787300126459,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {

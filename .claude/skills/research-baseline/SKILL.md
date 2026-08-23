@@ -11,13 +11,13 @@ A research block that cannot be trusted is worse than a missing one — QA floor
 
 ## Gates
 
-1. **Source of truth for the questions is `Knowledge\Source\Job Hunt\Research Baseline.md`.** The skill never restates the question set; it reads it at run time.
+1. **Source of truth for the questions is `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Research Baseline.md`.** The skill never restates the question set; it reads it at run time.
 
 <!-- OPUS: write gate 2 wording per build spec §3.2 item 2 — tier decision -->
 
 <!-- OPUS: write gate 3 wording per build spec §3.2 item 3 — reuse check for B, D, E -->
 
-4. **Output location contract.** Company-level blocks → `Knowledge\Source\Job Hunt\<Job Folder>\Research - Block <letter> <Name>.md`. Category-level blocks → `Knowledge\Source\Job Hunt\$Categories\<category>\Research - Block <letter> <Name>.md`. Every run creates/updates `<Job Folder>\Research - Index.md`. Markdown only, never PDF.
+4. **Output location contract.** Company research lives only in `Knowledge/Source/Job Hunt/Presales Journey/Companies/<Company — Role>/Research/`. Save blocks there as `Research - Block <letter> <Name>.md` and create or update `Research - Index.md` in the same folder. The opportunity index is `Knowledge/Source/Job Hunt/Presales Journey/01_Pipeline/Application Pipeline.md`; link every company research index back to its Pipeline row. Markdown only, never PDF.
 
 5. **Every research note carries the frontmatter contract below.** A note without it is invisible to future reuse checks — writing one is a gate failure.
 
@@ -33,7 +33,7 @@ A research block that cannot be trusted is worse than a missing one — QA floor
 
 | Step | Action | Output |
 |---|---|---|
-| 1 | Read JD note frontmatter; decide tier (gate 2); run block 0 triage if new | Tier + go/no-go |
+| 1 | Read `Knowledge/Source/Job Hunt/Presales Journey/Companies/<Company — Role>/Role Brief.md`; decide tier (gate 2); run block 0 triage if new | Tier + go/no-go |
 | 2 | Reuse check for B, D, E (gate 3) | DR shopping list (0-5 jobs) |
 | 3 | Quota gate (gate 7) | User go-ahead if > 3 |
 | 4 | ✅-tier blocks: parallel Claude-native subagents (WebSearch), one per block, prompts from `BLOCKS.md` | Draft block notes |
@@ -56,9 +56,9 @@ A research block that cannot be trusted is worse than a missing one — QA floor
 ---
 type: research-block
 block: A|B|C|D|E|F|G
-scope: company|category
-company: Geotab            # or category: fleet-telematics for $Categories notes
-role: Solutions Engineer   # company-scope only
+scope: company
+company: Geotab
+role: Solutions Engineer
 tier: baseline|deep        # baseline = the must-answer tier, deep = Deep Research
 tool: claude-native|gemini-deep-research
 generated: 2026-08-17
