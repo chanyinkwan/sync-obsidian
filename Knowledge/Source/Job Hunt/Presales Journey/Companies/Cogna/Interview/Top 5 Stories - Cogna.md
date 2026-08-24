@@ -17,34 +17,49 @@ Self-contained. This file plus the brief is everything you read before the mock.
 
 ### A1. Tell me about yourself (60–90s)
 
-> I am a presales specialist with **six years** across B2B sales, product delivery and technical operations, in telecom, banking and retail.
->
-> Right now I am Portfolio Solution Presales at Huawei in London, covering a Tier-1 UK mobile network operator. I run the technical workshops with the customer's engineers, turn what comes out of them into scope the pursuit team can actually commit to, and test whether the solution holds up before anything reaches the customer.
->
-> Before that I was Technical Product Manager for e-banking at Bank of China in Hong Kong. The bit people usually ask about is a regulator mandate we had to meet in **14 days**. We hit it, and met **100 percent** of the requirements.
->
-> And I started at Apple in Hong Kong, first on the B2B side, where I brought in **350,000 pounds** of new pipeline across a **50-plus** account portfolio, then as an operations data analyst.
->
-> I also did an MSc in Business Analytics at Exeter, which is where the modelling and AI side comes from.
->
-> The thread through all of it is the same. Find the real business problem, translate it between the technical people and the commercial people, prove it can be done, then help them get it adopted. That is the front half of a deal, and that is the job I want to be doing full time.
+> I’m a presales consultant with six years of experience turning complex operational and technical problems into solutions that teams can deliver and users can adopt.
+> Currently, I work in solutions presales at Huawei in London, supporting a tier-one UK mobile network operator. I lead discovery and product selection with customer engineers, uncover the technical constraints behind their requirements, and turn those findings into a solution scope that our pursuit team can confidently commit to and validate.
+> 
+> Before Huawei, I was a Technical Product Manager for e-banking at Bank of China. That role gave me end-to-end delivery experience. For one regulatory mandate, I translated the requirements across compliance, operations and engineering, delivered the feature within 14 days, met all mandatory requirements, and achieved 85% user adoption.
+> 
+> I started at Apple, where working across B2B sales and operational analytics gave me a strong commercial and data foundation. I later completed a Master’s in Business Analytics at the University of Exeter.
+> 
+> The consistent thread is that I work between operators, engineers and business stakeholders, translating complex rules and data into practical solutions. I’m now looking to own more of that journey—from discovery through delivery to measurable real-world value—which is why Cogna feels like a natural next step.
 
-If certifications come up: currently preparing for AWS Solutions Architect Associate. Say only that; do not inflate.
 
 ### A3. Why Cogna (speak Part 3 of the brief, then this bridge)
 
-> I keep meeting the same problem from the presales side: I scope a solution, hand it off at the bid, and never see whether it actually worked. Cogna is the first company I have found that puts discovery and delivery in the same seat, and gets paid only when the customer sees value. I have spent six years translating between engineers and operators in banking, telecom and retail. Doing that on real operational problems in utilities and energy, at a company this stage, is exactly the job I want.
+>What genuinely interests me about Cogna is that its software has an impact beyond the software system itself.
 >
-> And selfishly, it is the kind of customer conversation I want more of. The discovery sessions your Solutions team runs inside a utility's operations, mapping how work orders or permits actually move, is the room I am most useful in.
+>Cogna works with organisations operating physical infrastructure, where data may come from assets, field operations and legacy enterprise systems, while decisions are also shaped by regulation and expert knowledge. Turning all of that into software that helps people make faster, more reliable decisions is a problem I find genuinely meaningful.
+>
+>That connects closely with my own experience. At Huawei, I work between software, engineers and a physical telecom network. At Bank of China, I translated a complex regulatory mandate into a working feature under a 14-day deadline. In both cases, my role was to turn technical rules and operational constraints into something people could actually use.
+>
+>That is why Cogna feels particularly relevant to me: it applies exactly that kind of translation to difficult, high-impact operational problems, but at a much broader scale.
+### Coding and Data Example
+
+In my current presales role at Huawei, I own the evaluation and demo-unit programme for a Tier-one UK mobile network operator account.
+
+At a time, we have around 60 to 80 live sample units moving against product-launch deadlines and customer decision points. The process relied on manually testing every active sample each day and manually assembling sign-off documents. At that scale, it created a risk that evaluation units could reach the customer team late and affect the pursuit timeline.
+
+I wrote a VBA automation and scheduled task that checked the live sample records, generated deadline reminders, and produced sign-off documents from a standard template.
+
+It removed the need for the daily manual check and saved around an hour each week on document assembly. More importantly, it helped keep the evaluation programme moving so that product reached the customer’s evaluation teams before key decision points.
+
+I wouldn’t position this as production software engineering. It is a practical example of using code to remove risk and make a customer-facing presales process more scalable.
 
 ### A5. Questions for them (ask three)
 
-1. What separates the Solutions Analysts who do well here from the ones still struggling after six months?
-2. Where does the Analyst come into an engagement — am I running discovery myself, or picking it up after a Strategist or Director has framed it?
-3. Outcome-based pricing means you only invoice once the app proves value. Who agrees the value metric with the customer, and how does that shape what the Solutions team will and will not take on?
-4. When a deployment stalls, is it usually the technology, the data, or the customer's ways of working?
+1. Why is the team hiring for this role now?
+2. Is it mainly driven by customer growth or an expansion of the Solutions team?
+3. Which qualities is the hiring team prioritising most?
+4. Thinking about people who have done particularly well in this role, what did they demonstrate within their irst six months?
+5. Analyst’s time typically split across Discover, Define, Deliver and post-deployment adoption? Does the same analyst usually stay with the engagement throughout that journey?
+6. What type of customer problem or engagement would you expect the successful candidate to work on first?
 
-Salary reminder from the brief: raise the range early. If the Analyst band is a dead end, pivot to the Solutions Strategist opening in the same conversation.
+Expected Salary:
+
+“Based on the scope of the role and the London market, I’d be looking for a base salary in the region of £60,000 to £70,000. That said, I’m flexible depending on the overall package, equity and level. Could you share the budgeted range for the role?”
 
 ---
 
@@ -56,7 +71,7 @@ Salary reminder from the brief: raise the range early. If the Analyst band is a 
 
 > At Huawei I cover presales for a Tier-1 UK mobile operator, and the pursuit team needed a solid technical scope before we committed anything to the customer. My job was to make sure that scope was real rather than assumed.
 >
-> I ran **three** technical workshops and one structured requirements session with their engineering stakeholders. I mapped their objectives and their current environment first, then separated the genuine must-haves from the preferences. After that I tested the solution against European regulatory constraints across **six** of the account's subnets, and I wrote up the scope, the risks, the owners and the next steps for our **five-person** pursuit team.
+> I worked through the full requirements cycle, **three** technical workshops and a structured analysis session with their engineering stakeholders. I mapped their objectives and their current environment first, then separated the genuine must-haves from the preferences. After that I tested the solution against European regulatory constraints across **six** of the account's subnets, and I wrote up the scope, the risks, the owners and the next steps for our **five-person** pursuit team.
 >
 > The bid went out built on requirements the customer had confirmed themselves, and we stopped carrying the risk of promising something nobody had validated.
 >
@@ -70,13 +85,13 @@ Salary reminder from the brief: raise the range early. If the Analyst band is a 
 
 > At Bank of China, teams were losing about **eight hours a week** assembling reports by hand across **20 systems**. I replaced that with a single Grafana observability view. Building it was the easy part. It was only worth anything if the system owners and the department heads actually used it.
 >
-> So in the demo I opened with the outcome they wanted, one live view instead of manual reporting, and only then showed how the data underneath connected. I pitched the depth differently for the **30-plus** system leads than for the two department heads. And I took their technical objections live in the room rather than promising to come back with answers.
+> So when I took it to them, I opened with the outcome they wanted, one live view instead of manual reporting, and only then showed how the data underneath connected. I pitched the depth differently for the system leads than for the department heads.
 >
-> They adopted it in that session. It gave back roughly **400 hours a year**.
+> They adopted it, and it gave back roughly **400 hours a year**.
 >
 > That is the Cogna training-and-adoption problem exactly: your revenue only lands when a gas network's planners actually use the app and the saved hours show up, so I sell the workflow first and the architecture only as far as it makes the workflow believable.
 
-**Anchors: 20 systems, 30-plus stakeholders, 400 hours returned.**
+**Anchors: 20 systems, outcome-first demo, 400 hours returned.**
 
 ### Story 3 — Objection handling and stakeholder buy-in
 

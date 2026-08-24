@@ -12,7 +12,7 @@ tags:
 > 用途:收到 interview invite 開始,到走進面試前 15 分鐘為止,一套固定 ~2h15m 的流程。分工原則:**Gemini 負責搜集,Claude 負責合成,Kess 負責開口講**。
 > 觸發:`Ctrl+Shift+I`(建立 tracker note)、`/interview-prep`、「幫我 prep 這個 interview」。
 > 安裝:`.claude/skills/interview-prep/SKILL.md`,`/interview-prep` 可見。這是**一個 skill 對應一整套流程**,不是每個 stage 一個 skill。
-> 建立:2026-08-19(SureCloud post-mortem)。**v2 重寫:2026-08-21**,依 Kess 的 feedback note(`Tasks/feedback on interview prep skills.md`):research 改行 Gemini prompt-note 流、brief + Top 5 Stories 平行產出、reps 同 gate 移除、改用 voice AI 自己 mock。
+> 建立:2026-08-19(SureCloud post-mortem)。**v2 重寫:2026-08-21**,依 Kess 的 feedback note(`Tasks/feedback on interview prep skills.md`):research 改行 Gemini prompt-note 流、brief + Top 5 Stories 平行產出、reps 同 gate 移除、改用 voice AI 自己 mock。**v2.1:2026-08-23**,brief 改成五問結構 + Bridge Drill(Cogna cycle 驗證):brief 只答頭四問,第五問(我嘅經驗點接上)嘅橋**永遠由 Kess 自己搭**,喺 GPT Voice 用生成嘅 drill prompt 大聲搭。
 
 ## 這系統在防什麼(SureCloud post-mortem 的 failure modes,v2 版對應)
 
@@ -31,10 +31,14 @@ tags:
 | Invite 到手 | `Ctrl+Shift+I` | Templater hotkey → `Template/Interview Prep Tracker Template.md` | Tracker note(`type: interview-prep-tracker`),4 格 stage checklist |
 | T0 Commit | `/interview-prep start <company>` | `.claude/skills/interview-prep/` | Slot booked ≤48h、伴侶已告知、`Research/Research Prompt - <Company>.md`(一份 paste-ready Gemini Deep Research prompt,內建 Kenny 問題:邊個俾錢、俾乜嘢錢、乜嘢真正推動 revenue growth、呢個 role 同 revenue 條線)。**當晚不讀任何東西。** |
 | (Kess 手動) | 貼 prompt 入 Gemini,報告好咗貼返入 `Research/Research Output - <Company>.md` | Gemini Deep Research | Raw research(machine layer,Kess 不讀) |
-| B1 Brief | `/interview-prep brief` | 兩個 subagent 平行 | ① `Interview/Interview Brief - <Company>.md`:四段式、HM 第一人稱、~500 字、無破折號,**Part 1 = How they make money + 呢個 role 到佢哋 revenue 條直線**;② `Interview/Top 5 Stories - <Company>.md`:由 Master Story Bank 揀 5 個 story,揀法偏向講得出 revenue outcome 嘅,每個 story 收尾一句 revenue tie,anchors 放頂,self-contained |
-| B2 Read & Mock | 冇 command,Kess 自己做 | Real-time voice AI(ChatGPT voice / Gemini Live) | 兩份 artefact 讀完 + 至少一次完整 mock 大聲講完;格仔 Kess 自己剔 |
+| B1 Brief | `/interview-prep brief` | 兩個 subagent 平行 + main agent 收尾 | ① `Interview/Interview Brief - <Company>.md`:**五問結構**(Q1 賣乜、Q2 賣俾邊個、Q3 買家痛點、Q4 呢個 role 喺賣嘢過程解決乜 + role-to-revenue 條直線、Q5 痛點→候選經驗表,**只有事實提示,唔寫橋**),附錄 = 疑慮/counter + why-company;② `Interview/Top 5 Stories - <Company>.md`:只揀 `ELIGIBLE` story,revenue-weighted,anchors 放頂,self-contained;③ `Interview/Bridge Drill Prompt - <Company>.md`:一份 paste-ready GPT Voice drill prompt,內嵌 answer key |
+| B2 Bridge Drill | 冇 command,Kess 自己做 | GPT Voice(貼 drill prompt) | Phase 1:Q1–4 憑記憶答,GPT 對 answer key 捉漏;Phase 2:一次一個痛點,Kess 自己搭橋,GPT 只挑戰同 reject 弱橋、標記接唔上嘅痛點,**唔會代寫**;格仔 Kess 自己剔 |
 | Pre-flight | `/interview-prep preflight` | 讀 `Pre-flight Checklist.md` | Checklist 全綠,才進面試 |
 | (上游,CV 已投遞後不會再跑) | — | `/craft-cv` | 這個 application 的 CV,truth-gated |
+
+## 五問框架 + Bridge 原則(2026-08-23 加入)
+
+成場面試嘅議程係五條問題:1) 公司賣乜、2) 賣俾邊個、3) 買家想解決乜痛點、4) 賣嘢過程入面呢個 role 要解決乜、5) 我嘅經驗點樣接上。頭四條係公司側事實,AI 答完寫入 brief 冇問題;**第五條唔可以由 AI 寫**——AI 生成嘅連結只會帶嚟 recognition,面試房入面要嘅係 recall,而 recall 只會喺自己親口搭橋嗰陣形成。所以分工係:**Claude/Obsidian = research、合成、evidence 驗證、候選經驗檢索;GPT Voice = recall、articulation、挑戰、對話練習;Kess = 條橋嘅唯一作者**。Brief 嘅 Q5 只可以出「痛點 → story + 事實提示」,任何「呢個經驗證明我可以⋯⋯」嘅句子都要刪。
 
 ## Kenny 框架(2026-08-21 加入)
 

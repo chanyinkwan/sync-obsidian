@@ -97,14 +97,14 @@ One master story each. STAR + Link, spoken in 60 seconds, numbers in bold.
 
 ### Story 1 - Consultative discovery and scoping
 
-**Evidence status:** `REVIEW_REQUIRED`  
-**Blocker:** Workshop ownership conflicts with the canonical Master DB note that the user did not present or facilitate.
+**Evidence status:** `ELIGIBLE`
+**Grounding note:** Reworded 2026-08-23 to match the canonical Master DB: full requirements cycle, no claim of presenting or facilitating.
 
 **Question shapes:** discovery, requirements, ambiguity, understanding customer needs, scoping a solution, tailoring.
 
 > At Huawei I cover presales for a Tier-1 UK mobile operator, and the pursuit team needed a solid technical scope before we committed anything to the customer. My job was to make sure that scope was real rather than assumed.
 >
-> I ran **three** technical workshops and one structured requirements session with their engineering stakeholders. I mapped their objectives and their current environment first, then separated the genuine must-haves from the preferences. After that I tested the solution against European regulatory constraints across **six** of the account's subnets, and I wrote up the scope, the risks, the owners and the next steps for our **five-person** pursuit team.
+> I worked through the full requirements cycle, **three** technical workshops and a structured analysis session with their engineering stakeholders. I mapped their objectives and their current environment first, then separated the genuine must-haves from the preferences. After that I tested the solution against European regulatory constraints across **six** of the account's subnets, and I wrote up the scope, the risks, the owners and the next steps for our **five-person** pursuit team.
 >
 > The bid went out built on requirements the customer had confirmed themselves, and we stopped carrying the risk of promising something nobody had validated.
 >
@@ -114,20 +114,20 @@ One master story each. STAR + Link, spoken in 60 seconds, numbers in bold.
 
 ### Story 2 - Technical translation
 
-**Evidence status:** `REVIEW_REQUIRED`  
-**Blocker:** The 30-plus audience and live-objection handling remain `needs_grounding`.
+**Evidence status:** `ELIGIBLE`
+**Grounding note:** Reworded 2026-08-23: dropped the ungrounded 30-plus audience count, live objection handling, and same-session adoption.
 
 **Question shapes:** explaining something complex, non-technical audience, presentation, adoption, making a technical case land.
 
 > At Bank of China, teams were losing about **eight hours a week** assembling reports by hand across **20 systems**. I replaced that with a single Grafana observability view. Building it was the easy part. It was only worth anything if the system owners and the department heads actually used it.
 >
-> So in the demo I opened with the outcome they wanted, one live view instead of manual reporting, and only then showed how the data underneath connected. I pitched the depth differently for the **30-plus** system leads than for the two department heads. And I took their technical objections live in the room rather than promising to come back with answers.
+> So when I took it to them, I opened with the outcome they wanted, one live view instead of manual reporting, and only then showed how the data underneath connected. I pitched the depth differently for the system leads than for the department heads.
 >
-> They adopted it in that session. It gave back roughly **400 hours a year**.
+> They adopted it, and it gave back roughly **400 hours a year**.
 >
 > [Link: tie to {company}'s {relevant need}. Default: start with the buyer's success metric, demo the workflow that moves it, and show only enough architecture to make it believable.]
 
-**Anchors: 20 systems, 30-plus stakeholders, 400 hours returned.**
+**Anchors: 20 systems, outcome-first demo, 400 hours returned.**
 
 ### Story 3 - Objection handling and stakeholder buy-in
 

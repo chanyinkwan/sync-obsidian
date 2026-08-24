@@ -17,8 +17,8 @@ status: in-progress
 ## Stage Checklist
 
 - [ ] **T0 Commit** — `/interview-prep start <% company %>` — 15 min, invite night — Done: interview slot booked ≤48h out, partner informed, tracker note exists, research prompt written and fired into Gemini. No reading tonight.
-- [ ] **B1 Brief** — `/interview-prep brief` — 45 min — Done: research output pasted back; brief + Top 5 Stories written and both read.
-- [ ] **B2 Read & Mock** — no command, this one is yours — ~60 min — Done: brief and stories read; at least one full mock said out loud with a real-time voice AI.
+- [ ] **B1 Brief** — `/interview-prep brief` — 45 min — Done: research output pasted back; five-question brief + Top 5 Stories + Bridge Drill Prompt written, brief and stories read.
+- [ ] **B2 Bridge Drill** — no command, this one is yours — ~60 min — Done: drill prompt pasted into GPT Voice; Phase 1 recall and Phase 2 bridge rounds completed.
 - [ ] **Pre-flight** — `/interview-prep preflight` — 15 min before interview — Done: checklist all green — room claimed, partner told, notes closed, link/mic tested, water.
 
 ## Links

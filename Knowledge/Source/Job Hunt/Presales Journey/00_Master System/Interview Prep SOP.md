@@ -9,7 +9,7 @@ tags: [job-hunt, interview-prep]
 
 ## The Friday-night version
 
-Invite lands. You hit `Ctrl+Shift+I`, tracker note appears. You run `/interview-prep start`, book the slot, tell your partner, paste the generated research prompt into Gemini Deep Research (phone is fine), then close the laptop and sleep. When Gemini's report is ready you paste it into the Research Output note and run `/interview-prep brief` — Claude writes the one-page brief and your Top 5 Stories in parallel. You read both, then mock out loud with a real-time voice AI until the stories land. 15 minutes before the call, you run the checklist. That's the whole system.
+Invite lands. You hit `Ctrl+Shift+I`, tracker note appears. You run `/interview-prep start`, book the slot, tell your partner, paste the generated research prompt into Gemini Deep Research (phone is fine), then close the laptop and sleep. When Gemini's report is ready you paste it into the Research Output note and run `/interview-prep brief` — Claude writes the five-question brief, your Top 5 Stories, and a Bridge Drill Prompt. You read the brief and stories, paste the drill prompt into GPT Voice, and run the drill: it quizzes you on the company from memory, then serves their pains one at a time while you build each bridge to your own experience out loud. 15 minutes before the call, you run the checklist. That's the whole system.
 
 ## T0 Commit
 
@@ -21,13 +21,13 @@ Done means: interview slot booked ≤48h out, partner informed, tracker note exi
 
 Run: `/interview-prep brief` (after pasting Gemini's report into `Research/Research Output - <Company>.md`)
 Budget: 45 min
-Done means: one-page HM-POV brief (opens with how they make money and the straight line from this role to their revenue growth) plus `Top 5 Stories - <Company>.md` written in parallel, and both read by you. You never open the raw research.
+Done means: three artefacts written and the first two read by you. The brief is structured as the five questions — what they sell, who they sell to, what pains make those customers buy, what this role must solve in the selling process (ending on the straight line from role to revenue), and candidate experiences for question five as facts only, never pre-written bridges. Plus `Top 5 Stories - <Company>.md` and `Bridge Drill Prompt - <Company>.md`. You never open the raw research.
 
-## B2 Read & Mock
+## B2 Bridge Drill
 
 Run: nothing — this stage is yours, no command.
 Budget: ~60 min
-Done means: brief and stories read; at least one full mock said out loud with a real-time voice AI (feed it the brief and stories, let it play the hiring manager). Tick the box yourself or tell Claude.
+Done means: brief and stories read; drill prompt pasted into GPT Voice and the drill completed — Phase 1 answers questions 1 to 4 from memory, Phase 2 takes one company pain at a time while you name the experience and author the connection yourself. GPT challenges weak bridges and flags uncovered pains; it never builds a bridge for you. Tick the box yourself or tell Claude.
 
 ## Pre-flight
 

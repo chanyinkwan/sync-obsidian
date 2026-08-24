@@ -1,21 +1,16 @@
 ---
 status: todo
 priority: high
-scheduled: 2026-08-20
-projects:
-  - "[[Amazon GTM Management]]"
-dateCreated: 2026-08-20T16:14:17.060+01:00
-dateModified: 2026-08-20T16:14:17.060+01:00
+scheduled: 2026-08-24
+dateCreated: 2026-08-24T14:13:57.022+01:00
+dateModified: 2026-08-24T14:13:57.022+01:00
 tags:
   - task
 eisenhower: q1
 ---
 
 ## Ask as received
-
-Data needed:
-
-
+> verbatim, including who said it, where, and when
 
 ## Missing detail
 - [ ]

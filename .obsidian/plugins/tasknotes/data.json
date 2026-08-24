@@ -1028,6 +1028,24 @@
       "requestedAt": 1787300126459,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Finalise Meeting Minutes.md",
+      "requestedAt": 1787561393126,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Cogna Interview Prep.md",
+      "requestedAt": 1787562686447,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/SCQA Prep Amazon Focused.md",
+      "requestedAt": 1787577237094,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {
@@ -1788,5 +1806,5 @@
     }
   ],
   "lastSelectedTaskPath": "Tasks/SA 00 - Exam Prep.md",
-  "lastNotifiedReleaseVersion": "4.12.3"
+  "lastNotifiedReleaseVersion": "4.12.4"
 }

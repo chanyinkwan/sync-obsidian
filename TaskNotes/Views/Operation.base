@@ -49,7 +49,7 @@ views:
     name: Inbox
     filters:
       and:
-        - status != "done"
+        - projects.contains(link("Amazon GTM Management"))
         - status != "cancelled"
         - eisenhower.isEmpty()
         - recurrence.isEmpty()
