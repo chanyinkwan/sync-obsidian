@@ -20,7 +20,7 @@ tags:
 - [ ] Sales Write-in for the workstation; Fully Understand before you change or challenge
 - [ ] Write down what you want to achieve in the new amazon work station
 - [ ] Continue on the TSMP Excel Workbook
-- [ ] August News Report -> consider turning this into a skills with ChatGPT
+- [x] August News Report -> consider turning this into a skills with ChatGPT
 
 
 #### 🚀 Hub (進攻) — max 5
@@ -32,20 +32,38 @@ tags:
 
 ---
 ### What actually happened today
-
+A goal shared from ding Cheng, on behalf of the amazon task -> 6 million
+- [[26-8-2026 Amazon Goal-driven Alignment - Transcript]] — 對齊 Amazon 6M 目標與店長責任
+- [[8 月和記月報]] — 完成八月和記月報
+- 推進 SuperMiFi 上市溝通（Xuxinning）
 
 ### How would you translate what you have done today into industry terminology?
 Scoping 範疇 / Pricing 定價 / Deal Governance 交易治理?
-
+**Business Outcome Alignment**
+**Outcome-based Ownership**
 
 ### How is your time allocated today?
 
+**Timed lane totals**
+- work · **49m**
+
+**Allocation**
+- work / meeting · **24m** — [[26-8-2026 Amazon Goal-driven Alignment - Transcript]]
+- work / delivery · **25m** — [[8 月和記月報]]
+
+**Untimed**
+- ⚠ untimed — 推進 SuperMiFi 上市溝通（Xuxinning）
 
 ### What is the most challenging part of the day?
 
+will be reflection on ownself, what triggers the original action and thoughts
+### What is your win today
 
-### What is your win today and what will you do better next time?
+being able to recognise mistakes, and adjust it
+### what will you do better next time?
 
-
+Why cant I figure that I have no idea on this (I dont know what I dont know? but its also a problem of not being goal oriented)
+Is bare minimum wrong?
 ### What is your take away from today's work (What to sync?)
 
+Its time to move my career from project ownership to outcome ownership
