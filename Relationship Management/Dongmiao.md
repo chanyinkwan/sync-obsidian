@@ -28,7 +28,7 @@ tags:
 
 **⚠ 2026-08-06 更新:**董淼在 [[Amazon MBB Pricing Meeting Transcript â Kess-Led (8-5-2026)]](2026-08-05,九月價格對齊)仍然在崗且正常對接。依 [[Amazon MBB Pricing Meeting Transcript]] 17:17,[[Ziyi Zhang 84434577|Ziyi]] 說他**五月就提了離職、現在才確定,已經很晚了**,並說接任者會出現在 8/5 的會上——但該場 WeLink 分軌只有 `Dongmiao` 一個對方標籤,**接任者全程未發言。這條線的交接仍是缺口。**
 
-**接手風險:** Kess 接 router 品類的同一週,渠道側對口正在換人。這條線的知識不會自然移交,建議在董淼離開前主動要一次交接(至少:資源位申請的時間點與窗口、報價單/PO 的實際流程、聯合營銷的預算談法)。
+**接手風險:** Kess 接品類 GTM 的同一週(當時預定接 router,後改接 MBB——見 [[Amazon Operations Glossary]]),渠道側對口正在換人。這條線的知識不會自然移交,建議在董淼離開前主動要一次交接(至少:資源位申請的時間點與窗口、報價單/PO 的實際流程、聯合營銷的預算談法)。
 
 ## Last meeting / interaction
 ```dataview

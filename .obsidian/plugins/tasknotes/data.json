@@ -1046,6 +1046,24 @@
       "requestedAt": 1787577237094,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Installing Career-ops maybe.md",
+      "requestedAt": 1787737612399,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Cogna Interview Feedback and Reflection.md",
+      "requestedAt": 1787738625665,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/9月月報.md",
+      "requestedAt": 1787739922913,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {
@@ -1053,7 +1071,7 @@
     "timeRemaining": 300,
     "nextSessionType": "short-break"
   },
-  "lastPomodoroDate": "2026-07-21",
+  "lastPomodoroDate": "2026-08-25",
   "pomodoroHistory": [
     {
       "id": "1781772563658",
@@ -1803,8 +1821,23 @@
           "endTime": "2026-07-22T17:39:34.698+01:00"
         }
       ]
+    },
+    {
+      "id": "1787738317570",
+      "startTime": "2026-08-26T10:58:37.570+01:00",
+      "endTime": "2026-08-26T11:23:37.570+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "taskPath": "Tasks/8 月和記月報.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-08-26T10:58:37.570+01:00",
+          "endTime": "2026-08-26T11:23:37.570+01:00"
+        }
+      ]
     }
   ],
-  "lastSelectedTaskPath": "Tasks/SA 00 - Exam Prep.md",
+  "lastSelectedTaskPath": "Tasks/8 月和記月報.md",
   "lastNotifiedReleaseVersion": "4.12.4"
 }

@@ -70,8 +70,11 @@ views:
       and:
         - status != "done"
         - status != "cancelled"
-        - status != "hold"
-        - eisenhower.isEmpty() == false
+        - eisenhower != "false"
+        - '!projects.contains(link("Amazon GTM Operation"))'
+        - '!projects.contains(link("Amazon GTM Management"))'
+        - '!projects.contains(link("Product Baseline"))'
+        - '!projects.contains(link("SA Presales Transition"))'
     groupBy:
       property: eisenhower
       direction: ASC
@@ -163,3 +166,54 @@ views:
     sort:
       - property: due
         direction: ASC
+  - type: table
+    name: Amazon Board
+    filters:
+      and:
+        - projects == []
+  - type: tasknotesKanban
+    name: Amazon Project Board
+    filters:
+      and:
+        - projects.containsAny(link("Amazon GTM Management"))
+        - status != "done"
+        - status != "cancelled"
+    groupBy:
+      property: eisenhower
+      direction: ASC
+    order:
+      - contexts
+      - file.name
+      - due
+      - projects
+      - status
+    sort:
+      - property: tasknotes_manual_order
+        direction: DESC
+    options:
+      columnWidth: 280
+      hideEmptyColumns: false
+    columnOrder: '{"note.eisenhower":["q1","q2","q3"]}'
+  - type: tasknotesKanban
+    name: Amazon Operation Board
+    filters:
+      and:
+        - projects.containsAny(link("Amazon GTM Operation"))
+        - status != "done"
+        - status != "cancelled"
+    groupBy:
+      property: eisenhower
+      direction: ASC
+    order:
+      - contexts
+      - file.name
+      - due
+      - projects
+      - status
+    sort:
+      - property: tasknotes_manual_order
+        direction: DESC
+    options:
+      columnWidth: 280
+      hideEmptyColumns: false
+    columnOrder: '{"note.eisenhower":["q1","q3","q2"]}'

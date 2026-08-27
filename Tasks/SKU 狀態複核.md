@@ -4,13 +4,15 @@ priority: mid
 scheduled: 2026-09-01
 recurrence: DTSTART:20260901;FREQ=MONTHLY;BYMONTHDAY=1
 recurrence_anchor: scheduled
-projects: ["[[Amazon GTM Operation]]"]
+projects:
+  - "[[Amazon GTM Operation]]"
 contexts:
   - "@pricing"
 timeEstimate: 30
 tags:
   - task
-eisenhower: q2
+eisenhower: q1
+tasknotes_manual_order: tnxqoesxqoes
 ---
 
 ## 完成標準

@@ -9,8 +9,9 @@ dateCreated: 2026-08-20T15:12:10.490+01:00
 dateModified: 2026-08-20T17:25:39.440+01:00
 tags:
   - task
-eisenhower: q2
+eisenhower: q1
 recurrence: DTSTART:20260820;FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR
+tasknotes_manual_order: tnololololok
 ---
 
 ## Ask as received

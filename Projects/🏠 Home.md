@@ -40,7 +40,28 @@ if (diff < 0) {
 dv.paragraph(line);
 ```
 
+## 📥 Inbox — untriaged
+![[Operation.base#Inbox]]
+
+```dataview
+TABLE WITHOUT ID file.link AS "🎙 未整理逐字稿", projects AS "專案", date AS "日期"
+FROM "Operation Note/Meeting Transcript"
+WHERE status = "untidied"
+SORT date DESC
+```
+
+## 🎯 Task Board
+![[Operation.base#Board]]
+
+> 🔴 q1 urgent+important · 🟠 q2 important · 🟡 q3 urgent · ⚪ q4 neither
+> Drag a card between columns to reclassify it.
+
 ---
+
+### Amazon Operations
+![[Operation.base#Amazon Operation Board]]
+
+![[Operation.base#Amazon Project Board]]
 
 ## 🔥 On Going Projects
 ```dataview

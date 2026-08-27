@@ -11,6 +11,8 @@ dateModified: 2026-08-25T08:55:55.808+01:00
 tags:
   - task
 eisenhower: q1
+waiting_on:
+  - "[[Xu Xinning 00610058]]"
 ---
 
 ## Ask as received
@@ -31,11 +33,11 @@ eisenhower: q1
 
 ## Things to fix
 
-| Who                     | What they hold on THIS task                                                                                                                          | Done? | Date |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ---- |
-| [[Liu Zhou 00542940]]   | Confirming whether the original reason that push back this project has been solved. result = keep original spec, the battery problem has been solved | done  | 25/8 |
-| [[Xu Xinning 00610058]] | Asking if the communication with the clients are done and ready to push the product launch on amazon                                                 |       |      |
-|                         | if yes then [[IOT Product Launch SOP Template]]?                                                                                                     |       |      |
+| Who                     | What they hold on THIS task                                                                                                                            | Done? | Date |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- | ---- |
+| [[Liu Zhou 00542940]]   | Confirming whether the original reason that push back this project has been solved. result = keep original spec, the battery problem has been solved   | done  | 25/8 |
+| [[Xu Xinning 00610058]] | Asking if the communication with the clients are done and ready to push the product launch on amazon; She said she will be communicating this two days | done  | 26/8 |
+|                         | if yes then [[IOT Product Launch SOP Template]]?                                                                                                       |       |      |
 
 
 ## Next move

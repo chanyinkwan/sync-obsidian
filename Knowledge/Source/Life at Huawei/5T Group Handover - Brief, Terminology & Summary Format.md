@@ -78,7 +78,7 @@ tags:
 - **PSI** = Purchase-Sell-Inventory;**SO / SI** = Sell-Out / Sell-In;**ASIN** = Amazon 商品編號;**Andon Cord** = Amazon 品質拉繩(下架機制);**Vendor Central** = Amazon 供應商後台;**PD** = Prime Day;**DSP** = Demand-Side Platform(廣告);**PDP** = Product Detail Page;**iPrice** ⚠ = 內部定價工具。
 
 **Amazon IoT 品類 GTM(7/24 Ziyi 交接新增,見 [[Amazon Handover Meeting Transcript Part 1]])**
-- **品類 GTM vs 渠道 GTM**:**品類 GTM**(Kess 接 router、[[Qixuan Wang wx1252689|齊軒]] 接 MBB)對品類最終銷量結果負責,自己不做任何執行,全部工作是統籌協調 + 說服各部門落地;**渠道 GTM** = Amazon 渠道側對口,另管耳機/平板,看不了那麼細,所以品類 GTM 實際承擔了一部分本應屬渠道 GTM 的活。領導要問 Amazon 的事只會問品類 GTM——你是那個接口。
+- **品類 GTM vs 渠道 GTM**:**品類 GTM**(**Kess 接 MBB**;router 已不在 Kess 範圍內——✅ 2026-08-26 Kess 確認。原定分工為 Kess 接 router、[[Qixuan Wang wx1252689|齊軒]] 接 MBB,因齊軒離職而對調,見 [[Amazon MBB Handover Meeting Transcript]])對品類最終銷量結果負責,自己不做任何執行,全部工作是統籌協調 + 說服各部門落地;**渠道 GTM** = Amazon 渠道側對口,另管耳機/平板,看不了那麼細,所以品類 GTM 實際承擔了一部分本應屬渠道 GTM 的活。領導要問 Amazon 的事只會問品類 GTM——你是那個接口。
 - **五大工作面**:路標管理(每年 11–12 月定明年新品節奏 + 拆到 SKU 的收入/發貨量預測)、定價、選品、廣告、運營。
 - **Buy Box** = Amazon 同一商品頁只有一個賣家成交,取得該位置即為 Buy Box。最大決定因素是**價格最低**,其次送達時效(我方偶爾貴幾塊但送得快也能拿到)。被其他渠道流出的低價貨搶走時 **Amazon 不介入、店長也無解**,只能事前靠渠道隔離(獨家顏色/型號、對外價格下限)預防;可用 test buy + SN 號查出貨源渠道。ASR 拼作「byebox / by box / by book / bibox / 白box / back」。
 - **角色**:**店長 = marketplace manager**(每日巡店,看下架/offer 執行錯誤等運營問題);**store specialist**(ASR「stole specialists」);**traffic manager**(每國一位,管流量預算/投詞/廣告投放,需要你提供 KSP 與 competitor list;ASR「driving manager / trife manager / cream manager」);**operation team**(base 在**機關**,負責站內註冊、listing 物料上傳與頁面執行);**marketplace director**(每國電商主管,接觸少)。

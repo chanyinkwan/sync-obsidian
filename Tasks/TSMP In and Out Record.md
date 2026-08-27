@@ -3,7 +3,7 @@ status: doing
 priority: high
 scheduled: 2026-07-09
 dateCreated: 2026-07-09T11:49:40.080+01:00
-dateModified: 2026-08-07T11:41:51.974+01:00
+dateModified: 2026-08-26T11:16:20.402+01:00
 tags:
   - task
 projects:
@@ -15,8 +15,11 @@ timeEntries:
   - startTime: 2026-07-21T13:40:42.234Z
     description: Work session
     endTime: 2026-07-21T13:40:52.962Z
-eisenhower: q2
-tasknotes_manual_order: tniririririr
+  - startTime: 2026-08-26T09:58:37.596Z
+    description: Work session
+    endTime: 2026-08-26T10:16:20.402Z
+eisenhower: q1
+tasknotes_manual_order: tnririririrh
 ---
 
 -> solve In and Out record Pain point

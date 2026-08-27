@@ -15,5 +15,14 @@
       ],
       "key": "I"
     }
+  ],
+  "templater-obsidian:Template/Meeting Transcript Intake Template.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "M"
+    }
   ]
 }

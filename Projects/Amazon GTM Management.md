@@ -24,6 +24,8 @@ Five work areas:
 | **廣告**    | Feeds KSP + competitor list to per-country traffic managers.                                        |
 | **運營**    | Weekly price + sales + days-of-stock forecast table; the core working sheet.                        |
 
+KPIs
+
 ## 營運系統
 
 - [[Amazon GTM Operation]] — 個人 MBB 週期性檢查、來源導航、例外決策及後續 TaskNote 的 BAU 控制塔。

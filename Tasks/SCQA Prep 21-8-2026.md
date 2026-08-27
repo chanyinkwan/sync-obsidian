@@ -44,7 +44,7 @@ completedDate: 2026-08-24
 
 ### 5. What has not been moving, and why
 - [[Amazon MBB 每日控制檢查]]
-- [[Amazon GTM - Do research on current sales data and summarise insights fro 程哥 as well]]
+- [[Amazon GTM - Do research on current sales data and summarise insights]]
 - [[H173 Sales Monitoring]]
 - [[Update the Sample Stock Data Table]]
 - [[Super MiFi (E6898) 上市]]

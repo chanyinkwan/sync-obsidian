@@ -24,7 +24,8 @@
     }
   ],
   "enabled_templates_hotkeys": [
-    "Template/Interview Prep Tracker Template.md"
+    "Template/Interview Prep Tracker Template.md",
+    "Template/Meeting Transcript Intake Template.md"
   ],
   "startup_templates": [],
   "syntax_highlighting": true,

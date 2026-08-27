@@ -6,13 +6,15 @@ recurrence: DTSTART:20260821;FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR
 recurrence_anchor: scheduled
 dateCreated: 2026-08-20T00:00:00+01:00
 dateModified: 2026-08-20T00:00:00+01:00
-projects: ["[[Amazon GTM Operation]]"]
+projects:
+  - "[[Amazon GTM Operation]]"
 contexts:
   - "@ops"
 timeEstimate: 10
 tags:
   - task
-eisenhower: q2
+eisenhower: q3
+tasknotes_manual_order: tnmzzzzzzzzy
 ---
 
 ## 完成標準

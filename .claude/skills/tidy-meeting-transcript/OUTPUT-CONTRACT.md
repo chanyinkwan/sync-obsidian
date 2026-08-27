@@ -4,6 +4,8 @@
 
 Use the meeting date from the filename. Required: `type: meeting-transcript`, ISO `date`, `account_or_project`, `host`, `attendees`, `absent`, and tags containing `meeting` plus `meeting-transcript`.
 
+Preserve any existing `projects:` wikilinks exactly as written; they are user-assigned routing, never inferred or edited. If the source carries `status: untidied`, write `status: tidied` and drop the `untidied` tag so the note leaves the Home inbox; leave all other user-supplied fields untouched.
+
 Only High-confidence identities use resolving `[[wikilinks]]`. For unresolved metadata use quoted raw values such as `host: "_TBD (Speaker 2)"` or `- "Speaker 2 (unidentified)"`; never mint a link or leak a candidate name to satisfy metadata.
 
 ## Body order
