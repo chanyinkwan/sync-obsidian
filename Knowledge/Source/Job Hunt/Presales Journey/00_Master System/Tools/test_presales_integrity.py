@@ -142,5 +142,63 @@ class OperationalPathTests(unittest.TestCase):
                         self.assertTrue((subdir / ".gitkeep").is_file())
 
 
+
+class EducationSourceTests(unittest.TestCase):
+    def test_canonical_db_degrees(self) -> None:
+        db = json.loads(read_text(MASTER_ROOT / "MasterExperienceDB.json"))
+        hang_seng = [
+            entry
+            for entry in db["education"]
+            if "Hang Seng" in entry["institution"]
+        ]
+        exeter = [
+            entry
+            for entry in db["education"]
+            if "Exeter" in entry["institution"]
+        ]
+        self.assertEqual(hang_seng[0]["degree"], "BSc Information Technology")
+        self.assertEqual(exeter[0]["degree"], "MSc Business Analytics")
+        blob = json.dumps(db["education"], ensure_ascii=False)
+        self.assertNotIn("Communication Technology", blob)
+
+    def test_live_template_prints_canonical_degrees_only(self) -> None:
+        import zipfile
+
+        template = MASTER_ROOT / "Templates" / "Resume_Template.docx"
+        with zipfile.ZipFile(template) as z:
+            xml = z.read("word/document.xml").decode("utf-8")
+        self.assertIn("BSc Information Technology", xml)
+        self.assertIn("Master of Business Analytics", xml)
+        self.assertIn("University of Exeter", xml)
+        self.assertIn("Merit", xml)
+        self.assertNotIn("Communication Technology", xml)
+        self.assertNotIn("AI Governance", xml)
+        self.assertNotIn("Relevant Coursework", xml)
+        self.assertNotIn("gap_bridge", xml)
+        self.assertNotIn("_targeting", xml)
+
+    def test_job_hunt_template_copy_has_no_stale_degree(self) -> None:
+        import zipfile
+
+        template = JOB_HUNT_ROOT / "Resume_Template.docx"
+        if not template.exists():
+            self.skipTest("Job Hunt template copy missing")
+        with zipfile.ZipFile(template) as z:
+            xml = z.read("word/document.xml").decode("utf-8")
+        self.assertIn("BSc Information Technology", xml)
+        self.assertNotIn("Communication Technology", xml)
+        self.assertNotIn("AI Governance", xml)
+        self.assertNotIn("Relevant Coursework", xml)
+
+    def test_craft_cv_skill_keeps_targeting_private(self) -> None:
+        skill = read_text(CRAFT_CV_SKILL)
+        self.assertIn("Private targeting fields never print.", skill)
+        self.assertIn("BSc Information Technology", skill)
+        self.assertIn("Bachelor of Communication Technology", skill)
+        rules = read_text(MASTER_ROOT / "CV Writing Rules.md")
+        self.assertIn("Private targeting fields never print.", rules)
+        self.assertIn("BSc Information Technology", rules)
+
+
 if __name__ == "__main__":
     unittest.main()

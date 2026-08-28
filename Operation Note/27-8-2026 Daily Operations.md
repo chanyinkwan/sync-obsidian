@@ -28,14 +28,22 @@ tags:
 
 ---
 ### What actually happened today
-
+- [[Optimise Amazon Final Workstation]] — 工作站進度緩慢，遇到更多存取阻礙 (access friction)
+- [[8 月和記月報]] — 月報生成轉化做 ChatGPT skill，進入測試階段
+- [[2026-08-27 Mistake — Bare Minimum Definition]] — 反思錯誤定義 bare minimum ownership
+- 上午留白反思，配輕音樂重新同步自己
 
 ### How would you translate what you have done today into industry terminology?
 Scoping 範疇 / Pricing 定價 / Deal Governance 交易治理?
 
 
 ### How is your time allocated today?
+無 Pomodoro 或明確時長紀錄，今日無計時總計。
 
+⚠ untimed — work / build · [[Optimise Amazon Final Workstation]] 工作站優化
+⚠ untimed — work / build · [[8 月和記月報]] ChatGPT skill 月報化測試
+⚠ untimed — work / reflection · [[2026-08-27 Mistake — Bare Minimum Definition]] bare minimum 定義反思
+⚠ untimed — hub / reflection · 上午留白反思與音樂同步自己
 
 ### What is the most challenging part of the day?
 

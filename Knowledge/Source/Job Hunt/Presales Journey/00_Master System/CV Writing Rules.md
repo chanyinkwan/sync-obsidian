@@ -46,7 +46,8 @@ Allowed: hyphens in genuine compounds (`cross-functional`, `Tier-1`, `real-time`
 
 - Read the JD, then pick the roles and bullets that answer its stated duties and hard minimums. Do not ship the same bullet set to every employer.
 - Name the employer's product or problem once in the profile summary, to prove the CV was written for them.
-- Where domain experience is genuinely absent, do not fake it. Bridge with the closest honest analogue and say what it is.
+- Where domain experience is genuinely absent, do not fake it. Record the analogue in `_targeting.gap_bridge` as a private note. Do not concatenate that note into `profile_summary`.
+- Never retitle a role toward the JD. Huawei's contract title is Portfolio Solution Presales; the summary must not open as Presales engineer or Sales Engineer.
 
 ## 7. Pipeline
 
@@ -56,7 +57,13 @@ Never hand-build the .docx. Write a context JSON and render it:
 python "Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Tools/render_cv.py" "Knowledge/Source/Job Hunt/Presales Journey/Companies/<Company — Role>/CV/CV Context — <Company> <Role>.json"
 ```
 
-Template keys: `profile_summary`, `experience[{company, location, role, dates, bullets[]}]`, `activity_line`, `language_line`, `skills_line`, `interests_line`. Education is hard-coded in `Resume_Template.docx`.
+Template keys: `profile_summary`, `experience[{company, location, role, dates, bullets[]}]`, `activity_line`, `language_line`, `skills_line`, `interests_line`. `render_cv.py` passes only those keys. `_targeting` is private and never prints. Never concatenate `gap_bridge`, `killed`, `notes`, `review_fixes`, or any other `_targeting` field into `profile_summary`. Private targeting fields never print.
+
+Education is hard-coded in `Resume_Template.docx` and must stay aligned with `MasterExperienceDB.json`:
+- University of Exeter: Master of Business Analytics (MSc Business Analytics). Merit may stay. No default Relevant Coursework line. No AI Governance or Predictive Risk Engine on every CV.
+- Hang Seng University: BSc Information Technology. Never Communication Technology.
+
+If those strings drift in the template, fix the template. Do not invent a degree. Do not source education from `Knowledge/About Me/`.
 
 ## Pre-send checklist
 
@@ -64,5 +71,7 @@ Template keys: `profile_summary`, `experience[{company, location, role, dates, b
 - [ ] Result appears before method in every bullet
 - [ ] Zero `—` and zero `–` outside date ranges
 - [ ] No draft-status or unshipped claims
-- [ ] Dates match `MasterExperienceDB.json`
+- [ ] Dates and titles match `MasterExperienceDB.json`. No retitling in the summary
+- [ ] Education is BSc Information Technology and MSc Business Analytics. No Communication Technology. No default AI Governance coursework
+- [ ] `_targeting` did not leak into the printed summary
 - [ ] Read aloud once, start to finish

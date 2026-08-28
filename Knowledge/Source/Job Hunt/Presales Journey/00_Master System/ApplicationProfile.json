@@ -1,0 +1,89 @@
+﻿{
+    "_purpose":  "Thin form-answer profile for job applications. Read this instead of the vault. Experience bullets live in MasterExperienceDB.json. Do not duplicate them here.",
+    "_updated":  "2026-08-28",
+    "identity":  {
+                     "legal_or_cv_name":  "Kessog Chan",
+                     "first_name":  "Kessog",
+                     "last_name":  "Chan",
+                     "email":  "kesschan.kc@gmail.com",
+                     "phone":  "+44 07552 959 429",
+                     "city":  "London",
+                     "country":  "United Kingdom",
+                     "github_url":  null,
+                     "portfolio_url":  null,
+                     "linkedin_url":  "https://www.linkedin.com/in/kessog-chan/",
+                     "postcode":  "DA10 1FR",
+                     "citizenship":  "Hong Konger"
+                 },
+    "work_auth":  {
+                      "authorized_uk_without_sponsorship":  true,
+                      "needs_sponsorship":  false,
+                      "note":  "Holds BNO visa. Does not require sponsorship for a UK working visa. Full UK working rights.",
+                      "visa_type":  "BNO"
+                  },
+    "education":  {
+                      "masters":  "MSc Business Analytics, University of Exeter, Oct 2024 - Dec 2025, Merit",
+                      "bachelors":  "BSc Information Technology, Hang Seng University of Hong Kong, Aug 2018 - Sep 2022"
+                  },
+    "current_role":  {
+                         "employer":  "Huawei Consumer Business Group",
+                         "title_contract":  "Portfolio Solution Presales",
+                         "title_linkedin":  "Presales Consultant (B2B)",
+                         "do_not_retitle_to":  [
+                                                   "Sales Engineer",
+                                                   "Presales Engineer"
+                                               ]
+                     },
+    "compensation":  {
+                         "numeric_band_gbp":  [
+                                                  60000,
+                                                  65000
+                                              ],
+                         "note":  "FORM TACTIC only. Prefer \u0027open to discussion on package\u0027 when the field allows text. If numeric, research the role then put a number in 60000-65000 GBP. Jamf Greenhouse 6129567004 used 62500 gross yearly OTE on 2026-08-28. Not a walk-away. Do not volunteer a figure in conversation.",
+                         "minimum_yearly_ote":  62000,
+                         "currency":  "GBP",
+                         "prefer_text":  "open to discussion on package"
+                     },
+    "form_defaults":  {
+                          "english_proficiency":  "Fluent / professional",
+                          "technical_sales_3_to_5_years":  {
+                                                               "strict":  false,
+                                                               "form_answer":  "Yes",
+                                                               "rationale":  "Formal SE title is ~5 months. Count Apple B2B + Huawei as similar technical customer-facing unless user overrides. No is a hard screen."
+                                                           },
+                          "expertise_checkboxes":  {
+                                                       "Apple in the enterprise":  true,
+                                                       "Mobile Device Management":  true,
+                                                       "Network-level cybersecurity concepts":  false
+                                                   },
+                          "cover_letter":  "skip_if_optional",
+                          "gender_ethnicity_veteran":  "prefer_not_to_say"
+                      },
+    "unknown":  [
+                    "driving_licence",
+                    "current_salary",
+                    "how_heard_default",
+                    "why_company_default",
+                    "referral",
+                    "non_compete",
+                    "security_clearance",
+                    "github_or_portfolio",
+                    "travel_max_pct",
+                    "hybrid_office_days",
+                    "legal_vs_preferred_name",
+                    "bno_dropdown_fallback"
+                ],
+    "integrity":  {
+                      "never_cite":  [
+                                         "Freelance AI Solutions Engineer",
+                                         "github.com/chanyinkwan"
+                                     ],
+                      "cv_source_of_truth":  "MasterExperienceDB.json + company CV Context JSON + render_cv.py",
+                      "review_gate":  "Show CV before submit"
+                  },
+    "availability":  {
+                         "notice_period":  "6 weeks",
+                         "earliest_start":  "2026-10-05",
+                         "earliest_start_note":  "5/10/2026 UK = 5 Oct 2026"
+                     }
+}

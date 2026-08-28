@@ -44,18 +44,15 @@ Inside the anchor role, order bullets by criterion rank, not by impact size, whe
 
 ## 3. Bridging an honest gap
 
-The canonical pattern, from the BJAK summary:
+Record the gap in `_targeting.gap_bridge` as a **private working note**. That field is not a render input. Never copy, append, interpolate, or concatenate `gap_bridge` (or `killed`, `notes`, `review_fixes`, or any other `_targeting` field) into `profile_summary`. `profile_summary` is the only summary that prints. Private targeting fields never print.
 
-> "No neobank or Southeast Asia superapp on the CV, the honest match is that regulated-payments record: correctness over convenience, irreversible states, partners outside direct control."
+Do **not** dump working-note language into the printed summary. Phrases such as "the honest match is", "the ground it sits on", or "with no [product] on the CV" are targeting notes, not CV prose, unless the user has approved that exact printed sentence.
 
-Mechanics:
+If the user-approved `profile_summary` already names the employer's problem once, stop. Do not tack the private bridge onto it.
 
-1. **Name the gap yourself, once, in a subordinate clause.** The reader was going to notice. Naming it first converts a weakness into evidence of judgement.
-2. **Spend the main clause on transferable invariants**, the properties that make the two domains the same problem. Not on the analogue's surface facts.
-3. **Banned:** apology adverbs ("although", "while I haven't"), and claiming adjacency as identity ("payments experience" for what was e-banking delivery).
-4. **One bridge per CV.** A JD needing two or more should have been rejected upstream on match score, not bridged harder.
+Standing private note, not printed: regulated fintech delivery at Bank of China is the closest analogue into payments, banking and compliance-gated product roles.
 
-Standing bridge: regulated fintech delivery at Bank of China, into payments, banking and compliance-gated product roles.
+**Banned in printable prose unless the user signed the exact sentence:** apology adverbs ("although", "while I haven't"), claiming adjacency as identity ("payments experience" for what was e-banking delivery), and automatic paste of `_targeting.gap_bridge`.
 
 ## 4. What separates a screen-winning bullet
 
@@ -130,7 +127,7 @@ Alternatives when revenue is unavailable: time saved, capacity recovered, stakeh
 | Imported claim | Ruling | Why |
 |---|---|---|
 | Source bullets from `NewProofBank.json` | **Overridden.** `MasterExperienceDB.json` is canonical | NewProofBank is archived with unreliable dates. The notebook predates the 2026-07-28 rebuild |
-| "Role signalling pivot": rewrite past job titles toward the target's language, e.g. moving Apple operations titles toward "Operations Strategy Analyst" | **Rejected outright.** Titles and dates are canonical and never rewritten | This is the origin of the title drift found on 2026-08-13, where three sources disagreed on the Apple and BOC titles and dates. A retitled role is a claim that fails a reference check. Match the target's language in the **summary and bullets**, never in the title field |
+| "Role signalling pivot": rewrite past job titles toward the target's language, e.g. moving Apple operations titles toward "Operations Strategy Analyst" | **Rejected outright.** Titles and dates are canonical and never rewritten, including in the opening of `profile_summary` | This is the origin of the title drift found on 2026-08-13, where three sources disagreed on the Apple and BOC titles and dates. A retitled role is a claim that fails a reference check. Huawei's contract title is Portfolio Solution Presales; do not open a summary with Presales engineer or Sales Engineer. Match the target's language in **bullets and skills**, never by renaming a role |
 | Worked examples citing 20 hours weekly across 30+ systems, and 98% of manual maintenance | **Form adopted, numbers rejected** | Those are the inflated figures the DB corrected. The observability saving is about 400 hrs/year, not 20 hrs/week |
 | Pipeline of `cv_data.json` and `injector.py` | **Overridden.** Use `CV Context — *.json` and `render_cv.py` | Same idea, different implementation. The vault's pipeline is the real one |
 | Everything else | **Adopted** | No conflict with `positioning_boundary` or `honest_read` |

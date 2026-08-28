@@ -148,7 +148,7 @@ factors that would affect the result whether this goal could be achieved or not:
 |H173-383|51060MBP||B0H3Z5XGF5|H173-383|德、法、意、西、荷|26Q3|
 
 #### Sell In and Business Plan data
-
+"C:\Users\k84450674\Downloads\EU Amazon Weekly AATP-PO-delivery Tracking.xlsx"
 **Headers & Delivery**
 - **Base fields:** Row 1 note `此表格不要排序操作`; Status; Product; Product Line; Product Series; 辅助; Product Name; Color; Product Model; BOM; ASIN; Quotation — **total**. (`SP# AATP-PO-delivery!A1:K3`)
 - **1.14:** Mar / 401 / USD — **9,069,249**. (`SP# AATP-PO-delivery!L1:L3`)
@@ -188,8 +188,5 @@ factors that would affect the result whether this goal could be achieved or not:
     唔需要第二個 database。每週／每月由工作站抽出一頁：Actual vs Target、Forecast、Top Risks、Actions、Decision Needed。
 
 ### Solution
-## Who holds what
-| Who | What they hold on THIS task | Delta from usual stance |
-|-----|-----------------------------|-------------------------|
 
 ## Next move

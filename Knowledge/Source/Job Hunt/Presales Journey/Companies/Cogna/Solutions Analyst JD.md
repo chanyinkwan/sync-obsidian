@@ -4,15 +4,16 @@ company: Cogna
 role: Solutions Analyst
 location: London, England, United Kingdom (Hybrid, 2 days per fortnight in Farringdon office)
 source: https://apply.workable.com/cogna/j/7D12637D61/
-stage: lead
+stage: rejected
+status: rejected
 posting_status: open
 salary_range: unknown
 exit_fit: forward
 fit: high
 fit_reason: "Forward: Solutions Analyst blends forward-deployed engineering, deployment strategy, and value engineering — squarely in the SA/presales target lane, and London hybrid at 2 days per fortnight clears the WFH filter. Binding constraints: Analyst-level band (2+ yrs min) vs the no-pay-cut rule, and the JD expects hands-on coding with AI-enabled IDEs."
 inside_contact: none
-next_action: "Find the salary band before investing further; also note they are hiring Solutions Director and Solutions Strategist — check if a more senior opening fits better"
-next_action_date:
+next_action: "Close the Analyst process. Do not re-apply. Re-engage only if Cogna opens a closer-fit role (Meg offered to keep in mind)."
+next_action_date: 2026-08-28
 tags:
   - job-description
   - cogna

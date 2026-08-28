@@ -42,7 +42,7 @@ A CV is a claim set, not a history. Every claim must survive a reader holding th
 | 3. Gate every candidate (§2) | Gated pool, kills captured |
 | 4. Pick the anchor role (`TARGETING.md` §2) | The role answering the hardest criterion |
 | 5. Rewrite against the JD's vocabulary | Bullets ranked by criterion, within chronological sections |
-| 6. Write the summary, bridge any gap once (`TARGETING.md` §3) | Employer's problem named once |
+| 6. Write `profile_summary` as complete printable prose. Put any gap analysis in `_targeting.gap_bridge` as a private note. Never paste, append, or concatenate `_targeting` into the summary (`TARGETING.md` §3) | Employer's problem named once. Private targeting fields never print. |
 | 7. Render | `.docx` |
 | 8. Pre-send check | Pass or fix |
 
@@ -58,6 +58,8 @@ Replace prose provenance with a `_targeting` block in the CV context JSON:
   "gap_bridge": ""}
 ```
 
+`_targeting` is a private working record. It is never a render input. Never copy, append, interpolate, or concatenate `gap_bridge`, `killed`, `notes`, `review_fixes`, or any other `_targeting` field into `profile_summary` or any printable key. `profile_summary` is the only summary that prints, and it must be authored as complete standalone prose. Private targeting fields never print.
+
 Append every kill to `Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Grounding Backlog.json`: one record per bullet per application. Demand count is the priority queue, so the most-wanted evidence gets grounded first. A kill reported only in chat is a silent loss.
 
 ## 5. Render
@@ -68,7 +70,12 @@ Never hand-build the `.docx`.
 python "Knowledge/Source/Job Hunt/Presales Journey/00_Master System/Tools/render_cv.py" "Knowledge/Source/Job Hunt/Presales Journey/Companies/<Company — Role>/CV/CV Context — <Company> <Role>.json" "Knowledge/Source/Job Hunt/Presales Journey/Companies/<Company — Role>/CV/Kessog Chan CV — <Company> <Role>.docx"
 ```
 
-Keys: `profile_summary`, `experience[{company, location, role, dates, bullets[]}]`, `activity_line`, `language_line`, `skills_line`, `interests_line`. Education is hard-coded in `Resume_Template.docx`.
+Keys: `profile_summary`, `experience[{company, location, role, dates, bullets[]}]`, `activity_line`, `language_line`, `skills_line`, `interests_line`. Education is hard-coded in `Resume_Template.docx` and must stay aligned with `MasterExperienceDB.json`:
+
+- University of Exeter: Master of Business Analytics (MSc Business Analytics). Merit may stay. Do **not** add a default Relevant Coursework line. No AI Governance, no Predictive Risk Engine, no MSc project bullets on every CV.
+- Hang Seng University: **BSc Information Technology**. Never "Bachelor of Communication Technology" or any other degree name.
+
+If the template drifts, fix the template. Do not invent a degree. Do not source education from `Knowledge/About Me/` or from a prior company's CV. `render_cv.py` passes only the printable keys above. It never passes `_targeting`.
 
 ## 6. Precedence
 
@@ -81,9 +88,10 @@ Keys: `profile_summary`, `experience[{company, location, role, dates, bullets[]}
 - [ ] Zero `—` and zero `–` outside date ranges
 - [ ] Every rendered bullet is `verified` or `secondary`, and its `note` / `arithmetic` obeyed
 - [ ] Nothing excluded: no `chanyinkwan` repos, no freelance AI role, no client name
-- [ ] Dates and titles match the DB exactly, no retitling toward the JD; technical framing matches `honest_read`
-- [ ] Every ranked criterion answered or logged as a gap; kills appended to the backlog
-- [ ] Employer named once in the summary; at most one gap bridge, no apology
+- [ ] Dates and titles match the DB exactly, no retitling toward the JD, including in the summary. Huawei's contract title is Portfolio Solution Presales; do not open the summary as Presales engineer or Sales Engineer. Technical framing matches `honest_read`
+- [ ] Every ranked criterion answered or logged as a gap; kills appended to the backlog. `_targeting` stays private: gap_bridge, killed, notes and review_fixes never appear in printable keys. Private targeting fields never print
+- [ ] Employer named once in the summary. Do not paste `_targeting.gap_bridge` into the summary
+- [ ] Education on the page is BSc Information Technology and MSc Business Analytics. No Communication Technology. No default AI Governance coursework
 - [ ] One page, 17 to 19 bullet lines total, English only, no tables or text boxes
 - [ ] 80%+ of the JD's keywords present
 - [ ] Read aloud once, start to finish

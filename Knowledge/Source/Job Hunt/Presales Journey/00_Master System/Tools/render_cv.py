@@ -11,6 +11,28 @@ HERE = Path(__file__).resolve().parent
 SYSTEM_ROOT = HERE.parent
 TEMPLATE = SYSTEM_ROOT / "Templates" / "Resume_Template.docx"
 
+# The template may only receive these keys. _targeting and every other
+# working-note field stay out of the Jinja context so they cannot print.
+PRINTABLE_KEYS = (
+    "profile_summary",
+    "experience",
+    "activity_line",
+    "language_line",
+    "skills_line",
+    "interests_line",
+)
+
+PRIVATE_TARGETING_FIELDS = (
+    "gap_bridge",
+    "killed",
+    "notes",
+    "review_fixes",
+    "jd",
+    "criteria",
+    "anchor_role",
+    "bullets_used",
+)
+
 
 def resolve_paths(
     context_arg: str | None,
@@ -38,6 +60,35 @@ def resolve_paths(
     return context_path, output_path
 
 
+def printable_context(context: dict) -> dict:
+    """Return only the fields the Word template is allowed to print.
+
+    Never concatenates _targeting.gap_bridge, killed, notes, review_fixes,
+    or any other private targeting field into profile_summary. The summary
+    is used as authored in the context JSON, unchanged.
+    """
+    if not isinstance(context, dict):
+        raise TypeError("CV context must be a JSON object.")
+
+    render = {}
+    for key in PRINTABLE_KEYS:
+        render[key] = context.get(key, "" if key != "experience" else [])
+
+    summary = render.get("profile_summary") or ""
+    targeting = context.get("_targeting") or {}
+    if isinstance(targeting, dict):
+        for key in PRIVATE_TARGETING_FIELDS:
+            value = targeting.get(key)
+            if isinstance(value, str):
+                fragment = value.strip()
+                if len(fragment) >= 24 and fragment in summary:
+                    raise ValueError(
+                        f"_targeting.{key} leaked into profile_summary. "
+                        "Private targeting fields must never print."
+                    )
+    return render
+
+
 def main() -> None:
     context_arg = sys.argv[1] if len(sys.argv) > 1 else None
     output_arg = sys.argv[2] if len(sys.argv) > 2 else None
@@ -51,7 +102,7 @@ def main() -> None:
     context = json.loads(context_path.read_text(encoding="utf-8"))
     output_path.parent.mkdir(parents=True, exist_ok=True)
     document = DocxTemplate(str(TEMPLATE))
-    document.render(context, autoescape=True)
+    document.render(printable_context(context), autoescape=True)
     document.save(str(output_path))
     print(f"Rendered: {output_path}")
 

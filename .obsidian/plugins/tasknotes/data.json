@@ -1064,6 +1064,30 @@
       "requestedAt": 1787739922913,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Material Preparation.md",
+      "requestedAt": 1787905167271,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Material Preparation-2.md",
+      "requestedAt": 1787905225395,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Decompose First Principle Prompt into First Principle Logic-driven Skill.md",
+      "requestedAt": 1787905608130,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Material 2.md",
+      "requestedAt": 1787931852956,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {
@@ -1071,7 +1095,7 @@
     "timeRemaining": 300,
     "nextSessionType": "short-break"
   },
-  "lastPomodoroDate": "2026-08-25",
+  "lastPomodoroDate": "2026-08-27",
   "pomodoroHistory": [
     {
       "id": "1781772563658",
@@ -1836,8 +1860,23 @@
           "endTime": "2026-08-26T11:23:37.570+01:00"
         }
       ]
+    },
+    {
+      "id": "1787905967424",
+      "startTime": "2026-08-28T09:32:47.424+01:00",
+      "endTime": "2026-08-28T09:57:47.424+01:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "taskPath": "Tasks/Material Preparation.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-08-28T09:32:47.424+01:00",
+          "endTime": "2026-08-28T09:57:47.424+01:00"
+        }
+      ]
     }
   ],
-  "lastSelectedTaskPath": "Tasks/8 月和記月報.md",
+  "lastSelectedTaskPath": "Tasks/Material Preparation.md",
   "lastNotifiedReleaseVersion": "4.12.4"
 }
