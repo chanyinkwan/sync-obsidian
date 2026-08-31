@@ -1095,7 +1095,7 @@
     "timeRemaining": 300,
     "nextSessionType": "short-break"
   },
-  "lastPomodoroDate": "2026-08-27",
+  "lastPomodoroDate": "2026-08-29",
   "pomodoroHistory": [
     {
       "id": "1781772563658",
@@ -1875,8 +1875,38 @@
           "endTime": "2026-08-28T09:57:47.424+01:00"
         }
       ]
+    },
+    {
+      "id": "1788113394560",
+      "startTime": "2026-08-30T19:09:54.560+01:00",
+      "endTime": "2026-08-30T19:29:54.560+01:00",
+      "plannedDuration": 20,
+      "type": "work",
+      "taskPath": "Tasks/Material Preparation.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-08-30T19:09:54.560+01:00",
+          "endTime": "2026-08-30T19:29:54.560+01:00"
+        }
+      ]
+    },
+    {
+      "id": "1788115192318",
+      "startTime": "2026-08-30T19:39:52.318+01:00",
+      "endTime": "2026-08-30T19:59:52.318+01:00",
+      "plannedDuration": 20,
+      "type": "work",
+      "taskPath": "Tasks/Material Preparation.md",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-08-30T19:39:52.318+01:00",
+          "endTime": "2026-08-30T19:59:52.318+01:00"
+        }
+      ]
     }
   ],
   "lastSelectedTaskPath": "Tasks/Material Preparation.md",
-  "lastNotifiedReleaseVersion": "4.12.4"
+  "lastNotifiedReleaseVersion": "4.12.5"
 }
