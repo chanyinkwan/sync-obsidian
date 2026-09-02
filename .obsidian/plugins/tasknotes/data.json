@@ -1088,6 +1088,12 @@
       "requestedAt": 1787931852956,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Material Reflection.md",
+      "requestedAt": 1788337230410,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {
