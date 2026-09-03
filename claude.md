@@ -27,3 +27,5 @@ Always map internal activities to these exact industry terms to prepare external
 * Daily Reflection: 4-question canvas (1. What actually happened today, 1.5 Standary Industry Translation, 2. Distilling the Constants (常數), 3. Task Time and Autonomy Assessment, 4.Seed of new ideas ).
 * Internal Communication Method: 15-minute McKindsey-style SCQA Canvas with "True or Not / Feasible or Not" verification with Manager each week.
 * External Sync: Review on targetted industry news and thoughts. Review potential opportunity in the industry (such as Google Large Customer Team)
+## 5. Token Economy Rule
+Dispatch lower-cost model subagents (Haiku: file intake, data dumps, mechanical scans; Sonnet: routine execution) for bulk work. The primary model does judgment, decomposition, and final assembly only. Subagents return compact summaries (≤15 lines), never raw dumps.

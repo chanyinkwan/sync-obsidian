@@ -1,13 +1,13 @@
 ---
-status: todo
+status: done
 priority: high
 scheduled: 2026-08-28
 dateCreated: 2026-08-28T09:19:27.179+01:00
-dateModified: 2026-08-30T19:59:52.428+01:00
+dateModified: 2026-09-03T09:37:46.679+01:00
 tags:
   - task
 projects:
-  - "[[Huawei Development]]"
+  - "[[Materials]]"
 eisenhower: q1
 timeEntries:
   - startTime: 2026-08-28T08:32:47.436Z
@@ -19,6 +19,7 @@ timeEntries:
   - startTime: 2026-08-30T18:39:52.333Z
     description: Work session
     endTime: 2026-08-30T18:59:52.428Z
+completedDate: 2026-09-03
 ---
 
 ## Ask as received

@@ -197,3 +197,5 @@ Output the verification plan in a sharp, actionable Markdown table or structured
 | 1     | Fine tune the given prompt |        |              |              |
 
 ## Next move
+
+Final Delivery: [[first principle]]

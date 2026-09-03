@@ -1094,6 +1094,24 @@
       "requestedAt": 1788337230410,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Build Amazon Work Station.md",
+      "requestedAt": 1788424152042,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/sanjeewa Friday Amazon Meeting.md",
+      "requestedAt": 1788424201559,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Build Monthly Hutchison Mobile Price Report.md",
+      "requestedAt": 1788429053790,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {
