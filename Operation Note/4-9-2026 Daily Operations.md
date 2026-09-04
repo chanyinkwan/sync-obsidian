@@ -1,11 +1,11 @@
 ---
 type: daily
-date: 2026-09-03
+date: 2026-09-04
 hub: "[[Life @Huawei System]]"
 tags:
   - daily
 ---
-# 3-9-2026 Daily Operations
+# 4-9-2026 Daily Operations
 > **`$= (()=>{const s=dv.luxon.DateTime.fromISO("2026-06-08");let d=dv.current().date||dv.current().file.day;if(!d)return"Day ?";let c=0,t=s;while(t<=d){if(t.weekday<=5)c++;t=t.plus({days:1});}return"Day "+c;})()`** · Hub: [[Life @Huawei System]]
 
 ## ⏳ Ball in their court
@@ -16,10 +16,7 @@ tags:
 ### Today's linked tasks
 <!-- daily-plan:start -->
 #### ⚔️ Work (防守) — max 5
-- second experiment on first principle
-- [[Build Amazon Work Station]]
-- [[TSMP In and Out Record]]
-
+- 
 
 #### 🚀 Hub (進攻) — max 5
 - 
@@ -29,19 +26,17 @@ tags:
 
 ---
 ### What actually happened today
-done the first draft of the amazon workstation
-feel the current first principle skill is very useful, the hardgate that force me to think about the project using my own brain feels very nice, it earns me the feeling of gaining control on how the things go, and it filled me up with the fundamental knowledge that i should know even if i didnt have to put a hand on it
+- sort of automised the scraping in windtre as well
 
 ### How would you translate what you have done today into industry terminology?
 Scoping 範疇 / Pricing 定價 / Deal Governance 交易治理?
 
-Competitive Analysis (data scraping but the data to insight part is not my part this time)
+
 ### How is your time allocated today?
-basically divided into two sections, a major line preparing the amazon work station and the side line is to manage to script for pricing analysis
+
 
 ### What is the most challenging part of the day?
-figuring out a way to not scrape italy data manually
-from URL -> bot scrape -> manual -> script scrape
+
 
 ### What is your win today and what will you do better next time?
 

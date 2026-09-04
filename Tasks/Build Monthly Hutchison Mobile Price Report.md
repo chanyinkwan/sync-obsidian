@@ -27,11 +27,15 @@ with this script:
 
 ## Stages
 
-| Date     | Who                                                      | What they hold on THIS task                                                                                             | Scope Coverage                                                                                 |                                        |
-| -------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------- |
-| 3/9/2026 | Me and [[Huang Yi 84411269 (Selina)\|Huang Yi 84411269]] | we are now verifying the current version are accurate or not in terms of basic prising                                  | 產品型號，包括所有配置上市時間(年月)<br>資費(一次性/24/36/48月)                                                       | Austria /Ireland /Switzerland /Denmark |
-|          | Me                                                       | add on the coverage of windtre -> thinking of how to automate the command save of all listed mobile products in windtre | 產品型號，包括所有配置上市時間(年月)<br>資費(一次性/24/36/48) (might be able to include the promotion scope as well) | Italy                                  |
-|          |                                                          | find the page and command save? maybe; needs to define the scope of promotion                                           | promotion scope for the other 4 opcos                                                          | Austria /Ireland /Switzerland /Denmark |
+| Date     | Who                                                      | What they hold on THIS task                                                                                             | Scope Coverage                                                                                 | Country                                | done |
+| -------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------- | ---- |
+| 3/9/2026 | Me and [[Huang Yi 84411269 (Selina)\|Huang Yi 84411269]] | we are now verifying the current version are accurate or not in terms of basic prising                                  | 產品型號，包括所有配置上市時間(年月)<br>資費(一次性/24/36/48月)                                                       | Austria /Ireland /Switzerland /Denmark | yes  |
+|          | Me                                                       | add on the coverage of windtre -> thinking of how to automate the command save of all listed mobile products in windtre | 產品型號，包括所有配置上市時間(年月)<br>資費(一次性/24/36/48) (might be able to include the promotion scope as well) | Italy                                  | yes  |
+|          | Selina                                                   | manually add on promotion plan                                                                                          | promotion add on                                                                               | Austria /Ireland /Switzerland /Denmark | yes  |
+| 4/9/2026 | Me                                                       | find the page and command save? maybe; needs to define the scope of promotion                                           | promotion scope for the other 4 opcos                                                          | Austria /Ireland /Switzerland /Denmark | yes  |
+|          | [[Ding Cheng 00611102 (程哥or 丁程)]]                        | pending for feedback before developing into monthly report                                                              |                                                                                                |                                        |      |
+|          | Me and selina                                            | from data to report, visualise the insight                                                                              | align scope and insight first                                                                  |                                        |      |
+|          | Me                                                       |                                                                                                                         | script the aligned scope to automised data -> PPT                                              |                                        |      |
 
 ### Amendment
 
@@ -40,3 +44,13 @@ Austria -> + two unlimited plan price
 Sweden -> missed 349 449 plan and data plan promotion is not included (same discount for all device）-> price structure has to be reviewed (discount 30SKR for 36 months plan) +one off price (should be the same among devices)
 Denmark -> one off price
 Promotion
+
+---
+4/9
+Ireland prepay price, plan fee 30 does not exist only 20 25
+Austria two price, 24 month quite and keep paying until 36 months
+Italy: 6.99 only no other fee
+
+---
+4/9
+All scraping and price amendments done, pending for cheng ge feedback
