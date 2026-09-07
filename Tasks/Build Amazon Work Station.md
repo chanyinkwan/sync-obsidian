@@ -118,13 +118,6 @@ I might expect clean and simple dashboards, visualise would be nice, if its not 
 
 **假設3：SQL 平台 SO 口徑 ＝ 子怡表 SO** → 未驗。點驗：export 一週、揀 1 個 SKU 對返子怡表同週數。驗唔到點寫：Sheet 1 口徑以平台 Export 為準並註明。
 
-> **HANDOVER BLOCK — Audit**
-> 1. **Answerability：週營運 = ANSWERABLE**（SQL Export + File B）；**6M 拆解 = ANSWERABLE ONLY WITH 6M口徑@程哥**
-> 2. 所以 Recombine 必須以「同程哥對齊 6M vs BP 7.96M 個 gap」開頭，目標行只准做參數，唔准寫死 6M 或 7.96M 當真
-> 3. Sheet 1 嘅 SI／到貨日數源鎖定 File B（AATP-PO-delivery Tracking），唔用開門红供需
-> 4. 口徑驗證（假設3）係 Experiment phase 嘅 probe，起表時先留註腳
-> Outcome：Excel workbook，逢週一答到「賣咗幾多、撐幾耐、幾時返貨、6M 去到邊」。
-
 
 **Kess 裁決（2026-09-03，蓋過 Audit block 第 2 條）**
 1. 目標跟 **2026BP（≈7.96M）**，唔跟口頭 6M — 程哥唔深入項目，BP 更可靠。Sheet 2 目標行仍做參數，頂部保留一行「口頭 6M vs BP 7.96M 未對齊」備查。
@@ -146,13 +139,6 @@ I might expect clean and simple dashboards, visualise would be nice, if its not 
 > 5. 目標=BP 7.96M 做參數；口頭 6M 未對齊 flag 在 Sheet 2 頂部
 > Outcome：逢週一 10 分鐘答到「賣咗幾多、撐幾耐、幾時返貨、目標去到邊」。
 
-### Feedback loop
-
-| Submission    | Problem / Question                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | solution |
-| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| 3/9 version 1 | - What is NSIP? - I think we can include the numbers in the beginning of the year (Jan-July) so when the previous practise were asked, we can still reference in this current workstation; - write in H173 /E6898 in the BP, as its part of the scope of the MBB revenue - include a check-in section in the 説明-數據sheet, like a habit tracker, every week when I go through the steps, I check the box ; - there are more available data in the SO SQL platform, I think those data / KPIs definition could be included in  説明-數據sheet as well (- GV（總價值）<br>- SO（銷售訂單）<br>- GMV（商品交易總額）<br>- C/R（成本/收入比或轉化率）<br>- ASP（平均售價）<br>- Sales Radio%（銷售比率）<br>- Shipped（已出貨）<br>- Returns（退貨）<br>- Return Rate（退貨率）<br>- Sellable Inv（可售庫存）<br>- Open Order（未完成訂單）<br>- DOS（供應天數）<br>- SO<>0（銷售訂單不為零）<br>- GMV(VAT)（含稅GMV）<br>- ASP(VAT)（含稅平均售價）)； definition \|   \|   \|<br>\|---\|---\|<br>\|**GMV(local currency) (2026-W01~2026-W35)**\|2026 年同期本地貨幣 GMV\|<br>\|**GMV(local currency) (2025-W01~2025-W35)**\|2025 年同期本地貨幣 GMV\|<br>\|**VS Per**\|GMV 與去年同期相比的百分比變化\|<br>\|**C/R**\|成本/收入比或轉化率（如 2.4%）\|<br>\|**VS Per**\|C/R 與去年同期相比的百分比變化\|<br>\|**ASP**\|平均售價（如 66、72、185 等）\|<br>\|**VS Per**\|ASP 與去年同期相比的百分比變化\|<br>\|**Sellable Inv**\|可售庫存數量（如 0、2、4 等）\|<br>\|**SO (2026-W01)**\|2026 年第 1 週銷售訂單數量\|<br>\|**GMV(local currency) (2026-W01)**\|2026 年第 1 週 GMV\|<br>\|**C/R (2026-W01)**\|2026 年第 1 週 C/R\|<br>\|**ASP (2026-W01)**\|2026 年第 1 週 ASP\|<br>\|**Sellable Inv (2026-W01)**\|2026 年第 1 週可售庫存\|<br>\|**SO (2026-W02)**\|2026 年第 2 週銷售訂單數量\|<br>\|**GMV(local currency) (2026-W02)**\|2026 年第 2 週 GMV\|<br>\|**C/R (2026-W02)**\|2026 年第 2 週 C/R\|<br>\|**ASP (2026-W02)**\|2026 年第 2 週 ASP\|<br>\|**Sellable Inv (2026-W02)**\|2026 年第 2 週可售庫存\| | 見下方 v1.1 紀錄（2026-09-04 已落地） |
-|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |          |
-
 ### v1.1（2026-09-04）— 修訂已落地
 檔已搬去 `C:\Users\k84450674\Desktop\Amazon GTM Management\Work Station\Amazon MBB Workstation.xlsx`（以後都寫呢個路徑）。五項修訂：
 1. **NSIP 已解答**：價格階梯 RRP（貨架價）→ SIP = RRP÷1.2×0.93（開票 sell-in 價）→ NSIP = 扣 rebate/費用後淨 sell-in 價（逐 SKU 50–66% of SIP；例 B636：RRP 149.99 vs NSIP 64.86）。GMV ≠ 收入。
@@ -172,3 +158,111 @@ I might expect clean and simple dashboards, visualise would be nice, if its not 
 **期初INV 數源（2026-09-04 查證中）**：Ziyi 表 `AMZ泛欧 路由&MBB上市进展 (1).xlsx` sheet「MBB操盘模拟」係 rolling plan — 過去週=實績、未來週=推演（推演欄見負數庫存，唔可以當期初用）。要攞 2026-08-31 當週對應欄嘅 亚马逊INV。INV 公式：週度 = 上週INV + SI − SO；累計版 = 累計SI − 累計SO（上市起計）— 會因退貨/盤損 drift，隔幾週用平台 Sellable Inv 對數。
 
 **期初INV 查證結論（2026-09-04）**：Ziyi 表「MBB操盘模拟」當週（8/30 欄）只有 B636白 有實數（INV=77，cell K15，當週SO=153）；其餘 SKU 亚马逊INV/SO 全空，未來欄全係推演負數 — 張表已經冇人填實績。⇒ 期初INV 唯一可靠源 = SQL 平台 Sellable Inv（週一 export 勾 Model，一次過抄入 12 個紅字黃格）。B636白 可先用 77 開鏈，export 到手再對一次。
+
+### What is the problem with the current version of workstation
+
+1. I have went through all the numbers in the old workstation and mapped where are the source of each numbers and i found the current workstation is not comprehensive enough, then i would like you to verify for me using the old work station number to check on the mapped source, to see whether the source I mapped is correct or not
+
+| KPI                     | Period / Scope | Source                                                                                                           | sheet                                            |
+| ----------------------- | -------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| Run rate                | Aug – Oct      | `C:\Users\k84450674\Desktop\Amazon GTM Management\Work Station\泛欧亚马逊月度价格指引.xlsx`                                 |                                                  |
+| Supply chain planned PO | —              | `C:\Users\k84450674\Desktop\Amazon GTM Management\Work Station\EU Amazon Weekly AATP-PO-delivery Tracking0.xlsx` |                                                  |
+| Huabdata hub inventory  | Weekly         | `C:\Users\k84450674\Desktop\Amazon GTM Management\Work Station\Huawei+stock+report_Wk32 2026.xlsx`               |                                                  |
+| Sell in                 | —              | `C:\Users\k84450674\Desktop\Amazon GTM Management\Work Station\AMZ开门红供需  202600803.xlsx`                         | "MBB越晚越便宜+路由器越早越便宜"                              |
+| Planned SO              | —              | My prediction                                                                                                    | see in which model we should predict the so with |
+| Sell out actual         | All            | Online sales portal, can't share                                                                                 |                                                  |
+reference online sales portal available data:
+Online Sales Portal Available Data
+- GV = Gross value
+- SO = Sell Out = Actual Customer Purchase on Amazon
+- GMV = Gross Merchandise Value = Product Price + Shipping Fees + Taxes
+- C/R = Cost to Revenue = this helps calculating the sales margin (pending to validate)
+1 - sales margin = cost/revenue
+- ASP = average selling price
+- sales radio% = 销售费用占销售收入的比例 (sales expenses /sales revenue) 
+- GMV radio % (dunno what 7 is this)
+- shipped
+- returns
+return rate
+sellable inv
+open order
+dos
+
+2. I don't like the process of inserting number manually, given that the constraints are the source of numbers are mostly saved under the internal drive which I think what I can do is to save the report / source in a specific file name, so I could write a python script to extract needed numbers instead of inserting numbers manually; the ideal state is that the data extraction base, and the reports (answering high level questions using visualised data) should be separated and this preference would push back the design we have right now, since the current workstation is not allowing script interferer. the other thing we should consider is the size of the excel, along times, the workstation in this current design would lead to a huge size and long wait time for generation, so what is the expected new outcome would be a system including the component of database, weekly report with up-to-date monthly and yearly insight report; 
+3. we didnt extend our scope on the market research, referencing the hand over doc, take this as an example,"C:\Users\k84450674\Desktop\AMZ MBB Handover\Handover Book Doc\Market Size\2026年6月BSR销量.xlsx", I think ziyi has used some tools to assist the understanding of the amazon market division on differen brands, to understand how is our brand performing comparing to other brands, lets investigate this as well, we might not need to include this in the system at this moment, but we could keep this in mind and see whether my understanding is correct, and keep it considered when designing the architecture of the system
+
+### GATE 0 v2 — 重設計（2026-09-07，未過閘唔做 intake）
+
+**Claude 讀完上面 §1–3 嘅回應（≤5 行）**
+- 你已寫咗半個 A（「database + weekly report + monthly/yearly insight」）；**B／C／D 未寫**。
+- 同你 8/20 [[Optimise Amazon Final Workstation]] 有衝突要你裁：嗰度你寫「唔需要第二個 database」「stakeholder 只開得到 Excel」。
+- v1.1 首個真實週（今日 9/7）**未跑過**。v2 係咪 = 喺 v1.1 之上加一層「抽數」，v1.1 嘅公式鏈同 report 版面照用？（層層長，唔推倒重來）
+- 機上有 Python 3.14，但**冇 openpyxl／pandas**。§1 六個 source 檔全部喺 `Work Station\` 搵到。
+
+
+**A. Ideal Output（Kess 親手，≤3 行）** — 要答到：
+- 「database」物理形態：一個 SQLite 檔？一個資料夾 CSV？一個 Excel data workbook？**邊個開得到？**
+ideally a very clean excel workbook, only me needed to read or open it
+- 「report」物理形態：週報＝Excel dashboard sheet？月／年 insight＝一頁 Obsidian／PPT？**畀邊個睇？**
+excel dashboard sheet it is expected to output through running a script, so the ideal workflow would be user (me) -> download all the necessary data, we will have to identify how long to update the download once, probably once a week, if there are report that includes the whole quarter data, how should we handle this (brainstorm this with your expertise on what are the solutions that could avoid duplicating a lot of data, maybe replacing the old one and how to snapshot the old data) -> run script (to update the data in the database) -> data base updated -> run script to generate excel dashboard (weekly) this report will serves as an understanding for myself on which of the numbers has to be adjusted in order to achive the goal as well as delivery for dingcheng, when he asked
+- 帶走嘅一句話仲係唔係「逢週一 10 分鐘答到賣咗幾多／撐幾耐／幾時返貨／目標去到邊」？
+yes,, and also a self review for me whether the current arrangement are aligned with my expectations
+- Depth budget：v2 design spec ≤ ？頁
+what do you mean?
+
+**B. Role Split（Kess 親手，≤3 行）**
+- 我自己做：I have done my part sourcing where the data are from
+- Assign 畀 AI：you identify whether my mapping of sources are correct and brainstorm the new system together that could last and accurate
+- **邊個維護條 Python？**（source 檔改咗版面、script 靜靜哋抽錯數 — 邊個發現、邊個修？） we
+
+**C. Handoff 合約**（每條一行：交出乜 → expect 返乜 → acceptance → 點解係 AI 做）
+- C1 驗 source map（你 §1 張表）：交 v1.1 workbook + 6 個 source 檔 → 返 6 行 match／mismatch 表（每 KPI 揀 1 SKU × 1 週對數）→ acceptance：i dont want to read through all the data again
+- C2 抽數 script：→ acceptance：you deliver the framework, I review, you build I test you ammend
+- C3 市場研究（BSR）：→ acceptance：review what are the tool that she has been using so i can research on that as well, just see if you could find which is the tool she used, if not, leave it for later
+
+**D. 必懂清單 — Claude 提名，Kess 揀（揀完 Claude 用一個比喻＋一個實例教，然後你 3 行講返出嚟先出閘）**
+1. **Join key** — 6 個 source 用邊條鎖匙拼埋（SKU 名／ASIN／型號代碼？週號定日期？國家碼？）。呢條唔統一，database 拼出嚟嘅每個數都錯。the key should be ASIN, but along please also include the SKU and model nam, both week number and the start of that week date, UK is separated from other Pan EU countries (Spain, Italy, Germany, France)
+2. **Source 檔嘅穩定性合約** — 每個 source 邊個 sheet／邊欄係「抽數位」；同事改一格版面，script 就靜靜哋抽錯。你要識得認出「抽錯咗」。i have included in the above table
+3. **三層庫存 + DOS 口徑**（v1.1 教過一半）— Hub INV（Huawei stock report）／亚马逊INV／机关INV 邊個係邊個；DOS 用邊個 INV 除邊個 SO。
+i have included my understanding in the table above
+
+**⚠️ 冇主 workstream（要 named owner／decision 先開工）**
+- §3 市場研究（BSR）：in scope 定 separate task？just see if you can name the tool if no just leave it out of scope this time
+- 每週「落 source 檔到指定檔名」係人手步驟 — owner = Kess？你 OK 用「人手落檔」換「人手填數」？i will download the source, and the script will extract the number and fill in the database
+- 公司機可唔可以 `pip install openpyxl pandas`？（可以＝1 分鐘；唔可以＝成個 script 方案要轉）i can
+- `Work Station\OldWorkStation.xlsx`（13 MB）係咪你 §1 講嘅「old workstation」本體？yes
+
+> **Claude 讀完你填嘅 Gate 0 v2（2026-09-07）— 三個 default 已套，你可以改**
+> - Depth budget = 交付物同分析嘅**長度上限**，超過嘅寫落 appendix、你默認唔讀。Default：v2 spec ≤2 頁；C1 結果表 ≤1 頁。
+> - Python 維護「we」→ 拆做：script 每次 run **自報**（抽咗幾多行、邊格抽唔到）→ Kess 見到報錯就 flag → AI 修。
+> - C1 acceptance「唔想再讀晒啲數」→ 改寫做：每 KPI 一行，`old workstation 值 = source 檔 sheet!cell 值`，MATCH／MISMATCH／NOT FOUND，附 cell 位，你每行 30 秒抽查得到。
+> - D2／D3 你話「喺表入面」，但表嘅 sheet 欄只填咗 1／4 —— C1 順手補齊，你確認嗰步就係 D 嘅出閘測試。
+
+### DECOMPOSE v2（2026-09-07，≤15行）
+
+**必答問題（v2 要答到）**
+1. 六個 KPI 每個由邊個檔＋邊個 sheet＋邊欄抽？（＝C1）
+2. 邊啲 source 係「週快照」、邊啲係「累計／滾動」？決定 DB 點 snapshot 先唔重複（你 A 入面要 brainstorm 嗰條）
+3. Dashboard 四條問題不變：賣咗幾多／撐幾耐／幾時返貨／目標去到邊
+
+**手上有乜**
+- `OldWorkStation.xlsx`（子怡原表，含已填數 ＝ C1 嘅答案卷）；5 個 source 檔已喺 `Work Station\`
+- v1.1 公式鏈（INV／DOS／收入=SO×NSIP）照用；Join key 已定（D1：ASIN 主鍵＋SKU＋型號；週號＋週起始日；UK 同 Pan-EU 分開）
+
+**缺乜、邊個有**
+- Run rate／PO tracking／Hub stock 三個 source 嘅 sheet＋欄位未填 → C1 補
+- SO actual 唯一源 = portal export（AmazonDetail.xlsx），冇 API → Kess 每週人手落一次
+- 季度級 report 點 snapshot：未定 → Audit 假設 2
+
+> **HANDOVER BLOCK — Decompose v2**
+> 1. v2 = 三件套：`sources\`（Kess 人手落檔、固定檔名）→ `db.xlsx`（script 寫、只有 Kess 開）→ `dashboard.xlsx`（script 生成）。v1.1 公式鏈唔重寫
+> 2. C1 未出結果前，**唔准寫任何抽數 script**
+> 3. Join key 鎖定 D1；任何 source 冇 ASIN 就要一張人手 mapping 表（ASIN↔SKU↔型號）
+> 4. Depth budget：v2 spec ≤2 頁；C1 表 ≤1 頁；超出入 appendix
+> 5. Script 錯數責任：script 自報 → Kess flag → AI 修
+> Outcome：Kess 逢週一落檔 → 跑兩個 script → 10 分鐘答到四條問題。
+
+**C3 結果（2026-09-07）— BSR 工具已認出，依你裁決：out of scope 今次**
+- 工具 = **SellerSprite（卖家精灵）**。證據：`2026年5月BSR销量 DE.xlsx` sheet「Note」row 1 寫住 `Website: https://www.SellerSprite.com`
+- 檔案粒度：每月一檔、一行一個 ASIN（Brand／Category BSR／Monthly Sales／Avg Price／ParentASIN）；「Brands」sheet 直接有 **Market Share %**，唔使自己聚合
+- 架構預留：有 ASIN 欄 → 將來可以直接用 D1 主鍵拼入 db；月度檔 = 月快照，同週度 source 分開存

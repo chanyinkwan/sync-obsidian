@@ -1,11 +1,11 @@
 ---
 status: todo
 priority: high
-scheduled: 2026-08-26
+scheduled: 2026-09-07
 projects:
-  - "[[Look for another job]]"
-dateCreated: 2026-08-26T11:03:45.581+01:00
-dateModified: 2026-09-03T09:28:13.134+01:00
+  - "[[Sample Management Ops]]"
+dateCreated: 2026-09-07T14:20:11.118+01:00
+dateModified: 2026-09-07T14:20:11.118+01:00
 tags:
   - task
 eisenhower: q1

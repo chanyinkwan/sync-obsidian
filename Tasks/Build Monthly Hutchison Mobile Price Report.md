@@ -33,11 +33,12 @@ with this script:
 |          | Me                                                       | add on the coverage of windtre -> thinking of how to automate the command save of all listed mobile products in windtre | 產品型號，包括所有配置上市時間(年月)<br>資費(一次性/24/36/48) (might be able to include the promotion scope as well) | Italy                                  | yes  |
 |          | Selina                                                   | manually add on promotion plan                                                                                          | promotion add on                                                                               | Austria /Ireland /Switzerland /Denmark | yes  |
 | 4/9/2026 | Me                                                       | find the page and command save? maybe; needs to define the scope of promotion                                           | promotion scope for the other 4 opcos                                                          | Austria /Ireland /Switzerland /Denmark | yes  |
-|          | [[Ding Cheng 00611102 (程哥or 丁程)]]                        | pending for feedback before developing into monthly report                                                              |                                                                                                |                                        |      |
+|          | [[Ding Cheng 00611102 (程哥or 丁程)]]                        | pending for feedback before developing into monthly report                                                              | [[7-9-2026 Mobile Phone Materials Feedback Meeting]]                                           |                                        |      |
+|          | Me                                                       | amendment on cheng's feedback                                                                                           |                                                                                                |                                        |      |
 |          | Me and selina                                            | from data to report, visualise the insight                                                                              | align scope and insight first                                                                  |                                        |      |
 |          | Me                                                       |                                                                                                                         | script the aligned scope to automised data -> PPT                                              |                                        |      |
 
-### Amendment
+### 4/9 Amendment
 
 Ireland -> + keep my existing number 的價格 +prepay 價格
 Austria -> + two unlimited plan price
@@ -46,11 +47,13 @@ Denmark -> one off price
 Promotion
 
 ---
-4/9
 Ireland prepay price, plan fee 30 does not exist only 20 25
 Austria two price, 24 month quite and keep paying until 36 months
 Italy: 6.99 only no other fee
 
 ---
-4/9
-All scraping and price amendments done, pending for cheng ge feedback
+
+### 7/9 Amendment on Cheng's feedback
+- want to know the price structure
+- want to know how much 補貼is given from the operator
+

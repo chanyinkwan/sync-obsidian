@@ -1112,6 +1112,12 @@
       "requestedAt": 1788429053790,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Write off two earphones for felix under cheng's account.md",
+      "requestedAt": 1788787211241,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {
