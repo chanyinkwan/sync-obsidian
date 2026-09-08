@@ -52,8 +52,7 @@ Austria two price, 24 month quite and keep paying until 36 months
 Italy: 6.99 only no other fee
 
 ---
-
-### 7/9 Amendment on Cheng's feedback
+### 8/9 Amendment on feedback
 - want to know the price structure
-- want to know how much 補貼is given from the operator
-
+- want to know how much 補貼 is given from the operator
+- would like to know the exact definition of each number appearing in the payment page that caused an impact to the final pricing

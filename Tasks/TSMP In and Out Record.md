@@ -37,26 +37,42 @@ This is the major folder that kept all the flow of data, and how I expected to m
 
 ### First Principle
 
-#### Gate 0 — 開工閘（2026-09-03，未過閘）
+#### Gate 0 — 已過閘（2026-09-08，Kess 裁定）
 
-**Claude 開閘前發現（Sample Management folder 現狀）**
-- 已有 `GTM_System_Master.xlsx` + operating model doc (2026-07-30)：解決嘅係「申請樣機」嗰邊（quota / BOM / 入庫 timing），唔係 in/out 同 write-off。
-- 2026-08-21 foundation-import plan 同 `automation/Invoke-TSMPWorkstation.ps1` 指住 `build\TSMP_Automated_Workstation_v1.xlsm`，但 `build/` 唔存在 → workstation 未 build。
-- 三個 `TSMP_ControlPanel*.xlsm` 變體 + `Data/Y26Q3W35/样机挂账物理号信息查询_20260824*.xlsx` → 呢啲係 in/out 嘅 raw data。
-- Workstream 目前冇 named owner（Gate 0 B 未填）。
+**A. Ideal Output**（xlsm workstation，base 檔未定）
+1. auto generate reminder email draft, manual send
+2. button: pick specific SN → write-off receipt, rule: no duplicated colours + model name
+3. clean UI to record in/out for more than one product on a rolling basis; closed activity log stays referenceable (not wiped monthly)
 
-**A. Ideal Output**（Kess 親手寫）
-- 
+**B. Role Split** — Kess: experiment + test, supply context during testing｜Claude: build
 
-**B. Role Split**（Kess 親手寫）
-- 
+**C. Handoff** — build the 3 features; existing script (`SendSmartReminders` macro, `TSMP_LastUpdate0709.xlsm`) sends one email per item → must become one combined email, at most one a day
 
-**C. Handoff 合約**（每個 assign 出去嘅 task 一行）
-- 
+**D. 必懂（Kess 答）**
+1. 30-day-before-due write-off = team practice, not a system lock
+2. Permanent out (given to customer) = the case that needs a write-off receipt; temporary out may return
+3. d00611102 = senior, hands work to Kess (Kess writes off directly)｜m00473733 (Michele) manages own, Kess only reminds
 
-**D. 必懂清單 — Claude 提名候選（Kess 揀）**
-1. **Due date 嘅來源 + 30 日規則本質**：`样机挂账物理号信息查询` 邊個欄位係 due date？「30 日前 write off」係公司政策定係 TSMP 系統鎖？→ 決定所有日期計算啱唔啱。
-2. **Out / write-off 嘅狀態機**：temporary out、permanent out（畀客）、destroy write-off、non-destroy write-off、return — 邊種狀態要邊種 receipt？→ 決定 workstation 要幾多種記錄。
-3. **兩個帳號嘅責任結構**：d00611102 vs m00473733 — 邊個係 accountable holder？點解一個自己做、一個要 email 提醒？→ 決定邊啲動作 Kess 有權喺 TSMP 做。
+#### Decompose（2026-09-08）
 
-**出閘測試**：待 Kess 揀完 D 之後出。
+**必答問題**
+1. 邊個 xlsm 做 base：`TSMP_ControlPanel` / `_new` / `ControlPannel` / `LastUpdate0709`，定 fresh build 落 `build/`？reference 
+2. Raw query 檔（`样机挂账物理号信息查询_*.xlsx`）邊欄係 due date、邊欄係 account？→ Claude probe，Kess 確認
+3. Feature 2、3 各一句 acceptance → Kess
+
+**手上有乜料**
+- Raw data：`Data/Y26Q3W31`、`Y26Q3W35` 各 2 個 query xlsx（疑似兩帳號各一）
+- Email macro：`SendSmartReminders`（一 item 一 email）+ `TSMPAutoTrigger.vbs.disabled` 觸發器
+- Receipt template：4 個 `Huawei UK Client sample device receipt_*.DOCX` 變體
+- 4 個 xlsm 變體；`automation/` ps1 + `BatchDiscovery` / `WorkbookSafety` modules 指住未存在嘅 `build/`
+
+**缺乜料，邊個有**
+- Base 檔、canonical receipt DOCX、合併 email 收件人/格式 → Kess
+
+> **HANDOVER BLOCK — Decompose**
+> 1. Reminder email：一日最多一封合併 draft，人手 send，唔自動發
+> 2. Receipt 只喺 permanent out 出；按 SN 揀；同一張 receipt 內 model+colour 唔重複
+> 3. In/out log rolling；closed activity 保留可查
+> 4. Action date = due date − 30 日（team practice）；d00611102 Kess 直接 write off，m00473733 只 remind
+> 5. Base 檔未定前唔開 build
+> Outcome：一個 xlsm workstation 畀 Kess 管兩帳號樣機 in/out、reminder、receipt。
