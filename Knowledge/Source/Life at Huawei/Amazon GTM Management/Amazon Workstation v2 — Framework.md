@@ -20,35 +20,38 @@ Work Station\v2\
   run_log.txt              <- what each run read/wrote/could not find
 ```
 
-## 2. db.xlsx — 9 sheets, one row per key, header in row 1
+## 2. db.xlsx — revised 2026-09-08 after merging Kess's MyVersion.xlsx (sheet names are Kess's)
 
-| Sheet             | Key                         | Columns                                                                     | Source                                                   | Storage rule                                           |
-| ----------------- | --------------------------- | --------------------------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------ |
-| `sku_map`         | asin                        | bom, model, code (產品代號), family, colour, markets                            | 基础信息汇总                                                   | replace whole sheet                                    |
-| `so_weekly`       | week_start + country + asin | week_no, so, gmv, cr, asp, shipped, returns, sellable_inv, dos, source_file | AmazonDetail (row 2 dims, row 3 metrics)                 | snapshot: append; same week re-run = replace that week |
-| `si_weekly`       | week_start + bom + as_of    | si_units                                                                    | 供需!要货（SI） row 1 AF:CF (yyyymmdd Mondays) × col Y 编码; past weeks = actual SI, future weeks = planned 要货 (Kess 2026-09-08; replaces Tracking0 Archive, which matched it 0-diff) | plan file: versioned by as_of, dashboard uses latest   |
-| `po_plan_weekly`  | week_start + bom + as_of    | planned_units                                                               | Tracking0!SP# AATP-PO-delivery CF:CP (WKnn)              | rolling: keep every as_of                              |
-| `hub_inv_monthly` | month + bom                 | hub_start, hub_end, as_of                                                   | 供需!全年模拟（正常模拟） R10:R11 x S:AE                             | actual (confirmed 9/8): append per month               |
-| `price_ladder`    | family + market + as_of     | rrp, run_rate, promo, big_promo                                             | 量价模拟V4 per-SKU sheets C:F                                | plan: versioned by as_of                               |
-| `bp_monthly`      | month + code                | bp_so, nsip, as_of                                                          | BP.xlsx 2026BP sheet                                     | plan: versioned by as_of                               |
-| `manual_weekly`   | week_start + asin           | listed_price, deal_tag (Y/N), event, planned_so                             | **Kess types**                                           | script never overwrites                                |
-| `run_log`         | run_at + script             | source_file, rows_read, rows_written, unmapped_skus, missing_cells          | script                                                   | append                                                 |
+| Sheet | Key | Columns | Source | Storage rule |
+| --- | --- | --- | --- | --- |
+| `calendar` | week_id (Y26W37) | year, week, week_start (Mon), week_end (Sun), price_period (2026-09-H1) | generated, ISO weeks 2025-12-29..2027-12-27 | replace |
+| `database` | bom + asin | Kess's 8 columns first: 分类, family, product_name, code(產品代號), market (EU/UK), bom, ean, asin; then colour, 覆盖国家, 上市时间, portal_model, 供需_sku名称, v4_key, in_供需/in_portal/in_master | seed = 供需!要货（SI） MBB rows (分类/family/code/BOM; 供需 codes win, 51060JRF dropped) + master 基础信息汇总 (ASIN/EAN/覆盖国家/上市时间/market) + MyVersion colour list | replace |
+| `SellOut` | week_id + country + asin | so, gmv, cr, asp, shipped, returns, sellable_inv, dos, source_file | AmazonDetail (portal), 2026-Wnn = ISO week | snapshot: replace weeks present in the file |
+| `SellIn` | week_id + bom + as_of | si_units, source_file | 供需!要货（SI） row 1 AF:CF × Y 编码; past weeks = actual, future = planned 要货 | versioned by as_of |
+| `Inventory` | month + bom + as_of | air_ship, sea_ship, hub_arrived, hub_start, hub_end, si_plan | 供需!MBB越晚越便宜+路由器越早越便宜 block per BOM (col B), labels col Q, months T:AE | versioned by as_of |
+| `RunRate` | asin + guide_variant | rrp, run_rate, small_promo, big_promo (V4 Overview E:H; per-SKU sheet fallback; UK = per-SKU 英国 block), 8 columns = week_ids N−4..N+3 (N = update week) with the half-month guide price, note, sources | 量价模拟V4 + 泛欧亚马逊月度价格指引 (N月价格指引-AMZ平板IoT; variants EU / DE / IT\ES\FR\NL / UK, Black rows → Black ASIN) | replace (the one wide, human-facing sheet) |
+| `manual_weekly` | week_id + asin | listed_price, deal_tag (Y/N), event, planned_so | **Kess types** | script never overwrites |
+| `manual_events` | week_id | event, note (促销 / 大促 / 节日, shown on 产品总览 活动 row) | **Kess types** | script never overwrites |
+| `run_log` | run_at + source | rows_read, rows_written, unmapped_skus, missing_cells | script | append |
 
-Join: everything resolves through `sku_map` (asin <-> bom <-> code <-> family). A row whose SKU is not in `sku_map` is NOT loaded; it is listed in `run_log.unmapped_skus` instead.
+Price period rule (Kess 2026-09-08): prices change on the 1st and 15th; a week takes the latest period start ≤ its Sunday (week containing the 1st → 上半月, week containing the 15th → 下半月). Tier mapping: 划线价 → RRP, Run rate → run rate, Promo Price → small promo, 大促价格 (PD/BF) → big promo. "Aligned price" = the title of that set. Still open: BP sheet (Agile BP) — needs the monthly BP split decision (2026BP tracker 7.96M vs Q1 deck 6.0M). po_plan_weekly (Tracking0 AATP) dropped: 幾時返貨 comes from SellIn future weeks + Inventory 空运/海运/HUB到货.
 
-## 3. dashboard.xlsx — 4 sheets, rebuilt from db every run
+## 3. dashboard.xlsx — report style, Simplified Chinese, selector cells (approved 2026-09-08 evening; `scripts\build_dashboard.py`)
 
-1. **Weekly** — one row per SKU: last-week SO (total, UK, DE, FR, IT, ES) | WoW % | 4-wk avg SO | Amazon INV | hub INV (latest month) | DOS_amz | DOS_total | next arrival (week + units) | YTD SO vs BP % | listed price | deal-tag eligible?
-2. **Pricing** — one row per SKU x market: RRP | run rate | promo | big promo | listed price | 30-day low | deal tag now? | event | "price needed for deal tag next week" (= 30-day low − 0.01)
-3. **BP vs Actual** — monthly SO and revenue vs BP, achievement % (same logic as v1.1)
-4. **Checklist** — Monday steps x weeks, tick grid (carried from v1.1 说明页)
+Principle: the script precomputes every number as values into `数据_*` sheets; report pages contain only selection formulas (IF / INDEX / MATCH / IFERROR) driven by selector cells, so they work in Excel and WPS. db.xlsx stays values-only. Product key on every page = `code + market` (e.g. `H153-381 UK`); colour and ASIN are labels; 分类 / family do not appear.
 
-Formulas (computed in script, values written):
-- DOS_amz = sellable_inv ÷ (avg SO of last 4 weeks ÷ 7)
-- DOS_total = (sellable_inv + latest hub_end) ÷ (avg SO of last 4 weeks ÷ 7)
-- revenue = SO x NSIP
-- 30-day low = min(listed_price over the last 5 weekly rows in manual_weekly)
-- deal-tag eligible = proposed price < 30-day low
+| Sheet                                             | What it answers                                                                                            | Selectors                            |
+| ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| `总览`                                              | report text: 上周销量 / 本月累计 / 年度累计与BP（7.97M Σ月 + 6.0M deck）/ 分国家 / 预警, each with a one-line 结论 + table        | none (values)                        |
+| `分国家`                                             | country × 销量/收入/GMV/占比 for one period; country × product matrix                                            | B2 视图 周/月/年, C2 期间                   |
+| `销量趋势`                                            | periods × chosen products (or 全部) for 销量 / 收入USD / GMV                                                     | B2 视图, C2 指标, D2:K2 up to 8 products |
+| `产品对比`                                            | KPIs down the side, up to 6 chosen products across (operations view)                                       | C2:H2 product keys                   |
+| `产品总览` | 8-week grid, weeks N−4..N+3 (N = update week): per product block 销量 / 指引价 / 要货 / 活动, plus 4周均值, DOS, 预警. Never more than 8 weeks | none |
+| `BP对比`                                            | bp_label × month BP vs actual, complete weeks only                                                         | none                                 |
+| `口径`                                              | every definition, flag names (缺货 / 库存偏低 / 无补货 / 挂价高于指引 / 未填挂价 / 流量下降 / 转化下降 / 低于计划 / 销量骤降), selector rules | none                                 |
+| `数据_产品 / 数据_国家 / 数据_国家产品 / 数据_期间 / 数据_趋势 / 数据_列表` | values the formulas select from                                                                            | none                                 |
+
+Definitions (unchanged from the v1 dashboard): last_week = latest complete week; week → month by Thursday; MTD/YTD/monthly actuals = complete weeks only; revenue_usd = SO × Tracker NSIP per bp_label (SIP $ never used); DOS_amz / DOS_total; last / next 要货 week from SellIn; BP expectation prorated by day; flags are pointers, not conclusions. Queued: margin at current price, YoY same week, competitor price, Checklist.
 
 ## 4. Monday routine (target 10 minutes)
 
@@ -62,6 +65,8 @@ Formulas (computed in script, values written):
 ## 5. Script self-report contract
 
 Every run prints and appends to `run_log`: source file + modified date, rows read, rows written, list of unmapped SKUs, list of empty cells it expected to find. If a source header moves (e.g. WK columns shift, Archive gains a column), the script stops and names the sheet + expected header instead of loading wrong numbers. Kess flags → AI fixes.
+
+the update will goes like this: source /week 37/abc doc, then the script scan what we have to pull the relevant script, to run the input and comeback with what's updated page
 
 ## 6. Changes vs v1.1
 

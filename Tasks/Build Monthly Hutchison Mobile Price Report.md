@@ -53,6 +53,46 @@ Italy: 6.99 only no other fee
 
 ---
 ### 8/9 Amendment on feedback
-- want to know the price structure
+- want to know the price structure better visualise it to tell how do we identify the 補貼
 - want to know how much 補貼 is given from the operator
 - would like to know the exact definition of each number appearing in the payment page that caused an impact to the final pricing
+
+[[7-9-2026 Mobile Phone Materials Feedback Meeting]]
+validate for me if i am correct on the understanding form the feedback
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

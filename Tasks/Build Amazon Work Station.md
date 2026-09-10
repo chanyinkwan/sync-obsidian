@@ -13,7 +13,7 @@ eisenhower: q1
 
 ## Ask as received
 >last meeting with cheng, mentioned my role's goal:
-
+[[26-8-2026 Amazon Goal-driven Alignment - Transcript]]
 1. **先解決「知不知道」的問題**——每週要能立刻答出：Amazon 上週賣了多少台、每個產品分別多少台、每個國家多少台、是漲是跌、庫存還能撐多少天、下一批貨什麼時候進。程哥明講「你現在都不知道」，這是第一優先、要「盡快盡快去搞定」。（00:00–02:11、12:34–12:58）
 2. **從 6 個 million 的全年收入目標由上而下拆解**——拆到每月／每週的收入與台數，再比對實際銷量；沒達標就往庫存不足、價格不夠激進、競爭等方向找原因。（05:08–07:33）
 3. **交出一份書面作業**——寫一個 presentation 或 essay：「今年要做到 6 個 million 收入，我要幹什麼」。程哥說拆錯、有不知道的都沒關係，**重點是邏輯能不能支撐**；可以當成面試題來做。（19:35–20:46）
@@ -35,7 +35,8 @@ And the goal for this task is to build a work station that allows me to record a
 - 帶走一句：逢週一 10 分鐘答到「賣咗幾多／撐幾耐／幾時返貨／目標去到邊」— 四條 source 全部已定（hub INV 月初 = 實數，Kess 9/8 確認）
 - 目標跟 2026BP ≈ 7.96M（唔跟口頭 6M，頂部保留 flag）；收入 = 月 SO × NSIP；「幾時返貨」用 AATP 到貨口徑，SC排产 唔入 v2
 - **C2 framework 已交（9/8）**：[[Amazon Workstation v2 — Framework]] — Kess 剔 5 個 box 先寫 script
-- **Build §8 step 1 done（9/8）**：`Work Station\v2\scripts\update_db.py` 跑真檔 → `db.xlsx` sku_map 17／so_weekly 2035（W01–W37，ISO 週一起始，W37 = 9/7 起未完週）／si_weekly 795 = 15 BOM × 53 週（源改為 供需!要货（SI），Kess 9/8；as_of 暫用檔案 mtime = 9/8，檔名版本 20260901 → 待定）。對數：W35–W37 週總 SO = portal Total 行；15 BOM 週和 = N 全年 = 月和，0 差；BM305=130 同 Tracking0 一致。Gap：B320-323 (UK) BOM 空（供需 有 51060JRF B320-323 未入主表，疑似就係佢）；51071VWQ 一 BOM 兩 ASIN；E5586-336/326 未裁。Step 2 = 加 po_plan／hub_inv／price_ladder／bp_monthly
+- **MyVersion merged → db.xlsx rebuilt（9/8 17:25）**：`Work Station\v2\db.xlsx` = calendar 105 週／database 17 行（供需 代號優先，51060JRF 剔除，B0CQRT4N37 冇 BOM）／SellOut 2035／SellIn 795（as_of 9/8）／Inventory 144（12 BOM × 12 月；51060HJC、51060KJA、51071URW 供需 冇 block）／RunRate 20 行（W30–W37 半月指引 + V4 階梯；13 個缺口列喺 run_log，主要係 UK 階梯同 H155／H173／E5783 指引冇行）。對數：calendar 1 號／15 號規則 W30–W42 逐週核；H165 8 週 = 7/8/9月 sheet F5/G5；SellOut W36/W37 = portal Total；51060KGE 9 月 = AB10:AB13。Kess 9/8 裁決：半月規則跟 1 號／15 號所在週；V4 划线价／Run rate／Promo／大促 = RRP／Run rate／Small／Big；Aligned price 係標題；51060JRF 停售剔除；供需 代號優先。未決：BP sheet 數源；供需 as_of（暫 mtime）。下一步 = build_dashboard.py Weekly sheet
+- **BP sheet + dashboard（9/8 20:53）**：db.xlsx 加 `BP`（Tracker 2026BP，10 label × 12 月，月度 SO／NSIP／rev）、database 加 sip_eur／sip_usd（SI收入对比，17/17 有）、SellOut 加 gv。**Tracker 內部唔一致**：B636 行月度格加總 34,140.8 台／$2,214,390，但佢自己 N4／AD4 寫 33,976.8／$2,203,753 → 全年 Σ 月 = $7,971,859 vs 標題 AD15 $7,961,221（差 $10,637）；dashboard 用月度格，口徑 sheet 註明，要同 tracker owner 講。`scriptsuild_dashboard.py` → `dashboard.xlsx`（Summary／Weekly／BP／口徑）；last_week = 最近完整週（W36），週歸月用週四規則；flags 係證據指針唔係結論。**Dashboard v1 交（9/8 21:07）**：Summary／Weekly／BP／口徑；口徑修正：revenue = SO × Tracker NSIP（唔用 SIP $，之前 121% 係錯口徑）；月度實績只計完整週。數：YTD W01–W36 SO 49,781／rev $3.03M／prorated BP $4.94M → 61.3%；剩 $4.94M 到 7.97M、$2.97M 到 6.0M；上週 W36 1,847 台（WoW +0.4%）。B535 ASIN 唔喺 portal export（YTD 0）。**Dashboard v2 = 報告式（9/8 晚，Kess 批）**：簡體中文；總覽（報告句＋表）／分国家／销量趋势（B2 周月年、C2 指标、8 個產品格）／产品对比（6 個產品做欄、KPI 做行，營運視角）／产品总览（8 週格 N−4..N+3：销量／指引价／要货／活动）／BP对比／口径；數值全部由 script 預先算入 数据_* sheet，報告頁只用 IF／INDEX／MATCH 揀值。db 加 `manual_events`（Kess 填活動）；RunRate 窗口改 N−4..N+3。Dashboard v2 交（9/8 21:5x）：13 個 sheet，公式只喺報告頁（IF／INDEX／MATCH），数据_ 頁 0 公式；預警門檻 4 週均 ≥ 10 台先出比率類預警；H173 冇 BP 標籤 → 收入留空並加註。Excel 開檔未實測（我冇 Excel），Kess 要開一次睇有冇 #N/A。**會議版 workbook（9/8 深夜，Kess 規格）**：`scriptsuild_meeting.py` → `dashboard_meeting.xlsx`，繁體，四張可見頁 會議摘要／週營運／達標與行動／口徑，原頁同 数据_ 全部隱藏保留；公式格淡藍、人手輸入格淡黃，重跑保留輸入；收入標「SO × NSIP估算，不含H173」；600萬做討論基準（待程哥確認），797萬只做次要參考；達標與行動 A 年底基準預測（每週基準銷量由 Kess 填，缺輸入顯示「預測未完整」）／B 三場大促（Prime Day 場次待確認、黑五、聖誕，增量收入計降價影響）／C 下一步五行；用 Excel COM 重算驗證無 #錯誤同截斷。**9/9 Kess 三項修改**：①會議版 frame 以 Kess 手改版為準（備份 `dashboard_meeting.kess-2026-09-09.bak.xlsx`，Haiku diff 後寫入 script）；②實際掛價 = 月度價格指引 F/G（1 號／15 號規則）→ db 加 `Price` 長表，manual_weekly 只做人工覆寫，「未填掛價」flag 取消；③達標與行動 A 區改為「目標拆解：各產品要賣幾多台」= BP forecast 收入 − YTD 收入 = 剩餘收入 ÷ NSIP（同幣）／÷ RRP×匯率（Kess 原要求，匯率輸入格）+ BP 剩餘台數 + 上週銷量 + 每週需賣；術語用英文（BP forecast／YTD／NSIP／RRP），刪 未來基準收入／年底基準預測。**9/9 00:46 dashboard_meeting.xlsx 最終版**（Kess frame + 目標拆解表 + Price 掛價），真檔 Excel COM 重算 0 錯誤 0 截斷；db.xlsx 加 `Price`（347 行，6 月表頭異常跳過）。Kess：script 暫停，先用 workbook。Source gate 未寫。
 
 ## Gate 0 v2（Kess 2026-09-07 親手；濃縮版，原文喺 Process Log）
 - **A. Ideal Output**：db = 乾淨 Excel workbook（只我開）；report = script 生成嘅 Excel dashboard（自審 + 程哥問時交）；每週落檔一次；depth budget：v2 spec ≤2 頁
@@ -74,12 +75,12 @@ And the goal for this task is to build a work station that allows me to record a
 
 **Decisions（Kess 2026-09-08）**：hub INV 月初 = 實數｜產品代號欄由 AI 填入 `基础信息汇总.xlsx`（原檔備份 `.bak-2026-09-08`）｜C2 framework 今日交 → [[Amazon Workstation v2 — Framework]]
 
-> **HANDOVER BLOCK — 入 Recombine v2 前（2026-09-08）**
-> 1. 週度 SI = 供需!`要货（SI）` row 1 AF:CF（週一 yyyymmdd）× Y 编码；過去週 = 實績、未來週 = 計劃要货（Kess 9/8）；Tracking0 AY/AZ 係送貨預約，唔准當 SI；Archive 只做交叉核對
-> 2. Hub INV 源 = 供需!`全年模拟（正常模拟）` R10:R11 × S:AE，月初 = 實數 → DOS_total 可以計
-> 3. 舊「Runrate」行改名「實際掛價」（人手）；RRP／Run rate／Promo／大促由 V4 抽入做參考，script 唔准自動定價
-> 4. Join：ASIN 主鍵；主表加「產品代號」欄先准 join 價格指引同 V4
-> 5. Framework 已 agree（9/8）→ Recombine v2 = 寫 script，順序見 Framework §8；每個 script 跑真檔、出 run_log 先算交
+> **HANDOVER BLOCK — Recombine v2 after MyVersion merge（2026-09-08）**
+> 1. 週 key = `Y26W37`（ISO 週一起始），全部週表經 `calendar` sheet join（year／week／week_start／week_end／price_period）
+> 2. `database` = 供需 MBB rows 做 seed（分类／family／產品代號／BOM，供需 代號優先：B535-232a、E5586-326；51060JRF 已停售，剔除）+ 主表 ASIN／EAN／覆盖国家／上市时间；一 BOM × 一 ASIN 一行
+> 3. `SellOut`＝portal 長表（week_id＋country＋asin＋8 metrics）；`SellIn`＝供需!要货（SI） 長表＋as_of；`Inventory`＝供需!MBB越晚越便宜 六行（空运／海运／HUB到货／月初／月底／SI规划）
+> 4. `RunRate` = 每 ASIN：RRP／Run rate／Small promo／Big promo（V4）＋ 最近 8 週嘅半月價格指引（1 號／15 號規則：含 1 號嗰週轉上半月，含 15 號嗰週轉下半月）＋ 备注；script 唔准定價，實際掛價喺 `manual_weekly`
+> 5. BP 數源 = Tracker `2026BP` sheet（Kess 9/8 揀 B：月度 per family × NSIP，7.96M；6.0M deck 做頂部 flag）；供需 as_of 暫用檔案 mtime
 > Outcome：Kess 逢週一落檔 → 跑兩個 script → 10 分鐘答到四條問題。
 
 
