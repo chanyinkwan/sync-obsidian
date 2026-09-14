@@ -1124,6 +1124,18 @@
       "requestedAt": 1789114618827,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Amazon One sentence summary on sales.md",
+      "requestedAt": 1789143049649,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Amazon Price Management.md",
+      "requestedAt": 1789380120721,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {
@@ -1944,5 +1956,5 @@
     }
   ],
   "lastSelectedTaskPath": "Tasks/Material Preparation.md",
-  "lastNotifiedReleaseVersion": "4.12.5"
+  "lastNotifiedReleaseVersion": "4.13.0"
 }

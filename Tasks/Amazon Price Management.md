@@ -1,15 +1,14 @@
 ---
-status: done
+status: todo
 priority: high
-scheduled: 2026-09-07
+scheduled: 2026-09-14
 projects:
-  - "[[Sample Management Ops]]"
-dateCreated: 2026-09-07T14:20:11.118+01:00
-dateModified: 2026-09-11T17:10:08.867+01:00
+  - "[[Amazon GTM Management]]"
+dateCreated: 2026-09-14T11:02:00.634+01:00
+dateModified: 2026-09-14T11:02:00.634+01:00
 tags:
   - task
 eisenhower: q1
-completedDate: 2026-09-11
 ---
 
 ## Ask as received

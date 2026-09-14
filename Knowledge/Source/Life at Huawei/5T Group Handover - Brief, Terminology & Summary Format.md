@@ -88,6 +88,12 @@ tags:
 - **西歐五國** = 德、法、義、西、英(Amazon IoT 品類覆蓋範圍)。
 - **profit rate 30%** = 定價時地區部的默認放行線(系統可查價格對應利潤率);**router 品類大多低於此線**,需與 [[Zhang Xuan 00942107|張炫]] 談「犧牲銷量還是犧牲利潤」。新增一個顏色需承諾全生命週期銷量門檻(數字待確認),而 router 一年所有型號合計僅 10000 台出頭,故基本撐不起。
 
+**Amazon 四價格體系與銷毛底線(9/14 程哥 1:1 給定,見 [[Price Alignment Task Meeting]])**
+- **四個價格(定價表的四欄,由高到低)**:**原價/劃線價**(上市時抬高的參考價)→ **run rate 價**(沒在做促銷時的日常價)→ **promo 價**(小促)→ **大促價**(PD/黑五/聖誕)。每個產品都要有一張這四個價格 + 倒算 NP + 對應**硬件銷毛**的表。ASR 拼法:「熠rat / wen rate / rt ate / rarrate / ran ry / rit」= run rate;「promal / 煊mo / prompo s」= promo;「消毛/箱毛/香毛/消防/消亡/消保/箱包」= **銷毛**。
+- **銷毛底線口徑**:大促價格的硬件銷毛**不要低於 30%**(理想線,越高越好);**20% 是最極限**,只有要很猛推高銷量時才做到 20%。promo 價落在 30 幾還是 40 幾都無所謂,只守大促這條線。
+- **Amazon 價格區隔規則**:相鄰兩檔價格要有明顯區隔,**至少 10% 以上折扣才算促銷**(只減 1 塊錢不算);大促之前必須先把價格抬起來、抬到一定金額,才有落差、也才能一年做多場大促。
+- **下半年三個大促** = **PD + 黑五(Black Friday) + 聖誕**;三個大促之外還要排**小促**(用 promo 價),正常每隔幾週到一個月促一次,不能一直掛 run rate 賣。⚠ 進 PD offer 的價格門檻(是否必須全年最低/是否須與上次 PD 持平)**待 Kess 向 Amazon 側確認**。
+
 **人(群裡常出現,for 交接)**
 - **Ziyi Zhang 84434577** = 和記(交給你);**Qixuan Wang wx1252689**(云琪?⚠)= TEF/Amazon;**Kaili Li wx1252688(凱莉)** = TEF/Orange/VDF 樣機與活動;**Zhang Ziyi 84271109** = Orange,**也負責貼 1組綜合待辦**(≠ mentor 同名);Amazon 群內暱稱**子怡**,亦管交付(✅ 2026-07-27 Kess 確認,見 [[Amazon Handover Meeting Transcript Part 2]] Open questions)。
 - 和記團隊:**丁程/程哥**(account lead;**Kess 直屬主管**——7/8 定七月方向:內部/客戶組織 + portfolio 熟悉)、**Selina(Huang Yi 84411269)**(客戶關係口徑:客戶人/背景找她)、**Michele Cappabianca**(手機/FWA 技術)。
