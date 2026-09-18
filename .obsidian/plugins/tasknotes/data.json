@@ -1136,6 +1136,18 @@
       "requestedAt": 1789380120721,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Goal Writing.md",
+      "requestedAt": 1789735559209,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Price Planning for BF.md",
+      "requestedAt": 1789737672782,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {
@@ -1956,5 +1968,5 @@
     }
   ],
   "lastSelectedTaskPath": "Tasks/Material Preparation.md",
-  "lastNotifiedReleaseVersion": "4.13.0"
+  "lastNotifiedReleaseVersion": "4.13.1"
 }

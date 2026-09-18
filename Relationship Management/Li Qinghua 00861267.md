@@ -11,7 +11,7 @@ languages: Mandarin
 email:
 relationship:
 status: active
-last_contact:
+last_contact: 2026-09-15
 tags:
   - contact
 ---
@@ -31,6 +31,8 @@ tags:
 - **Escalates to:** 
 - **Observed pattern:** <!-- append-only, dated one-liners from real interactions -->
   - 2026-08-06 Kess is not currently in steps 4–6 of the pricing chain; joining requires asking.
+  - 2026-09-15 首次同場（Q4 價格評審）。駁回各國破線報價是當場就做的動作，理由只有一句「我們現在不需要換量」。
+  - 2026-09-15 她的安全詞是「溝通完了拷貝我一份，後面審批的時候我們就簡單」——**事前抄送比事後申請有用**。見 [[15-9-2026 Q4 Price Guidance Review with Li Qinghua - Transcript]]。
 
 ### Balls currently in their court
 ```dataview
