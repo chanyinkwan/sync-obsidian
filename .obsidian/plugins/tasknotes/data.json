@@ -1148,6 +1148,24 @@
       "requestedAt": 1789737672782,
       "attempts": 0,
       "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Apply for Watch Sample.md",
+      "requestedAt": 1791295580041,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/Share with zengli on what is my learning throughout the last four months.md",
+      "requestedAt": 1791297528848,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    },
+    {
+      "taskPath": "Tasks/PD2 2026 Reflection.md",
+      "requestedAt": 1791388343406,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
     }
   ],
   "pomodoroState": {
