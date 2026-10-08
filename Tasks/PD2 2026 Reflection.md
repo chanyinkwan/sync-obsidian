@@ -67,3 +67,9 @@ By国家：英国MBB受客户侧影响未成功参与本次PD，BTS亟需追回
 
 add off written report discussion by operation:
 PD 期間國家多次主導調低價格,低於指引價格 引起多次的溝通 -> 從長計議
+
+### First Draft feedback
+
+[[PD 2 Reflection feedback 1__raw__20261008-052027]]
+
+PD 1 
