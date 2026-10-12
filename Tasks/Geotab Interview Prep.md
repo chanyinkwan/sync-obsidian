@@ -1,15 +1,16 @@
 ---
-status: todo
+status: done
 priority: high
 due: 2026-09-11
 scheduled: 2026-09-11
 projects:
   - "[[Look for another job]]"
 dateCreated: 2026-09-11T09:16:58.730+01:00
-dateModified: 2026-09-11T09:16:58.730+01:00
+dateModified: 2026-10-12T10:12:57.341+01:00
 tags:
   - task
 eisenhower: q1
+completedDate: 2026-10-12
 ---
 ### Message Deliver
 

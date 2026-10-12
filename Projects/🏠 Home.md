@@ -46,7 +46,7 @@ dv.paragraph(line);
 ```dataview
 TABLE WITHOUT ID file.link AS "🎙 未整理逐字稿", projects AS "專案", date AS "日期"
 FROM "Operation Note/Meeting Transcript"
-WHERE status = "untidied"
+WHERE status = "untidied" AND !contains(file.folder, "/Raw")
 SORT date DESC
 ```
 
@@ -58,7 +58,7 @@ SORT date DESC
 
 ---
 
-### Amazon Operations
+### GTM
 ![[Operation.base#Amazon Operation Board]]
 
 ![[Operation.base#Amazon Project Board]]

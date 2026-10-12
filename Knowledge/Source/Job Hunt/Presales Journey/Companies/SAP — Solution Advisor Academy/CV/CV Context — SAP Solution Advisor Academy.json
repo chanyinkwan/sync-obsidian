@@ -1,0 +1,76 @@
+{
+  "profile_summary": "Portfolio Solution Presales specialist at Huawei with customer-facing B2B sales experience at Apple and technical product delivery experience at Bank of China. MSc Business Analytics graduate who translates business needs into practical solution scope and measurable value. Committed to developing into a professional presales advisor through the SAP Academy for Customer Success, building expertise in customer discovery and compelling software demonstrations under senior mentorship. Particularly interested in SAP Business Technology Platform and Customer Experience, drawing on experience in operational analytics and consultative selling.",
+  "experience": [
+    {
+      "company": "Huawei Consumer Business Group",
+      "location": "London, United Kingdom",
+      "role": "Portfolio Solution Presales",
+      "dates": "Apr 2026 – Present",
+      "bullets": [
+        "Established documented solution scope for a Tier-1 UK mobile operator by translating customer input from 3 technical workshops and a structured requirements analysis session into requirements for the pursuit team.",
+        "Validated solution feasibility across 6 account subnets before proposal commitment by assessing requirements as dedicated presales cover within a 5-person pursuit team.",
+        "Cut product cost by USD 2 per unit by showing through roadmap and pricing reviews that a configuration feature added no value to the customer's buying decision.",
+        "Saved about 1 hour a week on sign-off documents and removed daily manual checks across 60 to 80 evaluation units by writing VBA automation for document generation and deadline reminders."
+      ]
+    },
+    {
+      "company": "Bank of China (Hong Kong)",
+      "location": "Hong Kong",
+      "role": "Technical Product Manager, E-Banking Product",
+      "dates": "Aug 2023 – Oct 2024",
+      "bullets": [
+        "Delivered 100% of HKMA regulatory mandates within 14 days by translating requirements into an implementation plan and coordinating internal teams and third-party vendors to ship Geo-IP fraud detection.",
+        "Recovered 8 hours a week of manual reporting effort across 20 systems, roughly 400 hours a year, by deploying a centralised Grafana observability framework in place of hand-assembled reports.",
+        "Closed a 3-year incident-triage backlog by specifying and validating a Python anomaly-detection prototype with a developer, separating critical incidents from deployment noise across 50,000+ historical logs.",
+        "Closed requirements gaps before development by introducing a 7-question elicitation framework covering business objectives, success criteria and constraints, with follow-up stakeholder interviews before JIRA intake."
+      ]
+    },
+    {
+      "company": "Apple",
+      "location": "Hong Kong",
+      "role": "Operation Data Analyst",
+      "dates": "Mar 2021 – Aug 2023",
+      "bullets": [
+        "Eliminated roughly 1,500 manual hours a year across 6 flagship stores by replacing weekly data entry with a self-maintaining reporting setup that gave regional directors current labour data.",
+        "Recovered 400+ leadership hours a year by replacing an 8-hour weekly interruption drain with a structured digital ticketing queue adopted store-wide.",
+        "Secured reporting-tool adoption from all 6 flagship store leaders by demonstrating their own use cases and explaining daily upkeep before handing over ownership."
+      ]
+    },
+    {
+      "company": "Apple",
+      "location": "Hong Kong",
+      "role": "Business Expert",
+      "dates": "Jan 2020 – Mar 2021",
+      "bullets": [
+        "Generated GBP 350,000 in new B2B pipeline across 50+ accounts by conducting customer discovery, positioning solutions and qualifying opportunities before handover to corporate sales.",
+        "Closed a GBP 50,000 broadcaster deal over 3 months by developing a walk-in enquiry into a qualified opportunity, providing technical support and addressing device-management concerns with an MDM solution.",
+        "Returned 5 hours a week to leadership and resolved peak-time scheduling conflicts for a 200+ person workforce by building a capacity model from staffing and customer-traffic data."
+      ]
+    }
+  ],
+  "activity_line": "MSc project: Audited an AI credit-scoring model for fairness and interpretability, using SHAP reports to explain model decisions to non-technical stakeholders.",
+  "language_line": "Languages: English (fluent), Cantonese (native), Mandarin (native)",
+  "skills_line": "Skills: Customer discovery, requirements analysis, solution feasibility, demonstrations, value selling, stakeholder coordination, Python (pandas, data analysis), SQL, Grafana, Power BI, VBA, JIRA",
+  "interests_line": "Interests: Enterprise cloud solutions, responsible AI, consultative presales",
+  "_targeting": {
+    "role": "Solution Advisor - SAP Next Gen - Academy for Customer Success - UK (Hybrid)",
+    "requisition_id": "456908",
+    "jd_source": "User attachment 7e403537-e0b4-4343-9a09-2c6d8bf79c6b/Pasted text.txt",
+    "anchor_role": "Huawei Portfolio Solution Presales, supported by Apple customer discovery and reporting-tool demonstrations.",
+    "criteria": [
+      "Customer discovery and business-process understanding",
+      "Demonstrations connecting technical capability to customer value",
+      "Commercial judgment and cooperative stakeholder relationships",
+      "Learning agility and motivation for professional presales development",
+      "AI fundamentals and responsible use"
+    ],
+    "gap_bridge": "No verified SAP implementation or product certification. Bridge through operational analytics for BTP and BDC, and consultative selling for CX. Product interest is a stated direction, not a claim of SAP expertise. Do not claim external demo leadership at Huawei or concluded RFP outcomes.",
+    "notes": "The JD specifies 2-3 years of experience and Next Gen 0-3 years. The candidate has a longer career; retain dates and flag the eligibility question outside the CV. Apple role boundaries have an unresolved LinkedIn discrepancy; use the stored user-confirmed dates as required by the canonical database. AI academic project is described without unreviewed performance metrics. No independent or excluded freelance projects used.",
+    "bullet_sources": [
+      {"role_index": 0, "master_bullet_indices": [3, 4, 0, 2]},
+      {"role_index": 1, "master_bullet_indices": [0, 1, 3, 4]},
+      {"role_index": 2, "master_bullet_indices": [1, 2, 3]},
+      {"role_index": 3, "master_bullet_indices": [0, 1, 4]}
+    ]
+  }
+}

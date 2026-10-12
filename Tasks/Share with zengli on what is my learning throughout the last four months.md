@@ -1,15 +1,16 @@
 ---
-status: todo
+status: done
 priority: high
 due: 2026-10-07
 scheduled: 2026-10-06
 projects:
   - "[[Huawei Development]]"
 dateCreated: 2026-10-06T15:38:48.769+01:00
-dateModified: 2026-10-06T15:38:48.769+01:00
+dateModified: 2026-10-12T10:13:03.961+01:00
 tags:
   - task
 eisenhower: q1
+completedDate: 2026-10-12
 ---
 
 ## Ask as received
