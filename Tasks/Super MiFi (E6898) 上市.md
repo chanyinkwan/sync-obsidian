@@ -1,5 +1,5 @@
 ---
-status: todo
+status: hold
 priority: high
 scheduled: 2026-08-19
 projects:
@@ -7,7 +7,7 @@ projects:
   - "[[Amazon GTM Management]]"
   - "[[E6898]]"
 dateCreated: 2026-08-19T16:04:31.948+01:00
-dateModified: 2026-08-25T08:55:55.808+01:00
+dateModified: 2026-10-29T10:04:05.775+00:00
 tags:
   - task
 eisenhower: q1
